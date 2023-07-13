@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - how-to-pages
 
 jobs:
   build_deploy:
