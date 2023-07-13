@@ -1,0 +1,16 @@
+footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  min-height: 10em;
+  background: var(--dk-grey);
+  color: var(--off-white);
+}
+
+footer h2 a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+footer a {
+  color: var(--off-white);
+}

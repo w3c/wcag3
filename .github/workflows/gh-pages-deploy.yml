@@ -1,0 +1,27 @@
+name: GitHub Pages Build & Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+      - name: Eleventy Build how-to pages
+        run: |
+          npm --prefix ./how-to/ ci
+          npm --prefix ./how-to/ run build:gh-pages
+          npm --prefix ./how-to/ run copy-to-root
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: _site 
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GH_ACCESS_TOKEN }}

@@ -1,0 +1,156 @@
+@import 'top-header.css';
+@import 'sub-header.css';
+@import 'footer.css';
+
+:root {
+  --w3c-classic: #005A9C;
+  --w3c-blue: #003366;
+  --wai-green: #005A6A;
+  --off-black: #1d1d1d;
+  --dk-grey: #3b3b3b;
+  --faded-red: #c0272d;
+  --red-subtle: #f1d0e1;
+  --light-blue: #196cac;
+  --dk-blue: #091832;
+  --gold: rgb(238, 208, 9);
+  --gold-light: rgba(238, 208, 9, .35);
+  --ocean: #00818d;
+  --cloudy: #bccbd3;
+  --cloudy-subtle: #d0e1f1;
+  --grey: #686868;
+  --line-grey: #ddd;
+  --trans-line-grey: rgba(221, 221, 221, 0.32);
+  --off-white: #f2f2f2;
+  --body-bg: #FAFAFC;
+  --lt-off-white: #fafafa;
+  --pure-white: #ffffff;
+  --white-transparent: rgba(255, 255, 255, 0.92);;
+  --visited-link: #660066;
+  --footer-grey: #efefef;
+}
+
+*:focus-visible {
+  outline: solid 2px currentColor;
+}
+
+body {
+  margin: 0;
+  background: var(--body-bg);
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: var(--w3c-blue);
+}
+main > a:visited {
+  color: var(--visited-link);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--wai-green);
+}
+
+li::marker {
+  color: var(--faded-red);
+}
+
+.page-width, main {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.nav-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.nav-list li {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 35em /* xs-breakpoint */) {
+  .nav-list li {
+    flex: 1;
+  }
+}
+
+.nav-list a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: min(1em, 4vw) 0;
+  margin: 0 min(1em, 4vw);
+  width: 100%;
+  text-align: center;
+  outline-offset: -3px;
+  outline-width: 2px;
+  outline-color: currentColor;
+}
+
+.nav-list .current {
+  border-bottom: solid 3px currentColor;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+main li {
+  margin-bottom: .5em;
+}
+main p {
+  line-height: 1.5em;
+}
+
+.card {
+  background: var(--off-white);
+  border: solid 1px var(--line-grey);
+  padding: 1.5em 1em 1em;
+  margin: 2em;
+}
+.card > :first-child {
+  margin: 0;
+}
+
+.flex { display: flex; }
+.flex > :first-child { flex-grow: 1; }
+
+.card-button {
+  display: inline-block;
+  margin: 0 1em;
+  padding: .5em 2em;
+  text-decoration: none;
+  background: #111;
+  color: #EEE;
+  white-space: nowrap;
+}
+
+.method-card {
+  background: var(--off-white);
+  border: solid 1px var(--line-grey);
+  width: 30em;
+  margin: 2em auto;
+  padding: 1.5em 5em;
+}
+
+.method-card dt, .method-card dd {
+  display: inline-block;
+  margin: 0;
+}
+
+.method-card dt {
+  font-size: 1.5em;
+  padding: .5em;
+}
+
+.normative {
+  border: solid 1px var(--cloudy-subtle);
+  margin-top: 1em;
+  padding: .5em 1em;
+  border-left-width: 1em;
+}
