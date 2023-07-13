@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: 'npm'
+          cache-dependency-path: how-to/package-lock.json
       - name: Eleventy Build how-to pages
         run: |
           npm --prefix ./how-to/ ci
