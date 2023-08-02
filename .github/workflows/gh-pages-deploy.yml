@@ -15,6 +15,11 @@ jobs:
         with:
           cache: 'npm'
           cache-dependency-path: how-to/package-lock.json
+
+      - name: Static content copy
+        run: |
+          cp -r ./guidelines ./_site/guidelines
+
       - name: Eleventy Build how-to pages
         run: |
           npm --prefix ./how-to/ ci
