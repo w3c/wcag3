@@ -101,9 +101,50 @@
 				<h3>Audio and video alternatives</h3>
 				<p class="guideline-text">Video and audio have alternatives</p>
 			</section>
-			<section class="guideline"  data-status="placeholder">
+			<section class="guideline"  data-status="exploratory">
 				<h3>Clear language</h3>
 				<p class="guideline-text">Content uses clear language</p>
+				<div class="ednote">
+				<ul>
+					<li><strong>Internationalization:</strong> Several outcomes for Clear Language will need conditional tests by language. Our subgroup will build tests and methods after we get feedback on our current approach for WCAG 3.  </li>
+					<li><strong>Clustering outcomes under a handful of headings:</strong> Testable outcomes need to be narrow. But we have so many outcomes that we are grouping them under headings like “Word comprehension” and “Sentence structure” to provide context for users.</li>
+					<li><strong>Requesting directional feedback:</strong> Does AG have concerns about the general direction of this early draft of the Clear Language guidelines, such as the number or scope of the outcomes? </li>
+				</ul>
+				</div>
+				<section>
+				<h4>Word Comprehension</h4>
+				<p class="outcome">Outcome: <strong>Uncommon words:</strong>
+				<span>Provide definitions of uncommon or new words using either an inline definition, one-click to a glossary, or a pop-up glossary. Determine which words are uncommon based on core/high-frequency words as well as context-specific vocabulary, as noted in <a href="https://docs.google.com/document/d/1JKJ32DK_A82ahsQ_k0RVPc-ZYpX5uuKtuGOLdo2OqyY/edit#heading=h.4bh5hmxp8y5q">draft conditional test by language</a>. See <a href="https://www.w3.org/TR/coga-usable/#use-clear-words-pattern">COGA pattern 4.4.1</a> and techniques in <a href="https://www.w3.org/WAI/WCAG21/Understanding/unusual-words">SC 3.1.3: Unusual Words</a>. </span></p>
+				<p class="outcome">Outcome: <strong>Acronyms and abbreviations:</strong>
+				<span>Provide expanded versions of acronyms and abbreviations using one of the techniques in <a href="https://www.w3.org/WAI/WCAG21/Understanding/abbreviations.html">SC 3.1.4 Abbreviations</a>. See <a href="https://www.w3.org/TR/coga-usable/#use-clear-words-pattern">COGA pattern 4.4.1</a>.</span></p> 
+				<p class="outcome">Outcome: <strong>Ambiguous pronunciation:</strong>
+				<span>Make available the characters, such as accent marks, needed to phonetically read words. Conditional tests TBD for Hebrew, Arabic, and possibly other languages; see slide 15 in <a href="https://docs.google.com/presentation/d/1Tve0g7pRufB5iShWwstwrfGdDtbn8YdsHEyN7Coj1vU/edit#slide=id.g1484687d409_0_20">Clear Language’s proposed tests for TPAC 2022</a>. See also <a href="https://www.w3.org/TR/coga-usable/#include-symbols-and-letters-necessary-to-decipher-the-words-pattern">COGA pattern 4.4.7</a> and <a href="https://www.w3.org/TR/WCAG22/#pronunciation">SC 3.1.6 Pronunciation</a>. </span></p>  
+				</section>
+				<section>
+				<h4>Sentence structure</h4>
+				<p class="outcome">Outcome: <strong>Tense:</strong>
+				<span>Use the verb tense that is easiest to understand in context. For example, in English, simpler verb tense also aids comprehension. Compare “They wanted” to “They would have liked.” Conditional test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#use-a-simple-tense-and-voice-pattern">COGA pattern 4.4.2</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G153.html">G153: Making the text easier to read</a>.</span></p>
+				<p class="outcome">Outcome: <strong>Voice: </strong>
+				<span>Use the voice that is easiest to understand in context. For example, in English, active voice identifies the subject and the object more clearly than passive voice. Compare “You must do it” to “It must be done.” Conditional test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#use-a-simple-tense-and-voice-pattern">COGA pattern 4.4.2</a>.</span></p>
+				<p class="outcome">Outcome: <strong>Number of ideas in a sentence: </strong>
+				<span>Aim to express one idea per sentence by avoiding multiple dependent clauses. <a href="https://www.plainlanguage.gov/guidelines/concise/write-short-sentences/">See “before” and “after” examples</a>. Test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#avoid-double-negatives-or-nested-clauses-pattern">COGA pattern 4.4.3</a>. </span></p>
+				<p class="outcome">Outcome: <strong>Unnecessary words or phrases: </strong>
+				<span>Avoid filler words, such as “that,” or phrases, such as “needless to say,” “and so forth,” and “going to go,” unless they are essential to aid understanding. Conditional test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#use-clear-words-pattern">COGA pattern 4.4.1</a>.</span></p>
+				<p class="outcome">Outcome: <strong>Double negatives: </strong>
+				<span>Don’t use double negatives to express a positive unless it is standard usage for that language or dialect. Conditional test info TBD; see Slide 22 in <a href="https://docs.google.com/presentation/d/1Tve0g7pRufB5iShWwstwrfGdDtbn8YdsHEyN7Coj1vU/edit#slide=id.g1484687d409_0_20">Clear Language’s proposed tests for TPAC 2022</a> and <a href="https://www.w3.org/TR/coga-usable/#avoid-double-negatives-or-nested-clauses-pattern">COGA pattern 4.4.3</a></span></p>
+				</section>
+				<section>
+				<h4>Implied Meaning</h4>
+				<p class="outcome">Outcome: <strong>Implied meaning in written words such as jokes, sarcasm, hyperbole, metaphors, similes, and idioms: </strong>
+				<span>Explain figurative language or non-literal language using one of the following methods: </span></p>
+				<ol>
+					<li>Use brackets next to any non-literal text, such as “If you are experiencing cold feet [feeling anxious] before starting, take a deep breath and jump in.” </li>
+					<li>Provide a pop-up definition. </li>
+					<li>Use supported markup such as personalization semantics that are being developed by <a href="https://www.w3.org/TR/adapt/">WAI-ADAPT</a>. Test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#use-literal-language-pattern">COGA pattern 4.4.4</a> and <a href="https://www.w3.org/TR/coga-usable/#explain-implied-content-pattern">COGA pattern 4.4.12</a> and <a href="https://www.w3.org/TR/WCAG22/#unusual-words">SC 3.1.3 Unusual words</a> (which focuses on “idioms” and “jargon”). </li>
+				</ol>
+				<p class="outcome">Outcome: <strong>Nonverbal cues in audio or video media such as tone of voice, facial expressions, body gestures, or music with emotional meaning: </strong>
+				<span>Explain in captions or audio descriptions. Test info TBD; see <a href="https://www.w3.org/TR/coga-usable/#use-literal-language-pattern">COGA pattern 4.4.4</a> and <a href="https://www.w3.org/TR/coga-usable/#explain-implied-content-pattern">COGA pattern 4.4.12</a>. </span></p>
+				</section>
 			</section>
 			<section class="guideline"  data-status="placeholder">
 				<h3>Clear purpose	</h3>
