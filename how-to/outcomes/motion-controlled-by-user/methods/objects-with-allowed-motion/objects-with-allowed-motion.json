@@ -1,0 +1,8 @@
+{
+  "method": {
+    "index": 2,
+    "title": "Objects with allowed motion",
+    "slug": "objects-with-allowed-motion",
+    "description": "Objects that contain allowable motion may not move for more than five seconds, including looping unless a pause, stop or hide mechanism is concurrently implemented."
+  }
+}
