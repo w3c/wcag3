@@ -6,6 +6,10 @@ title: Get Started
   <p>{{ outcome.description }}</p>
 </div>
 
+## Open Questions
+* issues or questions that are specific to the outcome
+* another issue or question
+  
 ## Summary
 
 Coming soon
