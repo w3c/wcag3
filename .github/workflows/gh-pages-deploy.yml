@@ -18,6 +18,7 @@ jobs:
 
       - name: Static content copy
         run: |
+          mkdir ./_site
           cp -r ./guidelines ./_site/guidelines
 
       - name: Eleventy Build how-to pages
