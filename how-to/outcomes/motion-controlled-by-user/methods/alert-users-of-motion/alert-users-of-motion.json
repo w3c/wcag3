@@ -1,0 +1,8 @@
+{
+  "method": {
+    "index": 3,
+    "title": "alert users that motion will begin",
+    "slug": "alert-users-of-motion",
+    "description": "Alert users that motion will begin and make information available in advance about potential motion triggers (A generic warning such as “This site may contain…” is NOT sufficient.  The warning must be specific to the control that will open the potential trigger. )"
+  }
+}
