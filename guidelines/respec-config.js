@@ -41,18 +41,6 @@ var respecConfig = {
 		companyURI: "loc.gov/",
 		w3cid: 90310
 	}, {
-		name: "Michael Cooper",
-		mailto: "cooper@w3.org",
-		company: "W3C",
-		companyURI: "https://www.w3.org/",
-		w3cid: 34017
-	}, {
-		name: "Shawn Lauriat",
-		mailto: "lauriat@google.com",
-		company: "Google, Inc.",
-		companyURI: "https://www.google.com/",
-		w3cid: 90646
-	}, {
 		name: "Chuck Adams",
 		mailto: "charles.adams@oracle.com",
 		company: "Oracle",
@@ -64,6 +52,25 @@ var respecConfig = {
 		company: "Nomensa",
 		companyURI: "https://www.nomensa.com/",
 		w3cid: 34017
+	}, {
+		name: "Kevin White",
+		mailto: "kevin@w3.org",
+		company: "W3C",
+		companyURI: "https://www.w3.org/",
+		w3cid: 71819
+	}],
+  formerEditors: [{
+		name: "Michael Cooper",
+		mailto: "cooper@w3.org",
+		company: "W3C",
+		companyURI: "https://www.w3.org/",
+		w3cid: 34017
+	}, {
+		name: "Shawn Lauriat",
+		mailto: "lauriat@google.com",
+		company: "Google, Inc.",
+		companyURI: "https://www.google.com/",
+		w3cid: 90646
 	}],
 	authors: [{
       name: "Wilco Fiers",
