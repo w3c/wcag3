@@ -101,6 +101,9 @@ var respecConfig = {
 	
 	group: "ag",
 	github: "w3c/wcag3",
+  
+  // name (without the @w3.org) of the public mailing to which comments are due
+  wgPublicList: "public-agwg-comments",
 
 	maxTocLevel: 4,
 	
