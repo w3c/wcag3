@@ -150,6 +150,20 @@ caption {
 	content: "§";
 	display: block;
 }
+.status-marker {
+  font-weight: 700;
+  color: #091832;
+  font-size: 11px;
+  font-size: .6125rem;
+  line-height: 1.4;
+  vertical-align: middle;
+  margin-left: 1em;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: #eed009;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 a[href].status-link {
 	color: var(--text);
 }
