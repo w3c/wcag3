@@ -144,25 +144,11 @@ function addStatusMarkers() {
 		var selector = '[data-status="' + status + '"]';
 		var statusSections = document.querySelectorAll(selector);
 		statusSections.forEach(function (section) {
-		    /* 
-			var statusLabel = "Section";
-			if (section.classList.contains("guideline")) statusLabel = "Guideline";
-			if (section.classList.contains("outcome")) statusLabel = "Outcome";
-			var div = document.createElement('div');
-			div.setAttribute('class', 'addition status-filter sticky');
-			div.innerHTML = '<a href="#section-status-levels" class="status-link">' + statusLabel + ' status: <strong>'
-				+ sentenceCase(status)
-				+ '</strong></a>. '
-				+ statusLabels[status]
-				// + ' See the Editor&#39;s note for details.';
-
-			// Insert div after the first heading:
-	           */
-	           var button = document.createElement("button");
-	           button.setAttribute('class', 'status-filter sticky');
-	           button.setAttribute("title", statusLabels[status]);
-	           button.setAttribute("type", "button");
-	           button.innerHTML = sentenceCase(status);
+       var button = document.createElement("button");
+       button.setAttribute('class', 'status-filter');
+       button.setAttribute("title", statusLabels[status]);
+       button.setAttribute("type", "button");
+       button.innerHTML = sentenceCase(status);
 	           
 			var wrapper = section.querySelector('.header-wrapper');
 			section.insertBefore(button, wrapper);
