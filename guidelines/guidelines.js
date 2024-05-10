@@ -63,13 +63,6 @@ function linkOutcome() {
 	})
 }
 
-/*function addGuidelineMarkers() {
-	document.querySelectorAll('.guideline').forEach(function(node){
-		var guidelineText = node.querySelector("p");
-		guidelineText.innerHTML = "<span class=\"inserted\">Guideline: </span>" + guidelineText.innerHTML;
-	})
- } */
-
 function addOutcomeMarkers() {
 	document.querySelectorAll('.outcome').forEach(function(node){
 		var outcomeText = node.querySelector("p");
@@ -345,14 +338,11 @@ function moveStatusFilterToToc() {
 // scripts before Respec has run
 function preRespec() {
 	adjustDfnData();
-	addGuidelineMarkers();
-	//linkHowTo();
 	linkOutcome();
 	addCategoryMarkers();
 	addErrorMarkers();
 	addRatingMarkers();
 	addSummaryMarkers();
-	//alternateFloats();
 }
 
 // scripts after Respec has run
@@ -367,6 +357,5 @@ function postRespec() {
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
-	//moveStatusFilterToToc();
 	removeGLNum();
 }
