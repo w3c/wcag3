@@ -32,4 +32,4 @@ jobs:
         with:
           publish_dir: _site 
           publish_branch: gh-pages
-          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
