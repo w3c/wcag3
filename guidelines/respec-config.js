@@ -21,7 +21,7 @@ var respecConfig = {
 	license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://w3c.github.io/silver/guidelines/",
+	edDraftURI: "https://w3c.github.io/wcag3/guidelines/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
