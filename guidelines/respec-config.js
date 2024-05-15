@@ -9,7 +9,7 @@ var respecConfig = {
 	specStatus: "ED",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	//publishDate:          "2013-08-22",
+	publishDate:          "2024-05-16",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName: "wcag-3.0",
@@ -45,13 +45,13 @@ var respecConfig = {
 		mailto: "charles.adams@oracle.com",
 		company: "Oracle",
 		companyURI: "https://www.oracle.com/",
-		w3cid: 34017
+		w3cid: 104852
 	}, {
 		name: "Alastair Campbell",
 		mailto: "acampbell@nomensa.com",
 		company: "Nomensa",
 		companyURI: "https://www.nomensa.com/",
-		w3cid: 34017
+		w3cid: 44689
 	}, {
 		name: "Kevin White",
 		mailto: "kevin@w3.org",
