@@ -9,7 +9,7 @@ var respecConfig = {
 	specStatus: "ED",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	publishDate:          "2024-05-16",
+	publishDate:          "2024-05-28",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName: "wcag-3.0",
@@ -73,12 +73,12 @@ var respecConfig = {
 		w3cid: 90646
 	}],
 	authors: [{
-      name: "Wilco Fiers",
-      mailto: "wilco.fiers@deque.com",
-      company: "Deque Systems, Inc.",
-      companyURI: "https://www.deque.com/",
-      w3cid: 43334
-    }],
+    name: "Wilco Fiers",
+    mailto: "wilco.fiers@deque.com",
+    company: "Deque Systems, Inc.",
+    companyURI: "https://www.deque.com/",
+    w3cid: 43334
+  }],
 	
 	// authors, add as many as you like.
 	// This is optional, uncomment if you have authors as well as editors.
