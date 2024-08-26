@@ -1,9 +1,9 @@
 <div class="sub-header">
   <div class="page-width">
     <ul class="breadcrumb">
-      <li><a href="https://w3c.github.io/silver/guidelines">WCAG 3.0</a></li>
+      <li><a href="/">WCAG 3.0 Outcomes</a></li>
       {%- if outcome.slug and outcome.title %}
-        <li><a href="/{{ outcome.slug }}/">{{ outcome.title }} Methods & How To's</a></li>
+        <li><a href="/{{ outcome.slug }}/">{{ outcome.title }}</a></li>
         {%- if type == "method" %}
           <li><a href="/{{ outcome.slug }}/methods">Methods</a></li>
           {%- if subtitle == 'Introduction' %}
@@ -46,17 +46,6 @@
         <li>{% include 'link.html', text: 'Test',                  href: '/test/', base: baseUrl %}</li>
         <li>{% include 'link.html', text: 'Background',            href: '/background/', base: baseUrl %}</li>
         <li>{% include 'link.html', text: 'Technical Definitions', href: '/definitions/', base: baseUrl %}</li>
-      </ul>
-    </nav>
-    {%- elsif type == 'activity' %}
-    {%- assign baseUrl = '/' | append: outcome.slug | append: '/activities' %}
-    <nav aria-label="Activity navigation" class="nav-list">
-      <ul>
-        <li>{% include 'link.html', text: 'Plan',    href: '/plan/',    base: baseUrl %}</li>
-        <li>{% include 'link.html', text: 'Design',  href: '/design/',  base: baseUrl %}</li>
-        <li>{% include 'link.html', text: 'Develop', href: '/develop/', base: baseUrl %}</li>
-        <li>{% include 'link.html', text: 'Edit',    href: '/edit/',    base: baseUrl %}</li>
-        <li>{% include 'link.html', text: 'Test',    href: '/test/',    base: baseUrl %}</li>
       </ul>
     </nav>
     {%- endif %}

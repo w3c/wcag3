@@ -1,0 +1,8 @@
+{
+  "method": {
+    "index": 1,
+    "title": "Using the default focus indicator and checking contrast",
+    "slug": "default-focus-indicator-check-contrast",
+    "description": "The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked."
+  }
+}
