@@ -154,3 +154,11 @@ main p {
   padding: .5em 1em;
   border-left-width: 1em;
 }
+
+.nested li ol {
+  list-style-type: lower-alpha;
+}
+
+.nested li ol ol {
+  list-style-type: lower-roman;
+}
