@@ -20,12 +20,16 @@ For each image:
    1. No, see [complex images](complex-images/) [stop]
    2. Yes, continue
 
-3. Is the image part of a control and is the name of the control sufficient to describe the image?
+3. Is the image part of a control?
    1. Yes, see [control images](control-images/) [stop]
    2. No, continue
 
-4. Has an [equivalent alternative text](equivalent-alternative-text) been provided?
-   1. Yes, pass [stop]
+4. Are there multiple images which are all views of one object?
+   1. Yes, see [multiple images](multiple-images/) [stop]
+   2. No, continue
+
+5. Does the image use another method of providing an alternative?
+   1. Yes, see [equivalent alternative text](equivalent-alternative-text) pass [stop]
    2. No, fail [stop]
 
 </div>
