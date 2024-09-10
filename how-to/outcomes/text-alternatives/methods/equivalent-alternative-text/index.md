@@ -17,4 +17,4 @@ subtitle: Introduction
 * **Author technique (HTML, EPUB, PDF):** Using ```alt``` attributes to describe images.
 * **Author technique (iOS)**: Using ```accessibilityLabel``` to describe images.
 * **Author technique (Android)**: Using ```contentDescription``` to describe images.
-* **Author technique (VR platform X): Using ```X``` attribute to describe images.
+* **Author technique (VR platform X)**: Using ```X``` attribute to describe images.
