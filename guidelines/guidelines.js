@@ -63,13 +63,6 @@ function linkOutcome() {
 	})
 }
 
-function addGuidelineMarkers() {
-	document.querySelectorAll('.guideline').forEach(function(node){
-		var guidelineText = node.querySelector("p");
-		guidelineText.innerHTML = "<span class=\"inserted\">Guideline: </span>" + guidelineText.innerHTML;
-	})
-}
-
 function addOutcomeMarkers() {
 	document.querySelectorAll('.outcome').forEach(function(node){
 		var outcomeText = node.querySelector("p");
@@ -148,31 +141,13 @@ var statusLabels = {
 function addStatusMarkers() {
 	var statusKeys = Object.keys(statusLabels);
 	statusKeys.forEach(function (status) {
-		var selector = '[data-status="' + status + '"]';
-		var statusSections = document.querySelectorAll(selector);
-		statusSections.forEach(function (section) {
-		    /* 
-			var statusLabel = "Section";
-			if (section.classList.contains("guideline")) statusLabel = "Guideline";
-			if (section.classList.contains("outcome")) statusLabel = "Outcome";
-			var div = document.createElement('div');
-			div.setAttribute('class', 'addition status-filter sticky');
-			div.innerHTML = '<a href="#section-status-levels" class="status-link">' + statusLabel + ' status: <strong>'
-				+ sentenceCase(status)
-				+ '</strong></a>. '
-				+ statusLabels[status]
-				// + ' See the Editor&#39;s note for details.';
-
-			// Insert div after the first heading:
-	           */
-	           var button = document.createElement("button");
-	           button.setAttribute('class', 'status-filter sticky');
-	           button.setAttribute("title", statusLabels[status]);
-	           button.setAttribute("type", "button");
-	           button.innerHTML = sentenceCase(status);
-	           
-			var wrapper = section.querySelector('.header-wrapper');
-			section.insertBefore(button, wrapper);
+		var selector = '[data-status="' + status + '"] > .header-wrapper';
+		var headings = document.querySelectorAll(selector);
+		headings.forEach(function (heading) {
+      var statusMarker = document.createElement("span");
+      statusMarker.classList.add("status-marker");
+      statusMarker.innerHTML = sentenceCase(status);
+      heading.firstElementChild.insertAdjacentElement('beforeend', statusMarker);
 		})
 	});
 }
@@ -345,14 +320,11 @@ function moveStatusFilterToToc() {
 // scripts before Respec has run
 function preRespec() {
 	adjustDfnData();
-	addGuidelineMarkers();
-	//linkHowTo();
 	linkOutcome();
 	addCategoryMarkers();
 	addErrorMarkers();
 	addRatingMarkers();
 	addSummaryMarkers();
-	//alternateFloats();
 }
 
 // scripts after Respec has run
@@ -367,6 +339,5 @@ function postRespec() {
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
-	//moveStatusFilterToToc();
 	removeGLNum();
 }

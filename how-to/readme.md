@@ -4,7 +4,7 @@
 
 **Prerequisites**: This project requires [NodeJS](https://nodejs.org/)
 
-From the repository root, run the following command to install all necessary dependencies:
+From the ```how-to``` directory in the repository, run the following command to install all necessary dependencies:
 
 ```sh
 npm ci
@@ -12,7 +12,7 @@ npm ci
 
 ## Local development
 
-To run this project locally, use the following command in the repository's root directory. This will start a server on `http://localhost:8080/`. The server has hot-reload enabled so changes to files will be reflected in the browser immediately. 
+To run this project locally, use the following command in the repository's ```how-to``` directory. This will start a server on `http://localhost:8080/`. The server has hot-reload enabled so changes to files will be reflected in the browser immediately. 
 
 ```sh
 npm run serve

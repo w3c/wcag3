@@ -9,7 +9,7 @@ var respecConfig = {
 	specStatus: "ED",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	//publishDate:          "2013-08-22",
+	publishDate:          "2024-05-28",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName: "wcag-3.0",
@@ -21,7 +21,7 @@ var respecConfig = {
 	license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://w3c.github.io/silver/guidelines/",
+	edDraftURI: "https://w3c.github.io/wcag3/guidelines/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -41,6 +41,25 @@ var respecConfig = {
 		companyURI: "loc.gov/",
 		w3cid: 90310
 	}, {
+		name: "Chuck Adams",
+		mailto: "charles.adams@oracle.com",
+		company: "Oracle",
+		companyURI: "https://www.oracle.com/",
+		w3cid: 104852
+	}, {
+		name: "Alastair Campbell",
+		mailto: "acampbell@nomensa.com",
+		company: "Nomensa",
+		companyURI: "https://www.nomensa.com/",
+		w3cid: 44689
+	}, {
+		name: "Kevin White",
+		mailto: "kevin@w3.org",
+		company: "W3C",
+		companyURI: "https://www.w3.org/",
+		w3cid: 71819
+	}],
+  formerEditors: [{
 		name: "Michael Cooper",
 		mailto: "cooper@w3.org",
 		company: "W3C",
@@ -52,26 +71,14 @@ var respecConfig = {
 		company: "Google, Inc.",
 		companyURI: "https://www.google.com/",
 		w3cid: 90646
-	}, {
-		name: "Chuck Adams",
-		mailto: "charles.adams@oracle.com",
-		company: "Oracle",
-		companyURI: "https://www.oracle.com/",
-		w3cid: 34017
-	}, {
-		name: "Alastair Campbell",
-		mailto: "acampbell@nomensa.com",
-		company: "Nomensa",
-		companyURI: "https://www.nomensa.com/",
-		w3cid: 34017
 	}],
 	authors: [{
-      name: "Wilco Fiers",
-      mailto: "wilco.fiers@deque.com",
-      company: "Deque Systems, Inc.",
-      companyURI: "https://www.deque.com/",
-      w3cid: 43334
-    }],
+    name: "Wilco Fiers",
+    mailto: "wilco.fiers@deque.com",
+    company: "Deque Systems, Inc.",
+    companyURI: "https://www.deque.com/",
+    w3cid: 43334
+  }],
 	
 	// authors, add as many as you like.
 	// This is optional, uncomment if you have authors as well as editors.
@@ -94,6 +101,9 @@ var respecConfig = {
 	
 	group: "ag",
 	github: "w3c/wcag3",
+  
+  // name (without the @w3.org) of the public mailing to which comments are due
+  wgPublicList: "public-agwg-comments",
 
 	maxTocLevel: 4,
 	
