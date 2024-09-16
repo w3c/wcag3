@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Explainer for W3C Accessibility Guidelines (WCAG) 3.0</title>
+    <script src="respec-config.js" class="remove"></script>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
+    <link rel="stylesheet" type="text/css" href="guidelines.css" />
+</head>
+
+<body>
+    <section id='abstract'>
+        <p>This Explainer accompanies the drafts of the W3C Accessibility Guidelines (WCAG) 3.0.
+        <p>
+    </section>
+    <section id='sotd'>
+        <p>This is a first draft of the Explainer. It is not normative (informative) and is not expected to become a W3C Recommendation. It provides background on W3C Accessibility Guidelines (WCAG) 3.0.
+        </p>
+    </section>
+    <section id="intro">
+        <h2>Introduction</h2>
+
+        <div class="ednote">
+            <p>The current proposal for WCAG 3 is made up of different parts and sections, including:</p>
+            <ul>
+                <li>WCAG3</li>
+                <li>WCAG3 Explainer</li>
+                <li>Guideline How-tos</li>
+                <li>Outcomes</li>
+                <li>Methods</li>
+                <li>Functional categories</li>
+            </ul>
+            <p>These parts and sections are inter-related and are continually being refined and updated as more sections are developed. Each publication of WCAG 3 will include updates to some, but not necessarily every part and section. This process will facilitate quarterly updates which provides opportunities for public review and comment throughout the evolution of the guidelines. As a result, the document is a work-in-progress. Content will evolve and there may be changes to layout and style that are not yet reflected in all parts of the present release and will be reflected in future releases. The parts and sections updated in this release are:</p>
+            <ul>
+                <li>First draft of the WCAG3 Explainer which takes explanatory material out of WCAG3 to improve usability.</li>
+                <li>New conformance section on user generated content and the glossary definition of user generated content.
+                </li>
+                <li>A new proposal revising the Methods template to address comments from the FPWD. This proposal was done in partnership with the ACT task force. </li>
+            </ul>
+        </div>
+        <p>W3C Accessibility Guidelines (WCAG) 3.0 is a successor to Web Content Accessibility Guidelines 2.2 [[WCAG22]] and previous versions, but does not deprecate WCAG 2.X. It will also incorporate content from and partially extend User Agent Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 10 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly. WCAG 3.0 originally had a project name of "Silver", so the original groups working on it and much of the early design work carries that project name.
+        </p>
+        <p>This Explainer includes: </p>
+        <ul>
+            <li>background information on the development of WCAG 3.0;</li>
+            <li>goals for WCAG 3.0;</li>
+            <li>explanation of design decisions;</li>
+            <li>and differences from the current WCAG 2 guidelines to make it easier for people to understand the changes. </li>
+        </ul>
+    </section>
+    <section id="background">
+        <h2>Background and development history</h2>
+        <p>The Silver Task Force of the Accessibility Guidelines Working Group and the W3C Silver Community group have partnered to produce the needs, requirements, and structure for the new accessibility guidance. To date, the group has:
+        <ol>
+            <li>Developed a list of Web Content Accessibility Guidelines <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Job_Stories_for_Stakeholders"> stakeholders and their job stories</a></li>
+            <li>Researched needs for a new major version of the Web Content Accessibility Guidelines; (<a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver Research Project</a>)</li>
+            <li>Developed <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Problem_Statements">problem statements and opportunities</a> to improve accessibility guidance; </li>
+            <li>Received <a href="https://www.w3.org/community/silver/2018/04/23/suggestions-of-silver-design-sprint/">input from industry leaders</a> for directions to proceed to address the problem statements; The full <a href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Final Report of the Silver Design Sprint</a> is incorrectly labeled as a draft. It contains all the information on the Design Sprint. </li>
+            <li>Drafted <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG3</a>; </li>
+            <li>Created and tested prototypes for aspects of the project; and </li>
+            <li>Created a <a href="https://www.w3.org/TR/2021/WD-wcag-3.0-20210121/">First Public Working Draft of WCAG3</a> and quarterly updated <a href="https://www.w3.org/TR/wcag-3.0/">Working Drafts</a>. </li>
+        </ol>
+    </section>
+
+    <section id="goals">
+        <h2>Goals</h2>
+        <p>The goal of WCAG 3.0 is to provide information that can be used to improve the accessibility of products on a variety of platforms. WCAG 3.0 uses a model that allows it to address more disability needs than WCAG 2.X, as well as address publishing requirements and emerging technologies such as web XR (augmented, virtual and mixed reality) and voice input. It will also provide non-normative (informative) information about the ways web technologies need to work with authoring tools, user agents, and assistive technologies. The WCAG 3.0 model is designed to support better coverage across disabilities and be easier to maintain, so that the new model will be more enduring over time as technologies evolve.</p>
+        <section id="inclusionGoals">
+            <h3>Goals for Inclusion</h3>
+            <p>The creation process for the guidelines should:</p>
+            <ul>
+                <li>Actively recruit a diverse range of people with disabilities. Review and monitor whether people are included. Periodically evaluate inclusive features of available tooling and procedures.</li>
+                <li>Facilitate global participation and feedback.</li>
+            </ul>
+            <p class="ednote">W3C strives to be as inclusive as possible, and has actively sought participation and input from a broad range of stakeholder groups. We recognize, however, that there is always room for improvement in practices to support inclusion and representation. As you evaluate this document, please consider whether there are ways the Working Group can better support your review, feedback, or inclusion within the process of creating this standard. We welcome feedback on this question as part of your comments.</p>
+        </section>
+        <section id="ContentGoals">
+            <h3>Goals for Content</h3>
+            <ul>
+                <li>Support the needs of a wide range of people with disabilities and recognize that people have individual and multiple needs.
+                <li>Be flexible enough to support the needs of people with disabilities and keep up with emerging technologies. The information structure allows guidance to be added or removed.
+                <li>Be written in plain language, as easy as possible to understand. We need a definition of plain language that includes the ease of translation. Ideally, it will be a broadly accepted definition internationally.
+                <li>Improve the ability to support automated testing where appropriate and provide a procedure for repeatable tests when manual testing is appropriate.
+                <li>Be data-informed and evidence-based where possible. We recognize that research and evidence are influenced by the number of people with a particular disability, by the size of the body of research, and by the difficulty in capturing data regarding some disabilities or combination of disabilities. The intent is to make informed decisions wherever possible to ensure that the needs of all people with disabilities are prioritized, including needs that differ from the majority. In situations where there is no evidence or research, valid data-gathering methods should be used to obtain and evaluate information from advocacy groups, people with lived experience and other subject matter experts.
+                <li>Be written so the Guideline content is usable in adaptable and customizable ways. For example, Silver content is available to be extracted by users to adapt to their needs.
+            </ul>
+        </section>
+        <section id="ConformanceGoals">
+            <h3>Goals for Conformance</h3>
+            <p>The goals are based on the <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver research</a>, the results from the <a href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Silver Design Sprint</a>, and input from the Accessibility Guidelines Working Group, the Silver Task Force and the Silver Community Group.</p>
+            <ul>
+                <li>Better align conformance with the experiences of people with disabilities, and keep in mind that people with different disabilities have different experiences.</li>
+                <li>Treat the needs of all disabilities equitably. </li>
+                <li>Support a measurement and conformance structure that includes guidance for a broad range of disabilities. This includes more attention to the needs of low vision and cognitive accessibility, whose needs may not fit the true/false statement success criteria of WCAG 2.x. </li>
+                <li>Consider the needs of more organizations.</li>
+                <li>Be user-oriented instead of page-oriented. Think about what the person is trying to do.</li>
+                <li>Wherever possible, preserve the organization's investment in training, tooling, and knowledge. </li>
+                <li>Support the ability for organizations to choose parts of their site or product for conformance (a logical subset of a site or product).</li>
+                <li>Create a more flexible conformance model that addresses the challenges in applying the 2.x conformance model to large, complex, or dynamic websites and web applications.
+                    <ul>
+                        <li>Help organizations prioritize things that have a greater impact on improving the experience of people with disability. </li>
+                        <li>Develop a more flexible method of measuring conformance that is better suited to accommodate dynamic or more regularly updated content.</li>
+                    </ul>
+                <li>Reduce the burden of “accessibility supported” as an author responsibility, and help developers of authoring tools, browsers, and assistive technologies learn the behaviors that users expect of their products. <span class="ednote"> Note: This goal originated as a suggestion from the Silver Design Sprint. It requires more detailed discussion in AGWG. It does not yet have consensus. </span>
+                </li>
+                <li>Improve tests so that repeated tests get more consistent results.</li>
+                <li>Increase the ability to create more automated tests so that the cost of accessibility test could potentially be reduced.</li>
+                <li>Where possible, do not increase the manual accessibility testing burden. </li>
+            </ul>
+        </section>
+    </section>
+    <section id="nonGoals">
+        <h2>Non-Goals or Out-of-Scope</h2>
+        <ul>
+            <li>Non-web emerging technologies (this may change as the charter is clarified)
+            <li>Normative requirements for platforms, operating systems, software in the web technology stack (etc.)
+                <ul>
+                    <li>We want to point to external accessibility guidance by the vendor
+                    <li>We want to document the needs of people with disabilities where vendor accessibility guidance is lacking
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Explanation Behind Decisions</h2>
+        <p>The following sections describe the decision process behind some of the more difficult or controversial topics. </p>
+        <section>
+            <h3>Structure of these guidelines</h3>
+            <figure id="guidelines-structure-diagram" aria-labelledby="guidelines-structure-description" class="figure-float">
+                <img alt="" src="../guidelines/img/structure-core.svg" />
+                <figcaption>Core Structure</figcaption>
+            </figure>
+            <p><a href="#guidelines-structure-diagram">Figure 1</a> shows <span id="guidelines-structure-description">the core structure of WCAG 3.0. WCAG 3.0 has three levels of content with associated documentation. Guidelines form the top level. Each guideline contains multiple outcomes, with associated critical errors and outcomes scoring. Each outcome contains multiple methods, with an associated description and examples, tests, and test scoring.</span></p>
+            <section>
+                <h4>Guidelines structure</h4>
+                <p>Guidelines provide a high-level, plain-language version of the content for managers, policy makers, individuals who are new to accessibility, and other individuals who need to understand the concepts but not dive into the technical details. They provide an easy-to-understand way of organizing and presenting the outcomes so that non-experts can learn about and understand the concepts. Each guideline includes a unique, descriptive name along with a high-level plain-language summary. Guidelines address functional needs on specific topics, such as contrast, forms, readability, and more. Guidelines group related outcomes and are technology-independent.</p>
+                <p>Guidelines are the essential part of W3C Accessibility Guidelines. Structuring the guidelines to provide information for accessibility beginners and other non-technical stakeholders addresses some of the usability issues identified in the Silver research and suggestions from the Silver Design Sprint.
+            </section>
+            <section>
+                <h4>Outcomes structure</h4>
+                <p>Each guideline contains multiple outcomes. Outcomes result from practices that reduce or eliminate barriers that people with disabilities experience. Outcomes form the basis of a flexible and expansive architecture for accessibility guidelines that closely relates to the needs of people with disabilities. Outcomes are designed for use by developers, testers, and other technical experts.
+                </p>
+                <p> Outcomes are written as testable criteria and include information on how to score the outcome in an optional <a href="../guidelines/#conformance-claims">Conformance Claim</a>. Within a guideline, outcomes have an AND relationship. All relevant outcomes must be addressed but not all outcomes will apply to all technologies and situations. When an outcome does not apply, it is marked NA in the scoring.</p>
+                <p>Outcomes were not a result of the Design Sprint, but came from a joint meeting of AGWG to address scoring. Adding a level devoted to normative scoring addressed a number of issues:
+                <ul>
+                    <li>The need for testable statements that were stable. This allows testing companies and regulators to state that the testable statement is not subject to change with methods. There was discussion of making the Methods normative to address this concern, but the consensus was that it was better to add a layer that was technology neutral so it could include emerging technologies.
+                    </li>
+                    <li>A new layer gave us the ability to add precise definitions as well as plain language. </li>
+                    <li>Outcomes allow guidelines to multiple barriers to address more complex functional needs of people with disabilities. All the Outcomes could then be required. For example: For a headings guideline could have multiple outcomes that require all outcomes to pass: it needs to have semantic text AND visual formating AND describe the text content following the heading.
+                </ul>
+                <p><a href="https://lists.w3.org/Archives/Public/w3c-wai-gl/2021AprJun/0192.html">Meeting minutes of the
+                        joint meeting of 14 May 2020</a>.
+                <section>
+                    <h4>Critical errors</h4>
+                    <p class="ednote">Critical errors section is being revised. The following describes the proposal in the First Public Working Draft. This will probably change in future Working Drafts. </p>
+                    <p><a href="../guidelines/#outcomes">Outcomes</a> include the related critical errors that can occur and how to identify them. Not all outcomes have critical errors. Any critical errors will result in the lowest score for the outcome.</p>
+                    <p>Evaluating processes requires counting critical errors that occur within the process and associated views. Critical errors are:</p>
+                    <ul>
+                        <li>Errors located anywhere within the view that stop a user from being able to use that view (examples: flashing, keyboard trap, audio with no pause);</li>
+                        <li>Errors that when located within a process stop a user from completing a process (example: submit button not in tab order); and</li>
+                        <li>Errors that when aggregated within a view or across a process stop a user from using the view or completing the process (example: a large amount of confusing, ambiguous language).
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Outcome rating</h4>
+                    <p class="ednote">Outcome rating section is being revised. The following describes the proposal in the First Public Working Draft. This will probably change in future Working Drafts. </p>
+                    <p>Each outcome is rated on a scale of 0 to 4. The rating model is designed to be flexible in order to allow more functional needs of people with disabilities to be included in the guidelines.
+                    </p>
+                    <p>Each outcome defines the rating criteria used for that outcome. The rating criteria are designed to be technology agnostic but tie to the available methods so that method level scoring can be rolled up when possible or the tester can make an informed judgment call about the outcome rating. </p>
+
+                </section>
+            </section>
+            <section>
+                <h3>Methods structure</h3>
+                <p class="ednote">The Method structure is being revised to merge more closely with ACT Rules and reduce ambiguity in testing. There is an example for Text Alternatives in the latest Working Draft. </p>
+            </section>
+        </section>
+        <section>
+            <h3>Functional needs</h3>
+            <p>The development of WCAG 3 guidelines starts with functional needs. A functional need is a statement that describes a specific gap in one's ability, or a specific mismatch between ability and the designed environment or context. Functional needs are applied to specific topics (for example: contrast, forms, readability, and more) to identify the barriers experienced by people with disabilities. The barriers in these topics inform the <a href="../guidelines/#outcomes">outcomes</a>, which state the conditions to test whether the functional needs have been met. Functional needs are documented in the how-tos, supplementary material accompanying the guidelines.</p>
+            <p class="ednote">The work of cataloging functional needs is still in process and will continue after the First Public Working Draft. Those interested can see more information in the draft <a href="https://www.w3.org/WAI/GL/WCAG3/2020/functional-needs/">Functional Needs</a>.</p>
+        </section>
+        <section>
+            <h3>Functional categories</h3>
+            <p>Functional categories of disabilities group the functional needs of users with disabilities. Functional categories are used when reporting test results in the optional conformance claim.</p>
+            <p>Functional categories are similar to functional performance criteria in <a href="https://www.access-board.gov/ict/#chapter-3-functional-performance-criteria">Section 508</a> [[508-criteria]] and functional performance statements in <a href="https://www.etsi.org/deliver/etsi_tr/101500_101599/101550/01.01.01_60/tr_101550v010101p.pdf">en 301 549</a> [[en-301-549]]. The current list of functional categories is: </p>
+            <ul>
+                <li>Vision and Visual</li>
+                <li>Hearing and Auditory</li>
+                <li>Sensory Intersections</li>
+                <li>Mobility </li>
+                <li>Motor</li>
+                <li>Physical and Sensory Intersections</li>
+                <li>Speech</li>
+                <li>Attention</li>
+                <li>Language and Literacy</li>
+                <li>Learning</li>
+                <li>Memory</li>
+                <li>Executive</li>
+                <li>Mental Health</li>
+                <li>Cognitive and Sensory Intersections</li>
+            </ul>
+            <p class="ednote">The list of functional categories is a draft. Creating meaningful groupings is still a work in progress and currently evolving along with the work on cataloging functional needs. This work will continue after the First Public Working Draft. Those interested can see more information in the document <a href="https://www.w3.org/WAI/GL/WCAG3/2020/functional-needs/">DRAFT Functional Needs</a>.
+            </p>
+        </section>
+        <section>
+            <h4>How the parts work together</h4>
+
+            <p>The core structure has inter-relationships with supporting documents and the scoring process. <span id="guidelines--full-structure-description"> Functional needs inform user needs (captured in the How-To), outcomes, and functional categories. The tests within methods are used to inform the scores for each outcome. Then outcome scores are aggregated to create scores by functional category and an overall score. These then result in a bronze rating. Silver and gold ratings build on the bronze rating to demonstrate improved accessibility. General information about guidelines is available in How-To documents. </span></p>
+            <figure id="guidelines-full-structure-diagram" aria-labelledby="guidelines--full-structure-description" class="figure-full"> <img src="../guidelines/img/structure-scoring.svg" />
+                <figcaption>Documentation and Scoring Structure from First Public Working Draft</figcaption>
+            </figure>
+            <p class="ednote">The Scoring process is in the process of extensive revision. </p>
+        </section>
+        <section>
+            <h3>Conformance Levels</h3>
+            <p class="ednote">The Conformance Levels are being revised with the Scoring. The following paragraph describes the proposal in the First Public Working Draft. </p>
+            <p>WCAG 3 has an optional scoring system that can better inform organizations on the quality of their accessibility effort. The optional conformance levels provide a way for organizations to report their conformance in simple manner. The bronze level is based on the score in each functional category and the overall score. Silver and gold levels require conforming at the bronze level plus additional improved usability for people with disabilities.</p>
+        </section>
+        <section>
+            <h3>Selecting a Representative Sample</h3>
+            <p class="ednote">This is the basics of the proposal from Q2 2020 that was approved to go into the FPWD. There are still many details that need to be worked out and many objections to be resolved.
+            <ul>
+                <li>Essential functions vary by industry -- gaming will be different than e-commerce. We can't say what has to be tested, the organization needs to determine what is essential.
+                <li>The organization (or author) defines the workflows and components, then prioritizes the primary workflows and components to test. See WCAG-EM Steps 2 and 3 to help determine what workflows and components are representative samples.
+                <li>The ability to get to the workflow, (like login) also must be accessible.
+                <li>There are going to be technical violations of success criteria that don't impact accessibility (for example, missing alt text that are explained in the text or the same HTML id attribute that aren't ever referenced) that shouldn't negatively impact the score. <span class="ednote">NOTE: There will be further development and amplification of what shouldn't negatively impact the score. The concept of pass or fail should no longer be binary, but accounts for a concept of sufficient</span>
+                <li>People still need to have access to material that still isn't in the primary flow. Accessibility can be tested even if it doesn't have a flow. <span class="ednote">NOTE: There needs to be a way that important sections, like navigation and footer, don't get overlooked because they aren't part of the flow. </span>
+            </ul>
+            <p><a href="https://www.w3.org/2020/08/11-ag-minutes.html#item04">Minutes of Joint AGWG Silver "Deep Dive" meeting on Representive Sampling</a> where the group agreed to return to this discussion in a later draft. </p>
+        </section>
+    </section>
+</body>
+
+</html>
