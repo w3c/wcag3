@@ -3,26 +3,23 @@
 <head>
   <meta charset="utf-8">
   {%- include "layout/page-title.html" %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body>
-  {% include "layout/top-header.html" %}
+<body dir="ltr">
+  {% include "layout/header.html" %}
   {%- if outcome.slug %}
   {%-   include "layout/sub-header.html" %}
   {%- endif %}
-  <main id="main" tabindex="-1">
-    {%- if subtitle %}
-    <h2>{{ subtitle }}</h2>
-    {%- endif %}
-    {{ content }}
-  </main>
-  <footer>
-    <div class="page-width">
-      <h2><a href="https://w3.org/WAI/">
-        W3C Web Accessibility Initiative (WAI)
-      </a></h2>
-    </div>
-  </footer>
+  <div class="default-grid with-gap leftcol">
+    <main id="main" class="standalone-resource__main" tabindex="-1">
+      {%- if subtitle %}
+      <h2>{{ subtitle }}</h2>
+      {%- endif %}
+      {{ content }}
+    </main>
+  </div>
+  {% include "layout/site-footer.html" %}
 </body>
 </html>
