@@ -1,0 +1,11 @@
+<div class="sidenav">
+  <nav class="sn-contents" aria-label="Outcome navigation">
+    {%- assign base = '/' | append: outcome.slug %}
+    <ul class="sidenav--list">
+      <li>{% include 'link.html', href: '/', base: base, text: outcome.title %}</li>
+      <li>{% include 'link.html', href: '/methods/', base: base, text: 'Methods' %}</li>
+      <li>{% include 'link.html', href: '/user-needs/', base: base, text: 'User Needs' %}</li>
+      <li>{% include 'link.html', href: '/research/', base: base, text: 'Research' %}</li>
+    </ul>
+  </nav>
+</div>

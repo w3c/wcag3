@@ -1,5 +1,6 @@
 ---
 title: Research
+layout: outcome.html
 ---
 
 * Zhao, Dandan, and Bo Pan. 2021. “[Psychological Cognition and Thinking Needs in Visual Communication Design.](https://doi.org/10.1051/e3sconf/202123605070)” Edited by M. Anpo and F. Song. E3S Web of Conferences 236: 05070. 

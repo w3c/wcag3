@@ -1,11 +1,7 @@
 ---
 title: User Needs
+layout: outcome.html
 ---
-
-<div class="normative">
-  <p>{{ outcome.description }}</p>
-</div>
-<!-- don't change anything above this line --> 
 
 ## Barriers Encountered
 

@@ -10,9 +10,12 @@
 <body dir="ltr">
   {% include "layout/header.html" %}
   <div class="default-grid with-gap leftcol">
-    <main id="main" class="standalone-resource__main" tabindex="-1">
-      {%- if subtitle %}
-      <h2>{{ subtitle }}</h2>
+    {% include "layout/outcome-nav.html" %}
+    <main id="main" tabindex="-1">
+      {%- if title %}
+        <h1>{{ title }}</h1>
+      {%- else %}
+        <h1>{{ outcome.title }}</h1>
       {%- endif %}
       {{ content }}
     </main>

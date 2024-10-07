@@ -2,6 +2,10 @@ main {
 	display: block;
 }
 
+main, .sidenav {
+	margin-top: 2em;
+}
+
 .minimal-header {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 8;
@@ -101,11 +105,19 @@ transform: translateY(-4em);
 opacity: 0;
 }
 
-h1 {
-	padding-top: 33px;
-}
 h1 span {
 	display: block;
 	font-size: .5em;
 	margin-bottom: 0.25em;
+}
+
+main h2:first-of-type {
+	
+}
+
+.normative {
+	border: solid 1px var(--cloudy-subtle);
+	margin-top: 1em;
+	padding: .5em 1em;
+	border-left-width: 1em;
 }

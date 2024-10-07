@@ -1,6 +1,5 @@
 ---
-layout: layout.html
-breadcrumb: Methods
+layout: outcome.html
 ---
 
 {{ content }}

@@ -1,4 +1,5 @@
 ---
+title: Methods
 layout: layout/methods.md
 ---
 
