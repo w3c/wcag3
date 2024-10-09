@@ -17,11 +17,11 @@ For each focusable item:
     1. Yes, See Text Alternative Style Guide Assertion  (Enhanced), continue
     2. No, continue
 
-3. Is the user-agent default focus indicator used? (Prerequisite)
+3. Is the user agent default focus indicator used? (Prerequisite)
     1. Yes, see [using the default indicators](default-focus-indicator/) (continue)
     2. No, continue
 
-4. Is the user-agent default focus indicator used, and meets contrast across backgrounds? (Baseline)
+4. Is the user agent default focus indicator used, and meets contrast across backgrounds? (Baseline)
     1. Yes, see [using the default focus indicator and checking contrast](default-focus-indicator-check-contrast/) (stop)
     2. No, continue
 
