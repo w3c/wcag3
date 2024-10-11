@@ -1,33 +1,64 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const listOutcomes = require('./build/list-outcomes');
+const { basename, dirname } = require("path");
+const listOutcomes = require("./build/list-outcomes");
 
-module.exports = function(eleventyConfig) {
+function formatSlug(str) {
+  if (!str) return;
+  const parts = str.split("-");
+  return parts.map((part) => part[0].toUpperCase() + part.slice(1)).join(" ");
+}
+
+function generateParent(page) {
+  const inputPath = page.inputPath.replace(/\/index\.md$/, "");
+  const inputDirname = dirname(inputPath);
+  if (inputDirname === ".") return undefined;
+  return formatSlug(basename(dirname(inputPath)));
+}
+
+module.exports = function (eleventyConfig) {
   // Ignore a couple things
-  eleventyConfig.ignores.add('**/readme.md');
-  eleventyConfig.ignores.add('_build/**');
-  eleventyConfig.ignores.add('**/_template/**');
+  eleventyConfig.ignores.add("**/readme.md");
+  eleventyConfig.ignores.add("_build/**");
+  eleventyConfig.ignores.add("**/_template/**");
 
   // Global data
   eleventyConfig.addGlobalData("layout", "layout.html");
   eleventyConfig.addGlobalData("outcomes", listOutcomes().outcomes);
-  eleventyConfig.addGlobalData("eleventyComputed", { "eleventyNavigation": ({ eleventyNavigation, page }) => {
-    return { key: (eleventyNavigation && eleventyNavigation.key) || page.fileSlug };
-  }});
-
   // Make it easy to deploy to gh-pages
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-
-  // Provide a navigation plugin
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Copy `assets/` to `_site/assets`
   eleventyConfig.addPassthroughCopy("assets");
 
   const dir = {
     input: "./outcomes",
-    includes: "../_includes" // relative to dir.input
-  }
+    includes: "../_includes", // relative to dir.input
+  };
 
-  return { dir }
+  // Custom breadcrumb filter based entirely on paths + page titles
+  eleventyConfig.addFilter("breadcrumbs", function (collection) {
+    function findParent(page) {
+      const resolvedInputPath =
+        dirname(page.inputPath.replace(/\/index\.md$/, "")) + "/index.md";
+      return collection.find(({ data }) => {
+        return data.page.inputPath === resolvedInputPath;
+      })?.data;
+    }
+
+    const crumbs = [];
+    let current = collection.find(
+      ({ data }) => data.page.inputPath === this.page.inputPath
+    ).data;
+    while (current) {
+      crumbs.push(
+        `<li><a href="${current.page.url}"${
+          !crumbs.length ? ` aria-current="page"` : ""
+        }>${current.title || formatSlug(current.page.fileSlug)}</a></li>`
+      );
+      current = findParent(current.page);
+    }
+    return crumbs.reverse().join("\n");
+  });
+
+  return { dir };
 };

@@ -1,8 +1,5 @@
 ---
 layout: outcome.html
-eleventyNavigation:
-    key: Focus Appearance
-    parent: Outcomes
 ---
 
 <div class="normative">
