@@ -1,6 +1,9 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { access } = require("fs/promises");
 const { dirname } = require("path");
 const listOutcomes = require("./build/list-outcomes");
+
+const fileExists = async (path) => access(path).then(() => true, () => false);
 
 function formatSlug(str) {
   if (!str) return;
@@ -17,6 +20,20 @@ module.exports = function (eleventyConfig) {
   // Global data
   eleventyConfig.addGlobalData("layout", "layout.html");
   eleventyConfig.addGlobalData("outcomes", listOutcomes().outcomes);
+  
+  // Computed global data
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    outcome: async ({ outcome, page }) => {
+      if (!outcome) return undefined;
+      const basePath = dirname(page.inputPath).split("/").slice(1, 3).join("/");
+      return {
+        ...outcome,
+        hasMethods: await fileExists(basePath + "/methods.md"),
+        hasResearch: await fileExists(basePath + "/research.md"),
+        hasUserNeeds: await fileExists(basePath + "/user-needs.md"),
+      };
+    }
+  })
 
   // Make it easy to deploy to gh-pages
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);

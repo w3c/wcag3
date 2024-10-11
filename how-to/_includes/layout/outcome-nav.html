@@ -3,9 +3,15 @@
     {%- assign base = '/' | append: outcome.slug %}
     <ul class="sidenav--list">
       <li>{% include 'link.html', href: '/', base: base, text: outcome.title %}</li>
+      {%- if outcome.hasMethods -%}
       <li>{% include 'link.html', href: '/methods/', base: base, text: 'Methods' %}</li>
+      {% endif -%}
+      {%- if outcome.hasUserNeeds -%}
       <li>{% include 'link.html', href: '/user-needs/', base: base, text: 'User Needs' %}</li>
+      {% endif -%}
+      {%- if outcome.hasResearch -%}
       <li>{% include 'link.html', href: '/research/', base: base, text: 'Research' %}</li>
+      {% endif -%}
     </ul>
   </nav>
 </div>

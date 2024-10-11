@@ -1,5 +1,5 @@
 ---
-title: Get Started
+layout: outcome.html
 ---
 
 <div class="normative">
