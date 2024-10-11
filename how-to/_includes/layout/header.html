@@ -36,3 +36,12 @@
     </div>
   </header>
 </div>
+
+{{ eleventyNavigation.key }}
+{% assign test = collections.all | eleventyNavigationBreadcrumb: eleventyNavigation.key, navOptions %}
+<pre>{{ navOptions | json }}</pre>
+{% if eleventyNavigation.key %}
+<nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  {{ collections.all | eleventyNavigationBreadcrumb: eleventyNavigation.key, navOptions | eleventyNavigationToHtml }}
+</nav>
+{% endif %}
