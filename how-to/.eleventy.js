@@ -1,18 +1,11 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const { basename, dirname } = require("path");
+const { dirname } = require("path");
 const listOutcomes = require("./build/list-outcomes");
 
 function formatSlug(str) {
   if (!str) return;
   const parts = str.split("-");
   return parts.map((part) => part[0].toUpperCase() + part.slice(1)).join(" ");
-}
-
-function generateParent(page) {
-  const inputPath = page.inputPath.replace(/\/index\.md$/, "");
-  const inputDirname = dirname(inputPath);
-  if (inputDirname === ".") return undefined;
-  return formatSlug(basename(dirname(inputPath)));
 }
 
 module.exports = function (eleventyConfig) {
@@ -24,25 +17,26 @@ module.exports = function (eleventyConfig) {
   // Global data
   eleventyConfig.addGlobalData("layout", "layout.html");
   eleventyConfig.addGlobalData("outcomes", listOutcomes().outcomes);
+
   // Make it easy to deploy to gh-pages
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // Copy `assets/` to `_site/assets`
   eleventyConfig.addPassthroughCopy("assets");
 
-  const dir = {
-    input: "./outcomes",
-    includes: "../_includes", // relative to dir.input
-  };
-
   // Custom breadcrumb filter based entirely on paths + page titles
   eleventyConfig.addFilter("breadcrumbs", function (collection) {
     function findParent(page) {
-      const resolvedInputPath =
-        dirname(page.inputPath.replace(/\/index\.md$/, "")) + "/index.md";
-      return collection.find(({ data }) => {
-        return data.page.inputPath === resolvedInputPath;
-      })?.data;
+      const resolvedInputBase = dirname(
+        page.inputPath.replace(/\/index\.md$/, "")
+      );
+      const possibleInputPaths = [
+        `${resolvedInputBase}/index.md`,
+        `${resolvedInputBase}.md`,
+      ];
+      return collection.find(({ data }) =>
+        possibleInputPaths.includes(data.page.inputPath)
+      )?.data;
     }
 
     const crumbs = [];
@@ -59,6 +53,11 @@ module.exports = function (eleventyConfig) {
     }
     return crumbs.reverse().join("\n");
   });
+
+  const dir = {
+    input: "./outcomes",
+    includes: "../_includes", // relative to dir.input
+  };
 
   return { dir };
 };
