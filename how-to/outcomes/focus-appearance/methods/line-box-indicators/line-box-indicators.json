@@ -1,0 +1,8 @@
+{
+  "method": {
+    "index": 1,
+    "title": "Line / bounding box indicators",
+    "slug": "line-box-indicators",
+    "description": "The authored focus indicator uses a line or bounding box."
+  }
+}
