@@ -12,24 +12,16 @@ For each image:
 
 <div class="nested">
 
-1. Would removing the image impact how people understand the page?
-   1. No, see [decorative images](decorative-images) [stop]
+1. Would removing the image impact how people understand the page? (Prerequisite)
+   1. No, image must meet [Decorative images](decorative-images) [stop]
    2. Yes, continue
 
-2. Can a concise and plain-text description provide an equivalent to the image?
-   1. No, see [complex images](complex-images/) [stop]
-   2. Yes, continue
-
-3. Is the image part of a control?
-   1. Yes, see [control images](control-images/) [stop]
+2. Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)
+   1. Yes, image must meet [@@@ programatic availability] image AND the [accessibility support set] incorporates [Equivalent alternative text](equivalent-alternative-text). [stop]
    2. No, continue
 
-4. Are there multiple images which are all views of one object?
-   1. Yes, see [multiple images](multiple-images/) [stop]
-   2. No, continue
-
-5. Does the image use another method of providing an alternative?
-   1. Yes, see [equivalent alternative text](equivalent-alternative-text) pass [stop]
-   2. No, fail [stop]
+3. Is an equivalent text alternative available for the image? (Baseline)
+   1. Yes, image must meet [Equivalent alternative text](equivalent-alternative-text) [stop]
+   2. No, fail
 
 </div>
