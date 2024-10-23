@@ -1,4 +1,5 @@
 ---
+layout: method.html
 subtitle: Introduction
 ---
 
