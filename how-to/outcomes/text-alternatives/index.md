@@ -2,17 +2,53 @@
 layout: outcome.html
 ---
 
-<div class="normative">
-  <p>{{ outcome.description }}</p>
-</div>
-
 ## Goal
 
-@@@
+A user is provided  an understandable description of the information or functionality contained within an image.
+If there is no information conveyed by the image, the user's assistive technology should be able to ignore the image.
+
+## Normative text
+
+<div class="normative">
+
+### Outcome
+
+  <p>{{ outcome.description }}</p>
+
+<div class="nested">
+
+### Requirements decision tree
+1. Would removing the image impact how people understand the page? (Prerequisite)
+   1. No, [Decorative images are programmatically hidden](decorative-images). Stop.
+   2. Yes, continue
+
+2. Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)
+   1. Yes, image must meet [@@@ programatic availability] image AND the [accessibility support set] incorporates [Equivalent text alternatives are available for images that convey content](equivalent-alternative-text). Stop.
+   2. No, continue
+
+3. Is an equivalent text alternative available for the image? (Baseline)
+   1. Yes, image must meet [Equivalent text alternatives are available for images that convey content](equivalent-alternative-text). Stop.
+   2. No, fail.
+
+</div>
+
+### Supporting
+
+- [The role and importance of images are programmatically indicated](role-of-images) (Supporting requirement).
+- [The type of image (photo, icon, etc.) is indicated](type-of-image)  (Supporting requirement).
+- [Auto generated text descriptions are editable by content creator](editable-alt-text)  (Supporting requirement).
+
+### Assertions
+
+- [Text alternatives follow an organizational style guide](text-alt-styleguide).
+
+</div>
 
 ## What to do
 
 <div class="nested">
+
+The general way to determine whether an image is conveyed appropriately is to:
 
 1. Remove, hide, or mask the image.
 2. Replace it with the text alternative.
