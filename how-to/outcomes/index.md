@@ -1,7 +1,7 @@
 ---
-title: WCAG 3 Outcomes
+title: All WCAG 3 Outcomes
 ---
 
-# WCAG 3 Outcomes
+# All WCAG 3 Outcomes
 
 {% include "outcomes-list.html" %}
