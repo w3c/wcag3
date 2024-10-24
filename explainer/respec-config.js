@@ -22,6 +22,9 @@ var respecConfig = {
 	
 	// if there a publicly available Editors Draft, this is the link
 	edDraftURI: "https://w3c.github.io/wcag3/explainer/",
+
+	// Reference definitions from the WCAG3 specification
+	xref: ["WCAG3"],
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -69,6 +72,12 @@ var respecConfig = {
 	//preProcess: [preRespec],
 	
 	localBiblio: {
+		"WCAG3": {
+			"title": "W3C Accessibility Guidelines (WCAG) 3.0",
+			"publisher": "World Wide Web Consortium",
+			"date": "28 May 2024",
+			"href": "https://www.w3.org/TR/2024/WD-wcag-3.0-20240528/"
+		},
 		"508-criteria": {
 			"title": "Section 508 Functional Performance Criteria",
 			"publisher": "United States Access Board",
