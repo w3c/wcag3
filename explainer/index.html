@@ -33,8 +33,8 @@
             <li>WCAG 3.0 background and development history;</li>
             <li>Current process for creating WCAG 3.0;</li>
             <li>Draft WCAG 3.0 structure;</li>
-            <li>Options being explored; and</li>
-            <li>Current schedule.</li>
+            <li>Conformance model; and</li>
+            <li>Schedule.</li>
         </ul>
     </section>
     <section>
@@ -142,11 +142,13 @@
             conformance approach. Each draft will include targeted questions for the public to consider and respond to
             in order to advance the working draft. Content will evolve and there may be changes to layout and style that
             are not yet reflected in all parts of the present release and will be reflected in future releases.</p>
+    </section>
 
-        <h3>Draft WCAG 3.0 Structure</h3>
+    <section id="structure">
+        <h2>Draft WCAG 3.0 Structure</h2>
         <p>WCAG 3.0 includes both normative and informative guidance. This guidance is organized into:</p>
         <ul>
-            <li>Guidelines (Outcome Statements) - informative
+            <li>Guidelines (Outcome Statements) - normative
                 <ul>
                     <li>Foundational Requirements - normative
                         <ul>
@@ -183,69 +185,109 @@
             readers to reorganize and filter the content. For example, content will be tagged Perceivable, Operable,
             Understandable, and Robust so that readers can view WCAG 3.0 criteria in the same structure as WCAG 2.</p>
 
-        <h4>Guidelines</h4>
+        <h3>Guidelines</h3>
         <p>Guidelines are written as plain language, user-centered outcomes statements.</p>
         <p>Guidelines include high-level, plain-language information for managers, policy makers, individuals who are
             new to accessibility, and other individuals who need to understand the concepts but not the technical
             details. They provide an easy-to-understand way of organizing and presenting the outcomes so that anyone can
             learn about and understand the concepts. </p>
-        <p>Guidelines are informative.</p>
-        <p>Guidelines address functional needs on specific topics, such as contrast, forms, readability, and more.
-            Guidelines are technology-agnostic. Foundational requirements, supplemental requirements, and assertions that relate 
+        <p>Guidelines are normative.</p>
+        <p>Guidelines are technology-agnostic and address functional needs on specific topics, such as contrast, forms, readability, and more.
+          Foundational requirements, supplemental requirements, and assertions that relate 
             to a Guideline are listed together to encourage adoption of higher levels of accessibility.</p>
 
         <div class="ednote">
             <p>Within the current draft, requirements and assertions are organized within the Guidelineas a decision tree to
-                assist readers in determining which Outcomes and Assertions to use. The AG requests feedback on two
+                assist readers in determining which Requirements and Assertions to use. The AG requests feedback on two
                 early draft examples of this approach, Focus Appearance and Text Alternatives.</p>
             <ul>
-                <li>Does grouping related Outcomes and Assertions make it easier to understand the Guidelines?</li>
+                <li>Does grouping related Requirements and Assertions make it easier to understand the Guidelines?</li>
+                <li>The AG has discussed also including recommendations which could help improve accessibility under guidelines. 
+                    Recommendations are not be testable and would not contribute to conformance.
+                </li>
                 <li>How can this approach be improved?</li>
             </ul>
         </div>
-    </section>
 
-    <section id="outcomes-methods">
-        <h2>Requirements and Methods</h2>
-        <div class="ednote">
-            <p>As we continue developing outcomes and methods, we seek input on how well the approach to outcomes,
-                assertions and tests defined here supports additional requirements not addressed in WCAG 2.2.</p>
-            <p>Next steps include:</p>
-            <ul>
-                <li>Get feedback from designers, developers, and other communities on choice,</li>
-                <li>Finalize names and descriptions of scope and tests,</li>
-                <li>Develop detailed examples of methods and tests,</li>
-                <li>As we develop example outcomes and methods, further explore conditions and how multiple measurements
-                    might be used to meet an outcome.</li>
-                <li>Address all GitHub issues under <a href="https://github.com/w3c/silver/milestone/16">test types and
-                        terminology milestone</a>.</li>
-            </ul>
-        </div>
+        <h3>Requirements and Methods</h3>
+        <p>Each guideline contains multiple requirements:
+            <ul><li>Foundational Requirements will be used to test the most basic level of accessibilty.  This set of requirements will
+                cover a similar, but not identical, set of needs as WCAG 2.2 A & AA.</li>
+                <li>Supplemental Requirements will be used for higher levels of conformance.</li>
+            </li></ul></p>    
+         <p>Requiremenets reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
+            by developers, testers, and other technical specialists.</p>
+        <p>Requirements are normative.</p>
 
-        <p>Each guideline contains multiple outcomes. Outcomes reduce or eliminate barriers that people with
-            disabilities experience. Outcomes are designed for use by developers, testers, and other technical
-            specialists.</p>
-        <p>Outcomes are normative.</p>
-        <p>Outcomes are written as testable criteria and include information on how to score the outcome in an optional
-            <a href="https://www.w3.org/TR/wcag-3.0/#conformance-claims">Conformance Claim</a>. These verifiable
-            statements allow testers to reliablydetermine if the content being evaluated satisfies the user needs
-            identified in the Guideline.</p>
-        <p>Each outcome is associated with at least one <a href="https://www.w3.org/TR/wcag-3.0/#dfn-method">Method</a>.
+        <p>Each Requirement is associated with at least one <a href="https://www.w3.org/TR/wcag-3.0/#dfn-method">Method</a>.
             Methods are informative. Each method contains techniques for meeting the outcome, examples, resources, and
             <a href="https://www.w3.org/TR/wcag-3.0/#dfn-set-of-tests">sets of tests</a>. Methods can apply to a
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
             technology. For example, the methods supporting the Clear Language guideline.</p>
 
-        <h3>Testing Outcomes</h3>
-        <h4>Types of tests</h4>
+            <div class="ednote">
+                <p>AG will continue developing requirements and methods. Each publication will include additional or more mature examples
+                    for public comment. 
+                </p>
+                <p>Next steps include:</p>
+                <ul>
+                    <li>Define criteria for which requirements are foundational and which are supplemental,</li>
+                    <li>Develop mature examples of 2 guidelines, requirements, methods and tests,</li>
+                    <li>Work on moving all guidelines to the developing stage,</li>
+                    <li>As we develop example outcomes and methods, further explore conditions and how multiple measurements
+                        might be used to meet an outcome.</li>
+                    <li>Address all GitHub issues under <a href="https://github.com/w3c/silver/milestone/16">test types and
+                            terminology milestone</a>.</li>
+                </ul>
+            </div>
+
+        <h3>Assertions</h3>
+            <p>An assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
+                <a>assertion</a>is an attributable and documented statement of fact regarding procedures practiced in the
+                development and maintenance of the content or product to improve accessibility.</p>
+    
+            <h4>Using assertions</h4>
+            <p>Assertions may supplement Outcomes to meet a Guideline. Not all Guidelines include Assertions. Those that do
+                list the Assertions with the Outcomes. Organizations can make an assertion that they followed a procedure to
+                claim conformance. Results when testing assertions are true/false - the organization making the assertion
+                either provided the required documentation or it did not.</p>
+            <p>Procedures used in assertions may be implemented at the organization level, during design and development, or
+                during testing.</p>
+            <p>Examples of procedures that may be used during implementation might include:</p>
+            <ul>
+                <li>Training,</li>
+                <li>FTE (Full Time Equivalent) assignments,</li>
+                <li>Skills testing,</li>
+                <li>Coordination and documentation of accessibility processes, or</li>
+                <li>Setting the priority for remediation.</li>
+            </ul>
+            <p>Examples of procedures that may be used to evaluate accessibility might include:</p>
+            <ul>
+                <li>Usability testing,</li>
+                <li>Heuristic evaluation, or</li>
+                <li>Testing with assistive technology.</li>
+            </ul>
+
+            <h4>Supporting documentation for assertions</h4>
+            <p>WCAG recommends maintaining additional information that an organization can use to improve or validate
+                procedures and assertions. WCAG will not require organizations to provide supporting documentation to
+                conform.</p>
+            <h4>Testing assertions</h4>
+            <p>The quality of an assertion can be tested based on how well the assertion meets the documentation
+                requirements for assertions (See <a>Documenting Assertions</a>). Conforming to WCAG does not require testing
+                supporting documentation; however, organizations may decide to adopt additional documentation requirements
+                based on the procedure being asserted.</p>
+
+        <h4>Testing</h4>
+        <h5>Types of tests</h5>
         <p>WCAG 3.0 includes two types of tests which are evaluated:</p>
         <ul>
-            <li>Quantifiabletests:Tests where there is a high degree of reliability between test results from different
+            <li>Quantifiable tests: Tests where there is a high degree of reliability between test results from different
                 testers. Examples include testing whether certain properties exist in the content or if they match a
                 value specified by the requirement.</li>
-            <li>Qualitative tests:Tests that rely on a qualitative evaluation based on existing criteria. Test results
-                may vary between testers who understand the criteria. One example is evaluating the quality of
-                alternative text used to meet a requirement for alternative text.</li>
+            <li>Qualitative tests: Tests that rely on a qualitative evaluation based on existing criteria. Test results
+                may vary between testers who understand the criteria. Variation can be reduced with clear guidance. 
+                One example is evaluating the quality of alternative text used to meet a requirement for alternative text.</li>
         </ul>
         <p>Most tests have prescribed ways to meet the test. In some cases, the ways to meet the test will change based
             on a specific condition being met. For example, different human languages have different readability
@@ -312,7 +354,6 @@
         </ul>
     </section>
 
-    <section id="assertions">
         <h2>Assertions and procedures</h2>
         <div class="ednote">
             <p>As we continue developing this content, we seek input on the following:</p>
@@ -346,32 +387,7 @@
             </ul>
         </div>
 
-        <h3>Assertions</h3>
-        <p>An assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
-            <a>assertion</a>is an attributable and documented statement of fact regarding procedures practiced in the
-            development and maintenance of the content or product to improve accessibility.</p>
-
-        <h4>Using assertions</h4>
-        <p>Assertions may supplement Outcomes to meet a Guideline. Not all Guidelines include Assertions. Those that do
-            list the Assertions with the Outcomes. Organizations can make an assertion that they followed a procedure to
-            claim conformance. Results when testing assertions are true/false - the organization making the assertion
-            either provided the required documentation or it did not.</p>
-        <p>Procedures used in assertions may be implemented at the organization level, during design and development, or
-            during testing.</p>
-        <p>Examples of procedures that may be used during implementation might include:</p>
-        <ul>
-            <li>Training,</li>
-            <li>FTE (Full Time Equivalent) assignments,</li>
-            <li>Skills testing,</li>
-            <li>Coordination and documentation of accessibility processes, or</li>
-            <li>Setting the priority for remediation.</li>
-        </ul>
-        <p>Examples of procedures that may be used to evaluate accessibility might include:</p>
-        <ul>
-            <li>Usability testing,</li>
-            <li>Heuristic evaluation, or</li>
-            <li>Testing with assistive technology.</li>
-        </ul>
+ 
 
         <h4>Documenting assertions</h4>
         <p>Assertions must be documented as part of the conformance claim process. The required information may also be
@@ -391,15 +407,7 @@
                 assertion apply to the scope of the conformance claim.</p>
         </div>
 
-        <h4>Supporting documentation for assertions</h4>
-        <p>WCAG recommends maintaining additional information that an organization can use to improve or validate
-            procedures and assertions. WCAG will not require organizations to provide supporting documentation to
-            conform.</p>
-        <h4>Testing assertions</h4>
-        <p>The quality of an assertion can be tested based on how well the assertion meets the documentation
-            requirements for assertions (See <a>Documenting Assertions</a>). Conforming to WCAG does not require testing
-            supporting documentation; however, organizations may decide to adopt additional documentation requirements
-            based on the procedure being asserted.</p>
+
     </section>
 
     <section id="conformance-models">
