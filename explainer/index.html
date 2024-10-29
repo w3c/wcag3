@@ -22,7 +22,7 @@
         <h2>Introduction</h2>
 
         <p>W3C Accessibility Guidelines (WCAG) 3.0 is a successor to Web Content Accessibility Guidelines 2.2 [[WCAG22]]
-            and previous versions. It does not deprecate WCAG 2. It may incorporate content from User Agent
+            and previous versions. It does not <a>deprecate</a> WCAG 2. It may incorporate content from User Agent
             Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]]. These
             versions provided a model that kept them relevant for over 10 years. Changing technology and changing needs
             of people with disabilities require a new model to address content accessibility more comprehensively.
@@ -47,8 +47,7 @@
                 mixed reality) and voice input,</li>
             <li>facilitate maintenance, so that the new model will be more enduring over time as technologies evolve,
                 and</li>
-            <li>include additional information about the ways web technologies need to work with authoring tools, user
-                agents, and assistive technologies.</li>
+            <li>include additional information about the ways web technologies need to work with <a>authoring tools</a>, <a>user agents</a>, and <a>assistive technologies</a>.</li>
         </ul>
         <p>Additional goals for WCAG 3.0 are written in <a
                 href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3</a>. These are based on the
@@ -147,7 +146,7 @@
 
     <section id="structure">
         <h2>Draft WCAG 3.0 Structure</h2>
-        <p>WCAG 3.0 includes both normative and informative guidance. This guidance is organized into:</p>
+        <p>WCAG 3.0 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized into:</p>
         <ul>
             <li>Guidelines (Outcome Statements) - normative
                 <ul>
@@ -190,7 +189,7 @@
             details. They provide an easy-to-understand way of organizing and presenting the outcomes so that anyone can
             learn about and understand the concepts. </p>
         <p>Guidelines are normative.</p>
-        <p>Guidelines are technology-agnostic and address functional needs on specific topics, such as contrast, forms, readability, and more.
+        <p>Guidelines are <a>technology-agnostic</a> and address functional needs on specific topics, such as contrast, forms, readability, and more.
           Foundational requirements, supplemental requirements, and assertions that relate 
             to a Guideline are listed together to encourage adoption of higher levels of accessibility.</p>
 
@@ -204,7 +203,7 @@
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
 
-        <p>Each Requirement is associated with at least one <a href="https://www.w3.org/TR/wcag-3.0/#dfn-method">Method</a>.
+        <p>Each Requirement is associated with at least one <a>Method</a>.
             Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and
             <a href="https://www.w3.org/TR/wcag-3.0/#dfn-set-of-tests">sets of tests</a>. Methods can apply to a
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
@@ -315,7 +314,7 @@
         <h5>Types of tests</h5>
         <p>WCAG 3.0 includes two types of tests which are evaluated:</p>
         <ul>
-            <li>Quantifiable tests: Tests where there is a high degree of reliability between test results from different
+            <li>Quantifiable tests: Tests where there is a high degree of <a>reliability</a> between test results from different
                 testers. Examples include testing whether certain properties exist in the content or if they match a
                 value specified by the requirement.</li>
             <li>Qualitative tests: Tests that rely on a qualitative evaluation based on existing criteria. Test results
@@ -355,11 +354,11 @@
         <p>Items are the smallest testable unit. They could be interactive components such as a drop down menu, a link,
             or a media player. They could also be units of content such as a phrase, a paragraph, a label or error
             message, an icon, or an image.</p>
-        <p>Views include all content visually and programmatically available without a significant change. Conceptually,
+        <p>Views include all content visually and <a>programmatically</a> available without a <a>significant change</a>. Conceptually,
             views correspond to the definition of a web page as used in WCAG 2, but are not restricted to content
             meeting that definition. For example, a view could be considered a “screen” in a mobile app or a layer of
             web content, such as a modal dialog.</p>
-        <p>Task flows are a series views that support a specified user activity. A task flow may include a subset of
+        <p>Task flows are a series views that support a specified <a>user activity</a>. A task flow may include a subset of
             items in a view or a group of views. Only the part of the views that support the user activity are included
             in a test of the task flow.</p>
 
@@ -411,7 +410,7 @@
             <ul><li>Bronze, Silver and Gold conformance levels: AG has considered using three traditionally named conformance levels. 
                 <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
                     bronze level does not conform to WCAG 3.0. The subset will require enough requirements and
-                    assertions to improve equity across functional needs.</li>
+                    assertions to improve <a>equity</a> across functional needs.</li>
                 <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
                     organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
                     accessibility.</li>
@@ -443,6 +442,97 @@
         <p>A final schedule will be delivered as part of this charter period. WCAG 3.0 will not be published until it
             covers at least as much as WCAG 2.2.</p>
 
+    </section>
+
+    <section data-status="exploratory">
+        <h2>Glossary</h2>
+        <p class="note">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p>
+        <dl>
+            <dt><dfn>Assistive technology</dfn></dt>
+            <dd><p>Software (or hardware), separate from the authoring tool, that provides functionality to meet the requirements of people with disabilities.</p></dd>
+            <dt><dfn data-lt="Authoring Tool">Authoring Tool</dfn></dt>
+            <dd><p>Any web-based or non-web-based application(s) that can be used by authors (alone or collaboratively) to create or modify web content for use by other people (other authors or end users).</p></dd>
+            <dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">Automated
+                    evaluation</dfn></dt>
+            <dd><p>Evaluation conducted using software tools, typically evaluating code-level features and applying
+                    heuristics for other tests.</p>
+                <p>Automated testing is contrasted with other types of testing that involve human judgement or
+                    experience. [=Semi-automated evaluation=] allows machines to guide humans
+                    to areas that need inspection. The emerging field of testing conducted via
+                    machine learning is not included in this definition.</p></dd>
+            <dt><dfn data-lt="Conform">Conformance</dfn></dt>
+            <dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
+                    the guidelines even when not making a formal Conformance Claim.</p>
+                <p>See <a href="#conformance-models">Draft Conformance Approach</a>.</p></dd>
+            <dt><dfn data-lt="deprecated|deprecate">Deprecate</dfn></dt>
+            <dd>
+                <p>To declare something outdated and in the process of being phased out, usually in favor of a specified replacement.</p>
+                <p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
+            </dd>
+            <dt><dfn data-lt="equity">Equity</dfn></dt>
+            <dd>
+                <p>Equity is the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
+            </dd>
+            <dt><dfn>Evaluation</dfn></dt>
+            <dd>The process of examining content for <a>conformance</a> to these
+                guidelines.</dd>
+            <dd>Different approaches to evaluation include automated <a>evaluation</a>,
+                    <a>semi-automated evaluation</a>, <a>human evaluation</a>, and <a>user
+                    testing</a>.</dd>
+            <dt><dfn data-lt="Functional needs">Functional need</dfn></dt>
+            <dd>
+                <p>A statement that describes a specific gap in one’s ability, or a specific mismatch between ability and the designed environment or context.</p>
+            </dd>
+            <dt><dfn data-lt="Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested">Human evaluation</dfn></dt>
+            <dd>
+                <p>Evaluation conducted by a human, typically to apply human judgement to tests
+                    that cannot be fully <a>automatically evaluated</a>.</p>
+                <p>Human evaluation is contrasted with <a>automated evaluation</a> which is done entirely by
+                    machine, though it includes <a>semi-automated evaluation</a> which allows
+                    machines to guide humans to areas that need inspection. Human evaluation
+                    involves inspection of content features, by contrast with <a>user
+                        testing</a> which directly tests the experience of users with
+                    content.</p></dd>
+            <dt><dfn data-lt="Non-normative|Informative">Informative</dfn></dt>
+            <dd>
+                <p>Content provided for information purposes and not required for <a>conformance</a>.</p>
+            </dd>
+            <dt><dfn data-lt="Methods">Method</dfn></dt>
+            <dd>
+                <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the outcome as well as <a>tests</a> and scoring information.</p>
+            </dd>
+            <dt><dfn>Normative</dfn></dt>
+            <dd>
+                <p>Content whose instructions are required for <a>conformance</a>.</p>
+            </dd>
+            <dt><dfn data-lt="Processes">Process</dfn></dt>
+            <dd><p>A sequence of steps that need to be completed to accomplish an activity / task from
+                    end-to-end.</p></dd>
+            <dt><dfn data-lt="Reliable">Reliability</dfn></dt>
+            <dd>
+                <p>The reproducibility and consistency of scores i.e. the extent to which they are the same when evaluations of the same resources are carried out in different contexts (different tools, different people, different goals, different time). This would be particularly useful to ensure that similar results are achieved by different testers. It would also be useful to see if different testers would select the same path or off-path decisions. Representative sampling tests also fit in this category.
+                <a href="https://www.w3.org/WAI/RD/wiki/Benchmarking_Web_Accessibility_Metrics.html">Benchmarking Web Accessibility Metrics</a>, Vigo, Lopes, O Connor, Brajnik, Yesilada 2011. </p>
+            </dd>
+            <dt><dfn>Semi-Automated evaluation</dfn></dt>
+            <dd>
+                <p>Evaluation conducted using machines to guide humans to areas that need
+                    inspection.</p>
+                <p>Semi-automated evaluation involves components of <a>automated evaluation</a>
+                    and <a>human evaluation</a>.</p>
+            </dd>
+            <dt><dfn data-lt="Tests">Test</dfn></dt>
+            <dd>
+                <p>Mechanism to evaluate implementation of a <a>method</a>.</p>
+            </dd>
+            <dt><dfn>User agent</dfn></dt>
+            <dd>
+                <p>Any software that retrieves, renders and facilitates end user interaction with web content (e.g. web browsers, browser plug-ins, media players).</p>
+            </dd>
+            <dt><dfn>User testing</dfn></dt>
+            <dd>
+                <p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content meets the relevant outcomes.</p>
+            </dd>
+        </dl>
     </section>
 
     <section class="appendix">
