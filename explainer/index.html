@@ -15,7 +15,7 @@
         </p>
     </section>
     <section id='sotd'>
-        <p>This is an updated draft of the WCAG 3.0 Explainer. It is not normative (informative) and is not expected to
+        <p>This is an updated draft of the WCAG 3.0 Explainer. It is informative, not normative, and is not expected to
             become a W3C Recommendation. It provides background on [[[WCAG3]]].</p>
     </section>
     <section id="intro">
@@ -40,7 +40,7 @@
     <section>
         <h2>Goals</h2>
         <p>The goal of WCAG is to provide information that can be used to improve the accessibility of products on a
-            variety of platforms. WCAG 3.0 will use a model that allows it to:</p>
+            variety of platforms. WCAG 3 will use a model that allows it to:</p>
         <ul>
             <li>address more disability needs than WCAG 2,</li>
             <li>incorporate publishing requirements and emerging technologies such as web XR (augmented, virtual and
@@ -58,11 +58,12 @@
             Silver Community Group.</p>
 
         <h3>Goals for Inclusion</h3>
-        <p>The creation process for the guidelines should:</p>
+        <p>The creation process for the WCAG 3.0 guidelines should:</p>
         <ul>
-            <li>Actively recruit a diverse range of people with disabilities. Review and monitor whether people are
-                included. Periodically evaluate inclusive features of available tooling and procedures.</li>
+            <li>Actively recruit a diverse range of people with disabilities.</li>
+            <li>Periodically evaluate inclusive features of available tooling and procedures.</li>
             <li>Facilitate global participation and feedback.</li>
+            <li>Review and monitor participation and representation.</li>
         </ul>
         <div class="ednote">
             <p>W3C strives to be as inclusive as possible, and has actively sought participation and input from a broad
@@ -110,14 +111,14 @@
 
     <section id="current-process">
         <h2>Current Process for Creating WCAG 3.0</h2>
-        <p>The AG takes an iterative approach to creating WCAG 3.0. Each piece of content will evolve over time,
+        <p>The AG uses an iterative approach to creating WCAG 3.0. Each piece of content will evolve over time,
             increasing in maturity. As a result, the document is a work-in-progress.</p>
         <p>Because different parts of the document have different maturity levels, each normative section includes a
             status that indicates:</p>
         <ul>
             <li>how far along in the development process this section is,</li>
             <li>how ready it is for experimental adoption, and</li>
-            <li>what kind of feedback we are looking for.</li>
+            <li>what kind of feedback AG is looking for.</li>
         </ul>
 
         <p>The status indicators, from least to most mature, are:</p>
@@ -125,23 +126,23 @@
             <li><strong>Placeholder</strong>: This content is temporary. It shows the type of content or section to
                 expect. Placeholder text will be replaced. By default it is not included in the Editor's draft. No
                 feedback is needed on placeholder content.</li>
-            <li><strong>Exploratory</strong>: The Working Group is exploring what direction to take with this content.
+            <li><strong>Exploratory</strong>: The working group is exploring what direction to take with this content.
                 This content is not refined; details and definitions may be missing. By default it is not included in
-                the Editor's draft. We invite feedback on the proposed direction.</li>
+                the Editor's draft. AG invites feedback on the proposed direction.</li>
             <li><strong>Developing</strong>: There is rough agreement on what is needed for this section, although not
-                all high-level concerns have been settled. Details are included, yet they are not all agreed on. We
-                invite feedback on how understandable, usable, and reasonable the section is generally.</li>
-            <li><strong>Refining</strong>: The Working Group has reached consensus on this section. It is ready for
-                broad public review and experimental adoption. We seek feedback on feasibility and issues with
+                all high-level concerns have been settled. Details are included, yet they are not all agreed on. AG
+                invites feedback on how understandable, usable, and reasonable the content is.</li>
+            <li><strong>Refining</strong>: The working group has reached consensus on this section. It is ready for
+                broad public review and experimental adoption. AG invites feedback on feasibility and issues with
                 implementations.</li>
-            <li><strong>Mature</strong>: The Working Group thinks this content is ready for the final standard. Feedback
-                should be focused on edge case scenarios the Working Group might not have anticipated.</li>
+            <li><strong>Mature</strong>: The working group thinks this content is ready for the final standard. Feedback
+                should focus on edge case scenarios the working group might not have anticipated.</li>
         </ul>
 
-        <p>The working group aims to publish two new drafts each year, alternating focus between the guidelines and the
-            conformance approach. Each draft will include targeted questions for the public to consider and respond to
-            in order to advance the working draft. Content will evolve and there may be changes to layout and style that
-            are not yet reflected in all parts of the present release and will be reflected in future releases.</p>
+        <p>The working group aims to publish two new drafts each year. Each draft will include targeted questions for the 
+            public to consider and respond to in order to advance the working draft. Content will evolve and there may be 
+            changes to layout and style that are not yet reflected in all parts of the present release and will be reflected 
+            in future releases.</p>
     </section>
 
     <section id="structure">
@@ -171,9 +172,6 @@
                     <li>Assertions - normative
                         <ul>
                             <li>How to Documents - informative
-                                <ul>
-                                    <li>Methods - informative</li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -196,61 +194,38 @@
           Foundational requirements, supplemental requirements, and assertions that relate 
             to a Guideline are listed together to encourage adoption of higher levels of accessibility.</p>
 
-        <div class="ednote">
-            <p>Within the current draft, requirements and assertions are organized within the Guidelineas a decision tree to
-                assist readers in determining which Requirements and Assertions to use. The AG requests feedback on two
-                early draft examples of this approach, Focus Appearance and Text Alternatives.</p>
-            <ul>
-                <li>Does grouping related Requirements and Assertions make it easier to understand the Guidelines?</li>
-                <li>The AG has discussed also including recommendations which could help improve accessibility under guidelines. 
-                    Recommendations are not be testable and would not contribute to conformance.
-                </li>
-                <li>How can this approach be improved?</li>
-            </ul>
-        </div>
-
         <h3>Requirements and Methods</h3>
-        <p>Each guideline contains multiple requirements:
-            <ul><li>Foundational Requirements will be used to test the most basic level of accessibilty.  This set of requirements will
+        <p>Each Guideline contains multiple Requirements:
+            <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
                 cover a similar, but not identical, set of needs as WCAG 2.2 A & AA.</li>
                 <li>Supplemental Requirements will be used for higher levels of conformance.</li>
             </li></ul></p>    
-         <p>Requiremenets reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
+         <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
 
         <p>Each Requirement is associated with at least one <a href="https://www.w3.org/TR/wcag-3.0/#dfn-method">Method</a>.
-            Methods are informative. Each method contains techniques for meeting the outcome, examples, resources, and
+            Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and
             <a href="https://www.w3.org/TR/wcag-3.0/#dfn-set-of-tests">sets of tests</a>. Methods can apply to a
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
             technology. For example, the methods supporting the Clear Language guideline.</p>
 
-            <div class="ednote">
-                <p>AG will continue developing requirements and methods. Each publication will include additional or more mature examples
-                    for public comment. 
-                </p>
-                <p>Next steps include:</p>
-                <ul>
-                    <li>Define criteria for which requirements are foundational and which are supplemental,</li>
-                    <li>Develop mature examples of 2 guidelines, requirements, methods and tests,</li>
-                    <li>Work on moving all guidelines to the developing stage,</li>
-                    <li>As we develop example outcomes and methods, further explore conditions and how multiple measurements
-                        might be used to meet an outcome.</li>
-                    <li>Address all GitHub issues under <a href="https://github.com/w3c/silver/milestone/16">test types and
-                            terminology milestone</a>.</li>
-                </ul>
-            </div>
-
         <h3>Assertions</h3>
-            <p>An assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
-                <a>assertion</a>is an attributable and documented statement of fact regarding procedures practiced in the
+            <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
+                Assertion is an attributable and documented statement of fact regarding procedures practiced in the
                 development and maintenance of the content or product to improve accessibility.</p>
     
-            <h4>Using assertions</h4>
-            <p>Assertions may supplement Outcomes to meet a Guideline. Not all Guidelines include Assertions. Those that do
-                list the Assertions with the Outcomes. Organizations can make an assertion that they followed a procedure to
+            <h4>Using Assertions</h4>
+            <p>Assertions may supplement Requirement to meet a Guideline. Not all Guidelines include Assertions. Those that do
+                list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure to
                 claim conformance. Results when testing assertions are true/false - the organization making the assertion
                 either provided the required documentation or it did not.</p>
+
+            <div class="ednote"></div>
+            <p>An alternative to specifying assertions at the requirement or guideline level might be to require that the
+                    assertion apply to the scope of the conformance claim.</p>
+            </div>
+
             <p>Procedures used in assertions may be implemented at the organization level, during design and development, or
                 during testing.</p>
             <p>Examples of procedures that may be used during implementation might include:</p>
@@ -267,17 +242,75 @@
                 <li>Heuristic evaluation, or</li>
                 <li>Testing with assistive technology.</li>
             </ul>
-
-            <h4>Supporting documentation for assertions</h4>
             <p>WCAG recommends maintaining additional information that an organization can use to improve or validate
                 procedures and assertions. WCAG will not require organizations to provide supporting documentation to
                 conform.</p>
-            <h4>Testing assertions</h4>
-            <p>The quality of an assertion can be tested based on how well the assertion meets the documentation
-                requirements for assertions (See <a>Documenting Assertions</a>). Conforming to WCAG does not require testing
-                supporting documentation; however, organizations may decide to adopt additional documentation requirements
-                based on the procedure being asserted.</p>
+                <h4>Documenting Assertions</h4>
+                <p>Assertions must be documented as part of the conformance claim process. The required information may also be
+                    made available through the web site.</p>
+                <p>Assertions might include the following information:</p>
+                <ul>
+                    <li>The statement being asserted,</li>
+                    <li>The date of the assertion,</li>
+                    <li>The date or date range the procedure was completed,</li>
+                    <li>The scope of the assertion,</li>
+                    <li>Contact information for the person or group making the assertion, and</li>
+                    <li>The requirement(s) or guideline(s) supported by the assertion.</li>
+                </ul>
 
+                <div class="ednote">
+                    <p>Within the current draft, Foundational Requirements are organized as a decision tree under the relevant Guidelines. 
+                        Supplemental Requirements and Assertions are then listed below the tree. AG hopes this will assist readers in 
+                        determining which Requirements and Assertions to use. The AG requests feedback on three
+                        early draft examples of this approach: Focus Appearance, Implied Meaning, and Text Alternatives.</p>
+                    <ul>
+                        <li>Does the organization make it easier to understand the Guideline, Requirements and Assertions?</li>
+                        <li></li>
+                        <li>The AG has discussed also including recommendations which could help improve accessibility under guidelines. 
+                            Recommendations are not be testable and would not contribute to conformance.</li>
+                        <li>Does seeing related guidance together encourage adoption of requirements and assertions beyond the most basic set?</li>
+                        <li>How can this approach be improved?</li>
+                    </ul>
+                    <p>AG will continue developing requirements and methods. Each publication will include additional or more mature examples
+                        for public comment. 
+                    </p>
+                    <p>AG's next steps include:</p>
+                    <ul>
+                        <li>Define criteria for which requirements are foundational and which are supplemental.</li>
+                        <li>Develop mature examples of 2 guidelines with associated requirements, methods, tests, and How to documentation.</li>
+                        <li>Mature all guidelines to the developing stage.</li>
+                        <li>Further explore how conditional requirements and alternate ways to measure might be used to meet Guidelines.</li>
+                    </ul>
+
+                    <p>AG will also continue to explore the use of assertions and welcomes feedback on the following questions:</p>
+                    <ul>
+                        <li>Can assertions be used to record accessibility work that is not required in the guidelines? This
+                            could include advance work on guidance not yet added to the guidelines.</li>
+                        <li>What optional supporting documentation should organizations provide with an assertion?</li>
+                        <li>Is there a need for WCAG 3.0 to require proof of an assertion, and if so, what documentation should
+                            be required as proof?</li>
+                        <li>Should assertions be dated, expire, or be reviewed on a regular basis?</li>
+                        <li>Can steps in a procedure duplicate tests in other parts of the guidelines? If so, how should those
+                            be handled?</li>
+                        <li>Can assertions exist outside of conformance? For example, can they be used as an internal benchmark
+                            rather than for a claim of conformance?</li>
+                        <li>Can assertions be used at the most basic level of conformance? If so, how?</li>
+                        <li>How can small organizations use assertions without unrealistic burden?</li>
+                        <li>As written, supplemental requirements and assertions are at. Would moving assertions to the test level
+                            be more effective?</li>
+                        <li>AG is considering what will qualify as a procedure in WCAG 3.0. A procedure may be limited to
+                            guidance:
+                            <ul>
+                                <li>approved by AG and listed in WCAG,</li>
+                                <li>that references publicly published guidance, or</li>
+                                <li>that meets criteria specified in WCAG</li>
+                            </ul>
+                        or it may be any process that an organization uses to improve accessibility.</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section>
         <h4>Testing</h4>
         <h5>Types of tests</h5>
         <p>WCAG 3.0 includes two types of tests which are evaluated:</p>
@@ -316,8 +349,8 @@
 
         <p>These tests include a subjective determination of whether they are adequately met.</p>
 
-        <h4>Test scopes</h4>
-        <p>Testing outcomes use <a>items</a>, <a>views</a>, <a>task flow</a>, and the <a>product</a> to define what is
+        <h4>Scope</h4>
+        <p>Testing uses items, views, task flow, and the product to define the scope of what is
             being tested.</p>
         <p>Items are the smallest testable unit. They could be interactive components such as a drop down menu, a link,
             or a media player. They could also be units of content such as a phrase, a paragraph, a label or error
@@ -345,177 +378,56 @@
         <p>Some tests only apply in certain situations. Testing may occasionally require determining and referencing
             which specifications are being tested. Methods will note whether a test always applies or under what
             conditions a test applies. Both quantitative and qualitative tests can be conditional.</p>
-        <p><a href="https://www.w3.org/TR/wcag-3.0/#example-3">Example 3</a></p>
         <p>Example conditions include:</p>
         <ul>
             <li>The language used may have different grammatical rules.</li>
             <li>An interface with multiple contrast modes may have different contrast requirements than an interface
                 with only a default contrast mode.</li>
         </ul>
-    </section>
 
-        <h2>Assertions and procedures</h2>
-        <div class="ednote">
-            <p>As we continue developing this content, we seek input on the following:</p>
-            <ul>
-                <li>Can assertions be used to record accessibility work that is not required in the guidelines? This
-                    could include advance work on guidance not yet added to the guidelines.</li>
-                <li>What optional supporting documentation should organizations provide with an assertion?</li>
-                <li>Is there a need for WCAG 3.0 to require proof of an assertion, and if so, what documentation should
-                    be required as proof?</li>
-                <li>Should assertions be dated, expire, or be reviewed on a regular basis?</li>
-                <li>Can steps in a procedure duplicate tests in other parts of the guidelines? If so, how should those
-                    be handled?</li>
-                <li>Can assertions exist outside of conformance? For example, can they be used as an internal benchmark
-                    rather than for a claim of conformance?</li>
-                <li>Can assertions be used at the most basic level of conformance? If so, how?</li>
-                <li>How can small organizations use assertions without unrealistic burden?</li>
-                <li>As written, outcomes and assertions are at the same level. Would moving assertions to the test level
-                    be more effective?</li>
-                <li>AG is considering whether and how assertions can be applied to the Bronze level.</li>
-                <li>AG is considering what will qualify as a procedurein WCAG 3.0. A procedure may be limited to
-                    guidance:</li>
-            </ul>
-            <ul>
-                <li>approved by AG and listed in WCAG,</li>
-                <li>that references publicly published guidance, or</li>
-                <li>that meets criteria specified in WCAG</li>
-            </ul>
-            <ul>
-                <li>or it may be any process that an organization uses to improve accessibility. Comments or criticism
-                    of these alternatives is welcome.</li>
-            </ul>
-        </div>
-
- 
-
-        <h4>Documenting assertions</h4>
-        <p>Assertions must be documented as part of the conformance claim process. The required information may also be
-            made available through the web site.</p>
-        <p>Assertions might include the following information:</p>
-        <ul>
-            <li>The statement being asserted,</li>
-            <li>The date of the assertion,</li>
-            <li>The date or date range the procedure was completed,</li>
-            <li>The scope of the assertion,</li>
-            <li>Contact information for the person or group making the assertion,and</li>
-            <li>The outcome(s) or guideline(s) supported by the assertion.</li>
-        </ul>
-
-        <div class="ednote">
-            <p>An alternative to specifying assertions at the outcome or guideline level might be to require that the
-                assertion apply to the scope of the conformance claim.</p>
-        </div>
-
-
+    <h4>Testing Assertions</h4>
+    <p>The quality of an assertion can be tested based on how well the assertion meets the documentation
+        requirements for assertions (See <a>Documenting Assertions</a>). Conforming to WCAG does not require testing
+        supporting documentation; however, organizations may decide to adopt additional documentation requirements
+        based on the procedure being asserted.</p>
     </section>
 
     <section id="conformance-models">
-        <h2> Conformance Models </h2>
-        <div class="ednote">
-            <p>We are proposing 1(2) model(s) within the current draft and request public comment on these models.
-                Questions to consider include:</p>
-            <ul>
-                <li>Is the level of effort to meet this conformance model acceptable?</li>
-                <li>How well does this conformance model reflect the actual accessibility of the content being assessed?
-                </li>
-                <li>How well does this conformance model ensure inclusion across different disabilities?</li>
-                <li>What are the pros and cons of this conformance model?</li>
-            </ul>
-        </div>
-
+        <h2>Draft Conformance Approach</h2>
         <p>WCAG 3.0 will use a different conformance model than WCAG 2.0 in order to meet its requirements. Developing
             and vetting the conformance model is a large portion of the work AG needs to complete over the next few
-            years. Drafts will include maturity models for public review and comment. Key concepts we are exploring
-            include conformance levels, issue severity, percentages, and levels of severity.</p>
+            years. Drafts will include maturity models for public review and comment. </p>
 
-        <h3>Conformance levels</h3>
-        <p>WCAG 3.0 defines three levels of conformance: bronze, silver, and gold. These do not replicate the WCAG 2 A,
-            AA, AAA levels. The new conformance levels take a more advanced approach to make it clearer what they
-            reflect. Part of this change is to enable exemplary organizations to demonstrate the work that they are
-            doing.</p>
-        <p><strong>Bronze</strong> is the minimum conformance level. Content that does not meet the requirements of the
-            bronze level does not conform to WCAG 3.0. To reach Bronze level, the scope claimed in the conformance
-            statement must pass a subset of outcomes and assertions. The subset will require enough outcomes and
-            assertions to improve equity across <a>functional needs</a>.</p>
-        <p><strong>Silver</strong> level incentivizes organizations to go further to improve accessibility. One
-            possibility that we are examining is that Silver level points can accumulate even prior to completing bronze
-            but are not usable until Bronze is achieved. The goal is to encourage organizations to go beyond the
-            minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
-            accessibility.</p>
-        <p><strong>Gold</strong> level identifies measures we want to include for those organizations that do achieve
-            Silver so that some can stand out as exemplary, cutting edge, and role models. There are a number of ideas
-            that will be developed further once more of the conformance structure is solidified.</p>
+        <p>AG is exploring a model based on Foundational Requirements, Supplemental Requirements, and Assertions.</p>
 
-        <h3>Issue severity</h3>
-        <div class="ednote">
-            <p>Severity rating could contribute towards scoring and prioritization.</p>
-            <p>As we continue developing this content, we seek input on the following:</p>
-            <ol>
-                <li>Is every issue critical to someone, making this concept invalid?</li>
-                <li>How best to assign severity, particularly if testers have different ideas on what is critical?</li>
-                <li>How do we incorporate context/process/task? Is that part of scoping, or issue severity? Both are
-                    important to the end result.</li>
-                <li>What to do with non-critical issues?</li>
-                <li>If included, how will situations where severity depends on context be handled?</li>
-                <li>Can the matrix inform designation of functional categories? For example, the <a
-                        href="https://www.w3.org/WAI/GL/WCAG3/2021/outcomes/text-alternative-available">Text Alternative
-                        Available outcome</a>.</li>
-                <li>How will issue severity fit into levels? For example:
-                    <ul>
-                        <li>“Bronze” could be an absence of any critical or high issues;</li>
-                        <li>“Silver” could be an absence of any critical, high, or medium issues.</li>
-                    </ul>
-                </li>
-                <li>How to account for cumulative issues becoming critical?</li>
-                <li>Would another approach be more effective, for example assigning critical issues after testing is
-                    complete based on task or type of task rather than by test?</li>
-            </ol>
+        <p>The most basic level of conformance will require meeting all of the Foundational Requirements. This set will be somewhat
+            comparable to WCAG 2.2 A & AA.</p>
+            
+       <p>Higher levels of conformance will be defined and met using Supplemental Requirements and Assertions. AG will be exploring
+        whether meeting the higher levels would work best based on points, percentages, or predefined sets of provisions (modules).</p>
 
-            <p>Next steps include:</p>
-            <ul>
-                <li>Testing the assumption that some failures cause a greater impact to users than others or whether all
-                    guidelines and contexts are important to some individuals.</li>
-                <li>Explore whether the concept of issue severity can be applied consistently and effectively.</li>
-            </ul>
-        </div>
-        <p>Outcomes may allow for the concept of varying severity. High severity issues are those which prevent users
-            from completing task flows.</p>
-        <p>Tests could include critical issues. Each test could have a category of severity, so some tests will be
-            flagged as causing a critical issue.</p>
-
-        <h3>Adjectival ratings</h3>
-        <p> <a>Adjectival Ratings</a>allow test results to go beyond Pass or Fail to show progress towards a goal or
-            exceeding a goal. Example of possible adjectival ratings are:</p>
-        <ul>
-            <li>Fail, Pass, Exceptional; or</li>
-            <li>Fail, Progress, Pass, Better, Exceptional.</li>
-        </ul>
-        <p>Outcomes or guidelines could be evaluated using adjectival ratings on both directly
-            <a>quantifiable</a>outcomes and <a>qualitative</a>measures that are asserted. Outcomes might be assigned an
-            adjectival rating based on methods used to meet the outcome and issue severity. Guidelines might be assigned
-            an adjectival rating based on the outcomes and completed under the guideline.</p>
-
-        <h3>Percentages</h3>
-        <div class="ednote">
-            <p>We are exploring whether percentages could apply to Bronze but have not found a model to date where this
-                works without adding complexity and time needed for testing.</p>
-            <p>As we continue developing this content, we seek input on the following:</p>
-            <ul>
-                <li>How can percentages be used in a way that is equitable across disabilities?</li>
-            </ul>
-        </div>
-        <p>In this approach, percentage of outcomes and assertions passed or percentage passed at a certain adjectival
-            rating might be used to conform to Silver and Gold levels.</p>
-
-        <h3>Pre-assessment checks</h3>
-        <p>Pre-Assessment checks are tests or criteria that implementers can use to determine if they are ready to
-            assess conformance. The intent of specifying these would be to help implementers prepare for conformance
-            testing, not to create a new level of conformance. Examples of pre-assessment checks might be:</p>
-        <ul>
-            <li>The video player used has the ability to display captions and support multiple audio tracks,</li>
-            <li>All non-text elements on a page have an accessible name.</li>
-        </ul>
+        <h3>Additional Concepts</h3>    
+        <p>Key concepts AG has and previously considered and continues to explore the following:
+            <ul><li>Bronze, Silver and Gold conformance levels: AG has considered using three traditionally named conformance levels. 
+                <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
+                    bronze level does not conform to WCAG 3.0. The subset will require enough requirements and
+                    assertions to improve equity across functional needs.</li>
+                <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
+                    organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
+                    accessibility.</li>
+                <li>Gold level identifies measures we want to include for those organizations that do achieve
+                    Silver so that some can stand out as exemplary, cutting edge, and role models.</li></ul>    
+                <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
+                <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or
+                    exceeding a goal. Example of possible adjectival ratings are:
+                <ul>
+                    <li>Fail, Pass, Exceptional; or</li>
+                    <li>Fail, Progress, Pass, Better, Exceptional.</li>
+                </ul>
+                <li>Pre-assessment checks: Pre-Assessment checks are tests or criteria that implementers can use to determine if they are ready to
+                    assess conformance. The intent of specifying these would be to help implementers prepare for conformance
+                    testing, not to create a new level of conformance. </li>
+            </ul>   
     </section>
 
     <section id="schedule">
