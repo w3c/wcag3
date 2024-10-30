@@ -121,3 +121,23 @@ main h2:first-of-type {
 	padding: .5em 1em;
 	border-left-width: 1em;
 }
+
+.note, .ednote {
+	border-color: #52E052;
+	background: #e9fbe9;
+	overflow: auto;
+	padding: .5em;
+	border-width: 0 0 0 0.5em;
+	border-left-style: solid;
+	page-break-inside: avoid;
+	margin: 1.5em 0 0 0;
+}
+
+.ednote::before { 
+	content: "Editor's Note: "; 
+	font-weight: bold;
+}
+.note::before { 
+	content: "Note: "; 
+	font-weight: bold;
+}
