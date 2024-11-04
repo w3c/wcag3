@@ -35,14 +35,38 @@ var respecConfig = {
 		name: "Rachael Bradley Montgomery",
 		mailto: "rmontgomery@loc.gov",
 		company: "Library of Congress",
-		companyURI: "https://www.loc.gov/",
+		companyURI: "loc.gov/",
 		w3cid: 90310
+	}, {
+		name: "Chuck Adams",
+		mailto: "charles.adams@oracle.com",
+		company: "Oracle",
+		companyURI: "https://www.oracle.com/",
+		w3cid: 104852
+	}, {
+		name: "Alastair Campbell",
+		mailto: "acampbell@nomensa.com",
+		company: "Nomensa",
+		companyURI: "https://www.nomensa.com/",
+		w3cid: 44689
 	}, {
 		name: "Kevin White",
 		mailto: "kevin@w3.org",
 		company: "W3C",
 		companyURI: "https://www.w3.org/",
 		w3cid: 71819
+	}, {
+		name: "Jeanne Spellman",
+		mailto: "jspellman@spellmanconsulting.com",
+		company: "TetraLogical",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 42417
+	}, {
+		name: "Francis Storr",
+		mailto: "francis.storr@intel.com",
+		company: "Intel Corporation",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 90883
 	}],
 	
 	// authors, add as many as you like.
