@@ -31,12 +31,6 @@ var respecConfig = {
 	// editors, add as many as you like
 	// only "name" is required
 	editors:[ {
-		name: "Jeanne Spellman",
-		mailto: "jspellman@spellmanconsulting.com",
-		company: "TetraLogical",
-		companyURI: "https://tetralogical.com/",
-		w3cid: 42417
-	}, {
 		name: "Rachael Bradley Montgomery",
 		mailto: "rmontgomery@loc.gov",
 		company: "Library of Congress",
@@ -60,6 +54,18 @@ var respecConfig = {
 		company: "W3C",
 		companyURI: "https://www.w3.org/",
 		w3cid: 71819
+	}, {
+		name: "Jeanne Spellman",
+		mailto: "jspellman@spellmanconsulting.com",
+		company: "TetraLogical",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 42417
+	}, {
+		name: "Francis Storr",
+		mailto: "francis.storr@intel.com",
+		company: "Intel Corporation",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 90883
 	}],
 	
 	// authors, add as many as you like.
