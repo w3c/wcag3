@@ -22,10 +22,8 @@
         <h2>Introduction</h2>
 
         <p>W3C Accessibility Guidelines (WCAG) 3.0 is a successor to Web Content Accessibility Guidelines 2.2 [[WCAG22]]
-            and previous versions. It does not <a>deprecate</a> WCAG 2. It may incorporate content from User Agent
-            Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]]. These
-            versions provided a model that kept them relevant for over 10 years. Changing technology and changing needs
-            of people with disabilities require a new model to address content accessibility more comprehensively.
+            and previous versions. It does not <a>deprecate</a> WCAG 2. It may incorporate some content from User Agent
+            Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]] where it assists authors in meeting guidelines. These versions provided a model that kept them relevant for over 10 years. Changing technology and changing needs of people with disabilities require a new model to address content accessibility more comprehensively.
         </p>
         <p>This Explainer includes: </p>
         <ul>
@@ -196,7 +194,7 @@
         <h3>Requirements and Methods</h3>
         <p>Each Guideline contains multiple Requirements:
             <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
-                cover a similar, but not identical, set of needs as WCAG 2.2 A & AA.</li>
+                cover a similar, but not identical, set of needs as WCAG 2.2 Level AA.</li>
                 <li>Supplemental Requirements will be used for higher levels of conformance.</li>
             </li></ul></p>    
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
@@ -209,18 +207,18 @@
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
             technology. For example, the methods supporting the Clear Language guideline.</p>
 
+        <p class="ednote">The AG has discussed also including "Recommendations" at the same level as Supplemental Requirements. Recommendations would be things which could help improve accessibility but may not be objectively testable. They could contribute to levels of conformance above Foundational.</p>
+
         <h3>Assertions</h3>
             <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
                 Assertion is an attributable and documented statement of fact regarding procedures practiced in the
                 development and maintenance of the content or product to improve accessibility.</p>
     
             <h4>Using Assertions</h4>
-            <p>Assertions may supplement Requirement to meet a Guideline. Not all Guidelines include Assertions. Those that do
-                list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure to
-                claim conformance. Results when testing assertions are true/false - the organization making the assertion
-                either provided the required documentation or it did not.</p>
+            <p>Assertions may supplement Requirements to meet a Guideline. Not all Guidelines include Assertions. Guidelines that include Assertions, list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure as part of a conformance claim. Assertions can be made in addition to foundational requirements but do not replace foundational requirements.</p>
 
             <div class="ednote">
+                <p>The working group will consider whether assertions may be used to meet guidelines when requirements are not available.</p>
                 <p>An alternative to specifying assertions at the requirement or guideline level might be to require that the assertion apply to the scope of the conformance claim.</p>
             </div>
 
@@ -263,14 +261,10 @@
                         early draft examples of this approach: Focus Appearance, Implied Meaning, and Text Alternatives.</p>
                     <ul>
                         <li>Does the organization make it easier to understand the Guideline, Requirements and Assertions?</li>
-                        <li>The AG has discussed also including recommendations which could help improve accessibility under guidelines. 
-                            Recommendations are not testable and would not contribute to conformance.</li>
                         <li>Does seeing related guidance together encourage adoption of requirements and assertions beyond the most basic set?</li>
                         <li>How can this approach be improved?</li>
                     </ul>
-                    <p>AG will continue developing requirements and methods. Each publication will include additional or more mature examples
-                        for public comment. 
-                    </p>
+                    <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
                     <p>AG's next steps include:</p>
                     <ul>
                         <li>Define criteria for which requirements are foundational and which are supplemental.</li>
@@ -293,8 +287,7 @@
                             rather than for a claim of conformance?</li>
                         <li>Can assertions be used at the most basic level of conformance? If so, how?</li>
                         <li>How can small organizations use assertions without unrealistic burden?</li>
-                        <li>As written, supplemental requirements and assertions are at. Would moving assertions to the test level
-                            be more effective?</li>
+                        <li>As written, assertions are collocated with requirements. Would moving assertions to a different location be more effective?</li>
                         <li>AG is considering what will qualify as a procedure in WCAG 3.0. A procedure may be limited to
                             guidance:
                             <ul>
@@ -374,7 +367,7 @@
         <h4>Conditions</h4>
         <p>Some tests only apply in certain situations. Testing may occasionally require determining and referencing
             which specifications are being tested. Methods will note whether a test always applies or under what
-            conditions a test applies. Both quantitative and qualitative tests can be conditional.</p>
+            conditions a test applies. Both quantifiable and qualitative tests can be conditional.</p>
         <p>Example conditions include:</p>
         <ul>
             <li>The language used may have different grammatical rules.</li>
@@ -398,7 +391,7 @@
         <p>AG is exploring a model based on Foundational Requirements, Supplemental Requirements, and Assertions.</p>
 
         <p>The most basic level of conformance will require meeting all of the Foundational Requirements. This set will be somewhat
-            comparable to WCAG 2.2 A & AA.</p>
+            comparable to WCAG 2.2 Level AA.</p>
             
        <p>Higher levels of conformance will be defined and met using Supplemental Requirements and Assertions. AG will be exploring
         whether meeting the higher levels would work best based on points, percentages, or predefined sets of provisions (modules).</p>
