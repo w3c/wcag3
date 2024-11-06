@@ -31,6 +31,12 @@ var respecConfig = {
 	// editors, add as many as you like
 	// only "name" is required
 	editors:[ {
+		name: "Alastair Campbell",
+		mailto: "acampbell@nomensa.com",
+		company: "Nomensa",
+		companyURI: "https://www.nomensa.com/",
+		w3cid: 44689
+	},{
 		name: "Rachael Bradley Montgomery",
 		mailto: "rmontgomery@loc.gov",
 		company: "Library of Congress",
@@ -42,12 +48,6 @@ var respecConfig = {
 		company: "Oracle",
 		companyURI: "https://www.oracle.com/",
 		w3cid: 104852
-	}, {
-		name: "Alastair Campbell",
-		mailto: "acampbell@nomensa.com",
-		company: "Nomensa",
-		companyURI: "https://www.nomensa.com/",
-		w3cid: 44689
 	}, {
 		name: "Kevin White",
 		mailto: "kevin@w3.org",
