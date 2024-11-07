@@ -1294,10 +1294,48 @@
 					<li>All non-text elements on a page have an accessible name.</li>
 				</ul>
 				</section>				
-			<section data-status="placeholder">
-				<h3>Only accessibility-supported ways of using technologies</h3>
-				<p class="ednote">We continue to explore how the WCAG 2 concept of <a href="https://www.w3.org/TR/WCAG21/#cc4">accessibility-supported</a> fits into proposed conformance models.</p>
-			</section>
+				<section data-status="exploratory">
+					<h3>Only accessibility-supported ways of using technologies</h3>
+					<div class="ednote">
+						<p>The intent is for the responsibility of meeting requirements to vary depending on the level of conformance.</p> 
+						<p>At the basic/lower levels of conformance assumptions can be made by authors that many requirements can be met by user-agents and assistive technology. At higher levels of conformance the author may need to meet a requirement, or check that available user-agents do meet the requirements, or a combination of both.</p>
+	
+						<p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each outcome.</p>
+	
+						<p>The intent is that WCAG 3 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information </p>
+	
+						<p>Informative documentation that will be associated with this section includes:</p>
+						<ul>
+							<li>How to assess which assistive technologies you should support, for the "accessibility support set". This could be taken up by regulators to provide this information for a region.</li>
+						</ul>
+	
+						<p>The exception is still being discussed to avoid people using that scenario when not appropriate.</p>
+	
+						<p>We continue to explore how the WCAG 2 concept of <a href="https://www.w3.org/TR/WCAG21/#cc4">accessibility-supported</a> fits into proposed conformance models.</p>
+	
+					</div>
+					<p>Author responsibility for accessibility support (or "Assistive Technology Support") varies by conformance level.</p>
+					<section>
+						
+						<h4>Pre-requisite / Baseline conformance / Bronze</h4>
+						<p>At lower levels of conformance authors can assume the methods and techniques provided by WCAG 3 will be sufficient to meet that level of conformance.</p>
+	
+						<p>The techniques provided as part of WCAG 3 documentation are marked at this level, and can be assumed to work.</p>
+					</section>
+	
+					<section>
+						<h4>Enhanced / Silver</h4>
+						<p>Part of claiming conformance at higher levels includes defining which user-agents and assistive technologies you test for support, your "accessibility support set".</p>
+						<p>Methods and techniques at the higher levels of conformance include some information about Assistive Technology compatibility. If the provided coverage is not sufficient for your "accessibility support set", or you need to use a different technique to meet the outcome, the author is responsible for testing that their technique works for the "accessibility support set".</p>
+					</section>
+	
+					<section>
+						<h4>Exceptions (at Enhanced / Silver level)</h4>
+						<p>If there is a particular assistive technology which is in your "accessibility support set", and it has had a bug for more than 2 years, the author can claim an exception. In circumstances where most technologies support a technique but one does not for significant time, authors can still claim conformance.</p>
+					</section>
+	
+	
+				</section>
 			<section data-status="exploratory">
 				<h3>Defining conformance scope</h3>
 				<p>When evaluating the accessibility of content, WCAG 3 requires the outcomes apply to a specific scope. While the scope can be an all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
