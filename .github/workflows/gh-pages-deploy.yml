@@ -20,6 +20,8 @@ jobs:
         run: |
           mkdir ./_site
           cp -r ./guidelines ./_site/guidelines
+          cp -r ./explainer ./_site/explainer
+          cp -r ./requirements ./_site/requirements
 
       - name: Eleventy Build how-to pages
         run: |
