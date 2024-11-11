@@ -121,7 +121,7 @@
 							<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 						</section>
 						<section class="provision"  data-status="exploratory">
-							<h5>Flashing and strobing</h4>
+							<h5>Flashing</h4>
 							<p class="provision-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
 						</section>
 						<section class="provision"  data-status="exploratory">
@@ -144,7 +144,7 @@
 					<p class="guideline-text">Users know about and can correct mistakes.</p>
 						<section class="provision"  data-status="exploratory">
 							<h5>Error association</h5>
-							<p class="provision-text">Error notifications are programmatically associated with the error source.</p>
+							<p class="provision-text">Error notifications are programmatically associated with the error source so that users can access the error information while focused on the source of the error.</p>
 						</section>
 						<section class="provision"  data-status="exploratory">
 							<h5>Error identification</h5>
@@ -152,10 +152,10 @@
 						</section>
 						<section class="provision"  data-status="exploratory">
 							<h5>Error notification</h5>
-							<p class="provision-text">Error notifications are provided when an error occurs that describe the error and either provide instructions to fix the error or state that the system is at fault.</p>
+							<p class="provision-text">Errors that can be automatically detected are identified and described to the user.</p>
 						</section>
 						<section class="provision"  data-status="exploratory">
-							<h5>Persistent error notification</h5>
+							<h5>Persistent errors</h5>
 							<p class="provision-text">Error notifications persist until the user dismisses them or the error is resolved.</p>
 						</section>
 						<section class="provision"  data-status="exploratory">
@@ -170,23 +170,19 @@
 			<section>
 				<h3>Process and task completion</h3>
 				<section class="guideline">
-					<h4>Unnecessary steps</h4>
-					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>
-				<section class="guideline">
-					<h4>Cognitive tasks</h4>
+					<h4>Avoid cognitive tasks</h4>
 					<p class="guideline-text">Users can complete tasks without needing to memorize nor complete advanced cognitive tasks.</p>
 					<section class="provision"  data-status="exploratory">
-						<h4>Allow automated entry</h4>
-						<p class="provision-text">Automated input from user agents, 3rd party tools, or copy-and-paste is supported.</p>
+						<h5>Allow automated entry</h5>
+						<p class="provision-text">Automated input from user agents, 3rd party tools, or copy-and-paste is not prevented.</p>
 					</section>
-					<p class="guideline-text">Users can complete tasks without needing to memorize nor complete advanced cognitive tasks.</p>
 						<section class="provision"  data-status="exploratory">
-							<h4>No cognitive tests</h4>
-							<p class="provision-text">Tasks, including login/authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply). </p>
+							<h5>No cognitive tests</h5>
+							<p class="provision-text">Processes, including login/authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply).</p>
 						</section>
 						<section class="provision"  data-status="exploratory">
-							<h4>No memorization</h4>
-							<p class="provision-text">Tasks can be completed without memorizing and recalling information from previous stages of the process. </p>
+							<h5>No memorization</h5>
+							<p class="provision-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
 							<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 						</section>
 					</section>
@@ -195,7 +191,6 @@
 					<h4>Adequate time</h4>
 					<p class="guideline-text">Users have enough time to read and use content.</p>			
 					<section class="provision"  data-status="exploratory">
-						<section class="provision"  data-status="exploratory">
 							<h5>Adjust timing at start</h5>
 							<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
 						</section>
@@ -208,7 +203,6 @@
 							<p class="provision-text">For each process with a time-limit, a mechanism exists to disable the limit.</p>
 						</section>
 					</section>
-				</section>
 
 				<section class="guideline">
 					<h4>Unnecessary steps</h4>
@@ -223,15 +217,9 @@
 						</section>
 				</section>
 
-				<section class="provision"  data-status="exploratory">
-					<h4>Misinformation</h4>
-					<p class="provision-text">Processes can be completed without navigating misinformation or redirections.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Preselections</h4>
-					<p class="provision-text">Preselected options are visible by default during process completion without additional interactions.</p>
-				</section>
+				<section class="guideline">
+					<h4>Avoid deception</h4>
+					<p class="guideline-text">Users do not encounter deception when completing tasks, unless essential to the task.</p>	
 				<section class="provision"  data-status="exploratory">
 					<h4>Deceptive controls</h4>
 					<p class="provision-text">Interactive components are not deceptively designed.</p>
@@ -243,243 +231,435 @@
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Redirection</h4>
+					<h5>Misinformation</h5>
+					<p class="provision-text">Processes can be completed without navigating misinformation or redirections.</p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Preselections</h5>
+					<p class="provision-text">Preselected options are visible by default during process completion without additional interactions.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Redirection</h5>
 					<p class="provision-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>	
-
-
-				<section class="provision"  data-status="exploratory">
-					<h4>Action required</h4>
-					<p class="provision-text">The interface indicates when user input or action is required to proceed.</p>
 				</section>
+			</section>	
 
-
-
+			<section class="guideline">
+				<h4>Retain information</h4>
+				<p class="guideline-text">Users do not have to reenter information or redo work.</p>	
 				<section class="provision"  data-status="exploratory">
-					<h4>Go back in process</h4>
-					<p class="provision-text">The interface supports stepping backwards in a process and returning to the current point without data loss.</p>
+					<h5>Go back in process</h5>
+					<p class="provision-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Inform at start</h4>
+					<h5>Redundant entry</h5>
+					<p class="provision-text">Information previously entered by or provided to the user that is required to be entered again in the same process is either auto-populated, or available for the user to select.</p>
+				</section>				
+				<section class="provision"  data-status="exploratory">
+					<h5>Save progress</h5>
+					<p class="provision-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
+				</section>
+			</section>
+
+			<section class="guideline">
+				<h4>Complete tasks</h4>
+				<p class="guideline-text">Users understand how to complete tasks.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Action required</h5>
+					<p class="provision-text">In a process, the interface indicates when user input or action is required to procceed to the next step. c</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Inform at start of process</h5>
 					<p class="provision-text">Information needed to complete a multi-step process is provided at the start of the process, including:
-					<ul><li>estimated time or number of steps it might take,</li>
+					<ul><li>number of steps it might take (if known in advance),</li>
 					<li>details of any resources needed to perform the task, and</li>
 					<li>overview of the process and next step.</li></ul>
 					</p>
 				</section>
-
-
-
 				<section class="provision"  data-status="exploratory">
-					<h4>Save progress</h4>
-					<p class="provision-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Steps and direction</h4>
-					<p class="provision-text">The steps and directions needed to complete a process are visually and programmatically indicated.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Task completion documentation</h4>
-					<p class="provision-text">For tasks where labels and instructions cannot provide sufficient instructions for completion, detailed documentation on task completion is available.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					<h5>Steps and instructions</h5>
+					<p class="provision-text">The steps and instructions needed to complete a multistep process are available </p>
 				</section>
 			</section>
+		</section>
 
-			<section>
-				<h3>Image and media alternatives</h3>
+		<section>
+		<h3>Image and media alternatives</h3>				
+			<section class="guideline">
+				<h4>Image alternatives</h4>
+				<p class="guideline-text">Users have equivalent alternatives for images.</p>
+				
+				<p><strong>Foundational</strong></p>
+
+				<p>For each image:
+					<ol>
+						<li>Would removing the image impact how people understand the page?
+							<ul><li>No, <a>Decorative image is programmatically hidden.</a> Stop.</li>
+							<li>Yes, continue.</li></ul>
+						</li>
+
+						<li>Is the image presented in a way that is available to user agents and assistive technology?
+							<ul><li>Yes, image must meet <a>Image is programmatically detectable</a> AND the <a>accessibility support set</a> meets <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+							<li>No, continue.</li></ul>
+						</li>
+
+						<li>Is an equivalent text alternative available for the image?
+							<ul><li>Yes, image must meet <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+							<li>No, fail.</li></ul>
+						</li>
+					</ol>
+				</p>
+
+				<section class="provision"  data-status="developing">
+					<h5>Decorative image</h5>
+					<p class="provision-text">Decorative image is programmatically hidden.</p>
+				</section>
+				<section class="provision"  data-status="developing">
+					<h5>Content image</h5>
+					<p class="provision-text">Equivalent text alternative is  available for image that conveys content.</p>
+				</section>
+				<section class="provision"  data-status="developing">
+					<h5>Detectable image</h5>
+					<p class="provision-text">Image is programmatically detectable.</p>
+				</section>
+
+
+				<p><strong>Supplemental</strong></p>
 				<section class="provision"  data-status="exploratory">
-					<h4>AI editable</h4>
+					<h5>Image role</h5>
+					<p class="provision-text">The role and importance of the image is programmatically indicated.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Image type</h5>
+					<p class="provision-text">The type of image (photo, icon, etc.) is indicated.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Editable Alternatives</h5>
 					<p class="provision-text">Auto generated text descriptions are editable by content creator.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
+
+				<p><strong>Assertions</strong></p>
 				<section class="provision"  data-status="exploratory">
-					<h4>Audio alternative in preferred language</h4>
+					<h5>Style Guide</h5>
+					<p class="provision-text">Text alternatives follow an organizational style guide.</p>
+				</section>
+			</section>
+
+			<section class="guideline">
+				<h4>Media alternatives</h4>
+				<p class="guideline-text">Users have equivalent alternatives for media content.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Audio descriptions</h5>
+					<p class="provision-text">Where there is visual content in media, there is an equivalent synchronized audio track.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Captions</h5>
+					<p class="provision-text">Where there is audio content in media, there are equivalent synchronized captions.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Descriptive transcripts</h5>
+					<p class="provision-text">A transcript is available whenever audio or visual alternatives are used.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Findable media alternatives</h5>
+					<p class="provision-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.  (Needs additional research).</p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Preferred language</h5>
 					<p class="provision-text">Equivalent audio alternatives are available in the preferred language.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Audio descriptions</h4>
-					<p class="provision-text">Equivalent visual alternatives are available as synchronized audio in the media.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Captions</h4>
-					<p class="provision-text">Equivalent audio alternatives are available as synchronized captions in the media.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Complex image alternative</h4>
-					<p class="provision-text">Equivalent text alternatives are available for complex images. </p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Context in image alternative</h4>
-					<p class="provision-text">Image alternatives include context. </p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Decorative image alternative</h4>
-					<p class="provision-text">Equivalent descriptive text alternatives are available for decorative images.</p
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Descriptive transcripts</h4>
-					<p class="provision-text">Equivalent audio and visual alternatives to audio and video alternatives are available in descriptive transcripts.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Finding media alternatives</h4>
-					<p class="provision-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Identify autogenerated text</h4>
-					<p class="provision-text">Auto generated text alternatives are identified.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Image alternatives</h4>
-					<p class="provision-text">Equivalent text alternatives are available for images that convey content.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Image role</h4>
-					<p class="provision-text">The role and importance of images are programmatically indicated.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Image type</h4>
-					<p class="provision-text">The type of image (photo, icon, etc.) is indicated.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Images-of-Text alternatives</h4>
-					<p class="provision-text">Equivalent text alternatives are available for images of text.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Non-text alternatives</h4>
-					<p class="provision-text"> Equivalent text alternatives are available for non-text, non-image content that conveys context or meaning.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
 					<h4>Non-verbal cues</h4>
 					<p class="provision-text">Media alternatives explain nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning. </p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
+			</section>
+
+
+			<section class="guideline">
+				<h4>Nontext alternatives</h4>
+				<p class="guideline-text">Users have alternatives available for non-text, non-image content that conveys context or meaning.</p>
 				<section class="provision"  data-status="exploratory">
-					<h4>Persistent figure captions</h4>
-					<p class="provision-text">Figure captions persist or can be made to persist.</p>
+					<h5>Nontext content</h5>
+					<p class="provision-text">Equivalent text alternatives are available for non-text, non-image content that conveys context or meaning. </p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+				</section>
+			</section>
+
+			<section class="guideline">
+				<h4>Figure captions</h4>
+				<p class="guideline-text">Users can view figure captions even if not focused at figure.</p>
+
+				<section class="provision"  data-status="exploratory">
+					<h5>Persistent captions</h5>
+					<p class="provision-text">Figure captions persist or can be made to persist even if the focus moves away.</p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+				</section>
+			</section>
+			
+			<section class="guideline">
+				<h4>Single Sense</h4>
+				<p class="guideline-text"> Users have content that does not rely on a single sense or perception.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Use of hue</h5>
+					<p class="provision-text">Information conveyed by graphical elements does not rely on hue.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Use of color</h4>
-					<p class="provision-text">Information is not conveyed with color alone.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Use of visual depth</h4>
-					<p class="provision-text">Information is not conveyed with visual depth alone.</p>
+					<h5>Use of visual depth</h5>
+					<p class="provision-text">Information conveyed with visual depth is also conveyed programmatically and/or through text.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Use of sound</h4>
-					<p class="provision-text">Information is not conveyed with sound alone.</p>
+					<h5>Use of sound</h5>
+					<p class="provision-text">Information conveyed with sound is also conveyed programmatically and/or through text. </p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Use of spatial audio</h4>
-					<p class="provision-text">Information is not conveyed with spatial audio alone.</p>
+					<h5>Use of spatial audio</h5>
+					<p class="provision-text">Information that is conveyed with spatial audio is also conveyed programmatically and/or through text.</p>
+				</section>	
+			</section>
+		</section>
+
+		<section>
+		<h3>Interactive components</h3>							
+			<section class="guideline">
+				<h4>Keyboard Focus Appearance</h4>
+				<p class="guideline-text">Users have a visual indicator for the Keyboard Focus that is sufficient for them.</p>
+				
+				<p><strong>Foundational</strong></p>
+
+				<p>For each focusable item:
+					<ol>
+						<li>Is the user-agent default focus indicator used?
+							<ul><li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
+							</li>No, continue.</ul></ul>
+						</li>
+
+						<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
+							<ul><li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
+							<li>No, continue.</li></ul>
+						</li>
+
+						<li>Is the focus indicator defined by the author?
+							<ul><li></a>.</li>
+							<li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop. </li>
+							<li>No, fail.</li></ul>
+						</li>
+					</ol>
+				</p>
+
+				<section class="provision"  data-status="developing">
+					<h5>Custom indicator</h5>
+					<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacecy. </p>
+				</section>
+				<section class="provision"  data-status="developing">
+					<h5>Default indicator</h5>
+					<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
+				</section>
+				<section class="provision"  data-status="developing">
+					<h5>User agent default indicator</h5>
+					<p class="provision-text">Focusable item uses the user agent default indicator.</p>
+				</section>
+
+				<p><strong>Supplemental</strong></p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Supplimentary indicators</h5>
+					<p class="provision-text">@@</p>
+				</section>
+			
+				<p><strong>Assertions</strong></p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Style Guide</h5>
+					<p class="provision-text">Focus indicators follow an organizational style guide.</p>
+				</section>
+			</section>
+
+			<section>
+				<h4>Pointer Focus Appearance</h4>
+				<p class="guideline-text">Users have a visual indicator for the Pointer Focus that is sufficient for them.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Pointer visible</h5>
+					<p class="provision-text">There is a visible indicator of pointer focus.</p>
+				</section>
+			</section>
+
+			<section>
+				<h4>Navigating content</h4>
+				<p class="guideline-text">Users can determine where they are and move through content (including interactive elements) in a systematic and meaningful way regardless of input or movement method. </p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Focus in viewport</h5>
+					<p class="provision-text">The focus does not move to a position outside the current viewport, unless a mechanism is available to return to the previous focus point.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Focus retention</h5>
+					<p class="provision-text">A user can focus on a content “area,” such as a modal or pop-up, then resume their view of all content using a limited number of steps.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Keyboard focus order</h5>
+					<p class="provision-text">The keyboard focus moves sequentially through content in an order and way that preserves meaning and operability.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Restore focus</h5>
+					<p class="provision-text">When the focus is moved by the content into a temporary change of view (e.g. a modal), the focus is restored to its previous location when the view is restored.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Relevant focus</h5>
+					<p class="provision-text">The focus order does not include repetitive, hidden, or static elements.</p>
+				</section>
+			</section>
+
+			<section>
+				<h4>Expected behavior</h4>
+				<p class="guideline-text">Users have interactive components that behave as expected.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Consistent Interaction</h5></h4>
+					<p class="provision-text">Interactive components with the same functionality behave consistently.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Consistent labels</h5>
+					<p class="provision-text"> Interactive components with the same functionality have consistent labels.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Consistent visual design</h5>
+					<p class="provision-text"> Interactive components that have similar function and behavior have a consistent visual design.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Control location</h5>
+					<p class="provision-text">Interactive components are visually and programmatically located in conventional locations.</p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Conventions</h5>
+					<p class="provision-text"> Interactive components follow established conventions.</p>
+					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>				
+				<section class="provision"  data-status="exploratory">
+					<h5>Familiar component</h5>
+					<p class="provision-text">Conventional interactive components are used.</p>
+				</section>
 			</section>
 
 
 			<section>
-				<h3>Interactive components</h3>
+				<h4>Control information</h4>
+				<p class="guideline-text">Users have information about interactive components that is identifiable and usable visually and using assistive technology.</p>
+
 				<section class="provision"  data-status="exploratory">
-					<h4>Behavior of controls</h4>
-					<p class="provision-text">Controls and inputs with the same functionality behave consistently.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Change focus with pointer device</h4>
-					<p class="provision-text">Selecting an element with a ‘pointer’ sets the focus to that element.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Control labels</h4>
-					<p class="provision-text">Controls have visible labels that identify the purpose of the controls.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Conventions</h4>
-					<p class="provision-text">Controls follow established conventions. </p>
+					<h5>Control importance</h5>
+					<p class="provision-text">The importance of interactive components is indicated.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Consistent labels</h4>
-					<p class="provision-text">Controls and inputs with the same functionality have consistent labels.</p>
+					<h5>Control labels</h5>
+					<p class="provision-text">Interactive components have visible labels that identify the purpose of the component.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Matching labels</h4>
-					<p class="provision-text">Controls and inputs with the same functionality have consistent labels.</p>
+					<h5>Control updates</h5>
+					<p class="provision-text">Changes to interactive components’ names, roles, values or states are visually and programmatically indicated.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Field constraints</h4>
+					<h5>Distinguishable controls</h5>
+					<p class="provision-text"> Interactive components are visually distinguishable without interaction from static content and include visual cues on how to use them.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Field constraints</h5>
 					<p class="provision-text">Field constraints and conditions (required line length, date format, password format, etc) are available.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Control importance</h4>
-					<p class="provision-text">The importance of controls is visually and programmatically indicated.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					<h5>Input labels</h5>
+					<p class="provision-text">Inputs have visible labels that identify the purpose of the input.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Control updates</h4>
-					<p class="provision-text">Changes to control or input name, roles, values or states are visually and programmatically indicated.</p>
+					<h5>Labels match</h5>
+					<p class="provision-text">The programmatic name includes the visual label.</p>
 				</section>
+				<section class="provision"  data-status="exploratory">
+				<h5>Name, role, value, state</h5>
+				<p class="provision-text">Accurate names, roles, values, and states are available for interactive components. </p>
+				</section>
+			</section>
+		</section>
 
+
+		<section>
+			<h3>Input / Operation</h3>
+			<section class="guideline">
+				<h4>Input Operation</h4>
+				<p class="guideline-text">Users can use different input techniques and combinations and switch between them.</p>
 				<section class="provision"  data-status="exploratory">
-					<h4>Distinguishable controls</h4>
-					<p class="provision-text">Controls are visually distinct from static content and include visual cues on how to use them.</p>
+					<h5>Concurrent inputs</h5>
+					<p class="provision-text"> Any input modality available on a platform can be used concurrently.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Hover information</h4>
-					<p class="provision-text">Components which trigger a 'change of context' are indicated, or the change of context can be reversed.</p>
+					<h5>Hover information</h5>
+					<p class="provision-text">Users can dismiss additional content (triggered by hover) without moving the pointer, unless the additional content communicates an input error or does not obscure or replace other content.</p>
 				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Input control</h5>
+					<p class="provision-text">Interactive components are available to all navigation and input methods.</p>
+				</section>
+			</section>
+
+			<section class="guideline">
+				<h4>Content changes</h4>
+				<p class="guideline-text">Users are aware of changes to content or context.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Notify about change</h5>
+					<p class="provision-text">Changes in content and updates notify users, regardless of the update speed.
+					</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Notify on change</h5>
+					<p class="provision-text">Notification is provided when viewing content that was previously viewed is changed.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Inform before activation</h5>
+					<p class="provision-text">Interactive components that can alter the order of content convey their purpose prior to activation, and convey their impact on content order when activated.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Reverse change of context</h5>
+					<p class="provision-text">Components that trigger a 'change of context' are indicated, or the change of context can be reversed.</p>
+				</section>
+			</section>
+
+			<section class="guideline">
+				<h4>Target size</h4>
+				<p class="guideline-text">Users are not required to accurately position a pointer in order to view or operate content.</p>
+				<section class="provision"  data-status="exploratory">
+					<h5>Target size minimum</h5>
+					<p class="provision-text">The combined target size and spacing to adjacent targets is at least 24x24 pixels
+					</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h5>Target size optimum</h5>
+					<p class="provision-text">The combined target size and spacing to adjacent targets is at least 48x48 pixels.</p>
+				</section>
+			</section>
+
+
+
+
 				<section class="provision"  data-status="exploratory">
 					<h4>Interaction indicators contrast</h4>
 					<p class="provision-text">Interaction indicators meet a ‘minimum contrast ratio text’ and meet a minimum thickness.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Input control</h4>
-					<p class="provision-text">Interactive components are available to all navigation and input methods.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Name, role, value, state</h4>
-					<p class="provision-text">Accurate names, roles, values, and states are available for interactive components. </p>
-				</section>
-				<section class="provision"  data-status="exploratory">
 					<h4>Non-Text contrast</h4>
 					<p class="provision-text">Visual information required to identify user interface components and states meet a ‘minimum contrast ratio test’, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Notify on change</h4>
-					<p class="provision-text">Notification is provided when previously viewed content changes.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Notify before activation</h4>
-					<p class="provision-text">Controls that can alter the order of content convey their purpose prior to activation, and convey their impact on content order when activated.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Restore focus</h4>
-					<p class="provision-text">The focus or <a>point of regard</a> is restored to its previous location after a temporary change of view.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Relevant focus</h4>
-					<p class="provision-text">The focus order does not include repetitive, hidden, or static elements.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Target size</h4>
-					<p class="provision-text">All functionality can be used without needing to accurately position a pointer.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Visual design of controls</h4>
-					<p class="provision-text">Controls that have similar function and behavior have a consistent visual design.</p>
-				</section>
+				</section>			
 			</section>
 
-			<section>
-				<h3>Input / operation</h3>
+
+
+
 				<section class="provision"  data-status="exploratory">
 					<h4>Comparable keyboard effort</h4>
 					<p class="provision-text">The number of input commands required to complete a task using the keyboard is similar to the number of input commands when using other input modalities.</p>
@@ -490,10 +670,6 @@
 					<p class="provision-text">Keyboard interface interactions are consistent.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Focus in viewport</h4>
-					<p class="provision-text">The focus does not move to a position outside the current viewport, unless a mechanism is available to return to the previous focus point.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
 					<h4>Gestures & dragging</h4>
 					<p class="provision-text">Every function that can be operated by a pointer, can be operated by a ‘single pointer input’ or a sequence of single pointer inputs, without limitations on timing for input. </p>
 				</section>
@@ -501,10 +677,7 @@
 					<h4>Keyboard commands</h4>
 					<p class="provision-text">Application keyboard commands do not conflict with platform commands, and the user is informed of non-standard commands.</p>
 				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Keyboard focus location</h4>
-					<p class="provision-text">The keyboard focus is visually indicated.</p>
-				</section>
+
 				<section class="provision"  data-status="exploratory">
 					<h4>Keyboard only</h4>
 					<p class="provision-text">All functionality can be performed through the keyboard interface only, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.</p>
@@ -512,6 +685,10 @@
 				<section class="provision"  data-status="exploratory">
 					<h4>No keyboard trap</h4>
 					<p class="provision-text">If keyboard focus can be moved to an interactive component, then the keyboard focus can be moved away from that component.</p>
+				</section>
+				<section class="provision"  data-status="exploratory">
+					<h4>Change focus with pointer device</h4>
+					<p class="provision-text">Selecting an element with a ‘pointer’ sets the focus to that element.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
 					<h4>Pointer-agnostic</h4>
@@ -546,10 +723,7 @@
 					<h4>Use without device movement</h4>
 					<p class="provision-text">All functionality can be done without needing to move the hardware device.</p>
 				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Varied inputs</h4>
-					<p class="provision-text"> Any input modality available on a platform can be used concurrently.</p>
-				</section>
+
 			</section>
 
 
@@ -580,11 +754,7 @@
 					<h4>Content orientation</h4>
 					<p class="provision-text">Content orientation allows the user to read the language presented without changing head position.</p>
 				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Control location</h4>
-					<p class="provision-text">Controls are visually and programmatically located in an expected location.</p>
-					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-				</section>
+
 				<section class="provision"  data-status="exploratory">
 					<h4>Current location</h4>
 					<p class="provision-text">The current location within the view, multi-step process, and product is visually and programmatically indicated.</p>
@@ -604,10 +774,6 @@
 					<p class="provision-text">Common components and layouts are used.</p>
 				</section>
 				<section class="provision"  data-status="exploratory">
-					<h4>Focus retention</h4>
-					<p class="provision-text"> A user can focus on a content “area,” such as a modal or pop-up, then resume their view of all content using a limited number of steps.</p>
-				</section>
-				<section class="provision"  data-status="exploratory">
 					<h4>Indicate 3rd party content</h4>
 					<p class="provision-text">Third party content (AI, Advertising, etc.) is visually and programmatically indicated.</p>
 					<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
@@ -621,10 +787,7 @@
 					<h4>Multistep process</h4>
 					<p class="provision-text"> Provides context that orients the user in a site or multi-step process.</p>
 				</section>
-				<section class="provision"  data-status="exploratory">
-					<h4>Notification of change</h4>
-					<p class="provision-text">Changes in content and updates notify users, regardless of the update speed.</p>
-				</section>
+
 				<section class="provision"  data-status="exploratory">
 					<h4>Order of content</h4>
 					<p class="provision-text">Related information is grouped together within a visual and programmatic structure.</p>
