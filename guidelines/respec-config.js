@@ -98,6 +98,13 @@ var respecConfig = {
 	postProcess: [postRespec],
 	
 	localBiblio: {
+		"WCAG3-requirements": {
+			"title": "Requirements for WCAG 3.0",
+			"publisher": "World Wide Web Consortium",
+			"date": "8 November 2024",
+			"href": "https://www.w3.org/TR/wcag-3.0-requirements-20241108/"
+		},
+
 		"WCAG3-explainer": {
 			"title": "Explainer for W3C Accessibility Guidelines (WCAG) 3.0",
 			"publisher": "World Wide Web Consortium",
