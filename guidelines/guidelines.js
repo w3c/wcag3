@@ -122,12 +122,12 @@ function addSummaryMarkers() {
 }
 
 function addNoteMarkers() {
-	// document.querySelectorAll(".note").forEach(function(node){
-	// 	var el = document.createElement("p");
-	// 	el.className = "summaryEnd";
-	// 	el.innerHTML = "End of note";
-	// 	node.appendChild(el);
-	// })
+	document.querySelectorAll(".note").forEach(function(node){
+		var el = document.createElement("p");
+		el.className = "summaryEnd";
+		el.innerHTML = "End of note";
+		node.appendChild(el);
+	})
 }
 
 var statusLabels = {
