@@ -303,12 +303,6 @@ function outputJson() {
 function loadDoc(path) {
 }
 
-function authorToPM() {
-	document.querySelectorAll("div.head dt").forEach(function(node){
-    if (node.textContent.trim() == "Authors:" || node.textContent.trim() == "Author:") node.textContent = "Project Manager:";
-  });
-}
-
 function moveStatusFilterToToc() {
 	var button = document.querySelector('#status-filter');
 	var button_parent = button.parentNode;
@@ -329,7 +323,6 @@ function preRespec() {
 
 // scripts after Respec has run
 function postRespec() {
-	authorToPM();
 	addOutcomeMarkers();
 	adjustNormativity();
 	termTitles();

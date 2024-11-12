@@ -29,12 +29,6 @@ var respecConfig = {
 	// editors, add as many as you like
 	// only "name" is required
 	editors:[ {
-		name: "Jeanne Spellman",
-		mailto: "jspellman@spellmanconsulting.com",
-		company: "TetraLogical",
-		companyURI: "https://tetralogical.com/",
-		w3cid: 42417
-	}, {
 		name: "Rachael Bradley Montgomery",
 		mailto: "rmontgomery@loc.gov",
 		company: "Library of Congress",
@@ -58,27 +52,20 @@ var respecConfig = {
 		company: "W3C",
 		companyURI: "https://www.w3.org/",
 		w3cid: 71819
-	}],
-  formerEditors: [{
-		name: "Michael Cooper",
-		mailto: "cooper@w3.org",
-		company: "W3C",
-		companyURI: "https://www.w3.org/",
-		w3cid: 34017
 	}, {
-		name: "Shawn Lauriat",
-		mailto: "lauriat@google.com",
-		company: "Google, Inc.",
-		companyURI: "https://www.google.com/",
-		w3cid: 90646
+		name: "Jeanne Spellman",
+		mailto: "jspellman@spellmanconsulting.com",
+		company: "TetraLogical",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 42417
+	}, {
+		name: "Francis Storr",
+		mailto: "francis.storr@intel.com",
+		company: "Intel Corporation",
+		companyURI: "https://tetralogical.com/",
+		w3cid: 90883
 	}],
-	authors: [{
-    name: "Wilco Fiers",
-    mailto: "wilco.fiers@deque.com",
-    company: "Deque Systems, Inc.",
-    companyURI: "https://www.deque.com/",
-    w3cid: 43334
-  }],
+
 	
 	// authors, add as many as you like.
 	// This is optional, uncomment if you have authors as well as editors.
