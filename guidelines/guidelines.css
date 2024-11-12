@@ -48,11 +48,18 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	font-size: 100%;
 	color: #005A9C;
 }
+
+.guideline {
+	margin-left: 2em;
+}
+
+.guideline .provision {
+	margin-left: 2em;
+}
+
 .guideline-text, provision-text {
 	font-size: 110%;
 	margin-top: 0;
-	margin-bottom: 0;
-	text-indent: 50px;
 }
 .guideline h3, .provision h4, .provision h5 {
 	width: 100%;
@@ -66,7 +73,6 @@ color: black;
 
 .guideline p {
 	margin-top: 0;
-	text-indent: 50px;
 }
 
 h2, h3, h4 {
@@ -88,15 +94,6 @@ h5, h6 {
 .methods h5, .errors h5, .rating h5 {
 	font-size: 100%;
 	color: #005A9C;
-}
-.rating-table, .rating-table th, .rating-table td {
-	border: 1px solid black;
-	vertical-align: top;
-	border-collapse: collapse;
-	padding: 5px;
-}
-.rating-table th[scope=row] {
-	white-space: nowrap;
 }
 caption {
 	font-style: normal !important;
