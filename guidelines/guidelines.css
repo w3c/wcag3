@@ -26,7 +26,6 @@ summary::after {
 	content: url(img/summary.svg);
 }
 .summaryEnd {
-	text-align: center;
 	font-weight: bold;
 }
 
