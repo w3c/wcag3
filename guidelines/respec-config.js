@@ -98,6 +98,13 @@ var respecConfig = {
 	postProcess: [postRespec],
 	
 	localBiblio: {
+		"WCAG3-explainer": {
+			"title": "Explainer for W3C Accessibility Guidelines (WCAG) 3.0",
+			"publisher": "World Wide Web Consortium",
+			"date": "8 November 2024",
+			"href": "https://www.w3.org/TR/wcag-3.0-explainer-20241108/"
+		},
+
 		"508-criteria": {
 			"title": "Section 508 Functional Performance Criteria",
 			"publisher": "United States Access Board",
