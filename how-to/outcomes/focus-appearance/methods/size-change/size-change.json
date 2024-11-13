@@ -1,8 +1,0 @@
-{
-  "method": {
-    "index": 1,
-    "title": "Size change",
-    "slug": "size-change",
-    "description": "The authored focus indicator uses a change of size of the focusable element."
-  }
-}
