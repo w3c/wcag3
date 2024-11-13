@@ -102,6 +102,12 @@ var respecConfig = {
 			"date": "28 May 2024",
 			"href": "https://www.w3.org/TR/2024/WD-wcag-3.0-20240528/"
 		},
+		"WCAG3-requirements": {
+			"title": "Requirements for WCAG 3.0",
+			"publisher": "World Wide Web Consortium",
+			"date": "28 May 2024",
+			"href": "https://www.w3.org/TR/wcag-3.0-requirements-20240528/"
+		},
 		"508-criteria": {
 			"title": "Section 508 Functional Performance Criteria",
 			"publisher": "United States Access Board",
