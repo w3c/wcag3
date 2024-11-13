@@ -4,6 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Explainer for W3C Accessibility Guidelines (WCAG) 3.0</title>
+    <script src="explainer.js" class="remove"></script>
     <script src="respec-config.js" class="remove"></script>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
     <link rel="stylesheet" type="text/css" href="guidelines.css" />
@@ -11,12 +12,16 @@
 
 <body>
     <section id='abstract'>
-        <p>This Explainer accompanies the drafts of the W3C Accessibility Guidelines (WCAG) 3.0.
-        </p>
+        <p>This document accompanies the draft of [[[?WCAG3]]]. It provides an overview of the history and goals of WCAG 3. It also describes the current thinking on the structure of the Guidelines and the conformance model. 
+            The guidelines, conformance model, and related work are still evolving.</p> 
+        <p>Information on the current schedule is included below with a link to a more detailed timeline.</p>
+        <p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a> for more details about this work and links to WCAG technical and educational material.</p>
     </section>
     <section id='sotd'>
-        <p>This is an updated draft of the WCAG 3.0 Explainer. It is informative, not normative, and is not expected to
-            become a W3C Recommendation. It provides background on [[[WCAG3]]].</p>
+        <p>This is an updated draft of the WCAG 3.0 Explainer. It is informative, not normative, and is not expected to become a W3C Recommendation. It provides background on [[[?WCAG3]]].</p>
+
+        <p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
+
     </section>
     <section id="intro">
         <h2>Introduction</h2>
@@ -27,13 +32,16 @@
         </p>
         <p>This Explainer includes: </p>
         <ul>
-            <li>Goals for WCAG 3.0;</li>
-            <li>WCAG 3.0 background and development history;</li>
-            <li>Current process for creating WCAG 3.0;</li>
-            <li>Draft WCAG 3.0 structure;</li>
-            <li>Conformance model; and</li>
-            <li>Schedule.</li>
+            <li><a href="#goals">Goals for WCAG 3.0</a></li>
+            <li><a href="#background">WCAG 3.0 Background and Development History</a></li>
+            <li><a href="#current-process">Current Process for Creating WCAG 3.0</a></li>
+            <li><a href="#structure">WCAG 3.0 Structure</a></li>
+            <li><a href="#conformance-models">Conformance Approach</a></li>
+            <li><a href="#user-generated-content">Information on User-generated content</a>;</li>
+            <li><a href="#schedule">Schedule</a></li>
         </ul>
+
+     <p class="ednote">The structure, guidelines, and conformance model are still in draft. The Accessibility Guidelines Working Group welcomes public comments on the proposed approach.</p> 
     </section>
     <section>
         <h2>Goals</h2>
@@ -41,10 +49,8 @@
             variety of platforms. WCAG 3 will use a model that allows it to:</p>
         <ul>
             <li>address more disability needs than WCAG 2,</li>
-            <li>incorporate publishing requirements and emerging technologies such as web XR (augmented, virtual, and
-                mixed reality) and voice input,</li>
-            <li>facilitate maintenance, so that the new model will be more enduring over time as technologies evolve,
-                and</li>
+            <li>incorporate publishing requirements and emerging technologies such as web XR (augmented, virtual, and mixed reality) and voice input,</li>
+            <li>facilitate maintenance, so that the new model will be more enduring over time as technologies evolve, and</li>
             <li>include additional information about the ways web technologies need to work with <a>authoring tools</a>, <a>user agents</a>, and <a>assistive technologies</a>.</li>
         </ul>
         <p>Additional goals for WCAG 3.0 are written in <a
@@ -142,8 +148,8 @@
             in future releases.</p>
     </section>
 
-    <section id="structure">
-        <h2>Draft WCAG 3.0 Structure</h2>
+    <section id="structure" data-status="exploratory">
+        <h2>WCAG 3.0 Structure</h2>
         <p>WCAG 3.0 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized into:</p>
         <ul>
             <li>Guidelines (Outcome Statements) - normative
@@ -200,6 +206,8 @@
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
+        <p>Each set of Foundational Requirements are organized into a decision tree to show the relationship between requirements and 
+            to allow for accessibility-supported soluitions in the future.</p>
 
         <p>Each Requirement is associated with at least one <a>Method</a>.
             Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and
@@ -255,15 +263,6 @@
                 </ul>
 
                 <div class="ednote">
-                    <p>Within the current draft, Foundational Requirements are organized as a decision tree under the relevant Guidelines. 
-                        Supplemental Requirements and Assertions are then listed below the tree. AG hopes this will assist readers in 
-                        determining which Requirements and Assertions to use. The AG requests feedback on three
-                        early draft examples of this approach: Focus Appearance, Implied Meaning, and Text Alternatives.</p>
-                    <ul>
-                        <li>Does the organization make it easier to understand the Guideline, Requirements and Assertions?</li>
-                        <li>Does seeing related guidance together encourage adoption of requirements and assertions beyond the most basic set?</li>
-                        <li>How can this approach be improved?</li>
-                    </ul>
                     <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
                     <p>AG's next steps include:</p>
                     <ul>
@@ -382,8 +381,8 @@
         based on the procedure being asserted.</p>
     </section>
 
-    <section id="conformance-models">
-        <h2>Draft Conformance Approach</h2>
+    <section id="conformance-models" data-status="exploratory">
+        <h2>Conformance Approach</h2>
         <p>WCAG 3.0 will use a different conformance model than WCAG 2.2 in order to meet its requirements. Developing
             and vetting the conformance model is a large portion of the work AG needs to complete over the next few
             years. Drafts will include maturity models for public review and comment. </p>
@@ -436,7 +435,39 @@
             <p>An exception for long-present bugs in assistive technology is still under discussion.</p>
 
         </section>
+    </section>
 
+    <section id="user-generated-content" data-status="placeholder">
+        <h3>User-generated content</h3>
+        <details class="summary">
+            <summary>Summary</summary>
+            <p>User-generated content is content written by the public and customers. WCAG 3.0 may use different advice or steps for user-generated content to improve accessibility than for content created by the publisher. WCAG 3.0 proposes that organizations identify user-generated content and identify the steps taken to encourage accessibility. </p>
+        </details>
+            <div class="ednote">
+                <p>It remains to be determined how to address user-generated content that has accessibility issues; and to define what minimum thresholds might be acceptable. We expect WCAG 3 to provide this guidance within individual guidelines and outcomes and to support testing for conformance. The working group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements on how to best support accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
+                <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance for providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a> - “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user generated alternative text. </p>
+                <p>The working group intends to more thoroughly address the contents and the location of an accessibility statement in a future draft.</p>
+            </div>
+        <p>Web content publishers may include content provided by the users of their digital products. We refer to such content as “<a href="#user-generated-content">user-generated content</a>”.</p>
+        <p>Examples of user-generated content include:</p>
+        <ul>
+            <li>social media postings and comments,</li>
+            <li>uploaded photographs, or</li>
+            <li>uploaded videos or other multimedia.</li>
+        </ul>
+        <p>User-generated content is provided for publication by visitors where the content platform specifically welcomes and encourages it. User-generated content is content that is submitted through a user interface designed specifically for members of the public and customers. Use of the same user interface as an authoring tool for publication of content by agents of the publisher (such as employees, contractors, or authorized volunteers) acting on behalf of the publisher does not make that content user-generated content. The purpose of the user-generated content conformance  section is to allow WCAG 3 outcomes and methods to require additional or different steps to improve the accessibility of user-generated content.</p>
+        <p>An important part of WCAG conformance is the specific guidance that is associated with individual WCAG 3 guidelines and outcomes. Not all WCAG 3 guidelines will have unique outcomes and testing for user-generated content. Unless user-generated content requirements are specified in a particular guideline, that guideline applies as written whether or not the content is user generated. </p>
+    
+        
+        <p>The web content publisher should identify all locations of user-generated content (such as commentary on hosted content, product descriptions for consumer to consumer for sale listings, and restaurant reviews) and perform standard accessibility evaluation analysis for each. If there are no accessibility issues, the user-generated content is fully conforming.</p>
+        <section>
+            <h4>Steps to conform</h4>
+            <p>If accessibility issues are identified, or if the web site author wants to proactively address potential accessibility issues that might arise from user-generated content, then all of the following must be indicated alongside the user-generated content or in an accessibility statement published on the web site or product that is linked from the view or page in a consistent location:</p>
+            <ol>
+                <li>Clearly identify where user-generated content can be found on the publisher’s digital product (perhaps by id href);</li>
+                <li>Clearly identify the steps taken to encourage accessibility in user-generated content such as prompting the user for alternative text for their uploaded images before they are accepted and prohibiting text attributes except as they are part of semantic markup such as strong, headings, etc.;</li>
+            </ol>
+        </section>
     </section>
 
     <section id="schedule">
@@ -473,12 +504,20 @@
             <dt><dfn data-lt="Conform">Conformance</dfn></dt>
             <dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
                     the guidelines even when not making a formal Conformance Claim.</p>
-                <p>See <a href="#conformance-models">Draft Conformance Approach</a>.</p></dd>
+                <p>See <a href="#conformance-models">Conformance Approach</a>.</p></dd>
             <dt><dfn data-lt="deprecated|deprecate">Deprecate</dfn></dt>
             <dd>
                 <p>To declare something outdated and in the process of being phased out, usually in favor of a specified replacement.</p>
                 <p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
             </dd>
+
+            <dt><dfn>Documenting assertions</dfn></dt>
+            <dd>
+                <div class="ednote">
+                    <p>To be defined.</p>
+                </div>
+            </dd>
+
             <dt><dfn data-lt="equity">Equity</dfn></dt>
             <dd>
                 <p>Equity is the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
@@ -515,6 +554,14 @@
             <dd>
                 <p>Content whose instructions are required for <a>conformance</a>.</p>
             </dd>
+
+            <dt><dfn>Programmatically</dfn></dt>
+            <dd>
+                <div class="ednote">
+                    <p>To be defined.</p>
+                </div>
+            </dd>
+
             <dt><dfn data-lt="Processes">Process</dfn></dt>
             <dd><p>A sequence of steps that need to be completed to accomplish an activity / task from
                     end-to-end.</p></dd>
@@ -530,10 +577,33 @@
                 <p>Semi-automated evaluation involves components of <a>automated evaluation</a>
                     and <a>human evaluation</a>.</p>
             </dd>
+
+            <dt><dfn>Significant change</dfn></dt>
+            <dd>
+                <div class="ednote">
+                    <p>To be defined.</p>
+                </div>
+            </dd>
+
+            <dt><dfn data-lt="technology-agnostic">Technology agnostic</dfn></dt>
+            <dd>
+                <div class="ednote">
+                    <p>To be defined.</p>
+                </div>
+            </dd>
+
             <dt><dfn data-lt="Tests">Test</dfn></dt>
             <dd>
                 <p>Mechanism to evaluate implementation of a <a>method</a>.</p>
             </dd>
+
+            <dt><dfn>User activity</dfn></dt>
+            <dd>
+                <div class="ednote">
+                    <p>To be defined.</p>
+                </div>
+            </dd>
+
             <dt><dfn>User agent</dfn></dt>
             <dd>
                 <p>Any software that retrieves, renders and facilitates end user interaction with web content (e.g. web browsers, browser plug-ins, media players).</p>
