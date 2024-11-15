@@ -11,12 +11,12 @@
 	<body>
 		<section id="abstract">
 			<p>W3C Accessibility Guidelines (WCAG) 3.0 will provide a wide range of recommendations for making web content more accessible to users with disabilities. Following these guidelines will address many of the needs of users with blindness, low vision and other vision impairments; deafness and hearing loss; limited movement and dexterity; speech disabilities; sensory disorders; cognitive and learning disabilities; and combinations of these. These guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines apply to various types of web content including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
-			<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> and <a>assertions</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each outcome or assertion. </p>
-			<p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
+			<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> and <a>assertions</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement or assertion. </p>
+			<p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, requirements, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
 			<p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a> for an introduction and links to WCAG technical and educational material.</p>
 		</section>
 		<section id="sotd">
-			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for two outcomes: Image alternatives and Keyboard Focus Appearance.</p>
+			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for three Guidelines: Image alternatives, Keyboard Focus Appearance and Implied meaningful.</p>
 			<p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
 		</section>
 		<section class="informative">
@@ -45,16 +45,20 @@
 			</details>
 			<p>What’s new in this version of WCAG 3?</p>
 
-			<p>This draft includes an updated list of the potential outcomes which we are exploring. The list of outcomes is longer than a listing of Success Criteria in WCAG 2.2 because the intent at this stage is to be as inclusive as possible of potential outcomes. The final set of outcomes in WCAG 3 will be different than what is in this draft. Outcomes will be added, combined, and removed. We also expect changes to the text of the Outcomes. Only some of the Outcomes will be required at the base level of conformance.</p>
+			<p>This draft includes an updated list of the potential Guidelines and Requirements which we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:
+				<ul><li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
+					<li>WCAG 3 Requirements are more granular than WCAG 2 Success Criteria. </li></ul> 
+				The final set of Requirements in WCAG 3 will be different than what is in this draft. Requirements will be added, combined, and removed. 
+				We also expect changes to the text of the Requirements. Only some of the Requirements will be used to meet the base level of conformance.</p>
 
 			<p>The purpose of publishing this initial list is to:
 			<ul><li> better understand the scope of needs, </li>
 			<li>request assistance in identifying gaps, and</li>
-			<li>request assistance locating and conducting research to validate or invalidate the outcomes listed.</li></ul>
+			<li>request assistance locating and conducting research to validate or invalidate the requirements listed.</li></ul>
 			</p>
 			<p>We did not make changes to conformance related sections and we did not publish an updated WCAG 3 Explainer. </p>			
 			
-			<p>The outcomes are grouped into the following sections:</p>
+			<p>The Requirements are grouped into the following sections:</p>
 			<ul>
 				<li><a href="#animation-and-movement">Animation and movement</a></li>
 				<li><a href="#error-handling">Error handling</a></li>
@@ -72,10 +76,10 @@
 
 			<section>
 				<h3>About WCAG 3</h3>
-				<p>This specification presents a new model and guidelines to make web content and applications accessible to people with disabilities. The W3C Accessibility Guidelines (WCAG) 3.0 support a wide set of user needs, use new approaches to testing, and allow frequent maintenance of guidelines and related content to keep pace with accelerating technology change. WCAG 3 supports this evolution by focusing on the <a>functional needs</a> of users. These needs are then supported by outcomes and technology-specific methods to meet those needs. </p>
+				<p>This specification presents a new model and guidelines to make web content and applications accessible to people with disabilities. The W3C Accessibility Guidelines (WCAG) 3.0 support a wide set of user needs, use new approaches to testing, and allow frequent maintenance of guidelines and related content to keep pace with accelerating technology change. WCAG 3 supports this evolution by focusing on the <a>functional needs</a> of users. These needs are then supported by guidelines written as outcome statements, requirments, assertions, and technology-specific methods to meet those needs. </p>
 				<p>WCAG 3 is a successor to <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> [[WCAG22]] and previous versions, but does not <a>deprecate</a> WCAG 2. It will also incorporate content from and partially extend <a href="https://www.w3.org/TR/UAAG20/"> User Agent Accessibility Guidelines 2.0</a> [[UAAG20]] and <a href="https://www.w3.org/TR/ATAG20/"> Authoring Tool Accessibility Guidelines 2.0</a> [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 15 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly.</p>
 				<p>There are many differences between WCAG 2 and WCAG 3. The WCAG 3 guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines apply to various types of web content including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
-				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>outcomes</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each outcome. </p>
+				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement. </p>
 				<p>Content that conforms to WCAG 2.2 A and AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to the new standard, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
 			</section>
 
@@ -105,20 +109,20 @@
 		
 			
 			<div class="ednote">
-			<p>The individuals and organizations that use WCAG vary widely and include web designers and developers, policy makers, purchasing agents, teachers, and students. To meet the varying needs of this audience, several layers of guidance will be provided including functional categories of disabilities, general guidelines, outcomes that can be tested, a rich collection of methods, resource links, and code samples.</p>
+			<p>The individuals and organizations that use WCAG vary widely and include web designers and developers, policy makers, purchasing agents, teachers, and students. To meet the varying needs of this audience, several layers of guidance will be provided including guidelines written as outcome statements, requirements that can be tested, assertions, a rich collection of methods, resource links, and code samples.</p>
 
-				<p><strong> The following guidelines are an initial list of potential outcomes that the working group will be exploring. The goal is to guide the next phase of work. They should be considered drafts and should not be considered as final content of WCAG 3</strong>.</p>
+				<p><strong> The following list is an initial set of potential guidelines and requirements that the working group will be exploring. The goal is to guide the next phase of work. They should be considered drafts and should not be considered as final content of WCAG 3</strong>.</p>
 
-			<p>Ordinarily, exploratory content includes editor's notes listing concerns and questions for each item.  Because this Guidelines section is very early in the process of working on WCAG 3.0, this editor's note covers the content of the entire section.  Please consider all items in the list as exploratory at this point. It is a list of all possible topics for consideration. Not all items listed will become requirements.</p>
+			<p>Ordinarily, exploratory content includes editor's notes listing concerns and questions for each item.  Because this Guidelines section is very early in the process of working on WCAG 3.0, this editor's note covers most of the content in thi section.  Unless otherwise noted, all items in the list as exploratory at this point. It is a list of all possible topics for consideration. Not all items listed will be included in the final version of WCAG 3.0.</p>
 
-			<p>The outcomes listed below came from analysis of user needs that the Working Group has been studying, examining, and researching. They have not been refined and do not include essential exceptions or methods. Some outcomes may be best addressed by authoring tools or at the platform level. Many outcomes need additional work to better define the scope and to ensure they apply correctly to multiple languages, cultures, and writing systems. We will address these questions as we further explore each outcome.  </p>
+			<p>The guidelines and requirements listed below came from analysis of user needs that the Working Group has been studying, examining, and researching. They have not been refined and do not include essential exceptions or methods. Some requirements may be best addressed by authoring tools or at the platform level. Many requirements need additional work to better define the scope and to ensure they apply correctly to multiple languages, cultures, and writing systems. We will address these questions as we further explore each requirement.  </p>
 
-			<p>Please consider the following questions when reviewing this list of outcomes:</p>
+			<p>Please consider the following questions when reviewing this list of requirements:</p>
 
 
 			<ul>
-				<li>Does the structure proposed here and exemplified in the three developing outcomes help explain the relationship of requirements?</li>
-				<li>What requirements are needed to make web content accessible and are missing from this list?</li>
+				<li>Does the structure proposed here and exemplified in the three developing guidelines help explain the relationship of requirements?</li>
+				<li>What requirements that are needed to make web content accessible and are missing from this list?</li>
 				<li>What research supports or refutes these requirements?</li>
 			</ul></p>
 
@@ -126,7 +130,7 @@
 
 			<p id="additional_research"><strong>Additional Research</strong></p>
 			<p>One goal of publishing this list is to identify gaps in current research and request assistance filling those gaps.</p>
-			<p> Editor's notes indicate the outcomes within this list where the working group has not found enough research to fully validate the guidance and create methods to support it or additional work is needed to evaluate existing research.  If you know of existing research or if you are interested in conducting research in this area, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p> Editor's notes indicate the requirements within this list where the working group has not found enough research to fully validate the guidance and create methods to support it or additional work is needed to evaluate existing research.  If you know of existing research or if you are interested in conducting research in this area, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
 
 
 			</div>
@@ -1287,7 +1291,7 @@
 	
 				<p>At the foundational level of conformance assumptions can be made by authors that methods and techniques provided by WCAG 3 work. At higher levels of conformance the author may need to test that a technique works, or check that available user-agents meet the requirement, or a combination of both.</p>
 	
-				<p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each outcome.</p>
+				<p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each requirement.</p>
 	
 				<p>The intent is that WCAG 3 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information.</p>
 	
@@ -1299,7 +1303,7 @@
 
 			<section data-status="exploratory">
 				<h3>Defining conformance scope</h3>
-				<p>When evaluating the accessibility of content, WCAG 3 requires the outcomes apply to a specific scope. While the scope can be an all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+				<p>When evaluating the accessibility of content, WCAG 3 requires the guidelines apply to a specific scope. While the scope can be an all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
 				<ul>
 					<li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a>automated evaluation</a> of items;</li>
 					<li>In many cases, content changes frequently, causing evaluation to be accurate only for a specific moment in time;</li>
@@ -1348,8 +1352,8 @@
 				</dd>
 				<dt><dfn data-lt="Guidelines">Guideline</dfn></dt>
 				<dd>
-					<p>High-level, plain-language content used to organize <a>outcomes</a>.</p>
-					<p>Guidelines provide a high-level, plain-language version of the content for managers, policy makers, individuals who are new to accessibility, and other individuals who need to understand the concepts but not dive into the technical details. They provide an easy-to-understand way of organizing and presenting the outcomes so that non-experts can learn about and understand the concepts. Each guideline includes a unique, descriptive name along with a high-level plain-language summary. Guidelines address functional needs on specific topics, such as contrast, forms, readability, and more. Guidelines group related outcomes and are technology-independent.</p>
+					<p>High-level, plain-language outcome statements used to organize <a>requirements</a>.</p>
+					<p>Guidelines provide a high-level, plain-language outcome statements for managers, policy makers, individuals who are new to accessibility, and other individuals who need to understand the concepts but not dive into the technical details. They provide an easy-to-understand way of organizing and presenting the requirements so that non-experts can learn about and understand the concepts. Each guideline includes a unique, descriptive name along with a high-level plain-language summary. Guidelines address functional needs on specific topics, such as contrast, forms, readability, and more. Guidelines group related requirements and are technology-independent.</p>
 				</dd>
 				<dt><dfn data-lt="Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested">Human evaluation</dfn></dt>
 				<dd>
@@ -1367,16 +1371,11 @@
 				</dd>
 				<dt><dfn data-lt="Methods">Method</dfn></dt>
 				<dd>
-					<p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a>outcome</a> as well as <a>tests</a> and scoring information.</p>
+					<p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a>requirement</a> as well as <a>tests</a> and scoring information.</p>
 				</dd>
 				<dt><dfn>Normative</dfn></dt>
 				<dd>
 					<p>Content whose instructions are required for <a>conformance</a>.</p>
-				</dd>
-				<dt><dfn data-lt="Outcomes">Outcome</dfn></dt>
-				<dd>
-					<p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
-					<p>See <a href="#outcomes">Outcomes</a>.</p>
 				</dd>
 				<dt><dfn data-lt="point of regard | points of regard">Point of Regard</dfn></dt>
 				<dd><p>
@@ -1384,6 +1383,11 @@
 				<dt><dfn data-lt="Processes">Process</dfn></dt>
 				<dd><p>A sequence of steps that need to be completed to accomplish an activity / task from
 						end-to-end.</p></dd>
+				<dt><dfn data-lt="Requirement|Requirements">Requirement</dfn></dt>
+				<dd>
+					<p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
+					<p>See <a href="#requirements">Requirements</a>.</p>
+				</dd>
 				<dt><dfn>Semi-Automated Evaluation</dfn></dt>
 				<dd>
 					<p>Evaluation conducted using machines to guide humans to areas that need
@@ -1399,7 +1403,7 @@
 				<dd><p>The end goal a user has when starting a process through digital means.</p></dd>
 				<dt><dfn>User testing</dfn></dt>
 				<dd>
-					<p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content meets the relevant <a href="#outcomes">outcomes</a>.</p>
+					<p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content meets the relevant <a href="#requirements">requirements</a>.</p>
 				</dd>
 			</dl>
 		</section>
@@ -1410,63 +1414,6 @@
 		<section class="appendix">
 			<h2>Security Considerations</h2>
 			<p class="ednote">The content of this document has not matured enough to identify security considerations. Reviewers of this draft should consider whether requirements of the conformance model could impact security.</p>
-		</section>
-		<section class="appendix">
-			<h2>Guidelines development methodology</h2>
-			<details class="summary">
-				<summary>Summary</summary>
-				<p>WCAG 3 includes some of the information from WCAG 2, guidelines for tools to create web content (ATAG), and guidelines for browsers, media players, and similar software (UAAG).  The WCAG 3 design is based on research. You can read more about the [[[?WCAG3-requirements]]].</p>
-			</details>
-			<section>
-				<h3>Relationship to other W3C guidelines</h3>
-				<p>The [[[WCAG20]]] were designed to be technology neutral, and have stayed relevant for over 10 years. The [[[ATAG20]]] provide guidance for various types of software that assist people in writing accessible content. [[[UAAG20]]] offers useful guidance to user agent developers and has been implemented on an individual success criterion basis.</p>
-				<p>These guidelines have normative guidance for content and helpful implementation advice for authoring tools, user agents, and assistive technologies.</p>
-				<ul>
-					<li>WCAG 3 incorporates but may not be all encompassing of WCAG 2, ATAG, and UAAG.</li>
-					<li>WCAG 3 is not backward compatible with WCAG 2, ATAG 2.0, and UAAG 2.0.</li>
-				</ul>
-				<p>For more details about differences from previous guidelines, see <a href="#differences-from-wcag-2">Appendix: Differences From WCAG 2</a>.</p>
-			</section>
-		</section>
-		<section class="appendix">
-			<h2>Differences from WCAG 2</h2>
-			<section>
-				<h3>Outcomes</h3>
-				<p>Outcomes are different from WCAG 2 success criteria. Compared to success criteria, outcomes are written to be:</p>
-				<ul>
-					<li>In plain language; </li>
-					<li>More understandable by people who are not experts in technology;</li>
-					<li>More user-need oriented instead of technology oriented;</li>
-					<li>More granular, so there will be more of them; and</li>
-					<li>More flexible to allow more tests than the true/false statements of WCAG 2. </li>
-				</ul>
-				<p>The design of outcomes allows more varied needs of people with disabilities than could have been included in WCAG 2. </p>
-				<p>Methods map approximately to WCAG 2 Techniques documents.</p>
-			</section>
-			<section>
-				<h3>Approximate mapping of WCAG 2 and WCAG 3 documentation</h3>
-
-				<table>
-					<tbody>
-						<tr>
-							<th scope="col"> WCAG 2</th>
-							<th scope="col"> WCAG 3</th>
-						</tr>
-						<tr>
-							<td>Success Criteria</td>
-							<td>Outcomes</td>
-						</tr>
-						<tr>
-							<td>Techniques</td>
-							<td>Methods</td>
-						</tr>
-						<tr>
-							<td>Understanding</td>
-							<td>How-to</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
 		</section>
 		<section class="appendix">
 			<h2>Change log</h2>
