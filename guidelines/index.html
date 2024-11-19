@@ -455,56 +455,62 @@
 					<h4>Keyboard Focus Appearance</h4>
 					<p class="guideline-text">Users can see which <a>element</a> has keyboard focus.</p>
 					
-					<p><strong>Foundational Requirements</strong></p>
+					<section data-status="developing">
+						<h5>Foundational Requirements</h5>
 
-					<p>For each focusable item:
-						<ol>
-							<li>Is the user-agent default focus indicator used?
-								<ul>
-									<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
-									<li>No, continue.</li>
-								</ul>
-							</li>
+						<p>For each focusable item:
+							<ol>
+								<li>Is the user-agent default focus indicator used?
+									<ul>
+										<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
+										<li>No, continue.</li>
+									</ul>
+								</li>
 
-							<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
-								<ul>
-									<li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
-									<li>No, continue.</li>
-								</ul>
-							</li>
+								<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
+									<ul>
+										<li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
+										<li>No, continue.</li>
+									</ul>
+								</li>
 
-							<li>Is the focus indicator defined by the author?
-								<ul>
-									<li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop.</li>
-									<li>No, fail.</li>
-								</ul>
-							</li>
-						</ol>
-					</p>
+								<li>Is the focus indicator defined by the author?
+									<ul>
+										<li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop.</li>
+										<li>No, fail.</li>
+									</ul>
+								</li>
+							</ol>
+						</p>
 
-					<section class="provision" data-status="developing">
-						<h5>Custom indicator</h5>
-						<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency. </p>
+						<section class="provision">
+							<h6>Custom indicator</h6>
+							<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency. </p>
+						</section>
+						<section class="provision">
+							<h6>Default indicator</h6>
+							<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
+						</section>
+						<section class="provision">
+							<h6>User agent default indicator</h6>
+							<p class="provision-text">Focusable item uses the user agent default indicator.</p>
+						</section>
 					</section>
-					<section class="provision" data-status="developing">
-						<h5>Default indicator</h5>
-						<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
-					</section>
-					<section class="provision" data-status="developing">
-						<h5>User agent default indicator</h5>
-						<p class="provision-text">Focusable item uses the user agent default indicator.</p>
+
+					<section data-status="exploratory">
+						<h5>Supplemental Requirements</h5>
+						<section class="provision">
+							<h6>Supplimentary indicators</h6>
+							<p class="provision-text">@@</p>
+						</section>
 					</section>
 
-					<p><strong>Supplemental Requirements</strong></p>
-					<section class="provision" data-status="exploratory">
-						<h5>Supplimentary indicators</h5>
-						<p class="provision-text">@@</p>
-					</section>
-				
-					<p><strong>Assertions</strong></p>
-					<section class="provision" data-status="exploratory">
-						<h5>Style Guide</h5>
-						<p class="provision-text">Focus indicators follow an organizational style guide.</p>
+					<section data-status="exploratory">
+						<h5>Assertions</h5>
+						<section class="provision">
+							<h6>Style Guide</h6>
+							<p class="provision-text">Focus indicators follow an organizational style guide.</p>
+						</section>
 					</section>
 				</section>
 
@@ -1016,33 +1022,48 @@
 					<section class="provision" data-status="developing">
 						<h5>Implied Meaning</h5>
 						<p class="guideline-text">Users can access the literal meaning of text.</p>
-						<p><strong>Foundational Requirements</strong></p>	
-						<p>For each item of <a>non-literal text</a>:
+
+						<section>
+							<h6>Foundational Requirements</h6>
+							<p>For each item of <a>non-literal text</a>:
 							<ol>
-								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)?
-									<ul><li>Yes, view meets <a>Accessible text</a>, continue.</li>
-									</li>No, fail.</ul></ul>
+								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology
+									(AT)?
+									<ul>
+										<li>Yes, view meets <a>Accessible text</a>, continue.</li>
+								</li>No, fail.</ul>
+								</ul>
 								</li>
-	
-								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or provide a literal alternative</a>?
-									<ul><li>Yes, pass. Stop.</li>
-									<li>No, continue.</li></ul>
+							
+								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or
+										provide a literal alternative</a>?
+									<ul>
+										<li>Yes, pass. Stop.</li>
+										<li>No, continue.</li>
+									</ul>
 								</li>
-	
-								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative? 
-									<ul><li>Yes, view meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
-									<li>No, fail.</li></ul>
+							
+								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
+									<ul>
+										<li>Yes, view meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
+										<li>No, fail.</li>
+									</ul>
 								</li>
 							</ol>
-						</p>
-						<p><strong>Exceptions</strong></p>
-						<ul><li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students about 
-							    pieces of art, then the exception would not apply.</li></ul>
-							<section class="provision" data-status="developing">
-								<h5>Literal text</h5>
-								<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
-							</section>
+							</p>
+							<p><strong>Exceptions</strong></p>
+							<ul>
+								<li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students
+									about
+									pieces of art, then the exception would not apply.</li>
+							</ul>
+						</section>
 					</section>
+					<section class="provision">
+						<h6>Literal text</h6>
+						<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
+					</section>
+
 					<section class="provision" data-status="exploratory">
 						<h5>Sentence voice</h5>
 						<p class="provision-text">The voice used is easiest to understand in context.</p>
