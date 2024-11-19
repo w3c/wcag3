@@ -16,7 +16,7 @@ Users can see which element has keyboard focus.
 
 <div class="nested">
 
-### Requirements decision tree
+### Foundational Requirements
 
 For each focusable item:
 
@@ -36,7 +36,7 @@ For each focusable item:
 
   </div>
 
-### Supplemental
+### Supplimental Requirements
 
 - [Supplimentary indicators](methods/supplimentary-indicators).
 

@@ -19,38 +19,41 @@ Explaining or avoiding non-literal language can also help:
 
 <div class="normative">
 
-### Outcome
+### Guideline
 
   <p>{{ outcome.description }}</p>
 
 <div class="nested">
 
-### Requirements decision tree
-1. Does content include *non-literal text*? (Prerequisite)
-   1. Yes, continue.
-   2. No, pass.
-2. Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)? (Prerequisite)
-   1. Yes, view meets Accessible text, continue.
+### Foundational Requirements
+
+For each item of *non-literal text*:
+
+1. Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)? (Prerequisite)
+   1. Yes, view meets *Accessible text*, continue.
    2. No, fail.
-3. Does the available user agent, including assistive technology, sufficiently Explain non-literal text or provide a literal alternative? (Baseline)
+2. Does the available user agent, including assistive technology, sufficiently Explain non-literal text or provide a literal alternative? (Baseline)
    1. Yes, pass.
    2. No, continue. 
-4. Does the publisher sufficiently explain the non-literal text or provide a literal alternative? (Baseline)
+3. Does the publisher sufficiently explain the non-literal text or provide a literal alternative? (Baseline)
    1. Yes, view meets Explain non-literal text or provide a literal alternative, pass.
    2. No, fail.
+
+#### Exceptions
+* If the purpose is to showcase works of art, such as a poetry journal. 
+* But if the purpose is to educate students about pieces of art, then the exception would not apply.
 
 
 </div>
 
-### Supplemental
+### Supplimental Requirements
 
-- [The role and importance of images are programmatically indicated](methods/role-of-images) (Supporting requirement).
-- [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).
-- [Auto generated text descriptions are editable by content creator](methods/editable-alt-text)  (Supporting requirement).
+<p class="ednote">None defined at this time.</p>
 
 ### Assertions
 
-- [Text alternatives follow an organizational style guide](methods/text-alt-styleguide).
+<p class="ednote">There will probably be a generic assertion based on style guides that applies to this guideline.</p>
+
 
 </div>
 
