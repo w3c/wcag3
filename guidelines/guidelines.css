@@ -26,7 +26,16 @@ summary::after {
 	content: url(img/summary.svg);
 }
 .summaryEnd {
-	font-weight: bold;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;  
 }
 
 /* removing for readability
@@ -49,11 +58,11 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 .guideline {
-	margin-left: 2em;
+	margin-left: 4rem;
 }
 
 .guideline .provision {
-	margin-left: 2em;
+	margin-left: 4rem;
 }
 
 .guideline-text, provision-text {
@@ -173,4 +182,15 @@ a[href].status-link {
 	text-indent: 0px;
 	font-weight: bolder;
 	font-size: .75em;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+#guidelines > section {
+	margin-bottom: 4rem;
+}
+
+#guidelines :is(h2, h3, h4, h5, h6) {
+	margin-top: 1rem;
 }
