@@ -301,66 +301,73 @@
 				</section>
 			</section>
 
-			<section>
+			<section data-status="developing">
 				<h3>Image and media alternatives</h3>				
 				<section class="guideline">
 					<h4>Image alternatives</h4>
 					<p class="guideline-text">Users have equivalent alternatives for images.</p>
 					
-					<p><strong>Foundational Requirements</strong></p>
+					<section data-status="developing">
+						<h5>Foundational Requirements</h5>
 
-					<p>For each <a>image</a>:
-						<ol>
-							<li>Would removing the <a>image</a> impact how people understand the page?
-								<ul><li>No, <a>Decorative image is programmatically hidden.</a> Stop.</li>
-								<li>Yes, continue.</li></ul>
-							</li>
+						<p>For each <a>image</a>:
+							<ol>
+								<li>Would removing the <a>image</a> impact how people understand the page?
+									<ul><li>No, <a>Decorative image is programmatically hidden.</a> Stop.</li>
+									<li>Yes, continue.</li></ul>
+								</li>
 
-							<li>Is the <a>image</a> presented in a way that is available to user agents and assistive technology?
-								<ul><li>Yes, <a>image</a> must meet <a>Image is programmatically detectable</a> AND the <a>accessibility support set</a> meets <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-								<li>No, continue.</li></ul>
-							</li>
+								<li>Is the <a>image</a> presented in a way that is available to user agents and assistive technology?
+									<ul><li>Yes, <a>image</a> must meet <a>Image is programmatically detectable</a> AND the <a>accessibility support set</a> meets <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+									<li>No, continue.</li></ul>
+								</li>
 
-							<li>Is an equivalent text alternative available for the <a>image</a>?
-								<ul><li>Yes, <a>image</a> must meet <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-								<li>No, fail.</li></ul>
-							</li>
-						</ol>
-					</p>
+								<li>Is an equivalent text alternative available for the <a>image</a>?
+									<ul><li>Yes, <a>image</a> must meet <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+									<li>No, fail.</li></ul>
+								</li>
+							</ol>
+						</p>
 
-					<section class="provision" data-status="developing">
-						<h5>Decorative image</h5>
-						<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
-					</section>
-					<section class="provision" data-status="developing">
-						<h5>Content image</h5>
-						<p class="provision-text">Equivalent text alternative is  available for <a>image</a> that conveys <a>content</a>.</p>
-					</section>
-					<section class="provision" data-status="developing">
-						<h5>Detectable image</h5>
-						<p class="provision-text"><a>Image</a> is <a>programmatically detectable</a>.</p>
-					</section>
-
-
-					<p><strong>Supplemental Requirements</strong></p>
-					<section class="provision" data-status="exploratory">
-						<h5>Image role</h5>
-						<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Image type</h5>
-						<p class="provision-text">The type of <a>image</a> (photo, icon, etc.) is indicated.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Editable Alternatives</h5>
-						<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+						<section class="provision">
+							<h6>Decorative image</h6>
+							<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
+						</section>
+						<section class="provision">
+							<h6>Content image</h6>
+							<p class="provision-text">Equivalent text alternative is  available for <a>image</a> that conveys <a>content</a>.</p>
+						</section>
+						<section class="provision">
+							<h6>Detectable image</h6>
+							<p class="provision-text"><a>Image</a> is <a>programmatically detectable</a>.</p>
+						</section>
 					</section>
 
-					<p><strong>Assertions</strong></p>
-					<section class="provision" data-status="exploratory">
-						<h5>Style Guide</h5>
-						<p class="provision-text">Text alternatives follow an organizational style guide.</p>
+
+					<section data-status="exploratory">
+						<h5>Supplemental Requirements</h5>
+
+						<section class="provision">
+							<h6>Image role</h6>
+							<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
+						</section>
+						<section class="provision">
+							<h6>Image type</h6>
+							<p class="provision-text">The type of <a>image</a> (photo, icon, etc.) is indicated.</p>
+						</section>
+						<section class="provision">
+							<h6>Editable Alternatives</h6>
+							<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
+							<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+						</section>
+					</section>
+
+					<section data-status="exploratory">
+						<h5>Assertions</h5>
+						<section class="provision">
+							<h6>Style Guide</h6>
+							<p class="provision-text">Text alternatives follow an organizational style guide.</p>
+						</section>	
 					</section>
 				</section>
 
