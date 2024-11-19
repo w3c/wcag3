@@ -91,10 +91,10 @@
 				<p>As part of the WCAG 3 drafting process each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines Working Group is looking for.</p>
 				<ul>
 					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content or section to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
-					<li><strong id="status-exploratory">Exploratory</strong>: The working group is exploring what direction to take with this section. This content is not refined, details and definitions may be missing. Feedback should be about the proposed direction.</li>
+					<li><strong id="status-exploratory">Exploratory</strong>: The Working Group is exploring what direction to take with this section. This content is not refined, details and definitions may be missing. Feedback should be about the proposed direction.</li>
 					<li><strong id="status-developing">Developing</strong>: There is rough agreement on what is needed for this section, although not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. Feedback should be focused on ensuring the sections are usable and reasonable in a broad sense.</li>
-					<li><strong id="status-refining">Refining</strong>: The working group has reach consensus on this section. It is ready for broad public review and experimental adoption. Feedback should be focused on the feasibility and implementability.</li>
-					<li><strong id="status-mature">Mature</strong>: Content is believed by the working group to be ready for recommendation. Feedback should be focused on edge case scenarios the working group may not have anticipated.</li>
+					<li><strong id="status-refining">Refining</strong>: The Working Group has reach consensus on this section. It is ready for broad public review and experimental adoption. Feedback should be focused on the feasibility and implementability.</li>
+					<li><strong id="status-mature">Mature</strong>: Content is believed by the Working Group to be ready for recommendation. Feedback should be focused on edge case scenarios the Working Group may not have anticipated.</li>
 				</ul>
 			</section>
 
@@ -114,7 +114,7 @@
 			<div class="ednote">
 			<p>The individuals and organizations that use WCAG vary widely and include web designers and developers, policy makers, purchasing agents, teachers, and students. To meet the varying needs of this audience, several layers of guidance will be provided including guidelines written as outcome statements, requirements that can be tested, assertions, a rich collection of methods, resource links, and code samples.</p>
 
-				<p><strong> The following list is an initial set of potential guidelines and requirements that the working group will be exploring. The goal is to guide the next phase of work. They should be considered drafts and should not be considered as final content of WCAG 3</strong>.</p>
+				<p><strong> The following list is an initial set of potential guidelines and requirements that the Working Group will be exploring. The goal is to guide the next phase of work. They should be considered drafts and should not be considered as final content of WCAG 3</strong>.</p>
 
 			<p>Ordinarily, exploratory content includes editor's notes listing concerns and questions for each item.  Because this Guidelines section is very early in the process of working on WCAG 3.0, this editor's note covers most of the content in this section.  Unless otherwise noted, all items in the list as exploratory at this point. It is a list of all possible topics for consideration. Not all items listed will be included in the final version of WCAG 3.0.</p>
 
@@ -122,7 +122,7 @@
 
 			<p id="additional_research"><strong>Additional Research</strong></p>
 			<p>One goal of publishing this list is to identify gaps in current research and request assistance filling those gaps.</p>
-			<p> Editor's notes indicate the requirements within this list where the working group has not found enough research to fully validate the guidance and create methods to support it or additional work is needed to evaluate existing research.  If you know of existing research or if you are interested in conducting research in this area, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p> Editor's notes indicate the requirements within this list where the Working Group has not found enough research to fully validate the guidance and create methods to support it or additional work is needed to evaluate existing research.  If you know of existing research or if you are interested in conducting research in this area, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
 
 
 			</div>
@@ -453,18 +453,24 @@
 					<p>For each focusable item:
 						<ol>
 							<li>Is the user-agent default focus indicator used?
-								<ul><li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
-								</li>No, continue.</ul></ul>
+								<ul>
+									<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
+									<li>No, continue.</li>
+								</ul>
 							</li>
 
 							<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
-								<ul><li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
-								<li>No, continue.</li></ul>
+								<ul>
+									<li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
+									<li>No, continue.</li>
+								</ul>
 							</li>
 
 							<li>Is the focus indicator defined by the author?
-								<ul><li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop. </li>
-								<li>No, fail.</li></ul>
+								<ul>
+									<li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop.</li>
+									<li>No, fail.</li>
+								</ul>
 							</li>
 						</ol>
 					</p>
@@ -1233,7 +1239,7 @@
 					</section>
 					<section class="provision" data-status="exploratory">
 						<h5>Printing</h5>
-						<p class="provision-text">Printing respects user’s content presentation preferences.</p>
+						<p class="provision-text">Printing respects user's content presentation preferences.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="provision" data-status="exploratory">
@@ -1283,7 +1289,7 @@
 	
 				<p>At the foundational level of conformance assumptions can be made by authors that methods and techniques provided by WCAG 3 work. At higher levels of conformance the author may need to test that a technique works, or check that available user-agents meet the requirement, or a combination of both.</p>
 	
-				<p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each requirement.</p>
+				<p>This approach means the Working Group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each requirement.</p>
 	
 				<p>The intent is that WCAG 3 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information.</p>
 	
