@@ -307,7 +307,7 @@
 					<h4>Image alternatives</h4>
 					<p class="guideline-text">Users have equivalent alternatives for images.</p>
 					
-					<p><strong>Foundational</strong></p>
+					<p><strong>Foundational Requirements</strong></p>
 
 					<p>For each <a>image</a>:
 						<ol>
@@ -342,7 +342,7 @@
 					</section>
 
 
-					<p><strong>Supplemental</strong></p>
+					<p><strong>Supplemental Requirements</strong></p>
 					<section class="provision" data-status="exploratory">
 						<h5>Image role</h5>
 						<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
@@ -448,7 +448,7 @@
 					<h4>Keyboard Focus Appearance</h4>
 					<p class="guideline-text">Users can see which <a>element</a> has keyboard focus.</p>
 					
-					<p><strong>Foundational</strong></p>
+					<p><strong>Foundational Requirements</strong></p>
 
 					<p>For each focusable item:
 						<ol>
@@ -488,7 +488,7 @@
 						<p class="provision-text">Focusable item uses the user agent default indicator.</p>
 					</section>
 
-					<p><strong>Supplemental</strong></p>
+					<p><strong>Supplemental Requirements</strong></p>
 					<section class="provision" data-status="exploratory">
 						<h5>Supplimentary indicators</h5>
 						<p class="provision-text">@@</p>
@@ -1006,9 +1006,35 @@
 						<h5>Double negatives</h5>
 						<p class="provision-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
 					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Figurative language</h5>
-						<p class="provision-text">Explanations for figurative and <a>non-literal language</a> [such as jokes, sarcasm, hyperbole, metaphors, similes, and idioms] are available.</p>
+					<section class="provision" data-status="developing">
+						<h5>Implied Meaning</h5>
+						<p class="guideline-text">Users can access the literal meaning of text.</p>
+						<p><strong>Foundational Requirements</strong></p>	
+						<p>For each item of non-literal text:
+							<ol>
+								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)?
+									<ul><li>Yes, item meets <a>Accessible text</a>, continue.</li>
+									</li>No, fail.</ul></ul>
+								</li>
+	
+								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or provide a literal alternative</a>?
+									<ul><li>Yes, pass. Stop.</li>
+									<li>No, continue.</li></ul>
+								</li>
+	
+								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative? 
+									<ul><li>Yes, item meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
+									<li>No, fail.</li></ul>
+								</li>
+							</ol>
+						</p>
+						<p><strong>Exceptions</strong></p>
+						<ul><li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students about 
+							    pieces of art, then the exception would not apply.</li></ul>
+							<section class="provision" data-status="developing">
+								<h5>Literal text</h5>
+								<p class="provision-text">Explain non-literal text or provide a literal alternative</p>
+							</section>
 					</section>
 					<section class="provision" data-status="exploratory">
 						<h5>Sentence voice</h5>
@@ -1318,6 +1344,8 @@
 		<section data-status="exploratory">
 			<h2>Glossary</h2>
 			<p class="note">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p>
+			<p class="ednote">This glossary includes terms used by content that has reached a maturity level of Developing or higher. The definitions themselves include a maturity level and may mature at a differet pace than the content that refers to them. The AGWG will work with other taskforces and groups to harmonize terminology across documents as much as is possible. </p>
+
 			<dl>
 				<dt><dfn data-lt="Assertion|Assertions">Assertion</dfn></dt>
 				<dd><p>A formal claim of fact, attributed to a person or organization. An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the <a>content</a> or <a>product</a> to improve accessibility.</p></dd>
