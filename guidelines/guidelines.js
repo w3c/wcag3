@@ -141,13 +141,22 @@ var statusLabels = {
 function addStatusMarkers() {
 	var statusKeys = Object.keys(statusLabels);
 	statusKeys.forEach(function (status) {
-		var selector = '[data-status="' + status + '"] > .header-wrapper';
-		var headings = document.querySelectorAll(selector);
+		var headingSelector = '[data-status="' + status + '"] > .header-wrapper';
+		var headings = document.querySelectorAll(headingSelector);
 		headings.forEach(function (heading) {
-      var statusMarker = document.createElement("span");
-      statusMarker.classList.add("status-marker");
-      statusMarker.innerHTML = sentenceCase(status);
-      heading.firstElementChild.insertAdjacentElement('beforeend', statusMarker);
+			var statusMarker = document.createElement("span");
+			statusMarker.classList.add("status-marker");
+			statusMarker.innerHTML = sentenceCase(status);	
+			heading.firstElementChild.insertAdjacentElement('beforeend', statusMarker);
+		});
+
+		var dfnSelector = '[data-status="' + status + '"] > dfn';
+		var dfns = document.querySelectorAll(dfnSelector);
+		dfns.forEach(function (dfn) {
+			var statusMarker = document.createElement("span");
+			statusMarker.classList.add("status-marker");
+			statusMarker.innerHTML = sentenceCase(status);	
+			dfn.insertAdjacentElement('beforeend', statusMarker);
 		})
 	});
 }
