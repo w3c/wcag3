@@ -34,78 +34,6 @@ function pathToName(path) {
 	return sentenceCase(path.replace(/-/g, " "));
 }
 
-function linkHowTo() {
-	var howtoBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/how-tos/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
-	document.querySelectorAll('.guideline').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
-		var heading = textNoDescendant(findHeading(node));
-		var pathFrag = titleToPathFrag(heading);
-		var htm = "<p><a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"howto-link\">Learn how to meet guideline \"" + heading + "\"</a></p>";
-		node.querySelector("p.guideline-text").insertAdjacentHTML("afterend", htm);
-	})
-}
-
-function linkOutcome() {
-	var outcomeBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/outcomes/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
-	document.querySelectorAll('.outcome').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
-		var heading = textNoDescendant(findHeading(node));
-		var pathFrag = titleToPathFrag(heading);
-		var el = document.createElement("p");
-		el.innerHTML = " <a href=\"" + outcomeBaseURI + pathFrag + "\" class=\"outcome-link\"><span>Outcome details and methods for </span>\"" + heading + "\"</a>";
-		node.insertBefore(el, node.querySelector("details"));
-		
-		node.classList.add("notoc");
-	})
-}
-
-function addOutcomeMarkers() {
-	document.querySelectorAll('.outcome').forEach(function(node){
-		var outcomeText = node.querySelector("p");
-		outcomeText.innerHTML = "<span class=\"inserted\">Outcome: </span>" + outcomeText.innerHTML; 
-		/* 
-		var insertion = document.createElement("p");
-		insertion.classList.add("inserted");
-		insertion.innerHTML = " (outcome for <q>" + textNoDescendant(parentHeader) + "</q>)";
-		outcomeHeader.insertAdjacentElement("afterend", insertion);
-		 */
-	})
-}
-
-function addCategoryMarkers() {
-	document.querySelectorAll('.categories').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var sectionHeader = node.querySelector('summary');
-		sectionHeader.innerHTML = "Functional categories for <q>" + textNoDescendant(parentHeader) + "</q>";
-	})
-}
-
-function addErrorMarkers() {
-	document.querySelectorAll('.errors').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var errorHeader = node.querySelector('summary');
-		errorHeader.innerHTML = "Critical errors for <q>" + textNoDescendant(parentHeader) + "</q>";
-	})
-}
-
-function addRatingMarkers() {
-	document.querySelectorAll('.rating').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var sectionHeader = node.querySelector('summary');
-		sectionHeader.innerHTML = "Rating for <q>" + textNoDescendant(parentHeader) + "</q>";
-		
-		var table = node.querySelector('table');
-		table.querySelector("caption").remove();
-		var caption = document.createElement("caption");
-		caption.innerHTML = "Rating scale for \"" + textNoDescendant(parentHeader) + "\"";
-		table.insertBefore(caption, table.firstChild);
-	})
-}
-
 function addSummaryMarkers() {
 	document.querySelectorAll('.summary').forEach(function(node){
 		var parentHeader = findHeading(node.parentElement);
@@ -117,15 +45,6 @@ function addSummaryMarkers() {
 		var el = document.createElement("p");
 		el.className = "summaryEnd";
 		el.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
-		node.appendChild(el);
-	})
-}
-
-function addNoteMarkers() {
-	document.querySelectorAll(".note").forEach(function(node){
-		var el = document.createElement("p");
-		el.className = "summaryEnd";
-		el.innerHTML = "End of note";
 		node.appendChild(el);
 	})
 }
@@ -161,14 +80,8 @@ function addStatusMarkers() {
 	});
 }
 
-function termTitles() {
-	// put definitions into title attributes of term references
-	document.querySelectorAll('.internalDFN').forEach(function(node){
-		var dfn = document.querySelector(node.href.substring(node.href.indexOf('#')));
-		if (dfn.parentNode.name == "dt") node.title = dfn.parentNode.nextElementSibling.firstElementChild.textContent.trim().replace(/\s+/g,' ');
-		else if (dfn.title) node.title=dfn.title;
-	});	
 }
+
 
 function removeDraftMethodLinks() {
 	document.querySelectorAll('.method-link').forEach(function(node){
@@ -216,18 +129,6 @@ function alternateFloats() {
 			node.classList.add("figure-float-even");
 			order = "odd";
 		}
-	});
-}
-
-function edNotePermalinks() {
-	document.querySelectorAll(".note").forEach(function(node){
-		var id = node.id;
-		var heading = node.querySelector(".marker");
-		var permaLink = document.createElement("a");
-		permaLink.classList.add("self-link");
-		permaLink.setAttribute("aria-label", "§");
-		permaLink.setAttribute("href", "#" + id);
-		heading.appendChild(permaLink);
 	});
 }
 
@@ -324,20 +225,13 @@ function moveStatusFilterToToc() {
 function preRespec() {
 	adjustDfnData();
 	linkOutcome();
-	addCategoryMarkers();
-	addErrorMarkers();
-	addRatingMarkers();
 	addSummaryMarkers();
 }
 
 // scripts after Respec has run
 function postRespec() {
-	addOutcomeMarkers();
 	adjustNormativity();
-	termTitles();
 	removeDraftMethodLinks();
-	edNotePermalinks();
-	addNoteMarkers();
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
