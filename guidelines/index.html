@@ -16,7 +16,7 @@
 			<p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3.0 Introduction</a> for an introduction and links to WCAG technical and educational material.</p>
 		</section>
 		<section id="sotd">
-			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for three Guidelines: Image alternatives, Keyboard Focus Appearance and Implied meaning.</p>
+			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for two Guidelines: Image alternatives and Keyboard Focus Appearance.</p>
 			<p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
 		</section>
 		<section class="informative">
@@ -70,7 +70,7 @@
 			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:
 				<ul><li>What requirements are missing from this list to make web content accessible?</li>
 					<li>What research supports or refutes the requirements marked as needing additional research?</li>
-					<li>Three guidelines (<a href="#image-alternatives">Image alternatives</a>, <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a> and <a href="#implied-meaning">Implied Meaning</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
+					<li>Two guidelines (<a href="#image-alternatives">Image alternatives</a> and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
 					<ul>
 						<li>Grouping related requirements and assertions?</li>
 						<li>Using a decision tree for foundational requirements?</li>
@@ -343,45 +343,9 @@
 					<section class="provision" data-status="developing">
 						<h5>Implied Meaning</h5>
 						<p class="guideline-text">Users can access the literal meaning of text.</p>
-
-						<section>
-							<h6>Foundational Requirements</h6>
-							<p>For each item of <a>non-literal text</a>:
-							<ol>
-								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology
-									(AT)?
-									<ul>
-										<li>Yes, view meets <a>Accessible text</a>, continue.</li>
-								</li>No, fail.</ul>
-								</ul>
-								</li>
-							
-								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or
-										provide a literal alternative</a>?
-									<ul>
-										<li>Yes, pass. Stop.</li>
-										<li>No, continue.</li>
-									</ul>
-								</li>
-							
-								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
-									<ul>
-										<li>Yes, view meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
-										<li>No, fail.</li>
-									</ul>
-								</li>
-							</ol>
-							</p>
-							<p><strong>Exceptions</strong></p>
-							<ul>
-								<li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students
-									about
-									pieces of art, then the exception would not apply.</li>
-							</ul>
-						</section>
 					</section>
 					<section class="provision">
-						<h6>Literal text</h6>
+						<h5>Literal text</h5>
 						<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
 					</section>
 
