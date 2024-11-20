@@ -38,6 +38,9 @@ summary::after {
 	word-wrap: normal !important;  
 }
 
+.decision-tree summary::after {
+}
+
 /* removing for readability
 .howto-link, .outcome-link {
 	font-style: italic;
@@ -155,9 +158,8 @@ caption {
 	content: "§";
 	display: block;
 }
-.status-marker {
+.status-marker, .provision-type-marker {
   font-weight: 700;
-  color: #091832;
   font-size: 11px;
   font-size: .6125rem;
   line-height: 1.4;
@@ -165,9 +167,16 @@ caption {
   margin-left: 1em;
   padding: 4px 8px;
   border-radius: 3px;
-  background: #d0e1f1;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.status-marker {
+	background: #d0e1f1;
+	color: #091832;  
+}
+.provision-type-marker {
+	background: #6bc8fe;
+	color: #111111;  
 }
 a[href].status-link {
 	color: var(--text);

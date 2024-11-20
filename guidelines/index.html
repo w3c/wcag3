@@ -53,16 +53,16 @@
 			
 			<p>The Requirements are grouped into the following sections:</p>
 			<ul>
-				<li><a href="#animation-and-movement">Animation and movement</a></li>
-				<li><a href="#error-handling">Error handling</a></li>
-				<li><a href="#process-and-task-completion">Process and task completion</a></li>
 				<li><a href="#image-and-media-alternatives">Image and media alternatives</a></li>
+				<li><a href="#text-and-wording">Text and Wording</a></li>
 				<li><a href="#interactive-components">Interactive components</a></li>
 				<li><a href="#input-operation">Input / Operation</a></li>
+				<li><a href="#error-handling">Error handling</a></li>
+				<li><a href="#animation-and-movement">Animation and movement</a></li>
 				<li><a href="#layout">Layout</a></li>
 				<li><a href="#consistency-across-views">Consistency across views</a></li>
+				<li><a href="#process-and-task-completion">Process and task completion</a></li>
 				<li><a href="#policy-and-protection">Policy and Protection</a></li>
-				<li><a href="#text-and-wording">Text and Wording</a></li>
 				<li><a href="#help-and-feedback">Help and feedback</a></li>
 				<li><a href="#user-control">User Control</a></li>
 			</ul>
@@ -131,248 +131,66 @@
 
 			</div>
 
-			<section>
-				<h3>Animation and movement</h3>
-				<section class="guideline">
-					<h4>Avoid physical harm</h4>
-					<p class="guideline-text">Users do not experience physical harm from <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Audio shifting</h4>
-						<p class="provision-text">Audio shifting designed to create a perception of motion is avoided; or can be paused or prevented.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Flashing</h4>
-						<p class="provision-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Motion</h4>
-						<p class="provision-text">Visual motion and pseudo-motion that lasts longer than 5 seconds is avoided; or can be paused or prevented.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Motion from interaction</h4>
-						<p class="provision-text">Visual motion and pseudo-motion triggered by interaction is avoided; or can be prevented, unless the animation is essential to the functionality or the information being conveyed.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-				</section>
-			</section>	
-
-			<section>
-				<h3>Error handling</h3>
-				<section class="guideline">
-					<h4>Correct mistakes</h4>
-					<p class="guideline-text">Users know about and can correct mistakes.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Error association</h5>
-						<p class="provision-text">Error notifications are <a>programmatically associated</a> with the error source so that users can access the error information while focused on the source of the error.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Error identification</h5>
-						<p class="provision-text">Errors are visually identifiable without relying on only text, only color, or only symbols. </p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Error notification</h5>
-						<p class="provision-text">Errors that can be automatically detected are identified and described to the user.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Persistent errors</h5>
-						<p class="provision-text">Error notifications persist until the user dismisses them or the error is resolved.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Visible errors</h5>
-						<p class="provision-text">Error notifications are visually collocated with the source of the error within the viewport, or provide a link to the source of the error which, when activated, moves the viewport to the error.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-				</section>
-			</section>
-
-			<section>
-				<h3>Process and task completion</h3>
-				<section class="guideline">
-					<h4>Avoid cognitive tasks</h4>
-					<p class="guideline-text">Users can complete tasks without needing to memorize nor complete advanced cognitive tasks.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Allow automated entry</h5>
-						<p class="provision-text">Automated input from user agents, 3rd party tools, or copy-and-paste is not prevented.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>No cognitive tests</h5>
-						<p class="provision-text">Processes, including authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply).</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>No memorization</h5>
-						<p class="provision-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-				</section>
-
-				<section class="guideline">
-					<h4>Adequate time</h4>
-					<p class="guideline-text">Users have enough time to read and use <a>content</a>.</p>			
-					<section class="provision" data-status="exploratory">
-						<h5>Adjust timing at start</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Adjust timing at timeout</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the time-limit at timeout.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Disable timeout</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable the limit.</p>
-					</section>
-				</section>
-
-				<section class="guideline">
-					<h4>Unnecessary steps</h4>
-					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>	
-						<section class="provision" data-status="exploratory">
-							<h4>Optional information</h4>
-							<p class="provision-text">Processes can be completed without being forced to read or understand unnecessary <a>content</a>.</p>
-						</section>
-						<section class="provision" data-status="exploratory">
-							<h4>Optional input</h4>
-							<p class="provision-text">Processes can be completed without entering unnecessary information.</p>
-						</section>
-				</section>
-
-				<section class="guideline">
-					<h4>Avoid deception</h4>
-					<p class="guideline-text">Users do not encounter deception when completing tasks, unless essential to the task.</p>	
-					<section class="provision" data-status="exploratory">
-						<h4>Deceptive controls</h4>
-						<p class="provision-text">Interactive components are not deceptively designed.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h4>Exploitive behaviors</h4>
-						<p class="provision-text">Process completion does not include exploitive behaviors.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Misinformation</h5>
-						<p class="provision-text">Processes can be completed without navigating misinformation or redirections.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Preselections</h5>
-						<p class="provision-text">Preselected options are visible by default during process completion without additional interactions.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Redirection</h5>
-						<p class="provision-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-				</section>	
-
-				<section class="guideline">
-					<h4>Retain information</h4>
-					<p class="guideline-text">Users do not have to reenter information or redo work.</p>	
-					<section class="provision" data-status="exploratory">
-						<h5>Go back in process</h5>
-						<p class="provision-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Redundant entry</h5>
-						<p class="provision-text">Information previously entered by or provided to the user that is required to be entered again in the same process is either auto-populated, or available for the user to select.</p>
-					</section>				
-					<section class="provision" data-status="exploratory">
-						<h5>Save progress</h5>
-						<p class="provision-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
-					</section>
-				</section>
-
-				<section class="guideline">
-					<h4>Complete tasks</h4>
-					<p class="guideline-text">Users understand how to complete tasks.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Action required</h5>
-						<p class="provision-text">In a process, the interface indicates when user input or action is required to proceed to the next step. c</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Inform at start of process</h5>
-						<p class="provision-text">Information needed to complete a multi-step process is provided at the start of the process, including:
-						<ul><li>number of steps it might take (if known in advance),</li>
-						<li>details of any resources needed to perform the task, and</li>
-						<li>overview of the process and next step.</li></ul>
-						</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Steps and instructions</h5>
-						<p class="provision-text">The steps and instructions needed to complete a multistep process are available </p>
-					</section>
-				</section>
-			</section>
-
 			<section data-status="developing">
 				<h3>Image and media alternatives</h3>				
 				<section class="guideline">
 					<h4>Image alternatives</h4>
 					<p class="guideline-text">Users have equivalent alternatives for images.</p>
-					
-					<section data-status="developing">
-						<h5>Foundational Requirements</h5>
+
+					<details class="decision-tree">
+						<summary>Which provision applies?</summary>
 
 						<p>For each <a>image</a>:
 							<ol>
 								<li>Would removing the <a>image</a> impact how people understand the page?
-									<ul><li>No, <a>Decorative image is programmatically hidden.</a> Stop.</li>
+									<ul><li>No, <a href="#decorative-image">Decorative image is programmatically hidden.</a> Stop.</li>
 									<li>Yes, continue.</li></ul>
 								</li>
 
 								<li>Is the <a>image</a> presented in a way that is available to user agents and assistive technology?
-									<ul><li>Yes, <a>image</a> must meet <a>Image is programmatically detectable</a> AND the <a>accessibility support set</a> meets <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+									<ul><li>Yes, <a>image</a> must meet <a href="#detectable-image">Image is programmatically determinable</a> AND the <a>accessibility support set</a> meets <a href="#content-image">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
 									<li>No, continue.</li></ul>
 								</li>
 
 								<li>Is an equivalent text alternative available for the <a>image</a>?
-									<ul><li>Yes, <a>image</a> must meet <a>Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+									<ul><li>Yes, <a>image</a> must meet <a href="#content-image">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
 									<li>No, fail.</li></ul>
 								</li>
 							</ol>
 						</p>
+					</details>
 
-						<section class="provision">
-							<h6>Decorative image</h6>
-							<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
-						</section>
-						<section class="provision">
-							<h6>Content image</h6>
-							<p class="provision-text">Equivalent text alternative is  available for <a>image</a> that conveys <a>content</a>.</p>
-						</section>
-						<section class="provision">
-							<h6>Detectable image</h6>
-							<p class="provision-text"><a>Image</a> is <a>programmatically detectable</a>.</p>
-						</section>
+					<section class="provision" data-status="developing" data-provision-type="foundational">
+						<h5>Decorative image</h5>
+						<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
+					</section>
+					<section class="provision" data-status="developing" data-provision-type="foundational">
+						<h5>Content image</h5>
+						<p class="provision-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
+					</section>
+					<section class="provision" data-status="developing" data-provision-type="foundational">
+						<h5>Detectable image</h5>
+						<p class="provision-text"><a>Image</a> is <a>programmatically determinable</a>.</p>
 					</section>
 
-
-					<section data-status="exploratory">
-						<h5>Supplemental Requirements</h5>
-
-						<section class="provision">
-							<h6>Image role</h6>
-							<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
-						</section>
-						<section class="provision">
-							<h6>Image type</h6>
-							<p class="provision-text">The type of <a>image</a> (photo, icon, etc.) is indicated.</p>
-						</section>
-						<section class="provision">
-							<h6>Editable Alternatives</h6>
-							<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
-							<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-						</section>
+					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+						<h5>Image role</h5>
+						<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
+					</section>
+					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+						<h5>Image type</h5>
+						<p class="provision-text">The type of <a>image</a> (photo, icon, etc.) is indicated.</p>
+					</section>
+					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+						<h5>Editable Alternatives</h5>
+						<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 
-					<section data-status="exploratory">
-						<h5>Assertions</h5>
-						<section class="provision">
-							<h6>Style Guide</h6>
-							<p class="provision-text">Text alternatives follow an organizational style guide.</p>
-						</section>	
-					</section>
+					<section class="provision" data-status="exploratory" data-provision-type="assertion">
+						<h5>Style Guide</h5>
+						<p class="provision-text">Text alternatives follow an organizational style guide.</p>
+					</section>	
 				</section>
 
 				<section class="guideline">
@@ -454,67 +272,200 @@
 			</section>
 
 			<section>
+				<h3>Text and Wording</h3>
+					<section class="guideline">
+					<h4>Text appearance</h4>
+					<p class="guideline-text">Users can read visually rendered text.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Maximum text contrast</h5>
+						<p class="provision-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance. </p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision"  daa-status="exploratory">
+						<h5>Minimum text contrast</h5>
+						<p class="provision-text">The rendered text against its background meets a minimum <a>contrast ratio test</a> for its text appearance.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>	
+					<section class="provision" data-status="exploratory">
+						<h5>Text size</h5>
+						<p class="provision-text">The rendered text meets a minimum font size and weight.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>		
+					<section class="provision" data-status="exploratory">
+						<h5>Text style</h5>
+						<p class="provision-text">The rendered text does not use a decorative or cursive font face.</p>
+					</section>	
+				</section>
+
+				<section class="guideline">
+					<h4>Text-to-speech</h4>
+					<p class="guideline-text">Users can access text <a>content</a> and its meaning with text-to-speech tools.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Text-to-speech supported</h5>
+						<p class="provision-text">Text <a>content</a> can be converted into speech.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+						<section class="provision" data-status="exploratory">
+						<h5>Human language</h5>
+						<p class="provision-text">The human language of the <a>view</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Semantic text appearance</h5>
+						<p class="provision-text">Meaning conveyed by text appearance is <a>programmatically</a> available.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>
+
+				<section class="guideline">
+					<h4>Clear language</h4>
+					<p class="guideline-text">Users can access clear language <a>content</a>.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Acronyms and abbreviations</h5>
+						<p class="provision-text">The expanded form or meaning of abbreviations and acronyms is available.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Ambiguous numbers</h5>
+						<p class="provision-text">Alternative formats for ambiguous number formats are available.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Ambiguous pronunciation</h5>
+						<p class="provision-text">All letters and diacritics needed to identify (phonetically read) words are available.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Appropriate tone</h5>
+						<p class="provision-text">The language and tone used is respectful and appropriate to the topic or subject matter.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>		
+					<section class="provision" data-status="exploratory">
+						<h5>Double negatives</h5>
+						<p class="provision-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
+					</section>
+					<section class="provision" data-status="developing">
+						<h5>Implied Meaning</h5>
+						<p class="guideline-text">Users can access the literal meaning of text.</p>
+
+						<section>
+							<h6>Foundational Requirements</h6>
+							<p>For each item of <a>non-literal text</a>:
+							<ol>
+								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology
+									(AT)?
+									<ul>
+										<li>Yes, view meets <a>Accessible text</a>, continue.</li>
+								</li>No, fail.</ul>
+								</ul>
+								</li>
+							
+								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or
+										provide a literal alternative</a>?
+									<ul>
+										<li>Yes, pass. Stop.</li>
+										<li>No, continue.</li>
+									</ul>
+								</li>
+							
+								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
+									<ul>
+										<li>Yes, view meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
+										<li>No, fail.</li>
+									</ul>
+								</li>
+							</ol>
+							</p>
+							<p><strong>Exceptions</strong></p>
+							<ul>
+								<li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students
+									about
+									pieces of art, then the exception would not apply.</li>
+							</ul>
+						</section>
+					</section>
+					<section class="provision">
+						<h6>Literal text</h6>
+						<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
+					</section>
+
+					<section class="provision" data-status="exploratory">
+						<h5>Sentence voice</h5>
+						<p class="provision-text">The voice used is easiest to understand in context.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Topic sentence</h5>
+						<p class="provision-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Uncommon words</h5>
+						<p class="provision-text">Definitions for uncommon or new words are available.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>		
+					<section class="provision" data-status="exploratory">
+						<h5>Unnecessary words or phrases</h5>
+						<p class="provision-text">Sentences are concise, without unnecessary filler words and phrases.</p>
+					</section>	
+					<section class="provision" data-status="exploratory">
+						<h5>Verb tense</h5>
+						<p class="provision-text">The verb tense used is easiest to understand in context.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>	
+			</section>
+
+			<section>
 				<h3>Interactive components</h3>							
 				<section class="guideline">
 					<h4>Keyboard Focus Appearance</h4>
 					<p class="guideline-text">Users can see which <a>element</a> has keyboard focus.</p>
 					
-					<section data-status="developing">
-						<h5>Foundational Requirements</h5>
-
+					<details class="decision-tree">
+						<summary>Which provision applies?</summary>
 						<p>For each focusable item:
 							<ol>
 								<li>Is the user-agent default focus indicator used?
 									<ul>
-										<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a>Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
+										<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a href="#default-indicator">Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
 										<li>No, continue.</li>
 									</ul>
 								</li>
 
 								<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
 									<ul>
-										<li>Yes, indicator must meet <a>Using the default focus indicator and checking contrast</a>. Stop.</li>
+										<li>Yes, indicator must meet <a href="#user-agent-default-indicator">Using the default focus indicator and checking contrast</a>. Stop.</li>
 										<li>No, continue.</li>
 									</ul>
 								</li>
 
 								<li>Is the focus indicator defined by the author?
 									<ul>
-										<li>Yes, indicator must meet <a>Custom focus indicators</a>. Stop.</li>
+										<li>Yes, indicator must meet <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
 										<li>No, fail.</li>
 									</ul>
 								</li>
 							</ol>
 						</p>
+					</details>
 
-						<section class="provision">
-							<h6>Custom indicator</h6>
-							<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency. </p>
-						</section>
-						<section class="provision">
-							<h6>Default indicator</h6>
-							<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
-						</section>
-						<section class="provision">
-							<h6>User agent default indicator</h6>
-							<p class="provision-text">Focusable item uses the user agent default indicator.</p>
-						</section>
+					<section class="provision" data-status="developing" data-status="developing" data-provision-type="foundational">
+						<h5>Custom indicator</h5>
+						<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency. </p>
+					</section>
+					<section class="provision" data-status="developing" data-provision-type="foundational">
+						<h5>Default indicator</h5>
+						<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
+					</section>
+					<section class="provision" data-status="developing" data-provision-type="foundational">
+						<h5>User agent default indicator</h5>
+						<p class="provision-text">Focusable item uses the user agent default indicator.</p>
 					</section>
 
-					<section data-status="exploratory">
-						<h5>Supplemental Requirements</h5>
-						<section class="provision">
-							<h6>Supplementary indicators</h6>
-							<p class="provision-text">@@</p>
-						</section>
+					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+						<h5>Supplementary indicators</h5>
+						<p class="provision-text">@@</p>
 					</section>
 
-					<section data-status="exploratory">
-						<h5>Assertions</h5>
-						<section class="provision">
-							<h6>Style Guide</h6>
-							<p class="provision-text">Focus indicators follow an organizational style guide.</p>
-						</section>
+					<section class="provision" data-status="exploratory" data-provision-type="assertion">
+						<h5>Style Guide</h5>
+						<p class="provision-text">Focus indicators follow an organizational style guide.</p>
 					</section>
 				</section>
 
@@ -768,6 +719,62 @@
 			</section>
 
 			<section>
+				<h3>Error handling</h3>
+				<section class="guideline">
+					<h4>Correct mistakes</h4>
+					<p class="guideline-text">Users know about and can correct mistakes.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Error association</h5>
+						<p class="provision-text">Error notifications are <a>programmatically associated</a> with the error source so that users can access the error information while focused on the source of the error.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Error identification</h5>
+						<p class="provision-text">Errors are visually identifiable without relying on only text, only color, or only symbols. </p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Error notification</h5>
+						<p class="provision-text">Errors that can be automatically detected are identified and described to the user.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Persistent errors</h5>
+						<p class="provision-text">Error notifications persist until the user dismisses them or the error is resolved.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Visible errors</h5>
+						<p class="provision-text">Error notifications are visually collocated with the source of the error within the viewport, or provide a link to the source of the error which, when activated, moves the viewport to the error.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>
+			</section>
+
+			<section>
+				<h3>Animation and movement</h3>
+				<section class="guideline">
+					<h4>Avoid physical harm</h4>
+					<p class="guideline-text">Users do not experience physical harm from <a>content</a>.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Audio shifting</h4>
+						<p class="provision-text">Audio shifting designed to create a perception of motion is avoided; or can be paused or prevented.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Flashing</h4>
+						<p class="provision-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Motion</h4>
+						<p class="provision-text">Visual motion and pseudo-motion that lasts longer than 5 seconds is avoided; or can be paused or prevented.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Motion from interaction</h4>
+						<p class="provision-text">Visual motion and pseudo-motion triggered by interaction is avoided; or can be prevented, unless the animation is essential to the functionality or the information being conveyed.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>
+			</section>	
+
+			<section>
 				<h3>Layout</h3>
 				<section class="guideline">
 					<h4>Relationships</h4>
@@ -892,6 +899,124 @@
 			</section>
 
 			<section>
+				<h3>Process and task completion</h3>
+				<section class="guideline">
+					<h4>Avoid cognitive tasks</h4>
+					<p class="guideline-text">Users can complete tasks without needing to memorize nor complete advanced cognitive tasks.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Allow automated entry</h5>
+						<p class="provision-text">Automated input from user agents, 3rd party tools, or copy-and-paste is not prevented.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>No cognitive tests</h5>
+						<p class="provision-text">Processes, including authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply).</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>No memorization</h5>
+						<p class="provision-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>
+
+				<section class="guideline">
+					<h4>Adequate time</h4>
+					<p class="guideline-text">Users have enough time to read and use <a>content</a>.</p>			
+					<section class="provision" data-status="exploratory">
+						<h5>Adjust timing at start</h5>
+						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Adjust timing at timeout</h5>
+						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the time-limit at timeout.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Disable timeout</h5>
+						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable the limit.</p>
+					</section>
+				</section>
+
+				<section class="guideline">
+					<h4>Unnecessary steps</h4>
+					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>	
+						<section class="provision" data-status="exploratory">
+							<h4>Optional information</h4>
+							<p class="provision-text">Processes can be completed without being forced to read or understand unnecessary <a>content</a>.</p>
+						</section>
+						<section class="provision" data-status="exploratory">
+							<h4>Optional input</h4>
+							<p class="provision-text">Processes can be completed without entering unnecessary information.</p>
+						</section>
+				</section>
+
+				<section class="guideline">
+					<h4>Avoid deception</h4>
+					<p class="guideline-text">Users do not encounter deception when completing tasks, unless essential to the task.</p>	
+					<section class="provision" data-status="exploratory">
+						<h4>Deceptive controls</h4>
+						<p class="provision-text">Interactive components are not deceptively designed.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h4>Exploitive behaviors</h4>
+						<p class="provision-text">Process completion does not include exploitive behaviors.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Misinformation</h5>
+						<p class="provision-text">Processes can be completed without navigating misinformation or redirections.</p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Preselections</h5>
+						<p class="provision-text">Preselected options are visible by default during process completion without additional interactions.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Redirection</h5>
+						<p class="provision-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
+						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
+					</section>
+				</section>	
+
+				<section class="guideline">
+					<h4>Retain information</h4>
+					<p class="guideline-text">Users do not have to reenter information or redo work.</p>	
+					<section class="provision" data-status="exploratory">
+						<h5>Go back in process</h5>
+						<p class="provision-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Redundant entry</h5>
+						<p class="provision-text">Information previously entered by or provided to the user that is required to be entered again in the same process is either auto-populated, or available for the user to select.</p>
+					</section>				
+					<section class="provision" data-status="exploratory">
+						<h5>Save progress</h5>
+						<p class="provision-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
+					</section>
+				</section>
+
+				<section class="guideline">
+					<h4>Complete tasks</h4>
+					<p class="guideline-text">Users understand how to complete tasks.</p>
+					<section class="provision" data-status="exploratory">
+						<h5>Action required</h5>
+						<p class="provision-text">In a process, the interface indicates when user input or action is required to proceed to the next step. c</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Inform at start of process</h5>
+						<p class="provision-text">Information needed to complete a multi-step process is provided at the start of the process, including:
+						<ul><li>number of steps it might take (if known in advance),</li>
+						<li>details of any resources needed to perform the task, and</li>
+						<li>overview of the process and next step.</li></ul>
+						</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Steps and instructions</h5>
+						<p class="provision-text">The steps and instructions needed to complete a multistep process are available </p>
+					</section>
+				</section>
+			</section>
+
+			<section>
 				<h3>Policy and Protection</h3>
 				<section class="guideline">
 					<h4>Content source</h4>
@@ -951,146 +1076,6 @@
 						<p class="provision-text">A mechanism is available to understand and control social media algorithms.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>					
-				</section>	
-			</section>
-
-			<section>
-				<h3>Text and Wording</h3>
-					<section class="guideline">
-					<h4>Text appearance</h4>
-					<p class="guideline-text">Users can read visually rendered text.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Maximum text contrast</h5>
-						<p class="provision-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance. </p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision"  daa-status="exploratory">
-						<h5>Minimum text contrast</h5>
-						<p class="provision-text">The rendered text against its background meets a minimum <a>contrast ratio test</a> for its text appearance.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>	
-					<section class="provision" data-status="exploratory">
-						<h5>Text size</h5>
-						<p class="provision-text">The rendered text meets a minimum font size and weight.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>		
-					<section class="provision" data-status="exploratory">
-						<h5>Text style</h5>
-						<p class="provision-text">The rendered text does not use a decorative or cursive font face.</p>
-					</section>	
-				</section>
-
-				<section class="guideline">
-					<h4>Text-to-speech</h4>
-					<p class="guideline-text">Users can access text <a>content</a> and its meaning with text-to-speech tools.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Text-to-speech supported</h5>
-						<p class="provision-text">Text <a>content</a> can be converted into speech.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-						<section class="provision" data-status="exploratory">
-						<h5>Human language</h5>
-						<p class="provision-text">The human language of the <a>view</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Semantic text appearance</h5>
-						<p class="provision-text">Meaning conveyed by text appearance is <a>programmatically</a> available.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-				</section>
-
-				<section class="guideline">
-					<h4>Clear language</h4>
-					<p class="guideline-text">Users can access clear language <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Acronyms and abbreviations</h5>
-						<p class="provision-text">The expanded form or meaning of abbreviations and acronyms is available.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Ambiguous numbers</h5>
-						<p class="provision-text">Alternative formats for ambiguous number formats are available.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Ambiguous pronunciation</h5>
-						<p class="provision-text">All letters and diacritics needed to identify (phonetically read) words are available.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Appropriate tone</h5>
-						<p class="provision-text">The language and tone used is respectful and appropriate to the topic or subject matter.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>		
-					<section class="provision" data-status="exploratory">
-						<h5>Double negatives</h5>
-						<p class="provision-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
-					</section>
-					<section class="provision" data-status="developing">
-						<h5>Implied Meaning</h5>
-						<p class="guideline-text">Users can access the literal meaning of text.</p>
-
-						<section>
-							<h6>Foundational Requirements</h6>
-							<p>For each item of <a>non-literal text</a>:
-							<ol>
-								<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology
-									(AT)?
-									<ul>
-										<li>Yes, view meets <a>Accessible text</a>, continue.</li>
-								</li>No, fail.</ul>
-								</ul>
-								</li>
-							
-								<li>Does the available user agent, including assistive technology, sufficiently <a>Explain non-literal text or
-										provide a literal alternative</a>?
-									<ul>
-										<li>Yes, pass. Stop.</li>
-										<li>No, continue.</li>
-									</ul>
-								</li>
-							
-								<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
-									<ul>
-										<li>Yes, view meets <a>Explain non-literal text or provide a literal alternative</a>, pass.</li>
-										<li>No, fail.</li>
-									</ul>
-								</li>
-							</ol>
-							</p>
-							<p><strong>Exceptions</strong></p>
-							<ul>
-								<li>If the purpose is to showcase works of art, such as a poetry journal but if the purpose is to educate students
-									about
-									pieces of art, then the exception would not apply.</li>
-							</ul>
-						</section>
-					</section>
-					<section class="provision">
-						<h6>Literal text</h6>
-						<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
-					</section>
-
-					<section class="provision" data-status="exploratory">
-						<h5>Sentence voice</h5>
-						<p class="provision-text">The voice used is easiest to understand in context.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Topic sentence</h5>
-						<p class="provision-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Uncommon words</h5>
-						<p class="provision-text">Definitions for uncommon or new words are available.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>		
-					<section class="provision" data-status="exploratory">
-						<h5>Unnecessary words or phrases</h5>
-						<p class="provision-text">Sentences are concise, without unnecessary filler words and phrases.</p>
-					</section>	
-					<section class="provision" data-status="exploratory">
-						<h5>Verb tense</h5>
-						<p class="provision-text">The verb tense used is easiest to understand in context.</p>
-						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>
 				</section>	
 			</section>
 

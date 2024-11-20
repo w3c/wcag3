@@ -80,6 +80,24 @@ function addStatusMarkers() {
 	});
 }
 
+var provisionTypeLabels = {
+	foundational: 'Used to test the most basic level of accessibility.',
+	supplemental: 'Used for higher levels of conformance.',
+	assertion: 'An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the content or product to improve accessibility.',
+}
+
+function addProvisionTypeMarkers() {
+	var typeKeys = Object.keys(provisionTypeLabels);
+	typeKeys.forEach(function (provisionType) {
+		var headingSelector = '[data-provision-type="' + provisionType + '"] > .header-wrapper';
+		var headings = document.querySelectorAll(headingSelector);
+		headings.forEach(function (heading) {
+			var provisionTypeMarker = document.createElement("span");
+			provisionTypeMarker.classList.add("provision-type-marker");
+			provisionTypeMarker.innerHTML = sentenceCase(provisionType);	
+			heading.firstElementChild.insertAdjacentElement('beforeend', provisionTypeMarker);
+		});
+	});
 }
 
 
@@ -232,6 +250,7 @@ function preRespec() {
 function postRespec() {
 	adjustNormativity();
 	removeDraftMethodLinks();
+	addProvisionTypeMarkers();
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
