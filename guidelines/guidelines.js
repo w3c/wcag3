@@ -168,6 +168,13 @@ function removeGLNum() {
 	sectionEl.querySelectorAll("bdi.secno").forEach(function(node){node.remove();});
 }
 
+function removeProvisionNum() {
+	var tocEl = document.querySelector(".tocline > a[href=\"#guidelines\"]").parentNode.querySelector("ol");
+	tocEl.querySelectorAll("ol ol ol ol bdi.secno").forEach(function(node){node.remove();});
+
+	document.querySelectorAll(".provision bdi.secno").forEach(function(node){node.remove();});
+}
+
 function outputJson() {
 	params = new URLSearchParams(window.location.search);
 	if (params.get("json") != null) {
@@ -254,5 +261,6 @@ function postRespec() {
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
-	removeGLNum();
+	// removeGLNum();
+	removeProvisionNum();
 }
