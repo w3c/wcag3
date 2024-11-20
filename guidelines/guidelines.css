@@ -26,8 +26,19 @@ summary::after {
 	content: url(img/summary.svg);
 }
 .summaryEnd {
-	text-align: center;
-	font-weight: bold;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;  
+}
+
+.decision-tree summary::after {
 }
 
 /* removing for readability
@@ -42,31 +53,37 @@ summary::after {
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
 }
-.outcome h4 {
+.provision h4, .provision h5 {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 100%;
 	color: #005A9C;
 }
-.guideline-text, .outcome-text {
-	font-size: 11 0%;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-indent: 50px;
+
+.guideline {
+	margin-left: 4rem;
 }
-.guideline h3, .outcome h4 {
+
+.guideline .provision {
+	margin-left: 4rem;
+}
+
+.guideline-text, provision-text {
+	font-size: 110%;
+	margin-top: 0;
+}
+.guideline h3, .provision h4, .provision h5 {
 	width: 100%;
 	margin-bottom: 0;
 	margin-top: .4em;
 }
-.guideline h3 {
-font-size: 120%;
+.guideline h3, .guideline h4 {
+font-size: 110%;
 color: black;
 }
 
 .guideline p {
 	margin-top: 0;
-	text-indent: 50px;
 }
 
 h2, h3, h4 {
@@ -88,15 +105,6 @@ h5, h6 {
 .methods h5, .errors h5, .rating h5 {
 	font-size: 100%;
 	color: #005A9C;
-}
-.rating-table, .rating-table th, .rating-table td {
-	border: 1px solid black;
-	vertical-align: top;
-	border-collapse: collapse;
-	padding: 5px;
-}
-.rating-table th[scope=row] {
-	white-space: nowrap;
 }
 caption {
 	font-style: normal !important;
@@ -150,9 +158,8 @@ caption {
 	content: "§";
 	display: block;
 }
-.status-marker {
+.status-marker, .provision-type-marker {
   font-weight: 700;
-  color: #091832;
   font-size: 11px;
   font-size: .6125rem;
   line-height: 1.4;
@@ -160,9 +167,16 @@ caption {
   margin-left: 1em;
   padding: 4px 8px;
   border-radius: 3px;
-  background: #d0e1f1;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.status-marker {
+	background: #d0e1f1;
+	color: #091832;  
+}
+.provision-type-marker {
+	background: #6bc8fe;
+	color: #111111;  
 }
 a[href].status-link {
 	color: var(--text);
@@ -177,4 +191,15 @@ a[href].status-link {
 	text-indent: 0px;
 	font-weight: bolder;
 	font-size: .75em;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+#guidelines > section {
+	margin-bottom: 4rem;
+}
+
+#guidelines :is(h2, h3, h4, h5, h6) {
+	margin-top: 1rem;
 }

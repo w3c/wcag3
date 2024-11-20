@@ -34,78 +34,6 @@ function pathToName(path) {
 	return sentenceCase(path.replace(/-/g, " "));
 }
 
-function linkHowTo() {
-	var howtoBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/how-tos/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
-	document.querySelectorAll('.guideline').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
-		var heading = textNoDescendant(findHeading(node));
-		var pathFrag = titleToPathFrag(heading);
-		var htm = "<p><a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"howto-link\">Learn how to meet guideline \"" + heading + "\"</a></p>";
-		node.querySelector("p.guideline-text").insertAdjacentHTML("afterend", htm);
-	})
-}
-
-function linkOutcome() {
-	var outcomeBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/outcomes/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
-	document.querySelectorAll('.outcome').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
-		var heading = textNoDescendant(findHeading(node));
-		var pathFrag = titleToPathFrag(heading);
-		var el = document.createElement("p");
-		el.innerHTML = " <a href=\"" + outcomeBaseURI + pathFrag + "\" class=\"outcome-link\"><span>Outcome details and methods for </span>\"" + heading + "\"</a>";
-		node.insertBefore(el, node.querySelector("details"));
-		
-		node.classList.add("notoc");
-	})
-}
-
-function addOutcomeMarkers() {
-	document.querySelectorAll('.outcome').forEach(function(node){
-		var outcomeText = node.querySelector("p");
-		outcomeText.innerHTML = "<span class=\"inserted\">Outcome: </span>" + outcomeText.innerHTML; 
-		/* 
-		var insertion = document.createElement("p");
-		insertion.classList.add("inserted");
-		insertion.innerHTML = " (outcome for <q>" + textNoDescendant(parentHeader) + "</q>)";
-		outcomeHeader.insertAdjacentElement("afterend", insertion);
-		 */
-	})
-}
-
-function addCategoryMarkers() {
-	document.querySelectorAll('.categories').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var sectionHeader = node.querySelector('summary');
-		sectionHeader.innerHTML = "Functional categories for <q>" + textNoDescendant(parentHeader) + "</q>";
-	})
-}
-
-function addErrorMarkers() {
-	document.querySelectorAll('.errors').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var errorHeader = node.querySelector('summary');
-		errorHeader.innerHTML = "Critical errors for <q>" + textNoDescendant(parentHeader) + "</q>";
-	})
-}
-
-function addRatingMarkers() {
-	document.querySelectorAll('.rating').forEach(function(node){
-		var parentHeader = findHeading(node.parentElement);
-		var sectionHeader = node.querySelector('summary');
-		sectionHeader.innerHTML = "Rating for <q>" + textNoDescendant(parentHeader) + "</q>";
-		
-		var table = node.querySelector('table');
-		table.querySelector("caption").remove();
-		var caption = document.createElement("caption");
-		caption.innerHTML = "Rating scale for \"" + textNoDescendant(parentHeader) + "\"";
-		table.insertBefore(caption, table.firstChild);
-	})
-}
-
 function addSummaryMarkers() {
 	document.querySelectorAll('.summary').forEach(function(node){
 		var parentHeader = findHeading(node.parentElement);
@@ -121,15 +49,6 @@ function addSummaryMarkers() {
 	})
 }
 
-function addNoteMarkers() {
-	document.querySelectorAll(".note").forEach(function(node){
-		var el = document.createElement("p");
-		el.className = "summaryEnd";
-		el.innerHTML = "End of note";
-		node.appendChild(el);
-	})
-}
-
 var statusLabels = {
 	placeholder: 'We will be addressing this topic.',
 	exploratory: 'We are exploring one or more possible directions for this content.',
@@ -141,25 +60,46 @@ var statusLabels = {
 function addStatusMarkers() {
 	var statusKeys = Object.keys(statusLabels);
 	statusKeys.forEach(function (status) {
-		var selector = '[data-status="' + status + '"] > .header-wrapper';
-		var headings = document.querySelectorAll(selector);
+		var headingSelector = '[data-status="' + status + '"] > .header-wrapper';
+		var headings = document.querySelectorAll(headingSelector);
 		headings.forEach(function (heading) {
-      var statusMarker = document.createElement("span");
-      statusMarker.classList.add("status-marker");
-      statusMarker.innerHTML = sentenceCase(status);
-      heading.firstElementChild.insertAdjacentElement('beforeend', statusMarker);
+			var statusMarker = document.createElement("span");
+			statusMarker.classList.add("status-marker");
+			statusMarker.innerHTML = sentenceCase(status);	
+			heading.firstElementChild.insertAdjacentElement('beforeend', statusMarker);
+		});
+
+		var dfnSelector = '[data-status="' + status + '"] > dfn';
+		var dfns = document.querySelectorAll(dfnSelector);
+		dfns.forEach(function (dfn) {
+			var statusMarker = document.createElement("span");
+			statusMarker.classList.add("status-marker");
+			statusMarker.innerHTML = sentenceCase(status);	
+			dfn.insertAdjacentElement('beforeend', statusMarker);
 		})
 	});
 }
 
-function termTitles() {
-	// put definitions into title attributes of term references
-	document.querySelectorAll('.internalDFN').forEach(function(node){
-		var dfn = document.querySelector(node.href.substring(node.href.indexOf('#')));
-		if (dfn.parentNode.name == "dt") node.title = dfn.parentNode.nextElementSibling.firstElementChild.textContent.trim().replace(/\s+/g,' ');
-		else if (dfn.title) node.title=dfn.title;
-	});	
+var provisionTypeLabels = {
+	foundational: 'Used to test the most basic level of accessibility.',
+	supplemental: 'Used for higher levels of conformance.',
+	assertion: 'An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the content or product to improve accessibility.',
 }
+
+function addProvisionTypeMarkers() {
+	var typeKeys = Object.keys(provisionTypeLabels);
+	typeKeys.forEach(function (provisionType) {
+		var headingSelector = '[data-provision-type="' + provisionType + '"] > .header-wrapper';
+		var headings = document.querySelectorAll(headingSelector);
+		headings.forEach(function (heading) {
+			var provisionTypeMarker = document.createElement("span");
+			provisionTypeMarker.classList.add("provision-type-marker");
+			provisionTypeMarker.innerHTML = sentenceCase(provisionType);	
+			heading.firstElementChild.insertAdjacentElement('beforeend', provisionTypeMarker);
+		});
+	});
+}
+
 
 function removeDraftMethodLinks() {
 	document.querySelectorAll('.method-link').forEach(function(node){
@@ -210,18 +150,6 @@ function alternateFloats() {
 	});
 }
 
-function edNotePermalinks() {
-	document.querySelectorAll(".note").forEach(function(node){
-		var id = node.id;
-		var heading = node.querySelector(".marker");
-		var permaLink = document.createElement("a");
-		permaLink.classList.add("self-link");
-		permaLink.setAttribute("aria-label", "§");
-		permaLink.setAttribute("href", "#" + id);
-		heading.appendChild(permaLink);
-	});
-}
-
 // somewhere along the chain image sizes are being added where I don't want them, doesn't happen locally
 function removeImgSize() {
 	document.querySelectorAll("img").forEach(function(node){
@@ -238,6 +166,13 @@ function removeGLNum() {
 
 	var sectionEl = document.querySelector("#guidelines");
 	sectionEl.querySelectorAll("bdi.secno").forEach(function(node){node.remove();});
+}
+
+function removeProvisionNum() {
+	var tocEl = document.querySelector(".tocline > a[href=\"#guidelines\"]").parentNode.querySelector("ol");
+	tocEl.querySelectorAll("ol ol ol ol bdi.secno").forEach(function(node){node.remove();});
+
+	document.querySelectorAll(".provision bdi.secno").forEach(function(node){node.remove();});
 }
 
 function outputJson() {
@@ -303,12 +238,6 @@ function outputJson() {
 function loadDoc(path) {
 }
 
-function authorToPM() {
-	document.querySelectorAll("div.head dt").forEach(function(node){
-    if (node.textContent.trim() == "Authors:" || node.textContent.trim() == "Author:") node.textContent = "Project Manager:";
-  });
-}
-
 function moveStatusFilterToToc() {
 	var button = document.querySelector('#status-filter');
 	var button_parent = button.parentNode;
@@ -321,23 +250,17 @@ function moveStatusFilterToToc() {
 function preRespec() {
 	adjustDfnData();
 	linkOutcome();
-	addCategoryMarkers();
-	addErrorMarkers();
-	addRatingMarkers();
 	addSummaryMarkers();
 }
 
 // scripts after Respec has run
 function postRespec() {
-	authorToPM();
-	addOutcomeMarkers();
 	adjustNormativity();
-	termTitles();
 	removeDraftMethodLinks();
-	edNotePermalinks();
-	addNoteMarkers();
+	addProvisionTypeMarkers();
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
-	removeGLNum();
+	// removeGLNum();
+	removeProvisionNum();
 }
