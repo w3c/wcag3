@@ -11,13 +11,14 @@ If there is no information conveyed by the image, the user's assistive technolog
 
 <div class="normative">
 
-### Outcome
+### Guideline
 
   <p>{{ outcome.description }}</p>
 
 <div class="nested">
 
-### Requirements decision tree
+### Foundational Requirements
+
 1. Would removing the image impact how people understand the page? (Prerequisite)
    1. No, [decorative images are programmatically hidden](methods/decorative-images). Stop.
    2. Yes, continue.
@@ -32,7 +33,7 @@ If there is no information conveyed by the image, the user's assistive technolog
 
 </div>
 
-### Supplemental
+### Supplimental Requirements
 
 - [The role and importance of images are programmatically indicated](methods/role-of-images) (Supporting requirement).
 - [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).

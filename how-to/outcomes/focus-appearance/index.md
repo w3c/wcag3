@@ -4,13 +4,13 @@ layout: outcome.html
 
 ## Goal
 
-Users can see which element has keyboard focus.
+The keyboard focus must have a sufficient visual indicator.
 
 ## Normative Text
 
 <div class="normative">
 
-### Outcome
+### Guideline
 
   <p>{{ outcome.description }}</p>
 
@@ -21,7 +21,7 @@ Users can see which element has keyboard focus.
 For each focusable item:
 
 1. Is the user-agent default focus indicator used? (Prerequisite)
-    1. Yes, the [user-agent default indicator](methods/default-focus-indicator) is used AND the [accessibility support set] incorporates [Using the default focus indicator and checking contrast](methods/default-focus-indicator-check-contrast) and checking contrast. Stop.
+    1. Yes, the [user-agent default indicator](methods/default-focus-indicator) is used AND the *accessibility support set* incorporates [Using the default focus indicator and checking contrast](methods/default-focus-indicator-check-contrast) and checking contrast. Stop.
     2. No, continue.
 
 
