@@ -70,12 +70,13 @@
 			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:
 				<ul><li>What requirements are missing from this list to make web content accessible?</li>
 					<li>What research supports or refutes the requirements marked as needing additional research?</li>
-					<li>Two guidelines (<a href="#image-alternatives">Image alternatives</a> and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
+					<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
 					<ul>
 						<li>Grouping related requirements and assertions?</li>
 						<li>Using a decision tree for foundational requirements?</li>
 					 </ul>
 					</li>
+					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a>and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a> differ slightly. Does one seem clearer than the other?</li>
 					<li>The conformance section explains the approach the Accessibilty Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
 				</ul></p>
 	
@@ -329,13 +330,13 @@
 									<li>No, continue to step 3. </li>
 								</ul>
 							</li>
-							<li>Does the accessibility support set meet <a>Explain ambiguous text or provide an unambiguous alternative</a>?
+							<li>Does the accessibility support set meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
 									<li>Yes, pass. Stop. </li>
 									<li>No, continue. </li>
 								</ul>
 							</li>
-							<li>Does the author meet <a>Explain ambiguous text or provide an unambiguous alternative</a>?
+							<li>Does the author meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
 									<li>Yes, pass. Stop. </li>
 									<li>No, fail. </li>
@@ -348,12 +349,12 @@
 						</ul>
 					</details>
 
-					<section class="provision" data-provision-type="foundational">
+					<section id="detectable-text" class="provision" data-provision-type="foundational">
 						<h5>Detectable text</h5>
 						<p class="provision-text">Text is programmatically determinable</p>
 					</section>
 
-					<section class="provision"  data-provision-type="foundational">
+					<section id="unambiguous-text" class="provision"  data-provision-type="foundational">
 						<h5>Unambiguous text</h5>
 						<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative</p>
 					</section>
@@ -1352,6 +1353,19 @@
 			<p class="ednote">This glossary includes terms used by content that has reached a maturity level of Developing or higher. The definitions themselves include a maturity level and may mature at a different pace than the content that refers to them. The AGWG will work with other taskforces and groups to harmonize terminology across documents as much as is possible. </p>
 
 			<dl>
+
+				<dt><dfn>Ambiguous numbers</dfn></dt>
+				<dd>
+					<div class="ednote">
+						<p>To be defined.</p>
+					</div>
+				</dd>
+				<dt data-status="developing"><dfn data-lt="Accessibility support set">Accessibility support set</dfn></dt>
+				<dd><p>The group of user-agents and assistive technologies you test with.</p>
+				<div class="ednote">
+					<p>The AG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines. Accessibility support sets may vary based on language, region, or situation. If you are not using the default accessibility set, the conformance report should indicate what set is being used. </p>
+				</div>
+				</dd>
 				<dt data-status="developing"><dfn data-lt="Assertion|Assertions">Assertion</dfn></dt>
 				<dd><p>A formal claim of fact, attributed to a person or organization. An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the <a>content</a> or <a>product</a> to improve accessibility.</p></dd>
 				<dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">Automated
