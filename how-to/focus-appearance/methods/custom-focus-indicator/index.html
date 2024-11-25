@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0  Outcome - All WCAG 3 Outcomes</title>
+  <title>WCAG 3.0 Custom focus indicator Method - Introduction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -47,32 +47,278 @@
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
-    <li><a href="/wcag3/how-to/" aria-current="page">All WCAG 3 Outcomes</a></li>
+    <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/">Focus Appearance</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/methods/">Methods</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/methods/custom-focus-indicator/" aria-current="page">Custom Focus Indicator</a></li>
   </ul>
 </nav>
 
   <div class="default-grid with-gap leftcol">
-    <main id="main" class="standalone-resource__main" tabindex="-1">
-      <h1>All WCAG 3 Outcomes</h1>
-<div class="card">
-  <h3>Clear Meaning</h3>
+    <div class="sidenav">
+  <nav class="sn-contents" aria-label="Secondary">
+    <ul class="sidenav--list">
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/">Keyboard Focus Appearance</a></li><li>
+  <a href="/wcag3/how-to/focus-appearance/methods/">Methods</a></li>
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/user-needs/">User Needs</a></li>
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/research/">Research</a></li>
+      </ul>
+  </nav>
+</div>
+    <main id="main" tabindex="-1">
+        <h1>Keyboard Focus Appearance</h1>
+      <h3>Summary</h3>
+<p>There are various ways of creating a focus indicator, the following techniques provide custom ways of creating and testing each category of focus indicator.</p>
+<ul>
+<li><a href="#line-or-bounding-box-indicators">Line or bounding box indicators</a></li>
+<li><a href="#change-of-color">Change of color</a></li>
+<li><a href="#icon-or-shape">Icon or shape</a></li>
+<li><a href="#tooltip-or-additional-content">Tooltip or additional content</a></li>
+<li><a href="#size-change">Size change</a></li>
+<li><a href="#combination-indicators">Combination indicators</a></li>
+<li><a href="#other-indicators">Other indicators</a></li>
+</ul>
+<a name="line-or-bounding-box-indicators">
+<h2>Line or bounding box indicators</h2>
+</a>
+<dl class="method-card">
+  <div>
+    <dt>Technology:</dt>
+    <dd>HTML</dd>
+  </div>
+</dl>
+<p>A bounding box focus indicator using outline, border or box-shadow.</p>
+<ul>
+<li>
+<p><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].</p>
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.</p>
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode</p>
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</p>
+</li>
+<li>
+<p>Multiple controls: There must be at least 3 visible controls of the same style in the view/page.</p>
+<ul>
+<li>
+<p class="note">In order for a change of color to be used, there needs to be a basis for comparison, otherwise another method is needed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjacent:</strong> The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the center of the indicator.)</p>
+</li>
+</ul>
+<a name="change-of-color">
+<h2>Change of color</h2>
+</a>
+<p>The authored focus indicator uses a change of color within the control.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric. </p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li>Multiple controls: There must be at least 3 visible controls of the same style in the view/page.
+<ul>
+<li>
+<p class="note">In order for a change of color to be used, there needs to be a basis for comparison, otherwise another method is needed.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="icon-or-shape">
+<h2>Icon/shape</h2>
+</a>
+<p>The authored focus indicator uses the addition/removal of an icon or shape.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="tooltip-or-additional-content">
+<h2>Tooltip/additional content</h2>
+</a>
+<p>Display a tooltip to indicate the user interface component with focus.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="size-change">
+<h2>Size change</h2>
+</a>
+<p>A change of size of the focusable element to show focus.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The discernable area of the focus indicator change is [sufficient to be noticeable]
+<ul>
+<li>
+<p class="ednote">We will use a metric of 10% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">“discernable area” means the focused element has a discernible border or background, it cannot just be text.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is sufficient in a) standard mode, b) dark mode, and c) high contrast mode</li>
+</ul>
+<a name="combination-indicators">
+<h2>Combination indicators</h2>
+</a>
+<p>If an indicator uses a combination of techniques, one of those techniques must meet the test.</p>
+<a name="other-indicators">
+<h2>Other indicators</h2>
+</a>
+<p>Using a custom indicator that does not fit into any other method.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is sufficient to be noticeable (metric TBC, use 2px perimeter of the (visually apparent) control as the default, should be relative to the visual size of the control.)
+<ul>
+<li>
+<p class="note">Add the complexity of the adjacent contrast vs size of indicator. </p>
+</li>
+</ul>
+</li>
+<li>Change of contrast: The contrast change of the pixels that indicate the keyboard focus is sufficient in a) standard mode, b) dark mode, and  c) high contrast mode.</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="note">There is a relationship between the area of the focus indicator and contrast that will need to be clarified.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it may pass via “size change” below.</p>
+</li>
+</ul>
+</li>
+<li><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li><strong>Adjacent:</strong> The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the centre of the indicator.)</li>
+</ul>
+<h3>How it solves user need</h3>
+<p>Coming soon</p>
+  <h2>Methods</h2><div class="card">
+  <h3>Custom focus indicator</h3>
   <div class="flex">
-    <p>Users can access explanations of or alternatives to ambiguous text content.</p>
-    <p><a href="/wcag3/how-to/clear-meaning/" class="card-button">See More</a></p>
+    <p>Providing a custom focus indicator for interactive elements.</p>
+    <p><a href="/wcag3/how-to/focus-appearance/methods/custom-focus-indicator" class="card-button">See More</a></p>
   </div>
 </div>
 <div class="card">
-  <h3>Keyboard Focus Appearance</h3>
+  <h3>Using the default focus indicator</h3>
   <div class="flex">
-    <p>Users can see which element has keyboard focus.</p>
-    <p><a href="/wcag3/how-to/focus-appearance/" class="card-button">See More</a></p>
+    <p>The platform's default indicator is used.</p>
+    <p><a href="/wcag3/how-to/focus-appearance/methods/default-focus-indicator" class="card-button">See More</a></p>
   </div>
 </div>
 <div class="card">
-  <h3>Text Alternatives</h3>
+  <h3>Using the default focus indicator and checking contrast</h3>
   <div class="flex">
-    <p>Users have equivalent text alternatives for all images.</p>
-    <p><a href="/wcag3/how-to/text-alternatives/" class="card-button">See More</a></p>
+    <p>The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
+    <p><a href="/wcag3/how-to/focus-appearance/methods/default-focus-indicator-check-contrast" class="card-button">See More</a></p>
+  </div>
+</div>
+<div class="card">
+  <h3>Other focus indicators</h3>
+  <div class="flex">
+    <p>Using a custom indicator that does not fit into any other method.</p>
+    <p><a href="/wcag3/how-to/focus-appearance/methods/other-indicators" class="card-button">See More</a></p>
+  </div>
+</div>
+<div class="card">
+  <h3>Supplementary indicators</h3>
+  <div class="flex">
+    <p>In addition to the focus indicator, there is another change to the focusable element.</p>
+    <p><a href="/wcag3/how-to/focus-appearance/methods/supplementary-indicators" class="card-button">See More</a></p>
   </div>
 </div>
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0  Outcome - All WCAG 3 Outcomes</title>
+  <title>WCAG 3.0 Keyboard Focus Appearance Outcome - </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -47,34 +47,81 @@
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
-    <li><a href="/wcag3/how-to/" aria-current="page">All WCAG 3 Outcomes</a></li>
+    <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/" aria-current="page">Focus Appearance</a></li>
   </ul>
 </nav>
 
   <div class="default-grid with-gap leftcol">
-    <main id="main" class="standalone-resource__main" tabindex="-1">
-      <h1>All WCAG 3 Outcomes</h1>
-<div class="card">
-  <h3>Clear Meaning</h3>
-  <div class="flex">
-    <p>Users can access explanations of or alternatives to ambiguous text content.</p>
-    <p><a href="/wcag3/how-to/clear-meaning/" class="card-button">See More</a></p>
-  </div>
+    <div class="sidenav">
+  <nav class="sn-contents" aria-label="Secondary">
+    <ul class="sidenav--list">
+      <li>
+  <a aria-current="page" href="/wcag3/how-to/focus-appearance/">Keyboard Focus Appearance</a></li><li>
+  <a href="/wcag3/how-to/focus-appearance/methods/">Methods</a></li>
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/user-needs/">User Needs</a></li>
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/research/">Research</a></li>
+      </ul>
+  </nav>
 </div>
-<div class="card">
-  <h3>Keyboard Focus Appearance</h3>
-  <div class="flex">
-    <p>Users can see which element has keyboard focus.</p>
-    <p><a href="/wcag3/how-to/focus-appearance/" class="card-button">See More</a></p>
+    <main id="main" tabindex="-1">
+        <h1>Keyboard Focus Appearance</h1>
+      <h2>Goal</h2>
+<p>The keyboard focus must have a sufficient visual indicator.</p>
+<h2>Normative Text</h2>
+<div class="normative">
+<h3>Guideline</h3>
+  <p>Users can see which element has keyboard focus.</p>
+<div class="nested">
+<h3>Foundational Requirements</h3>
+<p>For each focusable item:</p>
+<ol>
+<li>
+<p>Is the user-agent default focus indicator used? (Prerequisite)</p>
+<ol>
+<li>Yes, the <a href="methods/default-focus-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> incorporates <a href="methods/default-focus-indicator-check-contrast">Using the default focus indicator and checking contrast</a> and checking contrast. Stop.</li>
+<li>No, continue.</li>
+</ol>
+</li>
+<li>
+<p>Is the user-agent default focus indicator used, and meets contrast across backgrounds? (Baseline)</p>
+<ol>
+<li>Yes, indicator must meet <a href="methods/default-focus-indicator-check-contrast">Using the default focus indicator and checking contrast</a>. Stop.</li>
+<li>No, continue.</li>
+</ol>
+</li>
+<li>
+<p>Is the focus indicator defined by the author? (Baseline)</p>
+<ol>
+<li>Yes, indicator must meet <a href="methods/custom-focus-indicator">Custom focus indicators</a>. Stop.</li>
+<li>No, fail.</li>
+</ol>
+</li>
+</ol>
   </div>
+<h3>Supplimental Requirements</h3>
+<ul>
+<li><a href="methods/supplimentary-indicators">Supplimentary indicators</a>.</li>
+</ul>
+<h3>Assertions</h3>
+<ul>
+<li>Style guide: The organization has a documented style guide which includes guidance on focus indicators, and a policy that designers and developers are required to follow the style guide. The style guide includes focus indicators that meet one of the baseline scenarios in the decision tree.</li>
+</ul>
 </div>
-<div class="card">
-  <h3>Text Alternatives</h3>
-  <div class="flex">
-    <p>Users have equivalent text alternatives for all images.</p>
-    <p><a href="/wcag3/how-to/text-alternatives/" class="card-button">See More</a></p>
-  </div>
-</div>
+<p class="note">We would like to conduct research once we have an initial pass/fail set of examples to see if we are making decisions that support various disabilities. Please get in touch if you could facilitate this research.</p>
+<h2>What to do</h2>
+<p>Ensure focusable elements include focus indicators that are visible for people using an input device that relies on the keyboard focus to navigate.</p>
+<p>An outline, or indicator which surrounds the focusable element is generally the most easily visible.</p>
+<p>All indicators for keyboard-focusable elements must be:</p>
+<ul>
+<li><strong>Present</strong>: There is a visible indicator of keyboard focus.</li>
+<li><strong>Not obscured</strong>: The focus indicator is not obscured or partially obscured (more than 50%, TBC)</li>
+<li><strong>Persistent</strong>: The focus indicator persists while the element has focus, but does not persist after the element loses focus.</li>
+<li><strong>Distinctive</strong>: The keyboard focus indicator uses a style that is distinct from the style of other non-focused controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li><strong>Sufficiently visible</strong>: According to the specific method (below), the indicator must be visually discernible whilst navigating.</li>
+</ul>
 
     </main>
   </div>

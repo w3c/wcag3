@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0  Outcome - All WCAG 3 Outcomes</title>
+  <title>WCAG 3.0 Other focus indicators Method - Tests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -47,34 +47,34 @@
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
-    <li><a href="/wcag3/how-to/" aria-current="page">All WCAG 3 Outcomes</a></li>
+    <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/">Focus Appearance</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/methods/">Methods</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/methods/other-indicators/">Other Indicators</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/methods/other-indicators/test/" aria-current="page">Test</a></li>
   </ul>
 </nav>
 
   <div class="default-grid with-gap leftcol">
     <main id="main" class="standalone-resource__main" tabindex="-1">
-      <h1>All WCAG 3 Outcomes</h1>
-<div class="card">
-  <h3>Clear Meaning</h3>
-  <div class="flex">
-    <p>Users can access explanations of or alternatives to ambiguous text content.</p>
-    <p><a href="/wcag3/how-to/clear-meaning/" class="card-button">See More</a></p>
-  </div>
-</div>
-<div class="card">
-  <h3>Keyboard Focus Appearance</h3>
-  <div class="flex">
-    <p>Users can see which element has keyboard focus.</p>
-    <p><a href="/wcag3/how-to/focus-appearance/" class="card-button">See More</a></p>
-  </div>
-</div>
-<div class="card">
-  <h3>Text Alternatives</h3>
-  <div class="flex">
-    <p>Users have equivalent text alternatives for all images.</p>
-    <p><a href="/wcag3/how-to/text-alternatives/" class="card-button">See More</a></p>
-  </div>
-</div>
+      <h2>Tests</h2>
+      <ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is sufficient to be noticeable (metric TBC, use 2px perimeter of the (visually apparent) control as the default, should be relative to the visual size of the control.)
+<ul>
+<li>Note: Add the complexity of the adjacent contrast vs size of indicator.</li>
+</ul>
+</li>
+<li>Change of contrast: The contrast change of the pixels that indicate the keyboard focus is sufficient in a) standard mode, b) dark mode, and  c) high contrast mode.</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>Note: There is a relationship between the area of the focus indicator and contrast that will need to be clarified</li>
+<li>There is a relationship between sufficient size and adjacent contrast as well when the contrast is the same between the indicator and adjacent item</li>
+<li>If the focus indicator is adjacent to the focusable element and does not contrast with the element, it may pass via “size change” below.</li>
+</ul>
+</li>
+<li><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li><strong>Adjacent:</strong> The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the centre of the indicator.)</li>
+</ul>
 
     </main>
   </div>

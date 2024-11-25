@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0  Outcome - All WCAG 3 Outcomes</title>
+  <title>WCAG 3.0 Clear Meaning Outcome - </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -47,34 +47,102 @@
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
-    <li><a href="/wcag3/how-to/" aria-current="page">All WCAG 3 Outcomes</a></li>
+    <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
+<li><a href="/wcag3/how-to/clear-meaning/" aria-current="page">Clear Meaning</a></li>
   </ul>
 </nav>
 
   <div class="default-grid with-gap leftcol">
-    <main id="main" class="standalone-resource__main" tabindex="-1">
-      <h1>All WCAG 3 Outcomes</h1>
-<div class="card">
-  <h3>Clear Meaning</h3>
-  <div class="flex">
-    <p>Users can access explanations of or alternatives to ambiguous text content.</p>
-    <p><a href="/wcag3/how-to/clear-meaning/" class="card-button">See More</a></p>
-  </div>
+    <div class="sidenav">
+  <nav class="sn-contents" aria-label="Secondary">
+    <ul class="sidenav--list">
+      <li>
+  <a aria-current="page" href="/wcag3/how-to/clear-meaning/">Clear Meaning</a></li><li>
+  <a href="/wcag3/how-to/clear-meaning/methods/">Methods</a></li>
+      </ul>
+  </nav>
 </div>
-<div class="card">
-  <h3>Keyboard Focus Appearance</h3>
-  <div class="flex">
-    <p>Users can see which element has keyboard focus.</p>
-    <p><a href="/wcag3/how-to/focus-appearance/" class="card-button">See More</a></p>
-  </div>
+    <main id="main" tabindex="-1">
+        <h1>Clear Meaning</h1>
+      <h2>Goal</h2>
+<p>To help people understand text:</p>
+<ul>
+<li>Use literal language, or</li>
+<li>Explain the implied meaning of non-literal language.</li>
+</ul>
+<p>Making non-literal or figurative language easier to understand helps people with cognitive disabilities as well as neurodivergent people, such as those who are autistic and may be so focused on the literal meaning that they may not notice the implied meaning.</p>
+<p>Explaining or avoiding non-literal language can also help:</p>
+<ul>
+<li>Non-native language speakers</li>
+<li>People of different ages or generations</li>
+<li>People from different cultural backgrounds</li>
+</ul>
+<h2>Normative text</h2>
+<div class="normative">
+<h3>Guideline</h3>
+  <p>Users can access explanations of or alternatives to ambiguous text content.</p>
+<div class="nested">
+<h3>Foundational Requirements</h3>
+<p>For each item of ambiguous text, such as non-literal text, abbreviations and acronyms, ambiguous numbers, or text missing letters or diacritics:</p>
+<ol>
+<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)?
+<ol>
+<li>Yes, view meets <em>Text is programmatically determinable</em>, continue.</li>
+<li>No, continue to step 3.</li>
+</ol>
+</li>
+<li>Does the <em>accessibility support set</em> meet <em>Explain ambiguous text or provide an unambiguous alternative</em>?
+<ol>
+<li>Yes, pass.</li>
+<li>No, continue.</li>
+</ol>
+</li>
+<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
+<ol>
+<li>Yes, view meets <em>Explain non-literal text or provide a literal alternative</em>, pass.</li>
+<li>No, fail.</li>
+</ol>
+</li>
+</ol>
+<h4>Exceptions</h4>
+<ul>
+<li>If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply; however, if the purpose is to educate students about pieces of art, then this guideline applies.</li>
+</ul>
 </div>
-<div class="card">
-  <h3>Text Alternatives</h3>
-  <div class="flex">
-    <p>Users have equivalent text alternatives for all images.</p>
-    <p><a href="/wcag3/how-to/text-alternatives/" class="card-button">See More</a></p>
-  </div>
+<h3>Supplimental Requirements</h3>
+<p class="ednote">None defined at this time.</p>
+<h3>Assertions</h3>
+<p class="ednote">There will probably be a generic assertion based on style guides that applies to this guideline.</p>
 </div>
+<h2>What to do</h2>
+<div class="nested">
+<p>Determine if the text has words or phrases that:</p>
+<ul>
+<li>Hint at a meaning that is not directly stated, or</li>
+<li>Can have more than one meaning, such as working on a literal and figurative level at the same time. Example in English: “The chef cuts corners when slicing the fish.” Non-literal: The chef is preparing the fish in an easy or cheap way. Literal: The chef is cutting the fish into shapes that don’t have sharp corners.</li>
+</ul>
+<p>When checking for non-literal text, also consider how sentences are combined together, such as if a word in one sentence is critical to accurately understanding the meaning of a later sentence.</p>
+<p>If the text has implied meaning, explain it or provide a literal alternative using one of the techniques in the <a href=".methods/">Methods</a> section.</p>
+</div>
+<h2>Definitions</h2>
+<ul>
+<li><strong>Back translation</strong> is a two-step process of translating text into another language and then back to its original language. Also called reverse translation, this process can help identify phrases that may lose their intended meaning when translated.</li>
+<li><strong>Content publisher</strong> The creative individual or organization responsible for curating, producing, and distributing various forms of content to engage and inform audiences. Includes tools used by the publisher such as HTML and JSON and content management systems like Wix and WordPress.</li>
+<li><strong>Emoji character</strong> An emoji character is a small digital image with Unicode for its literal meaning, such as 🌴(“Palm tree”). But emojis often have implied meaning that users may need help understanding. Common examples of emojis used in non-literal ways:
+<ul>
+<li>💯(“Hundred points”) can be used in various ways, such as to indicate a perfect score or complete agreement.</li>
+<li>🙃 (“Upside-down face”) is often used to indicate sarcasm or silliness.</li>
+</ul>
+</li>
+<li><strong>Literal text</strong> uses the direct meaning of words to convey exactly what is written. Unlike non-literal or figurative language, literal text does not have implied meaning.</li>
+<li><strong>Non-literal text</strong> uses words or phrases in a way that goes beyond their standard or dictionary meaning to express deeper, more complex ideas. This is also called figurative language. To understand it, users have to interpret the implied meaning behind the words, rather than just their literal or direct meaning.
+<ul>
+<li>Examples: Allusions, hyperbole, idioms, irony, jokes, litotes, metaphors, metonymies, onomatopoeias, oxymorons, personification, puns, sarcasm, and similes. More detailed examples are available in the <a href=".methods/">Methods</a> section.</li>
+</ul>
+</li>
+<li><strong>User agent</strong> W3C defines user agent as any software that retrieves, renders, and facilitates end-user interaction with Web content, or whose user interface is implemented using Web technologies.
+Examples: Web browsers, media players, operating system shells, plug-ins, consumer electronics with Web-widgets, and stand-alone applications or embedded applications that help in retrieving, rendering, and interacting with Web content.</li>
+</ul>
 
     </main>
   </div>
