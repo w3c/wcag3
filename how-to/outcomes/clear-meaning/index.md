@@ -32,11 +32,11 @@ For each item of ambiguous text, such as non-literal text, abbreviations and acr
 1. Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)?
    1. Yes, view meets *Text is programmatically determinable*, continue.
    2. No, continue to step 3.
-2. Does the *accessibility support set* meet *Explain ambiguous text or provide an unambiguous alternative*?
+2. Does the *accessibility support set* meet [Explain ambiguous text or provide an unambiguous alternative](explain-ambiguous-text)?
    1. Yes, pass.
    2. No, continue. 
 3. Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
-   1. Yes, view meets *Explain non-literal text or provide a literal alternative*, pass.
+   1. Yes, view meets [Explain ambiguous text or provide an unambiguous alternative](explain-ambiguous-text), pass.
    2. No, fail.
 
 #### Exceptions
