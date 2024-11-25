@@ -20,12 +20,12 @@ The keyboard focus must have a sufficient visual indicator.
 
 For each focusable item:
 
-1. Is the user-agent default focus indicator used? (Prerequisite)
+1. Is the user-agent default focus indicator used?
     1. Yes, the [user-agent default indicator](methods/default-focus-indicator) is used AND the *accessibility support set* meets [Custom focus indicators](methods/custom-focus-indicator). Stop.
     2. No, continue.
 
 
-3. Is the focus indicator defined by the author? (Baseline)
+2. Is the focus indicator defined by the author?
     1.  Yes, indicator must meet [Custom focus indicators](methods/custom-focus-indicator). Stop.
     2.  No, fail.
 
