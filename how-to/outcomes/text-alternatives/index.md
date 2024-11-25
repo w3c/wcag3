@@ -19,15 +19,15 @@ If there is no information conveyed by the image, the user's assistive technolog
 
 ### Foundational Requirements
 
-1. Would removing the image impact how people understand the page? (Prerequisite)
+1. Would removing the image impact how people understand the page?
    1. No, [decorative images are programmatically hidden](methods/decorative-images). Stop.
    2. Yes, continue.
 
-2. Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)
+2. Is the image presented in a way that is available to user agents and assistive technology?
    1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
    2. No, continue.
 
-3. Is an equivalent text alternative available for the image? (Baseline)
+3. Is an equivalent text alternative available for the image?
    1. Yes, image must meet [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
    2. No, fail.
 
