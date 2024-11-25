@@ -70,12 +70,13 @@
 			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:
 				<ul><li>What requirements are missing from this list to make web content accessible?</li>
 					<li>What research supports or refutes the requirements marked as needing additional research?</li>
-					<li>Two guidelines (<a href="#image-alternatives">Image alternatives</a> and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
+					<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
 					<ul>
 						<li>Grouping related requirements and assertions?</li>
 						<li>Using a decision tree for foundational requirements?</li>
 					 </ul>
 					</li>
+					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a>and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a> differ slightly. Does one seem clearer than the other?</li>
 					<li>The conformance section explains the approach the Accessibilty Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
 				</ul></p>
 	
@@ -317,56 +318,76 @@
 				</section>
 
 				<section class="guideline">
-					<h4>Clear language</h4>
-					<p class="guideline-text">Users can access clear language <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
-						<h5>Acronyms and abbreviations</h5>
-						<p class="provision-text">The expanded form or meaning of abbreviations and acronyms is available.</p>
+					<h4>Clear meaning</h4>
+					<p class="guideline-text">Users can access explanations of or alternatives to ambiguous <a>text</a> <a>content</a>.</p>
+					<details class="decision-tree">
+						<summary>Which provision applies?</summary>
+						<p>For each item of ambiguous text, such as <a>non-literal text</a>, abbreviations and acronyms, <a>ambiguous numbers</a>, or text missing letters or diacritics</p>
+						<ol>
+							<li>Is the text presented in a way that is available to <a>user agents</a>, including assistive technology?
+								<ul>
+									<li>Yes, view meets <a href="#detectable-text">Text is programmatically determinable</a>, continue. </li>
+									<li>No, continue to step 3. </li>
+								</ul>
+							</li>
+							<li>Does the accessibility support set meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
+								<ul>
+									<li>Yes, pass. Stop. </li>
+									<li>No, continue. </li>
+								</ul>
+							</li>
+							<li>Does the author meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
+								<ul>
+									<li>Yes, pass. Stop. </li>
+									<li>No, fail. </li>
+								</ul>
+							</li>
+						</ol>
+						<p><strong>Exception</strong></p>
+						<ul>
+							<li>If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply; however, if the purpose is to educate students about art or fiction, then this guideline applies.</li>
+						</ul>
+					</details>
+
+					<section id="detectable-text" class="provision" data-provision-type="foundational">
+						<h5>Detectable text</h5>
+						<p class="provision-text">Text is programmatically determinable</p>
 					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Ambiguous numbers</h5>
-						<p class="provision-text">Alternative formats for ambiguous number formats are available.</p>
+
+					<section id="unambiguous-text" class="provision"  data-provision-type="foundational">
+						<h5>Unambiguous text</h5>
+						<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative</p>
 					</section>
-					<section class="provision" data-status="exploratory">
-						<h5>Ambiguous pronunciation</h5>
-						<p class="provision-text">All letters and diacritics needed to identify (phonetically read) words are available.</p>
-					</section>
+
+				</section>
+
+				<section class="guideline">
+					<h4>Simplified Written Content</h4>
+					<p class="guideline-text">Users are not required to navigate complex words or sentence structures in order to understand <a>content</a>.</p>
+
 					<section class="provision" data-status="exploratory">
 						<h5>Appropriate tone</h5>
-						<p class="provision-text">The language and tone used is respectful and appropriate to the topic or subject matter.</p>
+						<p class="provision-text">The language and tone used is appropriate to the topic or subject matter.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>		
 					<section class="provision" data-status="exploratory">
 						<h5>Double negatives</h5>
 						<p class="provision-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
 					</section>
-					<section class="provision" data-status="developing">
-						<h5>Implied Meaning</h5>
-						<p class="guideline-text">Users can access the literal meaning of text.</p>
-					</section>
-					<section class="provision">
-						<h5>Literal text</h5>
-						<p class="provision-text">Explain <a>non-literal text</a> or provide a literal alternative</p>
-					</section>
-
 					<section class="provision" data-status="exploratory">
 						<h5>Sentence voice</h5>
 						<p class="provision-text">The voice used is easiest to understand in context.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="provision" data-status="exploratory">
-						<h5>Topic sentence</h5>
-						<p class="provision-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
-					</section>
-					<section class="provision" data-status="exploratory">
 						<h5>Uncommon words</h5>
 						<p class="provision-text">Definitions for uncommon or new words are available.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
-					</section>		
+					</section>	
 					<section class="provision" data-status="exploratory">
 						<h5>Unnecessary words or phrases</h5>
 						<p class="provision-text">Sentences are concise, without unnecessary filler words and phrases.</p>
-					</section>	
+					</section>		
 					<section class="provision" data-status="exploratory">
 						<h5>Verb tense</h5>
 						<p class="provision-text">The verb tense used is easiest to understand in context.</p>
@@ -433,7 +454,7 @@
 					</section>
 				</section>
 
-				<section>
+				<section class="guideline">
 					<h4>Pointer Focus Appearance</h4>
 					<p class="guideline-text">Users can see the location of the pointer focus.</p>
 					<section class="provision" data-status="exploratory">
@@ -442,7 +463,7 @@
 					</section>
 				</section>
 
-				<section>
+				<section class="guideline">
 					<h4>Navigating content</h4>
 					<p class="guideline-text">Users can determine where they are and move through <a>content</a> (including interactive elements) in a systematic and meaningful way regardless of input or movement method. </p>
 					<section class="provision" data-status="exploratory">
@@ -467,7 +488,7 @@
 					</section>
 				</section>
 
-				<section>
+				<section class="guideline">
 					<h4>Expected behavior</h4>
 					<p class="guideline-text">Users have interactive components that behave as expected.</p>
 					<section class="provision" data-status="exploratory">
@@ -503,7 +524,7 @@
 				</section>
 
 
-				<section>
+				<section class="guideline">
 					<h4>Control information</h4>
 					<p class="guideline-text">Users have information about interactive components that is identifiable and usable visually and using assistive technology.</p>
 
@@ -822,6 +843,10 @@
 					<section class="provision" data-status="exploratory">
 						<h5>Single idea</h5>
 						<p class="provision-text">The number of concepts within a segment of text is minimized.</p>
+					</section>
+					<section class="provision" data-status="exploratory">
+						<h5>Topic sentence</h5>
+						<p class="provision-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
 					</section>
 					<section class="provision" data-status="exploratory">
 						<h5>White spacing</h5>
@@ -1328,6 +1353,19 @@
 			<p class="ednote">This glossary includes terms used by content that has reached a maturity level of Developing or higher. The definitions themselves include a maturity level and may mature at a different pace than the content that refers to them. The AGWG will work with other taskforces and groups to harmonize terminology across documents as much as is possible. </p>
 
 			<dl>
+
+				<dt><dfn>Ambiguous numbers</dfn></dt>
+				<dd>
+					<div class="ednote">
+						<p>To be defined.</p>
+					</div>
+				</dd>
+				<dt data-status="developing"><dfn data-lt="Accessibility support set">Accessibility support set</dfn></dt>
+				<dd><p>The group of user-agents and assistive technologies you test with.</p>
+				<div class="ednote">
+					<p>The AG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines. Accessibility support sets may vary based on language, region, or situation. If you are not using the default accessibility set, the conformance report should indicate what set is being used. </p>
+				</div>
+				</dd>
 				<dt data-status="developing"><dfn data-lt="Assertion|Assertions">Assertion</dfn></dt>
 				<dd><p>A formal claim of fact, attributed to a person or organization. An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the <a>content</a> or <a>product</a> to improve accessibility.</p></dd>
 				<dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">Automated
