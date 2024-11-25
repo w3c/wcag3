@@ -24,7 +24,7 @@ If there is no information conveyed by the image, the user's assistive technolog
    2. Yes, continue.
 
 2. Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)
-   1. Yes, image must meet [@@@ programatic availability] image AND the [accessibility support set] incorporates [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
+   1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
    2. No, continue.
 
 3. Is an equivalent text alternative available for the image? (Baseline)

@@ -5,12 +5,12 @@ layout: outcome.html
 ## Goal
 
 To help people understand text:
-* Use literal language, or 
-* Explain the implied meaning of non-literal language.
+* Use clear, unambiguous language, or 
+* Explain the implied meaning of ambiguous language.
 
-Making non-literal or figurative language easier to understand helps people with cognitive disabilities as well as neurodivergent people, such as those who are autistic and may be so focused on the literal meaning that they may not notice the implied meaning.
+Making ambiguous content (including non-literal or figurative language) easier to understand helps people with cognitive disabilities as well as neurodivergent people, such as those who are autistic and may be so focused on the literal meaning that they may not notice the implied meaning.
 
-Explaining or avoiding non-literal language can also help:
+Explaining or avoiding ambiguous language can also help:
 * Non-native language speakers
 * People of different ages or generations
 * People from different cultural backgrounds
