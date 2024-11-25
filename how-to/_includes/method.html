@@ -10,10 +10,10 @@
 <body dir="ltr">
   {% include "layout/header.html" %}
   <div class="default-grid with-gap leftcol">
-    <main id="main" class="standalone-resource__main" tabindex="-1">
-      {%- if subtitle %}
-      <h2>{{ subtitle }}</h2>
-      {%- endif %}
+    {% include "layout/outcome-nav.html" %}
+    <main id="main" tabindex="-1">
+      <h1>{{ method.title }}</h1>
+      <p>{{ method.description }}</p>
       {{ content }}
     </main>
   </div>
