@@ -76,7 +76,7 @@
 						<li>Using a decision tree for foundational requirements?</li>
 					 </ul>
 					</li>
-					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a>and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a> differ slightly. Does one seem clearer than the other?</li>
+					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a> and <a href="#keyboard-focus-appearance">Keyboard Focus Appearance</a> differ slightly. Does one seem clearer than the other?</li>
 					<li>The conformance section explains the approach the Accessibilty Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
 				</ul></p>
 	
@@ -139,13 +139,13 @@
 					<div class="body-wrapper">
 						<p class="guideline-text">Users have equivalent alternatives for images.</p>
 						<aside class="doclinks">
-							<p><a href="/WAI/WCAG30/How-To/text-alternatives/">
+							<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/"">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Image alternatives</a></p>
 						</aside>	
 					</div>
 
 					<details class="decision-tree">
-						<summary>Which provision applies?</summary>
+						<summary>Which foundational provision applies?</summary>
 
 						<p>For each <a>image</a>:
 							<ol>
@@ -172,17 +172,17 @@
 						<div class="body-wrapper">
 							<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
 							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/text-alternatives/methods/decorative-images/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/methods/decorative-images/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Decorative image methods</a></p>
 							</aside>
 						</div>
 					</section>
 					<section class="provision" data-status="developing" data-provision-type="foundational">
-						<h5>Content image</h5>
+						<h5>Equivalent alternative text</h5>
 						<div class="body-wrapper">
 							<p class="provision-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
 							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/text-alternatives/methods/content-image/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/text-alternatives/methods/equivalent-alternative-text/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Content image methods</a></p>
 							</aside>
 						</div>
@@ -192,7 +192,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text"><a>Image</a> is <a>programmatically determinable</a>.</p>
 							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/text-alternatives/methods/detectable-image/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/text-alternatives/methods/detectable-image/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable image methods</a></p>
 							</aside>
 						</div>
@@ -341,12 +341,16 @@
 					</section>
 				</section>
 
-				<section class="guideline">
+				<section class="guideline" data-status="developing">
 					<h4>Clear meaning</h4>
 					<p class="guideline-text">Users can access explanations of or alternatives to ambiguous <a>text</a> <a>content</a>.</p>
+					<aside class="doclinks">
+						<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/">
+							<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Clear Meaning</a></p>
+					</aside>
 					<details class="decision-tree">
-						<summary>Which provision applies?</summary>
-						<p>For each item of ambiguous text, such as <a>non-literal text</a>, abbreviations and acronyms, <a>ambiguous numbers</a>, or text missing letters or diacritics</p>
+						<summary>Which foundational provision applies?</summary>
+						<p>For each item of ambiguous text, such as <a>non-literal text</a>, abbreviations and acronyms, <a>ambiguous numbers</a>, or text missing letters or diacritics:</p>
 						<ol>
 							<li>Is the text presented in a way that is available to <a>user agents</a>, including assistive technology (AT)?
 								<ul>
@@ -354,13 +358,14 @@
 									<li>No, continue to step 3. </li>
 								</ul>
 							</li>
+
 							<li>Does the <a>accessibility support set</a> meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
 									<li>Yes, pass. Stop. </li>
 									<li>No, continue. </li>
 								</ul>
 							</li>
-							<li>Does the author meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
+							<li>Does the author meet <a href="#unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
 									<li>Yes, pass. Stop. </li>
 									<li>No, fail. </li>
@@ -369,18 +374,26 @@
 						</ol>
 						<p><strong>Exception</strong></p>
 						<ul>
-							<li>If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply; however, if the purpose is to educate students about art or fiction, then this guideline applies.</li>
+							<li>If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply. However, if the purpose is to educate students about art or fiction, then this guideline applies.</li>
 						</ul>
 					</details>
 
 					<section id="detectable-text" class="provision" data-provision-type="foundational">
 						<h5>Detectable text</h5>
 						<p class="provision-text">Text is programmatically determinable</p>
+						<aside class="doclinks">
+							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/methods/detectable-text">
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable text methods</a></p>
+						</aside>						
 					</section>
 
 					<section id="unambiguous-text" class="provision"  data-provision-type="foundational">
 						<h5>Unambiguous text</h5>
-						<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative</p>
+						<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative.</p>
+						<aside class="doclinks">
+							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/methods/explain-ambiguous-text/">
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Unambiguous text methods</a></p>
+						</aside>	
 					</section>
 
 				</section>
@@ -422,30 +435,24 @@
 
 			<section>
 				<h3>Interactive components</h3>							
-				<section class="guideline">
+				<section class="guideline" data-status="developing">
 					<h4>Keyboard Focus Appearance</h4>
 					<div class="body-wrapper">
 						<p class="guideline-text">Users can see which <a>element</a> has keyboard focus.</p>
 						<aside class="doclinks">
-							<p><a href="/WAI/WCAG30/How-To/focus-appearance/">
+							<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Keyboard Focus Appearance</a></p>
 						</aside>	
 					</div>
 					
 					<details class="decision-tree">
-						<summary>Which provision applies?</summary>
+						<summary>Which foundational provision applies?</summary>
 						<p>For each focusable item:
 							<ol>
+
 								<li>Is the user-agent default focus indicator used?
 									<ul>
-										<li>Yes, the user-agent default indicator is used AND the <a>accessibility support set</a> incorporates <a href="#default-indicator">Using the default focus indicator and checking contrast and checking contrast</a>. Stop.</li>
-										<li>No, continue.</li>
-									</ul>
-								</li>
-
-								<li>Is the user-agent default focus indicator used, and meets contrast across backgrounds?
-									<ul>
-										<li>Yes, indicator must meet <a href="#user-agent-default-indicator">Using the default focus indicator and checking contrast</a>. Stop.</li>
+										<li>Yes, the <a href="#user-agent-default-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> meets <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
 										<li>No, continue.</li>
 									</ul>
 								</li>
@@ -465,27 +472,17 @@
 						<div class="body-wrapper">
 							<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.</p>
 							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/focus-appearance/methods/custom-indicator/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/methods/custom-focus-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Custom indicator methods</a></p>
 							</aside>
 						</div>
 					</section>
 					<section class="provision" data-status="developing" data-provision-type="foundational">
-						<h5>Default indicator</h5>
-						<div class="body-wrapper">
-							<p class="provision-text">The platform’s default indicator is used, and where the backgrounds are changed, the indicator contrast is checked.</p>
-							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/focus-appearance/methods/default-indicator/">
-									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Default indicator methods</a></p>
-							</aside>
-						</div>
-					</section>
-					<section class="provision" data-status="developing" data-provision-type="foundational">
-						<h5>User agent default indicator</h5>
+						<h5>User-agent default indicator</h5>
 						<div class="body-wrapper">
 							<p class="provision-text">Focusable item uses the user agent default indicator.</p>
 							<aside class="doclinks">
-								<p><a href="/WAI/WCAG30/How-To/focus-appearance/methods/user-agent-default-indicator/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/methods/default-focus-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> User agent default indicator methods</a></p>
 							</aside>
 						</div>
@@ -1628,13 +1625,22 @@
 		</section>
 		<section class="appendix">
 			<h2>Acknowledgements</h2>
-  		<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
+		<section class="appendix">			
+			<h3>Current Contributors</h3>			
+  			<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
 			<div data-include="acknowledgements/current-contributors.html" data-include-replace="true"></div>
-			<section class="appendix">
+		</section>
+		<section class="appendix">	
+			<h3>Prior Notable Contributors</h3>
+			<div data-include="acknowledgements/previous-notable-contributors.html" data-include-replace="true"></div>
+		</section>			
+		<section class="appendix">
 			<h3>Prior Contributors</h3>
 			<div data-include="acknowledgements/previous-contributors.html" data-include-replace="true"></div>
 			<div data-include="acknowledgements/research-partners.html" data-include-replace="true"></div>
-			</section>
+		</section>
+		<section>
+			<h3>Funders</h3>
 			<div data-include="acknowledgements/funders.html" data-include-replace="true"></div>			
 		</section>
 	</body>
