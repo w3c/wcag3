@@ -14,6 +14,10 @@ layout: layout/methods.md
 
 </div>
 
-## Supplimental
+## Supplemental Requirements
 
-- [Supplimentary indicators](methods/supplimentary-indicators)
+<div class="nested">
+
+- [Supplementary indicators](methods/supplementary-indicators)
+
+</div>
