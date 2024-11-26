@@ -3,21 +3,23 @@ title: Methods
 layout: layout/methods.md
 ---
 
-## Foundational Requirements
-
-<div class="nested">
+## User agent default indicator
 
 - [User-agent default indicator](default-focus-indicator) 
-- [Using the default focus indicator and checking contrast](default-focus-indicator-check-contrast) 
-- [Custom focus indicators](custom-focus-indicator)
-- [Other indicators](other-indicators/)
 
-</div>
+## Custom focus indicators
 
-## Supplemental Requirements
+- [Line or bounding box indicators](custom-focus-indicator/#line-or-bounding-box-indicators)
+- [Change of color](custom-focus-indicator/#change-of-color)
+- [Icon or shape](custom-focus-indicator/#icon-or-shape)
+- [Tooltip or additional content](custom-focus-indicator/#tooltip-or-additional-content)
+- [Size change](custom-focus-indicator/#size-change)
+- [Combination indicators](custom-focus-indicator/#combination-indicators)
+- [Other indicators](custom-focus-indicator/#other-indicators)
 
-<div class="nested">
 
-- [Supplementary indicators](methods/supplementary-indicators)
 
-</div>
+## Supplemental Indicators
+
+- Supplementary indicators (Placeholder)
+
