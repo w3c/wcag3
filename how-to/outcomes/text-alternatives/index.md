@@ -24,20 +24,20 @@ If there is no information conveyed by the image, the user's assistive technolog
    2. Yes, continue.
 
 2. Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)
-   1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
+   1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternatives are available for images that convey content](methods/equivalent-text-alternative). Stop.
    2. No, continue.
 
 3. Is an equivalent text alternative available for the image? (Baseline)
-   1. Yes, image must meet [Equivalent text alternatives are available for images that convey content](methods/equivalent-alternative-text). Stop.
+   1. Yes, image must meet [Equivalent text alternatives are available for images that convey content](methods/equivalent-text-alternative). Stop.
    2. No, fail.
 
 </div>
 
-### Supplimental Requirements
+### Supplemental Requirements
 
-- [The role and importance of images are programmatically indicated](methods/role-of-images) (Supporting requirement).
-- [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).
-- [Auto generated text descriptions are editable by content creator](methods/editable-alt-text)  (Supporting requirement).
+- [The role and importance of images are programmatically indicated](methods/role-of-images).
+- [The type of image (photo, icon, etc.) is indicated](methods/type-of-image).
+- [Auto generated text descriptions are editable by content creator](methods/editable-alt-text).
 
 ### Assertions
 

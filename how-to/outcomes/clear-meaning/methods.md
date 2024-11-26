@@ -11,7 +11,7 @@ layout: layout/methods.md
 
 </div>
 
-## Supplimental
+## Supplemental
 
 <div class="nested">
 
