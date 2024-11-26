@@ -1,7 +1,7 @@
 {
   "method": {
     "index": 1,
-    "title": "r",
+    "title": "Default Focus Indicator",
     "slug": "User-agent default indicator",
     "description": "Focusable item uses the user agent default indicator."
   }
