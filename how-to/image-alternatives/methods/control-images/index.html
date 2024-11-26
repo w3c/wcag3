@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0 Text Alternatives Outcome - </title>
+  <title>WCAG 3.0 Control images Method - Introduction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -48,8 +48,9 @@
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
     <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
-<li><a href="/wcag3/how-to/text-alternatives/">Text Alternatives</a></li>
-<li><a href="/wcag3/how-to/text-alternatives/methods/" aria-current="page">Methods</a></li>
+<li><a href="/wcag3/how-to/image-alternatives/">Image Alternatives</a></li>
+<li><a href="/wcag3/how-to/image-alternatives/methods/">Methods</a></li>
+<li><a href="/wcag3/how-to/image-alternatives/methods/control-images/" aria-current="page">Control Images</a></li>
   </ul>
 </nav>
 
@@ -58,77 +59,28 @@
   <nav class="sn-contents" aria-label="Secondary">
     <ul class="sidenav--list">
       <li>
-  <a href="/wcag3/how-to/text-alternatives/">Text Alternatives</a></li><li>
-  <a aria-current="page" href="/wcag3/how-to/text-alternatives/methods/">Methods</a></li>
-      </ul>
+  <a href="/wcag3/how-to/"></a></li></ul>
   </nav>
 </div>
     <main id="main" tabindex="-1">
-        <h1>Text Alternatives</h1>
-      <h2>Decision tree</h2>
-<p>The approach to a text alternative depends on the type of image and how it is used.</p>
-<p>The following decision tree is used to determine the appropriate method.</p>
-<p>For each image:</p>
-<div class="nested">
-<ol>
-<li>
-<p>Would removing the image impact how people understand the page? (Prerequisite)</p>
-<ol>
-<li>No, image must meet <a href="decorative-images">Decorative images</a> [stop]</li>
-<li>Yes, continue</li>
-</ol>
-</li>
-<li>
-<p>Is the image presented in a way that is available to user agents and assistive technology? (Prerequisite)</p>
-<ol>
-<li>Yes, image must meet [@@@ programatic availability] image AND the [accessibility support set] incorporates <a href="equivalent-alternative-text">Equivalent alternative text</a>. [stop]</li>
-<li>No, continue</li>
-</ol>
-</li>
-<li>
-<p>Is an equivalent text alternative available for the image? (Baseline)</p>
-<ol>
-<li>Yes, image must meet <a href="equivalent-alternative-text">Equivalent alternative text</a> [stop]</li>
-<li>No, fail</li>
-</ol>
-</li>
-</ol>
-</div>
-  <h2>Methods</h2><div class="card">
-  <h3>Complex images</h3>
-  <div class="flex">
-    <p>@@@</p>
-    <p><a href="/wcag3/how-to/text-alternatives/methods/complex-images" class="card-button">See More</a></p>
+      <h1>Control images</h1>
+      <p>@@@</p>
+      <dl class="method-card">
+  <div>
+    <dt>Level:</dt>
+    <dd>@@@</dd>
   </div>
-</div>
-<div class="card">
-  <h3>Control images</h3>
-  <div class="flex">
-    <p>@@@</p>
-    <p><a href="/wcag3/how-to/text-alternatives/methods/control-images" class="card-button">See More</a></p>
-  </div>
-</div>
-<div class="card">
-  <h3>Decorative images</h3>
-  <div class="flex">
-    <p>@@@</p>
-    <p><a href="/wcag3/how-to/text-alternatives/methods/decorative-images" class="card-button">See More</a></p>
-  </div>
-</div>
-<div class="card">
-  <h3>Equivalent alternative text</h3>
-  <div class="flex">
-    <p>@@@</p>
-    <p><a href="/wcag3/how-to/text-alternatives/methods/equivalent-alternative-text" class="card-button">See More</a></p>
-  </div>
-</div>
-<div class="card">
-  <h3>Multiple images</h3>
-  <div class="flex">
-    <p>@@@</p>
-    <p><a href="/wcag3/how-to/text-alternatives/methods/multiple-images" class="card-button">See More</a></p>
-  </div>
-</div>
+</dl>
+<h2>Techniques</h2>
+<ul>
+<li><strong>Author technique (HTML):</strong> The author marks which images are important [future method].</li>
+<li><strong>Author technique (General):</strong> Include visible text that provides equivalent information to each image.</li>
+<li><strong>Platform:</strong> Relying on user agents to describe images [future method? And requires “accessibility supported”].</li>
+<li><strong>Author technique (HTML, EPUB, PDF):</strong> Using <code>alt</code> attributes to describe images.</li>
+<li><strong>Author technique (iOS)</strong>: Using <code>accessibilityLabel</code> to describe images.</li>
+<li><strong>Author technique (Android)</strong>: Using <code>contentDescription</code> to describe images.</li>
+<li><strong>Author technique (VR platform X)</strong>: Using <code>X</code> attribute to describe images.</li>
+</ul>
 
     </main>
   </div>

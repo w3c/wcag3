@@ -70,6 +70,14 @@
 <li>Use clear, unambiguous language, or</li>
 <li>Explain the implied meaning of ambiguous language.</li>
 </ul>
+<p>This guideline covers four types of ambiguous text content:</p>
+<ul>
+<li><strong>non-literal text</strong>, such as idioms, metaphors, similes, and sarcasm,</li>
+<li><strong>abbreviations or acronyms</strong> that are not defined on first use,</li>
+<li><strong>ambiguous numbers</strong>, such as date formatting that can have different meanings in different cultures, and</li>
+<li><strong>text that leaves out letters or diacritics</strong> needed to read the words phonetically, such as in Arabic and Hebrew.</li>
+</ul>
+<p>For each instance of ambiguous text content, the goal is to ensure clarity and provide necessary context.</p>
 <p>Making ambiguous content (including non-literal or figurative language) easier to understand helps people with cognitive disabilities as well as neurodivergent people, such as those who are autistic and may be so focused on the literal meaning that they may not notice the implied meaning.</p>
 <p>Explaining or avoiding ambiguous language can also help:</p>
 <ul>
@@ -85,21 +93,21 @@
 <h3>Foundational Requirements</h3>
 <p>For each item of ambiguous text, such as non-literal text, abbreviations and acronyms, ambiguous numbers, or text missing letters or diacritics:</p>
 <ol>
-<li>Is the non-literal text presented in a way that is available to user agents, including assistive technology (AT)?
+<li>Is the ambiguous text presented in a way that is available to user agents, including assistive technology (AT)?
 <ol>
 <li>Yes, view meets <em>Text is programmatically determinable</em>, continue.</li>
 <li>No, continue to step 3.</li>
 </ol>
 </li>
-<li>Does the <em>accessibility support set</em> meet <em>Explain ambiguous text or provide an unambiguous alternative</em>?
+<li>Does the <em>accessibility support set</em> meet <a href="methods/explain-ambiguous-text/">Explain ambiguous text or provide an unambiguous alternative</a>?
 <ol>
-<li>Yes, pass.</li>
+<li>Yes, pass. Stop.</li>
 <li>No, continue.</li>
 </ol>
 </li>
-<li>Does the publisher sufficiently explain the non-literal text or provide a literal alternative?
+<li>Does the author meet <a href="methods/explain-ambiguous-text/">Explain ambiguous text or provide an unambiguous alternative</a>?
 <ol>
-<li>Yes, view meets <em>Explain non-literal text or provide a literal alternative</em>, pass.</li>
+<li>Yes, pass. Stop.</li>
 <li>No, fail.</li>
 </ol>
 </li>
@@ -109,7 +117,7 @@
 <li>If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply; however, if the purpose is to educate students about pieces of art, then this guideline applies.</li>
 </ul>
 </div>
-<h3>Supplimental Requirements</h3>
+<h3>Supplemental Requirements</h3>
 <p class="ednote">None defined at this time.</p>
 <h3>Assertions</h3>
 <p class="ednote">There will probably be a generic assertion based on style guides that applies to this guideline.</p>
@@ -121,13 +129,17 @@
 <li>Hint at a meaning that is not directly stated, or</li>
 <li>Can have more than one meaning, such as working on a literal and figurative level at the same time. Example in English: “The chef cuts corners when slicing the fish.” Non-literal: The chef is preparing the fish in an easy or cheap way. Literal: The chef is cutting the fish into shapes that don’t have sharp corners.</li>
 </ul>
-<p>When checking for non-literal text, also consider how sentences are combined together, such as if a word in one sentence is critical to accurately understanding the meaning of a later sentence.</p>
-<p>If the text has implied meaning, explain it or provide a literal alternative using one of the techniques in the <a href=".methods/">Methods</a> section.</p>
+<p>When checking for ambiguous text, also consider how sentences are combined together, such as if a word in one sentence is critical to accurately understanding the meaning of a later sentence.</p>
+<p>If the text has implied meaning, explain it or provide an unambiguous alternative using one of the techniques in the <a href=".methods/">Methods</a> section.</p>
 </div>
 <h2>Definitions</h2>
 <ul>
+<li><strong>Abbreviation</strong>: TBD (a shortened form of a word or a phrase).</li>
+<li><strong>Acronym</strong>: TBD (a type of abbreviation formed from the initial letters of other words, often pronounced as a word).</li>
+<li><strong>Ambiguous number</strong>: TBD (such as when date formatting can have different meanings in different cultures).</li>
+<li><strong>Ambiguously pronounced text</strong>: TBD (including words that leave out letters or diacritics needed to read the words phonetically, such as in Arabic and Hebrew.)</li>
 <li><strong>Back translation</strong> is a two-step process of translating text into another language and then back to its original language. Also called reverse translation, this process can help identify phrases that may lose their intended meaning when translated.</li>
-<li><strong>Content publisher</strong> The creative individual or organization responsible for curating, producing, and distributing various forms of content to engage and inform audiences. Includes tools used by the publisher such as HTML and JSON and content management systems like Wix and WordPress.</li>
+<li><strong>Diacritic</strong>: TBD, (a sign, such as an accent or other type of glyph, when added above or below a letter indicates a difference in pronunciation from the same letter when unmarked or marked differently) such as in Arabic and Hebrew.</li>
 <li><strong>Emoji character</strong> An emoji character is a small digital image with Unicode for its literal meaning, such as 🌴(“Palm tree”). But emojis often have implied meaning that users may need help understanding. Common examples of emojis used in non-literal ways:
 <ul>
 <li>💯(“Hundred points”) can be used in various ways, such as to indicate a perfect score or complete agreement.</li>
@@ -140,8 +152,12 @@
 <li>Examples: Allusions, hyperbole, idioms, irony, jokes, litotes, metaphors, metonymies, onomatopoeias, oxymorons, personification, puns, sarcasm, and similes. More detailed examples are available in the <a href=".methods/">Methods</a> section.</li>
 </ul>
 </li>
+<li><strong>Publisher</strong> The individual or organization responsible for curating, producing, and distributing various forms of content to engage and inform audiences. Includes tools used by the publisher such as HTML and JSON and content management systems like Wix and WordPress.</li>
 <li><strong>User agent</strong> W3C defines user agent as any software that retrieves, renders, and facilitates end-user interaction with Web content, or whose user interface is implemented using Web technologies.
-Examples: Web browsers, media players, operating system shells, plug-ins, consumer electronics with Web-widgets, and stand-alone applications or embedded applications that help in retrieving, rendering, and interacting with Web content.</li>
+<ul>
+<li>Examples: Web browsers, media players, operating system shells, plug-ins, consumer electronics with Web-widgets, and stand-alone applications or embedded applications that help in retrieving, rendering, and interacting with Web content.</li>
+</ul>
+</li>
 </ul>
 
     </main>
