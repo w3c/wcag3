@@ -31,9 +31,9 @@ For each focusable item:
 
   </div>
 
-### Supplimental Requirements
+### Supplemental Requirements
 
-- [Supplimentary indicators](methods/supplimentary-indicators).
+- [Supplementary indicators](methods/supplementary-indicators).
 
 
 ### Assertions

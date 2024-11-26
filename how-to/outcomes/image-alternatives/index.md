@@ -33,7 +33,7 @@ If there is no information conveyed by the image, the user's assistive technolog
 
 </div>
 
-### Supplimental Requirements
+### Supplemental Requirements
 
 - [The role and importance of the image is programmatically indicated](methods/role-of-images) (Supporting requirement).
 - [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).

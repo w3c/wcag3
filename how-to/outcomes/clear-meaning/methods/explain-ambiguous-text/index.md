@@ -25,6 +25,7 @@ If the text is ambiguous, explain it or provide an alternative using one of the 
 * **Author technique (General)**: Explain the meaning in brackets after the first use.
 * **Author technique (General)**: Explain the meaning in a consecutive block of text.
 * **Author technique (General)**: Include a link to a glossary, pop-up, or tooltip.
+* **Author technique (General)**: Use translation tools to help identify ambiguous text during back translation.
 * **Author technique (HTML)**: Include text that explains the meaning using an  abbreviation `<abbr>` element.
 
-<p class="ednote">This guideline will include definitions and examples in English of common types of non-literal text. This guideline will also link to external locations with examples of non-literal text in a wide variety of languages, including Arabic, Chinese (Mandarin), Hindi, Japanese, and Russian.</p>
+<p class="ednote">This guideline will include definitions and examples in English of common types of non-literal text. This guideline will also link to examples of non-literal text in a wide variety of languages, including Arabic, Chinese (Mandarin), Hindi, Japanese, and Russian.</p>

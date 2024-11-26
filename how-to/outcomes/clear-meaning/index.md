@@ -48,11 +48,11 @@ For each item of ambiguous text, such as non-literal text, abbreviations and acr
    2. No, fail.
 
 #### Exceptions
-* If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply. However, if the purpose is to educate students about pieces of art, then this guideline applies.
+* If the purpose is to showcase works of art or fiction, such as a poetry journal or fictional stories, this guideline does not apply; however, if the purpose is to educate students about pieces of art, then this guideline applies.
 
 </div>
 
-### Supplimental Requirements
+### Supplemental Requirements
 
 <p class="ednote">None defined at this time.</p>
 
