@@ -6,8 +6,8 @@ layout: layout/methods.md
 
 <div class="nested">
 
-- [Decorative image is programmatically hidden](methods/decorative-images)
-- [Equivalent text alternative is available for image that conveys content](methods/equivalent-alternative-text)
+- [Decorative image is programmatically hidden](decorative-images)
+- [Equivalent text alternative is available for image that conveys content](equivalent-alternative-text)
 
 </div>
 
@@ -15,8 +15,8 @@ layout: layout/methods.md
 
 <div class="nested">
 
-- [The role and importance of the image is programmatically indicated](methods/role-of-images) (Supporting requirement).
-- [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).
-- [Auto generated text descriptions are editable by content creator](methods/editable-alt-text)  (Supporting requirement).
+- [The role and importance of the image is programmatically indicated](role-of-images)
+- [The type of image (photo, icon, etc.) is indicated](type-of-image)
+- [Auto generated text descriptions are editable by content creator](editable-alt-text)
 
 </div>
