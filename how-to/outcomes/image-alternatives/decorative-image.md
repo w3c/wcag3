@@ -1,14 +1,8 @@
 ---
-layout: method.html
-subtitle: Introduction
+layout: requirement.html
+level: foundational
+text: Decorative image is programmatically hidden.
 ---
-
-<dl class="method-card">
-  <div>
-    <dt>Level:</dt>
-    <dd>@@@</dd>
-  </div>
-</dl>
 
 ## Techniques
 

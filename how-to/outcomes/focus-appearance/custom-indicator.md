@@ -1,31 +1,27 @@
 ---
-subtitle: Introduction
-layout: layout/methods.md
+layout: requirement.html
+level: foundational
+text: A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.
 ---
 
-### Summary
+## Methods
 
 There are various ways of creating a focus indicator, the following techniques provide custom ways of creating and testing each category of focus indicator.
 
 - [Line or bounding box indicators](#line-or-bounding-box-indicators)
 - [Change of color](#change-of-color)
-- [Icon or shape](#icon-or-shape)
-- [Tooltip or additional content](#tooltip-or-additional-content)
+- [Icon/shape](#iconshape)
+- [Tooltip/additional content](#tooltipadditional-content)
 - [Size change](#size-change)
 - [Combination indicators](#combination-indicators)
 - [Other indicators](#other-indicators)
 
 <a name="line-or-bounding-box-indicators">
 
-## Line or bounding box indicators
+### Line or bounding box indicators
 </a>
 
-<dl class="method-card">
-  <div>
-    <dt>Technology:</dt>
-    <dd>HTML</dd>
-  </div>
-</dl>
+<p class="technology"><span>Technology: </span> HTML</p>
 
 A bounding box focus indicator using outline, border or box-shadow.
 
@@ -46,7 +42,7 @@ A bounding box focus indicator using outline, border or box-shadow.
 
 <a name="change-of-color">
 
-## Change of color
+### Change of color
 </a>
 
 The authored focus indicator uses a change of color within the control.
@@ -62,7 +58,7 @@ The authored focus indicator uses a change of color within the control.
 
 <a name="icon-or-shape">
 
-## Icon/shape
+### Icon/shape
 </a>
 
 The authored focus indicator uses the addition/removal of an icon or shape.
@@ -78,7 +74,7 @@ The authored focus indicator uses the addition/removal of an icon or shape.
 
 <a name="tooltip-or-additional-content">
 
-## Tooltip/additional content
+### Tooltip/additional content
 </a>
 
 Display a tooltip to indicate the user interface component with focus.
@@ -94,7 +90,7 @@ Display a tooltip to indicate the user interface component with focus.
 
 <a name="size-change">
 
-## Size change
+### Size change
 </a>
 
 A change of size of the focusable element to show focus.
@@ -107,14 +103,14 @@ A change of size of the focusable element to show focus.
 
 <a name="combination-indicators">
 
-## Combination indicators
+### Combination indicators
 </a>
 
 If an indicator uses a combination of techniques, one of those techniques must meet the test.
 
 <a name="other-indicators">
 
-## Other indicators
+### Other indicators
 </a>
 
 Using a custom indicator that does not fit into any other method.
@@ -127,7 +123,3 @@ Using a custom indicator that does not fit into any other method.
     * <p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it may pass via “size change” below.</p>
 * **Distinct Style:** The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state. 
 * **Adjacent:** The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the centre of the indicator.)
-
-### How it solves user need
-
-Coming soon

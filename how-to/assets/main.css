@@ -111,10 +111,6 @@ h1 span {
 	margin-bottom: 0.25em;
 }
 
-main h2:first-of-type {
-	
-}
-
 .normative {
 	border: solid 1px var(--cloudy-subtle);
 	margin-top: 1em;
@@ -140,4 +136,33 @@ main h2:first-of-type {
 .note::before { 
 	content: "Note: "; 
 	font-weight: bold;
+}
+
+is:{.requirement-level, .technology} span {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;  
+}
+.requirement-level, .technology {
+	display: inline-block;
+	background: #6bc8fe;
+	color: #111111;
+	font-weight: 700;
+	font-size: 11px;
+	font-size: .6125rem;
+	line-height: 1.4;
+	vertical-align: middle;
+	margin-left: 1em;
+	padding: 4px 8px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.sidenav--list a+ul {
+	display: block;
 }
