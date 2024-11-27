@@ -66,6 +66,24 @@ var respecConfig = {
 		w3cid: 90883
 	}],
 
+	formerEditors: [{
+		name: "Michael Cooper, Staff Contact, 2016-2023",
+		company: "W3C",
+		companyURI: "https://www.w3.org/",
+		w3cid: 34017
+	}, {
+		name: "Shawn Lauriat, Editor, 2016-2023",
+		company: "Google, Inc.",
+		companyURI: "https://www.google.com/",
+		w3cid: 90646
+	}, {
+		name: "Wilco Fiers, Project Manager, 2021-2023",
+		company: "Deque Systems, Inc.",
+		companyURI: "https://www.deque.com/",
+		w3cid: 43334
+	}],
+
+
 	
 	// authors, add as many as you like.
 	// This is optional, uncomment if you have authors as well as editors.

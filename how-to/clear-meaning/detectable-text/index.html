@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0 Image Alternatives Outcome - </title>
+  <title>WCAG 3.0 Clear Meaning Outcome - </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -49,7 +49,8 @@
   <ul>
     <li><a href="https://w3c.github.io/wcag3/guidelines/">WCAG 3</a></li>
     <li><a href="/wcag3/how-to/">How to meet WCAG 3</a></li>
-<li><a href="/wcag3/how-to/image-alternatives/" aria-current="page">Image Alternatives</a></li>
+<li><a href="/wcag3/how-to/clear-meaning/">Clear Meaning</a></li>
+<li><a href="/wcag3/how-to/clear-meaning/detectable-text/" aria-current="page">Detectable Text</a></li>
   </ul>
 </nav>
 
@@ -59,23 +60,13 @@
   <nav class="sn-contents" aria-label="Secondary">
     <ul class="sidenav--list">
       <li>
-  <a aria-current="page" href="/wcag3/how-to/image-alternatives/">Image Alternatives</a>
+  <a href="/wcag3/how-to/clear-meaning/">Clear Meaning</a>
         
         <ul>
           
-          <li><a href="/wcag3/how-to/image-alternatives/decorative-image">Decorative image</a></li>
+          <li><a href="/wcag3/how-to/clear-meaning/detectable-text">Detectable text</a></li>
           
-          <li><a href="/wcag3/how-to/image-alternatives/equivalent-text-alternative">Equivalent text alternative</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/detectable-image">Detectable image</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/image-role">Image role</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/image-type">Image type</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/editable-alternatives">Editable alternatives</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/style-guide">Style guide</a></li>
+          <li><a href="/wcag3/how-to/clear-meaning/unambiguous-text">Unambiguous text</a></li>
             
         </ul>
         
@@ -83,76 +74,16 @@
   </nav>
 </div>
     <main id="main" tabindex="-1">
-        <h1>Image Alternatives</h1>
-      <h2>Goal</h2>
-<p>A user is provided  an understandable description of the information or functionality contained within an image.
-If there is no information conveyed by the image, the user's assistive technology should be able to ignore the image.</p>
-<h2>Normative text</h2>
-<div class="normative">
-<h3>Guideline</h3>
-  <p>Users have equivalent alternatives for images.</p>
-<div class="nested">
-<h3>Foundational Requirements</h3>
-<ol>
-<li>
-<p>Would removing the image impact how people understand the page?</p>
-<ol>
-<li>No, <a href="decorative-image">decorative image is programmatically hidden</a>. Stop.</li>
-<li>Yes, continue.</li>
-</ol>
-</li>
-<li>
-<p>Is the image presented in a way that is available to user agents and assistive technology?</p>
-<ol>
-<li>Yes, image must meet <em>Image is programmatically determinable</em> AND the <em>accessibility support set</em> incorporates <a href="equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-<li>No, continue.</li>
-</ol>
-</li>
-<li>
-<p>Is an equivalent text alternative available for the image?</p>
-<ol>
-<li>Yes, image must meet <a href="equivalent-text-alternative">Equivalent text alternative is available for image that conves content</a>. Stop.</li>
-<li>No, fail.</li>
-</ol>
-</li>
-</ol>
-</div>
-<h3>Supplemental Requirements</h3>
-<ul>
-<li><a href="image-role">The role and importance of the image is programmatically indicated</a> (Supporting requirement).</li>
-<li><a href="image-type">The type of image (photo, icon, etc.) is indicated</a>  (Supporting requirement).</li>
-<li><a href="editable-alternatives">Auto generated text descriptions are editable by content creator</a>  (Supporting requirement).</li>
-</ul>
-<h3>Assertions</h3>
-<ul>
-<li><a href="style-guide">Text alternatives follow an organizational style guide</a>.</li>
-</ul>
-</div>
-<h2>What to do</h2>
-<div class="nested">
-<p>The general way to determine whether an image is conveyed appropriately is to:</p>
-<ol>
-<li>Remove, hide, or mask the image.</li>
-<li>Replace it with the text alternative.</li>
-<li>Check that the meaning is substantively equivalent
-<ol>
-<li>the purpose of the non-text content is met by the text alternative.</li>
-<li>The way the content is presented is using the most appropriate, accessibility-supported  (math, code samples, etc.)</li>
-</ol>
-</li>
-<li>If the non-text content contains words that are important to understanding the content, the words are included in the text alternative.</li>
-<li>If the non-text content duplicates adjacent text, the alternative may be null.</li>
-</ol>
-</div>
-<h2>Definitions</h2>
-<ul>
-<li><strong>Image</strong> - a visual representation of something.</li>
-<li><strong>Equivalent to the image</strong> - text or audio which serves an equivalent purpose to what presenting the image achieves. Where text is embedded in an image that text is included in the equivalent unless it is incidental text from a photo (e.g. a street sign in a photo of a town).</li>
-<li><strong>Decorative image</strong> - serving only an aesthetic purpose, providing no information, and having no functionality Removing the image would not affect the meaning or function of the page.</li>
-<li><strong>Complex image</strong> - an image which requires more than one or two sentences to describe the contents.</li>
-<li><strong>Text</strong> - a sequence of characters that can be programmatically determined, where the sequence is expressing something in human language.</li>
-</ul>
+      <h1>Detectable text</h1>
 
+      <p class="requirement-level"><span>Level: </span>Foundational</p>
+
+      <div class="normative">
+        Text is programmatically determinable.
+      </div>
+      
+      <h2>Methods</h2>
+<p class="ednote">Methods need to be written.</p>
     </main>
   </div>
   <footer class="site-footer grid-4q" aria-label="Site">

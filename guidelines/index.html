@@ -77,7 +77,7 @@
 					 </ul>
 					</li>
 					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a> and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a> differ slightly. Does one seem clearer than the other?</li>
-					<li>The conformance section explains the approach the Accessibilty Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
+					<li>The conformance section explains the approach the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
 				</ul></p>
 	
 			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
@@ -139,7 +139,7 @@
 					<div class="body-wrapper">
 						<p class="guideline-text">Users have equivalent alternatives for images.</p>
 						<aside class="doclinks">
-							<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/"">
+							<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Image alternatives</a></p>
 						</aside>	
 					</div>
@@ -172,7 +172,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
 							<aside class="doclinks">
-								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/methods/decorative-images/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/decorative-image/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Decorative image methods</a></p>
 							</aside>
 						</div>
@@ -182,7 +182,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
 							<aside class="doclinks">
-								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/methods/equivalent-text-alternative/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/equivalent-text-alternative/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Content image methods</a></p>
 							</aside>
 						</div>
@@ -192,7 +192,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text"><a>Image</a> is <a>programmatically determinable</a>.</p>
 							<aside class="doclinks">
-								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/methods/detectable-image/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/detectable-image/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable image methods</a></p>
 							</aside>
 						</div>
@@ -200,20 +200,20 @@
 
 					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
 						<h5>Image role</h5>
-						<p class="provision-text">The role and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
+						<p class="provision-text">The <a>role</a> and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
 					</section>
 					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
 						<h5>Image type</h5>
-						<p class="provision-text">The type of <a>image</a> (photo, icon, etc.) is indicated.</p>
+						<p class="provision-text">The <a>image type</a> (photo, icon, etc.) is indicated.</p>
 					</section>
 					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
-						<h5>Editable Alternatives</h5>
+						<h5>Editable alternatives</h5>
 						<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 
 					<section class="provision" data-status="exploratory" data-provision-type="assertion">
-						<h5>Style Guide</h5>
+						<h5>Style guide</h5>
 						<p class="provision-text">Text alternatives follow an organizational style guide.</p>
 					</section>	
 				</section>
@@ -343,11 +343,13 @@
 
 				<section class="guideline" data-status="developing">
 					<h4>Clear meaning</h4>
-					<p class="guideline-text">Users can access explanations of or alternatives to ambiguous <a>text</a> <a>content</a>.</p>
-					<aside class="doclinks">
-						<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/">
-							<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Clear Meaning</a></p>
-					</aside>
+					<div class="body-wrapper">
+						<p class="guideline-text">Users can access explanations of or alternatives to ambiguous <a>text</a> <a>content</a>.</p>
+						<aside class="doclinks">
+							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/">
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Clear Meaning</a></p>
+						</aside>
+					</div>
 					<details class="decision-tree">
 						<summary>Which foundational requirements apply?</summary>
 						<p>For each item of ambiguous text, such as <a>non-literal text</a>, abbreviations and acronyms, <a>ambiguous numbers</a>, or text missing letters or diacritics:</p>
@@ -380,20 +382,24 @@
 
 					<section id="detectable-text" class="provision" data-provision-type="foundational">
 						<h5>Detectable text</h5>
-						<p class="provision-text">Text is programmatically determinable</p>
-						<aside class="doclinks">
-							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/methods/detectable-text">
-								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable text methods</a></p>
-						</aside>						
+						<div class="body-wrapper">
+							<p class="provision-text">Text is programmatically determinable</p>
+							<aside class="doclinks">
+								<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/detectable-text/">
+									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable text methods</a></p>
+							</aside>
+						</div>
 					</section>
 
 					<section id="unambiguous-text" class="provision"  data-provision-type="foundational">
 						<h5>Unambiguous text</h5>
-						<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative.</p>
-						<aside class="doclinks">
-							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/methods/explain-ambiguous-text/">
-								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Unambiguous text methods</a></p>
-						</aside>	
+						<div class="body-wrapper">
+							<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative.</p>
+							<aside class="doclinks">
+								<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/unambiguous-text/">
+									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Unambiguous text methods</a></p>
+							</aside>
+						</div>
 					</section>
 
 				</section>
@@ -472,7 +478,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.</p>
 							<aside class="doclinks">
-								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/methods/custom-focus-indicator/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/custom-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Custom indicator methods</a></p>
 							</aside>
 						</div>
@@ -482,7 +488,7 @@
 						<div class="body-wrapper">
 							<p class="provision-text">Focusable item uses the user agent default indicator.</p>
 							<aside class="doclinks">
-								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/methods/default-focus-indicator/">
+								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/user-agent-default-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> User agent default indicator methods</a></p>
 							</aside>
 						</div>
@@ -1340,7 +1346,7 @@
 				<p>There are two types of content in this document:</p>
 				<ul>
 					<li><strong>Normative:</strong> what you must do to meet the guidelines.</li>
-					<li><strong>Non-normative:</strong> advice to help you meet the guidelines. This is also called <a>informative</a>.</li>
+					<li><strong>Informative:</strong> advice to help you meet the guidelines. This is also called <a>non-normative</a>.</li>
 				</ul>
 				<p>We are experimenting with different conformance approaches for WCAG 3.0. Once we have developed enough guidelines, we will test how well each works.</p>
 			</details>
@@ -1355,7 +1361,7 @@
 
 			<p>Other conformance concepts AG continues to explore the following include conformance levels, issue severity, adjectival ratings and pre-assessment checks.</p>
 
-			See [[[?WCAG3-explainer]]] for more information.
+			See <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for W3C Accessibility Guidelines (WCAG) 3.0</a> for more information.
 
 			<section id="accessibility-supported">
 				<h3>Only accessibility-supported ways of using technologies</h3>
@@ -1480,7 +1486,7 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt><dfn>Image role</dfn></dt>
+				<dt><dfn data-lt="role">Image role</dfn></dt>
 				<dd>
 					<div class="ednote">
 						<p>To be defined.</p>
@@ -1494,7 +1500,7 @@
 				</dd>
 				<dt data-status="developing"><dfn data-lt="Non-normative|Informative">Informative</dfn></dt>
 				<dd>
-					<p><a>Content</a> provided for information purposes and not required for <a>conformance</a>.</p>
+					<p><a>Content</a> provided for information purposes and not required for <a>conformance</a>. Also refered to as non-normative.</p>
 				</dd>
 				<dt><dfn>Interactive component</dfn></dt>
 				<dd>
@@ -1591,12 +1597,6 @@
 				<dd>
 					<p>Testing scope that includes all <a>content</a> visually and <a>programmatically</a> available without a significant change. Conceptually, views correspond to the definition of a web page as used in WCAG 2, but are not restricted to content meeting that definition. For example, a view could be considered a “screen” in a mobile app or a layer of web content, such as a modal dialog.</p>
 				</dd>
-				<dt><dfn>Web technologies</dfn></dt>
-				<dd>
-					<div class="ednote">
-						<p>To be defined.</p>
-					</div>
-				</dd>
 			</dl>
 		</section>
 		<section class="appendix">
@@ -1624,7 +1624,7 @@
             <li>2024-03-15: Updated placeholder guidelines with exploratory guidelines.
             </li>
 			<li>2024-??-??: Updated placeholder guidelines; added 3 developing guidelines and accessibility supported; and 
-				moved explanatory content to the <a href="https://www.w3.org/TR/wcag-3.0-explainer/"">Explainer for WCAG 3.0</a>
+				moved explanatory content to the <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for WCAG 3.0</a>
 			</li>
 		</ul>
 
@@ -1633,7 +1633,6 @@
 			<h2>Acknowledgements</h2>				
   			<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
 			<div data-include="acknowledgements/current-contributors.html" data-include-replace="true"></div>
-			<div data-include="acknowledgements/previous-notable-contributors.html" data-include-replace="true"></div>
 			<div data-include="acknowledgements/previous-contributors.html" data-include-replace="true"></div>
 			<div data-include="acknowledgements/research-partners.html" data-include-replace="true"></div>
 			<div data-include="acknowledgements/funders.html" data-include-replace="true"></div>			

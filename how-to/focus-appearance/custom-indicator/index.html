@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WCAG 3.0 Image Alternatives Outcome - </title>
+  <title>WCAG 3.0 Keyboard Focus Appearance Outcome - </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
   <link rel="stylesheet" href="/wcag3/how-to/assets/main.css">
@@ -49,7 +49,8 @@
   <ul>
     <li><a href="https://w3c.github.io/wcag3/guidelines/">WCAG 3</a></li>
     <li><a href="/wcag3/how-to/">How to meet WCAG 3</a></li>
-<li><a href="/wcag3/how-to/image-alternatives/" aria-current="page">Image Alternatives</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/">Focus Appearance</a></li>
+<li><a href="/wcag3/how-to/focus-appearance/custom-indicator/" aria-current="page">Custom Indicator</a></li>
   </ul>
 </nav>
 
@@ -59,98 +60,242 @@
   <nav class="sn-contents" aria-label="Secondary">
     <ul class="sidenav--list">
       <li>
-  <a aria-current="page" href="/wcag3/how-to/image-alternatives/">Image Alternatives</a>
+  <a href="/wcag3/how-to/focus-appearance/">Keyboard Focus Appearance</a>
         
         <ul>
           
-          <li><a href="/wcag3/how-to/image-alternatives/decorative-image">Decorative image</a></li>
+          <li><a href="/wcag3/how-to/focus-appearance/custom-indicator">Custom indicator</a></li>
           
-          <li><a href="/wcag3/how-to/image-alternatives/equivalent-text-alternative">Equivalent text alternative</a></li>
+          <li><a href="/wcag3/how-to/focus-appearance/user-agent-default-indicator">User-agent default indicator</a></li>
           
-          <li><a href="/wcag3/how-to/image-alternatives/detectable-image">Detectable image</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/image-role">Image role</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/image-type">Image type</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/editable-alternatives">Editable alternatives</a></li>
-          
-          <li><a href="/wcag3/how-to/image-alternatives/style-guide">Style guide</a></li>
+          <li><a href="/wcag3/how-to/focus-appearance/style-guide">Style Guide</a></li>
             
         </ul>
         
-      </li></ul>
+      </li><li>
+  <a href="/wcag3/how-to/focus-appearance/user-needs/">User Needs</a></li>
+      <li>
+  <a href="/wcag3/how-to/focus-appearance/research/">Research</a></li>
+      </ul>
   </nav>
 </div>
     <main id="main" tabindex="-1">
-        <h1>Image Alternatives</h1>
-      <h2>Goal</h2>
-<p>A user is provided  an understandable description of the information or functionality contained within an image.
-If there is no information conveyed by the image, the user's assistive technology should be able to ignore the image.</p>
-<h2>Normative text</h2>
-<div class="normative">
-<h3>Guideline</h3>
-  <p>Users have equivalent alternatives for images.</p>
-<div class="nested">
-<h3>Foundational Requirements</h3>
-<ol>
-<li>
-<p>Would removing the image impact how people understand the page?</p>
-<ol>
-<li>No, <a href="decorative-image">decorative image is programmatically hidden</a>. Stop.</li>
-<li>Yes, continue.</li>
-</ol>
-</li>
-<li>
-<p>Is the image presented in a way that is available to user agents and assistive technology?</p>
-<ol>
-<li>Yes, image must meet <em>Image is programmatically determinable</em> AND the <em>accessibility support set</em> incorporates <a href="equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-<li>No, continue.</li>
-</ol>
-</li>
-<li>
-<p>Is an equivalent text alternative available for the image?</p>
-<ol>
-<li>Yes, image must meet <a href="equivalent-text-alternative">Equivalent text alternative is available for image that conves content</a>. Stop.</li>
-<li>No, fail.</li>
-</ol>
-</li>
-</ol>
-</div>
-<h3>Supplemental Requirements</h3>
+      <h1>Custom indicator</h1>
+
+      <p class="requirement-level"><span>Level: </span>Foundational</p>
+
+      <div class="normative">
+        A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.
+      </div>
+      
+      <h2>Methods</h2>
+<p>There are various ways of creating a focus indicator, the following techniques provide custom ways of creating and testing each category of focus indicator.</p>
 <ul>
-<li><a href="image-role">The role and importance of the image is programmatically indicated</a> (Supporting requirement).</li>
-<li><a href="image-type">The type of image (photo, icon, etc.) is indicated</a>  (Supporting requirement).</li>
-<li><a href="editable-alternatives">Auto generated text descriptions are editable by content creator</a>  (Supporting requirement).</li>
+<li><a href="#line-or-bounding-box-indicators">Line or bounding box indicators</a></li>
+<li><a href="#change-of-color">Change of color</a></li>
+<li><a href="#iconshape">Icon/shape</a></li>
+<li><a href="#tooltipadditional-content">Tooltip/additional content</a></li>
+<li><a href="#size-change">Size change</a></li>
+<li><a href="#combination-indicators">Combination indicators</a></li>
+<li><a href="#other-indicators">Other indicators</a></li>
 </ul>
-<h3>Assertions</h3>
+<a name="line-or-bounding-box-indicators">
+<h3>Line or bounding box indicators</h3>
+</a>
+<p class="technology"><span>Technology: </span> HTML</p>
+<p>A bounding box focus indicator using outline, border or box-shadow.</p>
 <ul>
-<li><a href="style-guide">Text alternatives follow an organizational style guide</a>.</li>
-</ul>
-</div>
-<h2>What to do</h2>
-<div class="nested">
-<p>The general way to determine whether an image is conveyed appropriately is to:</p>
-<ol>
-<li>Remove, hide, or mask the image.</li>
-<li>Replace it with the text alternative.</li>
-<li>Check that the meaning is substantively equivalent
-<ol>
-<li>the purpose of the non-text content is met by the text alternative.</li>
-<li>The way the content is presented is using the most appropriate, accessibility-supported  (math, code samples, etc.)</li>
-</ol>
+<li>
+<p><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].</p>
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
 </li>
-<li>If the non-text content contains words that are important to understanding the content, the words are included in the text alternative.</li>
-<li>If the non-text content duplicates adjacent text, the alternative may be null.</li>
-</ol>
-</div>
-<h2>Definitions</h2>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.</p>
 <ul>
-<li><strong>Image</strong> - a visual representation of something.</li>
-<li><strong>Equivalent to the image</strong> - text or audio which serves an equivalent purpose to what presenting the image achieves. Where text is embedded in an image that text is included in the equivalent unless it is incidental text from a photo (e.g. a street sign in a photo of a town).</li>
-<li><strong>Decorative image</strong> - serving only an aesthetic purpose, providing no information, and having no functionality Removing the image would not affect the meaning or function of the page.</li>
-<li><strong>Complex image</strong> - an image which requires more than one or two sentences to describe the contents.</li>
-<li><strong>Text</strong> - a sequence of characters that can be programmatically determined, where the sequence is expressing something in human language.</li>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode</p>
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</p>
+</li>
+<li>
+<p>Multiple controls: There must be at least 3 visible controls of the same style in the view/page.</p>
+<ul>
+<li>
+<p class="note">In order for a change of color to be used, there needs to be a basis for comparison, otherwise another method is needed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjacent:</strong> The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the center of the indicator.)</p>
+</li>
+</ul>
+<a name="change-of-color">
+<h3>Change of color</h3>
+</a>
+<p>The authored focus indicator uses a change of color within the control.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric. </p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li>Multiple controls: There must be at least 3 visible controls of the same style in the view/page.
+<ul>
+<li>
+<p class="note">In order for a change of color to be used, there needs to be a basis for comparison, otherwise another method is needed.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="icon-or-shape">
+<h3>Icon/shape</h3>
+</a>
+<p>The authored focus indicator uses the addition/removal of an icon or shape.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="tooltip-or-additional-content">
+<h3>Tooltip/additional content</h3>
+</a>
+<p>Display a tooltip to indicate the user interface component with focus.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is [a sufficient size to be noticeable].
+<ul>
+<li>
+<p class="ednote">We will use a metric of 2px of the perimeter -20% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Change of contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is [sufficient] in a) standard mode, b) dark mode, and  c) high contrast mode.
+<ul>
+<li>
+<p class="ednote">The contrast metric is to be determined, but assumed to be similar to a large-text level.</p>
+</li>
+</ul>
+</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="ednote">There is a relationship between the area of the focus indicator and contrast that will need to be clarified. E.g. a higher contrast area may not need to be as large.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it can use the <a href="#size-change">Size change</a> method.</p>
+</li>
+</ul>
+</li>
+</ul>
+<a name="size-change">
+<h3>Size change</h3>
+</a>
+<p>A change of size of the focusable element to show focus.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The discernable area of the focus indicator change is [sufficient to be noticeable]
+<ul>
+<li>
+<p class="ednote">We will use a metric of 10% as a starting point. This metric needs usability testing, please get in touch if you could help facilitate this.</p>
+</li>
+<li>
+<p class="note">“discernable area” means the focused element has a discernible border or background, it cannot just be text.</p>
+</li>
+<li>
+<p class="note">Text within a control is not considered part of the size metric.</p>
+</li>
+</ul>
+</li>
+<li><strong>Contrast:</strong> The contrast change of the pixels that indicate the keyboard focus is sufficient in a) standard mode, b) dark mode, and c) high contrast mode</li>
+</ul>
+<a name="combination-indicators">
+<h3>Combination indicators</h3>
+</a>
+<p>If an indicator uses a combination of techniques, one of those techniques must meet the test.</p>
+<a name="other-indicators">
+<h3>Other indicators</h3>
+</a>
+<p>Using a custom indicator that does not fit into any other method.</p>
+<ul>
+<li><strong>Sufficient Size:</strong> The thickness/length of the focus indicator change is sufficient to be noticeable (metric TBC, use 2px perimeter of the (visually apparent) control as the default, should be relative to the visual size of the control.)
+<ul>
+<li>
+<p class="note">Add the complexity of the adjacent contrast vs size of indicator. </p>
+</li>
+</ul>
+</li>
+<li>Change of contrast: The contrast change of the pixels that indicate the keyboard focus is sufficient in a) standard mode, b) dark mode, and  c) high contrast mode.</li>
+<li><strong>Adjacent Contrast:</strong> The focus indicator has sufficient contrast with the adjacent colors in a) standard mode, b) dark mode, and c) high contrast mode
+<ul>
+<li>
+<p class="note">There is a relationship between the area of the focus indicator and contrast that will need to be clarified.</p>
+</li>
+<li>
+<p class="note">If the focus indicator is adjacent to the focusable element and does not contrast with the element, it may pass via “size change” below.</p>
+</li>
+</ul>
+</li>
+<li><strong>Distinct Style:</strong> The keyboard focus indicator uses a style that is distinct from the style of other controls, so that the item in focus can be distinguished without reference to the non-focused state.</li>
+<li><strong>Adjacent:</strong> The indicator is closer to the focused element than any other focusable element. (The center of the focused element to the centre of the indicator.)</li>
 </ul>
 
     </main>

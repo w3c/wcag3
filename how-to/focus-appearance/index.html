@@ -17,7 +17,7 @@
   
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="/wcag3/how-to/">WCAG 3 Outcomes</a>
+      <a href="/wcag3/how-to/">How to meet WCAG 3</a>
     </div>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
@@ -47,19 +47,31 @@
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
   <ul>
-    <li><a href="/wcag3/how-to/">All WCAG 3 Outcomes</a></li>
+    <li><a href="https://w3c.github.io/wcag3/guidelines/">WCAG 3</a></li>
+    <li><a href="/wcag3/how-to/">How to meet WCAG 3</a></li>
 <li><a href="/wcag3/how-to/focus-appearance/" aria-current="page">Focus Appearance</a></li>
   </ul>
 </nav>
 
   <div class="default-grid with-gap leftcol">
-    <div class="sidenav">
+    
+<div class="sidenav">
   <nav class="sn-contents" aria-label="Secondary">
     <ul class="sidenav--list">
       <li>
-  <a aria-current="page" href="/wcag3/how-to/focus-appearance/">Keyboard Focus Appearance</a></li><li>
-  <a href="/wcag3/how-to/focus-appearance/methods/">Methods</a></li>
-      <li>
+  <a aria-current="page" href="/wcag3/how-to/focus-appearance/">Keyboard Focus Appearance</a>
+        
+        <ul>
+          
+          <li><a href="/wcag3/how-to/focus-appearance/custom-indicator">Custom indicator</a></li>
+          
+          <li><a href="/wcag3/how-to/focus-appearance/user-agent-default-indicator">User-agent default indicator</a></li>
+          
+          <li><a href="/wcag3/how-to/focus-appearance/style-guide">Style Guide</a></li>
+            
+        </ul>
+        
+      </li><li>
   <a href="/wcag3/how-to/focus-appearance/user-needs/">User Needs</a></li>
       <li>
   <a href="/wcag3/how-to/focus-appearance/research/">Research</a></li>
@@ -81,23 +93,21 @@
 <li>
 <p>Is the user-agent default focus indicator used?</p>
 <ol>
-<li>Yes, the <a href="methods/default-focus-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> meets <a href="methods/custom-focus-indicator">Custom focus indicators</a>. Stop.</li>
+<li>Yes, the <a href="user-agent-default-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> meets <a href="custom-indicator">Custom focus indicators</a>. Stop.</li>
 <li>No, continue.</li>
 </ol>
 </li>
 <li>
 <p>Is the focus indicator defined by the author?</p>
 <ol>
-<li>Yes, indicator must meet <a href="methods/custom-focus-indicator">Custom focus indicators</a>. Stop.</li>
+<li>Yes, indicator must meet <a href="custom-indicator">Custom focus indicators</a>. Stop.</li>
 <li>No, fail.</li>
 </ol>
 </li>
 </ol>
   </div>
 <h3>Supplemental Requirements</h3>
-<ul>
-<li><a href="methods/supplementary-indicators">Supplementary indicators</a>.</li>
-</ul>
+<p class="ednote">None defined at this time.</p>
 <h3>Assertions</h3>
 <ul>
 <li>Style guide: The organization has a documented style guide which includes guidance on focus indicators, and a policy that designers and developers are required to follow the style guide. The style guide includes focus indicators that meet one of the baseline scenarios in the decision tree.</li>
