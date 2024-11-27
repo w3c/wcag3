@@ -20,28 +20,28 @@ If there is no information conveyed by the image, the user's assistive technolog
 ### Foundational Requirements
 
 1. Would removing the image impact how people understand the page?
-   1. No, [decorative image is programmatically hidden](methods/decorative-images). Stop.
+   1. No, [decorative image is programmatically hidden](decorative-image). Stop.
    2. Yes, continue.
 
 2. Is the image presented in a way that is available to user agents and assistive technology?
-   1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternative is available for image that conveys content](methods/equivalent-alternative-text). Stop.
+   1. Yes, image must meet _Image is programmatically determinable_ AND the _accessibility support set_ incorporates [Equivalent text alternative is available for image that conveys content](equivalent-text-alternative). Stop.
    2. No, continue.
 
 3. Is an equivalent text alternative available for the image?
-   1. Yes, image must meet [Equivalent text alternative is available for image that conves content](methods/equivalent-alternative-text). Stop.
+   1. Yes, image must meet [Equivalent text alternative is available for image that conves content](equivalent-text-alternative). Stop.
    2. No, fail.
 
 </div>
 
 ### Supplemental Requirements
 
-- [The role and importance of the image is programmatically indicated](methods/role-of-images) (Supporting requirement).
-- [The type of image (photo, icon, etc.) is indicated](methods/type-of-image)  (Supporting requirement).
-- [Auto generated text descriptions are editable by content creator](methods/editable-alt-text)  (Supporting requirement).
+- [The role and importance of the image is programmatically indicated](image-role) (Supporting requirement).
+- [The type of image (photo, icon, etc.) is indicated](image-type)  (Supporting requirement).
+- [Auto generated text descriptions are editable by content creator](editable-alternatives)  (Supporting requirement).
 
 ### Assertions
 
-- [Text alternatives follow an organizational style guide](methods/text-alt-styleguide).
+- [Text alternatives follow an organizational style guide](style-guide).
 
 </div>
 

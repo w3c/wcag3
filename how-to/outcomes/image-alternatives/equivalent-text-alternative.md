@@ -1,14 +1,8 @@
 ---
-layout: method.html
-subtitle: Introduction
+layout: requirement.html
+level: foundational
+text: Equivalent text alternative is available for image that conveys content.
 ---
-
-<dl class="method-card">
-  <div>
-    <dt>Level:</dt>
-    <dd>@@@</dd>
-  </div>
-</dl>
 
 ## Techniques
 

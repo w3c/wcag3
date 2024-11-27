@@ -1,14 +1,9 @@
 ---
-layout: method.html
-subtitle: Introduction
+layout: requirement.html
+title: User-agent default indicator
+level: foundational
+text: Focusable item uses the user agent default indicator.
 ---
-
-<dl class="method-card">
-  <div>
-    <dt>Level:</dt>
-    <dd>Prerequiste</dd>
-  </div>
-</dl>
 
 ## Techniques
 

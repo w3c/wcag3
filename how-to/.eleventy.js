@@ -28,6 +28,9 @@ module.exports = function (eleventyConfig) {
       const basePath = dirname(page.inputPath).split("/").slice(1, 3).join("/");
       return {
         ...outcome,
+        hasFoundational: await fileExists(basePath + "/foundational/"),
+        hasSupplemental: await fileExists(basePath + "/supplemental/"),
+        hasAssertions: await fileExists(basePath + "/assertions/"),
         hasMethods: await fileExists(basePath + "/methods.md"),
         hasResearch: await fileExists(basePath + "/research.md"),
         hasUserNeeds: await fileExists(basePath + "/user-needs.md"),

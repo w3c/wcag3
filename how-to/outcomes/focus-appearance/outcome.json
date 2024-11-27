@@ -1,5 +1,10 @@
 {
   "index": 0,
   "title": "Keyboard Focus Appearance",
-  "description": "Users can see which element has keyboard focus."
+  "description": "Users can see which element has keyboard focus.",
+  "requirements": [
+    "Custom indicator",
+    "User-agent default indicator",
+    "Style Guide"
+  ]
 }
