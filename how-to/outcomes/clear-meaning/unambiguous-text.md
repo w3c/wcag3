@@ -1,14 +1,10 @@
 ---
-layout: method.html
-subtitle: Introduction
+layout: requirement.html
+level: foundational
+text: Explain ambiguous text or provide an unambiguous alternative.
 ---
 
-<dl class="method-card">
-  <div>
-    <dt>Level:</dt>
-    <dd>Foundational</dd>
-  </div>
-</dl>
+## Methods
 
 Determine if the text has:
 - Non-literal text, such as idioms, metaphors, similes, and sarcasm.
@@ -17,8 +13,6 @@ Determine if the text has:
 - Text  that leaves out letters or diacritics needed to read the words phonetically, such as in Arabic or Hebrew.
 
 If the text is ambiguous, explain it or provide an alternative using one of the techniques in the techniques section.
-
-
 
 ## Techniques
 

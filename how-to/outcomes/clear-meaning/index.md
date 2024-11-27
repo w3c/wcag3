@@ -29,7 +29,7 @@ Explaining or avoiding ambiguous language can also help:
 
 ### Guideline
 
-  <p>{{ outcome.description }}</p>
+<p>{{ outcome.description }}</p>
 
 <div class="nested">
 
@@ -40,10 +40,10 @@ For each item of ambiguous text, such as non-literal text, abbreviations and acr
 1. Is the ambiguous text presented in a way that is available to user agents, including assistive technology (AT)?
    1. Yes, view meets *Text is programmatically determinable*, continue.
    2. No, continue to step 3.
-2. Does the *accessibility support set* meet [Explain ambiguous text or provide an unambiguous alternative](methods/explain-ambiguous-text/)?
+2. Does the *accessibility support set* meet [Explain ambiguous text or provide an unambiguous alternative](unambiguous-text/)?
    1. Yes, pass. Stop.
    2. No, continue. 
-3. Does the author meet [Explain ambiguous text or provide an unambiguous alternative](methods/explain-ambiguous-text/)?
+3. Does the author meet [Explain ambiguous text or provide an unambiguous alternative](unambiguous-text/)?
    1. Yes, pass. Stop.
    2. No, fail.
 

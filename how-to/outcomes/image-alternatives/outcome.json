@@ -1,5 +1,14 @@
 {
   "index": 0,
   "title": "Image Alternatives",
-  "description": "Users have equivalent alternatives for images."
+  "description": "Users have equivalent alternatives for images.",
+  "requirements": [
+    "Decorative image",
+    "Equivalent text alternative",
+    "Detectable image",
+    "Image role",
+    "Image type",
+    "Editable alternatives",
+    "Style guide"
+  ]
 }

@@ -21,19 +21,19 @@ The keyboard focus must have a sufficient visual indicator.
 For each focusable item:
 
 1. Is the user-agent default focus indicator used?
-    1. Yes, the [user-agent default indicator](methods/default-focus-indicator) is used AND the *accessibility support set* meets [Custom focus indicators](methods/custom-focus-indicator). Stop.
+    1. Yes, the [user-agent default indicator](user-agent-default-indicator) is used AND the *accessibility support set* meets [Custom focus indicators](custom-indicator). Stop.
     2. No, continue.
 
 
 2. Is the focus indicator defined by the author?
-    1.  Yes, indicator must meet [Custom focus indicators](methods/custom-focus-indicator). Stop.
+    1.  Yes, indicator must meet [Custom focus indicators](custom-indicator). Stop.
     2.  No, fail.
 
   </div>
 
 ### Supplemental Requirements
 
-- [Supplementary indicators](methods/supplementary-indicators).
+<p class="ednote">None defined at this time.</p>
 
 
 ### Assertions
