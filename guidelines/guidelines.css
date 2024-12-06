@@ -165,7 +165,7 @@ caption {
 	content: "§";
 	display: block;
 }
-.status-marker, .requirement-type-marker {
+.status-marker {
   font-weight: 700;
   font-size: 11px;
   font-size: .6125rem;
@@ -178,16 +178,8 @@ caption {
   letter-spacing: 1px;
 }
 .status-marker {
-	border: 1px solid var(--note-border);
-	background: var(--note-bg);
-	color: #091832;  
-}
-.requirement-type-marker {
-	background: #6bc8fe;
-	color: #111111;  
-}
-.requirement-type-marker.supplemental {
 	background: #d0e1f1;
+	color: #091832;  
 }
 a[href].status-link {
 	color: var(--text);

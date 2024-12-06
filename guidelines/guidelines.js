@@ -85,21 +85,6 @@ var requirementTypeLabels = {
 	supplemental: 'Used for higher levels of conformance.'
 }
 
-function addRequirementTypeMarkers() {
-	var typeKeys = Object.keys(requirementTypeLabels);
-	typeKeys.forEach(function (requirementType) {
-		var headingSelector = '[data-requirement-type="' + requirementType + '"] > .header-wrapper';
-		var headings = document.querySelectorAll(headingSelector);
-		headings.forEach(function (heading) {
-			var requirementTypeMarker = document.createElement("span");
-			requirementTypeMarker.classList.add("requirement-type-marker");
-			requirementTypeMarker.classList.add(requirementType);
-			requirementTypeMarker.innerHTML = sentenceCase(requirementType);	
-			heading.firstElementChild.insertAdjacentElement('beforeend', requirementTypeMarker);
-		});
-	});
-}
-
 function addRequirementType() {
 	var requirements = document.querySelectorAll(".requirement");
 	requirements.forEach(function (requirement) {
@@ -109,6 +94,8 @@ function addRequirementType() {
 		preText.classList.add("requirement-type");
 		if(requirementType == 'assertion') {
 			preText.innerHTML = "Assertion ";
+		} else if(requirementType == 'foundational' || requirementType == 'supplemental') {
+			preText.innerHTML = sentenceCase(requirementType) + " requirement ";
 		} else {
 			preText.innerHTML = "Requirement ";
 		}
@@ -173,14 +160,6 @@ function removeImgSize() {
 			node.removeAttribute("height");
 		}
 	});
-}
-
-function removeGLNum() {
-	var tocEl = document.querySelector(".tocline > a[href=\"#guidelines\"]").parentNode.querySelector("ol");
-	tocEl.querySelectorAll("bdi.secno").forEach(function(node){node.remove();});
-
-	var sectionEl = document.querySelector("#guidelines");
-	sectionEl.querySelectorAll("bdi.secno").forEach(function(node){node.remove();});
 }
 
 function removeRequirementNum() {
@@ -272,10 +251,8 @@ function postRespec() {
 	adjustNormativity();
 	removeDraftMethodLinks();
 	removeRequirementNum();
-	addRequirementTypeMarkers();
 	addRequirementType();
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
-	// removeGLNum();
 }
