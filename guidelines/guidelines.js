@@ -93,6 +93,7 @@ function addRequirementTypeMarkers() {
 		headings.forEach(function (heading) {
 			var requirementTypeMarker = document.createElement("span");
 			requirementTypeMarker.classList.add("requirement-type-marker");
+			requirementTypeMarker.classList.add(requirementType);
 			requirementTypeMarker.innerHTML = sentenceCase(requirementType);	
 			heading.firstElementChild.insertAdjacentElement('beforeend', requirementTypeMarker);
 		});

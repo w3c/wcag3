@@ -178,12 +178,16 @@ caption {
   letter-spacing: 1px;
 }
 .status-marker {
-	background: #d0e1f1;
+	border: 1px solid var(--note-border);
+	background: var(--note-bg);
 	color: #091832;  
 }
 .requirement-type-marker {
 	background: #6bc8fe;
 	color: #111111;  
+}
+.requirement-type-marker.supplemental {
+	background: #d0e1f1;
 }
 a[href].status-link {
 	color: var(--text);
