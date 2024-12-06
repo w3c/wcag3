@@ -80,26 +80,40 @@ function addStatusMarkers() {
 	});
 }
 
-var provisionTypeLabels = {
+var requirementTypeLabels = {
 	foundational: 'Used to test the most basic level of accessibility.',
-	supplemental: 'Used for higher levels of conformance.',
-	assertion: 'An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the content or product to improve accessibility.',
+	supplemental: 'Used for higher levels of conformance.'
 }
 
-function addProvisionTypeMarkers() {
-	var typeKeys = Object.keys(provisionTypeLabels);
-	typeKeys.forEach(function (provisionType) {
-		var headingSelector = '[data-provision-type="' + provisionType + '"] > .header-wrapper';
+function addRequirementTypeMarkers() {
+	var typeKeys = Object.keys(requirementTypeLabels);
+	typeKeys.forEach(function (requirementType) {
+		var headingSelector = '[data-requirement-type="' + requirementType + '"] > .header-wrapper';
 		var headings = document.querySelectorAll(headingSelector);
 		headings.forEach(function (heading) {
-			var provisionTypeMarker = document.createElement("span");
-			provisionTypeMarker.classList.add("provision-type-marker");
-			provisionTypeMarker.innerHTML = sentenceCase(provisionType);	
-			heading.firstElementChild.insertAdjacentElement('beforeend', provisionTypeMarker);
+			var requirementTypeMarker = document.createElement("span");
+			requirementTypeMarker.classList.add("requirement-type-marker");
+			requirementTypeMarker.innerHTML = sentenceCase(requirementType);	
+			heading.firstElementChild.insertAdjacentElement('beforeend', requirementTypeMarker);
 		});
 	});
 }
 
+function addRequirementType() {
+	var requirements = document.querySelectorAll(".requirement");
+	requirements.forEach(function (requirement) {
+		var requirementType = requirement.getAttribute('data-requirement-type');
+		var preText = document.createElement("span");
+		var heading = requirement.querySelector("h5");
+		preText.classList.add("requirement-type");
+		if(requirementType == 'assertion') {
+			preText.innerHTML = "Assertion ";
+		} else {
+			preText.innerHTML = "Requirement ";
+		}
+		heading.insertAdjacentElement('afterbegin', preText);
+	});
+}
 
 function removeDraftMethodLinks() {
 	document.querySelectorAll('.method-link').forEach(function(node){
@@ -168,11 +182,11 @@ function removeGLNum() {
 	sectionEl.querySelectorAll("bdi.secno").forEach(function(node){node.remove();});
 }
 
-function removeProvisionNum() {
+function removeRequirementNum() {
 	var tocEl = document.querySelector(".tocline > a[href=\"#guidelines\"]").parentNode.querySelector("ol");
 	tocEl.querySelectorAll("ol ol ol ol bdi.secno").forEach(function(node){node.remove();});
 
-	document.querySelectorAll(".provision bdi.secno").forEach(function(node){node.remove();});
+	document.querySelectorAll(".requirement bdi.secno").forEach(function(node){node.remove();});
 }
 
 function outputJson() {
@@ -249,7 +263,6 @@ function moveStatusFilterToToc() {
 // scripts before Respec has run
 function preRespec() {
 	adjustDfnData();
-	linkOutcome();
 	addSummaryMarkers();
 }
 
@@ -257,10 +270,11 @@ function preRespec() {
 function postRespec() {
 	adjustNormativity();
 	removeDraftMethodLinks();
-	addProvisionTypeMarkers();
+	removeRequirementNum();
+	addRequirementTypeMarkers();
+	addRequirementType();
 	addStatusMarkers();
 	removeImgSize();
 	outputJson();
 	// removeGLNum();
-	removeProvisionNum();
 }
