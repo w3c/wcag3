@@ -9,7 +9,7 @@ var respecConfig = {
 	specStatus: "DNOTE",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	publishDate:          "2024-12-10",
+	publishDate:          "2024-12-12",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName: "wcag-3.0-explainer",
@@ -18,7 +18,7 @@ var respecConfig = {
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
 	copyrightStart: "2021",
-	license: "w3c-software-doc",
+	license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
 	edDraftURI: "https://w3c.github.io/wcag3/explainer/",
