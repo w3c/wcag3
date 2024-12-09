@@ -17,7 +17,7 @@
 		</section>
 		<section id="sotd">
 			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for three Guidelines: Clear meaning, Image alternatives, and Keyboard focus appearance.</p>
-			<p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
+			<p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
 		</section>
 		<section class="informative">
 			<h2>Introduction</h2>
@@ -26,29 +26,29 @@
 				<ul>
 					<li>W3C Accessibility Guidelines (WCAG) 3.0 shows ways to make web content and apps usable by people with
 						disabilities. WCAG 3.0 is a newer standard than the Web Content Accessibility Guidelines (WCAG) 2.</li>
-					<li>WCAG 3.0 doesn’t replace WCAG 2. WCAG 2 is used around the world and will still be required by different
+					<li>WCAG 3.0 does not replace WCAG 2. WCAG 2 is used around the world and will still be required by different
 						countries for a long time to come. </li>
 					<li>Meeting WCAG 2 at AA level means you will be close to meeting WCAG 3.0, but there may be differences. </li>
-					<li>We have developed labels for sections to tell you how confident we are that the content will not change.
-						This lets you tell whether we are trying out an idea or whether we have put a lot of work into the topic and
-						we don’t expect it to change. There are 5 levels:
+					<li>We have developed labels to define the status of content for each section. The labels indicate how confident we are that the content will not change.
+						This lets you know whether we are trying out an idea, or whether we have put a lot of work into the topic and
+						we do not expect it to change. There are 5 status levels for sections of content:
 						<ul>
-							<li>Placeholder - we are thinking about the topic and plan to work on it in the next few months. </li>
-							<li>Exploratory - we have started work on this topic, but still have many questions.</li>
-							<li>Developing - we have general agreement, but not all the details are worked out. </li>
-							<li>Refining - we think we have a good idea and want public feedback about it. We are ready to have a
+							<li>Placeholder &mdash; we are thinking about this topic and plan to work on it in the next few months. </li>
+							<li>Exploratory &mdash; we have started work on this topic, but still have many questions.</li>
+							<li>Developing &mdash; we have general agreement on this topic, but not all the details are worked out. </li>
+							<li>Refining &mdash; we think we have a good idea for this topic and want public feedback about it. We are ready to have a
 								few people try it out and see how well it works. </li>
-							<li>Mature - we think it is ready to publish and we want to know if we missed any rare examples. </li>
+							<li>Mature &mdash; we think this topic is ready to publish and we want to know if we missed any rare examples. </li>
 						</ul>
 					</li>
 				</ul>
 			</details>
 			<p>What’s new in this version of WCAG 3.0?</p>
 
-			<p>This draft includes an updated list of the potential Guidelines and Requirements which we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:
+			<p>This draft includes an updated list of the potential Guidelines and Requirements that we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:
 				<ul><li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
 					<li>WCAG 3.0 Requirements are more granular than WCAG 2 Success Criteria. </li></ul> 
-				The final set of Requirements in WCAG 3.0 will be different than what is in this draft. Requirements will be added, combined, and removed. 
+				The final set of Requirements in WCAG 3.0 will be different from what is in this draft. Requirements will be added, combined, and removed. 
 				We also expect changes to the text of the Requirements. Only some of the Requirements will be used to meet the base level of conformance.</p>
 			
 			<p>The Requirements are grouped into the following sections:</p>
@@ -68,38 +68,39 @@
 			</ul>
 
 			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:
-				<ul><li>What requirements are missing from this list to make web content accessible?</li>
-					<li>What research supports or refutes the requirements marked as needing additional research?</li>
-					<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a>) have moved from exploratory to developing and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
+				<ul>
+					<li>What Requirements are missing from this list to make web content accessible?</li>
+					<li>What research supports or refutes the Requirements marked as needing additional research?</li>
+					<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a>) have moved from exploratory to developing, and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
 					<ul>
-						<li>Grouping related requirements and assertions?</li>
-						<li>Using a decision tree for foundational requirements?</li>
+						<li>Grouping related <a href="https://www.w3.org/TR/wcag-3.0-explainer/#requirements-and-methods">requirements</a> and <a href="https://www.w3.org/TR/wcag-3.0-explainer/#assertions">assertions</a>?</li>
+						<li>Does the information under 'Which foundational requirements apply?' (the decision tree) make the guidelines easier to understand and use?</li>
 					 </ul>
 					</li>
 					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a> and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a> differ slightly. Does one seem clearer than the other?</li>
-					<li>The conformance section explains the approach the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
+					<li>The conformance section explains the approach that the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
 				</ul></p>
 	
-			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
 
 			<section>
 				<h3>About WCAG 3.0</h3>
 				<p>This specification presents a new model and guidelines to make web content and applications accessible to people with disabilities. The W3C Accessibility Guidelines (WCAG) 3.0 support a wide set of user needs, use new approaches to testing, and allow frequent maintenance of guidelines and related content to keep pace with accelerating technology change. WCAG 3.0 supports this evolution by focusing on the <a>functional needs</a> of users. These needs are then supported by guidelines written as outcome statements, requirements, assertions, and technology-specific methods to meet those needs. </p>
 				<p>WCAG 3.0 is a successor to <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> [[WCAG22]] and previous versions, but does not <a>deprecate</a> WCAG 2. It will also incorporate some content from and partially extend <a href="https://www.w3.org/TR/UAAG20/"> User Agent Accessibility Guidelines 2.0</a> [[UAAG20]] and <a href="https://www.w3.org/TR/ATAG20/"> Authoring Tool Accessibility Guidelines 2.0</a> [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 15 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly.</p>
-				<p>There are many differences between WCAG 2 and WCAG 3.0. The WCAG 3.0 guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines apply to various types of web content including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
+				<p>There are many differences between WCAG 2 and WCAG 3.0. The WCAG 3.0 guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other Web of Things devices. The guidelines apply to various types of web content, including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement. </p>
-				<p>Content that conforms to WCAG 2.2 A and AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3.0 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to the new standard, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
+				<p>Content that conforms to WCAG 2.2 levels A and AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3.0 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to the new standard, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
 			</section>
 
 			<section>
 				<h3>Section status levels</h3>
 				<p>As part of the WCAG 3.0 drafting process each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines Working Group is looking for.</p>
 				<ul>
-					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content or section to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
-					<li><strong id="status-exploratory">Exploratory</strong>: The Working Group is exploring what direction to take with this section. This content is not refined, details and definitions may be missing. Feedback should be about the proposed direction.</li>
-					<li><strong id="status-developing">Developing</strong>: There is rough agreement on what is needed for this section, although not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. Feedback should be focused on ensuring the sections are usable and reasonable in a broad sense.</li>
-					<li><strong id="status-refining">Refining</strong>: The Working Group has reach consensus on this section. It is ready for broad public review and experimental adoption. Feedback should be focused on the feasibility of implementation.</li>
-					<li><strong id="status-mature">Mature</strong>: Content is believed by the Working Group to be ready for recommendation. Feedback should be focused on edge case scenarios the Working Group may not have anticipated.</li>
+					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
+					<li><strong id="status-exploratory">Exploratory</strong>: This content is not refined, details and definitions may be missing. The Working Group is exploring what direction to take with this section. Feedback should be about the proposed direction.</li>
+					<li><strong id="status-developing">Developing</strong>: This content has been roughly agreed on in terms of what is needed for this section, although not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. Feedback should be focused on ensuring the sections is usable and reasonable in a broad sense.</li>
+					<li><strong id="status-refining">Refining</strong>: This content is ready for broad public review and experimental adoption. The Working Group has reached consensus on this section. Feedback should be focused on the feasibility of implementation.</li>
+					<li><strong id="status-mature">Mature</strong>: This content is believed by the Working Group to be ready for recommendation. Feedback on this section should be focused on edge case scenarios that the Working Group may not have anticipated.</li>
 				</ul>
 			</section>
 
@@ -167,30 +168,30 @@
 						</p>
 					</details>
 
-					<section class="provision" data-status="developing" data-provision-type="foundational">
+					<section class="requirement" data-status="developing" data-requirement-type="foundational">
 						<h5>Decorative image</h5>
 						<div class="body-wrapper">
-							<p class="provision-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
+							<p class="requirement-text"><a>Decorative image</a> is <a>programmatically</a> hidden.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/decorative-image/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Decorative image methods</a></p>
 							</aside>
 						</div>
 					</section>
-					<section class="provision" data-status="developing" data-provision-type="foundational">
+					<section class="requirement" data-status="developing" data-requirement-type="foundational">
 						<h5>Equivalent text alternative</h5>
 						<div class="body-wrapper">
-							<p class="provision-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
+							<p class="requirement-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/equivalent-text-alternative/">
 								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Content image methods</a></p>
 							</aside>
 						</div>
 					</section>
-					<section class="provision" data-status="developing" data-provision-type="foundational">
+					<section class="requirement" data-status="developing" data-requirement-type="foundational">
 						<h5>Detectable image</h5>
 						<div class="body-wrapper">
-							<p class="provision-text"><a>Image</a> is <a>programmatically determinable</a>.</p>
+							<p class="requirement-text"><a>Image</a> is <a>programmatically determinable</a>.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/detectable-image/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable image methods</a></p>
@@ -198,54 +199,54 @@
 						</div>
 					</section>
 
-					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+					<section class="requirement" data-status="exploratory" data-requirement-type="supplemental">
 						<h5>Image role</h5>
-						<p class="provision-text">The <a>role</a> and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
+						<p class="requirement-text">The <a>role</a> and importance of the <a>image</a> is <a>programmatically indicated</a>.</p>
 					</section>
-					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+					<section class="requirement" data-status="exploratory" data-requirement-type="supplemental">
 						<h5>Image type</h5>
-						<p class="provision-text">The <a>image type</a> (photo, icon, etc.) is indicated.</p>
+						<p class="requirement-text">The <a>image type</a> (photo, icon, etc.) is indicated.</p>
 					</section>
-					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+					<section class="requirement" data-status="exploratory" data-requirement-type="supplemental">
 						<h5>Editable alternatives</h5>
-						<p class="provision-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
+						<p class="requirement-text">Auto generated text descriptions are editable by <a>content</a> creator.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 
-					<section class="provision" data-status="exploratory" data-provision-type="assertion">
+					<section class="requirement" data-status="exploratory" data-requirement-type="assertion">
 						<h5>Style guide</h5>
-						<p class="provision-text">Text alternatives follow an organizational style guide.</p>
+						<p class="requirement-text">Text alternatives follow an organizational style guide.</p>
 					</section>	
 				</section>
 
 				<section class="guideline">
 					<h4>Media alternatives</h4>
 					<p class="guideline-text">Users have equivalent alternatives for media <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Audio descriptions</h5>
-						<p class="provision-text">Where there is visual <a>content</a> in media, there is an equivalent synchronized audio track.</p>
+						<p class="requirement-text">Where there is visual <a>content</a> in media, there is an equivalent synchronized audio track.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Captions</h5>
-						<p class="provision-text">Where there is audio <a>content</a> in media, there are equivalent synchronized captions.</p>
+						<p class="requirement-text">Where there is audio <a>content</a> in media, there are equivalent synchronized captions.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Descriptive transcripts</h5>
-						<p class="provision-text">A transcript is available whenever audio or visual alternatives are used.</p>
+						<p class="requirement-text">A transcript is available whenever audio or visual alternatives are used.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Findable media alternatives</h5>
-						<p class="provision-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.  (Needs additional research).</p>
+						<p class="requirement-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.  (Needs additional research).</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Preferred language</h5>
-						<p class="provision-text">Equivalent audio alternatives are available in the preferred language.</p>
+						<p class="requirement-text">Equivalent audio alternatives are available in the preferred language.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h4>Non-verbal cues</h4>
-						<p class="provision-text">Media alternatives explain nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning. </p>
+						<p class="requirement-text">Media alternatives explain nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -254,9 +255,9 @@
 				<section class="guideline">
 					<h4>Nontext alternatives</h4>
 					<p class="guideline-text">Users have alternatives available for non-text, non-image <a>content</a> that conveys context or meaning.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Nontext content</h5>
-						<p class="provision-text">Equivalent text alternatives are available for non-text, non-image <a>content</a> that conveys context or meaning. </p>
+						<p class="requirement-text">Equivalent text alternatives are available for non-text, non-image <a>content</a> that conveys context or meaning. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -265,9 +266,9 @@
 					<h4>Figure captions</h4>
 					<p class="guideline-text">Users can view figure captions even if not focused at figure.</p>
 
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Persistent captions</h5>
-						<p class="provision-text">Figure captions persist or can be made to persist even if the focus moves away.</p>
+						<p class="requirement-text">Figure captions persist or can be made to persist even if the focus moves away.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -275,23 +276,23 @@
 				<section class="guideline">
 					<h4>Single sense</h4>
 					<p class="guideline-text"> Users have <a>content</a> that does not rely on a single sense or perception.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use of hue</h5>
-						<p class="provision-text">Information conveyed by graphical elements does not rely on hue.</p>
+						<p class="requirement-text">Information conveyed by graphical elements does not rely on hue.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use of visual depth</h5>
-						<p class="provision-text">Information conveyed with visual depth is also conveyed <a>programmatically</a> and/or through text.</p>
+						<p class="requirement-text">Information conveyed with visual depth is also conveyed <a>programmatically</a> and/or through text.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use of sound</h5>
-						<p class="provision-text">Information conveyed with sound is also conveyed <a>programmatically</a> and/or through text. </p>
+						<p class="requirement-text">Information conveyed with sound is also conveyed <a>programmatically</a> and/or through text. </p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use of spatial audio</h5>
-						<p class="provision-text">Information that is conveyed with spatial audio is also conveyed <a>programmatically</a> and/or through text.</p>
+						<p class="requirement-text">Information that is conveyed with spatial audio is also conveyed <a>programmatically</a> and/or through text.</p>
 					</section>	
 				</section>
 			</section>
@@ -301,42 +302,42 @@
 					<section class="guideline">
 					<h4>Text appearance</h4>
 					<p class="guideline-text">Users can read visually rendered text.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Maximum text contrast</h5>
-						<p class="provision-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance. </p>
+						<p class="requirement-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision"  daa-status="exploratory">
+					<section class="requirement"  daa-status="exploratory">
 						<h5>Minimum text contrast</h5>
-						<p class="provision-text">The rendered text against its background meets a minimum <a>contrast ratio test</a> for its text appearance.</p>
+						<p class="requirement-text">The rendered text against its background meets a minimum <a>contrast ratio test</a> for its text appearance.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Text size</h5>
-						<p class="provision-text">The rendered text meets a minimum font size and weight.</p>
+						<p class="requirement-text">The rendered text meets a minimum font size and weight.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>		
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Text style</h5>
-						<p class="provision-text">The rendered text does not use a decorative or cursive font face.</p>
+						<p class="requirement-text">The rendered text does not use a decorative or cursive font face.</p>
 					</section>	
 				</section>
 
 				<section class="guideline">
 					<h4>Text-to-speech</h4>
 					<p class="guideline-text">Users can access text <a>content</a> and its meaning with text-to-speech tools.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Text-to-speech supported</h5>
-						<p class="provision-text">Text <a>content</a> can be converted into speech.</p>
+						<p class="requirement-text">Text <a>content</a> can be converted into speech.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-						<section class="provision" data-status="exploratory">
+						<section class="requirement" data-status="exploratory">
 						<h5>Human language</h5>
-						<p class="provision-text">The human language of the <a>view</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
+						<p class="requirement-text">The human language of the <a>view</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Semantic text appearance</h5>
-						<p class="provision-text">Meaning conveyed by text appearance is <a>programmatically</a> available.</p>
+						<p class="requirement-text">Meaning conveyed by text appearance is <a>programmatically</a> available.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -380,10 +381,10 @@
 						</ul>
 					</details>
 
-					<section id="detectable-text" class="provision" data-provision-type="foundational">
+					<section id="detectable-text" class="requirement" data-requirement-type="foundational">
 						<h5>Detectable text</h5>
 						<div class="body-wrapper">
-							<p class="provision-text">Text is programmatically determinable</p>
+							<p class="requirement-text">Text is programmatically determinable</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/detectable-text/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable text methods</a></p>
@@ -391,10 +392,10 @@
 						</div>
 					</section>
 
-					<section id="unambiguous-text" class="provision"  data-provision-type="foundational">
+					<section id="unambiguous-text" class="requirement"  data-requirement-type="foundational">
 						<h5>Unambiguous text</h5>
 						<div class="body-wrapper">
-							<p class="provision-text">Explain ambiguous text or provide an unambiguous alternative.</p>
+							<p class="requirement-text">Explain ambiguous text or provide an unambiguous alternative.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/unambiguous-text/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Unambiguous text methods</a></p>
@@ -408,32 +409,32 @@
 					<h4>Simplified written content</h4>
 					<p class="guideline-text">Users are not required to navigate complex words or sentence structures in order to understand <a>content</a>.</p>
 
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Appropriate tone</h5>
-						<p class="provision-text">The language and tone used is appropriate to the topic or subject matter.</p>
+						<p class="requirement-text">The language and tone used is appropriate to the topic or subject matter.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>		
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Double negatives</h5>
-						<p class="provision-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
+						<p class="requirement-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Sentence voice</h5>
-						<p class="provision-text">The voice used is easiest to understand in context.</p>
+						<p class="requirement-text">The voice used is easiest to understand in context.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Uncommon words</h5>
-						<p class="provision-text">Definitions for uncommon or new words are available.</p>
+						<p class="requirement-text">Definitions for uncommon or new words are available.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Unnecessary words or phrases</h5>
-						<p class="provision-text">Sentences are concise, without unnecessary filler words and phrases.</p>
+						<p class="requirement-text">Sentences are concise, without unnecessary filler words and phrases.</p>
 					</section>		
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Verb tense</h5>
-						<p class="provision-text">The verb tense used is easiest to understand in context.</p>
+						<p class="requirement-text">The verb tense used is easiest to understand in context.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>	
@@ -473,20 +474,20 @@
 						</p>
 					</details>
 
-					<section class="provision" data-status="developing" data-status="developing" data-provision-type="foundational">
+					<section class="requirement" data-status="developing" data-status="developing" data-requirement-type="foundational">
 						<h5>Custom indicator</h5>
 						<div class="body-wrapper">
-							<p class="provision-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.</p>
+							<p class="requirement-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/custom-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Custom indicator methods</a></p>
 							</aside>
 						</div>
 					</section>
-					<section class="provision" data-status="developing" data-provision-type="foundational">
+					<section class="requirement" data-status="developing" data-requirement-type="foundational">
 						<h5>User-agent default indicator</h5>
 						<div class="body-wrapper">
-							<p class="provision-text">Focusable item uses the user agent default indicator.</p>
+							<p class="requirement-text">Focusable item uses the user agent default indicator.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/user-agent-default-indicator/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> User agent default indicator methods</a></p>
@@ -494,12 +495,12 @@
 						</div>
 					</section>
 
-					<section class="provision" data-status="exploratory" data-provision-type="supplemental">
+					<section class="requirement" data-status="exploratory" data-requirement-type="supplemental">
 						<h5>Supplementary indicators</h5>
-						<p class="provision-text">@@</p>
+						<p class="requirement-text">@@</p>
 					</section>
 
-					<section class="provision" data-status="exploratory" data-provision-type="assertion">
+					<section class="requirement" data-status="exploratory" data-provision-type="assertion">
 						<h5></h5>Style guide</h5>
 						<p class="provision-text">Focus indicators follow an organizational style guide.</p>
 					</section>
@@ -508,69 +509,69 @@
 				<section class="guideline">
 					<h4>Pointer focus appearance</h4>
 					<p class="guideline-text">Users can see the location of the pointer focus.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Pointer visible</h5>
-						<p class="provision-text">There is a visible indicator of pointer focus.</p>
+						<p class="requirement-text">There is a visible indicator of pointer focus.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Navigating content</h4>
 					<p class="guideline-text">Users can determine where they are and move through <a>content</a> (including interactive elements) in a systematic and meaningful way regardless of input or movement method. </p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Focus in viewport</h5>
-						<p class="provision-text">The focus does not move to a position outside the current viewport, unless a mechanism is available to return to the previous focus point.</p>
+						<p class="requirement-text">The focus does not move to a position outside the current viewport, unless a mechanism is available to return to the previous focus point.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Focus retention</h5>
-						<p class="provision-text">A user can focus on a <a>content</a> “area,” such as a modal or pop-up, then resume their view of all <a>content</a> using a limited number of steps.</p>
+						<p class="requirement-text">A user can focus on a <a>content</a> “area,” such as a modal or pop-up, then resume their view of all <a>content</a> using a limited number of steps.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Keyboard focus order</h5>
-						<p class="provision-text">The keyboard focus moves sequentially through <a>content</a> in an order and way that preserves meaning and operability.</p>
+						<p class="requirement-text">The keyboard focus moves sequentially through <a>content</a> in an order and way that preserves meaning and operability.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Restore focus</h5>
-						<p class="provision-text">When the focus is moved by the <a>content</a> into a temporary change of <a>view</a> (e.g. a modal), the focus is restored to its previous location when returned from the temporary change of view.</p>
+						<p class="requirement-text">When the focus is moved by the <a>content</a> into a temporary change of <a>view</a> (e.g. a modal), the focus is restored to its previous location when returned from the temporary change of view.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Relevant focus</h5>
-						<p class="provision-text">The focus order does not include repetitive, hidden, or static elements.</p>
+						<p class="requirement-text">The focus order does not include repetitive, hidden, or static elements.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Expected behavior</h4>
 					<p class="guideline-text">Users have interactive components that behave as expected.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent Interaction</h5></h4>
-						<p class="provision-text">Interactive components with the same functionality behave consistently.</p>
+						<p class="requirement-text">Interactive components with the same functionality behave consistently.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent labels</h5>
-						<p class="provision-text"> Interactive components with the same functionality have consistent labels.</p>
+						<p class="requirement-text"> Interactive components with the same functionality have consistent labels.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent visual design</h5>
-						<p class="provision-text"> Interactive components that have similar function and behavior have a consistent visual design.</p>
+						<p class="requirement-text"> Interactive components that have similar function and behavior have a consistent visual design.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control location</h5>
-						<p class="provision-text">Interactive components are visually and <a>programmatically</a> located in conventional locations.</p>
+						<p class="requirement-text">Interactive components are visually and <a>programmatically</a> located in conventional locations.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Conventions</h5>
-						<p class="provision-text"> Interactive components follow established conventions.</p>
+						<p class="requirement-text"> Interactive components follow established conventions.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>				
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Familiar component</h5>
-						<p class="provision-text">Conventional interactive components are used.</p>
+						<p class="requirement-text">Conventional interactive components are used.</p>
 					</section>
+					<section class="requirement" data-status="exploratory">
 						<h5>Reliable positioning</h5>
-						<p class="provision-text">Interactive components retain their position unless a user changes the viewport or moves the component.</p>
+						<p class="requirement-text">Interactive components retain their position unless a user changes the viewport or moves the component.</p>
 					</section>
 				</section>
 
@@ -578,43 +579,43 @@
 				<section class="guideline">
 					<h4>Control information</h4>
 					<p class="guideline-text">Users have information about interactive components that is identifiable and usable visually and using assistive technology.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control contrast</h5>
 						<p class="provision-text">Visual information required to identify user interface components and states meet a minimum <a>contrast ratio test</a>, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>						
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control importance</h5>
-						<p class="provision-text">The importance of interactive components is indicated.</p>
+						<p class="requirement-text">The importance of interactive components is indicated.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control labels</h5>
-						<p class="provision-text">Interactive components have visible labels that identify the purpose of the component.</p>
+						<p class="requirement-text">Interactive components have visible labels that identify the purpose of the component.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control updates</h5>
-						<p class="provision-text">Changes to interactive components’ names, roles, values or states are visually and <a>programmatically indicated</a>.</p>
+						<p class="requirement-text">Changes to interactive components’ names, roles, values or states are visually and <a>programmatically indicated</a>.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Distinguishable controls</h5>
-						<p class="provision-text"> Interactive components are visually distinguishable without interaction from static <a>content</a> and include visual cues on how to use them.</p>
+						<p class="requirement-text"> Interactive components are visually distinguishable without interaction from static <a>content</a> and include visual cues on how to use them.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Field constraints</h5>
-						<p class="provision-text">Field constraints and conditions (required line length, date format, password format, etc.) are available.</p>
+						<p class="requirement-text">Field constraints and conditions (required line length, date format, password format, etc.) are available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Input labels</h5>
-						<p class="provision-text">Inputs have visible labels that identify the purpose of the input.</p>
+						<p class="requirement-text">Inputs have visible labels that identify the purpose of the input.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Label in name</h5>
-						<p class="provision-text">The programmatic name includes the visual label.</p>
+						<p class="requirement-text">The programmatic name includes the visual label.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 					<h5>Name, role, value, state</h5>
-					<p class="provision-text">Accurate names, roles, values, and states are available for interactive components. </p>
+					<p class="requirement-text">Accurate names, roles, values, and states are available for interactive components. </p>
 					</section>
 				</section>
 			</section>
@@ -624,117 +625,117 @@
 				<section class="guideline">
 					<h4>Input operation</h4>
 					<p class="guideline-text">Users can use different input techniques and combinations and switch between them.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Concurrent inputs</h5>
-						<p class="provision-text"> Any input modality available on a platform can be used concurrently.</p>
+						<p class="requirement-text"> Any input modality available on a platform can be used concurrently.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Hover information</h5>
-						<p class="provision-text">Users can dismiss additional <a>content</a> (triggered by hover) without moving the pointer, unless the additional content communicates an input error or does not obscure or replace other content.</p>
+						<p class="requirement-text">Users can dismiss additional <a>content</a> (triggered by hover) without moving the pointer, unless the additional content communicates an input error or does not obscure or replace other content.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Input control</h5>
-						<p class="provision-text">Interactive components are available to all navigation and input methods.</p>
+						<p class="requirement-text">Interactive components are available to all navigation and input methods.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Content changes</h4>
 					<p class="guideline-text">Users are aware of changes to <a>content</a> or context.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Notify about change</h5>
-						<p class="provision-text">Changes in <a>content</a> and updates notify users, regardless of the update speed.
+						<p class="requirement-text">Changes in <a>content</a> and updates notify users, regardless of the update speed.
 						</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Notify on change</h5>
-						<p class="provision-text">Notification is provided when viewing <a>content</a> that was previously viewed is changed.</p>
+						<p class="requirement-text">Notification is provided when viewing <a>content</a> that was previously viewed is changed.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Inform before activation</h5>
-						<p class="provision-text">Interactive components that can alter the order of <a>content</a> convey their purpose prior to activation, and convey their impact on content order when activated.</p>
+						<p class="requirement-text">Interactive components that can alter the order of <a>content</a> convey their purpose prior to activation, and convey their impact on content order when activated.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Reverse change of context</h5>
-						<p class="provision-text">Components that trigger a 'change of context' are indicated, or the change of context can be reversed.</p>
+						<p class="requirement-text">Components that trigger a 'change of context' are indicated, or the change of context can be reversed.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Target size</h4>
 					<p class="guideline-text">Users are not required to accurately position a pointer in order to view or operate <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Target size minimum</h5>
-						<p class="provision-text">The combined target size and spacing to adjacent targets is at least 24x24 pixels
+						<p class="requirement-text">The combined target size and spacing to adjacent targets is at least 24x24 pixels
 						</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Target size optimum</h5>
-						<p class="provision-text">The combined target size and spacing to adjacent targets is at least 48x48 pixels.</p>
+						<p class="requirement-text">The combined target size and spacing to adjacent targets is at least 48x48 pixels.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Keyboard operation</h4>
 					<p class="guideline-text">Users can navigate and operate content using only the keyboard focus.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Comparable keyboard effort</h5>
-						<p class="provision-text">The number of input commands required to complete a task using the keyboard is similar to the number of input commands when using other input modalities.</p>
+						<p class="requirement-text">The number of input commands required to complete a task using the keyboard is similar to the number of input commands when using other input modalities.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Conflicting keyboard commands</h5>
-						<p class="provision-text">Authored keyboard commands do not conflict with platform commands or they can be remapped.</p>
+						<p class="requirement-text">Authored keyboard commands do not conflict with platform commands or they can be remapped.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent keyboard interaction</h5>
-						<p class="provision-text"> Keyboard interface interactions are consistent.</p>
+						<p class="requirement-text"> Keyboard interface interactions are consistent.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Keyboard mode</h5>
-						<p class="provision-text">If the keyboard is non-hardware (such as a virtual keyboard), the keyboard input mode is indicated.</p>
+						<p class="requirement-text">If the keyboard is non-hardware (such as a virtual keyboard), the keyboard input mode is indicated.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Keyboard only</h5>
-						<p class="provision-text">All functionality must be accessible through the keyboard, except when a task requires input based on the user's specific input action.</p>
+						<p class="requirement-text">All functionality must be accessible through the keyboard, except when a task requires input based on the user's specific input action.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>No keyboard trap</h5>
-						<p class="provision-text">If keyboard focus can be moved to an <a>interactive component</a>, then the keyboard focus can be moved away from that component, or the component can be dismissed, with focus returning to the previous point.</p>
+						<p class="requirement-text">If keyboard focus can be moved to an <a>interactive component</a>, then the keyboard focus can be moved away from that component, or the component can be dismissed, with focus returning to the previous point.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Non-standard commands</h5>
-						<p class="provision-text">The user is informed of non-standard authored keyboard commands.</p>
+						<p class="requirement-text">The user is informed of non-standard authored keyboard commands.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Gestures</h4>
 					<p class="guideline-text">Users are not required to use gestures or dragging to view or operate <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Change focus with pointer device</h5>
-						<p class="provision-text">Selecting an <a>interactive component</a> with a <a>pointer</a> sets the focus to that <a>element</a>.</p>
+						<p class="requirement-text">Selecting an <a>interactive component</a> with a <a>pointer</a> sets the focus to that <a>element</a>.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Complex pointer inputs</h5>
-						<p class="provision-text">Every function that can be operated by a pointer, can be operated by a <a>single pointer input</a> or a sequence of single pointer inputs without requiring certain timing.</p>
+						<p class="requirement-text">Every function that can be operated by a pointer, can be operated by a <a>single pointer input</a> or a sequence of single pointer inputs without requiring certain timing.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Pointer-agnostic</h5>
-						<p class="provision-text">Functionality which supports pointers is available to any pointer device supported by the platform.</p>
+						<p class="requirement-text">Functionality which supports pointers is available to any pointer device supported by the platform.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Pointer cancellation</h5>
-						<p class="provision-text">The method of pointer cancellation is consistent.</p>
+						<p class="requirement-text">The method of pointer cancellation is consistent.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Specific pressure</h5>
-						<p class="provision-text">Where specific pressures are used, they can be adjusted and/or disabled without loss of function.</p>
+						<p class="requirement-text">Where specific pressures are used, they can be adjusted and/or disabled without loss of function.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Speed insensitive</h5>
-						<p class="provision-text">Where specific speeds are used, they can be adjusted and/or disabled without loss of function.</p>
+						<p class="requirement-text">Where specific speeds are used, they can be adjusted and/or disabled without loss of function.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -742,13 +743,13 @@
 				<section class="guideline">
 					<h4>Motion input</h4>
 					<p class="guideline-text">Users are not required to move their bodies or devices to operate functionality.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use without body movement</h5>
-						<p class="provision-text">All functionality that requires full or gross body movement may also be accomplished with a standard input device.</p>
+						<p class="requirement-text">All functionality that requires full or gross body movement may also be accomplished with a standard input device.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Use without device movement</h5>
-						<p class="provision-text">All functionality can be completed without reorienting or repositioning hardware devices.</p>
+						<p class="requirement-text">All functionality can be completed without reorienting or repositioning hardware devices.</p>
 					</section>
 				</section>
 			</section>
@@ -758,25 +759,25 @@
 				<section class="guideline">
 					<h4>Correct mistakes</h4>
 					<p class="guideline-text">Users know about and can correct mistakes.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Error association</h5>
-						<p class="provision-text">Error notifications are <a>programmatically associated</a> with the error source so that users can access the error information while focused on the source of the error.</p>
+						<p class="requirement-text">Error notifications are <a>programmatically associated</a> with the error source so that users can access the error information while focused on the source of the error.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Error identification</h5>
-						<p class="provision-text">Errors are visually identifiable without relying on only text, only color, or only symbols. </p>
+						<p class="requirement-text">Errors are visually identifiable without relying on only text, only color, or only symbols. </p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Error notification</h5>
-						<p class="provision-text">Errors that can be automatically detected are identified and described to the user.</p>
+						<p class="requirement-text">Errors that can be automatically detected are identified and described to the user.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Persistent errors</h5>
-						<p class="provision-text">Error notifications persist until the user dismisses them or the error is resolved.</p>
+						<p class="requirement-text">Error notifications persist until the user dismisses them or the error is resolved.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Visible errors</h5>
-						<p class="provision-text">Error notifications are visually collocated with the source of the error within the viewport, or provide a link to the source of the error which, when activated, moves the viewport to the error.</p>
+						<p class="requirement-text">Error notifications are visually collocated with the source of the error within the viewport, or provide a link to the source of the error which, when activated, moves the viewport to the error.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -787,23 +788,23 @@
 				<section class="guideline">
 					<h4>Avoid physical harm</h4>
 					<p class="guideline-text">Users do not experience physical harm from <a>content</a>.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Audio shifting</h4>
-						<p class="provision-text">Audio shifting designed to create a perception of motion is avoided; or can be paused or prevented.</p>
+						<p class="requirement-text">Audio shifting designed to create a perception of motion is avoided; or can be paused or prevented.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Flashing</h4>
-						<p class="provision-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
+						<p class="requirement-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Motion</h4>
-						<p class="provision-text">Visual motion and pseudo-motion that lasts longer than 5 seconds is avoided; or can be paused or prevented.</p>
+						<p class="requirement-text">Visual motion and pseudo-motion that lasts longer than 5 seconds is avoided; or can be paused or prevented.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Motion from interaction</h4>
-						<p class="provision-text">Visual motion and pseudo-motion triggered by interaction is avoided; or can be prevented, unless the animation is essential to the functionality or the information being conveyed.</p>
+						<p class="requirement-text">Visual motion and pseudo-motion triggered by interaction is avoided; or can be prevented, unless the animation is essential to the functionality or the information being conveyed.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -814,22 +815,22 @@
 				<section class="guideline">
 					<h4>Relationships</h4>
 					<p class="guideline-text">Users can determine relationships between <a>content</a> both visually and using assistive technologies.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Clear relationships</h5>
-						<p class="provision-text">The relationships between parts of the <a>content</a> is clearly indicated.</p>
+						<p class="requirement-text">The relationships between parts of the <a>content</a> is clearly indicated.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Clear starting point</h5>
-						<p class="provision-text">The starting point or home is visually and <a>programmatically</a> labeled.</p>
+						<p class="requirement-text">The starting point or home is visually and <a>programmatically</a> labeled.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Distinguishable relationships</h5>
-						<p class="provision-text">Relationships that convey meaning between pieces of <a>content</a> are <a>programmatically determinable</a>. Note: Examples of relationships include items positioned next to each other, arranged in a hierarchy, or visually grouped.</p>
+						<p class="requirement-text">Relationships that convey meaning between pieces of <a>content</a> are <a>programmatically determinable</a>. Note: Examples of relationships include items positioned next to each other, arranged in a hierarchy, or visually grouped.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Distinguishable sections</h5>
-						<p class="provision-text">Sections are visually and <a>programmatically</a> distinguishable.</p>
+						<p class="requirement-text">Sections are visually and <a>programmatically</a> distinguishable.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -838,81 +839,81 @@
 				<section class="guideline">
 					<h4>Recognizable layouts</h4>
 					<p class="guideline-text">Users have consistent and recognizable layouts available.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent order</h5>
-						<p class="provision-text">The relative order of <a>content</a> and interactions remain consistent throughout a workflow. Note: Relative order means that content can be added or removed, but repeated <a>items</a> are in the same order relative to each other.</p>
+						<p class="requirement-text">The relative order of <a>content</a> and interactions remain consistent throughout a workflow. Note: Relative order means that content can be added or removed, but repeated <a>items</a> are in the same order relative to each other.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Familiar layout</h5>
-						<p class="provision-text">Conventional layouts are available.</p>
+						<p class="requirement-text">Conventional layouts are available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Information about options</h5>
-						<p class="provision-text">Information required to understand options is visually and <a>programmatically</a> associated with the options.</p>
+						<p class="requirement-text">Information required to understand options is visually and <a>programmatically</a> associated with the options.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Related information</h5>
-						<p class="provision-text">Related information is grouped together within a visual and programmatic structure.</p>
+						<p class="requirement-text">Related information is grouped together within a visual and programmatic structure.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Orientation</h4>
 					<p class="guideline-text">Users can determine their location in <a>content</a> both visually and using assistive technologies.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Current location</h5>
-						<p class="provision-text">The current location within the <a>view</a>, multi-step <a>process</a>, and <a>product</a> is visually and <a>programmatically indicated</a>.</p>
+						<p class="requirement-text">The current location within the <a>view</a>, multi-step <a>process</a>, and <a>product</a> is visually and <a>programmatically indicated</a>.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Multistep process</h5>
-						<p class="provision-text"> Provides context that orients the user in a site or multi-step process.</p>
+						<p class="requirement-text"> Provides context that orients the user in a site or multi-step process.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Contextual information</h5>
-						<p class="provision-text"> Provide contextual information to help the user orient within the <a>product</a>.</p>
+						<p class="requirement-text"> Provide contextual information to help the user orient within the <a>product</a>.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Structure</h4>
 					<p class="guideline-text">Users can understand and navigate through the <a>content</a> using structure.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Section labels</h5>
-						<p class="provision-text">Major sections of <a>content</a> have within them well structured, understandable visual and programmatic headings.</p>
+						<p class="requirement-text">Major sections of <a>content</a> have within them well structured, understandable visual and programmatic headings.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Section length</h5>
-						<p class="provision-text"><a>Content</a> is organized into short sections of related content.</p>
+						<p class="requirement-text"><a>Content</a> is organized into short sections of related content.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Section purpose</h5>
-						<p class="provision-text">The purpose of each section of the <a>content</a> is clearly indicated.</p>
+						<p class="requirement-text">The purpose of each section of the <a>content</a> is clearly indicated.</p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Single idea</h5>
-						<p class="provision-text">The number of concepts within a segment of text is minimized.</p>
+						<p class="requirement-text">The number of concepts within a segment of text is minimized.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Topic sentence</h5>
-						<p class="provision-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
+						<p class="requirement-text">For text intended to inform the user, each paragraph of text begins with a topic sentence stating the aim or purpose.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>White spacing</h5>
-						<p class="provision-text">Whitespace separates chunks of <a>content</a>. </p>
+						<p class="requirement-text">Whitespace separates chunks of <a>content</a>. </p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Title</h5>
-						<p class="provision-text"><a>Content</a> has a title or high-level description.</p>
+						<p class="requirement-text"><a>Content</a> has a title or high-level description.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Lists</h5>
-						<p class="provision-text">Three or more <a>items</a> of related data are presented as bulleted or numbered lists.</p>
+						<p class="requirement-text">Three or more <a>items</a> of related data are presented as bulleted or numbered lists.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Numbered steps</h5>
-						<p class="provision-text">Steps in a multi-step process are numbered.</p>
+						<p class="requirement-text">Steps in a multi-step process are numbered.</p>
 					</section>
 				</section>
 			</section>
@@ -922,17 +923,17 @@
 				<section class="guideline">
 					<h4>Consistency</h4>
 					<p class="guideline-text">Users have consistent and alternative methods for navigation.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent navigation</h5>
-						<p class="provision-text">Navigation elements remain consistent across views within the <a>product</a>.</p>
+						<p class="requirement-text">Navigation elements remain consistent across views within the <a>product</a>.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Multiple ways</h5>
-						<p class="provision-text">The <a>product</a> provides at least two ways of navigating and finding information (Search, Scan, Site Map, Menu Structure, Breadcrumbs, contextual links, etc.).</p>
+						<p class="requirement-text">The <a>product</a> provides at least two ways of navigating and finding information (Search, Scan, Site Map, Menu Structure, Breadcrumbs, contextual links, etc.).</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Persistent navigation</h5>
-						<p class="provision-text">Navigation features are available regardless of screen size and magnification (responsive design)</p>
+						<p class="requirement-text">Navigation features are available regardless of screen size and magnification (responsive design)</p>
 					</section>
 				</section>
 			</section>
@@ -942,17 +943,17 @@
 				<section class="guideline">
 					<h4>Avoid cognitive tasks</h4>
 					<p class="guideline-text">Users can complete tasks without needing to memorize nor complete advanced cognitive tasks.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Allow automated entry</h5>
-						<p class="provision-text">Automated input from user agents, 3rd party tools, or copy-and-paste is not prevented.</p>
+						<p class="requirement-text">Automated input from user agents, 3rd party tools, or copy-and-paste is not prevented.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>No cognitive tests</h5>
-						<p class="provision-text">Processes, including authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply).</p>
+						<p class="requirement-text">Processes, including authentication, can be completed without puzzles, calculations, or other cognitive tests (essential exceptions would apply).</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>No memorization</h5>
-						<p class="provision-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
+						<p class="requirement-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -960,58 +961,58 @@
 				<section class="guideline">
 					<h4>Adequate time</h4>
 					<p class="guideline-text">Users have enough time to read and use <a>content</a>.</p>			
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Adjust timing at start</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
+						<p class="requirement-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Adjust timing at timeout</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable or extend the time-limit at timeout.</p>
+						<p class="requirement-text">For each process with a time-limit, a mechanism exists to disable or extend the time-limit at timeout.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Disable timeout</h5>
-						<p class="provision-text">For each process with a time-limit, a mechanism exists to disable the limit.</p>
+						<p class="requirement-text">For each process with a time-limit, a mechanism exists to disable the limit.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Unnecessary steps</h4>
 					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>	
-						<section class="provision" data-status="exploratory">
+						<section class="requirement" data-status="exploratory">
 							<h4>Optional information</h4>
-							<p class="provision-text">Processes can be completed without being forced to read or understand unnecessary <a>content</a>.</p>
+							<p class="requirement-text">Processes can be completed without being forced to read or understand unnecessary <a>content</a>.</p>
 						</section>
-						<section class="provision" data-status="exploratory">
+						<section class="requirement" data-status="exploratory">
 							<h4>Optional input</h4>
-							<p class="provision-text">Processes can be completed without entering unnecessary information.</p>
+							<p class="requirement-text">Processes can be completed without entering unnecessary information.</p>
 						</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Avoid deception</h4>
 					<p class="guideline-text">Users do not encounter deception when completing tasks, unless essential to the task.</p>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h4>Deceptive controls</h4>
-						<p class="provision-text">Interactive components are not deceptively designed.</p>
+						<p class="requirement-text">Interactive components are not deceptively designed.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h4>Exploitive behaviors</h4>
-						<p class="provision-text">Process completion does not include exploitive behaviors.</p>
+						<p class="requirement-text">Process completion does not include exploitive behaviors.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Misinformation</h5>
-						<p class="provision-text">Processes can be completed without navigating misinformation or redirections.</p>
+						<p class="requirement-text">Processes can be completed without navigating misinformation or redirections.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Preselections</h5>
-						<p class="provision-text">Preselected options are visible by default during process completion without additional interactions.</p>
+						<p class="requirement-text">Preselected options are visible by default during process completion without additional interactions.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Redirection</h5>
-						<p class="provision-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
+						<p class="requirement-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>	
@@ -1019,38 +1020,38 @@
 				<section class="guideline">
 					<h4>Retain information</h4>
 					<p class="guideline-text">Users do not have to reenter information or redo work.</p>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Go back in process</h5>
-						<p class="provision-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
+						<p class="requirement-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Redundant entry</h5>
-						<p class="provision-text">Information previously entered by or provided to the user that is required to be entered again in the same process is either auto-populated, or available for the user to select.</p>
+						<p class="requirement-text">Information previously entered by or provided to the user that is required to be entered again in the same process is either auto-populated, or available for the user to select.</p>
 					</section>				
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Save progress</h5>
-						<p class="provision-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
+						<p class="requirement-text">Data entry and other task completion processes allow saving and resuming from the current step in the task.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Complete tasks</h4>
 					<p class="guideline-text">Users understand how to complete tasks.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Action required</h5>
-						<p class="provision-text">In a process, the interface indicates when user input or action is required to proceed to the next step. c</p>
+						<p class="requirement-text">In a process, the interface indicates when user input or action is required to proceed to the next step. c</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Inform at start of process</h5>
-						<p class="provision-text">Information needed to complete a multi-step process is provided at the start of the process, including:
+						<p class="requirement-text">Information needed to complete a multi-step process is provided at the start of the process, including:
 						<ul><li>number of steps it might take (if known in advance),</li>
 						<li>details of any resources needed to perform the task, and</li>
 						<li>overview of the process and next step.</li></ul>
 						</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Steps and instructions</h5>
-						<p class="provision-text">The steps and instructions needed to complete a multistep process are available </p>
+						<p class="requirement-text">The steps and instructions needed to complete a multistep process are available </p>
 					</section>
 				</section>
 			</section>
@@ -1060,19 +1061,19 @@
 				<section class="guideline">
 					<h4>Content source</h4>
 					<p class="guideline-text">Users can determine when <a>content</a> is provided by a Third Party</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Citation</h5>
-						<p class="provision-text">The author or source of the primary <a>content</a> is visually and <a>programmatically</a> indicated. </p>
+						<p class="requirement-text">The author or source of the primary <a>content</a> is visually and <a>programmatically</a> indicated. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Indicate 3rd party content</h5>
-						<p class="provision-text">Third party <a>content</a> (AI, Advertising, etc.) is visually and <a>programmatically</a> indicated. </p>
+						<p class="requirement-text">Third party <a>content</a> (AI, Advertising, etc.) is visually and <a>programmatically</a> indicated. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Obscuring primary content</h5>
-						<p class="provision-text">Advertising and other third-party <a>content</a> that obscures the primary content can be moved or removed without interacting with the advertising or third-party content.</p>
+						<p class="requirement-text">Advertising and other third-party <a>content</a> that obscures the primary content can be moved or removed without interacting with the advertising or third-party content.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -1080,24 +1081,24 @@
 				<section class="guideline">
 					<h4>Security and privacy</h4>
 					<p class="guideline-text">Users’ safety, security or privacy are not decreased by accessibility measures. </p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Clear agreement</h5>
-						<p class="provision-text">The interface indicates when a user is entering an agreement or submitting data.</p>
+						<p class="requirement-text">The interface indicates when a user is entering an agreement or submitting data.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Disability information privacy</h5>
-						<p class="provision-text">Disability information is not disclosed to or used by third parties and algorithms (including AI).</p>
+						<p class="requirement-text">Disability information is not disclosed to or used by third parties and algorithms (including AI).</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Sensitive information</h5>
-						<p class="provision-text">Prompts to hide and remove sensitive information from observers are available.</p>
+						<p class="requirement-text">Prompts to hide and remove sensitive information from observers are available.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Risk statements</h5>
-						<p class="provision-text">Clear explanations of the risks and consequences of choices, including use, are stated.</p>
+						<p class="requirement-text">Clear explanations of the risks and consequences of choices, including use, are stated.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -1105,14 +1106,14 @@
 				<section class="guideline">
 					<h4>Algorithms</h4>
 					<p class="guideline-text">Users are not disadvantaged by algorithms.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Algorithm bias</h5>
-						<p class="provision-text">Algorithms (including AI) used are not biased against people with disabilities.</p>
+						<p class="requirement-text">Algorithms (including AI) used are not biased against people with disabilities.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Social media algorithm</h5>
-						<p class="provision-text">A mechanism is available to understand and control social media algorithms.</p>
+						<p class="requirement-text">A mechanism is available to understand and control social media algorithms.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>					
 				</section>	
@@ -1123,41 +1124,41 @@
 				<section class="guideline">			
 					<h4>Help available</h4>
 					<p class="guideline-text">Users have help available.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Consistent help</h5>
-						<p class="provision-text">Help is labeled consistently and available in a consistent visual and programmatic location.</p>
+						<p class="requirement-text">Help is labeled consistently and available in a consistent visual and programmatic location.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Contextual help</h5>
-						<p class="provision-text">Contextual help is available.</p>
+						<p class="requirement-text">Contextual help is available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Conversational support</h5>
-						<p class="provision-text">Conversational support allowing both text and verbal modes is available.</p>
+						<p class="requirement-text">Conversational support allowing both text and verbal modes is available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Data visualizations</h5>
-						<p class="provision-text">Help is available to understand and use data visualizations.</p>
+						<p class="requirement-text">Help is available to understand and use data visualizations.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>New interfaces</h5>
-						<p class="provision-text">When interfaces dramatically change (due to redesign), a mechanism to learn the new interface or revert to the older design is available.</p>
+						<p class="requirement-text">When interfaces dramatically change (due to redesign), a mechanism to learn the new interface or revert to the older design is available.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Personalizable help</h5>
-						<p class="provision-text">Help is adaptable and personalizable.</p>
+						<p class="requirement-text">Help is adaptable and personalizable.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h4>Sensory characteristics</h4>
-						<p class="provision-text">Instructions and help do not rely on sensory characteristics.</p>
+						<p class="requirement-text">Instructions and help do not rely on sensory characteristics.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Support available</h5>
-						<p class="provision-text">Accessible support is available during data entry, task completion and search.</p>
+						<p class="requirement-text">Accessible support is available during data entry, task completion and search.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
 				</section>
@@ -1165,13 +1166,13 @@
 				<section class="guideline">
 					<h4>Supplemental content</h4>
 					<p class="guideline-text">Users have supplemental <a>content</a> available.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Number supplements</h5>
-						<p class="provision-text">Text or visual alternatives are available for numerical concepts.</p>
+						<p class="requirement-text">Text or visual alternatives are available for numerical concepts.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Text supplements</h5>
-						<p class="provision-text">Visual illustrations, pictures, and images are available to help explain complex ideas, events, and processes.</p>
+						<p class="requirement-text">Visual illustrations, pictures, and images are available to help explain complex ideas, events, and processes.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -1179,9 +1180,9 @@
 				<section class="guideline">
 					<h4>Feedback</h4>
 					<p class="guideline-text">Users can provide feedback to authors.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Feedback mechanism</h5>
-						<p class="provision-text">A mechanism is available to provide feedback to authors.</p>
+						<p class="requirement-text">A mechanism is available to provide feedback to authors.</p>
 					</section>	
 				</section>
 			</section>
@@ -1191,56 +1192,56 @@
 				<section class="guideline">
 					<h4>Control text</h4>
 					<p class="guideline-text">Users can control text presentation.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Adjust color</h5>
-						<p class="provision-text">Text and background colors can be customized.</p>
+						<p class="requirement-text">Text and background colors can be customized.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Adjust background</h5>
-						<p class="provision-text">Patterns, designs or images placed behind text are avoided or can be removed by the user.</p>
+						<p class="requirement-text">Patterns, designs or images placed behind text are avoided or can be removed by the user.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Font size meaning</h5>
-						<p class="provision-text">When font size conveys visual meaning (such as headings), the text maintains its meaning and purpose when text is resized.</p>
+						<p class="requirement-text">When font size conveys visual meaning (such as headings), the text maintains its meaning and purpose when text is resized.</p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Text customization</h5>
-						<p class="provision-text">Users can change the text style (like font and size) and the layout (such as spacing and single column) to fit their needs.</p>
+						<p class="requirement-text">Users can change the text style (like font and size) and the layout (such as spacing and single column) to fit their needs.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Adjustable viewport</h4>
 					<p class="guideline-text">Users can transform size and orientation of content presentation to make it viewable and usable.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Orientation</h5>
-						<p class="provision-text">Content orientation allows the user to read the language presented without changing head or body position.</p>
+						<p class="requirement-text">Content orientation allows the user to read the language presented without changing head or body position.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Reflow</h5>
-						<p class="provision-text"><a>Content</a> can be viewed in multiple viewport sizes, orientations, and zoom levels -- without loss of content, functionality, meaningful relationships, and with scrolling only occurring in one direction.</p>
+						<p class="requirement-text"><a>Content</a> can be viewed in multiple viewport sizes, orientations, and zoom levels -- without loss of content, functionality, meaningful relationships, and with scrolling only occurring in one direction.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Transform content</h4>
 					<p class="guideline-text">Users can transform <a>content</a> to make it understandable.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Alternative presentation</h5>
-						<p class="provision-text">Complex information or instructions for complex processes are available in multiple presentation formats.	</p>
+						<p class="requirement-text">Complex information or instructions for complex processes are available in multiple presentation formats.	</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Content markup</h5>
-						<p class="provision-text">Role and priority of <a>content</a> is <a>programmatically determinable</a>.</p>
+						<p class="requirement-text">Role and priority of <a>content</a> is <a>programmatically determinable</a>.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Summary</h5>
-						<p class="provision-text">Access to a plain-language summary, abstract, or executive summaries is available.</p>
+						<p class="requirement-text">Access to a plain-language summary, abstract, or executive summaries is available.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Transform content</h5>
-						<p class="provision-text"><a>Content</a> can be transformed to make its purpose clearer.</p>
+						<p class="requirement-text"><a>Content</a> can be transformed to make its purpose clearer.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -1248,26 +1249,26 @@
 				<section class="guideline">
 					<h4>Media control</h4>
 					<p class="guideline-text">Users can control media and media alternative.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Adjust captions</h5>
-						<p class="provision-text">The position and formatting of captions can be changed.</p>
+						<p class="requirement-text">The position and formatting of captions can be changed.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Audio control</h5>
-						<p class="provision-text">Audio can be turned off, while still playing the video, and without affecting the system sound.</p>
+						<p class="requirement-text">Audio can be turned off, while still playing the video, and without affecting the system sound.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Interactive audio alternative</h5>
-						<p class="provision-text">Alternatives for audio include the ability to search and look up terms.</p>
+						<p class="requirement-text">Alternatives for audio include the ability to search and look up terms.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Media alternative control</h5>
-						<p class="provision-text">Captions and audio descriptions can be turned on and off.</p>
+						<p class="requirement-text">Captions and audio descriptions can be turned on and off.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Media chapters</h5>
-						<p class="provision-text">Media can be navigated by chapters.</p>
+						<p class="requirement-text">Media can be navigated by chapters.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
 				</section>
@@ -1276,38 +1277,38 @@
 				<section class="guideline">
 					<h4>Control interruptions</h4>
 					<p class="guideline-text">Users can control interruptions.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Control notifications</h5>
-						<p class="provision-text">The timing and positioning of notifications and other interruptions can be changed, suppressed or saved, except interruptions involving an emergency.</p>
+						<p class="requirement-text">The timing and positioning of notifications and other interruptions can be changed, suppressed or saved, except interruptions involving an emergency.</p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Control possible harm</h4>
 					<p class="guideline-text">Users can control potential sources of harm.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Disturbing content</h5>
-						<p class="provision-text">Warnings are available about <a>content</a> that may be emotionally disturbing, and the disturbing content can be hidden.</p>
+						<p class="requirement-text">Warnings are available about <a>content</a> that may be emotionally disturbing, and the disturbing content can be hidden.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Haptic stimulation</h5>
-						<p class="provision-text">Haptic feedback can be reduced or turned off.</p>
+						<p class="requirement-text">Haptic feedback can be reduced or turned off.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Triggers</h5>
-						<p class="provision-text">Warnings are available about triggering <a>content</a>, and the warnings and triggering content can be hidden.</p>
+						<p class="requirement-text">Warnings are available about triggering <a>content</a>, and the warnings and triggering content can be hidden.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Verbosity</h5>
-						<p class="provision-text">Overwhelming wordiness can be reduced or turned off. </p>
+						<p class="requirement-text">Overwhelming wordiness can be reduced or turned off. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Visual stimulation</h5>
-						<p class="provision-text">Visual stimulation from combinations of density, color, movement, etc. can be reduced or turned off. </p>
+						<p class="requirement-text">Visual stimulation from combinations of density, color, movement, etc. can be reduced or turned off. </p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
 				</section>
@@ -1315,22 +1316,22 @@
 				<section class="guideline">
 					<h4>User agent support</h4>
 					<p class="guideline-text">Users can control <a>content</a> settings from their User Agents including Assistive Technology.</p>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Assistive technology control</h5>
-						<p class="provision-text"><a>Content</a> can be controlled using assistive and adaptive technology.</p>
+						<p class="requirement-text"><a>Content</a> can be controlled using assistive and adaptive technology.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Printing</h5>
-						<p class="provision-text">Printing respects user's <a>content</a> presentation preferences.</p>
+						<p class="requirement-text">Printing respects user's <a>content</a> presentation preferences.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>User settings</h5>
-						<p class="provision-text">User settings are honored.</p>
+						<p class="requirement-text">User settings are honored.</p>
 					</section>
-					<section class="provision" data-status="exploratory">
+					<section class="requirement" data-status="exploratory">
 						<h5>Virtual cursor</h5>
-						<p class="provision-text">Assistive technologies can access <a>content</a> and interactions when using mechanisms that convey alternative <a>points of regard</a> or focus (i.e. virtual cursor).</p>
+						<p class="requirement-text">Assistive technologies can access <a>content</a> and interactions when using mechanisms that convey alternative <a>points of regard</a> or focus (i.e. virtual cursor).</p>
 					</section>	
 				</section>
 			</section>
@@ -1356,7 +1357,7 @@
 
 			<p>The most basic level of conformance will require meeting all of the Foundational Requirements. This set will be somewhat comparable to WCAG 2.2 Level AA.</p>
 				
-			<p>Higher levels of conformance will be defined and met using Supplemental Requirements and Assertions. AG will be exploring whether meeting the higher levels would work best based on points, percentages, or predefined sets of provisions (modules).</p>
+			<p>Higher levels of conformance will be defined and met using Supplemental Requirements and Assertions. AG will be exploring whether meeting the higher levels would work best based on points, percentages, or predefined sets of requirements (modules).</p>
 
 			<p>Other conformance concepts AG continues to explore the following include conformance levels, issue severity, adjectival ratings and pre-assessment checks.</p>
 
