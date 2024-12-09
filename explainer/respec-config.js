@@ -6,10 +6,10 @@ var respecConfig = {
 	permalinkEdge: true,
 	permalinkHide: false,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus: "ED",
+	specStatus: "DNOTE",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	//publishDate:          "2013-08-22",
+	publishDate:          "2024-12-10",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName: "wcag-3.0-explainer",
