@@ -55,13 +55,11 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 .requirement h4, .requirement h5 {
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 100%;
-	color: #005A9C;
 }
 .requirement .requirement-type {
 	font-size: 90%;
-	font-variant: small-caps;
 	color: #404040;
 }
 

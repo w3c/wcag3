@@ -93,11 +93,11 @@ function addRequirementType() {
 		var heading = requirement.querySelector("h5");
 		preText.classList.add("requirement-type");
 		if(requirementType == 'assertion') {
-			preText.innerHTML = "Assertion ";
+			preText.innerHTML = "Assertion: ";
 		} else if(requirementType == 'foundational' || requirementType == 'supplemental') {
-			preText.innerHTML = sentenceCase(requirementType) + " requirement ";
+			preText.innerHTML = sentenceCase(requirementType) + " requirement: ";
 		} else {
-			preText.innerHTML = "Requirement ";
+			preText.innerHTML = "Requirement: ";
 		}
 		heading.insertAdjacentElement('afterbegin', preText);
 	});
