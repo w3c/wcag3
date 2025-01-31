@@ -45,10 +45,12 @@
 			</details>
 			<p>What’s new in this version of WCAG 3.0?</p>
 
-			<p>This draft includes an updated list of the potential Guidelines and Requirements that we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:
-				<ul><li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
-					<li>WCAG 3.0 Requirements are more granular than WCAG 2 Success Criteria. </li></ul> 
-				The final set of Requirements in WCAG 3.0 will be different from what is in this draft. Requirements will be added, combined, and removed. 
+			<p>This draft includes an updated list of the potential Guidelines and Requirements that we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:</p>
+			<ul>
+				<li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
+				<li>WCAG 3.0 Requirements are more granular than WCAG 2 Success Criteria.</li>
+			</ul>
+			<p>The final set of Requirements in WCAG 3.0 will be different from what is in this draft. Requirements will be added, combined, and removed. 
 				We also expect changes to the text of the Requirements. Only some of the Requirements will be used to meet the base level of conformance.</p>
 			
 			<p>The Requirements are grouped into the following sections:</p>
@@ -67,25 +69,25 @@
 				<li><a href="#user-control">User control</a></li>
 			</ul>
 
-			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:
+			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:</p>
+			<ul>
+				<li>What Requirements are missing from this list to make web content accessible?</li>
+				<li>What research supports or refutes the Requirements marked as needing additional research?</li>
+				<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a>) have moved from exploratory to developing, and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
 				<ul>
-					<li>What Requirements are missing from this list to make web content accessible?</li>
-					<li>What research supports or refutes the Requirements marked as needing additional research?</li>
-					<li>Three guidelines (<a href="#clear-meaning">Clear meaning</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a>) have moved from exploratory to developing, and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
-					<ul>
-						<li>Grouping related <a href="https://www.w3.org/TR/wcag-3.0-explainer/#requirements-and-methods">requirements</a> and <a href="https://www.w3.org/TR/wcag-3.0-explainer/#assertions">assertions</a>?</li>
-						<li>Does the information under 'Which foundational requirements apply?' (the decision tree) make the guidelines easier to understand and use?</li>
-					 </ul>
-					</li>
-					<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a> and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a> differ slightly. Does one seem clearer than the other?</li>
-					<li>The conformance section explains the approach that the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
-				</ul></p>
+					<li>Grouping related <a href="https://www.w3.org/TR/wcag-3.0-explainer/#requirements-and-methods">requirements</a> and <a href="https://www.w3.org/TR/wcag-3.0-explainer/#assertions">assertions</a>?</li>
+					<li>Does the information under 'Which foundational requirements apply?' (the decision tree) make the guidelines easier to understand and use?</li>
+					</ul>
+				</li>
+				<li>The organization of the decision trees in <a href="#clear-meaning">Clear meaning</a> and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a> differ slightly. Does one seem clearer than the other?</li>
+				<li>The conformance section explains the approach that the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
+			</ul>
 	
-			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>).</p>
 
 			<section>
 				<h3>About WCAG 3.0</h3>
-				<p>This specification presents a new model and guidelines to make web content and applications accessible to people with disabilities. The W3C Accessibility Guidelines (WCAG) 3.0 support a wide set of user needs, use new approaches to testing, and allow frequent maintenance of guidelines and related content to keep pace with accelerating technology change. WCAG 3.0 supports this evolution by focusing on the <a>functional needs</a> of users. These needs are then supported by guidelines written as outcome statements, requirements, assertions, and technology-specific methods to meet those needs. </p>
+				<p>This specification presents a new model and guidelines to make web content and applications accessible to people with disabilities. The W3C Accessibility Guidelines (WCAG) 3.0 support a wide set of user needs, use new approaches to testing, and allow frequent maintenance of guidelines and related content to keep pace with accelerating technology change. WCAG 3.0 supports this evolution by focusing on the <a>functional needs</a> of users. These needs are then supported by guidelines written as outcome statements, requirements, assertions, and technology-specific methods to meet those needs.</p>
 				<p>WCAG 3.0 is a successor to <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> [[WCAG22]] and previous versions, but does not <a>deprecate</a> WCAG 2. It will also incorporate some content from and partially extend <a href="https://www.w3.org/TR/UAAG20/"> User Agent Accessibility Guidelines 2.0</a> [[UAAG20]] and <a href="https://www.w3.org/TR/ATAG20/"> Authoring Tool Accessibility Guidelines 2.0</a> [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 15 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly.</p>
 				<p>There are many differences between WCAG 2 and WCAG 3.0. The WCAG 3.0 guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other Web of Things devices. The guidelines apply to various types of web content, including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement. </p>
@@ -134,7 +136,7 @@
 			</div>
 
 			<section data-status="developing">
-				<h3>Image and media alternatives</h3>				
+				<h3>Image and media alternatives</h3>
 				<section class="guideline">
 					<h4>Image alternatives</h4>
 					<div class="body-wrapper">
@@ -148,24 +150,23 @@
 					<details class="decision-tree">
 						<summary>Which foundational requirements apply?</summary>
 
-						<p>For each <a>image</a>:
-							<ol>
-								<li>Would removing the <a>image</a> impact how people understand the page?
-									<ul><li>No, <a href="#decorative-image">Decorative image is programmatically hidden.</a> Stop.</li>
-									<li>Yes, continue.</li></ul>
-								</li>
+						<p>For each <a>image</a>:</p>
+						<ol>
+							<li>Would removing the <a>image</a> impact how people understand the page?
+								<ul><li>No, <a href="#decorative-image">Decorative image is programmatically hidden.</a> Stop.</li>
+								<li>Yes, continue.</li></ul>
+							</li>
 
-								<li>Is the <a>image</a> presented in a way that is available to user agents and assistive technology?
-									<ul><li>Yes, <a>image</a> must meet <a href="#detectable-image">Image is programmatically determinable</a> AND the <a>accessibility support set</a> meets <a href="#equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-									<li>No, continue.</li></ul>
-								</li>
+							<li>Is the <a>image</a> presented in a way that is available to user agents and assistive technology?
+								<ul><li>Yes, <a>image</a> must meet <a href="#detectable-image">Image is programmatically determinable</a> AND the <a>accessibility support set</a> meets <a href="#equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+								<li>No, continue.</li></ul>
+							</li>
 
-								<li>Is an equivalent text alternative available for the <a>image</a>?
-									<ul><li>Yes, <a>image</a> must meet <a href="#equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
-									<li>No, fail.</li></ul>
-								</li>
-							</ol>
-						</p>
+							<li>Is an equivalent text alternative available for the <a>image</a>?
+								<ul><li>Yes, <a>image</a> must meet <a href="#equivalent-text-alternative">Equivalent text alternative is available for image that conveys content</a>. Stop.</li>
+								<li>No, fail.</li></ul>
+							</li>
+						</ol>
 					</details>
 
 					<section class="requirement" data-status="developing" data-requirement-type="foundational">
@@ -184,7 +185,7 @@
 							<p class="requirement-text">Equivalent text alternative is available for <a>image</a> that conveys <a>content</a>.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/image-alternatives/equivalent-text-alternative/">
-								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Content image methods</a></p>
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Equivalent text alternative methods</a></p>
 							</aside>
 						</div>
 					</section>
@@ -236,7 +237,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Findable media alternatives</h5>
-						<p class="requirement-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.  (Needs additional research).</p>
+						<p class="requirement-text">Media that has the desired media alternatives (captions, audio descriptions, and descriptive transcripts) can be found.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
@@ -246,7 +247,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h4>Non-verbal cues</h4>
-						<p class="requirement-text">Media alternatives explain nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning. </p>
+						<p class="requirement-text">Media alternatives explain nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -257,7 +258,7 @@
 					<p class="guideline-text">Users have alternatives available for non-text, non-image <a>content</a> that conveys context or meaning.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Nontext content</h5>
-						<p class="requirement-text">Equivalent text alternatives are available for non-text, non-image <a>content</a> that conveys context or meaning. </p>
+						<p class="requirement-text">Equivalent text alternatives are available for non-text, non-image <a>content</a> that conveys context or meaning.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
@@ -275,7 +276,7 @@
 				
 				<section class="guideline">
 					<h4>Single sense</h4>
-					<p class="guideline-text"> Users have <a>content</a> that does not rely on a single sense or perception.</p>
+					<p class="guideline-text">Users have <a>content</a> that does not rely on a single sense or perception.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Use of hue</h5>
 						<p class="requirement-text">Information conveyed by graphical elements does not rely on hue.</p>
@@ -288,7 +289,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Use of sound</h5>
-						<p class="requirement-text">Information conveyed with sound is also conveyed <a>programmatically</a> and/or through text. </p>
+						<p class="requirement-text">Information conveyed with sound is also conveyed <a>programmatically</a> and/or through text.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Use of spatial audio</h5>
@@ -304,7 +305,7 @@
 					<p class="guideline-text">Users can read visually rendered text.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Maximum text contrast</h5>
-						<p class="requirement-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance. </p>
+						<p class="requirement-text">The rendered text against its background meets a maximum <a>contrast ratio test</a> for its text appearance.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement"  data-status="exploratory">
@@ -348,7 +349,7 @@
 						<p class="guideline-text">Users can access explanations of or alternatives to ambiguous <a>text</a> <a>content</a>.</p>
 						<aside class="doclinks">
 							<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/">
-								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Clear Meaning</a></p>
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Clear meaning</a></p>
 						</aside>
 					</div>
 					<details class="decision-tree">
@@ -357,21 +358,21 @@
 						<ol>
 							<li>Is the text presented in a way that is available to <a>user agents</a>, including assistive technology (AT)?
 								<ul>
-									<li>Yes, view meets <a href="#detectable-text">Text is programmatically determinable</a>, continue. </li>
-									<li>No, continue to step 3. </li>
+									<li>Yes, view meets <a href="#detectable-text">Text is programmatically determinable</a>, continue.</li>
+									<li>No, continue to step 3.</li>
 								</ul>
 							</li>
 
-							<li>Does the <a>accessibility support set</a> meet <a href="unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
+							<li>Does the <a>accessibility support set</a> meet <a href="#unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
-									<li>Yes, pass. Stop. </li>
-									<li>No, continue. </li>
+									<li>Yes, pass. Stop.</li>
+									<li>No, continue.</li>
 								</ul>
 							</li>
 							<li>Does the author meet <a href="#unambiguous-text">Explain ambiguous text or provide an unambiguous alternative</a>?
 								<ul>
-									<li>Yes, pass. Stop. </li>
-									<li>No, fail. </li>
+									<li>Yes, pass. Stop.</li>
+									<li>No, fail.</li>
 								</ul>
 							</li>
 						</ol>
@@ -384,7 +385,7 @@
 					<section id="detectable-text" class="requirement" data-requirement-type="foundational">
 						<h5>Detectable text</h5>
 						<div class="body-wrapper">
-							<p class="requirement-text">Text is programmatically determinable</p>
+							<p class="requirement-text">Text is programmatically determinable.</p>
 							<aside class="doclinks">
 								<p><a href="https://w3c.github.io/wcag3/how-to/clear-meaning/detectable-text/">
 									<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> Detectable text methods</a></p>
@@ -416,7 +417,7 @@
 					</section>		
 					<section class="requirement" data-status="exploratory">
 						<h5>Double negatives</h5>
-						<p class="requirement-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect. </p>
+						<p class="requirement-text"><a>Content</a> does not include double negatives to express a positive unless it is standard usage for that language or dialect.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Sentence voice</h5>
@@ -448,33 +449,31 @@
 						<p class="guideline-text">Users can see which <a>element</a> has keyboard focus.</p>
 						<aside class="doclinks">
 							<p><a href="https://w3c.github.io/wcag3/how-to/focus-appearance/">
-								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Keyboard Focus Appearance</a></p>
+								<svg aria-hidden="true" class="i-info"><use xlink:href="img/icons.svg#i-info"></use></svg> How to meet Keyboard focus appearance</a></p>
 						</aside>	
 					</div>
 					
 					<details class="decision-tree">
 						<summary>Which foundational requirements apply?</summary>
-						<p>For each focusable item:
-							<ol>
+						<p>For each focusable item:</p>
+						<ol>
+							<li>Is the user-agent default focus indicator used?
+								<ul>
+									<li>Yes, the <a href="#user-agent-default-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> meets <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
+									<li>No, continue.</li>
+								</ul>
+							</li>
 
-								<li>Is the user-agent default focus indicator used?
-									<ul>
-										<li>Yes, the <a href="#user-agent-default-indicator">user-agent default indicator</a> is used AND the <em>accessibility support set</em> meets <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
-										<li>No, continue.</li>
-									</ul>
-								</li>
-
-								<li>Is the focus indicator defined by the author?
-									<ul>
-										<li>Yes, indicator must meet <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
-										<li>No, fail.</li>
-									</ul>
-								</li>
-							</ol>
-						</p>
+							<li>Is the focus indicator defined by the author?
+								<ul>
+									<li>Yes, indicator must meet <a href="#custom-indicator">Custom focus indicators</a>. Stop.</li>
+									<li>No, fail.</li>
+								</ul>
+							</li>
+						</ol>
 					</details>
 
-					<section class="requirement" data-status="developing" data-status="developing" data-requirement-type="foundational">
+					<section class="requirement" data-status="developing" data-requirement-type="foundational">
 						<h5>Custom indicator</h5>
 						<div class="body-wrapper">
 							<p class="requirement-text">A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.</p>
@@ -500,9 +499,9 @@
 						<p class="requirement-text">@@</p>
 					</section>
 
-					<section class="requirement" data-status="exploratory" data-provision-type="assertion">
-						<h5></h5>Style guide</h5>
-						<p class="provision-text">Focus indicators follow an organizational style guide.</p>
+					<section class="requirement" data-status="exploratory" data-requirement-type="assertion">
+						<h5>Style guide</h5>
+						<p class="requirement-text">Focus indicators follow an organizational style guide.</p>
 					</section>
 				</section>
 
@@ -517,7 +516,7 @@
 
 				<section class="guideline">
 					<h4>Navigating content</h4>
-					<p class="guideline-text">Users can determine where they are and move through <a>content</a> (including interactive elements) in a systematic and meaningful way regardless of input or movement method. </p>
+					<p class="guideline-text">Users can determine where they are and move through <a>content</a> (including interactive elements) in a systematic and meaningful way regardless of input or movement method.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Focus in viewport</h5>
 						<p class="requirement-text">The focus does not move to a position outside the current viewport, unless a mechanism is available to return to the previous focus point.</p>
@@ -544,16 +543,16 @@
 					<h4>Expected behavior</h4>
 					<p class="guideline-text">Users have interactive components that behave as expected.</p>
 					<section class="requirement" data-status="exploratory">
-						<h5>Consistent Interaction</h5></h4>
+						<h5>Consistent Interaction</h5>
 						<p class="requirement-text">Interactive components with the same functionality behave consistently.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Consistent labels</h5>
-						<p class="requirement-text"> Interactive components with the same functionality have consistent labels.</p>
+						<p class="requirement-text">Interactive components with the same functionality have consistent labels.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Consistent visual design</h5>
-						<p class="requirement-text"> Interactive components that have similar function and behavior have a consistent visual design.</p>
+						<p class="requirement-text">Interactive components that have similar function and behavior have a consistent visual design.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Control location</h5>
@@ -562,7 +561,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Conventions</h5>
-						<p class="requirement-text"> Interactive components follow established conventions.</p>
+						<p class="requirement-text">Interactive components follow established conventions.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>				
 					<section class="requirement" data-status="exploratory">
@@ -581,7 +580,7 @@
 					<p class="guideline-text">Users have information about interactive components that is identifiable and usable visually and using assistive technology.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Control contrast</h5>
-						<p class="provision-text">Visual information required to identify user interface components and states meet a minimum <a>contrast ratio test</a>, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author.</p>
+						<p class="requirement-text">Visual information required to identify user interface components and states meet a minimum <a>contrast ratio test</a>, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>						
 					<section class="requirement" data-status="exploratory">
@@ -599,7 +598,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Distinguishable controls</h5>
-						<p class="requirement-text"> Interactive components are visually distinguishable without interaction from static <a>content</a> and include visual cues on how to use them.</p>
+						<p class="requirement-text">Interactive components are visually distinguishable without interaction from static <a>content</a> and include visual cues on how to use them.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Field constraints</h5>
@@ -615,7 +614,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 					<h5>Name, role, value, state</h5>
-					<p class="requirement-text">Accurate names, roles, values, and states are available for interactive components. </p>
+					<p class="requirement-text">Accurate names, roles, values, and states are available for interactive components.</p>
 					</section>
 				</section>
 			</section>
@@ -627,7 +626,7 @@
 					<p class="guideline-text">Users can use different input techniques and combinations and switch between them.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Concurrent inputs</h5>
-						<p class="requirement-text"> Any input modality available on a platform can be used concurrently.</p>
+						<p class="requirement-text">Any input modality available on a platform can be used concurrently.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Hover information</h5>
@@ -644,8 +643,7 @@
 					<p class="guideline-text">Users are aware of changes to <a>content</a> or context.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Notify about change</h5>
-						<p class="requirement-text">Changes in <a>content</a> and updates notify users, regardless of the update speed.
-						</p>
+						<p class="requirement-text">Changes in <a>content</a> and updates notify users, regardless of the update speed.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Notify on change</h5>
@@ -666,8 +664,7 @@
 					<p class="guideline-text">Users are not required to accurately position a pointer in order to view or operate <a>content</a>.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Target size minimum</h5>
-						<p class="requirement-text">The combined target size and spacing to adjacent targets is at least 24x24 pixels
-						</p>
+						<p class="requirement-text">The combined target size and spacing to adjacent targets is at least 24x24 pixels.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Target size optimum</h5>
@@ -689,7 +686,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Consistent keyboard interaction</h5>
-						<p class="requirement-text"> Keyboard interface interactions are consistent.</p>
+						<p class="requirement-text">Keyboard interface interactions are consistent.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Keyboard mode</h5>
@@ -765,7 +762,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Error identification</h5>
-						<p class="requirement-text">Errors are visually identifiable without relying on only text, only color, or only symbols. </p>
+						<p class="requirement-text">Errors are visually identifiable without relying on only text, only color, or only symbols.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Error notification</h5>
@@ -789,21 +786,21 @@
 					<h4>Avoid physical harm</h4>
 					<p class="guideline-text">Users do not experience physical harm from <a>content</a>.</p>
 					<section class="requirement" data-status="exploratory">
-						<h5>Audio shifting</h4>
+						<h5>Audio shifting</h5>
 						<p class="requirement-text">Audio shifting designed to create a perception of motion is avoided; or can be paused or prevented.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
-						<h5>Flashing</h4>
+						<h5>Flashing</h5>
 						<p class="requirement-text">Flashing or strobing beyond thresholds defined by safety standards are avoided; or can be paused or prevented.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
-						<h5>Motion</h4>
+						<h5>Motion</h5>
 						<p class="requirement-text">Visual motion and pseudo-motion that lasts longer than 5 seconds is avoided; or can be paused or prevented.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
-						<h5>Motion from interaction</h4>
+						<h5>Motion from interaction</h5>
 						<p class="requirement-text">Visual motion and pseudo-motion triggered by interaction is avoided; or can be prevented, unless the animation is essential to the functionality or the information being conveyed.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
@@ -867,11 +864,11 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Multistep process</h5>
-						<p class="requirement-text"> Provides context that orients the user in a site or multi-step process.</p>
+						<p class="requirement-text">Provides context that orients the user in a site or multi-step process.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Contextual information</h5>
-						<p class="requirement-text"> Provide contextual information to help the user orient within the <a>product</a>.</p>
+						<p class="requirement-text">Provide contextual information to help the user orient within the <a>product</a>.</p>
 					</section>
 				</section>
 
@@ -901,7 +898,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>White spacing</h5>
-						<p class="requirement-text">Whitespace separates chunks of <a>content</a>. </p>
+						<p class="requirement-text">Whitespace separates chunks of <a>content</a>.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Title</h5>
@@ -933,7 +930,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Persistent navigation</h5>
-						<p class="requirement-text">Navigation features are available regardless of screen size and magnification (responsive design)</p>
+						<p class="requirement-text">Navigation features are available regardless of screen size and magnification (responsive design).</p>
 					</section>
 				</section>
 			</section>
@@ -953,14 +950,14 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>No memorization</h5>
-						<p class="requirement-text">Processes can be completed without memorizing and recalling information from previous stages of the process. </p>
+						<p class="requirement-text">Processes can be completed without memorizing and recalling information from previous stages of the process.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>
 
 				<section class="guideline">
 					<h4>Adequate time</h4>
-					<p class="guideline-text">Users have enough time to read and use <a>content</a>.</p>			
+					<p class="guideline-text">Users have enough time to read and use <a>content</a>.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Adjust timing at start</h5>
 						<p class="requirement-text">For each process with a time-limit, a mechanism exists to disable or extend the limit before the time-limit starts.</p>
@@ -977,7 +974,7 @@
 
 				<section class="guideline">
 					<h4>Unnecessary steps</h4>
-					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>	
+					<p class="guideline-text">Users can complete tasks without unnecessary steps.</p>
 						<section class="requirement" data-status="exploratory">
 							<h4>Optional information</h4>
 							<p class="requirement-text">Processes can be completed without being forced to read or understand unnecessary <a>content</a>.</p>
@@ -1012,14 +1009,14 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Redirection</h5>
-						<p class="requirement-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site. </p>
+						<p class="requirement-text">A mechanism is available to prevent fraudulent redirection or alert users they are exiting the site.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 				</section>	
 
 				<section class="guideline">
 					<h4>Retain information</h4>
-					<p class="guideline-text">Users do not have to reenter information or redo work.</p>	
+					<p class="guideline-text">Users do not have to reenter information or redo work.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Go back in process</h5>
 						<p class="requirement-text">In a multistep process, the interface supports stepping backwards in a process and returning to the current point without data loss.</p>
@@ -1039,19 +1036,18 @@
 					<p class="guideline-text">Users understand how to complete tasks.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Action required</h5>
-						<p class="requirement-text">In a process, the interface indicates when user input or action is required to proceed to the next step. c</p>
+						<p class="requirement-text">In a process, the interface indicates when user input or action is required to proceed to the next step.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Inform at start of process</h5>
-						<p class="requirement-text">Information needed to complete a multi-step process is provided at the start of the process, including:
-						<ul><li>number of steps it might take (if known in advance),</li>
+						<p class="requirement-text">Information needed to complete a multi-step process is provided at the start of the process, including:</p>
+						<ul class="requirement-text"><li>number of steps it might take (if known in advance),</li>
 						<li>details of any resources needed to perform the task, and</li>
 						<li>overview of the process and next step.</li></ul>
-						</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Steps and instructions</h5>
-						<p class="requirement-text">The steps and instructions needed to complete a multistep process are available </p>
+						<p class="requirement-text">The steps and instructions needed to complete a multistep process are available.</p>
 					</section>
 				</section>
 			</section>
@@ -1063,12 +1059,12 @@
 					<p class="guideline-text">Users can determine when <a>content</a> is provided by a Third Party</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Citation</h5>
-						<p class="requirement-text">The author or source of the primary <a>content</a> is visually and <a>programmatically</a> indicated. </p>
+						<p class="requirement-text">The author or source of the primary <a>content</a> is visually and <a>programmatically</a> indicated.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Indicate 3rd party content</h5>
-						<p class="requirement-text">Third party <a>content</a> (AI, Advertising, etc.) is visually and <a>programmatically</a> indicated. </p>
+						<p class="requirement-text">Third party <a>content</a> (AI, Advertising, etc.) is visually and <a>programmatically</a> indicated.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
@@ -1080,7 +1076,7 @@
 
 				<section class="guideline">
 					<h4>Security and privacy</h4>
-					<p class="guideline-text">Users’ safety, security or privacy are not decreased by accessibility measures. </p>
+					<p class="guideline-text">Users’ safety, security or privacy are not decreased by accessibility measures.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Clear agreement</h5>
 						<p class="requirement-text">The interface indicates when a user is entering an agreement or submitting data.</p>
@@ -1121,7 +1117,7 @@
 
 			<section>
 				<h3>Help and feedback</h3>
-				<section class="guideline">			
+				<section class="guideline">
 					<h4>Help available</h4>
 					<p class="guideline-text">Users have help available.</p>
 					<section class="requirement" data-status="exploratory">
@@ -1228,7 +1224,7 @@
 					<p class="guideline-text">Users can transform <a>content</a> to make it understandable.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Alternative presentation</h5>
-						<p class="requirement-text">Complex information or instructions for complex processes are available in multiple presentation formats.	</p>
+						<p class="requirement-text">Complex information or instructions for complex processes are available in multiple presentation formats.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
@@ -1303,12 +1299,12 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Verbosity</h5>
-						<p class="requirement-text">Overwhelming wordiness can be reduced or turned off. </p>
+						<p class="requirement-text">Overwhelming wordiness can be reduced or turned off.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Visual stimulation</h5>
-						<p class="requirement-text">Visual stimulation from combinations of density, color, movement, etc. can be reduced or turned off. </p>
+						<p class="requirement-text">Visual stimulation from combinations of density, color, movement, etc. can be reduced or turned off.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>	
 				</section>
@@ -1411,13 +1407,13 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Accessibility support set">Accessibility support set</dfn></dt>
+				<dt data-status="developing"><dfn>Accessibility support set</dfn></dt>
 				<dd><p>The group of user-agents and assistive technologies you test with.</p>
 				<div class="ednote">
-					<p>The AG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines. Accessibility support sets may vary based on language, region, or situation. If you are not using the default accessibility set, the conformance report should indicate what set is being used. </p>
+					<p>The AG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines. Accessibility support sets may vary based on language, region, or situation. If you are not using the default accessibility set, the conformance report should indicate what set is being used.</p>
 				</div>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Assertion|Assertions">Assertion</dfn></dt>
+				<dt data-status="developing"><dfn>Assertion</dfn></dt>
 				<dd><p>A formal claim of fact, attributed to a person or organization. An attributable and documented statement of fact regarding procedures practiced in the development and maintenance of the <a>content</a> or <a>product</a> to improve accessibility.</p></dd>
 				<dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">Automated
 						evaluation</dfn></dt>
@@ -1466,11 +1462,11 @@
 					<p>The process of examining <a>content</a> for <a>conformance</a> to these	guidelines.</p>
 					<p>Different approaches to evaluation include automated <a>evaluation</a>,	<a>semi-automated evaluation</a>, <a>human evaluation</a>, and <a>user testing</a>.</p>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Functional needs">Functional need</dfn></dt>
+				<dt data-status="developing"><dfn>Functional need</dfn></dt>
 				<dd>
 					<p>A statement that describes a specific gap in one’s ability, or a specific mismatch between ability and the designed environment or context.</p>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Guidelines">Guideline</dfn></dt>
+				<dt data-status="developing"><dfn>Guideline</dfn></dt>
 				<dd>
 					<p>High-level, plain-language outcome statements used to organize <a>requirements</a>.</p>
 					<p>Guidelines provide a high-level, plain-language outcome statements for managers, policy makers, individuals who are new to accessibility, and other individuals who need to understand the concepts but not dive into the technical details. They provide an easy-to-understand way of organizing and presenting the requirements so that non-experts can learn about and understand the concepts. Each guideline includes a unique, descriptive name along with a high-level plain-language summary. Guidelines address functional needs on specific topics, such as contrast, forms, readability, and more. Guidelines group related requirements and are technology-independent.</p>
@@ -1498,7 +1494,7 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Non-normative|Informative">Informative</dfn></dt>
+				<dt data-status="developing"><dfn data-lt="Non-normative">Informative</dfn></dt>
 				<dd>
 					<p><a>Content</a> provided for information purposes and not required for <a>conformance</a>. Also refered to as non-normative.</p>
 				</dd>
@@ -1513,7 +1509,7 @@
 				<dd>
 					<p>The smallest testable unit for testing scope. They could be interactive components such as a drop down menu, a link, or a media player. They could also be units of <a>content</a> such as a phrase, a paragraph, a label or error message, an icon, or an <a>image</a>.</p>
 				</dd>
-				<dt data-status="developing"><dfn data-lt="Methods">Method</dfn></dt>
+				<dt data-status="developing"><dfn>Method</dfn></dt>
 				<dd>
 					<p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a>requirement</a> as well as <a>tests</a> and scoring information.</p>
 				</dd>
@@ -1532,17 +1528,17 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt><dfn data-lt="point of regard | points of regard">Point of regard</dfn></dt>
+				<dt><dfn data-lt="points of regard">Point of regard</dfn></dt>
 				<dd><p>
-					The position in rendered <a>content</a> that the user is presumed to be viewing. The dimensions of the point of regard can vary. For example, it can be a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport), or a point (e.g. a moment during an audio rendering or a cursor position in a graphical rendering), or a range of text (e.g. focused text), or a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport). The point of regard is almost always within the viewport, but it can exceed the spatial or temporal dimensions of the viewport (see the definition of rendered content for more information about viewport dimensions). The point of regard can also refer to a particular moment in time for content that changes over time (e.g. an audio-only presentation). User agents can determine the point of regard in a number of ways, including based on viewport position in content, keyboard focus, and selection.	</p>
+					The position in rendered <a>content</a> that the user is presumed to be viewing. The dimensions of the point of regard can vary. For example, it can be a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport), or a point (e.g. a moment during an audio rendering or a cursor position in a graphical rendering), or a range of text (e.g. focused text), or a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport). The point of regard is almost always within the viewport, but it can exceed the spatial or temporal dimensions of the viewport (see the definition of rendered content for more information about viewport dimensions). The point of regard can also refer to a particular moment in time for content that changes over time (e.g. an audio-only presentation). User agents can determine the point of regard in a number of ways, including based on viewport position in content, keyboard focus, and selection.</p>
 				</dd>
-				<dt><dfn data-lt="Processes">Process</dfn></dt>
+				<dt><dfn>Process</dfn></dt>
 				<dd>
 					<p>A sequence of steps that need to be completed to accomplish an activity / task from end-to-end.</p>
 				</dd>
 				<dt data-status="developing"><dfn>Product</dfn></dt>
 				<dd>
-					<p>Testing scope that  is a combination of all <a>items</a>, <a>views</a>, and <a>task flows</a> that comprise the web site, set of web pages, web app, etc.</p>
+					<p>Testing scope that is a combination of all <a>items</a>, <a>views</a>, and <a>task flows</a> that comprise the web site, set of web pages, web app, etc.</p>
 				</dd>
 				<dt><dfn data-lt="Programmatically|Programmatically indicated|Programmatically detectable|Programmatically associated">Programmatically determinable</dfn></dt>
 				<dd>
@@ -1550,7 +1546,7 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt><dfn data-lt="Requirement|Requirements">Requirement</dfn></dt>
+				<dt><dfn>Requirement</dfn></dt>
 				<dd>
 					<p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
 				</dd>
@@ -1585,7 +1581,7 @@
 						<p>To be defined.</p>
 					</div>
 				</dd>
-				<dt><dfn data-lt="User needs">User need</dfn></dt>
+				<dt><dfn>User need</dfn></dt>
 				<dd>
 					<p>The end goal a user has when starting a process through digital means.</p>
 				</dd>
@@ -1609,24 +1605,23 @@
 		</section>
 		<section class="appendix">
 			<h2>Change log</h2>
-         <p>This section shows substantive changes made in WCAG 3.0 since the First Public Working Draft was published in 21 January 2021 . 
-         		
-         <p>The full <a href="https://github.com/w3c/wcag3/commits/main/guidelines">commit history to WCAG 3.0</a> and <a href="https://github.com/w3c/silver/commits/main/guidelines">commit history to Silver</a> is available.
-         </p>
-         		
-         <ul>			
-            <li>2021-06-08: Moved explantory information to <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for W3C Accessibility Guidelines (WCAG) 3.0</a>
-            </li>
-             <li>2021-12-07: Add Project Manager
-            </li>
-            <li>2023-07-24: Changed approach to WCAG 3.0 based feedback and removed old material that was not consistent with the new appraoch. Added WCAG 3.0 Guideline placeholders to indicate maturity level.
-            </li>
-            <li>2024-03-15: Updated placeholder guidelines with exploratory guidelines.
-            </li>
-			<li>2024-??-??: Reorganized exploratory guidelines; added 3 developing guidelines and accessibility supported; added user agent support, updated conformance section,  and moved explanatory content to the <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for WCAG 3.0</a>
-			</li>
-		</ul>
-
+			<p>This section shows substantive changes made in WCAG 3.0 since the First Public Working Draft was published in 21 January 2021.</p>
+				
+			<p>The full <a href="https://github.com/w3c/wcag3/commits/main/guidelines">commit history to WCAG 3.0</a> and <a href="https://github.com/w3c/silver/commits/main/guidelines">commit history to Silver</a> is available.
+			</p>
+				
+			<ul>
+				<li>2021-06-08: Moved explanatory information to <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for W3C Accessibility Guidelines (WCAG) 3.0</a>
+				</li>
+					<li>2021-12-07: Add Project Manager
+				</li>
+				<li>2023-07-24: Changed approach to WCAG 3.0 based feedback and removed old material that was not consistent with the new appraoch. Added WCAG 3.0 Guideline placeholders to indicate maturity level.
+				</li>
+				<li>2024-03-15: Updated placeholder guidelines with exploratory guidelines.
+				</li>
+				<li>2024-??-??: Reorganized exploratory guidelines; added 3 developing guidelines and accessibility supported; added user agent support, updated conformance section,  and moved explanatory content to the <a href="https://www.w3.org/TR/wcag-3.0-explainer/">Explainer for WCAG 3.0</a>
+				</li>
+			</ul>
 		</section>
 		<section class="appendix">
 			<h2>Acknowledgements</h2>				
