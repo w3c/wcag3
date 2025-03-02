@@ -1427,6 +1427,22 @@
 						experience. [=Semi-automated evaluation=] allows machines to guide humans
 						to areas that need inspection. The emerging field of testing conducted via
 						machine learning is not included in this definition.</p></dd>
+				<dt data-status="developing"><dfn data-lt="Change of context">Change of context</dfn></dt>
+				<dd><p>Major change in the <a>content</a> of the <a>view</a> that, if made without user awareness, can disorient users who are not able to perceive the entire <a>view</a simultaneously</p></dd>
+				<dd>Changes in context include changes of:
+					<ul>
+					<li>user agent;</li>
+					<li>viewport;</li>
+					<li>focus;</li>
+					<li>content that changes the meaning of the <a>view</a>.</li>
+					</ul>
+				</dd>
+				<dd>
+					<div class="ednote">
+						<p>A change of content is not always a change of context. Changes in content, such as an expanding outline, dynamic menu, opening a non-modal dialog, or a tab control do not necessarily change the context.</p>
+						<p>Example: Opening a new window, opening a modal dialog, going to a new <a>view</a> or significantly re-arranging the <a>content</a> of a <a>view</a> are examples of changes of context.</p>
+					</div>
+				</dd>
 				<dt data-status="developing"><dfn data-lt="Conform">Conformance</dfn></dt>
 				<dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
 						the guidelines even when not making a formal Conformance Claim.</p>
@@ -1595,7 +1611,7 @@
 				</dd>
 				<dt data-status="developing"><dfn>View</dfn></dt>
 				<dd>
-					<p>Testing scope that includes all <a>content</a> visually and <a>programmatically</a> available without a significant change. Conceptually, views correspond to the definition of a web page as used in WCAG 2, but are not restricted to content meeting that definition. For example, a view could be considered a “screen” in a mobile app or a layer of web content, such as a modal dialog.</p>
+					<p>Conformance scope that includes all <a>content</a> visually and <a>programmatically</a> available without a <a>change of context</a></p>
 				</dd>
 			</dl>
 		</section>
