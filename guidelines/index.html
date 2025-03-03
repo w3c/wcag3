@@ -333,7 +333,7 @@
 					</section>
 						<section class="requirement" data-status="exploratory">
 						<h5>Human language</h5>
-						<p class="requirement-text">The human language of the <a>view</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
+						<p class="requirement-text">The human language of the <a>view-unit</a> and <a>content</a> within the view is <a>programmatically</a> available.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Semantic text appearance</h5>
@@ -532,7 +532,7 @@
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Restore focus</h5>
-						<p class="requirement-text">When the focus is moved by the <a>content</a> into a temporary change of <a>view</a> (e.g. a modal), the focus is restored to its previous location when returned from the temporary change of view.</p>
+						<p class="requirement-text">When the focus is moved by the <a>content</a> into a temporary change of <a>view-unit</a> (e.g. a modal), the focus is restored to its previous location when returned from the temporary change of view.</p>
 					</section>
 					<section class="requirement" data-status="exploratory">
 						<h5>Relevant focus</h5>
@@ -862,7 +862,7 @@
 					<p class="guideline-text">Users can determine their location in <a>content</a> both visually and using assistive technologies.</p>
 					<section class="requirement" data-status="exploratory">
 						<h5>Current location</h5>
-						<p class="requirement-text">The current location within the <a>view</a>, multi-step <a>process</a>, and <a>product</a> is visually and <a>programmatically indicated</a>.</p>
+						<p class="requirement-text">The current location within the <a>view-unit</a>, multi-step <a>process</a>, and <a>product</a> is visually and <a>programmatically indicated</a>.</p>
 						<p class="ednote">Needs <a href="#additional_research">additional research</a></p>
 					</section>
 					<section class="requirement" data-status="exploratory">
@@ -1393,7 +1393,7 @@
 				</ul>
 				<p>WCAG 3.0 therefore defines two ways to scope content: <a>views</a> and <a>processes</a>. Evaluation is done on one or more complete views or processes, and conformance is determined on the basis of one or more complete views or processes. </p>
 				
-				<p>Conformance is defined only for <a>processes</a> and <a>views</a>. However, a conformance claim may be made to cover one <a>process</a> and <a>view</a>, a series of processes and views, or multiple related processes and views. All unique steps in a process MUST be represented in the set of views. Views outside of the process MAY also be included in the scope.</p>
+				<p>Conformance is defined only for <a>processes</a> and <a>views</a>. However, a conformance claim may be made to cover one <a>process</a> and <a>view-unit</a>, a series of processes and views, or multiple related processes and views. All unique steps in a process MUST be represented in the set of views. Views outside of the process MAY also be included in the scope.</p>
 				<p class="ednote">We recognize that representative sampling is an important strategy that large and complex sites use to assess accessibility. While it is not addressed within this document at this time, our intent is to later address it within this document or in a separate document before the guidelines reach the Candidate Recommendation stage. We welcome your suggestions and feedback about the best way to incorporate representative sampling in WCAG 3.0.</p>
 			</section>
 		</section>					
@@ -1428,19 +1428,19 @@
 						to areas that need inspection. The emerging field of testing conducted via
 						machine learning is not included in this definition.</p></dd>
 				<dt data-status="developing"><dfn data-lt="Change of context">Change of context</dfn></dt>
-				<dd><p>Major change in the <a>content</a> of the <a>view</a> that, if made without user awareness, can disorient users who are not able to perceive the entire <a>view</a simultaneously</p></dd>
+				<dd><p>Major change in the <a>content</a> of the <a>view-unit</a> that, if made without user awareness, can disorient users who are not able to perceive the entire <a>view</a simultaneously</p></dd>
 				<dd>Changes in context include changes of:
 					<ul>
 					<li>user agent;</li>
 					<li>viewport;</li>
 					<li>focus;</li>
-					<li>content that changes the meaning of the <a>view</a>.</li>
+					<li>content that changes the meaning of the <a>view-unit</a>.</li>
 					</ul>
 				</dd>
 				<dd>
 					<div class="ednote">
 						<p>A change of content is not always a change of context. Changes in content, such as an expanding outline, dynamic menu, opening a non-modal dialog, or a tab control do not necessarily change the context.</p>
-						<p>Example: Opening a new window, opening a modal dialog, going to a new <a>view</a> or significantly re-arranging the <a>content</a> of a <a>view</a> are examples of changes of context.</p>
+						<p>Example: Opening a new window, opening a modal dialog, going to a new <a>view-unit</a> or significantly re-arranging the <a>content</a> of a <a>view-unit</a> are examples of changes of context.</p>
 					</div>
 				</dd>
 				<dt data-status="developing"><dfn data-lt="Conform">Conformance</dfn></dt>
@@ -1583,7 +1583,7 @@
 				</dd>
 				<dt data-status="developing"><dfn>Task flow</dfn></dt>
 				<dd>
-					<p>Testing scope that includes a series views that support a specified user activity. A task flow may include a subset of <a>items</a> in a <a>view</a> or a group of views. Only the part of the views that support the user activity are included in a test of the task flow.</p>
+					<p>Testing scope that includes a series views that support a specified user activity. A task flow may include a subset of <a>items</a> in a <a>view-unit</a> or a group of views. Only the part of the views that support the user activity are included in a test of the task flow.</p>
 				</dd>
 				<dt data-status="developing"><dfn>Test</dfn></dt>
 				<dd>
@@ -1609,7 +1609,7 @@
 				<dd>
 					<p>Evaluation of <a>content</a> by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content meets the relevant <a>requirements</a>.</p>
 				</dd>
-				<dt data-status="developing"><dfn>View</dfn></dt>
+				<dt data-status="developing"><dfn>View-unit</dfn></dt>
 				<dd>
 					<p>Conformance scope that includes all <a>content</a> visually and <a>programmatically</a> available without a <a>change of context</a></p>
 				</dd>
