@@ -35,7 +35,7 @@ export const collections = {
     }),
   }),
   groups: defineCollection({
-    loader: glob({ pattern: ["*.json", "!index.json"], base: "./guidelines/groups" }),
+    loader: glob({ pattern: "*.json", base: "./guidelines/groups", ignore: "index.json" }),
     schema: z.object({
       children: z.array(z.string()),
       status: statusSchema.optional(),
