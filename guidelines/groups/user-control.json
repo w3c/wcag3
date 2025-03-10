@@ -1,0 +1,11 @@
+{
+  "children": [
+    "control-text",
+    "adjustable-viewport",
+    "transform-content",
+    "media-control",
+    "control-interruptions",
+    "control-possible-harm",
+    "user-agent-support"
+  ]
+}

@@ -1,0 +1,59 @@
+---
+import { z, type CollectionEntry } from "astro:content";
+
+import { computeTitle } from "@/lib/guidelines";
+import { renderAndValidate } from "@/lib/zod";
+import { getEntry } from "astro:content";
+
+interface Props {
+  entry: CollectionEntry<"guidelines"> | CollectionEntry<"requirements">;
+}
+
+const { entry } = Astro.props;
+const idParts = entry.id.split("/");
+const parentHowto =
+  entry.collection === "requirements"
+    ? (await getEntry("guidelines", idParts.slice(0, 2).join("/")))?.data.howto
+    : null;
+const howtoSlug = entry.data.howto === true ? idParts.slice(-1) : entry.data.howto;
+const howtoPath = parentHowto
+  ? `${parentHowto === true ? idParts[1] : parentHowto}/${howtoSlug}/`
+  : `${howtoSlug}/`;
+const baseUrl = "https://w3c.github.io/wcag3/how-to/";
+const { Content, remarkPluginFrontmatter } = await renderAndValidate(
+  entry,
+  z.object({
+    description: z.string(),
+  })
+);
+---
+
+{
+  howtoSlug ? (
+    <div class="body-wrapper">
+      <Fragment set:html={remarkPluginFrontmatter.description} />
+      <aside class="doclinks">
+        <p>
+          <a href={`${baseUrl}${howtoPath}`}>
+            <svg aria-hidden="true" class="i-info">
+              <use xlink:href="img/icons.svg#i-info" />
+            </svg>{" "}
+            {entry.collection === "guidelines"
+              ? `How to meet ${computeTitle(entry)}`
+              : `${computeTitle(entry)} methods`}
+          </a>
+        </p>
+      </aside>
+    </div>
+  ) : (
+    <Fragment set:html={remarkPluginFrontmatter.description} />
+  )
+}
+{
+  entry.collection === "requirements" && entry.data.needsAdditionalResearch && (
+    <p class="ednote">
+      Needs <a href="#additional_research">additional research</a>
+    </p>
+  )
+}
+<Content />

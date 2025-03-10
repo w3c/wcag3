@@ -1,0 +1,15 @@
+---
+import { buildGuidelinesHierarchy, computeTitle } from "@/lib/guidelines";
+
+const groups = await buildGuidelinesHierarchy();
+---
+
+<ul>
+  {
+    groups.map((group) => (
+      <li>
+        <a href={`#${group.id}`}>{computeTitle(group)}</a>
+      </li>
+    ))
+  }
+</ul>
