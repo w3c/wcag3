@@ -28,16 +28,16 @@ jobs:
           npm run build
       - name: spec-generator
         run: |
-          cd dist/guidelines
-          tar cf ../../wcag3.tar *
+          cd dist/client/guidelines
+          tar cf ../../../wcag3.tar *
           cd -
-          curl https://labs.w3.org/spec-generator/?type=respec -F file=@wcag3.tar -o dist/guidelines/index.html -f --retry 3
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@wcag3.tar -o dist/client/guidelines/index.html -f --retry 3
       - name: Build and copy how-tos
         run: |
           cd how-to
           npm ci
           npm run build:gh-pages
-          cp -r _site ../dist/how-to
+          cp -r _site ../dist/client/how-to
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

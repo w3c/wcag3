@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "wcag3",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^6.2.0",
+    "@astrojs/node": "^9.1.2",
     "astro": "^5.4.2",
     "cheerio": "^1.0.0",
     "fast-glob": "^3.3.3",
