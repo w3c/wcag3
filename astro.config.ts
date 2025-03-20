@@ -29,6 +29,7 @@ export default defineConfig({
   },
   experimental: {
     contentIntellisense: true,
+    preserveScriptOrder: true,
   },
   integrations: [
     {
