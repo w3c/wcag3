@@ -3,8 +3,6 @@ import { render, type CollectionEntry } from "astro:content";
 
 import { computeTitle } from "@/lib/guidelines";
 
-import EditLink from "../editing/EditLink.astro";
-
 interface Props {
   termEntry: CollectionEntry<"terms">;
 }
@@ -17,7 +15,4 @@ const { Content } = await render(termEntry);
 <dt data-status={status}>
   <dfn data-lt={synonyms ? synonyms.join("|") : undefined}>{computeTitle(termEntry)}</dfn>
 </dt>
-<dd>
-  <Content />
-  <EditLink entry={termEntry} />
-</dd>
+<dd><Content /></dd>

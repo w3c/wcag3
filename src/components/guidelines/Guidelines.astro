@@ -1,7 +1,6 @@
 ---
 import { buildGuidelinesHierarchy, computeTitle } from "@/lib/guidelines";
 
-import EditLink from "../editing/EditLink.astro";
 import EntryText from "./EntryText.astro";
 
 const groups = await buildGuidelinesHierarchy();
@@ -14,12 +13,10 @@ const groups = await buildGuidelinesHierarchy();
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
           <h4>{computeTitle(guideline)}</h4>
-          <EditLink entry={guideline} />
           <EntryText entry={guideline} />
           {guideline.data.requirements.map((requirement) => (
             <section class="requirement" data-status={requirement.data.status} data-requirement-type={requirement.data.type}>
               <h5>{computeTitle(requirement)}</h5>
-              <EditLink entry={requirement} />
               <EntryText entry={requirement} />
             </section>
           ))}
