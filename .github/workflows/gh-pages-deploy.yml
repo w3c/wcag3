@@ -29,9 +29,17 @@ jobs:
       - name: spec-generator
         run: |
           cd dist/client/guidelines
-          tar cf ../../../wcag3.tar *
+          tar cf ../../../guidelines.tar *
           cd -
-          curl https://labs.w3.org/spec-generator/?type=respec -F file=@wcag3.tar -o dist/client/guidelines/index.html -f --retry 3
+          cd dist/client/explainer
+          tar cf ../../../explainer.tar *
+          cd -
+          cd dist/client/requirements
+          tar cf ../../../requirements.tar *
+          cd -
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@guidelines.tar -o dist/client/guidelines/index.html -f --retry 3
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
       - name: Build and copy how-tos
         run: |
           cd how-to
