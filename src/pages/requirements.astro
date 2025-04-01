@@ -1,11 +1,15 @@
+---
+import Acknowledgements from "@/components/guidelines/Acknowledgements.astro";
+import RequirementsRespec from "@/components/respec/RequirementsRespec.astro";
+---
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<html lang="en-US">
 	<head>
 		<title>Requirements for WCAG 3.0</title>
 		<meta charset="UTF-8" />
-		<script src="respec-config.js" class="remove"></script>
-		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
-        <script src="respec-config.js" class="remove"></script>
+		<RequirementsRespec />
+		<script is:inline src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
 	</head>
 
 	<body>
@@ -241,13 +245,7 @@
 		<section class="appendix">
 			<h2>Acknowledgements</h2>
   		<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
-			<div data-include="../guidelines/acknowledgements/current-contributors.html" data-include-replace="true"></div>
-			<section class="appendix">
-			<h3>Prior Contributors</h3>
-			<div data-include="../guidelines/acknowledgements/previous-contributors.html" data-include-replace="true"></div>
-			<div data-include="../guidelines/acknowledgements/research-partners.html" data-include-replace="true"></div>
-			</section>
-			<div data-include="../guidelines/acknowledgements/funders.html" data-include-replace="true"></div>			
+			<Acknowledgements />
 		</section>
 	</body>
 </html>

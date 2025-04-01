@@ -1,13 +1,19 @@
+---
+import Acknowledgements from "@/components/guidelines/Acknowledgements.astro";
+import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
+---
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset='utf-8'>
     <title>Explainer for W3C Accessibility Guidelines (WCAG) 3.0</title>
-    <script src="explainer.js" class="remove"></script>
-    <script src="respec-config.js" class="remove"></script>
-    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
-    <link rel="stylesheet" type="text/css" href="guidelines.css" />
+    <ExplainerRespec />
+    <script is:inline src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
+    <style is:global>
+        @import "@/styles/explainer.css";
+    </style>
 </head>
 
 <body>
@@ -178,6 +184,7 @@
                         </ul>
                     </li>
                 </ul>
+            </li>
         </ul>
         <p>Details on each are below.</p>
         <p>By default, guidelines are organized by what is tested. WCAG 3.0 will provide a version, similar to the
@@ -197,11 +204,11 @@
             to a Guideline are listed together to encourage adoption of higher levels of accessibility.</p>
 
         <h3>Requirements and Methods</h3>
-        <p>Each Guideline contains multiple Requirements:
-            <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
-                cover a similar, but not identical, set of needs as WCAG 2.2 Level AA.</li>
-                <li>Supplemental Requirements will be used for higher levels of conformance.</li>
-            </li></ul></p>    
+        <p>Each Guideline contains multiple Requirements:</p>
+        <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
+            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA.</li>
+            <li>Supplemental Requirements will be used for higher levels of conformance.</li>
+        </li></ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
@@ -395,27 +402,28 @@
         whether meeting the higher levels would work best based on points, percentages, or predefined sets of provisions (modules).</p>
 
         <h3>Additional Concepts</h3>    
-        <p>Key concepts AG has and previously considered and continues to explore the following:
-            <ul><li>Bronze, Silver and Gold conformance levels: AG has considered using three traditionally named conformance levels. 
-                <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
-                    bronze level does not conform to WCAG 3.0. The subset will require enough requirements and
-                    assertions to improve <a>equity</a> across functional needs.</li>
-                <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
-                    organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
-                    accessibility.</li>
-                <li>Gold level identifies measures we want to include for those organizations that do achieve
-                    Silver so that some can stand out as exemplary, cutting edge, and role models.</li></ul>    
-                <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
-                <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or
-                    exceeding a goal. Example of possible adjectival ratings are:
+        <p>Key concepts AG has and previously considered and continues to explore the following:</p>
+        <ul><li>Bronze, Silver and Gold conformance levels: AG has considered using three traditionally named conformance levels. 
+            <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
+                bronze level does not conform to WCAG 3.0. The subset will require enough requirements and
+                assertions to improve <a>equity</a> across functional needs.</li>
+            <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
+                organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
+                accessibility.</li>
+            <li>Gold level identifies measures we want to include for those organizations that do achieve
+                Silver so that some can stand out as exemplary, cutting edge, and role models.</li></ul></li>
+            <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
+            <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or
+                exceeding a goal. Example of possible adjectival ratings are:
                 <ul>
                     <li>Fail, Pass, Exceptional; or</li>
                     <li>Fail, Progress, Pass, Better, Exceptional.</li>
                 </ul>
-                <li>Pre-assessment checks: Pre-Assessment checks are tests or criteria that implementers can use to determine if they are ready to
-                    assess conformance. The intent of specifying these would be to help implementers prepare for conformance
-                    testing, not to create a new level of conformance. </li>
-            </ul>  
+            </li>
+            <li>Pre-assessment checks: Pre-Assessment checks are tests or criteria that implementers can use to determine if they are ready to
+                assess conformance. The intent of specifying these would be to help implementers prepare for conformance
+                testing, not to create a new level of conformance. </li>
+        </ul>  
         <section id="accessibility-supported">
             <h3>Only accessibility-supported ways of using technologies</h3>
 
@@ -616,14 +624,8 @@
 
     <section class="appendix">
         <h2>Acknowledgements</h2>
-      <p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
-        <div data-include="../guidelines/acknowledgements/current-contributors.html" data-include-replace="true"></div>
-        <section class="appendix">
-        <h3>Prior Contributors</h3>
-        <div data-include="../guidelines/acknowledgements/previous-contributors.html" data-include-replace="true"></div>
-        <div data-include="../guidelines/acknowledgements/research-partners.html" data-include-replace="true"></div>
-        </section>
-        <div data-include="../guidelines/acknowledgements/funders.html" data-include-replace="true"></div>			
+        <p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
+        <Acknowledgements />
     </section>
 </body>
 
