@@ -5,8 +5,6 @@
 ---
 
 <script is:inline class="remove">
-  var version = "30";
-
   function titleToPathFrag(title) {
     return title
       .toLowerCase()
@@ -23,7 +21,6 @@
     for (i = 0; i < children.length; i++) {
       if (children[i].nodeType == 3) {
         return children[i];
-        break;
       }
     }
   }
@@ -92,11 +89,6 @@
     });
   }
 
-  var requirementTypeLabels = {
-    foundational: "Used to test the most basic level of accessibility.",
-    supplemental: "Used for higher levels of conformance.",
-  };
-
   function addRequirementType() {
     var requirements = document.querySelectorAll(".requirement");
     requirements.forEach(function (requirement) {
@@ -154,19 +146,6 @@
       var curVal = node.getAttribute("data-lt");
       if (curVal == null) curVal = "";
       node.setAttribute("data-lt", node.textContent + (curVal == "" ? "" : "|") + curVal);
-    });
-  }
-
-  function alternateFloats() {
-    var order = "odd";
-    document.querySelectorAll(".figure-float").forEach(function (node) {
-      if (order == "odd") {
-        node.classList.add("figure-float-odd");
-        order = "even";
-      } else {
-        node.classList.add("figure-float-even");
-        order = "odd";
-      }
     });
   }
 
@@ -251,16 +230,6 @@
 
       return returnVal;
     }
-  }
-
-  function loadDoc(path) {}
-
-  function moveStatusFilterToToc() {
-    var button = document.querySelector("#status-filter");
-    var button_parent = button.parentNode;
-    var toc = document.querySelector("#toc");
-    var toc_list = toc.querySelector("ol");
-    toc.insertBefore(button_parent.removeChild(button), toc_list);
   }
 
   // scripts before Respec has run
