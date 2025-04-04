@@ -1,0 +1,4 @@
+---
+synonyms:
+  - role
+---

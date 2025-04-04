@@ -1,0 +1,254 @@
+caption {
+	visibility: hidden;
+}
+:not(.head) > details {
+	padding: 1em;
+	color: #404040;
+	border: medium solid #d9d9d9;
+	background-color: #F3F3F3;
+}
+summary::after {
+	display: inline-block;
+	margin-top: -1em;
+	width: 3em;
+	position: relative;
+}
+summary::after {
+	right: 0em;
+	top: .25em;
+	float: right;
+}
+:not(.head) > details:focus summary::after, :not(.head) > details:hover summary::after {
+	background-color: #ffff99 ;
+	box-shadow: 0 0 1em .25em #ffff99;
+}
+.summary summary::after {
+	content: url(img/summary.svg);
+}
+.summaryEnd {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;  
+}
+
+.decision-tree summary::after {
+}
+
+/* removing for readability
+.howto-link, .outcome-link {
+	font-style: italic;
+} */
+
+.howto-link {
+	margin-top: 0;
+}
+
+a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
+	cursor: help;
+}
+.requirement h4, .requirement h5 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 100%;
+}
+.requirement .requirement-type {
+	font-size: 90%;
+	color: #404040;
+}
+
+.guideline {
+	margin-left: 4em;
+	position: relative;
+}
+
+.guideline .requirement {
+	margin-left: 4em;
+	position: relative;
+}
+
+.guideline-text, .requirement-text {
+	font-size: 110%;
+	margin-top: 0;
+}
+.guideline h3, .requirement h4, .requirement h5 {
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: .4em;
+}
+.guideline h3, .guideline h4 {
+font-size: 110%;
+color: black;
+}
+
+.guideline p {
+	margin-top: 0;
+}
+
+h2, h3, h4 {
+	width: 100%;
+	margin-bottom: .3em;
+	margin-top: .75em;
+}
+
+h4 {font-size: 110%}
+
+h5, h6 {
+	width: 100%;
+	font-style: normal !important;
+	margin-top: 1em;
+	margin-bottom: 0;
+
+}
+
+.methods h5, .errors h5, .rating h5 {
+	font-size: 100%;
+	color: #005A9C;
+}
+caption {
+	font-style: normal !important;
+	font-weight: bold;
+	font-size: 100% !important;
+}
+.figure-float {
+	float: right;
+	margin-left: 2em;
+	margin-right: 0;
+	margin-top: 0;
+}
+.figure-float-odd {
+	float: right;
+	margin-left: 2em;
+	margin-right: 0;
+}
+.figure-float-even {
+	float: left;
+	margin-right: 2em;
+	margin-left: 0;
+}
+.figure-full {
+	display: block;
+	margin: auto;
+}
+.screenshot {
+	width: 400px;
+}
+.note {
+	overflow: visible !important;
+}
+.marker {
+	position: relative;
+}
+.marker > a.self-link{
+	border: none;
+	color: inherit;
+	font-size: 83%;
+	height: 2em;
+	left: -3em;
+	opacity: .5;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+	transition: opacity .2s;
+	width: 2em;
+}
+.marker > a.self-link::before {
+	content: "§";
+	display: block;
+}
+.status-marker {
+  font-weight: 700;
+  font-size: 11px;
+  font-size: .6125rem;
+  line-height: 1.4;
+  vertical-align: middle;
+  margin-left: 1em;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.status-marker {
+	background: #d0e1f1;
+	color: #091832;  
+}
+a[href].status-link {
+	color: var(--text);
+}
+.status-filter 
+{
+	float: right;
+	border: thin solid #005A9C;
+	border-radius: 1ex;
+	padding: 1ex;
+	cursor: help;
+	text-indent: 0px;
+	font-weight: bolder;
+	font-size: .75em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+#guidelines > section {
+	margin-bottom: 4em;
+}
+
+#guidelines :is(h2, h3, h4, h5, h6) {
+	margin-top: 1em;
+}
+
+
+@media (min-width: 768px) { 
+	.guideline .body-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+.doclinks {
+	margin-left: 0.2em;
+}
+
+.doclinks a {
+	display: inline-block;
+	outline: 0;
+	padding: 5px 10px;
+	font-size: 90%;
+	line-height: 1.5;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #333 !important;
+}
+
+.doclinks a:focus, .doclinks a:hover {
+	color: #141414;
+	background-color: #f2f2f2;
+	border-color: #adadad;
+}
+
+.doclinks a:active {
+	outline: 0;
+	background-image: none;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+[class^="i-"] {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	vertical-align: middle;
+	margin-top: -.25em;
+}

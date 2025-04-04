@@ -4,34 +4,60 @@ on:
   push:
     branches:
       - main
-      - how-to-pages
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build_deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout git repository
+        uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
         with:
-          cache: 'npm'
-          cache-dependency-path: how-to/package-lock.json
-
-      - name: Static content copy
+          cache: npm
+          node-version-file: .nvmrc
+      - name: Install and build
         run: |
-          mkdir ./_site
-          cp -r ./guidelines ./_site/guidelines
-          cp -r ./explainer ./_site/explainer
-          cp -r ./requirements ./_site/requirements
-
-      - name: Eleventy Build how-to pages
+          npm ci
+          npm run build
+      - name: spec-generator
         run: |
-          npm --prefix ./how-to/ ci
-          npm --prefix ./how-to/ run build:gh-pages
-          npm --prefix ./how-to/ run copy-to-root
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+          cd dist/client/guidelines
+          tar cf ../../../guidelines.tar *
+          cd -
+          cd dist/client/explainer
+          tar cf ../../../explainer.tar *
+          cd -
+          cd dist/client/requirements
+          tar cf ../../../requirements.tar *
+          cd -
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@guidelines.tar -o dist/client/guidelines/index.html -f --retry 3
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
+          curl https://labs.w3.org/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
+      - name: Build and copy how-tos
+        run: |
+          cd how-to
+          npm ci
+          npm run build:gh-pages
+          cp -r _site ../dist/client/how-to
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          publish_dir: _site 
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          path: dist/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,15 @@
+---
+import { render } from "astro:content";
+import { getEntry } from "astro:content";
+import { getCollection } from "astro:content";
+
+const Contents = await Promise.all(
+  (await getCollection("acknowledgementsOrder")).map(async ({ id }) => {
+    const entry = await getEntry("acknowledgements", id);
+    if (!entry) throw new Error(`Unresolvable acknowledgement ID: ${id}`);
+    return (await render(entry)).Content;
+  })
+);
+---
+
+{Contents.map((Content) => <Content />)}

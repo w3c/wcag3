@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import { sortBy } from "lodash-es";
+
+import GlossaryDefinition from "./GlossaryDefinition.astro";
+import { computeTitle } from "@/lib/guidelines";
+
+const entries = sortBy(await getCollection("terms"), (entry) => computeTitle(entry));
+---
+
+<dl>
+  {entries.map((entry) => <GlossaryDefinition termEntry={entry} />)}
+</dl>

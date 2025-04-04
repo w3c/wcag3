@@ -1,0 +1,10 @@
+{
+  "children": [
+    "image-alternatives",
+    "media-alternatives",
+    "non-text-alternatives",
+    "figure-captions",
+    "single-sense"
+  ],
+  "status": "developing"
+}

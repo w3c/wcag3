@@ -1,0 +1,8 @@
+{
+  "children": [
+    "relationships",
+    "recognizable-layouts",
+    "orientation",
+    "structure"
+  ]
+}
