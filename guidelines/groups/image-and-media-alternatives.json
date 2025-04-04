@@ -2,7 +2,7 @@
   "children": [
     "image-alternatives",
     "media-alternatives",
-    "nontext-alternatives",
+    "non-text-alternatives",
     "figure-captions",
     "single-sense"
   ],
