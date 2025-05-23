@@ -1,12 +1,12 @@
 ---
 children:
-  - Readable blocks of text
-  - Readable text style
-  - Adjustable blocks of text
-  - Adjustable text style
-  - Content and functionality not lost with text adjustment
-  - Readable blocks of text
-  - Readable text style
+  - readable-blocks-of-text
+  - readable-text-style
+  - adjustable-blocks-of-text
+  - adjustable-text-style
+  - content-and-functionality-not-lost-with-text-adjustment
+  - readable-blocks-of-text
+  - readable-text-style
 ---
 
 Users can read visually rendered text.
