@@ -3,4 +3,79 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-The rendered text against its background meets a minimum :term[contrast ratio test] for its text appearance.
+The default/authored presentation of text meet the corresponding values for the content’s language (or the most similar language of the ones listed).
+
+:::ednote
+Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+<table>
+ <thead>
+   <tr>
+     <th>Characteristic</th>
+     <th>Arabic</th>
+     <th>Chinese</th>
+     <th>English</th>
+     <th>Hindi</th>
+     <th>Russian</th>
+   </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th>Font face</th>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+    <tr>
+       <th>Font size</th>
+       <td></td>
+       <td></td>
+       <td>Vertical viewing angle of ≥0.2° (~10pt at typical desktop viewing distances)</td>
+       <td></td>
+       <td></td>
+     </tr>  
+     <tr>
+       <th>Font width</th>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th>Text decoration</th>
+       <td></td>
+       <td></td>
+       <td>Most text is not bold, italicized, and/or underlined</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th>Letter spacing</th>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th>Capitalisation</th>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th>Hyphenation</th>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+    </tbody>
+</table>
