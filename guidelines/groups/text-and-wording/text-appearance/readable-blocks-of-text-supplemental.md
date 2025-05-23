@@ -5,6 +5,10 @@ status: exploratory
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the content’s language (or the most similar language of the ones listed).
 
+:::ednote
+Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+:::
+
 <table>
  <thead>
    <tr>
@@ -59,7 +63,3 @@ The default/authored presentation of :term[blocks of text] meets the correspondi
      </tr>
     </tbody>
 </table>
-
-:::ednote
-Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
-:::
