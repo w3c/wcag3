@@ -9,7 +9,7 @@ The default/authored presentation of text meet the corresponding values for the 
 Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
 :::
 
-<table>
+<table class="data">
  <thead>
    <tr>
      <th>Characteristic</th>

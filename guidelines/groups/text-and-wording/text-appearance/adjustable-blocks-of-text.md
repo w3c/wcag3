@@ -9,7 +9,7 @@ The user can adjust the presentation of :term[blocks of text] to meet the corres
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
 :::
 
-<table>
+<table class="data">
  <thead>
    <tr>
      <th>Characteristic</th>
