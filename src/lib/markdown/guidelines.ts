@@ -54,10 +54,18 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which foundational requirements apply?</summary>",
         });
-      } else if (isTerm && node.name === "ednote") {
+      } else if (node.name === "ednote") {
         const data = node.data || (node.data = {});
         data.hName = "div";
         data.hProperties = { class: "ednote" };
+      } else if (node.name === "example") {
+        const data = node.data || (node.data = {});
+        data.hName = "aside";
+        data.hProperties = { class: "example" };
+      } else if (node.name === "note") {
+        const data = node.data || (node.data = {});
+        data.hName = "div";
+        data.hProperties = { class: "note" };
       }
     } else if (node.type === "textDirective") {
       if (node.name === "term") {

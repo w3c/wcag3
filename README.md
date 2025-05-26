@@ -144,6 +144,26 @@ For each item:
 :::
 ```
 
+#### Examples
+
+The following block will be transformed into a yellow "Example" box:
+
+```
+:::example
+Your content here
+:::
+```
+
+#### Notes
+
+The following block will be transformed into a green "Note" box:
+
+```
+:::note
+Your content here
+:::
+```
+
 #### Editor's notes
 
 The following block will be transformed into a green "Editor's Note" box:
