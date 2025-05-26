@@ -149,6 +149,59 @@
     });
   }
 
+  const findParentSectionOrDefinition = (el) => el.closest("dd") || el.closest("section");
+
+  /** Numbers notes when there are multiple in one section. */
+  function numberNotes() {
+    // Include :has to skip editor's notes
+    const noteSelector = ".note:has(.note-title span)";
+    const sectionsWithNotes = new Set();
+    document.querySelectorAll(noteSelector).forEach((note) => {
+      sectionsWithNotes.add(findParentSectionOrDefinition(note));
+    });
+
+    sectionsWithNotes.forEach((sec) => {
+      const notes = Array.from(sec.querySelectorAll(noteSelector)).filter(
+        // Only process direct descendants
+        (el) => findParentSectionOrDefinition(el) === sec
+      );
+      // Leave single note alone; 0 notes shouldn't happen based on previous loop
+      if (notes.length < 2) return;
+      // Number multiple notes
+      notes.forEach((note, i) => {
+        const span = note.querySelector(".note-title span");
+        span.textContent = "Note " + (i + 1);
+      });
+    });
+  }
+
+  /**
+   * Changes the numbering of examples to remove number from a lone example in a section,
+   * and restart numbering for multiple in each section.
+   */
+  function renumberExamples() {
+    const sectionsWithExamples = new Set();
+    document.querySelectorAll(".example").forEach((example) => {
+      sectionsWithExamples.add(findParentSectionOrDefinition(example));
+    });
+
+    sectionsWithExamples.forEach((sec) => {
+      const examples = Array.from(sec.querySelectorAll(".example")).filter(
+        // Only process direct descendants
+        (el) => findParentSectionOrDefinition(el) === sec
+      );
+      // No examples shouldn't happen based on previous loop
+      if (!examples.length) return;
+      // Remove numbering on single example, or update numbering on multiple
+      const rmOrAdd = examples.length === 1 ? "rm" : "add";
+      sec.querySelectorAll(".example").forEach((example, i) => {
+        var marker = example.querySelector(".marker");
+        if (rmOrAdd == "rm") marker.textContent = "Example";
+        else marker.textContent = "Example " + (i + 1);
+      });
+    });
+  }
+
   // somewhere along the chain image sizes are being added where I don't want them, doesn't happen locally
   function removeImgSize() {
     document.querySelectorAll("img").forEach(function (node) {
@@ -230,23 +283,6 @@
 
       return returnVal;
     }
-  }
-
-  // scripts before Respec has run
-  function preRespec() {
-    addSummaryMarkers();
-    adjustDfnData();
-  }
-
-  // scripts after Respec has run
-  function postRespec() {
-    adjustNormativity();
-    removeDraftMethodLinks();
-    removeRequirementNum();
-    addRequirementType();
-    addStatusMarkers();
-    removeImgSize();
-    outputJson();
   }
 
   respecConfig = {
@@ -371,8 +407,18 @@
 
     maxTocLevel: 4,
 
-    preProcess: [preRespec],
-    postProcess: [postRespec],
+    preProcess: [addSummaryMarkers, adjustDfnData],
+    postProcess: [
+      adjustNormativity,
+      removeDraftMethodLinks,
+      removeRequirementNum,
+      addRequirementType,
+      addStatusMarkers,
+      numberNotes,
+      renumberExamples,
+      removeImgSize,
+      outputJson,
+    ],
 
     localBiblio: {
       "WCAG3-requirements": {
