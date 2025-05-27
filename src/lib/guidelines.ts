@@ -1,7 +1,57 @@
 import { getCollection, getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
 import capitalize from "lodash-es/capitalize";
 
-let groupIds = (await getCollection("groupOrder")).map(({ id }) => id);
+/**
+ * Returns a filtered list of group IDs, excluding any that would become empty upon filtering
+ * the group's children based on environment variables.
+ */
+async function getFilteredGroups() {
+  const filteredIds: string[] = [];
+  for (const groupId of (await getCollection("groupOrder")).map(({ id }) => id)) {
+    const guidelines = await getFilteredGuidelines(groupId);
+    if (guidelines.length) filteredIds.push(groupId);
+  }
+  return filteredIds;
+}
+
+/**
+ * Returns a filtered list of guideline slugs under the given group, excluding any that would
+ * become empty upon filtering the guideline's children based on environment variables.
+ */
+async function getFilteredGuidelines(groupId: string) {
+  const group = await getEntry("groups", groupId);
+  if (!group) throw new Error(`Unresolvable group ID: ${groupId}`);
+
+  const filteredSlugs: string[] = [];
+  for (const guidelineSlug of group.data.children) {
+    const requirements = await getFilteredRequirements(groupId, guidelineSlug);
+    if (requirements.length) filteredSlugs.push(guidelineSlug);
+  }
+  return filteredSlugs;
+}
+
+/**
+ * Returns a filtered list of requirement/assertion slugs under the given group and guideline,
+ * excluding any marked as needing additional research if WCAG_SKIP_RESEARCH is set.
+ */
+async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
+  const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
+  if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
+
+  const filteredRequirements: string[] = [];
+  for (const requirementSlug of guideline.data.children) {
+    const requirement = await getEntry(
+      "requirements",
+      `${groupId}/${guidelineSlug}/${requirementSlug}`
+    );
+    if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
+    if (requirement?.data.needsAdditionalResearch && import.meta.env.WCAG_SKIP_RESEARCH) continue;
+    filteredRequirements.push(requirementSlug);
+  }
+  return filteredRequirements;
+}
+
+let groupIds = await getFilteredGroups();
 let groups: Record<string, CollectionEntry<"groups">> = {};
 let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
 let requirements: Record<string, CollectionEntry<"requirements">> = {};
@@ -12,11 +62,13 @@ export async function buildGuidelinesHierarchy() {
     for (const groupId of groupIds) {
       const group = await getEntry("groups", groupId);
       if (!group) throw new Error(`Unresolvable group ID: ${groupId}`);
+      group.data.children = await getFilteredGuidelines(groupId);
       groups[group.id] = group;
 
       for (const guidelineSlug of group.data.children) {
         const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
         if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
+        guideline.data.children = await getFilteredRequirements(groupId, guidelineSlug);
         guidelines[guideline.id] = guideline;
 
         for (const requirementSlug of guideline.data.children) {
