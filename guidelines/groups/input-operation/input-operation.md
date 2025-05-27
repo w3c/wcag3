@@ -3,6 +3,7 @@ children:
   - all-content-keyboard-accessible
   - change-keyboard-focus-with-pointer-device
   - concurrent-inputs
+  - gesture-alternative
   - hover-information
   - input-control
   - input-method-flexibility
