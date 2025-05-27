@@ -1,10 +1,18 @@
 import { getCollection, getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
 import capitalize from "lodash-es/capitalize";
 
-let groupIds = (await getCollection("groupOrder")).map(({ id }) => id);
-let groups: Record<string, CollectionEntry<"groups">> = {};
-let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
-let requirements: Record<string, CollectionEntry<"requirements">> = {};
+/**
+ * Returns a filtered list of group IDs, excluding any that would become empty upon filtering
+ * the group's children based on environment variables.
+ */
+async function getFilteredGroups() {
+  const filteredIds: string[] = [];
+  for (const groupId of (await getCollection("groupOrder")).map(({ id }) => id)) {
+    const guidelines = await getFilteredGuidelines(groupId);
+    if (guidelines.length) filteredIds.push(groupId);
+  }
+  return filteredIds;
+}
 
 /**
  * Returns a filtered list of guideline slugs under the given group, excluding any that would
@@ -42,6 +50,11 @@ async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
   }
   return filteredRequirements;
 }
+
+let groupIds = await getFilteredGroups();
+let groups: Record<string, CollectionEntry<"groups">> = {};
+let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
+let requirements: Record<string, CollectionEntry<"requirements">> = {};
 
 export async function buildGuidelinesHierarchy() {
   // Cache collated collection data for subsequent calls
