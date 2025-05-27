@@ -1,5 +1,6 @@
 ---
 children:
+  - all-content-keyboard-accessible
   - concurrent-inputs
   - hover-information
   - input-control
