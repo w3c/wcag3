@@ -1,6 +1,7 @@
 ---
 children:
   - all-content-keyboard-accessible
+  - change-keyboard-focus-with-pointer-device
   - concurrent-inputs
   - hover-information
   - input-control
