@@ -1,3 +1,5 @@
 ---
 status: developing
+synonyms:
+  - essential
 ---
