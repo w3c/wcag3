@@ -2,6 +2,7 @@
 children:
   - all-elements-keyboard-actionable
   - all-content-keyboard-accessible
+  - bidirectional-navigation
   - comparable-keyboard-effort
   - conflicting-keyboard-commands
   - consistent-keyboard-interaction
