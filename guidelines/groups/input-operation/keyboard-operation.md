@@ -7,9 +7,11 @@ children:
   - conflicting-keyboard-commands
   - consistent-keyboard-interaction
   - keyboard-mode
+  - keyboard-navigable-if-responsive
   - keyboard-only
   - no-keyboard-trap
   - non-standard-commands
+  - user-control-of-keyboard-focus
 ---
 
 Users can navigate and operate content using only the keyboard.
