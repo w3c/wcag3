@@ -9,4 +9,4 @@ children:
   - non-standard-commands
 ---
 
-Users can navigate and operate content using only the keyboard focus.
+Users can navigate and operate content using only the keyboard.
