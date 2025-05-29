@@ -1,7 +1,5 @@
 ---
 children:
-  - all-content-keyboard-accessible
-  - all-elements-keyboard-actionable
   - bidirectional-navigation
   - change-keyboard-focus-with-pointer-device
   - concurrent-inputs
