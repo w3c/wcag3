@@ -1,5 +1,6 @@
 ---
 status: exploratory
+type: foundational
 ---
 
-If keyboard focus can be moved to an :term[interactive component], then the keyboard focus can be moved away from that component, or the component can be dismissed, with focus returning to the previous point.
+It is always possible to navigate away from an element after navigating to, or entering, or activating an element by using a :term[common keyboard navigation technique], or is described on the :term[view] where it is required or on a :term[view] earlier in the process where it is used.

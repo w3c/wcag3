@@ -1,5 +1,6 @@
 ---
 status: exploratory
+type: foundational
 ---
 
 All :term[content] that can be accessed by other input modalities can be accessed using keyboard interface only.

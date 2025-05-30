@@ -12,6 +12,7 @@ children:
   - no-keyboard-trap
   - non-standard-commands
   - user-control-of-keyboard-focus
+  - relevant-keyboard-focus
 ---
 
 Users can navigate and operate content using only the keyboard.

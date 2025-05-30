@@ -1,5 +1,6 @@
 ---
 status: exploratory
+type: foundational
 ---
 
-If the [page/:term[view]] uses responsive design, the [page/:term[view]] remains fully keyboard navigable.
+If the :term[view] uses responsive design, the :term[view] remains fully keyboard navigable.

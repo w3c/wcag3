@@ -8,6 +8,7 @@ children:
   - input-control
   - input-method-flexibility
   - use-without-body-movement
+  - input-method-flexibility-no-exception
 ---
 
 Users can use different input techniques and combinations and switch between them.

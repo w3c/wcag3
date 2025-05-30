@@ -1,5 +1,6 @@
 ---
 status: exploratory
+type: foundational
 ---
 
 When receiving and then removing :term[pointer] hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
