@@ -2,10 +2,14 @@
 status: developing
 ---
 
-Collection of software components that runs on an underlying software or hardware layer, and that provides a set of software services to other software components that allows those applications to be isolated from the underlying software or hardware layer (from [[iso13066-1]] [i.19]).
+Software, or collection of layers of software, that lie below the subject software and provide services to the subject software and that allows the subject software to be isolated from the hardware, drivers, and other software below.
 
 :::note
-A particular software component might play the role of a platform in some situations and a client in others.
+Platform software both makes it easier for subject software to run on different hardware, and provides the subject software with many services (e.g. functions, utilities, libraries) that make the subject software easier to write, keep updated, and work more uniformly with other subject software.
+:::
+
+:::note
+A particular software component might play the role of a platform in some situations and a client in others. For example a browser is a platform for the content of the page but it also relies on the operating system below it.
 :::
 
 :::note

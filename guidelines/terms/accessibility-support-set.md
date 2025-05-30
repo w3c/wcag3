@@ -5,7 +5,7 @@ status: developing
 The group of user agents and assistive technologies you test with.
 
 :::ednote
-The AG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines.
+The AGWG is considering defining a default set of user agents and assistive technologies that they use when validating guidelines.
 
 Accessibility support sets may vary based on language, region, or situation.
 
