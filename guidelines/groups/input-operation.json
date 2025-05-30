@@ -2,6 +2,7 @@
   "children": [
     "input-operation",
     "content-changes",
+    "physical-or-cognitive-effort-when-using-keyboard",
     "target-size",
     "keyboard-operation",
     "gestures",

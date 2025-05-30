@@ -1,0 +1,13 @@
+---
+status: exploratory
+type: foundational
+---
+
+If any keyboard action needed to navigate, perceive, and operate the full content of the [page/:term[view]] is not a common keyboard navigation technique, then it is described on the [page/:term[view]] where it is required or on a [page/:term[view]] earlier in the :term[process] where it is used. 
+
+:::note
+Any platform related functions are not the responsibility of the author as long as they are not defeated by the content. Examples:
+
+- <kbd>Tab</kbd> and <kbd><kbd>Shift</kbd> + <kbd>Tab</kbd></kbd> to move through elements
+- Sticky Keys functionality that allows single key activation of multi-key commands
+:::
