@@ -124,6 +124,25 @@ Represents each `dt`/`dd` pair appearing in the Glossary section.
 
 **Note:** If a term file is empty, a "to be defined" Editor's Note will be inserted.
 
+### Additional Markdown features
+
+#### Definition lists
+
+Definition lists can be specified directly in Markdown via the following format:
+
+```
+Term
+:   Definition
+
+Another term
+:   Another definition
+
+Shared term
+Another shared term
+:   Shared definition
+:   Another shared definition
+```
+
 ### Custom directives for guidelines Markdown
 
 For more concrete examples, search for these directives in the repository.
@@ -141,6 +160,26 @@ For each item:
    - No, fail.
 1. Would A do Z?
    - ...
+:::
+```
+
+#### Examples
+
+The following block will be transformed into a yellow "Example" box:
+
+```
+:::example
+Your content here
+:::
+```
+
+#### Notes
+
+The following block will be transformed into a green "Note" box:
+
+```
+:::note
+Your content here
 :::
 ```
 
