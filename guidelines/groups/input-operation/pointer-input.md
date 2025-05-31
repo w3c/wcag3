@@ -1,9 +1,13 @@
 ---
 children:
   - consistent-pointer-cancellation
+  - consistent-pointer-cancellation-set-of-pages-views
   - pointer-cancellation
   - pointer-pressure-alternative
+  - pointer-pressure-alternative-no-exception
+  - pointer-speed-adjustable
   - pointer-speed-alternative
+  - pointer-speed-alternative-no-exception
   - simple-pointer-input
 ---
 
