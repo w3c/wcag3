@@ -4,7 +4,7 @@ import node from "@astrojs/node";
 // when https://github.com/withastro/astro/issues/12689 is resolved
 import { load } from "cheerio";
 import fg from "fast-glob";
-import remarkDefinitionList from "remark-definition-list";
+import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
 
 import { readFile, writeFile } from "fs/promises";
@@ -26,6 +26,10 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkDirective, remarkDefinitionList, ...guidelinesRemarkPlugins],
     rehypePlugins: [...guidelinesRehypePlugins],
+    remarkRehype: {
+      // https://github.com/wataru-chocola/remark-definition-list/issues/50#issuecomment-1445130314
+      handlers: { ...defListHastHandlers }
+    }
   },
   experimental: {
     contentIntellisense: true,
