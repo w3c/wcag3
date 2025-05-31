@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - single pointer inputs
 ---
 
 An input modality that only targets a single point on the :term[view] at a time – such as a mouse, single finger on a touch screen, or stylus.
