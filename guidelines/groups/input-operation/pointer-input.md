@@ -1,6 +1,7 @@
 ---
 children:
   - consistent-pointer-cancellation
+  - pointer-cancellation
   - pointer-pressure-alternative
   - pointer-speed-alternative
   - simple-pointer-input
