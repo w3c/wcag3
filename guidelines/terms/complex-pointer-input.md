@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - complex pointer inputs
 ---
 
 Any pointer input other than a :term[single pointer] input.
