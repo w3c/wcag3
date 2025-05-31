@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - assistive technologies
 ---
 
 Hardware and/or software that acts as a :term[user agent], or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents

@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - user agents
 ---
 
 Any software that retrieves and presents external content for users.
