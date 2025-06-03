@@ -3,7 +3,6 @@ children:
   - change-focus-with-pointer-device
   - complex-pointer-inputs
   - pointer-agnostic
-  - pointer-cancellation
   - specific-pressure
   - speed-insensitive
 ---
