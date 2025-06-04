@@ -314,6 +314,7 @@ built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
 
-### `WCAG_SKIP_RESEARCH`
+### `WCAG_SKIP_WIP`
 
-When set, excludes requirements/assertions that have `needsAdditionalResearch` set to `true`.
+When set, excludes requirements/assertions that have `needsAdditionalResearch` set to `true`,
+or that have `status` set to `placeholder` or `exploratory`.

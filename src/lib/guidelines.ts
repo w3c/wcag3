@@ -3,7 +3,7 @@ import capitalize from "lodash-es/capitalize";
 
 /**
  * Returns a filtered list of requirement/assertion slugs under the given group and guideline,
- * excluding any marked as needing additional research if WCAG_SKIP_RESEARCH is set.
+ * excluding any marked as needing additional research if WCAG_SKIP_WIP is set.
  */
 async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
   const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
@@ -16,7 +16,13 @@ async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
       `${groupId}/${guidelineSlug}/${requirementSlug}`
     );
     if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
-    if (requirement?.data.needsAdditionalResearch && import.meta.env.WCAG_SKIP_RESEARCH) continue;
+    if (
+      import.meta.env.WCAG_SKIP_WIP &&
+      (requirement.data.needsAdditionalResearch ||
+        requirement.data.status === "placeholder" ||
+        requirement.data.status === "exploratory")
+    )
+      continue;
     filteredRequirements.push(requirementSlug);
   }
   return filteredRequirements;
