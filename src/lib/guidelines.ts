@@ -2,35 +2,6 @@ import { getCollection, getEntry, type CollectionEntry, type CollectionKey } fro
 import capitalize from "lodash-es/capitalize";
 
 /**
- * Returns a filtered list of group IDs, excluding any that would become empty upon filtering
- * the group's children based on environment variables.
- */
-async function getFilteredGroups() {
-  const filteredIds: string[] = [];
-  for (const groupId of (await getCollection("groupOrder")).map(({ id }) => id)) {
-    const guidelines = await getFilteredGuidelines(groupId);
-    if (guidelines.length) filteredIds.push(groupId);
-  }
-  return filteredIds;
-}
-
-/**
- * Returns a filtered list of guideline slugs under the given group, excluding any that would
- * become empty upon filtering the guideline's children based on environment variables.
- */
-async function getFilteredGuidelines(groupId: string) {
-  const group = await getEntry("groups", groupId);
-  if (!group) throw new Error(`Unresolvable group ID: ${groupId}`);
-
-  const filteredSlugs: string[] = [];
-  for (const guidelineSlug of group.data.children) {
-    const requirements = await getFilteredRequirements(groupId, guidelineSlug);
-    if (requirements.length) filteredSlugs.push(guidelineSlug);
-  }
-  return filteredSlugs;
-}
-
-/**
  * Returns a filtered list of requirement/assertion slugs under the given group and guideline,
  * excluding any marked as needing additional research if WCAG_SKIP_RESEARCH is set.
  */
@@ -51,7 +22,7 @@ async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
   return filteredRequirements;
 }
 
-let groupIds = await getFilteredGroups();
+let groupIds = (await getCollection("groupOrder")).map(({ id }) => id);
 let groups: Record<string, CollectionEntry<"groups">> = {};
 let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
 let requirements: Record<string, CollectionEntry<"requirements">> = {};
@@ -62,7 +33,6 @@ export async function buildGuidelinesHierarchy() {
     for (const groupId of groupIds) {
       const group = await getEntry("groups", groupId);
       if (!group) throw new Error(`Unresolvable group ID: ${groupId}`);
-      group.data.children = await getFilteredGuidelines(groupId);
       groups[group.id] = group;
 
       for (const guidelineSlug of group.data.children) {
