@@ -11,4 +11,4 @@ children:
   - input-method-flexibility-no-exception
 ---
 
-Users can use different input techniques and combinations and switch between them.
+Users have the option to use different input techniques and combinations and switch between them.
