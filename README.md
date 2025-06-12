@@ -209,7 +209,7 @@ and can be used inline within blocks of text:
 General notes:
 
 - All instructions/examples in this section operate within the `guidelines` folder
-- File and folder names should be in kebab-case (all lowercase, hyphen-delimited)
+- File and folder names should be in [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) (all lowercase, hyphen-delimited)
 - [See `title` under Common Fields](#common-fields) above regarding how
   entry names map to titles by default, and how to override with a custom title
 - Remember to add appropriate frontmatter; see the subsection under
