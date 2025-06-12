@@ -5,7 +5,6 @@ children:
   - speech-alternative
   - real-time-bidirectional-voice-communication
   - voice-identification
-  - unique-visible-identifier
   - unique-visible-label
 ---
 
