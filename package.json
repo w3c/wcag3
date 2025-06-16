@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.2",
     "@astrojs/node": "^9.2.2",
-    "astro": "^5.8.2",
+    "astro": "^5.9.3",
     "cheerio": "^1.0.0",
     "fast-glob": "^3.3.3",
     "hast-util-to-html": "^9.0.4",
