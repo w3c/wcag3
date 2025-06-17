@@ -6,6 +6,7 @@ caption {
 	color: #404040;
 	border: medium solid #d9d9d9;
 	background-color: #F3F3F3;
+	clear: both;
 }
 summary::after {
 	display: inline-block;
@@ -63,6 +64,15 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #404040;
 }
 
+:is(.guideline, .requirement) > :is(p, ul, ol) {
+	font-size: 110%;
+	margin-top: 0;
+}
+
+.guideline, .requirement {
+	clear: both;
+}
+
 .guideline {
 	margin-left: 4em;
 	position: relative;
@@ -73,10 +83,6 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	position: relative;
 }
 
-.guideline-text, .requirement-text {
-	font-size: 110%;
-	margin-top: 0;
-}
 .guideline h3, .requirement h4, .requirement h5 {
 	width: 100%;
 	margin-bottom: 0;
@@ -207,14 +213,10 @@ section {
 
 
 @media (min-width: 768px) { 
-	.guideline .body-wrapper {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
+	.guideline .doclinks {
+		float: right;
+		width: 33%;
 	}
-}
-
-.doclinks {
-	margin-left: 0.2em;
 }
 
 .doclinks a {
