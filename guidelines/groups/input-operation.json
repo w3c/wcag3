@@ -2,11 +2,11 @@
   "children": [
     "input-operation",
     "content-changes",
+    "keyboard-interface-input",
     "physical-or-cognitive-effort-when-using-keyboard",
     "pointer-input",
     "speech-and-voice-input",
     "target-size",
-    "keyboard-operation",
     "motion-input"
   ],
   "title": "Input / operation"

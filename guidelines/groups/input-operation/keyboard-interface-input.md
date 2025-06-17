@@ -3,7 +3,7 @@ children:
   - all-elements-keyboard-actionable
   - all-content-keyboard-accessible
   - bidirectional-navigation
-  - comparable-keyboard-effort
+  - comparable-keyboard-effort-best-practice
   - conflicting-keyboard-commands
   - consistent-keyboard-interaction
   - keyboard-mode
