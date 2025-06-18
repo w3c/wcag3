@@ -26,10 +26,13 @@ function processHtml() {
   if (!howtoSlug) return entryHtml;
 
   const $ = load(entryHtml, null, false);
-  const $wrappableElement = $("p, ul, ol").first();
+  const $wrappableElement = $("p, ul, ol")
+    // Exclude nested elements (e.g. inside of a Note)
+    .filter((_, el) => !$(el).parent().length)
+    .first();
   if (!$wrappableElement.length)
     throw new Error(`${entry.id}: Can't find element to wrap with link to how-tos`);
-  
+
   $wrappableElement.wrap(`<div class="body-wrapper"></div>`).after(`
     <aside class="doclinks">
       <p>
