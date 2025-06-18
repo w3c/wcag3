@@ -6,7 +6,6 @@ caption {
 	color: #404040;
 	border: medium solid #d9d9d9;
 	background-color: #F3F3F3;
-	clear: both;
 }
 summary::after {
 	display: inline-block;
@@ -64,13 +63,9 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #404040;
 }
 
-:is(.guideline, .requirement) > :is(p, ul, ol) {
+:is(.guideline, .requirement, .body-wrapper) > :is(p, ul, ol) {
 	font-size: 110%;
 	margin-top: 0;
-}
-
-.guideline, .requirement {
-	clear: both;
 }
 
 .guideline {
@@ -213,10 +208,14 @@ section {
 
 
 @media (min-width: 768px) { 
-	.guideline .doclinks {
-		float: right;
-		width: 33%;
+	.guideline .body-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
 	}
+}
+
+.doclinks {
+	margin-left: 0.2em;
 }
 
 .doclinks a {
