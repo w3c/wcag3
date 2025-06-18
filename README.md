@@ -76,11 +76,11 @@ These are available to multiple data types, as specified in each respective sect
 
 - `children` - A list containing every slug found under a parent entry's corresponding subdirectory,
   in the order they are intended to be listed in the document
-- `howto` - Optional boolean or string indicating the presence of a howto page
+- `howto` - *Deprecated* Optional boolean or string indicating the presence of a howto page
   for the given guideline or requirement
   - `true` indicates the slug to reach the howto is consistent with the folder and filename of the current file
   - A string value indicates an exact slug
-  - This is likely to change when the howto documentation is revisited
+  - *This should currently be avoided until the informative documentation is revisited*
 - `status` - Optional string: one of the status indicators outlined in the Explainer (in lowercase)
 - `title` - Optional title of the guideline, requirement, or term
   - If unspecified, this will be derived from the slug,
