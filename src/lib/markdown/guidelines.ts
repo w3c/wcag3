@@ -1,7 +1,5 @@
-import type { RehypePlugin, RemarkPlugin } from "@astrojs/markdown-remark";
-import type { RootContent } from "hast";
+import type { RemarkPlugin } from "@astrojs/markdown-remark";
 
-import { toHtml } from "hast-util-to-html";
 import { visit } from "unist-util-visit";
 import type { VFile } from "vfile";
 
