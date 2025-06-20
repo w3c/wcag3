@@ -1,7 +1,5 @@
-import type { RehypePlugin, RemarkPlugin } from "@astrojs/markdown-remark";
-import type { RootContent } from "hast";
+import type { RemarkPlugin } from "@astrojs/markdown-remark";
 
-import { toHtml } from "hast-util-to-html";
 import { visit } from "unist-util-visit";
 import type { VFile } from "vfile";
 
@@ -76,33 +74,5 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
   });
 };
 
-/** Extracts leading paragraphs/lists' HTML to a separate value. */
-const extractLeadingContent: RehypePlugin = () => (tree, file) => {
-  if (!isGuidelineFile(file)) return;
-  const contentTags = ["p", "ul", "ol"];
-  const leadingElements: RootContent[] = [];
-  const textClass = `${getGuidelineFileType(file)}-text`;
-
-  for (
-    let child = tree.children[0];
-    child?.type === "text" || (child?.type === "element" && contentTags.includes(child.tagName));
-    tree.children.shift() && (child = tree.children[0])
-  ) {
-    if (child.type === "element") {
-      const existingClass = child.properties.class;
-      if (existingClass) child.properties.class += ` ${textClass}`;
-      else child.properties.class = textClass;
-    }
-    leadingElements.push(child);
-  }
-  if (!leadingElements.length) file.fail("Leading content expected but not found.");
-
-  const html = toHtml(leadingElements, {
-    allowDangerousCharacters: true,
-    allowDangerousHtml: true,
-  });
-  getFrontmatter(file).description = html;
-};
-
 export const guidelinesRemarkPlugins = [addEmptyTermNote, customDirectives];
-export const guidelinesRehypePlugins = [extractLeadingContent];
+export const guidelinesRehypePlugins = [];
