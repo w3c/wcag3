@@ -1,14 +1,13 @@
 import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
-// TODO: dynamically import cheerio only when needed,
-// when https://github.com/withastro/astro/issues/12689 is resolved
+import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { load } from "cheerio";
 import fg from "fast-glob";
 import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
 
 import { readFile, writeFile } from "fs/promises";
-import { join } from "path";
+import { basename, dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 import { guidelinesRehypePlugins, guidelinesRemarkPlugins } from "./src/lib/markdown/guidelines";
@@ -28,14 +27,63 @@ export default defineConfig({
     rehypePlugins: [...guidelinesRehypePlugins],
     remarkRehype: {
       // https://github.com/wataru-chocola/remark-definition-list/issues/50#issuecomment-1445130314
-      handlers: { ...defListHastHandlers }
-    }
+      handlers: { ...defListHastHandlers },
+    },
   },
   experimental: {
     contentIntellisense: true,
     preserveScriptOrder: true,
   },
   integrations: [
+    {
+      /** Checks for mismatched children array vs. subdirectory contents */
+      name: "children-check",
+      hooks: {
+        "astro:build:start": async () => {
+          const groupsPath = join("guidelines", "groups");
+          const groupFilenames = await fg.glob(join(groupsPath, "*.json"), {
+            ignore: [join(groupsPath, "index.json")],
+          });
+
+          // Check at group level (index.json -> *.json)
+          const listedCount = JSON.parse(
+            await readFile(join(groupsPath, "index.json"), "utf8")
+          ).length;
+          const actualCount = groupFilenames.length;
+          if (listedCount !== actualCount) {
+            throw new Error(
+              `Group index.json lists ${listedCount} children but there are ${actualCount} files`
+            );
+          }
+
+          // Check at group->guideline level (*.json -> */*.md)
+          for (const filename of groupFilenames) {
+            const id = basename(filename, ".json");
+            const data = JSON.parse(await readFile(filename, "utf8"));
+
+            const actualCount = (await fg.glob(join(groupsPath, id, "*.md"))).length;
+            if (data.children.length !== actualCount) {
+              throw new Error(
+                `Group ${id} lists ${data.children.length} children but has ${actualCount} files`
+              );
+            }
+          }
+
+          // Check at guideline level (*/*.md -> */*/*.md)
+          for (const filename of await fg.glob(join(groupsPath, "*", "*.md"))) {
+            const id = join(basename(dirname(filename)), basename(filename, ".md"));
+            const data = parseFrontmatter(await readFile(filename, "utf8")).frontmatter;
+
+            const actualCount = (await fg.glob(join(groupsPath, id, "*.md"))).length;
+            if (data.children.length !== actualCount) {
+              throw new Error(
+                `Group ${id} lists ${data.children.length} children but has ${actualCount} files`
+              );
+            }
+          }
+        },
+      },
+    },
     {
       /** Filters output to reduce diff noise, esp. due to script/style/dependency updates */
       name: "diffable-html",
