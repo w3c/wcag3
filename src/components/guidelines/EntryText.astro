@@ -22,7 +22,12 @@ const howtoPath = parentHowto
 const baseUrl = "https://w3c.github.io/wcag3/how-to/";
 
 function processHtml() {
-  const entryHtml = entry.rendered!.html;
+  if (!entry.rendered) {
+    throw new Error(
+      `EntryText: No rendered HTML found for ${entry.id}; check for Markdown parse failures earlier in log`
+    );
+  }
+  const entryHtml = entry.rendered.html;
   if (!howtoSlug) return entryHtml;
 
   const $ = load(entryHtml, null, false);
