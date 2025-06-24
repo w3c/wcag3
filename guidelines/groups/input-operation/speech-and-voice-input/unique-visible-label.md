@@ -6,5 +6,5 @@ type: supplemental
 Each :term[interactive element] has unique label associated with it to allow unambiguous voice control
 
 :::note
-"Associated with it" does not mean that each element has its own label. Instead, it means that it can be unambiguously specified using the visual labels on the :term[view].
+This is helpful so that elements can be referred to in a voice command without having to invoke "show numbers" or "show a unique name" feature that is in all voice control software.
 :::

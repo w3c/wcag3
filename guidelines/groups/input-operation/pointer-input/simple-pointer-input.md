@@ -12,3 +12,7 @@ Examples of :term[pointer] input that are not simple pointer input are double cl
 :::note
 :term[Complex pointer inputs] are not banned, they just can't be the only way to accomplish an action.
 :::
+
+:::note
+:term[Simple pointer input] is different than :term[single pointer input] and is more restrictive than simply using a single pointer.
+:::
