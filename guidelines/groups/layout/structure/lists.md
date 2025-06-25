@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 ---
 
-Three or more :term[items] of related data are presented as bulleted or numbered lists.
+Lists must be visually, semantically, and structurally identifiable as a collection of related :term[items]. The relationship between list items should be clear, allowing users to perceive, understand, and navigate the list effectively, including with :term[assistive technologies].
