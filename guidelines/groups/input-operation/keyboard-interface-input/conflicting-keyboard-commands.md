@@ -1,6 +1,6 @@
 ---
-status: exploratory
+status: developing
 type: foundational
 ---
 
-Authored keyboard commands do not conflict with platform commands or they can be remapped.
+Author generated keyboard commands do not conflict with :term[standard platform keyboard commands] or they can be remapped.
