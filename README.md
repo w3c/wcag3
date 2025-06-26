@@ -93,6 +93,7 @@ Each group is defined in a JSON file, with its child guidelines located in a
 subdirectory with the same name.
 
 - Supports [common fields](#common-fields): `children`, `status`
+  - `status` for groups is optional, limited to `developing`, `refining`, `mature`
 - No additional unique fields
 
 #### Guidelines
@@ -102,6 +103,7 @@ listed under. Each guideline is defined in a Markdown file, with its child
 requirements/assertions located in a subdirectory with the same name.
 
 - Supports [common fields](#common-fields): `children`, `howto`, `status`, `title`
+  - `status` for guidelines is optional, limited to `developing`, `refining`, `mature`
 - No additional unique fields
 
 #### Requirements and Assertions
@@ -109,6 +111,7 @@ requirements/assertions located in a subdirectory with the same name.
 Represents each fifth-level heading specifying an individual requirement or assertion.
 
 - Supports [common fields](#common-fields): `howto`, `status`, `title`
+  - `status` for requirements and assertions defaults to `exploratory` if not specified
 - `needsAdditionalResearch` - Optional boolean, indicating whether to
   display a "needs additional research" editor's note
 - `type` - Optional string: `foundational`, `supplemental`, or `assertion`
@@ -308,8 +311,13 @@ create a Markdown file under `terms`, then populate its content and any applicab
 
 ### `WCAG_DIFFABLE`
 
-Filters build output to reduce noise when diffing output between changes.
+When set, filters build output to reduce noise when diffing output between changes.
 This is for maintenance purposes only, to catch regressions;
 built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
+
+### `WCAG_SKIP_WIP`
+
+When set, excludes requirements/assertions that have `needsAdditionalResearch` set to `true`,
+or that have `status` set to `placeholder` or `exploratory`.
