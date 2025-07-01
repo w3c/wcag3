@@ -16,6 +16,17 @@ children:
   - captions-enhanced-features
   - captions-in-vr
   - captions-in-vr-speakers
+  - style-guide
+  - testing-with-users
+  - video-player-selection
+  - contribution-by-producer
+  - video-player-controls-for-cc
+  - adaptable-video-player
+  - ar-vr-xr-video-player
+  - subtitles-in-other-languages
+  - visual-indicators-in-360-field
+  - using-human-captioners
+  - perfect-set-of-alternatives
 ---
 
 Where there is audio :term[content] in media, there are equivalent synchronized :term[captions].

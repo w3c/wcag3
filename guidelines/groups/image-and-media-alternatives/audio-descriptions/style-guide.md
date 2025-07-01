@@ -24,5 +24,5 @@ The script for the audio description is following an organization's style guide.
 * **Example:** The style guide has requirements such as
   * Less than 3 words per second
   * Don't overlap with the speech in the main soundtrack
-  * ...
+  * &hellip;
 :::
