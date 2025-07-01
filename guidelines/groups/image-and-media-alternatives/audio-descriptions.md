@@ -1,5 +1,6 @@
 ---
 children:
+  - audio-descriptions-exist
   - audio-description-is-findable
   - audio-description-is-controllable
   - audio-description-in-target-user-language
