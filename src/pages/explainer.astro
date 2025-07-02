@@ -205,9 +205,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <h3>Requirements and Methods</h3>
         <p>Each Guideline contains multiple Requirements:</p>
-        <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
-            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA.</li>
-            <li>Supplemental Requirements will be used for higher levels of conformance.</li>
+        <ul><li>Foundational Requirements will be required to test the most basic level of accessibility. They will be part, but not all, of the 
+            lowest level of conformance. This set of requirements will
+            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
+            <li>Supplemental Requirements will be used at all levels of conformance, but testers or policy makers will be able to select 
+                which supplemental requirements to complete.</li>
         </li></ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
@@ -227,14 +229,19 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
                 Assertion is an attributable and documented statement of fact regarding procedures practiced in the
                 development and maintenance of the content or product to improve accessibility.</p>
+
     
             <h4>Using Assertions</h4>
-            <p>Assertions may supplement Requirements to meet a Guideline. Not all Guidelines include Assertions. Guidelines that include Assertions, list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure as part of a conformance claim. Assertions can be made in addition to foundational requirements but do not replace foundational requirements.</p>
+            <p>Assertions may supplement Requirements to meet a Guideline. Not all Guidelines include Assertions. Guidelines that include Assertions list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure as part of a conformance claim. Assertions can be made in addition to foundational requirements but do not replace foundational requirements.</p>
 
             <div class="ednote">
                 <p>The working group will consider whether assertions may be used to meet guidelines when requirements are not available.</p>
                 <p>An alternative to specifying assertions at the requirement or guideline level might be to require that the assertion apply to the scope of the conformance claim.</p>
             </div>
+
+            <p>Assertions reflect work completed that cannot be verified by independent testers. When using assertions to support conformance, 
+                the assertions should be included in the conformance claim. Assertions may also be included in accessibility statements. 
+            </p>
 
             <p>Procedures used in assertions may be implemented at the organization level, during design and development, or
                 during testing.</p>
@@ -267,6 +274,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                     <li>Contact information for the person or group making the assertion, and</li>
                     <li>The requirement(s) or guideline(s) supported by the assertion.</li>
                 </ul>
+
 
                 <div class="ednote">
                     <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
