@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Within a :term[view], when :term[keyboard focus] moves from one context to another, whether automatically or by user request, the :term[keyboard focus] is preserved so that, when the user goes back to the previous context, the :term[keyboard focus] is restored to its previous location.
+Within a :term[page] / :term[view], when :term[keyboard focus] moves from one context to another, whether automatically or by user request, the :term[keyboard focus] is preserved so that, when the user goes back to the previous context, the :term[keyboard focus] is restored to its previous location.
 
 :::note
 An example of this would be when a modal dialog or other pop up opens.
