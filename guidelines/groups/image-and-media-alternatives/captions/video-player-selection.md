@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The organization uses a video player that supports captions.The video player supports closed captions in a standard caption format, or an open captions format.
+The organization uses a video player that supports :term[captions].The video player supports :term[closed captions] in a standard caption format, or an :term[open captions] format.
 
 * Name of the video player
 * Caption format

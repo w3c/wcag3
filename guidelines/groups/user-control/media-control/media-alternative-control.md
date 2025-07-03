@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Captions and audio descriptions can be turned on and off.
+:term[Captions] and :term[audio descriptions] can be turned on and off.

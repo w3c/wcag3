@@ -17,4 +17,4 @@ children:
   - perfect-set-of-alternatives
 ---
 
-Where there is visual :term[content] in media, there is an equivalent synchronized audio audio description.
+Where there is visual :term[content] in media, there is an equivalent synchronized :term[audio description].
