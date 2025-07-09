@@ -1,6 +1,7 @@
 ---
 needsAdditionalResearch: true
 status: exploratory
+title: "Comparable keyboard effort (not all content)"
 type: foundational
 ---
 
