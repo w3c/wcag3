@@ -16,3 +16,11 @@ Up Reversal
 
 Essential
 : Completing the function on the down-event is :term[essential].
+
+:::note
+An example of Abort would be dragging where there is a pickup action on button down but it can be cancelled by dropping in pickup point or anywhere other than the drop area.
+:::
+
+:::note
+Examples of places where action on down-event may be essential include Dutch auction or game trigger.
+:::
