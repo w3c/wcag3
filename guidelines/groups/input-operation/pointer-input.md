@@ -1,6 +1,5 @@
 ---
 children:
-  - consistent-pointer-cancellation-entire-conformance-claim
   - consistent-pointer-cancellation-set-of-pages-views
   - pointer-cancellation
   - pointer-pressure-alternative
