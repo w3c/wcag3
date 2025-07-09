@@ -4,7 +4,6 @@ children:
   - front-end-loading
   - speech-alternative
   - real-time-bidirectional-voice-communication
-  - voice-identification
   - unique-visible-label
 ---
 
