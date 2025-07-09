@@ -5,7 +5,7 @@
     "pointer-input",
     "speech-and-voice-input",
     "input-operation",
-    "content-changes"
+    "authentication"
   ],
   "title": "Input / operation"
 }
