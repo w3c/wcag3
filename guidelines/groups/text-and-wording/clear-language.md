@@ -1,21 +1,22 @@
 ---
 children:
-  - summary
-  - unambiguous-numbers
-  - unambiguous-words
-  - uncommon-words
-  - unnecessary-words-or-phrases
-  - visual-aids
-  - dependent-clauses
-  - numerical-supplements
-  - sentence-voice
-  - topic-sentence
-  - unambiguous-pronunciation
+  - clear-structure
+  - short-blocks-of-text
+  - sentence-structure
+  - common-words
+  - abbreviations
+  - non-literal-language
   - verb-tense
-  - visualization-of-complex-ideas
+  - numerical-supplements
+  - visual-aids
+  - summaries
+  - topic-sentence
+  - unambiguous-numerical-formatting
+  - unambiguous-pronunciation
   - clear-language-review
   - clear-language-style-guide
   - clear-language-training
+  - industry-specific-terms
 status: developing
 ---
 
@@ -41,5 +42,8 @@ The group of five languages includes a wide variety of language features, such a
 - Tonal sounds that affect meaning
 
 This list doesn't include every language, but it helps keep the work manageable while making the guidance more useful for a wide audience.
+We will work with W3C’s Global Inclusion community group, the Internationalization (i18n) task force, and others to review and refine the testing and techniques for these requirements.
 We also plan to create guidance for translating the guidelines into more languages in the future.
+
+The guidelines will also include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
 :::

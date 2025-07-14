@@ -1,5 +1,6 @@
 ---
-type: supplemental
+status: developing
+type: foundational
 ---
 
-Explanations or alternatives are provided to help users who have difficulty understanding numerical information. 
+Alternatives are provided for numbers and numerical concepts.
