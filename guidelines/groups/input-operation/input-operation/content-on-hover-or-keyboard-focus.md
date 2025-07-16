@@ -5,14 +5,17 @@ type: foundational
 
 When receiving and then removing :term[pointer] hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
 
-<dl>
-	<dt>Dismissible:</dt>
-	<dd>A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content;</dd>
-	<dt>Hoverable:</dt>
-	<dd>If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;</dd>
-	<dt>Persistent:</dt>
-	<dd>The additional content remains visible until the hover or keyboard focus trigger is removed, the user dismisses it, or its information is no longer valid.</dd>
-</dl>
+Dismissible
+
+:  A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content;
+
+Hoverable
+
+: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;</dd>
+
+Persistent
+
+: The additional content remains visible until the hover or keyboard focus trigger is removed, the user dismisses it, or its information is no longer valid.
 
 :::note
 Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <code class="language-html">title</code> attribute.
