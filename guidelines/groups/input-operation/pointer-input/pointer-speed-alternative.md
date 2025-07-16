@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 type: foundational
 ---
 

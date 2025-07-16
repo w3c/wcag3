@@ -1,9 +1,7 @@
 ---
 children:
-  - comparable-keyboard-effort
   - logical-keyboard-focus-order
-  - standard-or-described-navigation-keys
-  - standard-or-described-navigation-keys-best-practice  
+  - standard-or-described-navigation-keys 
   - preserve-keyboard-focus
   - repetitive-links
 ---

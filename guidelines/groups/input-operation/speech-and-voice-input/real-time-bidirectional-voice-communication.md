@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 title: Real-time bidirectional voice communication
 type: foundational
 ---

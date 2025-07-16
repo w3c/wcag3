@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 title: Consistent pointer cancellation - set of pages / views
 type: foundational
 ---
