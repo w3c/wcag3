@@ -1,6 +1,6 @@
 ---
-title: Change of viewport within a page/view
 status: developing
+title: Change of viewport within a page/view
 ---
 
 Change of content/context that causes the users keyboard navigation point to change where they have the option to move back out of the new content/context.
