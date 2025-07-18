@@ -15,7 +15,7 @@ async function getFilteredRequirements(groupId: string, guidelineSlug: string) {
       "requirements",
       `${groupId}/${guidelineSlug}/${requirementSlug}`
     );
-    if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
+    if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug} in ${groupId}/${guidelineSlug}`);
     if (
       import.meta.env.WCAG_SKIP_WIP &&
       (requirement.data.needsAdditionalResearch ||
@@ -43,7 +43,7 @@ export async function buildGuidelinesHierarchy() {
 
       for (const guidelineSlug of group.data.children) {
         const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
-        if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
+        if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug} in ${groupId}/${guidelineSlug}`);
         guideline.data.children = await getFilteredRequirements(groupId, guidelineSlug);
         guidelines[guideline.id] = guideline;
 
