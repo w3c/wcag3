@@ -1,11 +1,15 @@
 ---
 status: developing
+synonyms:
+  - views
 ---
 
-Testing scope that includes all :term[content] visually and :term[programmatically] available without a significant change.
+The :term[content] that is :term[actively available] in a :term[viewport] including that which can be scrolled or panned to, and any additional content that is included by expansion, while leaving the rest of the content in the viewport actively available. 
 
-Conceptually, views correspond to the definition of a web page as used in WCAG 2, but are not restricted to content meeting that definition.
+:::note
+A modal dialog box would constitute a new view because the other content in the viewport is no longer actively available.
+:::
 
 :::example
-* A “screen” in a mobile app.
-* A layer of web content, such as a modal dialog.
+Examples of “included by expansion” include, but are not limited to: expanding paragraphs, non-modal dialogs, non-modal popups, error messages that appear embedded in content (for example, and “invalid password” error message).
+:::
