@@ -3,6 +3,8 @@
     "image-alternatives",
     "media-alternatives",
     "non-text-alternatives",
+    "captions",
+    "audio-descriptions",
     "figure-captions",
     "single-sense"
   ],
