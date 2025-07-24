@@ -1,4 +1,5 @@
 ---
+status: exploratory
 synonyms:
   - points of regard
 ---

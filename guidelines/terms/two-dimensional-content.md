@@ -1,5 +1,5 @@
 ---
-status: developing
+status: exploratory
 title: Two-dimensional content
 ---
 
