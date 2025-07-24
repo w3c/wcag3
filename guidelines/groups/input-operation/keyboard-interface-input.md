@@ -7,7 +7,7 @@ children:
   - keyboard-navigable-if-responsive
   - no-keyboard-trap
   - user-control-of-keyboard-focus
-  - relevant-keyboard-focus
+  - relevant-tab-order-keyboard-focus
 ---
 
 Users can navigate and operate content using only the keyboard.

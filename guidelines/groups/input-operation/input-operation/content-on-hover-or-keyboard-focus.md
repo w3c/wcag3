@@ -26,5 +26,5 @@ Custom tooltips, sub-menus, and other non-modal popups that display on hover and
 :::
 
 :::note
-This criterion applies to content that appears in addition to the triggering component itself. Since hidden components that are made visible on keyboard focus (such as links used to skip to another part of a :term[page] / :term[view]) do not present additional content they are not covered by this criterion.
+This applies to content that appears in addition to the triggering interactive element itself. Since hidden interactive elements that are made visible on keyboard focus (such as links used to skip to another part of a :term[view]) do not present additional content they are not covered by this requirement.
 :::

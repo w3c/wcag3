@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-When :term[keyboard focus] moves from one context to another within a web page, whether automatically or by user request, the :term[keyboard focus] is preserved so that, when the user goes back to the previous context, the :term[keyboard focus] is restored to its previous location except if that location no longer exists.
+When :term[keyboard focus] moves from one context to another within a :term[web page], whether automatically or by user request, the :term[keyboard focus] is preserved so that, when the user goes back to the previous context, the :term[keyboard focus] is restored to its previous location except if that location no longer exists.
 
 :::note
 An example of this would be when a modal dialog or other pop up opens.
@@ -14,5 +14,5 @@ Best practice on placing focus when the previous focus location no longer exists
 :::
 
 :::note
-This is also quite useful when moving between pages but this would usually have to be done by the browser unless the user is in some process where that information is stored in a cookie or on the server between pages in the process.
+This is also quite useful when moving between pages but this would usually have to be done by the browser unless the user is in some process where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
 :::
