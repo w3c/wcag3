@@ -2,4 +2,4 @@
 status: developing
 ---
 
-Available for the user to read and use any actionable items included.
+available for the user to read and use any actionable items included

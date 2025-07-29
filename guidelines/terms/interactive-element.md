@@ -4,7 +4,7 @@ synonyms:
   - interactive elements
 ---
 
-A part of the interface that responds to user input and can have a distinct programmatically determinable name.
+part of the interface that responds to user input and can have a distinct programmatically determinable name
 
 :::example
 Buttons, controls, input fields.

@@ -7,4 +7,4 @@ synonyms:
   - programmatically associated
 ---
 
-The meaning of the content and all its important attributes can be determined by software functionality that is :term[accessibility supported].
+meaning of the content and all its important attributes can be determined by software functionality that is :term[accessibility supported]

@@ -2,4 +2,4 @@
 status: developing
 ---
 
-:term[Content] whose instructions are required for :term[conformance].
+:term[content] whose instructions are required for :term[conformance]

@@ -3,8 +3,11 @@ status: developing
 title: Non-literal text
 ---
 
-Non-literal text uses words or phrases in a way that goes beyond their standard or dictionary meaning to express deeper, more complex ideas.
+non-literal text uses words or phrases in a way that goes beyond their standard or dictionary meaning to express deeper, more complex ideas
+
+:::note
 This is also called figurative language.
+
 To understand it, users have to interpret the implied meaning behind the words, rather than just their literal or direct meaning.
 
 Examples:
@@ -25,3 +28,4 @@ Examples:
 - similes
 
 More detailed examples are available in the :term[Methods] section.
+:::

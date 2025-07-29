@@ -2,7 +2,7 @@
 status: developing
 ---
 
-Software, or collection of layers of software, that lie below the subject software and provide services to the subject software and that allows the subject software to be isolated from the hardware, drivers, and other software below.
+software, or collection of layers of software, that lie below the subject software and provide services to the subject software and that allows the subject software to be isolated from the hardware, drivers, and other software below
 
 :::note
 Platform software both makes it easier for subject software to run on different hardware, and provides the subject software with many services (e.g. functions, utilities, libraries) that make the subject software easier to write, keep updated, and work more uniformly with other subject software.

@@ -4,7 +4,7 @@ synonyms:
   - interactive groups
 ---
 
-A grouping of :term[interactive elements] for a distinct function. It may also contain :term[non-interactive elements].
+grouping of :term[interactive elements] for a distinct function. It may also contain :term[non-interactive elements]
 
 :::example
 A menu, a set of navigation links, a slider, an accordion, a dialog, a breadcrumb, a carousel, a combobox, a grid, a table, a listbox, a slider, a set of tabs.
