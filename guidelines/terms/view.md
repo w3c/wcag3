@@ -11,5 +11,5 @@ A modal dialog box would constitute a new view because the other content in the 
 :::
 
 :::example
-Examples of “included by expansion” include, but are not limited to: expanding paragraphs, non-modal dialogs, non-modal popups, error messages that appear embedded in content (for example, and “invalid password” error message).
+Examples of “included by expansion” include, but are not limited to: expanding paragraphs, non-modal dialogs, non-modal popups, error messages that appear embedded in content (for example, an “invalid password” error message).
 :::
