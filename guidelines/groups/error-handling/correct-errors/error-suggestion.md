@@ -1,6 +1,5 @@
 ---
-status: exploratory
-title: Error Suggestion
+status: developing
 ---
 
 When an error occurs and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.

@@ -1,6 +1,5 @@
 ---
-status: exploratory
-title: Error Notification Label
+status: developing
 ---
 
 Error notifications include text with at least two of the following:

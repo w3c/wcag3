@@ -1,6 +1,5 @@
 ---
-status: exploratory
-title: Validate as You Go
+status: developing
 ---
 
 When completing a multi-step process, validation for errors is completed before the user moves to the next step in the process.  
