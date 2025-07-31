@@ -20,7 +20,7 @@ children:
   - testing-with-users
   - video-player-selection
   - contribution-by-producer
-  - video-player-controls-for-cc
+  - video-player-controls-for-captions
   - adaptable-video-player
   - ar-vr-xr-video-player
   - subtitles-in-other-languages
