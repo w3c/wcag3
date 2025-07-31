@@ -1,5 +1,6 @@
 {
   "children": [
-    "correct-mistakes"
+    "correct-errors",
+    "prevent-errors"
   ]
 }
