@@ -1,9 +1,9 @@
 ---
-import { z, type CollectionEntry } from "astro:content";
+import { type CollectionEntry } from "astro:content";
 
 import { computeTitle } from "@/lib/guidelines";
-import { renderAndValidate } from "@/lib/zod";
 import { getEntry } from "astro:content";
+import { load } from "cheerio";
 
 interface Props {
   entry: CollectionEntry<"guidelines"> | CollectionEntry<"requirements">;
@@ -20,35 +20,44 @@ const howtoPath = parentHowto
   ? `${parentHowto === true ? idParts[1] : parentHowto}/${howtoSlug}/`
   : `${howtoSlug}/`;
 const baseUrl = "https://w3c.github.io/wcag3/how-to/";
-const { Content, remarkPluginFrontmatter } = await renderAndValidate(
-  entry,
-  z.object({
-    description: z.string(),
-  })
-);
+
+function processHtml() {
+  if (!entry.rendered) {
+    throw new Error(
+      `EntryText: No rendered HTML found for ${entry.id}; check for Markdown parse failures earlier in log`
+    );
+  }
+  const entryHtml = entry.rendered.html;
+  if (!howtoSlug) return entryHtml;
+
+  const $ = load(entryHtml, null, false);
+  const $wrappableElement = $("p, ul, ol")
+    // Exclude nested elements (e.g. inside of a Note)
+    .filter((_, el) => !$(el).parent().length)
+    .first();
+  if (!$wrappableElement.length)
+    throw new Error(`${entry.id}: Can't find element to wrap with link to how-tos`);
+
+  $wrappableElement.wrap(`<div class="body-wrapper"></div>`).after(`
+    <aside class="doclinks">
+      <p>
+        <a href="${baseUrl}${howtoPath}">
+          <svg aria-hidden="true" class="i-info">
+            <use xlink:href="img/icons.svg#i-info" />
+          </svg>
+          ${
+            entry.collection === "guidelines"
+              ? `How to meet ${computeTitle(entry)}`
+              : `${computeTitle(entry)} methods`
+          }
+        </a>
+      </p>
+    </aside>
+  `);
+  return $.html();
+}
 ---
 
-{
-  howtoSlug ? (
-    <div class="body-wrapper">
-      <Fragment set:html={remarkPluginFrontmatter.description} />
-      <aside class="doclinks">
-        <p>
-          <a href={`${baseUrl}${howtoPath}`}>
-            <svg aria-hidden="true" class="i-info">
-              <use xlink:href="img/icons.svg#i-info" />
-            </svg>{" "}
-            {entry.collection === "guidelines"
-              ? `How to meet ${computeTitle(entry)}`
-              : `${computeTitle(entry)} methods`}
-          </a>
-        </p>
-      </aside>
-    </div>
-  ) : (
-    <Fragment set:html={remarkPluginFrontmatter.description} />
-  )
-}
 {
   entry.collection === "requirements" && entry.data.needsAdditionalResearch && (
     <p class="ednote">
@@ -56,4 +65,4 @@ const { Content, remarkPluginFrontmatter } = await renderAndValidate(
     </p>
   )
 }
-<Content />
+<Fragment set:html={processHtml()} />

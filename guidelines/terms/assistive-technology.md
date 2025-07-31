@@ -4,7 +4,7 @@ synonyms:
   - assistive technologies
 ---
 
-Hardware and/or software that acts as a :term[user agent], or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents
+hardware and/or software that acts as a :term[user agent], or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents
 
 :::note
 Functionality provided by assistive technology includes alternative presentations (e.g., as synthesized speech or magnified content), alternative input methods (e.g., voice), additional navigation or orientation mechanisms, and content transformations (e.g., to make tables more accessible).

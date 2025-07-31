@@ -63,6 +63,11 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #404040;
 }
 
+:is(.guideline, .requirement, .body-wrapper) > :is(p, ul, ol) {
+	font-size: 110%;
+	margin-top: 0;
+}
+
 .guideline {
 	margin-left: 4em;
 	position: relative;
@@ -73,10 +78,6 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	position: relative;
 }
 
-.guideline-text, .requirement-text {
-	font-size: 110%;
-	margin-top: 0;
-}
 .guideline h3, .requirement h4, .requirement h5 {
 	width: 100%;
 	margin-bottom: 0;
