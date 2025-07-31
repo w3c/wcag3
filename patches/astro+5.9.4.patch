@@ -1,8 +1,8 @@
 diff --git a/node_modules/astro/dist/content/loaders/glob.d.ts b/node_modules/astro/dist/content/loaders/glob.d.ts
-index 58875e1..0dd5047 100644
+index 04d0b74..7007630 100644
 --- a/node_modules/astro/dist/content/loaders/glob.d.ts
 +++ b/node_modules/astro/dist/content/loaders/glob.d.ts
-@@ -17,6 +17,8 @@ export interface GlobOptions {
+@@ -17,6 +17,8 @@ interface GlobOptions {
       * @returns The ID of the entry. Must be unique per collection.
       **/
      generateId?: (options: GenerateIdOptions) => string;

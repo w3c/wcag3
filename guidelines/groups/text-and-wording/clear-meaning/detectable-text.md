@@ -1,5 +1,4 @@
 ---
-howto: true
 type: foundational
 ---
 

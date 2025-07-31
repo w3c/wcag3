@@ -2,7 +2,6 @@
 children:
   - detectable-text
   - unambiguous-text
-howto: true
 status: developing
 ---
 

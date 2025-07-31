@@ -7,7 +7,6 @@ children:
   - image-type
   - editable-alternatives
   - style-guide
-howto: true
 ---
 
 Users have equivalent alternatives for images.
