@@ -1,5 +1,6 @@
 ---
 status: developing
+type: supplemental
 ---
 
 Error notifications include text with at least two of the following:

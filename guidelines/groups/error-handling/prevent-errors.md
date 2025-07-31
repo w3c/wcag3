@@ -3,6 +3,7 @@ children:
   - submission-confirmation
   - validate-after-data-entry
   - validate-as-you-go
+type: foundational
 ---
 
 When users are submitting information, at least one of the following is true:
