@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - processes
 ---
 
-A sequence of steps that need to be completed to accomplish an activity or task from beginning to end.
+series of :term[views] or :term[pages] associated with user actions, where actions required to complete an activity are performed, often in a certain order, regardless of the technologies used or whether it spans different sites or domains
