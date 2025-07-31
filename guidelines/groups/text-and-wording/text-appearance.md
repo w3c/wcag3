@@ -5,8 +5,8 @@ children:
   - adjustable-blocks-of-text
   - adjustable-text-style
   - content-and-functionality-not-lost-with-text-adjustment
-  - readable-blocks-of-text
-  - readable-text-style
+  - readable-blocks-of-text-supplemental
+  - readable-text-style-supplemental
 ---
 
 Users can read visually rendered text.
