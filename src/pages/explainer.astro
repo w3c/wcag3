@@ -205,9 +205,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <h3>Requirements and Methods</h3>
         <p>Each Guideline contains multiple Requirements:</p>
-        <ul><li>Foundational Requirements will be used to test the most basic level of accessibility.  This set of requirements will
-            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA.</li>
-            <li>Supplemental Requirements will be used for higher levels of conformance.</li>
+        <ul><li>Foundational Requirements will be required to meet base level conformance. They will be part, but not all, of base level
+         conformance. This set of requirements will
+            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
+            <li>Supplemental Requirements will be used at all levels of conformance, but testers or policy makers will be able to select 
+                which supplemental requirements to meet.</li>
         </li></ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
@@ -221,26 +223,32 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
             technology. For example, the methods supporting the Clear Language guideline.</p>
 
-        <p class="ednote">The AG has discussed also including "Recommendations" at the same level as Supplemental Requirements. Recommendations would be things which could help improve accessibility but may not be objectively testable. They could contribute to levels of conformance above Foundational.</p>
+        <p class="ednote">The AG has discussed also including "Best Practices" displayed along with Requirements and Assertions. Best practices would be things which could help improve accessibility but may not be objectively testable. Best practices would not contribute to conformance.</p>
 
         <h3>Assertions</h3>
             <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
                 Assertion is an attributable and documented statement of fact regarding procedures practiced in the
                 development and maintenance of the content or product to improve accessibility.</p>
+
     
             <h4>Using Assertions</h4>
-            <p>Assertions may supplement Requirements to meet a Guideline. Not all Guidelines include Assertions. Guidelines that include Assertions, list the Assertions with the Requirements. Organizations can make an assertion that they followed a procedure as part of a conformance claim. Assertions can be made in addition to foundational requirements but do not replace foundational requirements.</p>
+            <p>Assertions may be used, in addition to Requirements, to support a Guideline. Only assertions included in this document can be used for conformance. Not all Guidelines include Assertions. Guidelines that include Assertions list them with the Requirements. 
+                Organizations can make an Assertion that they followed a procedure as part of a conformance claim.  Assertions build on Foundational Requirements. Assertions cannot be used as alternatives to Foundational Requirements.</p>
 
             <div class="ednote">
-                <p>The working group will consider whether assertions may be used to meet guidelines when requirements are not available.</p>
+                <p>The working group will consider whether assertions may be used to support guidelines when requirements are not available.</p>
                 <p>An alternative to specifying assertions at the requirement or guideline level might be to require that the assertion apply to the scope of the conformance claim.</p>
             </div>
+
+            <p>Assertions reflect work completed that cannot be verified by independent testers. When using assertions to support conformance, 
+                the assertions should be stated in the conformance claim. 
+            </p>
 
             <p>Procedures used in assertions may be implemented at the organization level, during design and development, or
                 during testing.</p>
             <p>Examples of procedures that may be used during implementation might include:</p>
             <ul>
-                <li>Training,</li>
+                <li>Accessibility training,</li>
                 <li>FTE (Full Time Equivalent) assignments,</li>
                 <li>Skills testing,</li>
                 <li>Coordination and documentation of accessibility processes, or</li>
@@ -252,21 +260,29 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                 <li>Heuristic evaluation, or</li>
                 <li>Testing with assistive technology.</li>
             </ul>
-            <p>WCAG recommends maintaining additional information that an organization can use to improve or validate
-                procedures and assertions. WCAG will not require organizations to provide supporting documentation to
-                conform.</p>
+
                 <h4>Documenting Assertions</h4>
-                <p>Assertions must be documented as part of the conformance claim process. The required information may also be
-                    made available through the web site.</p>
-                <p>Assertions might include the following information:</p>
+                <p>Assertions may be used as part of a conformance claim or to support an independent claim of accessibility conformance. 
+                    When used for conformance, assertions must be documented within the accessibility conformance claim. 
+                    When used outside a conformance claim, the assertion may be
+                    made available through an organization's web site or other materials.</p>
+                <p>Assertions include the following information:</p>
                 <ul>
-                    <li>The statement being asserted,</li>
+                    <li>The statement about the process being asserted,</li>
                     <li>The date of the assertion,</li>
                     <li>The date or date range the procedure was completed,</li>
                     <li>The scope of the assertion,</li>
                     <li>Contact information for the person or group making the assertion, and</li>
                     <li>The requirement(s) or guideline(s) supported by the assertion.</li>
                 </ul>
+
+                <p>Maintaining additional information to improve or validate
+                procedures and assertions. WCAG will not require organizations to provide supporting documentation in order to
+                conform.</p>
+
+                <div class="ednote">
+                     <p>W3C will explore providing an assertion statement formatter that organizations may use to create properly formatted assertions for use on websites and other public documents.</p>
+               </div>
 
                 <div class="ednote">
                     <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
@@ -275,7 +291,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                         <li>Define criteria for which requirements are foundational and which are supplemental.</li>
                         <li>Develop mature examples of 2 guidelines with associated requirements, methods, tests, and How to documentation.</li>
                         <li>Mature all guidelines to the developing stage.</li>
-                        <li>Further explore how conditional requirements and alternate ways to measure might be used to meet Guidelines.</li>
+                        <li>Further explore how conditional requirements and alternate ways to measure might be used to support Guidelines.</li>
                     </ul>
 
                     <p>AG will also continue to explore the use of assertions and welcomes feedback on the following questions:</p>
@@ -283,9 +299,6 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                         <li>Can assertions be used to record accessibility work that is not required in the guidelines? This
                             could include advance work on guidance not yet added to the guidelines.</li>
                         <li>What optional supporting documentation should organizations provide with an assertion?</li>
-                        <li>Is there a need for WCAG 3.0 to require proof of an assertion, and if so, what documentation should
-                            be required as proof?</li>
-                        <li>Should assertions be dated, expire, or be reviewed on a regular basis?</li>
                         <li>Can steps in a procedure duplicate tests in other parts of the guidelines? If so, how should those
                             be handled?</li>
                         <li>Can assertions exist outside of conformance? For example, can they be used as an internal benchmark
@@ -381,7 +394,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </ul>
 
     <h4>Testing Assertions</h4>
-    <p>The quality of an assertion can be tested based on how well the assertion meets the documentation
+    <p>The results of the process stated in an assertion cannot be tested. Instead, the quality of an assertion statement can be tested 
+        based on how well the assertion meets the documentation
         requirements for assertions (See <a>Documenting Assertions</a>). Conforming to WCAG does not require testing
         supporting documentation; however, organizations may decide to adopt additional documentation requirements
         based on the procedure being asserted.</p>
@@ -518,13 +532,6 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                 <p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
             </dd>
 
-            <dt><dfn>Documenting assertions</dfn></dt>
-            <dd>
-                <div class="ednote">
-                    <p>To be defined.</p>
-                </div>
-            </dd>
-
             <dt><dfn data-lt="equity">Equity</dfn></dt>
             <dd>
                 <p>Equity is the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
@@ -555,7 +562,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             </dd>
             <dt><dfn data-lt="Methods">Method</dfn></dt>
             <dd>
-                <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the outcome as well as <a>tests</a> and scoring information.</p>
+                <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the requirement as well as <a>tests</a> and scoring information.</p>
             </dd>
             <dt><dfn>Normative</dfn></dt>
             <dd>
@@ -617,7 +624,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             </dd>
             <dt><dfn>User testing</dfn></dt>
             <dd>
-                <p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content meets the relevant outcomes.</p>
+                <p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content supports the relevant guidelines.</p>
             </dd>
         </dl>
     </section>
