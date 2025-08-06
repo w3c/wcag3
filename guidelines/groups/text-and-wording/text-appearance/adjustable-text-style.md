@@ -9,7 +9,7 @@ The user can adjust the presentation of each of the following attributes to meet
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
 :::
 
-<table>
+<table class="data">
  <thead>
    <tr>
      <th>Characteristic</th>
@@ -81,7 +81,7 @@ Information could be lost if the user overrides the appearance. See [other struc
        <td></td>
        <td>
         <ul>
-          <li>Sentense case</li>
+          <li>Sentence case</li>
           <li>Title case (headings, titles), sentence case for all other text</li>
         </ul>
        </td>
