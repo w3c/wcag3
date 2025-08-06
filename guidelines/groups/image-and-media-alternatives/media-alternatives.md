@@ -1,7 +1,5 @@
 ---
 children:
-  - audio-descriptions
-  - captions
   - descriptive-transcripts
   - findable-media-alternatives
   - preferred-language

@@ -2,7 +2,10 @@
 status: developing
 ---
 
-Text which the user can adjust. This could include, but is not limited to, changing:
+text which the user can adjust
+
+:::note
+This could include, but is not limited to, changing:
 
 * Line, word or letter spacing
 * Color
@@ -16,3 +19,4 @@ Text which the user can adjust. This could include, but is not limited to, chang
 * Capitalization — all caps, small caps, alternating case
 * End of line hyphenation
 * Links
+:::

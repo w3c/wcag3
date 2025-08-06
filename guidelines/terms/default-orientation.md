@@ -2,7 +2,7 @@
 status: developing
 ---
 
-A single orientation that a :term[platform] uses to view :term[content] by default.
+single orientation that a :term[platform] uses to view :term[content] by default
 
 :::example
 Web browsers do not have a default orientation for content.
