@@ -4,7 +4,7 @@ synonyms:
   - essential
 ---
 
-Exception because there is no way to carry out the function without doing it this way or fundamentally changing the functionality. 
+exception because there is no way to carry out the function without doing it this way or fundamentally changing the functionality
 
 :::example
 Content that must fail since it is an example of failure or a test sample to be used testing a tool.

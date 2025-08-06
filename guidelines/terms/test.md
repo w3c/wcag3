@@ -2,4 +2,4 @@
 status: developing
 ---
 
-Mechanism to evaluate implementation of a :term[method].
+mechanism to evaluate implementation of a :term[method]
