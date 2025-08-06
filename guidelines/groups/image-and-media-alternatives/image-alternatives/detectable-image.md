@@ -1,5 +1,4 @@
 ---
-howto: true
 status: developing
 type: foundational
 ---

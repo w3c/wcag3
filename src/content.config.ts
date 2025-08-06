@@ -5,11 +5,11 @@ import uniq from "lodash-es/uniq";
 /** howto can be set to true to indicate the informative and normative slugs are identical */
 const howtoSchema = z.boolean().or(z.string().regex(/^[\w-]+$/));
 const statusSchema = z.enum(["placeholder", "exploratory", "developing", "refining", "mature"]);
+const parentStatusSchema = statusSchema.exclude(["placeholder", "exploratory"]);
 
 /** Contains fields common between guidelines and requirements */
 const commonChildSchema = z.object({
   howto: howtoSchema.optional(),
-  status: statusSchema.optional(),
   title: z.string().optional(),
 });
 
@@ -43,7 +43,7 @@ export const collections = {
     loader: glob({ pattern: "*.json", base: "./guidelines/groups", ignore: "index.json" }),
     schema: z.object({
       children: childrenSchema,
-      status: statusSchema.optional(),
+      status: parentStatusSchema.optional(),
       title: z.string().optional(),
     }),
   }),
@@ -55,12 +55,14 @@ export const collections = {
       // Moreover, we can't override generateId for requirements to only use slug,
       // due to duplicates across separate guidelines, e.g. "style-guide"
       children: childrenSchema,
+      status: parentStatusSchema.optional(),
     }),
   }),
   requirements: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: commonChildSchema.extend({
       needsAdditionalResearch: z.boolean().optional(),
+      status: statusSchema.default("exploratory"),
       type: z
         .enum([
           "foundational",
@@ -73,6 +75,7 @@ export const collections = {
   terms: defineCollection({
     loader: glob({ pattern: "*.md", base: "./guidelines/terms" }),
     schema: commonChildSchema.omit({ howto: true }).extend({
+      status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
     }),
   }),

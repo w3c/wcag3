@@ -1,4 +1,5 @@
 ---
+status: developing
 synonyms:
   - automated
   - automatically evaluated
@@ -6,9 +7,9 @@ synonyms:
   - automatically tested
 ---
 
-:term[Evaluation] conducted using software tools, typically evaluating code-level features and applying heuristics for other tests.
+:term[evaluation] conducted using software tools, typically evaluating code-level features and applying heuristics for other tests
 
-Automated testing is contrasted with other types of testing that involve human judgement or
-experience. :term[Semi-automated evaluation] allows machines to guide humans
-to areas that need inspection. The emerging field of testing conducted via
+:::note
+Automated testing is contrasted with other types of testing that involve human judgement or experience. :term[Semi-automated evaluation] allows machines to guide humans to areas that need inspection. The emerging field of testing conducted via
 machine learning is not included in this definition.
+:::

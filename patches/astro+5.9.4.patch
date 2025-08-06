@@ -1,0 +1,36 @@
+diff --git a/node_modules/astro/dist/content/loaders/glob.d.ts b/node_modules/astro/dist/content/loaders/glob.d.ts
+index 04d0b74..7007630 100644
+--- a/node_modules/astro/dist/content/loaders/glob.d.ts
++++ b/node_modules/astro/dist/content/loaders/glob.d.ts
+@@ -17,6 +17,8 @@ interface GlobOptions {
+      * @returns The ID of the entry. Must be unique per collection.
+      **/
+     generateId?: (options: GenerateIdOptions) => string;
++    /** Glob pattern(s) that should not be matched in the result. */
++    ignore?: string | Array<string>;
+ }
+ /**
+  * Loads multiple entries, using a glob pattern to match files.
+diff --git a/node_modules/astro/dist/content/loaders/glob.js b/node_modules/astro/dist/content/loaders/glob.js
+index c10b236..e8fb2b3 100644
+--- a/node_modules/astro/dist/content/loaders/glob.js
++++ b/node_modules/astro/dist/content/loaders/glob.js
+@@ -156,7 +156,8 @@ function glob(globOptions) {
+       }
+       const files = await tinyglobby(globOptions.pattern, {
+         cwd: fileURLToPath(baseDir),
+-        expandDirectories: false
++        expandDirectories: false,
++        ignore: globOptions.ignore,
+       });
+       if (exists && files.length === 0) {
+         logger.warn(
+@@ -221,7 +222,7 @@ function glob(globOptions) {
+         return;
+       }
+       watcher.add(filePath);
+-      const matchesGlob = (entry) => !entry.startsWith("../") && picomatch.isMatch(entry, globOptions.pattern);
++      const matchesGlob = (entry) => !entry.startsWith("../") && picomatch.isMatch(entry, globOptions.pattern, { ignore: globOptions.ignore });
+       const basePath = fileURLToPath(baseDir);
+       async function onChange(changedPath) {
+         const entry = posixRelative(basePath, changedPath);
