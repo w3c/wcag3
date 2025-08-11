@@ -1,8 +1,7 @@
 ---
 children:
-  - clear-agreement
-  - disability-information-privacy
-  - sensitive-information
+  - agreement-indicated
+  - comparable-risk
   - risk-statements
 ---
 

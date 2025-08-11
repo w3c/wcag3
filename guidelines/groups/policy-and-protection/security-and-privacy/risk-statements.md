@@ -1,6 +1,5 @@
 ---
-needsAdditionalResearch: true
-status: exploratory
+status: developing
 ---
 
-Clear explanations of the risks and consequences of choices, including use, are stated.
+The interface states the benefits, risks and potential consequences of choices.
