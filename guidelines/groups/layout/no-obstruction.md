@@ -4,8 +4,7 @@ children:
   - clearly-dismissable-content-overlays
   - disabled-controls
   - stable-layout
-  - consistent-position
-  - avoid-unnecessary-zooming
+  - consistent-positioning
   - implicit-misdirection
   - no-infinite-scrolling
 ---

@@ -5,13 +5,12 @@ children:
   - no-artificial-pressure
   - no-misinformation
   - no-hidden-preselections
-  - no-sneaking
-  - no-interference
   - no-redirection
   - no-sneaking
   - no-emotionally-misleading-designs
   - no-misdirection
   - no-nagging
+  - no-stress
 ---
 
 Users do not encounter deception when completing tasks, unless essential to the task.

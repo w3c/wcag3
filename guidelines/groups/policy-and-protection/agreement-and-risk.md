@@ -5,4 +5,5 @@ children:
   - risk-statements
 ---
 
-Users’ safety, security or privacy are not decreased by accessibility measures.
+Users understand the benefits, risks and consequences of options they select. 
+
