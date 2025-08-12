@@ -8,7 +8,7 @@ children:
   - global-privacy-settings
   - notify-about-sensitive-information
   - safe-content
-  - secruity-procedures
+  - security-procedures
   - supported-decision-making
 ---
 

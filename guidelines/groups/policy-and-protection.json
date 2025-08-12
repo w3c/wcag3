@@ -1,7 +1,7 @@
 {
   "children": [
     "content-source",
-    "security-and-privacy",
+    "information-privacy",
     "algorithms"
   ]
 }
