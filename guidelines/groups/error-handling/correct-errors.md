@@ -3,13 +3,13 @@ children:
   - error-notification
   - error-suggestion
   - error-identification
+  - error-persists
   - error-association
   - error-cause-association
   - error-cause-in-notification
   - error-linked
   - error-location
   - error-notification-label
-  - error-persists
   - make-errors-distinct
 ---
 
