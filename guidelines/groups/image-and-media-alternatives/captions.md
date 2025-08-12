@@ -19,10 +19,10 @@ children:
   - style-guide
   - testing-with-users
   - video-player-selection
-  - contribution-by-producer
   - video-player-controls-for-captions
   - adaptable-video-player
   - ar-vr-xr-video-player
+  - contribution-by-producer
   - subtitles-in-other-languages
   - visual-indicators-in-360-field
   - using-human-captioners
