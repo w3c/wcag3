@@ -1,10 +1,10 @@
 ---
 children:
   - captions-exist
+  - captions-are-equivalent-to-audio-content
   - captions-are-findable
   - captions-are-controllable
   - captions-in-target-user-language
-  - captions-are-equivalent-to-audio-content
   - captions-are-synchronized
   - captions-are-consistent
   - captions-do-not-obstruct-visual-information
