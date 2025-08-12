@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-A user is notified before any change in terms of agreement to a continuing process, service, or task,  and is given the opportunity to provide consent to continue.
+Changes in terms of agreement to a continuing process, service, or task are notified to users and an opportunity to consent is given.
