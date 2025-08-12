@@ -2,6 +2,7 @@
   "children": [
     "content-source",
     "information-privacy",
+    "agreement-and-risk",
     "algorithms"
   ]
 }
