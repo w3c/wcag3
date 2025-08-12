@@ -2,7 +2,7 @@
 children:
   - pointer-cancellation
   - simple-pointer-input
-  - consistent-pointer-cancellation-set-of-pages-views
+  - consistent-pointer-cancellation
   - pointer-pressure-alternative
   - pointer-speed-alternative
 ---
