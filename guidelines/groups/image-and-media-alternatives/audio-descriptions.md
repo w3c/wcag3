@@ -1,10 +1,10 @@
 ---
 children:
   - audio-descriptions-exist
+  - audio-description-equitable
   - audio-description-is-findable
   - audio-description-is-controllable
   - audio-description-in-target-user-language
-  - audio-description-equitable
   - audio-description-is-synchronized
   - audio-description-does-not-overlap-other-audio
   - audio-description-is-adaptable
