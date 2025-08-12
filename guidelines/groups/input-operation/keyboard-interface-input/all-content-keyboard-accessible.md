@@ -10,7 +10,7 @@ All content includes content made available via hovers, right clicks, etc.
 :::
 
 :::note
-Other input modalities include :term[pointing devices], voice and speech recognition, :term[gesture], camera input, and any other other means of input or control.
+Other input modalities include :term[pointing devices], voice and speech recognition, :term[gesture], :term[camera input], and any other other means of input or control.
 :::
 
 :::note
