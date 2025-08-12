@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-When receiving and then removing :term[pointer] hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
+When receiving and then removing :term[pointer] hover or keyboard focus triggers additional :term[content] to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
 
 Dismissible
 
@@ -22,9 +22,9 @@ Examples of additional content controlled by the user agent include browser tool
 :::
 
 :::note
-Custom tooltips, sub-menus, and other non-modal popups that display on hover and keyboard focus are examples of additional content covered by this criterion.
+This applies to content that appears in addition to the triggering interactive element itself. Since hidden interactive elements that are made visible on keyboard focus (such as links used to skip to another part of a :term[page]/:term[view]) do not present additional content they are not covered by this requirement.
 :::
 
-:::note
-This applies to content that appears in addition to the triggering interactive element itself. Since hidden interactive elements that are made visible on keyboard focus (such as links used to skip to another part of a :term[view]) do not present additional content they are not covered by this requirement.
+:::example
+Custom tooltips, sub-menus, and other non-modal popups that display on hover and keyboard focus.
 :::
