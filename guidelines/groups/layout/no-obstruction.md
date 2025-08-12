@@ -9,4 +9,4 @@ children:
   - no-infinite-scrolling
 ---
 
-User interface components and navigation must be operable and must be presentable to users in ways they can perceive without obstruction. 
+Users can percive and operate user interface components and navigation without obstruction. 

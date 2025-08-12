@@ -12,7 +12,7 @@ children:
   - supported-decision-making
 ---
 
-Information Privacy - When providing private and sensitive information, users understand:
+When providing private and sensitive information, users understand:
 * That the information requested is private and sensitive,
 * How the information requested will be used, and
 * The risks involved in providing the information.
