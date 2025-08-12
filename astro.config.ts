@@ -3,6 +3,7 @@ import node from "@astrojs/node";
 import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { load } from "cheerio";
 import fg from "fast-glob";
+import difference from "lodash-es/difference";
 import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
 
@@ -40,31 +41,44 @@ export default defineConfig({
       name: "children-check",
       hooks: {
         "astro:build:start": async () => {
+          const getUniqueEntries = (array1: any[], array2: any[]) =>
+            (array1.length > array2.length
+              ? difference(array1, array2)
+              : difference(array2, array1)
+            ).join(", ");
+
           const groupsPath = join("guidelines", "groups");
-          const groupFilenames = await fg.glob(join(groupsPath, "*.json"), {
-            ignore: [join(groupsPath, "index.json")],
-          });
+          const groupIds = (
+            await fg.glob("*.json", {
+              cwd: groupsPath,
+              ignore: ["index.json"],
+            })
+          ).map((filename) => basename(filename, ".json"));
 
           // Check at group level (index.json -> *.json)
-          const listedCount = JSON.parse(
+          const topLevelChildren = JSON.parse(
             await readFile(join(groupsPath, "index.json"), "utf8")
-          ).length;
-          const actualCount = groupFilenames.length;
-          if (listedCount !== actualCount) {
+          );
+          if (topLevelChildren.length !== groupIds.length) {
             throw new Error(
-              `Group index.json lists ${listedCount} children but there are ${actualCount} files`
+              `groups/index.json lists ${topLevelChildren.length} children but there are ${
+                groupIds.length
+              } files (check: ${getUniqueEntries(topLevelChildren, groupIds)})`
             );
           }
 
           // Check at group->guideline level (*.json -> */*.md)
-          for (const filename of groupFilenames) {
-            const id = basename(filename, ".json");
-            const data = JSON.parse(await readFile(filename, "utf8"));
+          for (const id of groupIds) {
+            const data = JSON.parse(await readFile(join(groupsPath, `${id}.json`), "utf8"));
 
-            const actualCount = (await fg.glob(join(groupsPath, id, "*.md"))).length;
-            if (data.children.length !== actualCount) {
+            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (data.children.length !== actualFiles.length) {
               throw new Error(
-                `Group ${id} lists ${data.children.length} children but has ${actualCount} files`
+                `groups/${id}.json lists ${data.children.length} children but groups/${id}/ contains ${
+                  actualFiles.length
+                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
               );
             }
           }
@@ -74,10 +88,14 @@ export default defineConfig({
             const id = join(basename(dirname(filename)), basename(filename, ".md"));
             const data = parseFrontmatter(await readFile(filename, "utf8")).frontmatter;
 
-            const actualCount = (await fg.glob(join(groupsPath, id, "*.md"))).length;
-            if (data.children.length !== actualCount) {
+            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (data.children.length !== actualFiles.length) {
               throw new Error(
-                `Group ${id} lists ${data.children.length} children but has ${actualCount} files`
+                `groups/${id}.md lists ${data.children.length} children but groups/${id}/ contains ${
+                  actualFiles.length
+                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
               );
             }
           }

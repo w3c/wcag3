@@ -1,7 +1,7 @@
 ---
 children:
-  - algorithm-bias
-  - social-media-algorithm
+- inclusive-data-set
+- no-harm-from-algorithms
 ---
 
-Users are not disadvantaged by algorithms.
+Users are not disadvantaged or harmed by by algorithms.
