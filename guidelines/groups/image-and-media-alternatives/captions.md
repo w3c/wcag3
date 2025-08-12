@@ -23,7 +23,6 @@ children:
   - adaptable-video-player
   - ar-vr-xr-video-player
   - contribution-by-producer
-  - subtitles-in-other-languages
   - visual-indicators-in-360-field
   - using-human-captioners
   - perfect-set-of-alternatives
