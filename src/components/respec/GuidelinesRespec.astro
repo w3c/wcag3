@@ -1,4 +1,7 @@
 ---
+import { isDevOrPreview } from "@/lib/constants";
+import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
+
 // ReSpec config and functions are defined in a component with an inline script to allow
 // separating them in a way that will be conducive to sending to spec-generator, while
 // avoiding Vite warnings which may occur when referencing scripts under public/
@@ -459,3 +462,4 @@
     },
   };
 </script>
+{isDevOrPreview && <GuidelinesRespecDev />}

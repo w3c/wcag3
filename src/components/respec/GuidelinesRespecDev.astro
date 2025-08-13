@@ -1,0 +1,25 @@
+<script is:inline>
+  function filterSkippable() {
+    const params = new URLSearchParams(location.search);
+    if (params.get("skip")) document.querySelectorAll("[data-skip]").forEach((el) => el.remove());
+  }
+  respecConfig.preProcess.push(filterSkippable);
+
+  function addSkipUI() {
+    const newUrl = new URL(location);
+    if (newUrl.searchParams.get("skip")) newUrl.searchParams.delete("skip");
+    else newUrl.searchParams.set("skip", "true");
+
+    const respecEl = document.getElementById("respec-ui");
+    const el = document.createElement("a");
+    el.href = "" + newUrl;
+    el.style.position = "fixed";
+    el.style.top = "60px";
+    el.style.right = getComputedStyle(respecEl).right;
+    el.textContent = newUrl.searchParams.get("skip")
+      ? "Preview without early-stage entries"
+      : "Preview with all entries";
+    respecEl.after(el);
+  }
+  respecConfig.postProcess.push(addSkipUI);
+</script>
