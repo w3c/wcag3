@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Processes can be completed without entering unnecessary information.
+:term[Processes] can be completed without entering unnecessary information.

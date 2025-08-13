@@ -14,5 +14,5 @@ Best practice on placing focus when the previous focus location no longer exists
 :::
 
 :::note
-This is also quite useful when moving between pages but this would usually have to be done by the browser unless the user is in some process where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
+This is also quite useful when moving between pages but this would usually have to be done by the browser unless the user is in some :term[process] where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
 :::
