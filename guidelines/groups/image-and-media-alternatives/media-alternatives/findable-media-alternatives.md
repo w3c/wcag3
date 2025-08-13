@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: exploratory
 ---
 
