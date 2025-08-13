@@ -22,7 +22,6 @@ children:
   - video-player-controls-for-captions
   - adaptable-video-player
   - ar-vr-xr-video-player
-  - contribution-by-producer
   - visual-indicators-in-360-field
   - using-human-captioners
   - perfect-set-of-alternatives
