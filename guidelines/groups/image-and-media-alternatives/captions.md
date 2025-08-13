@@ -24,7 +24,6 @@ children:
   - ar-vr-xr-video-player
   - visual-indicators-in-360-field
   - using-human-captioners
-  - perfect-set-of-alternatives
 ---
 
 Where there is audio :term[content] in media, there are equivalent synchronized :term[captions].
