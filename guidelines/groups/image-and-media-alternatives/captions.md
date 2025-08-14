@@ -16,7 +16,7 @@ children:
   - captions-enhanced-features
   - captions-in-vr
   - captions-in-vr-speakers
-  - style-guide
+  - captions-style-guide
   - testing-with-users
   - video-player-selection
   - video-player-controls-for-captions

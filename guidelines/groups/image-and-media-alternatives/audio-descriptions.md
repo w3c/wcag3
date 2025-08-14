@@ -10,7 +10,7 @@ children:
   - audio-description-is-adaptable
   - extended-audio-description
   - alternative-language-versions-are-available
-  - style-guide
+  - audio-descriptions-style-guide
   - testing-with-users
   - reviewed-by-content-creators
   - using-human-describers

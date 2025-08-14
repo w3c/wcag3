@@ -14,7 +14,7 @@ children:
   - topic-sentence
   - unambiguous-pronunciation
   - review-process
-  - style-guide
+  - clear-language-style-guide
   - training-policy
 status: developing
 ---
