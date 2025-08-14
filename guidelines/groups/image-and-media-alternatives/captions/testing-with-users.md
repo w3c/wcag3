@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The organization conducted tests with users who need captions and fixed issues based on findings.
+Tests are conducted with users who need captions and fixed issues based on findings.
 
 * Types of disabilities each user had
 * Number of users (for each type of disability)

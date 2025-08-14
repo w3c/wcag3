@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The organization conducted tests with users who need :term[audio description] and fixed issues based on findings.
+The content author(s) conducted tests with users who need :term[audio description] and fixed issues based on findings.
 
 * Type of disabilities each user had
 * Number of users (for each type)
