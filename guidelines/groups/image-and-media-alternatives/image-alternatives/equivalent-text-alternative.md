@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Equivalent text alternative is available for :term[image] that conveys :term[content].
+Equivalent text alternatives are available for :term[images] that conveys :term[content].

@@ -3,4 +3,4 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-:term[Figure captions] persist or can be made to persist even if the focus moves away.
+:term[Figure captions] persist or a mechanism is available to make figure captions persist, even if the focus moves away.

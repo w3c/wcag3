@@ -3,4 +3,4 @@ status: exploratory
 type: assertion
 ---
 
-Text alternatives follow an organizational style guide.
+Content author(s) follow an organizational style guide for text alternatives.
