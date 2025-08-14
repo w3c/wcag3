@@ -15,7 +15,7 @@ children:
   - unambiguous-pronunciation
   - review-process
   - clear-language-style-guide
-  - training-policy
+  - clear-language-training-policy
 status: developing
 ---
 
