@@ -1,5 +1,5 @@
 ---
-type: assertion
+type: supplemental
 status: developing
 ---
 
