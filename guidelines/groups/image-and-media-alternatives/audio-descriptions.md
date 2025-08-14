@@ -11,7 +11,7 @@ children:
   - extended-audio-description
   - alternative-language-versions-are-available
   - audio-descriptions-style-guide
-  - testing-with-users
+  - testing-audio-descriptions-with-users
   - reviewed-by-content-creators
   - using-human-describers
   - perfect-set-of-alternatives
