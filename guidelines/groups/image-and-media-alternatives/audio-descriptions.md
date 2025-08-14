@@ -9,7 +9,7 @@ children:
   - audio-description-does-not-overlap-other-audio
   - audio-description-is-adaptable
   - extended-audio-description
-  - alternative-language-versions-are-available
+  - alternative-audio-description-language-versions-are-available
   - audio-descriptions-style-guide
   - testing-audio-descriptions-with-users
   - reviewed-by-content-creators

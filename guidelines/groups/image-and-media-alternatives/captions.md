@@ -12,7 +12,7 @@ children:
   - languages-of-speech-are-identified
   - sounds-are-identified-or-described
   - captions-are-adaptable
-  - alternative-language-versions-are-available
+  - alternative-captions-language-versions-are-available
   - captions-enhanced-features
   - captions-in-vr
   - captions-in-vr-speakers
