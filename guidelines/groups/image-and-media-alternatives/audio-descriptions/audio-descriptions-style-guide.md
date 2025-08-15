@@ -9,7 +9,7 @@ The audio description script follows an organization's style guide.
 * Version (if any)
 * Date of release
 * Description
-* Example(s) of core guideline(items)
+* Examples of how core WCAG guidelines are addressed
 
 :::example
 * **Name:** ABC Inc. Style Guide for Audio Description
