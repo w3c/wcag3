@@ -1,7 +1,7 @@
 ---
 children:
   - no-obstructions
-  - clearly-dismissable-content-overlays
+  - clearly-dismissible-content-overlays
   - disabled-controls
   - stable-layout
   - consistent-positioning
