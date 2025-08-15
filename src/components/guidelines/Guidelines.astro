@@ -15,7 +15,12 @@ const groups = await buildGuidelinesHierarchy();
           <h4>{computeTitle(guideline)}</h4>
           <EntryText entry={guideline} />
           {guideline.data.requirements.map((requirement) => (
-            <section class="requirement" data-status={requirement.data.status} data-requirement-type={requirement.data.type}>
+            <section
+              class="requirement"
+              data-status={requirement.data.status}
+              data-requirement-type={requirement.data.type}
+              data-skip={requirement.skippable}
+            >
               <h5>{computeTitle(requirement)}</h5>
               <EntryText entry={requirement} />
             </section>
