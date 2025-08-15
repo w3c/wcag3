@@ -1,6 +1,5 @@
 ---
 children:
-  - clear-structure
   - short-blocks-of-text
   - sentence-structure
   - common-words
