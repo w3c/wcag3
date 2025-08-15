@@ -5,5 +5,4 @@ children:
   - risk-statements
 ---
 
-Users understand the benefits, risks and consequences of options they select. 
-
+Users understand the benefits, risks, and consequences of options they select. 
