@@ -1,6 +1,5 @@
 ---
 children:
-  - clear-structure
   - short-blocks-of-text
   - sentence-structure
   - common-words
@@ -14,8 +13,8 @@ children:
   - topic-sentence
   - unambiguous-pronunciation
   - review-process
-  - style-guide
-  - training-policy
+  - clear-language-style-guide
+  - clear-language-training-policy
 status: developing
 ---
 

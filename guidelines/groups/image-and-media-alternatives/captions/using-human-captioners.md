@@ -1,9 +1,9 @@
 ---
-type: assertion
+type: supplemental
 status: developing
 ---
 
-For live events, the organization has a human captioner providing live captions to the audience using :term[CART].
+For live events, there is a human captioner providing live captions to the audience using :term[CART].
 
 * Name of the captioner or service provider
 

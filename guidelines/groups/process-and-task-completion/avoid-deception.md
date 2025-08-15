@@ -10,7 +10,7 @@ children:
   - no-emotionally-misleading-designs
   - no-misdirection
   - no-nagging
-  - testing-with-users
+  - testing-avoid-deception-with-users
 ---
 
 Users do not encounter deception when completing tasks, unless essential to the task.

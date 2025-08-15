@@ -12,17 +12,17 @@ children:
   - languages-of-speech-are-identified
   - sounds-are-identified-or-described
   - captions-are-adaptable
-  - alternative-language-versions-are-available
+  - alternative-language-versions-of-captions-are-available
   - captions-enhanced-features
   - captions-in-vr
   - captions-in-vr-speakers
-  - style-guide
-  - testing-with-users
+  - captions-style-guide
+  - testing-captions-with-users
   - video-player-selection
   - video-player-controls-for-captions
   - adaptable-video-player
   - ar-vr-xr-video-player
-  - visual-indicators-in-360-field
+  - visual-indicators-in-360-degree-space
   - using-human-captioners
 ---
 
