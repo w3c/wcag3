@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The content author(s) conducted tests with people with cognitive and mental health related disabilities and fixed issues based on findings.
+The content author(s) conducted tests with people with cognitive- and mental-health-related disabilities and fixed issues based on findings.
 
 * Types of disabilities each user had
 * Number of users (for each type of disability)
