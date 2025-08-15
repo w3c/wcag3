@@ -3,13 +3,13 @@ type: assertion
 status: developing
 ---
 
-The script for the audio description is following an organization's style guide.
+The audio description script follows an organization's style guide.
 
 * Name of the style guide
 * Version (if any)
 * Date of release
 * Description
-* Example(s) of core guideline(items)
+* Examples of how core WCAG guidelines are addressed
 
 :::example
 * **Name:** ABC Inc. Style Guide for Audio Description

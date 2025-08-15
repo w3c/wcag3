@@ -1,10 +1,8 @@
 ---
 children:
   - section-labels
-  - section-length
   - section-purpose
   - single-idea
-  - topic-sentence
   - white-spacing
   - title
   - lists

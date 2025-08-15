@@ -3,4 +3,4 @@ status: developing
 type: supplemental
 ---
 
-For content intended to inform the user, each paragraph begins with a sentence stating the aim or purpose.
+Paragraphs of informative :term[content] begin with a sentence stating the aim or purpose of the content.

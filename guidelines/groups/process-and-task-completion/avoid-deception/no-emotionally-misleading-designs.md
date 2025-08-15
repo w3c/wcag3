@@ -1,6 +1,6 @@
 ---
-status: developing
+status: exploratory
 type: supplemental
 ---
 
-Systems do not threaten individuals or restate decisions in a degrading way. 
+:term[Content] does not threaten individuals or restate decisions in a degrading way.

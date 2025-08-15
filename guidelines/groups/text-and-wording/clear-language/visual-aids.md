@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Visual aids are available to supplement and aid understanding of complex ideas in written content, such as processes, workflows, relationships, or chronological information.
+Visual aids are used to supplement complex ideas in written :term[content], such as processes, workflows, relationships, or chronological information.

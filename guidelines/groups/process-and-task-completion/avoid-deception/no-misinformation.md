@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Processes can be completed without navigating misinformation.
+:term[Processes] do not include :term[misinformation].

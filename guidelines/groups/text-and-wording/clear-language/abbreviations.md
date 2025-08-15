@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Explanations are available for the first use of abbreviations, acronyms, initialisms, and numeronyms.
+Abbreviations, acronyms, initialisms, and numeronyms are explained or expanded when first used.

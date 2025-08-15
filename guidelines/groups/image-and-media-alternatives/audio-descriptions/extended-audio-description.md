@@ -3,4 +3,4 @@ type: supplemental
 status: developing
 ---
 
-In cases where the existing pauses in a soundtrack are not long enough, the video pauses the visual to extend the audio track and provides an :term[extended audio description] to describe all of important visual information.
+In cases where pauses in a soundtrack are not long enough to descrbe the visual content, visual pauses are added to provide sufficient time for an :term[extended audio description].

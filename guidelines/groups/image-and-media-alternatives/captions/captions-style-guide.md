@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The :term[captions] are following an organization's style guide.
+:term[Captions] follow an organization's style guide.
 
 * Name of the style guide
 * Version (if any)
