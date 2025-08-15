@@ -10,9 +10,9 @@ When a user closes a modal dialog or other popup, keyboard focus is returned to 
 :::
 
 :::note
-Best practice on placing focus when the previous focus location no longer exists, is to put focus on the focusable location just before the one that was removed. An example of this would be a list of subject-matter tags in a document, with each tag having a delete button. A user clicks on the delete button in a tag in the middle of the tag list. When the tag is deleted, focus is placed onto the tag that was before the now-deleted tag.
+When the previous focus location no longer exists, best practice is to put focus on the focusable location just before the one that was removed. An example of this would be a list of subject-matter tags in a document, with each tag having a delete button. A user clicks on the delete button in a tag in the middle of the tag list. When the tag is deleted, focus is placed onto the tag that was before the now-deleted tag.
 :::
 
 :::note
-This is also quite useful when moving between pages but this would usually have to be done by the browser unless the user is in some :term[process] where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
+This is also quite useful when moving between pages but this would usually have to be done by the browser, unless the user is in some :term[process] where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
 :::
