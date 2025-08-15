@@ -5,8 +5,8 @@ status: developing
 
 The content author(s) conducted tests with users who need :term[audio description] and fixed issues based on findings.
 
-* Type of disabilities each user had
-* Number of users (for each type)
+* Types of disabilities each user had
+* Number of users (for each type of disability)
 * Date of testing
 * Examples of fixed issues based on the results
 
