@@ -22,7 +22,7 @@ children:
   - video-player-controls-for-captions
   - adaptable-video-player
   - ar-vr-xr-video-player
-  - visual-indicators-in-360-field
+  - visual-indicators-in-360-degree-space
   - using-human-captioners
 ---
 
