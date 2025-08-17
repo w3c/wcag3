@@ -2,4 +2,4 @@
 status: developing
 ---
 
-grouping of :term[interactive elements] for a distinct function
+grouping of elementsa for a distinct function
