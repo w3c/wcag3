@@ -1,5 +1,5 @@
 ---
-status: developing
+status: exploring
 ---
 
 private and sensitive information
