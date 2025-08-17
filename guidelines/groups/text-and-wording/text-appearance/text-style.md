@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-The rendered text does not use a decorative or cursive font face.
+The rendered :term[text] does not use a decorative or cursive font face.

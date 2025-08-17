@@ -6,4 +6,4 @@ children:
 title: Text-to-speech
 ---
 
-Users can access text :term[content] and its meaning with text-to-speech tools.
+Users can access :term[text] :term[content] and its meaning with text-to-speech tools.

@@ -6,4 +6,4 @@ children:
   - text-customization
 ---
 
-Users can control text presentation.
+Users can control :term[text] presentation.
