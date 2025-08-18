@@ -3,4 +3,8 @@ status: developing
 type: supplemental
 ---
 
-Where letters or diacritics needed for phonetic reading are omitted, an alternative version is provided with these elements included.
+Letters or diacritics that are required for identifying the correct meaning of the word are available.
+
+:::note
+This most often applies to languages such as Arabic and Hebrew.
+:::

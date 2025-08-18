@@ -3,7 +3,6 @@ children:
   - focus-in-viewport
   - focus-retention
   - keyboard-focus-order
-  - restore-focus
   - relevant-focus
 ---
 
