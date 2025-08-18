@@ -1,5 +1,5 @@
 ---
-status: exploring
+status: exploratory
 ---
 
 private and sensitive information
