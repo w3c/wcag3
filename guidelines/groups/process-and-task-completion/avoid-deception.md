@@ -8,7 +8,6 @@ children:
   - no-redirection
   - no-sneaking
   - no-emotionally-misleading-designs
-  - no-misdirection
   - no-nagging
   - testing-avoid-deception-with-users
 ---
