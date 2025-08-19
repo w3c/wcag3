@@ -3,7 +3,7 @@ needsAdditionalResearch: false
 status: developing
 ---
 
-The user can adjust the presentation of each of the following attributes to meet the corresponding values for the content’s language (or the most similar language of the ones listed).
+The presentation of each of the following attributes can be adjusted to meet the corresponding values for the content’s language (or the most similar language of the ones listed).
 
 :::ednote
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
