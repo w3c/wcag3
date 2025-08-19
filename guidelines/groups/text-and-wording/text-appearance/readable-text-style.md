@@ -9,6 +9,10 @@ The default/authored presentation of text meets the corresponding values for the
 [Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
 :::
 
+:::ednote
+The metrics in the following table are still to be determined, the current content is an example.
+:::
+
 <table class="data">
  <thead>
    <tr>

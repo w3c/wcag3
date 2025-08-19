@@ -9,6 +9,10 @@ The presentation of each of the following attributes can be adjusted to meet the
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
 :::
 
+:::ednote
+The metrics in the following table are still to be determined, the current content is an example.
+:::
+
 <table class="data">
  <thead>
    <tr>
