@@ -12,4 +12,4 @@ children:
   - testing-avoid-deception-with-users
 ---
 
-Users do not encounter deception when completing tasks, unless essential to the task.
+Users do not encounter deception when completing tasks.
