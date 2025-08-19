@@ -1,7 +1,7 @@
 ---
 import { render, type CollectionEntry } from "astro:content";
 
-import { computeTitle } from "@/lib/guidelines";
+import { computeTermTitle } from "@/lib/guidelines";
 
 interface Props {
   termEntry: CollectionEntry<"terms">;
@@ -13,6 +13,6 @@ const { Content } = await render(termEntry);
 ---
 
 <dt data-status={status}>
-  <dfn data-lt={synonyms ? synonyms.join("|") : undefined}>{computeTitle(termEntry)}</dfn>
+  <dfn data-lt={synonyms ? synonyms.join("|") : undefined}>{computeTermTitle(termEntry)}</dfn>
 </dt>
 <dd><Content /></dd>

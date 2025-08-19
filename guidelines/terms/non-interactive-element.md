@@ -1,6 +1,6 @@
 ---
 status: developing
-title: Non-interactive element
+title: non-interactive element
 ---
 
 part of the interface that does not respond to user input and does not include sub-parts

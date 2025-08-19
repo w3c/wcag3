@@ -1,6 +1,6 @@
 ---
 status: exploratory
-title: Two-dimensional content
+title: two-dimensional content
 ---
 
 :::ednote

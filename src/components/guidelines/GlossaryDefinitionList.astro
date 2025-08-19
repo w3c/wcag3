@@ -2,10 +2,10 @@
 import { getCollection } from "astro:content";
 import { sortBy } from "lodash-es";
 
+import { computeTermTitle } from "@/lib/guidelines";
 import GlossaryDefinition from "./GlossaryDefinition.astro";
-import { computeTitle } from "@/lib/guidelines";
 
-const entries = sortBy(await getCollection("terms"), (entry) => computeTitle(entry));
+const entries = sortBy(await getCollection("terms"), (entry) => computeTermTitle(entry));
 ---
 
 <dl>
