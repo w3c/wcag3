@@ -1,5 +1,6 @@
 ---
 status: developing
+title: user-manipulable text
 ---
 
 text which the user can adjust
