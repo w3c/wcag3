@@ -1,6 +1,6 @@
 ---
 status: developing
-title: Semi-automated evaluation
+title: semi-automated evaluation
 ---
 
 :term[evaluation] conducted using machines to guide humans to areas that need inspection

@@ -1,6 +1,6 @@
 ---
 status: developing
-title: Non-literal language
+title: non-literal language
 ---
 
 words or phrases used in a way that are beyond their standard or dictionary meaning to express deeper, more complex ideas

@@ -1,5 +1,5 @@
 ---
-import { buildGuidelinesHierarchy, computeTitle } from "@/lib/guidelines";
+import { buildGuidelinesHierarchy, computeGuidelineTitle } from "@/lib/guidelines";
 
 const groups = await buildGuidelinesHierarchy();
 ---
@@ -8,7 +8,7 @@ const groups = await buildGuidelinesHierarchy();
   {
     groups.map((group) => (
       <li>
-        <a href={`#${group.id}`}>{computeTitle(group)}</a>
+        <a href={`#${group.id}`}>{computeGuidelineTitle(group)}</a>
       </li>
     ))
   }

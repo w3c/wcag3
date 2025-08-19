@@ -103,9 +103,24 @@ export interface EntryWithTitle {
   data: { title?: string };
 }
 
-/** Returns entry title if specified, or falls back to converting from its slug. */
-export function computeTitle(entry: EntryWithTitle) {
+interface ComputeTitleOptions {
+  capitalize: boolean;
+}
+
+function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
   if (entry.data.title) return entry.data.title;
   const slug = entry.id.replace(/^.*\//, "");
-  return capitalize(slug.replace(/-/g, " "));
+  const title = slug.replace(/-/g, " ");
+  return options.capitalize ? capitalize(title) : title;
 }
+
+/**
+ * Returns group/guideline/requirement/assertion title if specified,
+ * or falls back to converting from its slug.
+ */
+export const computeGuidelineTitle = (entry: EntryWithTitle) =>
+  computeTitle(entry, { capitalize: true });
+
+/** Returns term title if specified, or falls back to converting from its slug. */
+export const computeTermTitle = (entry: CollectionEntry<"terms">) =>
+  computeTitle(entry, { capitalize: false });

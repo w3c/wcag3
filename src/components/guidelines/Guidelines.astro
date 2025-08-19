@@ -1,5 +1,5 @@
 ---
-import { buildGuidelinesHierarchy, computeTitle } from "@/lib/guidelines";
+import { buildGuidelinesHierarchy, computeGuidelineTitle } from "@/lib/guidelines";
 
 import EntryText from "./EntryText.astro";
 
@@ -9,10 +9,10 @@ const groups = await buildGuidelinesHierarchy();
 {
   groups.map((group) => (
     <section data-status={group.data.status || undefined}>
-      <h3>{computeTitle(group)}</h3>
+      <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
-          <h4>{computeTitle(guideline)}</h4>
+          <h4>{computeGuidelineTitle(guideline)}</h4>
           <EntryText entry={guideline} />
           {guideline.data.requirements.map((requirement) => (
             <section
@@ -21,7 +21,7 @@ const groups = await buildGuidelinesHierarchy();
               data-requirement-type={requirement.data.type}
               data-skip={requirement.skippable}
             >
-              <h5>{computeTitle(requirement)}</h5>
+              <h5>{computeGuidelineTitle(requirement)}</h5>
               <EntryText entry={requirement} />
             </section>
           ))}
