@@ -1,25 +1,27 @@
 ---
 children:
-  - short-blocks-of-text
   - no-unnecessary-words
   - no-nested-clauses
   - common-words
   - abbreviations
   - non-literal-language
-  - verb-tense
   - numerical-supplements
   - unambiguous-numerical-formatting
   - visual-aids
   - summaries
-  - topic-sentence
   - unambiguous-pronunciation
   - review-process
   - clear-language-style-guide
   - clear-language-training-policy
+  - plain-language-review
+
 status: developing
 ---
 
 Users can understand the content without having to process complex or unclear language.
+
+:::ednote
+See also: Structure as these sections are closely related.
 
 :::ednote
 This guideline will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
