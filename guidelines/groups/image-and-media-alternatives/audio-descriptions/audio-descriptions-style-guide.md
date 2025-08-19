@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The audio description script follows an organization's style guide.
+Content author(s) follow a style guide that includes guidance on audio descriptions.
 
 * Name of the style guide
 * Version (if any)

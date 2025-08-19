@@ -1,20 +1,18 @@
 ---
 children:
-  - audio-descriptions-exist
-  - audio-description-equitable
-  - audio-description-is-findable
-  - audio-description-is-controllable
+  - audio-descriptions-prerecorded
+  - audio-descriptions-live
+  - controllable-audio-description
   - audio-description-in-target-user-language
-  - audio-description-is-synchronized
-  - audio-description-does-not-overlap-other-audio
-  - audio-description-is-adaptable
+  - audio-description-timing
+  - audio-description-volume
   - extended-audio-description
   - alternative-language-versions-of-audio-descriptions-are-available
   - audio-descriptions-style-guide
-  - testing-audio-descriptions-with-users
-  - reviewed-by-content-creators
+  - testing-audio-descriptions
+  - reviewed-by-content-authors
   - using-human-describers
   - perfect-set-of-alternatives
 ---
 
-Where there is visual :term[content] in media, there is an equivalent synchronized :term[audio description].
+Users have audio descriptions for visual content in multimedia.

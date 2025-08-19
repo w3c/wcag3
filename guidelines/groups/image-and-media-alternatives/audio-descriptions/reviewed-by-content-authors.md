@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-The :term[audio description] was reviewed by the person who created the video.
+Content author(s) reviewed the :term[audio description].
 
 * Role of the creator
 * Number of creators (for each Role)

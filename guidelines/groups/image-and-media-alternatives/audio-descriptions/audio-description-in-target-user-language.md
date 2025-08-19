@@ -1,6 +1,6 @@
 ---
 type: foundational
-status: developing
+status: exploratory
 title: Audio description is in the target user's language
 ---
 
