@@ -1,5 +1,6 @@
 ---
-status: exploratory
+type: foundational
+status: developing
 ---
 
-A transcript is available whenever audio or visual alternatives are used.
+A :term[descriptive transcript] is available for audio or visual content in media

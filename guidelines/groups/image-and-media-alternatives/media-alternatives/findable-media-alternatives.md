@@ -1,5 +1,7 @@
 ---
-status: exploratory
+type: foundational
+status: developing
 ---
 
-Media that has the desired media alternatives (:term[captions], :term[audio description], and descriptive transcripts) can be found.
+At least one mechanism is available to help users find :term[media alternatives].
+

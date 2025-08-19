@@ -1,7 +1,8 @@
 ---
 children:
   - short-blocks-of-text
-  - sentence-structure
+  - no-unnecessary-words
+  - no-nested-clauses
   - common-words
   - abbreviations
   - non-literal-language
@@ -25,6 +26,7 @@ This guideline will include exceptions for poetic, scriptural, artistic, and oth
 
 To ensure this guideline works well across different languages,
 members of AG, COGA, and internationalization (i18n) agreed on an initial set of languages to pressure-test the guidance.
+
 The five "guardrail" languages are:
 
 - Arabic
@@ -42,6 +44,7 @@ The group of five languages includes a wide variety of language features, such a
 - Tonal sounds that affect meaning
 
 This list doesn't include every language, but it helps keep the work manageable while making the guidance more useful for a wide audience.
+
 We will work with W3C’s Global Inclusion community group, the Internationalization (i18n) task force, and others to review and refine the testing and techniques for these requirements.
 We also plan to create guidance for translating the guidelines into more languages in the future.
 :::

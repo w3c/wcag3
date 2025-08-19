@@ -1,16 +1,15 @@
 ---
 children:
-  - captions-exist
+  - captions-prerecorded
+  - captions-live
   - captions-are-equivalent-to-audio-content
-  - captions-are-findable
-  - captions-are-controllable
+  - finable-captions
+  - controllable-captions
+  - captions-avoid-obstruction.
   - captions-in-target-user-language
   - captions-are-synchronized
-  - captions-are-consistent
+  - consistent-captions
   - captions-do-not-obstruct-visual-information
-  - speakers-are-identified
-  - languages-of-speech-are-identified
-  - sounds-are-identified-or-described
   - captions-are-adaptable
   - alternative-language-versions-of-captions-are-available
   - captions-enhanced-features
