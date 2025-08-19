@@ -1,6 +1,6 @@
 ---
-needsAdditionalResearch: true
-status: exploratory
+needsAdditionalResearch: false
+status: developing
 ---
 
 The user can adjust the presentation of each of the following attributes to meet the corresponding values for the content’s language (or the most similar language of the ones listed).

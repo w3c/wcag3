@@ -1,6 +1,6 @@
 ---
-needsAdditionalResearch: true
-status: exploratory
+needsAdditionalResearch: false
+status: developing
 ---
 
 The default/authored presentation of text meet the corresponding values for the content’s language (or the most similar language of the ones listed).
