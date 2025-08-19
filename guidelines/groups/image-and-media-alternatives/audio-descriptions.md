@@ -13,7 +13,6 @@ children:
   - testing-audio-descriptions
   - reviewed-by-content-authors
   - using-human-describers
-  - perfect-set-of-alternatives
 ---
 
 Users have audio descriptions for visual content in multimedia.
