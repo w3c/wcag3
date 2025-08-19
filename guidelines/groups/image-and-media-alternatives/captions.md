@@ -3,15 +3,16 @@ children:
   - captions-prerecorded
   - captions-live
   - controllable-captions
+  - captions-avoid-obstruction
   - captions-in-target-user-language
   - captions-are-synchronized
   - consistent-captions
   - adaptable-captions
   - alternative-language-versions-of-captions-are-available
   - captions-enhanced-features
-  - captions-in-vr
   - captions-style-guide
   - testing-captions-with-users
+  - captions-location-360
   - visual-indicators-360
   - using-human-captioners
 ---

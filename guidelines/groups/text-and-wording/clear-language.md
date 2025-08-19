@@ -22,6 +22,7 @@ Users can understand the content without having to process complex or unclear la
 
 :::ednote
 See also: Structure as these sections are closely related.
+:::
 
 :::ednote
 This guideline will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
