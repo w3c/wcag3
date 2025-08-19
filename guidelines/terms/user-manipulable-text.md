@@ -1,7 +1,6 @@
 ---
 status: developing
-synonyms:
-  - user-manipulable text
+title: user-manipulable text
 ---
 
 text which the user can adjust
