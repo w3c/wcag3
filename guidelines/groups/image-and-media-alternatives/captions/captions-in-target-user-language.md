@@ -1,6 +1,6 @@
 ---
 type: foundational
-status: developing
+status: exploratory
 title: Captions are in the target user's language
 ---
 

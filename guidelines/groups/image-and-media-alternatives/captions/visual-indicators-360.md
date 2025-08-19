@@ -10,3 +10,4 @@ In 360-degree digital environments, the direction of a sound or speech is indica
 * **Visual indicators:** An arrow with an outline pointing to the speaker or the direction of a sound
 * **Customizable styles:** Users can select various arrow sizes, colors, and outline colors
 :::
+

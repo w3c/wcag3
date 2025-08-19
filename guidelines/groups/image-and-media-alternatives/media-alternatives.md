@@ -8,6 +8,8 @@ children:
   - speakers-identity
   - languages-used
   - significant-sounds
+  - significant-visual-information
+  - video-player
 ---
 
 Users have equivalent alternatives for media :term[content].

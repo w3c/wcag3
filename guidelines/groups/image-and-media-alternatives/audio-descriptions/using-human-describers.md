@@ -1,6 +1,6 @@
 ---
 type: supplemental
-status: developing
+status: exploratory
 ---
 
 For live events, there is a human describer providing live :term[audio description] to the audience using assistive listening devices.

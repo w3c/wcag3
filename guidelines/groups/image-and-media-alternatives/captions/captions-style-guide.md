@@ -3,13 +3,7 @@ type: assertion
 status: developing
 ---
 
-:term[Captions] follow an organization's style guide.
-
-* Name of the style guide
-* Version (if any)
-* Date of release
-* Description
-* Examples of how core WCAG guidelines are addressed
+Content author(s) follow a style guide that includes guidance on :term[captions].
 
 :::example
 * **Name:** ABC Inc. Style Guide for Captions

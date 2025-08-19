@@ -1,6 +1,6 @@
 ---
 type: supplemental
-status: developing
+status: exploratory
 ---
 
 For live events, there is a human captioner providing live captions to the audience using :term[CART].
