@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-TContent author(s) tests(ed) with users who need :term[audio descriptions] and fixed issues based on findings.
+Content author(s) conducted tests with users who need :term[audio descriptions] and fixed issues based on findings.
 
 * Types of disabilities each user had
 * Number of users (for each type of disability)
