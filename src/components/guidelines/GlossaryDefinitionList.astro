@@ -5,7 +5,9 @@ import { sortBy } from "lodash-es";
 import { computeTermTitle } from "@/lib/guidelines";
 import GlossaryDefinition from "./GlossaryDefinition.astro";
 
-const entries = sortBy(await getCollection("terms"), (entry) => computeTermTitle(entry));
+const entries = sortBy(await getCollection("terms"), (entry) =>
+  computeTermTitle(entry).toLowerCase()
+);
 ---
 
 <dl>
