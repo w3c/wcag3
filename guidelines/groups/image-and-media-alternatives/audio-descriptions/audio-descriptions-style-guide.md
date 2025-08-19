@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-Content author(s) follow a style guide that includes guidance on audio descriptions.
+Content author(s) follow a style guide that includes guidance on :term[audio description].
 
 * Name of the style guide
 * Version (if any)
