@@ -3,7 +3,7 @@ status: developing
 title: non-interactive element
 ---
 
-:term[elemet] that does not respond to user input and does not include sub-parts
+:term[element] that does not respond to user input and does not include sub-parts
 
 :::example
 Text, an image, a video, and if they have no sub-elements: a paragraph, list item, and table cell.
