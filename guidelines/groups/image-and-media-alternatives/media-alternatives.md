@@ -1,7 +1,7 @@
 ---
 children:
   - descriptive-transcripts
-  - equivilent-media-alternatives
+  - equivalent-media-alternatives
   - findable-media-alternatives
   - preferred-language
   - non-verbal-cues

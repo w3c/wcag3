@@ -3,7 +3,6 @@ children:
   - captions-prerecorded
   - captions-live
   - controllable-captions
-  - captions-avoid-obstruction.
   - captions-in-target-user-language
   - captions-are-synchronized
   - consistent-captions
