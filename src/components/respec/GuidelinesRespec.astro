@@ -92,6 +92,12 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function addGuidelineText() {
+    document.querySelectorAll(".guideline h4 bdi.secno").forEach((el) => {
+      el.textContent = "Guideline " + el.textContent;
+    });
+  }
+
   function addRequirementType() {
     var requirements = document.querySelectorAll(".requirement");
     requirements.forEach(function (requirement) {
@@ -415,6 +421,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       adjustNormativity,
       removeDraftMethodLinks,
       removeRequirementNum,
+      addGuidelineText,
       addRequirementType,
       addStatusMarkers,
       numberNotes,
