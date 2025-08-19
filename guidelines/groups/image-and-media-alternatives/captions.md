@@ -12,6 +12,7 @@ children:
   - captions-enhanced-features
   - captions-style-guide
   - testing-captions-with-users
+  - captions-location-360
   - visual-indicators-360
   - using-human-captioners
 ---
