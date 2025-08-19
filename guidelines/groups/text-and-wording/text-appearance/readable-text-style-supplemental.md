@@ -1,5 +1,7 @@
 ---
+title: Readable text style (supplemental)
 status: developing
+type: supplemental
 ---
 
 The default/authored presentation of text meet the corresponding values for the content’s language (or the most similar language of the ones listed).

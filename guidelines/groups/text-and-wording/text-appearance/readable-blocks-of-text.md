@@ -1,5 +1,6 @@
 ---
 status: developing
+type: foundational
 ---
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the content’s language (or the most similar language of the ones listed).

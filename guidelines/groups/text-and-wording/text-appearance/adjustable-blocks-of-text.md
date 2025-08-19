@@ -1,5 +1,6 @@
 ---
 status: developing
+type: foundational
 ---
 
 The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the content's language (or the most similar language of the ones listed).
