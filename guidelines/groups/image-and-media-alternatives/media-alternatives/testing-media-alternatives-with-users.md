@@ -3,8 +3,12 @@ type: assertion
 status: developing
 ---
 
-Content author(s) conducted tests with users who need captions and fixed issues based on the findings.
+Content author(s) conducted tests with users who need :term[media alternatives] and fixed issues based on the findings.
 
+* Types of disabilities each user had
+* Number of users (for each type of disability)
+* Date of testing
+* Examples of fixed issues based on the results
 
 :::example
 * **Type and number:** 8 users in total

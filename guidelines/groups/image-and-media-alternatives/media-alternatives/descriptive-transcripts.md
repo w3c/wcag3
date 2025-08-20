@@ -3,4 +3,4 @@ type: foundational
 status: developing
 ---
 
-A :term[descriptive transcript] is available for audio or visual content in media.
+:term[Descriptive transcript] is available for :term[audio] or :term[video] content.

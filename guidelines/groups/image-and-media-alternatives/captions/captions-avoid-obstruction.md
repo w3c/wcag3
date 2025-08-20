@@ -3,4 +3,4 @@ type: foundational
 status: developing
 ---
 
-In visual media, :term[captions] are placed on the screen so that they do not hide important visual information.
+:term[Captions] are placed on the screen so that they do not hide important information in :term[video] :term[content].
