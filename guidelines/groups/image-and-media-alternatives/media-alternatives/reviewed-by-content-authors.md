@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-Content author(s) reviewed the :term[audio description].
+Content author(s) have reviewed the :term[media alternatives].
 
 * Role of the creator
 * Number of creators (for each Role)

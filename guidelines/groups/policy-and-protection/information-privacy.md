@@ -1,11 +1,6 @@
 ---
 children:
-  - access-to-information
   - accessible-privacy-settings
-  - acknowledge-information-sharing
-  - at-data-collection
-  - disability-information-privacy
-  - global-privacy-settings
   - notify-about-sensitive-information
   - safe-content
   - security-procedures

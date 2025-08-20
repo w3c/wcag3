@@ -3,14 +3,14 @@ children:
   - descriptive-transcripts
   - equivalent-media-alternatives
   - findable-media-alternatives
-  - preferred-language
-  - non-verbal-cues
   - speakers-identity
-  - languages-used
+  - language-identified
+  - media-alternatives-in-all-used-languages
   - significant-sounds
   - significant-visual-information
+  - non-verbal-cues
   - video-player
-  - perfect-set-of-alternatives
+  - reviewed-by-content-authors
 ---
 
 Users have equivalent alternatives for media :term[content].
