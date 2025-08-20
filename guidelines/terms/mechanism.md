@@ -9,5 +9,5 @@ The mechanism may be explicitly provided in the content, or may be relied upon t
 :::
 
 :::note
-The mechanism needs to meet all success criteria for the conformance level claimed.
+The mechanism needs to meet all requirements for the conformance level claimed.
 :::
