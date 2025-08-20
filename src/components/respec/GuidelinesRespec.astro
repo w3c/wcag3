@@ -106,7 +106,12 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       const noteEl = document.createElement("div");
       noteEl.className = "ednote";
       noteEl.innerHTML =
-        "<p>Requirements for this guideline have not yet progressed beyond Exploratory status.</p>";
+        `<p>
+          Requirements and assertions for this guideline do not appear here
+          because they have not yet progressed beyond exploratory.
+          See the <a href="https://w3c.github.io/wcag3/guidelines/">Editor's Draft</a> for
+          the complete list of potential requirements and assertions.
+        </p>`;
       el.appendChild(noteEl);
     });
   }
