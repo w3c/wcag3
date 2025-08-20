@@ -1,11 +1,11 @@
 ---
 children:
   - audio-descriptions-prerecorded
+  - controllable-audio-description
+  - audio-description-timing
   - audio-descriptions-live
   - extended-audio-description
-  - controllable-audio-description
   - audio-description-in-target-user-language
-  - audio-description-timing
   - audio-description-volume
   - audio-description-language
   - alternative-language-versions-of-audio-descriptions-are-available

@@ -8,12 +8,12 @@ children:
   - captions-are-synchronized
   - consistent-captions
   - adaptable-captions
+  - captions-location-360
+  - visual-indicators-360
   - alternative-language-versions-of-captions-are-available
   - captions-enhanced-features
   - captions-style-guide
   - testing-captions-with-users
-  - captions-location-360
-  - visual-indicators-360
   - using-human-captioners
 ---
 
