@@ -16,9 +16,12 @@ const commonChildSchema = z.object({
 const stringArrayParser = (fileContent: string) =>
   JSON.parse(fileContent).map((id: string) => ({ id }));
 
-const childrenSchema = z.array(z.string()).refine((value) => uniq(value).length === value.length, {
-  message: "children should not contain duplicates",
-});
+const childrenSchema = z
+  .array(z.string())
+  .min(1)
+  .refine((value) => uniq(value).length === value.length, {
+    message: "children should not contain duplicates",
+  });
 
 export const collections = {
   acknowledgementsOrder: defineCollection({

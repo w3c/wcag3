@@ -98,6 +98,24 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function addEmptyGuidelineEdNote() {
+    const sectionSelector =
+      "section" + (new URLSearchParams(location.search).get("skip") ? ":not([data-skip])" : "");
+
+    document.querySelectorAll(".guideline:not(:has(" + sectionSelector + "))").forEach((el) => {
+      const noteEl = document.createElement("div");
+      noteEl.className = "ednote";
+      noteEl.innerHTML =
+        `<p>
+          Requirements and assertions for this guideline do not appear here
+          because they have not yet progressed beyond exploratory.
+          See the <a href="https://w3c.github.io/wcag3/guidelines/">Editor's Draft</a> for
+          the complete list of potential requirements and assertions.
+        </p>`;
+      el.appendChild(noteEl);
+    });
+  }
+
   function addRequirementType() {
     var requirements = document.querySelectorAll(".requirement");
     requirements.forEach(function (requirement) {
@@ -416,7 +434,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
     maxTocLevel: 4,
 
-    preProcess: [addSummaryMarkers, adjustDfnData],
+    preProcess: [addSummaryMarkers, addEmptyGuidelineEdNote, adjustDfnData],
     postProcess: [
       adjustNormativity,
       removeDraftMethodLinks,
