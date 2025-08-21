@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 synonyms:
   - points of regard
 ---
