@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Non-essential flashing or strobing beyond flashing thresholds is avoided.
+:term[Content] does not include non-essential flashing or strobing beyond flashing thresholds.
