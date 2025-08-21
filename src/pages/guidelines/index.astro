@@ -19,13 +19,13 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 	</head>
 	<body>
 		<section id="abstract">
-			<p>W3C Accessibility Guidelines (WCAG) 3.0 will provide a wide range of recommendations for making web content more accessible to users with disabilities. Following these guidelines will address many of the needs of users with blindness, low vision and other vision impairments; deafness and hearing loss; limited movement and dexterity; speech disabilities; sensory disorders; cognitive and learning disabilities; and combinations of these. These guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines apply to various types of web content including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
+			<p>W3C Accessibility Guidelines (WCAG) 3.0 will provide a wide range of recommendations for making web content more accessible to users with disabilities. Following these guidelines will address many of the needs of users with blindness, low vision and other vision impairments; deafness and hearing loss; limited movement and dexterity; speech disabilities; sensory disorders; cognitive and learning disabilities; and combinations of these. These guidelines address accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines apply to various types of web content including static, dynamic, interactive, and streaming content; audiovisual media; virtual and augmented reality; and alternative access presentation and control. These guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 			<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> and <a>assertions</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement or assertion. </p>
 			<p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, requirements, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
 			<p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3.0 Introduction</a> for an introduction and links to WCAG technical and educational material.</p>
 		</section>
 		<section id="sotd">
-			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a restructuring of the guidelines and first draft decision trees for three Guidelines: Clear meaning, Image alternatives, and Keyboard focus appearance.</p>
+			<p>This is an update to the W3C Accessibility Guidelines (WCAG) 3.0. It includes a requirements that have reached the developing status.</p>
 			<p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
 		</section>
 		<section class="informative">
@@ -38,48 +38,31 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<li>WCAG 3.0 does not replace WCAG 2. WCAG 2 is used around the world and will still be required by different
 						countries for a long time to come. </li>
 					<li>Meeting WCAG 2 at AA level means you will be close to meeting WCAG 3.0, but there may be differences. </li>
-					<li>We have developed labels to define the status of content for each section. The labels indicate how confident we are that the content will not change.
-						This lets you know whether we are trying out an idea, or whether we have put a lot of work into the topic and
-						we do not expect it to change. There are 5 status levels for sections of content:
-						<ul>
-							<li>Placeholder &mdash; we are thinking about this topic and plan to work on it in the next few months. </li>
-							<li>Exploratory &mdash; we have started work on this topic, but still have many questions.</li>
-							<li>Developing &mdash; we have general agreement on this topic, but not all the details are worked out. </li>
-							<li>Refining &mdash; we think we have a good idea for this topic and want public feedback about it. We are ready to have a
-								few people try it out and see how well it works. </li>
-							<li>Mature &mdash; we think this topic is ready to publish and we want to know if we missed any rare examples. </li>
-						</ul>
-					</li>
+					<li>This draft only includes requirements that have reach the developing status. This means that we have a general agreement on the topic but not all the details are worked out.</li>
+					<li>We would like feedback on this draft. You can raise a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a>.</li>					
 				</ul>
 			</details>
-			<p>What’s new in this version of WCAG 3.0?</p>
+			<p>What's new in this version of WCAG 3.0?</p>
 
-			<p>This draft includes an updated list of the potential Guidelines and Requirements that we are exploring. The list of Requirements is longer than the list of Success Criteria in WCAG 2.2. This is because:</p>
-				<ul>
-					<li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
-					<li>WCAG 3.0 Requirements are more granular than WCAG 2 Success Criteria. </li>
-				</ul>
-				<p>The final set of Requirements in WCAG 3.0 will be different from what is in this draft. Requirements will be added, combined, and removed. 
-				We also expect changes to the text of the Requirements. Only some of the Requirements will be used to meet the base level of conformance.</p>
+			<p>This draft includes an updated list of the potential Guidelines and Requirements that have progress to <a href="#section-status-levels">developing status</a>. The list of Requirements is longer than the list of Success Criteria in WCAG 2. This is because:</p>
+			<ul>
+				<li>the intent at this stage is to be as inclusive as possible of potential Requirements, and</li>
+				<li>WCAG 3.0 Requirements are more granular than WCAG 2 Success Criteria. </li>
+			</ul>
+			<p>The final set of Requirements in WCAG 3.0 will be different from what is in this draft. Requirements will be added, combined, and removed. We also expect changes to the text of the Requirements. Only some of the Requirements will be used to meet the base level of conformance.</p>
 			
 			<p>The Requirements are grouped into the following sections:</p>
 			<GroupsList />
 
-			<p>The purpose of this update is to demonstrate a potential structure for guidelines and indicate the current direction of the WCAG 3.0 conformance. Please consider the following questions when reviewing this draft:</p>
+			<p>This update provides more mature Requirements including example Assertions. Please consider the following questions when reviewing this draft:</p>
 			<ul>
-				<li>What Requirements are missing from this list to make web content accessible?</li>
-				<li>What research supports or refutes the Requirements marked as needing additional research?</li>
-				<li>Three guidelines (<a href="#clear-language">Clear language</a>, <a href="#image-alternatives">Image alternatives</a>, and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a>) have moved from exploratory to developing, and demonstrate a potential structure. Do the following make the guidelines easier to understand and use:
-				<ul>
-					<li>Grouping related <a href="https://www.w3.org/TR/wcag-3.0-explainer/#requirements-and-methods">requirements</a> and <a href="https://www.w3.org/TR/wcag-3.0-explainer/#assertions">assertions</a>?</li>
-					<li>Does the information under 'Which foundational requirements apply?' (the decision tree) make the guidelines easier to understand and use?</li>
-					</ul>
-				</li>
-				<li>The organization of the decision trees in <a href="#clear-language">Clear language</a> and <a href="#keyboard-focus-appearance">Keyboard focus appearance</a> differ slightly. Does one seem clearer than the other?</li>
-				<li>The conformance section explains the approach that the Accessibility Guidelines Working Group is considering for WCAG 3.0. While many details still need to be worked out, do you have constructive comments about the proposed approach for WCAG 3.0? </li>
+				<li>Are there foundational requirements that should be supplemental or vice versa?</li>
+				<li>Are there there requirements that should not be included?</li>
+				<li>Is this way of wording the requirements clearer than the approach used in WCAG 2?</li>
+				<li>What are your thoughts on assertions?</li>
 			</ul>
 	
-			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p>To provide feedback, please file a <a href="https://github.com/w3c/wcag3/issues">GitHub issue</a> or email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>).</p>
 
 			<section>
 				<h3>About WCAG 3.0</h3>
