@@ -9,7 +9,7 @@ children:
   - unambiguous-numerical-formatting
   - visual-aids
   - summaries
-  - unambiguous-pronunciation
+  - unambiguous-meaning
   - review-process
   - clear-language-style-guide
   - clear-language-training-policy
@@ -20,13 +20,16 @@ status: developing
 
 Users can understand the content without having to process complex or unclear language.
 
+
+:::ednote
+This guideline will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
+:::
+
 :::ednote
 See also: Structure as these sections are closely related.
 :::
 
 :::ednote
-This guideline will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
-
 To ensure this guideline works well across different languages,
 members of AG, COGA, and internationalization (i18n) agreed on an initial set of languages to pressure-test the guidance.
 
