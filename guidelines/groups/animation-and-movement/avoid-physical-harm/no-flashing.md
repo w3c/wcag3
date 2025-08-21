@@ -3,4 +3,4 @@ status: developing
 type: supplemental
 ---
 
-:term[Content] does not include flashing.
+:term[Content] does not include :term[flashing].
