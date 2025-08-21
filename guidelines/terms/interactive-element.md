@@ -2,7 +2,7 @@
 status: developing
 ---
 
-:term[element] that responds to user input and has a distinct :term[programmatically determinable] name
+element that responds to user input and has a distinct :term[programmatically determinable] name
 
 :::example
 Buttons, controls, input fields.

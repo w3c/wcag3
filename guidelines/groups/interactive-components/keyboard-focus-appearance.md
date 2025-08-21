@@ -8,7 +8,7 @@ howto: focus-appearance
 status: developing
 ---
 
-Users can see which :term[element] has keyboard focus.
+Users can see which element has keyboard focus.
 
 :::decision-tree
 For each focusable item:
