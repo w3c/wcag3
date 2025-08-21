@@ -1,13 +1,13 @@
 ---
 children:
-  - visually-organized
-  - programmtic-relationships
+  - programmatic-relationships
   - regions
   - section-labels
   - heading-structure
   - lists
   - numbered-steps
   - title
+  - visually-organized
   - white-spacing
 ---
 

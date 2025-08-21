@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Relationship between elements are conveyed programmatically. 
+Relationship between elements are conveyed :term[programmatically]. 

@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Elements are programmatically grouped together within landmarks.
+Elements are :term[programmatically] grouped together within landmarks.
