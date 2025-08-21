@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the content's language (or the most similar language of the ones listed).
+The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the content's language (or the language of the ones listed with the most similar orthography).
 
 :::ednote
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
