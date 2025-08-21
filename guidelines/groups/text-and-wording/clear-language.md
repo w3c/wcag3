@@ -5,7 +5,7 @@ children:
   - common-words
   - abbreviations
   - non-literal-language
-  - numerical-supplements
+  - numerical-alternatives
   - visual-aids
   - summaries
   - unambiguous-meaning
