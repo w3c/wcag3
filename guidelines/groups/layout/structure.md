@@ -1,10 +1,14 @@
 ---
 children:
+  - visually-organized
+  - programmtic-relationships
+  - regions
   - section-labels
-  - white-spacing
-  - title
+  - heading-structure
   - lists
   - numbered-steps
+  - title
+  - white-spacing
 ---
 
 Users can understand and navigate through the :term[content] using structure.
