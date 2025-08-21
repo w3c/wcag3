@@ -6,7 +6,6 @@ children:
   - abbreviations
   - non-literal-language
   - numerical-supplements
-  - unambiguous-numerical-formatting
   - visual-aids
   - summaries
   - unambiguous-meaning
