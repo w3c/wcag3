@@ -2,10 +2,20 @@
 status: developing
 ---
 
-time-synchronized visual and/or text alternative that communicates the audio portion of a work of multimedia (for example, a movie or podcast recording)
+synchronized visual and/or :term[text alternative] for both the speech and non-speech :term[audio] portion of a work of audiovisual :term[content]
 
 :::note
-Captions are similar to dialogue-only :term[subtitles], except captions convey not only the content of spoken dialogue, but also equivalents for non-dialogue audio information needed to understand the program content, including sound effects, music, laughter, speaker identification and location.
+Closed captions are equivalents that can be turned on and off with some players and can often be read using assistive technology..
+:::
 
-In some countries, captions are called subtitles.
+:::note
+Open captions are any captions that cannot be turned off in the player. For example, if the captions are visual equivalent images of text embedded in :term[video].
+:::
+
+:::note
+:term[Audio descriptions] can be, but do not need to be, captioned since they are descriptions of information that is already presented visually.
+:::
+
+:::note
+In some countries, captions are called subtitles. The term 'subtitles' is often also used to refer to captions that present a translated version of the audio content.
 :::
