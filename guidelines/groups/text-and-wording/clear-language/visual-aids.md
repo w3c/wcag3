@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: assertion
 ---
 
-Visual aids are used to supplement complex ideas in written :term[content], such as processes, workflows, relationships, or chronological information.
+Content author(s) have reviewed written :term[content] for complex ideas in written such as processes, workflows, relationships, or chronological information and added supplemental visual aids to assist readers with understanding them. 
