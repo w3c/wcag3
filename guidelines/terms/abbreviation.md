@@ -9,7 +9,7 @@ This includes initialisms, acronyms, and numeronyms.
 
 1. **initialisms** are shortened forms of a name or phrase made from the initial letters of words or syllables contained in that name or phrase. These are not defined in all languages.
 2. **acronyms** are abbreviated forms made from the initial letters or parts of other words (in a name or phrase) which may be pronounced as a word.
-3. **numeronyms** are shortened forms of word that use the first and last letters, with a number in between showing the number of letters left out.
+3. **numeronyms** are shortened forms of a word that use the first and last letters, with a number in between showing the number of letters left out.
 :::
 
 :::example
