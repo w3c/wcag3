@@ -13,7 +13,7 @@ This includes initialisms, acronyms, and numeronyms.
 :::
 
 :::example
-SNCF is a French initialism that contains the initial letters of the Société Nationale des Chemins de Fer, the French national railroad.
+SNCF is a French initialism that contains the initial letters of the <span lang="fr">Société Nationale des Chemins de Fer</span>, the French national railroad.
 :::
 
 :::example
