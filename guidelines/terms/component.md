@@ -2,4 +2,4 @@
 status: developing
 ---
 
-grouping of elementsa for a distinct function
+grouping of elements for a distinct function

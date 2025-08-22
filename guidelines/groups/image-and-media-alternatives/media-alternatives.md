@@ -7,8 +7,8 @@ children:
   - speakers-identity
   - language-identified
   - media-alternatives-in-all-spoken-languages
-  - significant-sounds
-  - significant-visual-information
+  - meaningful-sounds
+  - meaningful-visual-information
   - non-verbal-cues
   - media-alternatives-style-guide
   - testing-media-alternatives-with-users
