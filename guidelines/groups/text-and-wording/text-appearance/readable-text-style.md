@@ -66,7 +66,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th scope="row">Capitalisation</th>
+       <th scope="row">Capitalization</th>
        <td></td>
        <td></td>
        <td></td>
