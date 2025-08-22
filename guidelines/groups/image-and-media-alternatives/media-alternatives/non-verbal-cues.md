@@ -5,4 +5,8 @@ type: supplemental
 title: Non-verbal cues
 ---
 
-Significant nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning are explained in :term[media alternatives].
+Nonverbal cues needed to understand the media are explained in :term[media alternatives].
+
+:::ednote
+This includes tone of voice, facial expressions, body gestures, or music with emotional meaning.
+:::

@@ -1,7 +1,10 @@
 ---
 type: foundational
 status: developing
-title: Audio description equitably describes important visual information
 ---
 
-Significant visual information not described in the :term[audio] :term[content], including actions, charts or informative visuals, scene changes, and on-screen text, are included in the :term[media alternatives].
+Visual information needed to understand the media and not described in the :term[audio] :term[content] is included in the :term[media alternatives].
+
+:::ednote
+This includes actions, charts or informative visuals, scene changes, and on-screen text,
+:::
