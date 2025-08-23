@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-There is a visible indicator of pointer focus.
+There is a visible indicator of :term[pointer] focus.
