@@ -12,7 +12,7 @@ Content author(s) follow a style guide that includes guidance on :term[media alt
 * **Description:** The style guide include sections such as:
   * What are captions?
   * Who needs captions?
-  * Guideline provided by WCAG 3
+  * :term[Guideline] provided by WCAG 3
   * Recommended style of captions
   * Resources
 * **Example:** The style guide has requirements such as:
