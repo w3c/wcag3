@@ -14,5 +14,5 @@ Other input modalities include :term[pointing devices], voice and speech recogni
 :::
 
 :::note
-The [All Elements Keyboard-Actionable requirement](#all-elements-keyboard-actionable) allows you to navigate to all actionable elements, but if the next element is 5 screens down, you also need to be able to access all the content. Also, if the content is in expanding sections, you need to not only open them but also access all of the content, not just its actionable elements.
+The [All Elements Keyboard-Actionable requirement](#all-elements-keyboard-actionable) allows you to navigate to all actionable elements, but if the next element is 5 screens down, you also need to be able to access all the content. Also, if the content is in expanding :term[sections], you need to not only open them but also access all of the content, not just its actionable elements.
 :::

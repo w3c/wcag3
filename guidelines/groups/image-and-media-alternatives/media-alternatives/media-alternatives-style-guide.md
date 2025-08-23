@@ -9,7 +9,7 @@ Content author(s) follow a style guide that includes guidance on :term[media alt
 * **Name:** ABC Inc. Style Guide for Captions
 * **Version:** 1.2
 * **Date:** October 2024
-* **Description:** The style guide include sections such as:
+* **Description:** The style guide include :term[sections] such as:
   * What are captions?
   * Who needs captions?
   * :term[Guideline] provided by WCAG 3
