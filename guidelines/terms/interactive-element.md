@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - interactive component
 ---
 
 element that responds to user input and has a distinct :term[programmatically determinable] name

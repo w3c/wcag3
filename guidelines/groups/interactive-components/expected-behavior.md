@@ -9,4 +9,4 @@ children:
   - reliable-positioning
 ---
 
-Users have interactive :term[components] that behave as expected.
+Users have :term[interactive components] that behave as expected.
