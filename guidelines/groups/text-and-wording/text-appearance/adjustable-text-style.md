@@ -33,7 +33,7 @@ The metrics in the following table are still to be determined, the current conte
         <ul>
           <li>Disabled entirely</li>
           <li>Enabled on links only</li>
-          <li>Enabled on links and author defined text</li>
+          <li>Enabled on links and author defined :term[text]</li>
         </ul>
        </td>
        <td></td>

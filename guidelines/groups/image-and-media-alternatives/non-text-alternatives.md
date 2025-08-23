@@ -4,4 +4,4 @@ children:
 title: Non-text alternatives
 ---
 
-Users have alternatives available for non-text, non-:term[image] :term[content] that conveys context or meaning.
+Users have alternatives available for non-:term[text], non-:term[image] :term[content] that conveys context or meaning.

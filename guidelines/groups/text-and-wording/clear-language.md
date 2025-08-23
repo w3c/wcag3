@@ -44,7 +44,7 @@ We started with the six official languages of the United Nations (UN). Then we r
 
 The group of five languages includes a wide variety of language features, such as:
 
-- Right-to-left text layout 
+- Right-to-left :term[text] layout
 - Vertical text layout
 - Tonal sounds that affect meaning
 

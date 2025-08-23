@@ -9,7 +9,7 @@ children:
   - readable-text-style-supplemental
 ---
 
-Users can read visually rendered text.
+Users can read visually rendered :term[text].
 
 :::decision-tree
 For each word of text:
