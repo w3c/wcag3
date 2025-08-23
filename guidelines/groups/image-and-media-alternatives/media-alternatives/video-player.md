@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-Content author(s) provide a video player that supports appropriate :term[media alternatives]. The video player includes the following features [list all that apply]:
+Content author(s) provide a :term[video] player that supports appropriate :term[media alternatives]. The video player includes the following features [list all that apply]:
 
 * Supports closed :term[captions] in a standard caption format;
 * Turning captions on and off;
