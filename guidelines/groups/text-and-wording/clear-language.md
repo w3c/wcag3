@@ -25,7 +25,7 @@ This :term[guideline] will include exceptions for poetic, scriptural, artistic, 
 :::
 
 :::ednote
-See also: Structure as these sections are closely related.
+See also: [Structure](#structure) as these guidelines are closely related.
 :::
 
 :::ednote
