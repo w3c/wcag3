@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-When the keyboard focus is moved, one of the following is true:
+When the :term[keyboard focus] is moved, one of the following is true:
 - The focus was moved under direct user control;
 - A new :term[view], such as a dialog, is introduced and focus is moved to that view;
 - The user is informed of the potential keyboard focus move before it happens and given the chance to avoid the move;

@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-When receiving and then removing :term[pointer] hover or keyboard focus triggers additional :term[content] to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
+When receiving and then removing :term[pointer] hover or :term[keyboard focus] triggers additional :term[content] to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent], all of the following are true:
 
 Dismissible
 :  A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content
