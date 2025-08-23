@@ -13,7 +13,7 @@ Users have equivalent alternatives for images.
 
 :::decision-tree
 For each :term[image]:
-1. Would removing the image impact how people understand the page?
+1. Would removing the image impact how people understand the :term[page]?
    - No, <a href="#decorative-image">Decorative image is programmatically hidden.</a> Stop.
    - Yes, continue.
 2. Is the image presented in a way that is available to user agents and :term[assistive technology]?
