@@ -11,7 +11,7 @@ status: developing
 Users can see which element has keyboard focus.
 
 :::decision-tree
-For each focusable item:
+For each focusable :term[item]:
 1. Is the user agent default focus indicator used?
    - Yes, the <a href="#user-agent-default-indicator">user agent default indicator</a> is used AND the :term[accessibility support set] meets <a href="#custom-indicator">Custom focus indicators</a>. Stop.
    - No, continue.

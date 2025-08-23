@@ -7,7 +7,7 @@ When the keyboard focus is moved, one of the following is true:
 - The focus was moved under direct user control;
 - A new :term[view], such as a dialog, is introduced and focus is moved to that view;
 - The user is informed of the potential keyboard focus move before it happens and given the chance to avoid the move;
-- The keyboard focus moves to the next item in keyboard navigation order automatically on completion of some user action.
+- The keyboard focus moves to the next :term[item] in keyboard navigation order automatically on completion of some user action.
 
 :::example
 Examples of where it may be useful to move the user, with approval, to some other location:
