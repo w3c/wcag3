@@ -9,4 +9,4 @@ children:
   - no-infinite-scrolling
 ---
 
-Users can perceive and operate user interface components and navigation without obstruction. 
+Users can perceive and operate user interface :term[components] and navigation without obstruction. 
