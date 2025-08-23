@@ -11,4 +11,4 @@ children:
   - captions-enhanced-features
 ---
 
-Users have :term[captions] for the :term[audio] content.
+Users have :term[captions] for the :term[audio] :term[content].

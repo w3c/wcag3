@@ -8,4 +8,4 @@ children:
   - audio-description-language
 ---
 
-Users have audio descriptions for :term[video] content.
+Users have audio descriptions for :term[video] :term[content].

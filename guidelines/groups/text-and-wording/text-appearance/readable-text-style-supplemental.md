@@ -4,7 +4,7 @@ status: developing
 type: supplemental
 ---
 
-The presentation of :term[text] meet the corresponding values for the content’s language (or the language of the ones listed with the most similar orthography).
+The presentation of :term[text] meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
 
 :::ednote
 [Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.

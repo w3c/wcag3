@@ -6,7 +6,7 @@ type: supplemental
 Repetitive adjacent links that have the same destination are avoided.
 
 :::ednote
-Supplemental if applicable to all content, else best practice.
+Supplemental if applicable to all :term[content], else best practice.
 :::
 
 :::note
