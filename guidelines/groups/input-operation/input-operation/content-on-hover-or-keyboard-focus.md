@@ -19,7 +19,7 @@ Examples of additional content controlled by the user agent include browser tool
 :::
 
 :::note
-This applies to content that appears in addition to the triggering of the interactive element itself. Since hidden interactive elements that are made visible on keyboard focus (such as links used to skip to another part of a :term[page]/:term[view]) do not present additional content, they are not covered by this requirement.
+This applies to content that appears in addition to the triggering of the :term[interactive element] itself. Since hidden interactive elements that are made visible on keyboard focus (such as links used to skip to another part of a :term[page]/:term[view]) do not present additional content, they are not covered by this requirement.
 :::
 
 :::example
