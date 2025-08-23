@@ -5,4 +5,4 @@ children:
   - persistent-navigation
 ---
 
-Users have consistent and alternative methods for navigation.
+Users have consistent and alternative :term[methods] for navigation.

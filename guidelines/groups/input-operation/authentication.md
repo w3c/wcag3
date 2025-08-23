@@ -4,4 +4,4 @@ children:
   - voice-identification
 ---
 
-Users have alternative authentication methods available to them.
+Users have alternative authentication :term[methods] available to them.
