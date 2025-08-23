@@ -13,7 +13,7 @@ Users can read visually rendered text.
 
 :::decision-tree
 For each word of text:
-1. Is the text :term[purely decorative] or, is it not readable by anybody?
+1. Is the text purely :term[decorative] or, is it not readable by anybody?
    - Yes, Pass
    - No, Continue
 2. Does the default/authored presentation meet minimum requirements?
