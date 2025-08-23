@@ -21,7 +21,7 @@ Users can understand the content without having to process complex or unclear la
 
 
 :::ednote
-This :term[guideline] will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than informative.
+This :term[guideline] will include exceptions for poetic, scriptural, artistic, and other content whose main goal is expressive rather than :term[informative].
 :::
 
 :::ednote
