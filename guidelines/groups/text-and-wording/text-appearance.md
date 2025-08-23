@@ -31,7 +31,7 @@ For each word of text:
         2. <a href="#adjustable-text-style">Adjustable text style</a>
         3. <a href="#content-and-functionality-not-lost-with-text-adjustment">Content and functional are not lost with text adjustment</a>
         4. Pass
-    3. No, and the product does not provide its own themes:
+    3. No, and the :term[product] does not provide its own themes:
         1. Fail.
 
 :::
