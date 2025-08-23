@@ -5,4 +5,4 @@ type: supplemental
 title: Supported decision-making
 ---
 
-The interface provides a mechanism to support decision-making while enabling user autonomy. 
+The interface provides a :term[mechanism] to support decision-making while enabling user autonomy. 
