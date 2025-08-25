@@ -1,16 +1,15 @@
 ---
 children:
-  - error-association
-  - error-cause-association
+  - error-notification
+  - error-cause-identified
+  - descriptive-errors
   - error-cause-in-notification
-  - error-identification
+  - error-suggestion
+  - error-visibility
+  - error-persists
+  - error-cause-association
   - error-linked
   - error-location
-  - error-notification-label
-  - error-notification
-  - error-persists
-  - error-suggestion
-  - make-errors-distinct
 ---
 
 Users know about and can correct errors.

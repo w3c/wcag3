@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-When an error occurs and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+Error messages includes suggestions for correction that can be automatically determined, unless it would jeopardize the security or purpose of the :term[content].

@@ -3,4 +3,4 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-Interactive components follow established conventions.
+:term[Interactive components] follow established conventions.

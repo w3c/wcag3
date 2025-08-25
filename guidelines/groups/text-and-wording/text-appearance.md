@@ -9,14 +9,14 @@ children:
   - readable-text-style-supplemental
 ---
 
-Users can read visually rendered text.
+Users can read visually rendered :term[text].
 
 :::decision-tree
 For each word of text:
-1. Is the text :term[purely decorative] or, is it not readable by anybody?
+1. Is the text purely :term[decorative] or, is it not readable by anybody?
    - Yes, Pass
    - No, Continue
-2. Does the default/authored presentation meet minimum requirements?
+2. Does the default/authored presentation meet minimum :term[requirements]?
     1. Yes, the default/authored presentation meets <a href="#readable-blocks-of-text">Readable Blocks of Text (foundational)</a> and <a href="readable-text-style">Readable Text Style (foundational)</a>, Continue
     2. No, Fail
 3. Can the text appearance be adjusted by the user?
@@ -31,7 +31,7 @@ For each word of text:
         2. <a href="#adjustable-text-style">Adjustable text style</a>
         3. <a href="#content-and-functionality-not-lost-with-text-adjustment">Content and functional are not lost with text adjustment</a>
         4. Pass
-    3. No, and the product does not provide its own themes:
+    3. No, and the :term[product] does not provide its own themes:
         1. Fail.
 
 :::

@@ -3,4 +3,4 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-Sections are visually and :term[programmatically] distinguishable.
+:term[Sections] are visually and :term[programmatically] distinguishable.

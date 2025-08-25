@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-:term[Image] is :term[programmatically determinable].
+:term[Images] are :term[programmatically determinable].

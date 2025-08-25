@@ -10,4 +10,4 @@ children:
   - relevant-tab-order-keyboard-focus
 ---
 
-Users can navigate and operate content using only the keyboard.
+Users can navigate and operate :term[content] using only the keyboard.

@@ -3,4 +3,4 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-Meaning conveyed by text appearance is :term[programmatically] available.
+Meaning conveyed by :term[text] appearance is :term[programmatically] available.

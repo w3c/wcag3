@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Interactive components with the same functionality behave consistently.
+:term[Interactive components] with the same functionality behave consistently.

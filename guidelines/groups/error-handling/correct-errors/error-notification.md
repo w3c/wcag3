@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-Errors that can be automatically detected are identified and described to the user.
+When an error is detected, users are notified visually and programatically that an error has occurred.

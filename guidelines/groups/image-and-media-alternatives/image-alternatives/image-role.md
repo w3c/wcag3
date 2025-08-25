@@ -3,4 +3,4 @@ status: exploratory
 type: supplemental
 ---
 
-The :term[role] and importance of the :term[image] is :term[programmatically indicated].
+The :term[role] and importance of :term[images] are :term[programmatically indicated].

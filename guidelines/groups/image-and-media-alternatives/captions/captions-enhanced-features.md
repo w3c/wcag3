@@ -1,6 +1,7 @@
 ---
+needsAdditionalResearch: true
 type: supplemental
-status: developing
+status: exploratory
 title: Enhanced features to interact with captions are available
 ---
 

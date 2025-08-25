@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Interactive components have visible labels that identify the purpose of the component.
+Interactive :term[components] have visible labels that identify the purpose of the component.

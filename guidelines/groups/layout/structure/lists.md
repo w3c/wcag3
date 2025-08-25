@@ -1,5 +1,6 @@
 ---
-status: exploratory
+status: developing
+type: foundational
 ---
 
-Three or more :term[items] of related data are presented as bulleted or numbered lists.
+Lists are visually and :term[programmatically] identifiable as a collection of related :term[items].

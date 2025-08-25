@@ -1,5 +1,7 @@
 ---
-status: exploratory
+status: developing
+type: foundational
 ---
 
-Major sections of :term[content] have within them well structured, understandable visual and programmatic headings.
+Groups of elements have a label that defines their purpose.
+

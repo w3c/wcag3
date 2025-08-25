@@ -3,4 +3,4 @@ status: exploratory
 type: supplemental
 ---
 
-The :term[image type] (photo, icon, etc.) is indicated.
+The :term[image types] (photo, icon, etc.) are indicated.

@@ -3,4 +3,4 @@ needsAdditionalResearch: true
 status: exploratory
 ---
 
-The importance of interactive components is indicated.
+The importance of interactive :term[components] is indicated.

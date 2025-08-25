@@ -4,7 +4,7 @@ status: developing
 type: supplemental
 ---
 
-The default/authored presentation of :term[blocks of text] meets the corresponding values for the content’s language (or the most similar language of the ones listed).
+The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
 
 :::ednote
 [Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
@@ -17,17 +17,17 @@ The metrics in the following table are still to be determined, the current conte
 <table class="data">
  <thead>
    <tr>
-     <th>Characteristic</th>
-     <th>Arabic</th>
-     <th>Chinese</th>
-     <th>English</th>
-     <th>Hindi</th>
-     <th>Russian</th>
+     <th scope="col">Characteristic</th>
+     <th scope="col">Arabic</th>
+     <th scope="col">Chinese</th>
+     <th scope="col">English</th>
+     <th scope="col">Hindi</th>
+     <th scope="col">Russian</th>
    </tr>
    </thead>
    <tbody>
      <tr>
-       <th>Inline margin</th>
+       <th scope="row">Inline margin</th>
        <td></td>
        <td></td>
        <td></td>
@@ -35,7 +35,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
     <tr>
-       <th>Block Margin</th>
+       <th scope="row">Block Margin</th>
        <td></td>
        <td></td>
        <td></td>
@@ -43,7 +43,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>  
      <tr>
-       <th>Line length</th>
+       <th scope="row">Line length</th>
        <td></td>
        <td></td>
        <td></td>
@@ -51,7 +51,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Line height</th>
+       <th scope="row">Line height</th>
        <td></td>
        <td></td>
        <td></td>
@@ -59,7 +59,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Justification</th>
+       <th scope="row">Justification</th>
        <td></td>
        <td></td>
        <td>Left aligned</td>
