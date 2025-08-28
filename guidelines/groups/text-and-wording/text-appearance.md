@@ -17,7 +17,7 @@ For each word of text:
    - Yes, Pass
    - No, Continue
 2. Does the default/authored presentation meet minimum :term[requirements]?
-    1. Yes, the default/authored presentation meets <a href="#readable-blocks-of-text">Readable Blocks of Text (foundational)</a> and <a href="readable-text-style">Readable Text Style (foundational)</a>, Continue
+    1. Yes, the default/authored presentation meets <a href="#readable-blocks-of-text">Readable Blocks of Text (foundational)</a> and <a href="#readable-text-style">Readable Text Style (foundational)</a>, Continue
     2. No, Fail
 3. Can the text appearance be adjusted by the user?
     1. Yes, text must be :term[user-manipulable text] and:
