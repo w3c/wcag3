@@ -1,10 +1,10 @@
 ---
 status: developing
 synonyms:
-  - interactive elements
+  - interactive component
 ---
 
-part of the interface that responds to user input and can have a distinct programmatically determinable name
+element that responds to user input and has a distinct :term[programmatically determinable] name
 
 :::example
 Buttons, controls, input fields.

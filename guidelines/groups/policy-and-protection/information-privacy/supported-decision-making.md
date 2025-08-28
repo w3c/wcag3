@@ -1,8 +1,8 @@
 ---
+needsAdditionalResearch: true
 status: developing
 type: supplemental
-needsAdditionalResearch: true
-
+title: Supported decision-making
 ---
 
-The interface provides a mechanism to support decision making while enabling user autonomy. 
+The interface provides a :term[mechanism] to support decision-making while enabling user autonomy. 

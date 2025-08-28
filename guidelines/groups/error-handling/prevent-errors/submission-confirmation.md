@@ -3,4 +3,4 @@ status: developing
 type: supplemental
 ---
 
-When users submit information as part of a process, users are notified that submission was completed and what information was provided.
+On submission, users are notified of submitted information and submission status.

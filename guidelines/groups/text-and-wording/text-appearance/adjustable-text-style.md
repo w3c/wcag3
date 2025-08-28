@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-The presentation of each of the following attributes can be adjusted to meet the corresponding values for the content’s language (or the most similar language of the ones listed).
+The presentation of each of the following font features can be adjusted to meet the corresponding values for the content’s language (or the language of the ones listed with the most similar orthography).
 
 :::ednote
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
@@ -16,31 +16,31 @@ The metrics in the following table are still to be determined, the current conte
 <table class="data">
  <thead>
    <tr>
-     <th>Characteristic</th>
-     <th>Arabic</th>
-     <th>Chinese</th>
-     <th>English</th>
-     <th>Hindi</th>
-     <th>Russian</th>
+     <th scope="col">Characteristic</th>
+     <th scope="col">Arabic</th>
+     <th scope="col">Chinese</th>
+     <th scope="col">English</th>
+     <th scope="col">Hindi</th>
+     <th scope="col">Russian</th>
    </tr>
    </thead>
    <tbody>
      <tr>
-       <th>Underlining</th>
+       <th scope="row">Underlining</th>
        <td></td>
        <td></td>
        <td>
         <ul>
           <li>Disabled entirely</li>
           <li>Enabled on links only</li>
-          <li>Enabled on links and author defined other text</li>
+          <li>Enabled on links and author defined :term[text]</li>
         </ul>
        </td>
        <td></td>
        <td></td>
      </tr>
     <tr>
-       <th>Italics</th>
+       <th scope="row">Italics</th>
        <td></td>
        <td></td>
        <td>Disabled</td>
@@ -48,7 +48,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>  
      <tr>
-       <th>Bold</th>
+       <th scope="row">Bold</th>
        <td></td>
        <td></td>
        <td>Disabled</td>
@@ -56,7 +56,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Font face</th>
+       <th scope="row">Font face</th>
        <td></td>
        <td></td>
        <td></td>
@@ -64,7 +64,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Font width</th>
+       <th scope="row">Font width</th>
        <td></td>
        <td></td>
        <td></td>
@@ -72,7 +72,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Letter spacing</th>
+       <th scope="row">Letter spacing</th>
        <td></td>
        <td></td>
        <td></td>
@@ -80,7 +80,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th>Capitalization</th>
+       <th scope="row">Capitalization</th>
        <td></td>
        <td></td>
        <td>
@@ -93,7 +93,7 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
     <tr>
-       <th>Automatic hyphenation</th>
+       <th scope="row">Automatic hyphenation</th>
        <td></td>
        <td></td>
        <td>Disabled</td>

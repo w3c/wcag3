@@ -6,4 +6,4 @@ children:
   - virtual-cursor
 ---
 
-Users can control :term[content] settings from their User Agents including Assistive Technology.
+Users can control :term[content] settings from their :term[user agents] including :term[assistive technology].

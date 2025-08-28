@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-A mechanism is available to provide feedback to authors.
+A :term[mechanism] is available to provide feedback to authors.

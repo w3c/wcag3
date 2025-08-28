@@ -11,4 +11,4 @@ children:
   - name-role-value-state
 ---
 
-Users have information about interactive components that is identifiable and usable visually and using assistive technology.
+Users have information about :term[interactive components] that is identifiable and usable visually and using :term[assistive technology].

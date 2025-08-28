@@ -1,7 +1,7 @@
 ---
 children:
   - no-obstructions
-  - clearly-dismissable-content-overlays
+  - clearly-dismissible-content-overlays
   - disabled-controls
   - stable-layout
   - consistent-positioning
@@ -9,4 +9,4 @@ children:
   - no-infinite-scrolling
 ---
 
-Users can percive and operate user interface components and navigation without obstruction. 
+Users can perceive and operate user interface :term[components] and navigation without obstruction. 

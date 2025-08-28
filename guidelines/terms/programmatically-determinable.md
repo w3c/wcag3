@@ -4,6 +4,7 @@ synonyms:
   - programmatically
   - programmatically indicated
   - programmatically detectable
+  - programmatically determined
   - programmatically associated
 ---
 
