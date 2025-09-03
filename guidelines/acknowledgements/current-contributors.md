@@ -49,6 +49,7 @@
 - Mary Ann Jawili (Adobe)
 - Mary Jo Mueller (IBM Corporation)
 - Melanie Philipp (Invited Expert)
+- Michael Fairchild (Microsoft Corporation)
 - Mike Beganyi (Invited Expert)
 - Mike Gower (IBM Corporation)
 - Nat Tarnoff (Level Access)
