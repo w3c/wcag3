@@ -5,8 +5,8 @@ children:
   - adjustable-blocks-of-text
   - adjustable-text-style
   - content-and-functionality-not-lost-with-text-adjustment
-  - readable-blocks-of-text-supplemental
-  - readable-text-style-supplemental
+  - readable-blocks-of-text-enhanced
+  - readable-text-style-enhanced
 ---
 
 Users can read visually rendered :term[text].
