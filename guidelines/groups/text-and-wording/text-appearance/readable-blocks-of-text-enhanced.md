@@ -1,5 +1,5 @@
 ---
-title: Readable blocks of text (supplemental)
+title: Readable blocks of text (enhanced)
 status: developing
 type: supplemental
 ---

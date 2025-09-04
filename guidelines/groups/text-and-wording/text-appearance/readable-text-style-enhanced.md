@@ -1,5 +1,5 @@
 ---
-title: Readable text style (supplemental)
+title: Readable text style (enhanced)
 status: developing
 type: supplemental
 ---
