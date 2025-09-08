@@ -37,5 +37,5 @@ Tools are available that automatically do the calculations when testing contrast
 :::
 
 :::ednote
-WCAG 2.2 contains a [separate page](https://www.w3.org/TR/WCAG22/relative-luminance.html) giving the relative luminance definition using MathML to display the formulas. This will need to be addressed for inclusion in WCAG 3.
+WCAG 2.2 includes a [separate page](https://www.w3.org/TR/WCAG22/relative-luminance.html) giving the relative luminance definition using MathML to display the formulas. This will need to be addressed for inclusion in WCAG 3.
 :::
