@@ -31,6 +31,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build to `./dist/`                               |
 | `npm run check`           | Check for TypeScript errors                      |
 | `npm run preview`         | Preview build locally at `localhost:4321`        |
+| `npm run cspell`          | Check spelling (see words list in cspell.yml)    |
 
 ## Project Structure
 
