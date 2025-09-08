@@ -1,0 +1,47 @@
+version: "0.2"
+allowCompoundWords: true
+minWordLength: 3
+dictionaries:
+  - en_US
+  - companies
+  - softwareTerms
+  - css
+  - html
+ignorePaths: 
+  - "guidelines/acknowledgements/**"
+  - "patches/**"
+  - "src/components/**"
+  - "*.css"
+  - "*.ts"
+patterns:
+  - name: MD_Block_Directive
+    pattern: /^\s*:::.*/gm
+  - name: MD_Fenced_Code_Block
+    pattern: |
+      /
+        ^(\s*`{3,}).*     # Opening ```
+        [\s\S]*?          # the block of code
+        ^\1               # Closing ```
+      /gmx
+languageSettings:
+  - languageId: markdown
+    ignoreRegExpList:
+      - MD_Block_Directive
+      - MD_Fenced_Code_Block
+words:
+  - AGWG
+  - ATAG
+  - CIE
+  - COGA
+  - NOAA
+  - UAAG
+  - UCS
+  - WCAG
+  - mouseup
+  - numeronym
+  - numeronyms
+  - Respec
+  - Société
+  - strobing
+flagWords:
+  - contains
