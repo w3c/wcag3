@@ -1,8 +1,0 @@
-{% for outcome in outcomes %}
-  {%- assign href = '/' | append: outcome.slug | append: '/' %}
-  {%- include 'card.html',
-    title: outcome.title,
-    content: outcome.description,
-    href: href
-  %}
-{% endfor %}
