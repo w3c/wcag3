@@ -64,6 +64,7 @@ export const collections = {
   requirements: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: commonChildSchema.extend({
+      functionalNeeds: z.array(z.string()).optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       type: z
