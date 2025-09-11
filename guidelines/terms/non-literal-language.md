@@ -20,7 +20,7 @@ Examples include:
 - litotes
 - metaphors
 - metonymies
-- onomatopoeias
+- onomatopoeia
 - oxymorons
 - personification
 - puns

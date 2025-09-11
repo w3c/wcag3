@@ -1,0 +1,60 @@
+version: "0.2"
+allowCompoundWords: true
+minWordLength: 3
+dictionaries:
+  - en_US
+  - companies
+  - softwareTerms
+  - css
+  - html
+  - custom
+dictionaryDefinitions:
+  - name: custom
+    path: custom-words.txt
+    addWords: true
+ignorePaths:
+  - "guidelines/acknowledgements/**"
+  - "how-to/**"
+  - "patches/**"
+  - "src/components/**"
+  - "*.css"
+  - "*.json"
+  - "*.svg"
+  - "*.ts"
+  - "custom-words.txt"
+useGitignore: true
+overrides:
+  - filename: "guidelines/**"
+    flagWords: [contains] # Prefer "includes" over "contains" in guidelines
+patterns:
+  # Define patterns here to be reusable across multiple file types below
+  - name: encoded-citations
+    pattern: /\[\[[^\]]+\]\]/g
+  - name: foreign-language
+    pattern: /<(\w+)[^>]+lang="(?!en)\w+"[^>]*>.*?<\/\1>/gi
+  - name: html-tags
+    pattern: /<[^>]*>/g
+languageSettings:
+  - languageId: astro
+    ignoreRegExpList:
+      - encoded-citations
+      - foreign-language
+      - html-tags
+      # pre/code tags
+      - /<(pre|code)\b[^>]*>[\s\S]*?</\1>/g
+  - languageId: markdown
+    ignoreRegExpList:
+      - encoded-citations
+      - foreign-language
+      - html-tags
+      # Block directive
+      - /^\s*:::.*/gm
+      # Fenced code block
+      - |
+        /
+          ^(\s*```).*  # Opening ```
+          [\s\S]*?     # Code block
+          ^```         # Closing ```
+        /gmx
+      # Inline code
+      - /`[^`\n]+`/g

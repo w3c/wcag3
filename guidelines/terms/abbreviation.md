@@ -13,7 +13,7 @@ This includes initialisms, acronyms, and numeronyms.
 :::
 
 :::example
-SNCF is a French initialism that contains the initial letters of the <span lang="fr">Société Nationale des Chemins de Fer</span>, the French national railroad.
+SNCF is a French initialism that includes the initial letters of the <span lang="fr">Société Nationale des Chemins de Fer</span>, the French national railroad.
 :::
 
 :::example
@@ -25,7 +25,7 @@ NOAA is an acronym made from the initial letters of the National Oceanic and Atm
 :::
 
 :::example
-a11y is a numeronym that contains the first and last letter of the word 'accessibility' and the number 11 to indicate the 11 letters in between.
+a11y is a numeronym that includes the first and last letter of the word 'accessibility' and the number 11 to indicate the 11 letters in between.
 :::
 
 :::note
