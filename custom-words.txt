@@ -1,0 +1,22 @@
+# Expected acronyms and abbreviations
+AGWG
+ATAG
+CIE
+COGA
+FTE
+NOAA
+UAAG
+UCS
+WCAG
+
+# Proper names
+Brajnik
+Lauriat
+Yesilada
+
+# Words
+incentivizes
+mouseup
+numeronym
+numeronyms
+strobing

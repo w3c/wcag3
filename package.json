@@ -5,7 +5,7 @@
   "scripts": {
     "build": "astro build",
     "check": "astro check",
-    "cspell": "cspell guidelines",
+    "cspell": "cspell .",
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "astro sync",

@@ -15,7 +15,7 @@ Editor's drafts of TR space documents are available at:
 
 Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v20.
 
-If you use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions,
+If you use [`fnm`](https://github.com/Schniz/fnm) or [`nvm`](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions,
 you can switch to the recommended version by typing `fnm use` or `nvm use`
 (with no additional arguments) while in the repository directory.
 
@@ -25,13 +25,13 @@ First, run `npm i` in the root directory of the repository to install dependenci
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm start`               | Start local dev server at `localhost:4321`       |
-| `npm run build`           | Build to `./dist/`                               |
-| `npm run check`           | Check for TypeScript errors                      |
-| `npm run preview`         | Preview build locally at `localhost:4321`        |
-| `npm run cspell`          | Check spelling (see words list in cspell.yml)    |
+| Command                   | Action                                              |
+| :------------------------ | :-------------------------------------------------- |
+| `npm start`               | Start local dev server at `localhost:4321`          |
+| `npm run build`           | Build to `./dist/`                                  |
+| `npm run check`           | Check for TypeScript errors                         |
+| `npm run preview`         | Preview build locally at `localhost:4321`           |
+| `npm run cspell`          | Check spelling (see words list in custom-words.txt) |
 
 ## Project Structure
 
