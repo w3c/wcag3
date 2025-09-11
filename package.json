@@ -3,12 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "build": "astro build",
+    "build": "astro build --force",
     "check": "astro check",
     "cspell": "cspell .",
     "preview": "astro preview",
     "start": "astro dev",
-    "sync": "astro sync",
+    "sync": "astro sync --force",
     "astro": "astro",
     "postinstall": "patch-package"
   },

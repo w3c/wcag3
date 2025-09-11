@@ -64,12 +64,12 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
         const data = node.data || (node.data = {});
         data.hName = "div";
         data.hProperties = { class: "note" };
-      }
+      } else file.fail(`Unrecognized container directive :::${node.name}`);
     } else if (node.type === "textDirective") {
       if (node.name === "term") {
         const data = node.data || (node.data = {});
         data.hName = "a";
-      }
+      } else file.fail(`Unrecognized inline directive :${node.name}`);
     }
   });
 };
