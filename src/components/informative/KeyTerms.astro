@@ -18,14 +18,18 @@ for (const entry of terms) {
 }
 ---
 
-{terms.length &&
-  <details>
-    <summary><h2 id="key-terms">Key Terms</h2></summary>
-    <dl>
-      {terms.map((entry) => (
-        <dt id={`dfn-${entry.id}`}>{computeTermTitle(entry)}</dt>
-        <dd set:html={entry.rendered!.html} />
-      ))}
-    </dl>
-  </details>
+{
+  terms.length ? (
+    <details>
+      <summary>
+        <h2 id="key-terms">Key Terms</h2>
+      </summary>
+      <dl>
+        {terms.map((entry) => (
+          <dt id={`dfn-${entry.id}`}>{computeTermTitle(entry)}</dt>
+          <dd set:html={entry.rendered!.html} />
+        ))}
+      </dl>
+    </details>
+  ) : null
 }
