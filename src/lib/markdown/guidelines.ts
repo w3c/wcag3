@@ -52,6 +52,22 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which foundational requirements apply?</summary>",
         });
+      } else if (isGuideline && node.name === "user-needs") {
+        const data = node.data || (node.data = {});
+        data.hName = "details";
+        data.hProperties = { class: "user-needs" };
+        node.children.unshift({
+          type: "html",
+          value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
+        });
+      } else if (isGuideline && node.name === "tests") {
+        const data = node.data || (node.data = {});
+        data.hName = "details";
+        data.hProperties = { class: "tests" };
+        node.children.unshift({
+          type: "html",
+          value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
+        });
       } else if (node.name === "ednote") {
         const data = node.data || (node.data = {});
         data.hName = "div";
