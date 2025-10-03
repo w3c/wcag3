@@ -53,6 +53,10 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Which foundational requirements apply?</summary>",
         });
       } else if (isGuideline && node.name === "user-needs") {
+        const type = getGuidelineFileType(file);
+        if (type !== "guideline")
+          file.fail(`user-needs expected at guideline level but found at ${type} level`);
+
         const data = node.data || (node.data = {});
         data.hName = "details";
         data.hProperties = { class: "user-needs" };
@@ -61,6 +65,10 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "tests") {
+        const type = getGuidelineFileType(file);
+        if (type !== "requirement")
+          file.fail(`tests expected at requirement level but found at ${type} level`);
+
         const data = node.data || (node.data = {});
         data.hName = "details";
         data.hProperties = { class: "tests" };
