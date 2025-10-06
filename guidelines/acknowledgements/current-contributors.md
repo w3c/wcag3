@@ -60,6 +60,7 @@
 - Rashmi Katakwar (Invited Expert)
 - Roberto Scano (Invited Expert)
 - Roldon Brown (SAP SE)
+- Sailesh Panchang (Deque Systems, Inc.)
 - Sarah Horton (Invited Expert)
 - Scott O'Hara (Microsoft Corporation)
 - Shadi Abou-Zahra (Amazon)
