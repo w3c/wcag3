@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-Content author(s) follow a style guide that includes guidance on :term[media alternatives].
+:term[Content author(s)] follow a style guide that includes guidance on :term[media alternatives].
 
 :::example
 * **Name:** ABC Inc. Style Guide for Captions
