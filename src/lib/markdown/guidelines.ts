@@ -52,6 +52,30 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which foundational requirements apply?</summary>",
         });
+      } else if (isGuideline && node.name === "user-needs") {
+        const type = getGuidelineFileType(file);
+        if (type !== "guideline")
+          file.fail(`user-needs expected at guideline level but found at ${type} level`);
+
+        const data = node.data || (node.data = {});
+        data.hName = "details";
+        data.hProperties = { class: "user-needs" };
+        node.children.unshift({
+          type: "html",
+          value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
+        });
+      } else if (isGuideline && node.name === "tests") {
+        const type = getGuidelineFileType(file);
+        if (type !== "requirement")
+          file.fail(`tests expected at requirement level but found at ${type} level`);
+
+        const data = node.data || (node.data = {});
+        data.hName = "details";
+        data.hProperties = { class: "tests" };
+        node.children.unshift({
+          type: "html",
+          value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
+        });
       } else if (node.name === "ednote") {
         const data = node.data || (node.data = {});
         data.hName = "div";
@@ -64,12 +88,12 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
         const data = node.data || (node.data = {});
         data.hName = "div";
         data.hProperties = { class: "note" };
-      }
+      } else file.fail(`Unrecognized container directive :::${node.name}`);
     } else if (node.type === "textDirective") {
       if (node.name === "term") {
         const data = node.data || (node.data = {});
         data.hName = "a";
-      }
+      } else file.fail(`Unrecognized inline directive :${node.name}`);
     }
   });
 };

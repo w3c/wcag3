@@ -199,6 +199,30 @@ Your content here
 :::
 ```
 
+#### User Needs
+
+The following block will be transformed into a User Needs `details` element,
+with an indication that its content is non-normative.
+This is _only_ valid within guidelines.
+
+```
+:::user-needs
+Your content here
+:::
+```
+
+#### Tests
+
+The following block will be transformed into a Tests `details` element,
+with an indication that its content is non-normative.
+This is _only_ valid within requirements.
+
+```
+:::tests
+Your content here
+:::
+```
+
 #### Glossary Term References
 
 The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
