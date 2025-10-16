@@ -115,6 +115,8 @@ Represents each fifth-level heading specifying an individual requirement or asse
   - `status` for requirements and assertions defaults to `exploratory` if not specified
 - `needsAdditionalResearch` - Optional boolean, indicating whether to
   display a "needs additional research" editor's note
+- `tags` - Optional list of strings, referencing values in `guidelines/tags.json`
+  - Make sure to surround these values in double-quotes to avoid YAML parsing errors
 - `type` - Optional string: `foundational`, `supplemental`, or `assertion`
   - If not specified, the entry will be rendered as "Requirement"
     (with neither "Foundational" nor "Supplemental" qualification)

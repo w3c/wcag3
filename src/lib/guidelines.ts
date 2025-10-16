@@ -45,6 +45,14 @@ let groups: Record<string, CollectionEntry<"groups">> = {};
 let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
 let requirements: Record<string, SkippableRequirement> = {};
 
+async function validateTags({ id, data }: CollectionEntry<"requirements">) {
+  if (!data.tags) return;
+  for (const tagRef of data.tags) {
+    if (!(await getEntry(tagRef)))
+      throw new Error(`Requirement ${id} references unknown tag: ${tagRef.id}`);
+  }
+}
+
 export async function buildGuidelinesHierarchy() {
   // Cache collated collection data for subsequent calls
   if (!Object.keys(groups).length) {
@@ -69,6 +77,7 @@ export async function buildGuidelinesHierarchy() {
             `${groupId}/${guidelineSlug}/${requirementSlug}`
           );
           if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
+          await validateTags(requirement);
           requirements[requirement.id] = skippableChildren.includes(requirementSlug)
             ? { ...requirement, skippable: true }
             : requirement;

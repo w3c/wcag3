@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content";
 import { file, glob } from "astro/loaders";
 import uniq from "lodash-es/uniq";
 
@@ -64,7 +64,7 @@ export const collections = {
   requirements: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: commonChildSchema.extend({
-      functionalNeeds: z.array(z.string()).optional(),
+      tags: z.array(reference("tags")).optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       type: z
@@ -74,6 +74,11 @@ export const collections = {
           "assertion", // TODO: do assertions warrant distinct (or fewer) fields?
         ])
         .optional(),
+    }),
+  }),
+  tags: defineCollection({
+    loader: file("./guidelines/tags.json", {
+      parser: stringArrayParser,
     }),
   }),
   terms: defineCollection({
