@@ -18,12 +18,12 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
 <body>
     <section id='abstract'>
-        <p>The Explainer for WCAG 3.0 accompanies the draft of [[[?WCAG3]]]. It provides an overview of the history and goals of WCAG 3.0. This document also describes the current thinking on the structure of the guidelines and the conformance model. The guidelines, conformance model, and related work are still evolving.</p> 
+        <p>The Explainer for WCAG 3 accompanies the draft of [[[?WCAG3]]]. It provides an overview of the history and goals of WCAG 3. This document also describes the current thinking on the structure of the guidelines and the conformance model. The guidelines, conformance model, and related work are still evolving.</p> 
         <p>Information on the current schedule is included below with a link to a more detailed timeline.</p>
-        <p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3.0 Introduction</a> for more details about this work and links to WCAG technical and educational material.</p>
+        <p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a> for more details about this work and links to WCAG technical and educational material.</p>
     </section>
     <section id='sotd'>
-        <p>This is an updated draft of the WCAG 3.0 Explainer. It is informative, not normative, and is not expected to become a W3C Recommendation. It provides background on [[[?WCAG3]]].</p>
+        <p>This is an updated draft of the WCAG 3 Explainer. It is informative, not normative, and is not expected to become a W3C Recommendation. It provides background on [[[?WCAG3]]].</p>
 
         <p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
 
@@ -37,10 +37,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </p>
         <p>This Explainer includes: </p>
         <ul>
-            <li><a href="#goals">Goals for WCAG 3.0</a></li>
-            <li><a href="#background">WCAG 3.0 Background and Development History</a></li>
-            <li><a href="#current-process">Current Process for Creating WCAG 3.0</a></li>
-            <li><a href="#structure">WCAG 3.0 Structure</a></li>
+            <li><a href="#goals">Goals for WCAG 3</a></li>
+            <li><a href="#background">WCAG 3 Background and Development History</a></li>
+            <li><a href="#current-process">Current Process for Creating WCAG 3</a></li>
+            <li><a href="#structure">WCAG 3 Structure</a></li>
             <li><a href="#conformance-models">Conformance Approach</a></li>
             <li><a href="#user-generated-content">Information on User-generated content</a></li>
             <li><a href="#schedule">Schedule</a>.</li>
@@ -51,14 +51,14 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
     <section>
         <h2>Goals</h2>
         <p>The goal of WCAG is to provide information that can be used to improve the accessibility of products on a
-            variety of platforms. WCAG 3.0 will use a model that allows it to:</p>
+            variety of platforms. WCAG 3 will use a model that allows it to:</p>
         <ul>
             <li>address more disability needs than WCAG 2,</li>
             <li>incorporate publishing requirements and emerging technologies such as web XR (augmented, virtual, and mixed reality) and voice input,</li>
             <li>facilitate maintenance, so that the new model will be more enduring over time as technologies evolve, and</li>
             <li>include additional information about the ways web technologies need to work with <a>authoring tools</a>, <a>user agents</a>, and <a>assistive technologies</a>.</li>
         </ul>
-        <p>Additional goals for WCAG 3.0 are written in <a
+        <p>Additional goals for WCAG 3 are written in <a
                 href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a>. These are based on the
             <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver research</a>, the
             results from the <a href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Silver Design
@@ -66,7 +66,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             Silver Community Group.</p>
 
         <h3>Goals for Inclusion</h3>
-        <p>The creation process for the WCAG 3.0 guidelines should:</p>
+        <p>The creation process for the WCAG 3 guidelines should:</p>
         <ul>
             <li>Actively recruit a diverse range of people with disabilities.</li>
             <li>Periodically evaluate inclusive features of available tooling and procedures.</li>
@@ -83,15 +83,15 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </div>
 
         <h2>Out of Scope</h2>
-        <p>Several items are out of scope for WCAG 3.0:</p>
+        <p>Several items are out of scope for WCAG 3:</p>
         <ul>
             <li>Non-web technologies.</li>
             <li>Normative requirements for platforms, operating systems, software in the web technology stack, etc.</li>
         </ul>
     </section>
     <section id="background">
-        <h2>WCAG 3.0 Background and Development History</h2>
-        <p>WCAG 3.0 originally had a project name of "Silver", so the original groups working on it and much of the
+        <h2>WCAG 3 Background and Development History</h2>
+        <p>WCAG 3 originally had a project name of "Silver", so the original groups working on it and much of the
             early design work carries that project name. The Silver Task Force of the Accessibility Guidelines Working
             Group (AG) and the W3C Silver Community group partnered to produce the needs, requirements, and structure
             for the new accessibility guidance. They worked on Silver from 2017-2023. During that time they:</p>
@@ -118,8 +118,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
     </section>
 
     <section id="current-process">
-        <h2>Current Process for Creating WCAG 3.0</h2>
-        <p>The AG uses an iterative approach to creating WCAG 3.0. Each piece of content will evolve over time,
+        <h2>Current Process for Creating WCAG 3</h2>
+        <p>The AG uses an iterative approach to creating WCAG 3. Each piece of content will evolve over time,
             increasing in maturity. As a result, the document is a work-in-progress.</p>
         <p>Because different parts of the document have different maturity levels, each normative section includes a
             status that indicates:</p>
@@ -145,8 +145,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
     </section>
 
     <section id="structure" data-status="exploratory">
-        <h2>WCAG 3.0 Structure</h2>
-        <p>WCAG 3.0 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized into:</p>
+        <h2>WCAG 3 Structure</h2>
+        <p>WCAG 3 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized into:</p>
         <ul>
             <li>Guidelines (Outcome Statements) - normative
                 <ul>
@@ -178,10 +178,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             </li>
         </ul>
         <p>Details on each are below.</p>
-        <p>By default, guidelines are organized by what is tested. WCAG 3.0 will provide a version, similar to the
+        <p>By default, guidelines are organized by what is tested. WCAG 3 will provide a version, similar to the
             existing <a href="https://www.w3.org/WAI/WCAG22/quickref/">QuickRef</a>, that incorporates tags to allow
             readers to reorganize and filter the content. For example, content will be tagged Perceivable, Operable,
-            Understandable, and Robust so that readers can view WCAG 3.0 criteria in the same structure as WCAG 2.</p>
+            Understandable, and Robust so that readers can view WCAG 3 criteria in the same structure as WCAG 2.</p>
 
         <h3>Guidelines</h3>
         <p>Guidelines are written as plain language, user-centered outcomes statements.</p>
@@ -216,7 +216,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <p class="ednote">The AG has discussed also including "Best Practices" displayed along with Requirements and Assertions. Best practices would be things which could help improve accessibility but may not be objectively testable. Best practices would not contribute to conformance.</p>
 
         <h3>Assertions</h3>
-            <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3.0, an
+            <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3, an
                 Assertion is an attributable and documented statement of fact regarding procedures practiced in the
                 development and maintenance of the content or product to improve accessibility.</p>
 
@@ -296,7 +296,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                         <li>Can assertions be used at the most basic level of conformance? If so, how?</li>
                         <li>How can small organizations use assertions without unrealistic burden?</li>
                         <li>As written, assertions are collocated with requirements. Would moving assertions to a different location be more effective?</li>
-                        <li>AG is considering what will qualify as a procedure in WCAG 3.0. A procedure may be limited to
+                        <li>AG is considering what will qualify as a procedure in WCAG 3. A procedure may be limited to
                             guidance:
                             <ul>
                                 <li>approved by AG and listed in WCAG,</li>
@@ -311,7 +311,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <section id="testing" data-status="exploratory">
         <h4>Testing</h4>
         <h5>Types of tests</h5>
-        <p>WCAG 3.0 includes two types of tests which are evaluated:</p>
+        <p>WCAG 3 includes two types of tests which are evaluated:</p>
         <ul>
             <li>Quantifiable tests: Tests where there is a high degree of <a>reliability</a> between test results from different
                 testers. Examples include testing whether certain properties exist in the content or if they match a
@@ -393,7 +393,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
     <section id="conformance-models" data-status="exploratory">
         <h2>Conformance Approach</h2>
-        <p>WCAG 3.0 will use a different conformance model than WCAG 2.2 in order to meet its requirements. Developing
+        <p>WCAG 3 will use a different conformance model than WCAG 2.2 in order to meet its requirements. Developing
             and vetting the conformance model is a large portion of the work AG needs to complete over the next few
             years. Drafts will include maturity models for public review and comment. </p>
 
@@ -409,7 +409,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <p>Key concepts AG has and previously considered and continues to explore the following:</p>
         <ul><li>Bronze, Silver and Gold conformance levels: AG has considered using three traditionally named conformance levels. 
             <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
-                bronze level does not conform to WCAG 3.0. The subset will require enough requirements and
+                bronze level does not conform to WCAG 3. The subset will require enough requirements and
                 assertions to improve <a>equity</a> across functional needs.</li>
             <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
                 organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
@@ -435,13 +435,13 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
             <p>The intent is for the responsibility of testing with user-agents to vary depending on the level of conformance.</p> 
 
-            <p>At the foundational level of conformance assumptions can be made by authors that methods and techniques provided by WCAG 3.0 work. At higher levels of conformance the author may need to test that a technique works, or check that available user-agents meet the requirement, or a combination of both.</p>
+            <p>At the foundational level of conformance assumptions can be made by authors that methods and techniques provided by WCAG 3 work. At higher levels of conformance the author may need to test that a technique works, or check that available user-agents meet the requirement, or a combination of both.</p>
 
             <p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each outcome.</p>
 
-            <p>The intent is that WCAG 3.0 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information.</p>
+            <p>The intent is that WCAG 3 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information.</p>
 
-            <p>An "accessibility support set" is used at higher levels of conformance to define which user-agents and assistive technologies you test with. It would be included in a conformance claim, and enables authors to use techniques that are not provided with WCAG 3.0.</p>
+            <p>An "accessibility support set" is used at higher levels of conformance to define which user-agents and assistive technologies you test with. It would be included in a conformance claim, and enables authors to use techniques that are not provided with WCAG 3.</p>
 
             <p>An exception for long-present bugs in assistive technology is still under discussion.</p>
 
@@ -452,10 +452,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>User-generated content</h3>
         <details class="summary">
             <summary>Summary</summary>
-            <p>User-generated content is content written by the public and customers. WCAG 3.0 may use different advice or steps for user-generated content to improve accessibility than for content created by the publisher. WCAG 3.0 proposes that organizations identify user-generated content and identify the steps taken to encourage accessibility. </p>
+            <p>User-generated content is content written by the public and customers. WCAG 3 may use different advice or steps for user-generated content to improve accessibility than for content created by the publisher. WCAG 3 proposes that organizations identify user-generated content and identify the steps taken to encourage accessibility. </p>
         </details>
             <div class="ednote">
-                <p>It remains to be determined how to address user-generated content that has accessibility issues; and to define what minimum thresholds might be acceptable. We expect WCAG 3.0 to provide this guidance within individual guidelines and outcomes and to support testing for conformance. The working group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements on how to best support accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
+                <p>It remains to be determined how to address user-generated content that has accessibility issues; and to define what minimum thresholds might be acceptable. We expect WCAG 3 to provide this guidance within individual guidelines and outcomes and to support testing for conformance. The working group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements on how to best support accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
                 <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance for providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a> - “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user generated alternative text. </p>
                 <p>The working group intends to more thoroughly address the contents and the location of an accessibility statement in a future draft.</p>
             </div>
@@ -466,8 +466,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <li>uploaded photographs, or</li>
             <li>uploaded videos or other multimedia.</li>
         </ul>
-        <p>User-generated content is provided for publication by visitors where the content platform specifically welcomes and encourages it. User-generated content is content that is submitted through a user interface designed specifically for members of the public and customers. Use of the same user interface as an authoring tool for publication of content by agents of the publisher (such as employees, contractors, or authorized volunteers) acting on behalf of the publisher does not make that content user-generated content. The purpose of the user-generated content conformance  section is to allow WCAG 3.0 outcomes and methods to require additional or different steps to improve the accessibility of user-generated content.</p>
-        <p>An important part of WCAG conformance is the specific guidance that is associated with individual WCAG 3.0 guidelines and outcomes. Not all WCAG 3.0 guidelines will have unique outcomes and testing for user-generated content. Unless user-generated content requirements are specified in a particular guideline, that guideline applies as written whether or not the content is user generated. </p>
+        <p>User-generated content is provided for publication by visitors where the content platform specifically welcomes and encourages it. User-generated content is content that is submitted through a user interface designed specifically for members of the public and customers. Use of the same user interface as an authoring tool for publication of content by agents of the publisher (such as employees, contractors, or authorized volunteers) acting on behalf of the publisher does not make that content user-generated content. The purpose of the user-generated content conformance  section is to allow WCAG 3 outcomes and methods to require additional or different steps to improve the accessibility of user-generated content.</p>
+        <p>An important part of WCAG conformance is the specific guidance that is associated with individual WCAG 3 guidelines and outcomes. Not all WCAG 3 guidelines will have unique outcomes and testing for user-generated content. Unless user-generated content requirements are specified in a particular guideline, that guideline applies as written whether or not the content is user generated. </p>
     
         
         <p>The web content publisher should identify all locations of user-generated content (such as commentary on hosted content, product descriptions for consumer to consumer for sale listings, and restaurant reviews) and perform standard accessibility evaluation analysis for each. If there are no accessibility issues, the user-generated content is fully conforming.</p>
@@ -485,13 +485,13 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h2>Schedule</h2>
         <p>AG is currently <a href="https://www.w3.org/2023/11/ag-charter">chartered</a> through November 2025. The
             schedule through that time period is maintained at <a
-                href="https://www.w3.org/WAI/GL/wiki/WCAG_3_Timeline#Publication_Plan">WCAG 3.0 Timeline</a>.</p>
+                href="https://www.w3.org/WAI/GL/wiki/WCAG_3_Timeline#Publication_Plan">WCAG 3 Timeline</a>.</p>
         <p>AG will continue to iterate within a single normative document with informative supporting documentation.
             After exploring other options such as breaking the content into modules, the group determined that the
             fastest way forward at this time is to continue creating a single document with varying levels of maturity.
             We will revisit whether mature content can be published as informative modules as part of the next charter
             period, when content is more mature.</p>
-        <p>A final schedule will be delivered as part of this charter period. WCAG 3.0 will not be published until it
+        <p>A final schedule will be delivered as part of this charter period. WCAG 3 will not be published until it
             covers at least as much as WCAG 2.2.</p>
 
     </section>
