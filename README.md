@@ -225,6 +225,33 @@ Your content here
 :::
 ```
 
+### Applicability
+
+The following block will be preceded by "Applies when:".
+This is _only_ valid within requirements.
+
+```
+:::applicability
+a condition is true.
+:::
+```
+
+If the block contains a single paragraph as above, "Applies when:" will appear inline before the content.
+Otherwise (e.g. if the block contains a list), it will appear in a separate paragraph before the content.
+
+### Exceptions
+
+The following block will be preceded by "Except when:".
+This is _only_ valid within requirements that also use `:::applicability`.
+
+```
+:::exceptions
+a condition is true.
+:::
+```
+
+This follows the same behavior as `:::applicability` regarding single paragraphs vs. other cases.
+
 #### Glossary Term References
 
 The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
