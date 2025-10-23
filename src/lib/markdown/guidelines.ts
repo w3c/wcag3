@@ -55,7 +55,7 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
  * otherwise, it prepends a preceding paragraph before the node.
  **/
 function prependBoldText(node: ContainerDirective, label: string) {
-  if (node.children.length === 1 && node.children[0].type === "paragraph") {
+  if (node.children[0].type === "paragraph") {
     node.children[0].children.unshift({
       type: "html",
       value: `<b>${label}</b> `,
@@ -72,8 +72,6 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
   const isGuideline = isGuidelineFile(file);
   const isTerm = isTermFile(file);
   if (!isGuideline && !isTerm) return;
-
-  const parentsWithApplicability = new Set();
 
   visit(tree, (node, index, parent) => {
     if (node.type === "containerDirective") {
@@ -106,24 +104,17 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
-      } else if (isGuideline && node.name === "applicability") {
-        expectGuidelineFileType(file, "requirement", "applicability");
+      } else if (isGuideline && node.name === "applies-when") {
+        expectGuidelineFileType(file, "requirement", "applies-when");
 
-        prependBoldText(node, "Applies when:");
-        node.children.push({
-          type: "html",
-          value: "<p><b>Requirement:</b></p>",
-        });
+        prependBoldText(node, "Applies when ");
         if (parent && typeof index !== "undefined") {
-          parentsWithApplicability.add(parent);
           parent.children.splice(index!, 1, ...node.children);
         }
-      } else if (isGuideline && node.name === "exceptions") {
-        expectGuidelineFileType(file, "requirement", "exceptions");
-        if (!parent || !parentsWithApplicability.has(parent))
-          file.fail(":::exceptions cannot be used without :::applicability");
-
-        prependBoldText(node, "Except when:");
+      } else if (isGuideline && node.name === "except-when") {
+        expectGuidelineFileType(file, "requirement", "except-when");
+        
+        prependBoldText(node, "Except when ");
         if (parent && typeof index !== "undefined")
           parent.children.splice(index!, 1, ...node.children);
       } else if (node.name === "ednote") {
