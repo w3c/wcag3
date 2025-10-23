@@ -50,20 +50,20 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
 };
 
 /**
- * Prepends a <strong> element containing the given label.
+ * Prepends a <b> element containing the given label.
  * If the given node contains a single paragraph, it prepends inline;
  * otherwise, it prepends a preceding paragraph before the node.
  **/
-function prependStrongText(node: ContainerDirective, label: string) {
+function prependBoldText(node: ContainerDirective, label: string) {
   if (node.children.length === 1 && node.children[0].type === "paragraph") {
     node.children[0].children.unshift({
       type: "html",
-      value: `<strong>${label}</strong> `,
+      value: `<b>${label}</b> `,
     });
   } else {
     node.children.unshift({
       type: "html",
-      value: `<p><strong>${label}</strong></p>`,
+      value: `<p><b>${label}</b></p>`,
     });
   }
 }
@@ -109,10 +109,10 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
       } else if (isGuideline && node.name === "applicability") {
         expectGuidelineFileType(file, "requirement", "applicability");
 
-        prependStrongText(node, "Applies when:");
+        prependBoldText(node, "Applies when:");
         node.children.push({
           type: "html",
-          value: "<p><strong>Requirement:</strong></p>",
+          value: "<p><b>Requirement:</b></p>",
         });
         if (parent && typeof index !== "undefined") {
           parentsWithApplicability.add(parent);
@@ -123,7 +123,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
         if (!parent || !parentsWithApplicability.has(parent))
           file.fail(":::exceptions cannot be used without :::applicability");
 
-        prependStrongText(node, "Except when:");
+        prependBoldText(node, "Except when:");
         if (parent && typeof index !== "undefined")
           parent.children.splice(index!, 1, ...node.children);
       } else if (node.name === "ednote") {
