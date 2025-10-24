@@ -225,32 +225,31 @@ Your content here
 :::
 ```
 
-### Applicability
+### Applies when
 
-The following block will be preceded by "Applies when:".
+The following block will be preceded by "Applies when".
 This is _only_ valid within requirements.
 
 ```
-:::applicability
+:::applies-when
 a condition is true.
 :::
 ```
 
-If the block contains a single paragraph as above, "Applies when:" will appear inline before the content.
-Otherwise (e.g. if the block contains a list), it will appear in a separate paragraph before the content.
+The label. "Applies when", will be appended before the first paragraph of the block. If the first content item is anything other than a paragraph (e.g. if the block only contains a list), it will appear in a separate paragraph before the content.
 
-### Exceptions
+### Except when
 
-The following block will be preceded by "Except when:".
-This is _only_ valid within requirements that also use `:::applicability`.
+The following block will be preceded by "Except when".
+This is _only_ valid within requirements.
 
 ```
-:::exceptions
+:::except-when
 a condition is true.
 :::
 ```
 
-This follows the same behavior as `:::applicability` regarding single paragraphs vs. other cases.
+This follows the same behavior as `:::applies-when` regarding single paragraphs vs. other cases.
 
 #### Glossary Term References
 
