@@ -113,14 +113,14 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
       } else if (isGuideline && node.name === "applies-when") {
         expectGuidelineFileType(file, "requirement", "applies-when");
 
-        prependBoldText(node, "Applies when ");
+        prependBoldText(node, "Applies when");
         if (parent && typeof index !== "undefined") {
           parent.children.splice(index!, 1, ...node.children);
         }
       } else if (isGuideline && node.name === "except-when") {
         expectGuidelineFileType(file, "requirement", "except-when");
-        
-        prependBoldText(node, "Except when ");
+
+        prependBoldText(node, "Except when");
         if (parent && typeof index !== "undefined")
           parent.children.splice(index!, 1, ...node.children);
       } else if (node.name === "ednote") {
