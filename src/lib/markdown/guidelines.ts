@@ -55,8 +55,14 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
  * otherwise, it prepends a preceding paragraph before the node.
  **/
 function prependBoldText(node: ContainerDirective, label: string) {
-  if (node.children[0].type === "paragraph") {
-    node.children[0].children.unshift({
+  const firstChild = node.children[0];
+  if (firstChild.type === "paragraph") {
+    if ("value" in firstChild.children[0]) {
+      firstChild.children[0].value = firstChild.children[0].value.replace(/[a-z]/i, (str) =>
+        str.toLowerCase()
+      );
+    }
+    firstChild.children.unshift({
       type: "html",
       value: `<b>${label}</b> `,
     });
