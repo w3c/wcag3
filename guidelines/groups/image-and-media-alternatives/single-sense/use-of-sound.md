@@ -17,11 +17,14 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 :::
 
 :::tests
-### Procedure
+
+<b>Procedure</b>
+
 1. Identify everywhere information is conveyed by sound. 
 2. For each instance identified in #1, identify the instances where the sound conveys information.
 3. For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator.
 
-### Expected Results
+<b>Expected Results</b>
+
 * #3 is true for all instances
 :::
