@@ -1,9 +1,6 @@
 ---
 children:
-  - consistent-order
-  - familiar-layout
-  - information-about-options
-  - related-information
+  - conventional-layouts
 ---
 
 Users have consistent and recognizable layouts available.
