@@ -1,15 +1,11 @@
 ---
-status: exploratory
+status: developing
 ---
 
-Information conveyed with sound is also conveyed :term[programmatically] and/or through :term[text].
-
-:::applies-when
-Sound that is not spoken language is used to alert or otherwise convey information.
-:::
+Information is not conveyed by sound alone.
 
 :::except-when
-* Content is audio based media.
+* Content is audio-based media.
 :::
 
 :::note
@@ -25,6 +21,5 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 3. For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator.
 
 <b>Expected Results</b>
-
 * #3 is true for all instances
 :::
