@@ -3,12 +3,17 @@ status: developing
 type: foundational
 ---
 
-Error messages are visually identifiable including at least two of the following:
+Error messages are visually identifiable using at least two of the following:
 
-* A symbol.
+* An internally consistent symbol.
 * Color that differentiates the error message from surrounding :term[content].
-* Text that clearly indicates this is an error.
+* Text that clearly indicates the error.
 
-:::note
-Symbols and colors signifying errors vary depending on cultural context and should be modified accordingly.
+:::tests
+<b>Procedure</b>
+1. Identify all validation errors.
+2. Verify that they meet at least two of the listed requirements.
+
+<b>Expected results</b>
+* #2 is true
 :::
