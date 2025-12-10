@@ -1,7 +1,7 @@
 ---
 children:
   - custom-indicator
-  - user-agent-default-indicator
+  - user-agent-default-focus-indicator
   - supplementary-indicators
   - focus-style-guide
 howto: focus-appearance
