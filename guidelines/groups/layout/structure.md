@@ -1,14 +1,12 @@
 ---
 children:
   - programmatic-relationships
-  - regions
+  - clear-blocks-of-content
   - section-labels
   - heading-structure
-  - lists
-  - numbered-steps
-  - title
-  - visually-organized
-  - white-spacing
+  - ordered-content
+  - clear-blocks-of-content-enhanced
+  - clear-structure-review-process
 ---
 
 Users can understand and navigate through the :term[content] using structure.
