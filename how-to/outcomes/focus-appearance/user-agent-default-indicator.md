@@ -1,6 +1,6 @@
 ---
 layout: requirement.html
-title: User-agent default indicator
+title: User-agent default focus indicator
 level: foundational
 text: Focusable item uses the user agent default indicator.
 ---
