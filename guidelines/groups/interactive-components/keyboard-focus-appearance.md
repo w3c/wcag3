@@ -1,6 +1,6 @@
 ---
 children:
-  - custom-indicator
+  - custom-focus-indicator
   - user-agent-default-focus-indicator
   - supplementary-indicators
   - focus-style-guide
