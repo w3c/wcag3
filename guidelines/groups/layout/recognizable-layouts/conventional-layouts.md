@@ -1,6 +1,7 @@
 ---
-status: developing
+title: Conventional layouts
 type: assertion
+status: developing
 ---
 
 [Title, role, or organization] asserts that:
