@@ -1,6 +1,6 @@
 ---
 title: Starting point position
-type: good-practice
+type: supplemental
 status: developing
 ---
 
