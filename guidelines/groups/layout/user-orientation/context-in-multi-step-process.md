@@ -1,6 +1,7 @@
 ---
+title: Context in multi-step process
+type: supplemental
 status: developing
-title: Context in multi-step process (Supplemental)
 ---
 
 Contextual information is provided visually and programmatically to help the user orient within the multi-step process.
@@ -11,7 +12,7 @@ Contextual information is provided visually and programmatically to help the use
 <b>Procedure</b>
 1. Examine the source code of the HTML document.
 2. Process navigation steps are included.
-3. The current process step is identified using `aria-current=’step’`.
+3. The current process step is identified using `aria-current="step"`.
 
 
 <b>Expected Results</b>

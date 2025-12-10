@@ -1,6 +1,7 @@
 ---
+title: Location within product
+type: assertion
 status: developing
-title: Location within product (Assertion)
 ---
 
 [Title, role, or organization] asserts that:

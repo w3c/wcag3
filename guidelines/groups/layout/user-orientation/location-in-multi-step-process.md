@@ -1,6 +1,7 @@
 ---
-status: developing
 title: Location in multi-step process
+type: foundational
+status: developing
 ---
 
 The current step within a multi-step process is visually and programmatically indicated.
@@ -11,7 +12,7 @@ The current step within a multi-step process is visually and programmatically in
 <b>Procedure</b>
 1. Examine the source code of the HTML document.
 2. Process navigation steps are included.
-3. Current process step is identified using aria-current=’step’.
+3. Current process step is identified using `aria-current="step"`.
 
 <b>Expected Results</b>
 * #2 and #3 are true

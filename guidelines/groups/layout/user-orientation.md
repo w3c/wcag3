@@ -7,6 +7,7 @@ children:
   - change-of-page-view
   - return-to-product-starting-point
   - location-within-product
+  - starting-point-position
 ---
 
 Users can determine their location in :term[content] both visually and using assistive technologies.
