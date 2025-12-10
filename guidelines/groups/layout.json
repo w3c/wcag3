@@ -1,6 +1,5 @@
 {
   "children": [
-    "relationships",
     "recognizable-layouts",
     "user-orientation",
     "structure",

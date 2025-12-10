@@ -13,13 +13,16 @@ status: developing
 * If a style guide is used by authors, it must provide guidance on these aspects of clear structure. 
 * If author training is provided, it must provide guidance on these aspects of clear structure. 
 
+
 ## Information that needs to be included publicly
+
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of when the policy was implemented.
 * Date of assertion (if different from the date of the conformance claim).
 
 
 ## Recommended internal documentation (Informative)
+
 * Copy of the policy implementing the clear structure review.
 * Whether training was provided for authors
     * Date training was provided.
