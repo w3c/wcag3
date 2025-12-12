@@ -225,7 +225,7 @@ Your content here
 :::
 ```
 
-### Applies when
+#### Applies when
 
 The following block will be preceded by "Applies when".
 This is _only_ valid within requirements.
@@ -238,7 +238,7 @@ a condition is true.
 
 The label. "Applies when", will be appended before the first paragraph of the block. If the first content item is anything other than a paragraph (e.g. if the block only contains a list), it will appear in a separate paragraph before the content.
 
-### Except when
+#### Except when
 
 The following block will be preceded by "Except when".
 This is _only_ valid within requirements.
@@ -250,6 +250,22 @@ a condition is true.
 ```
 
 This follows the same behavior as `:::applies-when` regarding single paragraphs vs. other cases.
+
+#### Assertions replacements
+
+The following leaf directives are to be used before required and recommended documentation to be included for assertions:
+
+```
+::assertion-required
+- List item
+- ...
+
+::assertion-recommended
+- List item
+- ...
+```
+
+Note that these are leaf directives, not container directives, so there is no end marker.
 
 #### Glossary Term References
 
