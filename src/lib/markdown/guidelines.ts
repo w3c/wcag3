@@ -136,6 +136,28 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
         data.hName = "div";
         data.hProperties = { class: "note" };
       } else file.fail(`Unrecognized container directive :::${node.name}`);
+    } else if (node.type === "leafDirective") {
+      if (isGuideline && node.name === "assertion-required") {
+        expectGuidelineFileType(file, "requirement", "assertion-required");
+        const data = node.data || (node.data = {});
+        data.hName = "p";
+        data.hChildren = [
+          {
+            type: "text",
+            value: "Information that needs to be included publicly:",
+          },
+        ];
+      } else if (isGuideline && node.name === "assertion-recommended") {
+        expectGuidelineFileType(file, "requirement", "assertion-recommended");
+        const data = node.data || (node.data = {});
+        data.hName = "p";
+        data.hChildren = [
+          {
+            type: "text",
+            value: "Recommended internal documentation (Informative):",
+          },
+        ];
+      } else file.fail(`Unrecognized leaf directive ::${node.name}`);
     } else if (node.type === "textDirective") {
       if (node.name === "term") {
         const data = node.data || (node.data = {});
