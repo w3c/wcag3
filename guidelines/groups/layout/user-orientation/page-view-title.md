@@ -16,5 +16,5 @@ The presented content has no way to include a title.
 2. Check that the title element describes the document.
 
 <b>Expected Results</b>
-* Checks #1 and #2 are true.
+* Check #1 and #2 are true.
 :::
