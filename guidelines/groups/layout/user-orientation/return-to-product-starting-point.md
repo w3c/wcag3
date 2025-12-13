@@ -7,7 +7,7 @@ status: developing
 A visual and programmatically available mechanism exists that allows users to return to the :term[starting point] of the product.
 
 :::except-when
-The :term[page/view] is the starting point of the product.
+The :term[page]/:term[view] is the starting point of the product.
 :::
 
 :::note
