@@ -2,7 +2,7 @@
 children:
   - change-keyboard-focus-with-pointer-device
   - content-on-hover-or-keyboard-focus
-  - gesture-alternative
+  - path-based-gesture-alternative
   - input-method-flexibility
   - use-without-body-movement
 ---
