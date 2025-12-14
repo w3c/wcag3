@@ -3,4 +3,4 @@ status: developing
 type: foundational
 ---
 
-A custom focus indicator is used with sufficient size, change of contrast, adjacent contrast, distinct style and adjacency.
+The user agent's default focus indicator is replaced by a custom focus indicator that has sufficient size, change of contrast, adjacent contrast, and adjacency.
