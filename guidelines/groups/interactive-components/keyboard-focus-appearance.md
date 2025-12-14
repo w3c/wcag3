@@ -3,7 +3,7 @@ children:
   - custom-focus-indicator
   - user-agent-default-focus-indicator
   - supplementary-indicators
-  - focus-style-guide
+  - focus-indicator-style-guide
 howto: focus-appearance
 status: developing
 ---
