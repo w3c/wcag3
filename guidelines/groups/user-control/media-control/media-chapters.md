@@ -14,5 +14,5 @@ Gustav Mahler's <cite>Symphony Number 5</cite> is approximately 70 minutes long 
 :::
 
 :::example
-Iron Maiden's <cite>The Rime Of The Ancient Mariner</cite> is approximately 14 minutes long and isn't divided into movements. This meets the exception and would not need to be divided into chapters.
+Iron Maiden's <cite>Rime Of The Ancient Mariner</cite> is approximately 14 minutes long and isn't divided into movements. This meets the exception and would not need to be divided into chapters.
 :::
