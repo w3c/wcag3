@@ -9,7 +9,7 @@ Pointer selection of elements moves the keyboard focus to that element, even if 
 :::applicable-when
 * Content can interfere with pointer or keyboard focus behavior.
 
-Example:
+:::example
 A user scrolls a document down six screens, then clicks on a paragraph with their pointer. The user then presses the Tab key, which moves the focus to the first interactive component after the position on the screen that was clicked, rather than from the previous position, six screens up the document.
 :::
 
