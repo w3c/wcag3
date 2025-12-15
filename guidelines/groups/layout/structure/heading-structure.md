@@ -11,7 +11,7 @@ status: developing
 :::
 
 :::ednote
-* Method(s) to be written
+Method(s) to be written
 * Best practice: For each page or view, include an `H1` heading that makes clear the purpose of the page or view. This is addition to the `title` element, which can be hard to read. 
 :::
 
