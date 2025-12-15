@@ -7,6 +7,7 @@ children:
   - ordered-content
   - clear-blocks-of-content-enhanced
   - clear-structure-review-process
+  - find-key-information
 ---
 
 Users can understand and navigate through the :term[content] using structure.
