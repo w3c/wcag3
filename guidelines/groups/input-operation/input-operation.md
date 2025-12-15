@@ -5,6 +5,7 @@ children:
   - path-based-gesture-alternative
   - input-method-flexibility
   - use-without-body-movement
+  - focus-from-pointer
 ---
 
 Users have the option to use different input techniques and combinations and switch between them.
