@@ -1,0 +1,22 @@
+---
+title: Consistent navigation relative order
+type: supplemental
+status: developing
+---
+
+The relative order of navigation items is consistent within blocks of navigation that are repeated on multiple pages/views of the product or process
+
+:::ednote
+This relates to consistency and terminology within blocks of navigation. The consistent ordering of blocks of navigation within a page/view is covered by 'Consistent relative order'.
+:::
+
+:::tests
+<i>Consistent main navigation relative order</i>
+
+<b>Procedure</b>
+1. Identify repeated blocks of navigation across multiple pages/views of the product or process.
+2. Verify that the navigation items within each block of navigation have the same relative order across all pages/views of the product or process.
+
+<b>Expected Results</b>
+* #2 is true
+:::
