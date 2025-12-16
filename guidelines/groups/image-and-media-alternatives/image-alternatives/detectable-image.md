@@ -12,7 +12,7 @@ type: foundational
 :::
 
 :::applies-when
-When content contains :term[non-decorative images].
+When content includes :term[non-decorative images].
 :::
 
 :::tests
