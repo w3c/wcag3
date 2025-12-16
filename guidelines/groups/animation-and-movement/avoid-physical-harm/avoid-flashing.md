@@ -13,7 +13,7 @@ Method(s)
 
 :::tests
 <b>Procedure</b>
-1. Identify any content that contains flashing.
+1. Identify any content that includes flashing.
 2. Verify that, for each instance of flashing, the flashing is essential.
 
 <b>Expected Results</b>
