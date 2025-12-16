@@ -1,11 +1,9 @@
 ---
 children:
+  - error-prevention
   - submission-confirmation
-  - validate-after-data-entry
-  - validate-as-you-go
+  - validation-timing
+  - reduce-mistakes
 ---
 
-When users are submitting information, at least one of the following is true:
-* Users can review, confirm, and correct information before submitting
-* Information is validated and users can correct any errors found
-* Users can undo submissions
+Users can review, confirm and fix information they submit in order to prevent errors. 
