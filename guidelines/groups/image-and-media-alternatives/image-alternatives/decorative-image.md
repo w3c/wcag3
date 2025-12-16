@@ -8,7 +8,7 @@ title: Decorative image
 
 :::ednote
 * Method: Ensure that a purely decorative image has no accessible name.
-* Best practice: Provide a text alternative for a decorative image unless itÅfs purely decorative.
+* Best practice: Provide a text alternative for a decorative image unless it is purely decorative.
 * Need to discuss how to distinguish "purely decorative" from "decorative". "purely decorative" images don't need text alternatives at all, but text alternatives for "decorative" images can be useful for some users if provided so that users can picture the image.
 :::
 
