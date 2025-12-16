@@ -1,5 +1,4 @@
 ---
-title: Clear structure review process
 type: assertion
 status: developing
 ---

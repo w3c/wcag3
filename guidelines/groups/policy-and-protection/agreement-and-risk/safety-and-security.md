@@ -1,5 +1,4 @@
 ---
-title: Safety and security
 type: assertion
 status: developing
 ---

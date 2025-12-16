@@ -2,7 +2,6 @@
 needsAdditionalResearch: true
 type: supplemental
 status: exploratory
-title: Enhanced features to interact with captions are available
 ---
 
 Enhanced features that allow users to interact with :term[captions] are available.

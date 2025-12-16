@@ -1,5 +1,4 @@
 ---
-title: Focus from pointer
 type: foundational
 status: developing
 ---

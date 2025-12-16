@@ -1,5 +1,4 @@
 ---
-title: Find key information
 type: assertion
 status: developing
 ---

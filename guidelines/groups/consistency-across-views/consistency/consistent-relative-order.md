@@ -1,5 +1,4 @@
 ---
-title: Consistent relative order
 type: foundational
 status: developing
 ---

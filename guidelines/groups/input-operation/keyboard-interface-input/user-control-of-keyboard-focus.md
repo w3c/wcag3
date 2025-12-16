@@ -1,5 +1,4 @@
 ---
-title: User control of keyboard focus
 type: foundational
 status: developing
 ---

@@ -1,5 +1,4 @@
 ---
-title: Heading structure
 type: foundational
 status: developing
 ---

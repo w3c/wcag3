@@ -1,5 +1,4 @@
 ---
-title: Programmatic relationships
 type: foundational
 status: developing
 ---
