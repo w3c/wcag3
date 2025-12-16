@@ -1,5 +1,4 @@
 ---
-title: Avoid flashing
 type: foundational
 status: developing
 ---
