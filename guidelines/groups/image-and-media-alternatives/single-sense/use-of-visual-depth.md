@@ -3,7 +3,7 @@ needsAdditionalResearch: false
 status: developing
 ---
 
-Information should is not conveyed as visual depth of information alone.
+Information is not conveyed as visual depth of information alone.
 
 <div class="issue" data-number="422"></div>
 
