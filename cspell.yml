@@ -26,7 +26,9 @@ ignorePaths:
 useGitignore: true
 overrides:
   - filename: "guidelines/**"
-    flagWords: [contains] # Prefer "includes" over "contains" in guidelines
+    flagWords: 
+      - contains # Prefer "includes" over "contains" in guidelines
+      - expted # Typo that is mysteriously accepted by en_US/GB dictionaries
 patterns:
   # Define patterns here to be reusable across multiple file types below
   - name: encoded-citations
