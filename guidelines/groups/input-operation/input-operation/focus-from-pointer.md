@@ -6,7 +6,7 @@ status: developing
 
 Pointer selection of elements moves the keyboard focus to that element, even if the user selects an interactive element and drags away from the element without activation.
 
-:::applicable-when
+:::applies-when
 * Content can interfere with pointer or keyboard focus behavior.
 
 :::example
