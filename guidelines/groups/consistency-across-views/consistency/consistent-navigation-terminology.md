@@ -1,5 +1,4 @@
 ---
-title: Consistent navigation terminology
 type: foundational
 status: developing
 ---

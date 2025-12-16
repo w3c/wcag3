@@ -1,5 +1,4 @@
 ---
-title: Location within product
 type: assertion
 status: developing
 ---

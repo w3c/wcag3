@@ -1,5 +1,4 @@
 ---
-title: Return to product starting point
 type: supplemental
 status: developing
 ---

@@ -1,5 +1,4 @@
 ---
-title: Consistent navigation relative order
 type: supplemental
 status: developing
 ---

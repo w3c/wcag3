@@ -1,5 +1,4 @@
 ---
-title: Section labels
 type: foundational
 status: developing
 ---

@@ -1,5 +1,4 @@
 ---
-title: Clear blocks of content
 type: foundational
 status: developing
 ---

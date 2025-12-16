@@ -1,5 +1,4 @@
 ---
-title: Dismissible overlaying content
 type: foundational
 status: developing
 ---

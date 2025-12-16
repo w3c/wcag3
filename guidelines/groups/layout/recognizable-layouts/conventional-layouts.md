@@ -1,5 +1,4 @@
 ---
-title: Conventional layouts
 type: assertion
 status: developing
 ---

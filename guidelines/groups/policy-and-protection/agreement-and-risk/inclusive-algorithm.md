@@ -1,5 +1,4 @@
 ---
-title: Inclusive algorithm
 type: assertion
 status: developing
 ---

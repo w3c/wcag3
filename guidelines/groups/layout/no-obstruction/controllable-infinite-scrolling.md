@@ -1,5 +1,4 @@
 ---
-title: Controllable infinite scrolling
 type: supplemental
 status: exploratory
 ---

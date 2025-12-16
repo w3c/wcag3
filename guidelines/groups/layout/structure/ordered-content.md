@@ -1,5 +1,4 @@
 ---
-title: Ordered content
 type: foundational
 status: developing
 ---

@@ -1,5 +1,4 @@
 ---
-title: Starting point position
 type: supplemental
 status: developing
 ---
