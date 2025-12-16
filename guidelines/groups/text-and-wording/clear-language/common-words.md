@@ -3,7 +3,8 @@ status: developing
 type: foundational
 ---
 
-Common words are used, and definitions are available for uncommon words.
+Common words are used, and definitions are available for uncommon words. 
+<div class="issue" data-number="425"></div>
 
 :::ednote
 This :term[requirement] will include :term[tests] and techniques for identifying common words for the intended audience. The intended audience may be the public or a specialized group such as children or experts.
