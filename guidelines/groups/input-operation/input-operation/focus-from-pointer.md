@@ -14,7 +14,7 @@ A user scrolls a document down six screens, then clicks on a paragraph with thei
 :::
 
 :::ednote
-Need to investigate the behaviour in other contexts, e.g. touch-screen with bluetooth keyboard.
+Need to investigate the behavior in other contexts, e.g. touch-screen with bluetooth keyboard.
 
 Methods & best practices 
 * Mouse events are not added to non-interactive elements to prevent clicking for focus.
@@ -22,7 +22,7 @@ Methods & best practices
 
 :::tests
 <b>Procedure</b>
-1. Check for click events on non-interative elements.
+1. Check for click events on non-interactive elements.
 
 <b>Expected Results</b>
 * #1 is true
