@@ -3,4 +3,8 @@ status: developing
 type: supplemental
 ---
 
-On submission, users are notified of submitted information and submission status.
+Data entry interfaces notify users of submission status at the time of submission.
+
+:::applies-when
+data submission has succeeded or failed
+:::
