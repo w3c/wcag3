@@ -4,6 +4,8 @@ status: exploratory
 
 Information is not conveyed by spatial audio alone.
 
+<div class="issue" data-number="428"></div>
+
 :::note
 Information conveyed includes presenting data or meaning, indicating an action, prompting a response, distinguishing between items, conveying boundaries, etc. Artistic expression is not part of information conveyed.
 :::
