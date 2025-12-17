@@ -1,6 +1,5 @@
 ---
-needsAdditionalResearch: true
-status: exploratory
+status: developing
 ---
 
-Help is labeled consistently and available in a consistent visual and programmatic location.
+Help is labeled consistently and is available in a consistent  location relative to other content.
