@@ -2,6 +2,7 @@
 children:
   - consistent-help
   - contextual-help
+  - disabled-interactive-elements
   - conversational-support
   - data-visualizations
   - new-interfaces
