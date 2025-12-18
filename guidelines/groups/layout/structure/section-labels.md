@@ -10,7 +10,9 @@ status: developing
 :::
 
 :::ednote
-Add example(s) of labels and heading usage
+* Add example(s) of labels and heading usage
+* Add exception where a visible label is not required (if any)
+* Define “meaningful blocks of content” which is referenced but not yet defined
 :::
 
 :::tests
