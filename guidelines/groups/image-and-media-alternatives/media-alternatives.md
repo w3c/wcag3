@@ -11,6 +11,7 @@ children:
   - meaningful-visual-information
   - non-verbal-cues
   - media-alternatives-style-guide
+  - sign-language-live
   - sign-language-prerecorded
   - testing-media-alternatives-with-users
   - transcripts-available
