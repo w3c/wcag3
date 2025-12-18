@@ -5,6 +5,14 @@ status: developing
 
 :term[Sign language interpretation] is available for all :term[prerecorded] :term[audio] content.
 
+:::ednote
+It can be more detailed like ":term[Sign language interpretation] is provided for all :term[prerecorded] :term[audio] content in the primary sign language of the intended audience or region."
+:::
+
+:::except-when
+Except when it is a decorative background sound.
+:::
+
 :::tests
 <i>Sign language for audio only</i>
 
