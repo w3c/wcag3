@@ -10,6 +10,10 @@ status: developing
 * Date (Period) of review
 * Examples of fixed issues based on the feedback
 
+:::ednote
+* This is missing in [WCAG3 Guidelines doc](https://docs.google.com/document/d/1Szzc87DUdZNlDUrjEEhU2HnoYLSIzfpiQbmFSghL5NI/edit?usp=sharing)
+:::
+
 :::example
 * **Roles and numbers:** 3 creators
   * 1 director
