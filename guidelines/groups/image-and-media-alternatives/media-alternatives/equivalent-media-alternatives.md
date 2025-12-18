@@ -5,6 +5,10 @@ status: developing
 
 Equivalent :term[media alternatives] are available for :term[audio] and :term[video] content.
 
+:::except-when
+Except when it is a background video with no spoken content.
+:::
+
 :::tests
 <i>Media alternative is equivalent</i>
 
