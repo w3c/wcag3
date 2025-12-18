@@ -8,6 +8,7 @@ children:
   - captions-enhanced-features
   - consistent-captions
   - captions-location-360
+  - controllable-captions
   - visual-indicators-360
 ---
 
