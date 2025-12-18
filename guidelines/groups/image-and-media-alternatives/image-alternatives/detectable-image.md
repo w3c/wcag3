@@ -7,8 +7,10 @@ type: foundational
 
 :::ednote
 * Method: Examine the code and check if an image can be detected in a way that user agents and assistive technologies can identify it as an image.
+* User need:
+  * As a user, I need to know if the content is an image.
 * Can "non-decorative images" be defined as "Images that convey meaning"?
-* For HTML, does using an img element meet this requirement?
+* For HTML, does using an `img` element meet this requirement?
 :::
 
 :::applies-when
