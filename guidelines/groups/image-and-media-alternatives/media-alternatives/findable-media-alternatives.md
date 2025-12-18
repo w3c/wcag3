@@ -10,7 +10,7 @@ Except when it is a decorative audio or video.
 :::
 
 :::tests
-<i>Link to text description of audio/video content</i>
+<i>Link to text description of audio or video content</i>
 
 <b>Procedure</b>
 1. Identify all audio or video content within the unit of conformance through visual inspection.
