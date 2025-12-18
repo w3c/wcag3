@@ -37,9 +37,9 @@ jobs:
           cd dist/client/requirements
           tar cf ../../../requirements.tar *
           cd -
-          curl https://labs.w3.org/spec-generator/?type=respec -F file=@guidelines.tar -o dist/client/guidelines/index.html -f --retry 3
-          curl https://labs.w3.org/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
-          curl https://labs.w3.org/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
+          curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@guidelines.tar -o dist/client/guidelines/index.html -f --retry 3
+          curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
+          curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
       - name: Build and copy how-tos
         run: |
           cd how-to

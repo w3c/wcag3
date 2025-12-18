@@ -21,6 +21,7 @@ ignorePaths:
   - "*.json"
   - "*.svg"
   - "*.ts"
+  - "*.yml"
   - "custom-words.txt"
 useGitignore: true
 overrides:
