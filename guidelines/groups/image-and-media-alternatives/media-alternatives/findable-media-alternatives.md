@@ -5,6 +5,10 @@ status: developing
 
 A :term[mechanism] is available within the page/view to access the :term[media alternatives] for audio and video.
 
+:::except-when
+Except when it is a decorative audio or video.
+:::
+
 :::tests
 <i>Link to text description of audio/video content</i>
 
