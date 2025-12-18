@@ -9,6 +9,14 @@ Sounds needed to understand the media are identified or described in :term[capti
 This includes sound effects and other non-spoken :term[audio] :term[content].
 :::
 
+:::except-when
+Except when it is a decorative video.
+:::
+
+:::applies-when
+Applies when there is sound.
+:::
+
 :::tests
 <i>Meaningful sounds in captions</i>
 
