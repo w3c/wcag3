@@ -11,7 +11,7 @@ status: developing
 
 :::ednote
 * Reword “higher” to avoid confusion when referring to heading levels.
-* Avoid implying that all content blocks require headings, since many content types (such as paragraphs, letters, or emails) may not need them; define a clear exception that cannot be used as a loophole.
+* Avoid implying that all content blocks require headings, since many content types (such as paragraphs, letters, or emails) may not need them; define a clear exception that cannot be used as a loophole. This may be solved with the definition of "Meaningful blocks of content"
 :::
 
 :::tests
