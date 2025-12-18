@@ -12,6 +12,7 @@ children:
   - non-verbal-cues
   - media-alternatives-style-guide
   - testing-media-alternatives-with-users
+  - transcripts-available
   - video-player
   - reviewed-by-content-authors
 ---
