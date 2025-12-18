@@ -5,6 +5,7 @@ children:
   - path-based-gesture-alternative
   - input-method-flexibility
   - use-without-body-movement
+  - use-without-eye-tracking
   - focus-from-pointer
 ---
 
