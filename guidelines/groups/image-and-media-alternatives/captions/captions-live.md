@@ -8,6 +8,7 @@ status: developing
 :::ednote
 * Method: Provide captions for all live audio content
 * Best practice: Using closed captions is better than open captions.
+* This can merge some other requirements about captions for live video.
 :::
 
 :::tests
