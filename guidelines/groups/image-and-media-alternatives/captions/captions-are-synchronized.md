@@ -7,6 +7,7 @@ status: developing
 
 :::ednote
 * Method: Make captions in sync with the audio content of synchronized media.
+* Caption can be out of sync to allow previous important caption to be read. Does it fail?
 :::
 
 :::tests
