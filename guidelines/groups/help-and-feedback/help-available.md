@@ -10,6 +10,7 @@ children:
   - sensory-characteristics
   - support-available
   - supported-decision-making
+  - usability-testing-of-help
 ---
 
 Users have help available.
