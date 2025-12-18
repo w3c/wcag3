@@ -1,5 +1,6 @@
 ---
 status: developing
+type: foundational
 ---
 
 Help is labeled consistently and is available in a consistent  location relative to other content.
