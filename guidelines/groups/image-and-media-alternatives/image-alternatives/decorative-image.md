@@ -9,7 +9,14 @@ title: Decorative image
 :::ednote
 * Method: Ensure that a purely decorative image has no accessible name.
 * Best practice: Provide a text alternative for a decorative image unless it is purely decorative.
-* Need to discuss how to distinguish "purely decorative" from "decorative". "purely decorative" images don't need text alternatives at all, but text alternatives for "decorative" images can be useful for some users if provided so that users can picture the image.
+* User needs:
+  * As a user without vision or a user who has low vision, I need to know if an image is decorative or informative, so I can decide whether or not I want to interact with it.
+  * As a user with a cognitive or memory disability, I would like to know whether an image is decorative or informative, so I can decide whether or not I want to interact with it even if it is decorative.
+  * As a user who lost my sight later in life, I would like to get the description of the image even if it is decorative.
+* Need to discuss how to distinguish "purely decorative" from "decorative"so that different testes would agree. 
+  * "Purely decorative" images don't need text alternatives at all, but text alternatives for "decorative" images can be useful for some users if provided so that users can picture the image.
+  * Examples of "purely decorative images": icon used alongside text, thumbnail image within a link, etc.
+  * Examples of "decorative images": image photo, illustration, etc.
 :::
 
 :::tests
