@@ -1,8 +1,12 @@
 ---
-status: developing
+status: exploratory
+type: supplemental
 ---
 
-Conversational support allowing both :term[text] and speech formats is available.
+:term[Conversational support] allowing both :term[text] and speech formats is available.
+
+<div class="issue" data-number="431"></div>
+<div class="issue" data-number="432"></div>
 
 :::tests
 
