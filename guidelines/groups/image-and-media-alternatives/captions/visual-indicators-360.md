@@ -8,6 +8,7 @@ In 360-degree digital environments, the direction of a sound or speech is indica
 
 :::ednote
 * Method: Indicate the direction of a sound or speech when audio is heard from outside the current view
+* Depending on how we think this would be implemented, this is likely a player issue, and if so, should we remove this requirement?
 :::
 
 :::example
