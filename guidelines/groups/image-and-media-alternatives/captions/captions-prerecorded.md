@@ -7,6 +7,7 @@ status: developing
 
 :::ednote
 * Best practice: Using closed captions is better (more accessible) than open captions.
+* This can merge some other requirements about captions for prerecorded video.
 :::
 
 :::except-when
