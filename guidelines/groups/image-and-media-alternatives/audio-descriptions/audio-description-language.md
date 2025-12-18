@@ -5,6 +5,11 @@ status: developing
 
 A :term[mechanism] is available that allows users to change the :term[audio description] language if multiple languages are available.
 
+:::ednote
+* Is this even possible? 
+* If it is, is it possible without a player having two audio controls?
+:::
+
 :::tests
 <b>Procedure</b>
 For each media asset with audio content:
