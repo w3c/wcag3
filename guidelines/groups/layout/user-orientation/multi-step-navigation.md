@@ -6,6 +6,14 @@ status: developing
 
 A list of all steps in a multi-step process is visually and programmatically available at each step.
 
+:::except-when
+The total number of steps is unknown, or the sequence of steps depends on user actions.
+:::
+
+:::ednote
+Clarify the required level of detail: should this include only top-level steps, or also sub-steps?
+:::
+
 :::tests
 <i>Visual multi-step listing</i>
 
