@@ -13,7 +13,7 @@ Speakers are identified understandably within all :term[media alternatives].
 :::
 
 :::example
-Initially using ‘The President’ within the context of a story regarding politics within a country and then using “Mr. Misawa”.
+Initially using ‘The President’ within the context of a story regarding politics within a country and then using “Mr. Somebody”.
 :::
 
 :::tests
