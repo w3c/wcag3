@@ -4,7 +4,6 @@ children:
   - notify-about-sensitive-information
   - safe-content
   - security-procedures
-  - supported-decision-making
 ---
 
 When providing :term[private and sensitive information], users understand:
