@@ -5,6 +5,9 @@ status: developing
 
 We provide :term[Sign language interpretation] for all :term[live] :term[audio] content.
 
+:::ednote
+Should this be a supplemental requirement rather than an assertion?
+:::
 
 :::tests
 <i>Information that needs to be included publically</i>
