@@ -17,7 +17,7 @@ What if it was 10 years ago when the tests were conducted?
 :::example
 * **Scope:** videos on the following URLs:
   * "What is accessibility?" https://xxx.xxx/yyyy1
-  * "About assisitive technologies" https://xxx.xxx/yyyy2
+  * "About assistive technologies" https://xxx.xxx/yyyy2
   * "How to use WCAG" https://xxx.xxx/yyyy3
 * **Type and number:** 8 users in total
   * 5 users who are deaf
