@@ -12,7 +12,7 @@ The :term[image types] (photo, icon, etc.) are indicated.
 * As a user without vision, I need to know the image type. 
   * Screen readers just tell me that it is an image or a graphic. I have no idea on the type; a photograph, an illustration or anything else.
   * An image on a shopping site is identified as a photograph so that I can ask somebody to see and describe the photograph for me if I want.
-  * An image on a website is identified as a headshot and the text alternative describes “headshot of Mr. Ichiro Suzuki” so that I can imagine the web page has a headshot of Ichiro Suzuki on it.
+  * An image on a website is identified as a headshot and the text alternative describes “headshot of Mr. Suzuki” so that I can imagine the web page has a headshot of Mr. Suzuki on it.
 * As a user with low vision who can see a screen but also uses a screen reader, I want to perceive the image type when I have a difficulty seeing the image.
 
 <b>Need to define “image types”</b>
