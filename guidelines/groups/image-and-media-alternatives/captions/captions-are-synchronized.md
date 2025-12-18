@@ -1,6 +1,19 @@
 ---
 type: foundational
-status: exploratory
+status: developing
 ---
 
-:term[Captions] are in sync with :term[video] :term[content].
+:term[Captions] are synchronized with the :term[audio] :term[content] of synchronized media.
+
+:::ednote
+* Method: Make captions in sync with the audio content of synchronized media.
+:::
+
+:::tests
+<b>Procedure</b>
+For each caption:
+1. Check if it is in sync with video content
+
+<b>Expected Results</b>
+* #1 is true
+:::
