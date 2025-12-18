@@ -7,6 +7,7 @@ status: developing
 
 :::ednote
 * Method: Place captions on the screen without hiding visual important information
+* If the user can move the caption, does that count as passing or failing this requirement?
 :::
 
 :::tests
