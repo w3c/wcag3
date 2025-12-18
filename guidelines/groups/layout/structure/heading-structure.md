@@ -10,8 +10,8 @@ status: developing
 :::
 
 :::ednote
-Method(s) to be written
-* Best practice: For each page or view, include an `H1` heading that makes clear the purpose of the page or view. This is addition to the `title` element, which can be hard to read. 
+* Reword “higher” to avoid confusion when referring to heading levels.
+* Avoid implying that all content blocks require headings, since many content types (such as paragraphs, letters, or emails) may not need them; define a clear exception that cannot be used as a loophole.
 :::
 
 :::tests
