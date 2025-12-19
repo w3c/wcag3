@@ -1,7 +1,7 @@
 caption {
 	visibility: hidden;
 }
-:not(.head) > details {
+:not(.head) > details:not(.issue) {
 	padding: 1em;
 	color: #404040;
 	border: medium solid #d9d9d9;
