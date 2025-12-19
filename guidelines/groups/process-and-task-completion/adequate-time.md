@@ -1,8 +1,7 @@
 ---
 children:
-  - adjust-timing-at-start
-  - adjust-timing-at-timeout
-  - disable-timeout
+  - adjust-timeout
+  - inform-users-about-time-limits
 ---
 
 Users have enough time to read and use :term[content].
