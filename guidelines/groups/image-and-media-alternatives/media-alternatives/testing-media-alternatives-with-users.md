@@ -5,14 +5,11 @@ status: developing
 
 tests were conducted with users who need :term[media alternatives], and the issues were fixed based on the findings.
 
+* Scope
 * Types of disabilities each user had
 * Number of users (for each type of disability)
 * Date of testing
 * Examples of fixed issues based on the results
-
-:::ednote
-What if it was 10 years ago when the tests were conducted?
-:::
 
 :::example
 * **Scope:** videos on the following URLs:
