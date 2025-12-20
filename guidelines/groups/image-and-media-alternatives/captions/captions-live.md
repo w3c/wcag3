@@ -5,12 +5,6 @@ status: developing
 
 :term[Captions] are available for all live :term[audio] :term[content].
 
-:::ednote
-* Method: Provide captions for all live audio content
-* Best practice: Using closed captions is better than open captions.
-* This can merge some other requirements about captions for live video.
-:::
-
 :::tests
 <b>Procedure</b>
 For all live audio content:

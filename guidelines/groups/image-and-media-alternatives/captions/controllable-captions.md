@@ -5,11 +5,6 @@ status: developing
 
 A :term[mechanism] is available to turn :term[captions] on and off.
 
-:::ednote
-* Method: In a video player, add a button that turns captions on or off.
-* Method (HTML): Use the video element with captions. 
-:::
-
 :::except-when
 Captions are hard coded into the video content.
 :::

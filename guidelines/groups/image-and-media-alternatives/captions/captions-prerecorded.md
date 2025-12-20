@@ -5,11 +5,6 @@ status: developing
 
 :term[Captions] are available for all prerecorded :term[audio] :term[content].
 
-:::ednote
-* Best practice: Using closed captions is better (more accessible) than open captions.
-* This can merge some other requirements about captions for prerecorded video.
-:::
-
 :::except-when
 Except when the audio content is an alternative for text and clearly labelled as such.
 :::

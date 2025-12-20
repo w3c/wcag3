@@ -1,15 +1,9 @@
 ---
 type: foundational
 status: developing
-title: Visual indicators in 360-degree space
 ---
 
 In 360-degree digital environments, the direction of a sound or speech is indicated when :term[audio] is heard from outside the current :term[view]. 
-
-:::ednote
-* Method: Indicate the direction of a sound or speech when audio is heard from outside the current view
-* Depending on how we think this would be implemented, this is likely a player issue, and if so, should we remove this requirement?
-:::
 
 :::example
 * **Visual indicators:** An arrow with an outline pointing to the speaker or the direction of a sound
