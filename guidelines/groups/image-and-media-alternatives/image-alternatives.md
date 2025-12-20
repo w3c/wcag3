@@ -3,7 +3,6 @@ children:
   - detectable-image
   - decorative-image
   - equivalent-text-alternative
-  - image-role
   - image-type
   - editable-alternatives
   - style-guide
