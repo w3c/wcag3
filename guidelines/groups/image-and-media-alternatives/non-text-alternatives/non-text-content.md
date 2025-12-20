@@ -5,10 +5,6 @@ status: developing
 
 All :term[non-text content] that is not decorative includes a programmatically determinable equivalent text alternatives.
 
-:::ednote
-What is the difference between this and "Equivalent text alternatives"?
-:::
-
 :::tests
 <i>HTML alternative text for images</i>
 
