@@ -5,10 +5,6 @@ status: developing
 
 A :term[mechanism] is available that allows users to control the :term[audio description] volume independently from the :term[audio] volume of the :term[video].
 
-:::ednote
-* Would this be possible to do with a single volume control on a player?
-:::
-
 :::tests
 <b>Procedure</b>
 For each media asset with visual content:
