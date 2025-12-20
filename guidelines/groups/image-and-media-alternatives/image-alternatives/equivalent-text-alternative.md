@@ -5,10 +5,6 @@ type: foundational
 
 Equivalent :term[text alternatives] are available for :term[images] that convey :term[content].
 
-:::ednote
-* Method: Provide a text alternative for an image that conveys meaning or content.
-:::
-
 :::tests
 Provide a text alternative for the image in a way that conveys the equivalent meaning or content that's displayed visually.
 

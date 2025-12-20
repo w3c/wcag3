@@ -6,17 +6,6 @@ title: Decorative image
 
 :term[Decorative] :term[images] are :term[programmatically] hidden.
 
-:::ednote
-* Method: Ensure that a purely decorative image has no accessible name.
-* Best practice: Provide a text alternative for a decorative image unless it is purely decorative.
-* User needs for the best practice above:
-  * As a user who lost my sight later in life, I would like to get the description of the image even if it is decorative.
-* Need to discuss how to distinguish "purely decorative" from "decorative"so that different testes would agree. 
-  * "Purely decorative" images don't need text alternatives at all, but text alternatives for "decorative" images can be useful for some users if provided so that users can picture the image.
-  * Examples of "purely decorative images": icon used alongside text, thumbnail image within a link, etc.
-  * Examples of "decorative images": image photo, illustration, etc.
-:::
-
 :::tests
 <i>(General) No accessible name</i>
 
