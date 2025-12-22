@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The completion of a :term[process] does not include :term[artificial time limits]. 
