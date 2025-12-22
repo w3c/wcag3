@@ -1,8 +1,8 @@
 ---
 children:
-  - agreement-indicated
   - comparable-risk
-  - risk-statements
+  - consequential-choices
+  - consequences-provided
   - safety-and-security
   - inclusive-algorithm
 ---
