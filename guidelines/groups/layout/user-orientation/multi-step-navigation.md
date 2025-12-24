@@ -10,9 +10,7 @@ A list of all steps in a multi-step process is visually and programmatically ava
 The total number of steps is unknown, or the sequence of steps depends on user actions.
 :::
 
-:::ednote
-Clarify the required level of detail: should this include only top-level steps, or also sub-steps?
-:::
+<div class="issue" data-number="446"></div>
 
 :::tests
 <i>Visual multi-step listing</i>
