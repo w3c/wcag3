@@ -1,12 +1,12 @@
 ---
 children:
   - page-view-title
+  - location-within-product
   - multi-step-navigation
   - location-in-multi-step-process
   - context-in-multi-step-process
   - change-of-page-view
   - return-to-product-starting-point
-  - location-within-product
   - starting-point-position
 ---
 
