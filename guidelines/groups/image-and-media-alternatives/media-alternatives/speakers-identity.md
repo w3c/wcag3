@@ -4,6 +4,8 @@ status: developing
 title: Speakers identified
 ---
 
+<div class="issue" data-number="472"></div>
+
 Speakers are identified understandably within all :term[media alternatives].
 
 :::note

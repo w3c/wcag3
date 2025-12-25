@@ -3,6 +3,8 @@ type: foundational
 status: developing
 ---
 
+<div class="issue" data-number="474"></div>
+
 All :term[non-text content] that is not decorative includes a programmatically determinable equivalent text alternatives.
 
 :::tests

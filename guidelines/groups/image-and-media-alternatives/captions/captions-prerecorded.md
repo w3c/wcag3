@@ -3,6 +3,8 @@ type: foundational
 status: developing
 ---
 
+<div class="issue" data-number="463"></div>
+
 :term[Captions] are available for all prerecorded :term[audio] :term[content].
 
 :::except-when

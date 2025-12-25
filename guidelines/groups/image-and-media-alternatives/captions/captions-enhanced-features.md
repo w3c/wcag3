@@ -5,6 +5,8 @@ status: exploratory
 title: Enhanced caption features
 ---
 
+<div class="issue" data-number="460"></div>
+
 Enhanced features that allow users to interact with :term[captions] are available.
 
 :::ednote

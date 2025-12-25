@@ -4,6 +4,8 @@ type: foundational
 title: Decorative image 
 ---
 
+<div class="issue" data-number="466"></div>
+
 :term[Decorative] :term[images] are :term[programmatically] hidden.
 
 :::tests

@@ -3,6 +3,8 @@ type: foundational
 status: developing
 ---
 
+<div class="issue" data-number="458"></div>
+
 :term[Captions] are synchronized with the :term[audio] :term[content] of synchronized media.
 
 :::tests

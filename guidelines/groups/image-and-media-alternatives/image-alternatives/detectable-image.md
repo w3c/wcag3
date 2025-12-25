@@ -3,6 +3,8 @@ status: developing
 type: foundational
 ---
 
+<div class="issue" data-number="467"></div>
+
 :term[Non-decorative images] are detectable
 
 :::applies-when

@@ -3,6 +3,8 @@ type: assertion
 status: developing
 ---
 
+<div class="issue" data-number="473"></div>
+
 tests were conducted with users who need :term[media alternatives], and the issues were fixed based on the findings.
 
 * Scope
