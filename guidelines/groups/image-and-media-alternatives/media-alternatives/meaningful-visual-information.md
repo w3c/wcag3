@@ -3,6 +3,8 @@ type: foundational
 status: developing
 ---
 
+<div class="issue" data-number="470"></div>
+
 Visual information needed to understand the media is described in the :term[transcript] and :term[audio description].
 
 :::ednote

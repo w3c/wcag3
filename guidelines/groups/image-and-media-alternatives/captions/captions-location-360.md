@@ -3,6 +3,8 @@ type: foundational
 status: developing
 ---
 
+<div class="issue" data-number="462"></div>
+
 In 360-degree digital environments, :term[captions] remain directly in front of the user.
 
 :::applies-when
