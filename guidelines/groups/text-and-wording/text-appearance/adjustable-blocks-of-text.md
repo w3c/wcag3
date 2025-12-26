@@ -3,14 +3,14 @@ status: developing
 type: foundational
 ---
 
-The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
+The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography), without loss of content or functionality.
 
 :::ednote
 Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
 :::
 
 :::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example.
 :::
 
 <table class="data">
