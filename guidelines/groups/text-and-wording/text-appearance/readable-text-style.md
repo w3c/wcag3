@@ -10,7 +10,7 @@ The default/authored presentation of :term[text] meets the corresponding values 
 :::
 
 :::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example. To make this requirement testable, phrases like "most text" needs to be defined, as noted in Issue 475. 
 :::
 
 <table class="data">
