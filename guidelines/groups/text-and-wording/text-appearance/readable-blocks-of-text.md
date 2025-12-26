@@ -57,13 +57,5 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
        <td></td>
      </tr>
-     <tr>
-       <th scope="row">Justification</th>
-       <td></td>
-       <td></td>
-       <td>Left aligned or Justified</td>
-       <td></td>
-       <td></td>
-     </tr>
     </tbody>
 </table>
