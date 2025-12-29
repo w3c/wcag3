@@ -13,10 +13,6 @@ Ordered content includes programmatically determinable markers that indicate the
 This includes lists and processes
 :::
 
-:::ednote
-Additional information is needed in the understanding document to clarify cases where the visual layout presents ordered content (e.g., background images) that is not programmatically available.
-:::
-
 :::tests
 <i>Process steps</i>
 
