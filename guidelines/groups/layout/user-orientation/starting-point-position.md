@@ -13,7 +13,7 @@ For HTML, a good programmatic positioning of such a mechanism would be early in 
 This was originally labeled as "type: good-practice" but has been updated to "supplemental", possibly due to a missing parameter.
 :::
 
-<div class="issue" data-number="444"></div>
+<div class="issue" data-number="450"></div>
 
 :::example
 * Common design practices place the homepage link for websites in the top-left corner on the site logo.
