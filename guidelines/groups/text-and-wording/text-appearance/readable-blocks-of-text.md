@@ -1,4 +1,5 @@
 ---
+needsAdditionalResearch: true 
 status: developing
 type: foundational
 ---
@@ -10,7 +11,7 @@ The default/authored presentation of :term[blocks of text] meets the correspondi
 :::
 
 :::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example.
 :::
 
 <table class="data">
