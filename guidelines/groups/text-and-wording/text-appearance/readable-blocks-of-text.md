@@ -2,13 +2,10 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
+title: Readable blocks of text
 ---
 
-The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
-
-:::ednote
-[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
-:::
+The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::ednote
 The metrics in the following table are still to be determined; the current content is an example.
@@ -60,3 +57,18 @@ The metrics in the following table are still to be determined; the current conte
      </tr>
     </tbody>
 </table>
+
+:::note
+[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+Procedure
+
+For each block of text:
+1. Check that the attributes of the block of text are within the attributes in the table for the closest language.
+
+Expected results 
+* #1 is true.
+:::
