@@ -2,12 +2,17 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
+title: Adjustable text style
 ---
 
-The presentation of each of the following font features can be adjusted to meet the corresponding values for the content’s language (or the language of the ones listed with the most similar orthography), without loss of content or functionality.
+The presentation of each of the following font features can be adjusted, without loss of content or functionality, to meet the corresponding values for the content’s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
-:::ednote
-Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
+:::note
+The requirement is that the text is manipulable and the style attributes can be overridden.
+:::
+
+:::except-when
+The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
 :::
 
 :::ednote
@@ -103,3 +108,19 @@ The metrics in the following table are still to be determined; the current conte
      </tr>
     </tbody>
 </table>
+
+:::note
+Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+Procedure
+
+For each block of text:
+1. Apply the highest level of change of each attribute from the table, for that language/script.
+2. Check that the text is changed by the override. 
+
+Expected Results
+* #2 is true.
+:::
