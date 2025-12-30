@@ -1,7 +1,8 @@
 ---
-title: Readable text style (enhanced)
+needsAdditionalResearch: true 
 status: developing
 type: supplemental
+title: Readable text style (enhanced)
 ---
 
 The default/authored presentation of :term[text] meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
