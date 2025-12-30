@@ -2,7 +2,7 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
-title: Readable blocks of text
+title: Readable blocks of text (minimum)
 ---
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
@@ -59,7 +59,7 @@ The metrics in the following table are still to be determined; the current conte
 </table>
 
 :::note
-[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
 :::
 
 :::tests
