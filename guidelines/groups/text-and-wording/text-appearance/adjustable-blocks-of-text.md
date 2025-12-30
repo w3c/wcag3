@@ -87,12 +87,10 @@ The metrics in the following table are still to be determined; the current conte
 
 Procedure
 
-For each [value that needs to be checked]:
-1. [First action]
-2. [Second action]
-3. [If a user-agent could fulfill the requirement, include: Does a technology in the accessibility support set meet “[Adjustable blocks of text]”?]
+For each piece of text:
+1. Apply the highest level of change of each attribute from the table, for that language/script.
+2. Check that the text is changed by the override. 
 
 Expected results
-* [# from Procedure] is true
-* [# from Procedure] is false
+* #2 is true.
 :::
