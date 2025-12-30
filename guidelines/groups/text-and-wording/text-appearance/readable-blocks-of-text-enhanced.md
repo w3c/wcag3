@@ -1,7 +1,8 @@
 ---
-title: Readable blocks of text (enhanced)
+needsAdditionalResearch: true
 status: developing
 type: supplemental
+title: Readable blocks of text (enhanced)
 ---
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
