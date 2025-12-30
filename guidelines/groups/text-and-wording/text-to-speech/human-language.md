@@ -1,6 +1,6 @@
 ---
 needsAdditionalResearch: false 
-status: exploratory
+status: developing
 type: foundational
 title: Human language
 ---
