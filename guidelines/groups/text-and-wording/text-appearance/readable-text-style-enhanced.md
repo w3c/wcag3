@@ -5,11 +5,7 @@ type: supplemental
 title: Readable text style (enhanced)
 ---
 
-The default/authored presentation of :term[text] meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
-
-:::ednote
-[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
-:::
+The default/authored presentation of :term[text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::ednote
 The metrics in the following table are still to be determined, the current content is an example.
@@ -39,7 +35,7 @@ The metrics in the following table are still to be determined, the current conte
        <th scope="row">Font size</th>
        <td></td>
        <td></td>
-       <td>Vertical viewing angle of ≥0.2° (~10pt at typical desktop viewing distances)</td>
+       <td>Vertical viewing angle of ≥0.24° (~12pt at typical desktop viewing distances)</td>
        <td></td>
        <td></td>
      </tr>  
@@ -55,7 +51,9 @@ The metrics in the following table are still to be determined, the current conte
        <th scope="row">Text decoration</th>
        <td></td>
        <td></td>
-       <td>Most text is not bold, italicized, and/or underlined</td>
+       <td>* Most text is not bold, italicized, and/or underlined
+        *Text is not bold and italicized at the same time
+       * Underlines are only used for links</td>
        <td></td>
        <td></td>
      </tr>
@@ -85,3 +83,20 @@ The metrics in the following table are still to be determined, the current conte
      </tr>
     </tbody>
 </table>
+
+:::note
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+Procedure
+
+For each block of text:
+1. HTML: Check CSS to confirm that relevant style attributes (such as font size and letter spacing) are set within the designated values for the text’s language.
+2. Non-web apps: Check GUI toolkit settings (or defaults) to confirm that they apply values within the designated range. 
+
+Expected results
+* #1 or #2 is true.
+:::
+
