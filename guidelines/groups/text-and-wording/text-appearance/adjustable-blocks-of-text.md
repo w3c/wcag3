@@ -2,12 +2,21 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
+title: Adjustable blocks of text
 ---
 
-The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography), without loss of content or functionality.
+The presentation of :term[blocks of text] can be adjusted, without loss of content or functionality, to meet the corresponding values for the :term[content]'s language, or where that language is not listed in the table, for the language listed with the most similar orthography.
 
-:::ednote
-Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
+:::note
+The requirement is that the text is manipulable and the style attributes can be overridden.
+:::
+
+:::applies-when
+Text is presented.
+:::
+
+:::except-when
+The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
 :::
 
 :::ednote
@@ -68,3 +77,21 @@ The metrics in the following table are still to be determined; the current conte
      </tr>
     </tbody>
 </table>
+
+:::note
+Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+Procedure
+
+For each [value that needs to be checked]:
+1. [First action]
+2. [Second action]
+3. [If a user-agent could fulfill the requirement, include: Does a technology in the accessibility support set meet “[Adjustable blocks of text]”?]
+
+Expected results
+* [# from Procedure] is true
+* [# from Procedure] is false
+:::
