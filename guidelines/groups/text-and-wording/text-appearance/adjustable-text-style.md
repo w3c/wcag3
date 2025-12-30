@@ -110,7 +110,7 @@ The metrics in the following table are still to be determined; the current conte
 </table>
 
 :::note
-Readable blocks of text (foundational) and Readable text style (foundational) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
 :::
 
 :::tests
