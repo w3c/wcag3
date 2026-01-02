@@ -4,7 +4,6 @@ children:
   - readable-text-style
   - adjustable-blocks-of-text
   - adjustable-text-style
-  - content-and-functionality-not-lost-with-text-adjustment
   - readable-blocks-of-text-enhanced
   - readable-text-style-enhanced
 ---
