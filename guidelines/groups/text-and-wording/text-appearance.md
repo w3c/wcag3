@@ -2,10 +2,14 @@
 children:
   - readable-blocks-of-text
   - readable-text-style
+  - text-contrast
   - adjustable-blocks-of-text
   - adjustable-text-style
+  - adjustable-text-colors
   - readable-blocks-of-text-enhanced
   - readable-text-style-enhanced
+  - text-contrast-enhanced
+  - exported-saved-prints-supports-customizations
 ---
 
 Users can read visually rendered :term[text].
