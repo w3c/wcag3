@@ -2,10 +2,10 @@
 needsAdditionalResearch: false 
 status: developing
 type: foundational
-title: Unambiguous numerical formatting (programmatic) 
+title: Unambiguous numerical formatting 
 ---
 
-Numerical information includes programmatic context to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
+Numerical information includes visual and programmatic context to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
 
 :::example
 * Dates include markers for day and month such as “3 May 2025” instead of the ambiguous "03/05/2025."
