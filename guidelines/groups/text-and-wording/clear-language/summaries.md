@@ -17,13 +17,11 @@ Research is needed to determine the number of words that trigger the summary req
 :::
 
 :::applies-when
-
-a page/view with continuous long-form text content that is organized in paragraphs and has 300 or more words.
+* a page/view with continuous long-form text content that is organized in paragraphs and has 300 or more words.
 :::
 
 :::except-when
-
-long-form text content continues on multiple pages/views, only the first page/view requires a summary.
+* long-form text content continues on multiple pages/views, only the first page/view requires a summary.
 :::
 
 :::tests
