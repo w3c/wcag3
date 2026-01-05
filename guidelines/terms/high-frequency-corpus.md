@@ -7,6 +7,5 @@ large collections of :term[text] (corpora) used in linguistics to identify and a
 
 :::examples
 * English: British National Corpus, Corpus of Canadian English, Corpus of Contemporary American English 
-* Arabic: A Frequency Dictionary of Arabic
 * Mandarin: A Frequency Dictionary of Mandarin Chinese
 * Russian: Russian National Corpus
