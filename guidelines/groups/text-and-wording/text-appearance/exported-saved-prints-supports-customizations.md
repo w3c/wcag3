@@ -16,10 +16,10 @@ Examples of interoperable formats include:
 * PDF
 * HTML
 * SVG
-* ODT
+* OpenDocument (.odt)
 
 Examples of non-interoperable formats include:
-* SNG
+* SNG (Scriptable Network Graphics)
 * DOCX, unless you know your audience has the required software (for example, you’re writing internal documents for your company which provides employees with the necessary software)
 * Java object code
 :::
