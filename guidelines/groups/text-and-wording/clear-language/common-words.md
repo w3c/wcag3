@@ -1,13 +1,40 @@
 ---
+needsAdditionalResearch: true 
 status: developing
-type: foundational
+type: supplemental
+title: Common words 
 ---
 
 Common words are used, and definitions are available for uncommon words. 
 <div class="issue" data-number="425"></div>
 
-:::ednote
-This :term[requirement] will include :term[tests] and techniques for identifying common words for the intended audience. The intended audience may be the public or a specialized group such as children or experts.
+:::applies-when
+* human languages have more than 1,500 words
+:::
 
-For example: In :term[content] intended for the public, one technique for determining what counts as a common word is to use a high-frequency corpus. These corpora exist for many languages including Arabic, Hindi, Mandarin, and Russian as well as American English, British English, and Canadian English. Exceptions will be made for any language that does not have a high-frequency corpus.
+:::except-when
+* the words are for names of people or places, or
+* the language does not have a :term[high-frequency corpus].
+:::
+
+:::note 
+This requirement is not foundational because a list of common words would not cover terms that are known by specific audiences, such as accounting terms on an accounting site. However, in future guidance for policy makers, it is an example of a supplemental requirement that could be made mandatory for public service and education providers.
+
+Lists of common words are called high-frequency corpora. They exist for many languages including Arabic, Hindi, Mandarin, and Russian as well as American English, British English, and Canadian English.
+:::
+
+:::ednote
+Research shows that using common words and defining uncommon words improves understanding. [Making Content Usable for People with Cognitive and Learning Disabilities] recommends using the 1,500 highest-frequency words or phrases because people with severe language impairments are most likely to know these terms. However, more research is needed to confirm if the same threshold applies to many languages for distinguishing common from uncommon words. 
+:::
+
+:::tests
+
+For each word: 
+1. Check for any uncommon words that are not included in an established list of common words for the language used — this can be a generally known list for the language, or one specified by the author in the conformance statement.
+2. If a word is not in the list of common words, check that it has a definition available within the page/view.
+3. Check that a technology in the accessibility support set meets ‘Common words.’
+
+Expected result:
+* #2 is true, or 
+* #3 is true.
 :::
