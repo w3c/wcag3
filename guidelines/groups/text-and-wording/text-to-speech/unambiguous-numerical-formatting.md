@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: foundational
-title: Unambiguous numerical formatting 
 ---
 
 Numerical information includes visual and programmatic context to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
@@ -15,7 +13,6 @@ Numerical information includes visual and programmatic context to avoid confusio
 :::
 
 :::tests
-
 Procedure
 1. Identify any dates, temperatures, times, and Roman numerals that are presented visually.
 2. Check that it uses an unambiguous format.
@@ -25,4 +22,3 @@ Expected results
 * #2 is true, or 
 * #3 is true.
 :::
-

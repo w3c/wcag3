@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: assertion
-title: Visual aids 
 ---
 
 :term[Content author(s)] have reviewed written :term[content] for complex ideas such as processes, workflows, relationships, or chronological information and added supplemental :term[visual aids] to assist readers with understanding them. 

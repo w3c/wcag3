@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: assertion
 title: Clear language review process 

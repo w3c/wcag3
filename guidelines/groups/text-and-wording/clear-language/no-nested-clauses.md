@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: foundational
-title: No nested clauses 
 ---
 
 Sentences do not include :term[nested clauses].

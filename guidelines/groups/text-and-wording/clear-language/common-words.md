@@ -1,8 +1,7 @@
 ---
-needsAdditionalResearch: true 
+needsAdditionalResearch: true
 status: developing
 type: supplemental
-title: Common words 
 ---
 
 Common words are used, and definitions are available for uncommon words. 

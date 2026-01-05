@@ -2,7 +2,6 @@
 needsAdditionalResearch: true
 status: developing
 type: foundational
-title: Summaries 
 ---
 
 A summary is available for long-form :term[text] content and:

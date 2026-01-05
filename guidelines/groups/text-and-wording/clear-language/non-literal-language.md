@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: foundational
 title: Non-literal language 

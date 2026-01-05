@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: foundational
-title: Abbreviations 
 ---
 
 Explanations of :term[abbreviations] are available when first used. 

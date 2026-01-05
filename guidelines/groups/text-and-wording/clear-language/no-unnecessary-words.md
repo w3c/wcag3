@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: developing
 type: supplemental
-title: No unnecessary words 
 ---
 
 Sentences do not include unnecessary words or phrases.
