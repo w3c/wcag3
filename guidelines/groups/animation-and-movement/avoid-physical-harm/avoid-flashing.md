@@ -7,7 +7,7 @@ status: developing
 
 :::ednote
 Method(s)
-* Consider if flashing is essential, and if it is not, refrain from including it.
+* Consider if flashing is essential and, if it is not, refrain from including it.
 :::
 
 :::tests
