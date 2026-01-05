@@ -15,7 +15,7 @@ Sentences do not include unnecessary words or phrases.
 Automated tools can help identify unnecessary words in many languages, including Arabic, English, Hindi, Mandarin, and Russian. 
 :::
 
-:::examples 
+:::example 
 * redundant modifiers such as ‘free gift’ and ‘past history’ 
 * double negatives to express a positive such as ‘not implausible’ (instead of ‘plausible’)
 * indirect phrasing such as ‘at this point in time’ (instead of ‘now’)
