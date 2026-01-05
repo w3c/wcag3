@@ -51,11 +51,16 @@ The metrics in the following table are still to be determined, the current conte
        <th scope="row">Text decoration</th>
        <td></td>
        <td></td>
-       <td>* Most text is not bold, italicized, and/or underlined
-        *Text is not bold and italicized at the same time
-       * Underlines are only used for links</td>
+       <td>
+        <ul>
+          <li>Most text is not bold, italicized, and/or underlined</li>
+          <li>Text is not bold and italicized at the same time</li>
+          <li>Underlines are only used for links</li>
+        </ul>
+       </td>
        <td></td>
        <td></td>
+     </tr>
      </tr>
      <tr>
        <th scope="row">Letter spacing</th>
