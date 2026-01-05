@@ -1,6 +1,6 @@
 ---
 status: developing
-title: Nested clause
+title: nested clause
 ---
 
 dependent clause that is embedded inside another dependent clause. Note: Dependent clauses are sometimes called subordinate clauses.
