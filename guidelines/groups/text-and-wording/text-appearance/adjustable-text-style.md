@@ -2,6 +2,7 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
+title: Adjustable text style
 ---
 
 The presentation of each of the following font features can be adjusted, without loss of content or functionality, to meet the corresponding values for the content’s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
