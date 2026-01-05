@@ -6,9 +6,9 @@ children:
   - abbreviations
   - non-literal-language
   - numerical-alternatives
+  - no-missing-letters-or-diacritics
   - visual-aids
   - summaries
-  - unambiguous-meaning
   - review-process
   - clear-language-style-guide
   - clear-language-training-policy
