@@ -2,6 +2,7 @@
 needsAdditionalResearch: false 
 status: developing
 type: foundational
+title: Human language
 ---
 
 The human language of all :term[content] within the :term[view] is :term[programmatically] determinable.
