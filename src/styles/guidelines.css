@@ -68,14 +68,16 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	margin-top: 0;
 }
 
-.guideline {
-	margin-left: 4em;
+.guideline,
+.guideline .requirement {
 	position: relative;
 }
 
-.guideline .requirement {
-	margin-left: 4em;
-	position: relative;
+@media (min-width: 768px) {
+	.guideline,
+	.guideline .requirement {
+		margin-left: 4em;
+	}
 }
 
 .guideline h3, .requirement h4, .requirement h5 {
