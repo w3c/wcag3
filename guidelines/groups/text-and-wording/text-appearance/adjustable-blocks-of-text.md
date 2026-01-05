@@ -2,7 +2,6 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
-title: Adjustable blocks of text
 ---
 
 The presentation of :term[blocks of text] can be adjusted, without loss of content or functionality, to meet the corresponding values for the :term[content]'s language, or where that language is not listed in the table, for the language listed with the most similar orthography.

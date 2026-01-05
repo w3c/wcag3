@@ -1,8 +1,6 @@
 ---
-needsAdditionalResearch: false 
 status: exploratory
 type: supplemental
-title: Numerical alternatives 
 ---
 
 Alternatives are provided for :term[complex numerical information] such as statistics.

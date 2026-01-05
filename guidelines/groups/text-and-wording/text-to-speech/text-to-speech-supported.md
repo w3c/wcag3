@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: false
 status: developing
 type: foundational
 title: Text available
@@ -22,4 +21,3 @@ Expected results
 * #2 is true.
 * #3 is true.
 :::
-
