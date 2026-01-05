@@ -1,21 +1,22 @@
 ---
 needsAdditionalResearch: false 
 status: exploratory
-type: foundational | supplemental
-title: No missing diacritics
+type: supplemental
 ---
 
 Letters or :term[diacritics] required to identify the correct meaning of each word are available.
 
 :::applies-when 
 * a human language has a version that removes letters or diacritics for proficient readers.
+:::
 
 :::note
 Hebrew and Arabic are examples of human languages that omit letters or diacritics for proficient readers.
 :::
 
 :::example
-Without vowels or diacritics, the Hebrew word אמר can represent a noun or several tenses of a verb. Proficient readers use context to figure out which meaning is intended.  
+Without vowels or diacritics, the Hebrew word אמר can represent a noun or several tenses of a verb. Proficient readers use context to figure out which meaning is intended.
+:::
 
 :::tests
 1. Check for content that has missing letters or diacritics.
@@ -26,4 +27,3 @@ Expected result:
 * #2 is true, or 
 * #3 is true.
 :::
-
