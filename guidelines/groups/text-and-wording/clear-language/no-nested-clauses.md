@@ -5,7 +5,7 @@ type: foundational
 title: No nested clauses 
 ---
 
-Sentences do not include <dfn>nested clauses</dfn>.
+Sentences do not include :term[nested clauses].
 
 :::except-when
 * Content provides legal or technical information.
