@@ -88,11 +88,11 @@ The metrics in the following table are still to be determined; the current conte
 
 :::tests
 
-Procedure
+<b>Procedure</b>
 
 For each block of text:
 1. Check that the attributes of the block of text are within the attributes in the table for the closest language.
 
-Expected results
+<b>Expected results</b>
 * #1 is true. 
 :::
