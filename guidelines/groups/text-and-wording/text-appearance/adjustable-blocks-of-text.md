@@ -10,10 +10,6 @@ The presentation of :term[blocks of text] can be adjusted, without loss of conte
 The requirement is that the text is manipulable and the style attributes can be overridden.
 :::
 
-:::applies-when
-Text is presented.
-:::
-
 :::except-when
 The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
 :::
@@ -70,7 +66,7 @@ The metrics in the following table are still to be determined; the current conte
        <th scope="row">Justification</th>
        <td></td>
        <td>Not applicable</td>
-       <td>Left aligned</td>
+       <td>Default inline start to Left aligned</td>
        <td></td>
        <td></td>
      </tr>
@@ -84,12 +80,12 @@ The metrics in the following table are still to be determined; the current conte
 
 :::tests
 
-Procedure
+<b>Procedure</b>
 
 For each piece of text:
 1. Apply the highest level of change of each attribute from the table, for that language/script.
 2. Check that the text is changed by the override. 
 
-Expected results
+<b>Expected results</b>
 * #2 is true.
 :::
