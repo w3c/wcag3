@@ -1,5 +1,5 @@
 ---
-needsAdditionalResearch: true
+needsAdditionalResearch: false
 status: developing
 type: foundational
 ---
