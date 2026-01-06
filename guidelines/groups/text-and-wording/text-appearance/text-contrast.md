@@ -32,10 +32,6 @@ A separate requirement may be needed if red/green color vision deficiency (CVD) 
 For this foundational level requirement, the default minimum contrast level should be roughly equivalent to the WCAG2 4.5:1 level for small/body text.
 :::
 
-:::example
-Put an example here.
-:::
-
 :::tests
 <b>Procedure</b>
 
