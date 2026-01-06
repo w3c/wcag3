@@ -21,7 +21,7 @@ The requirement is that the text is manipulable and the colors can be overridden
 * part of an inactive Interactive element, 
 * pure decoration, 
 * not visible to anyone,
-* part of a picture that contains significant other visual content,
+* part of a picture that includes significant other visual content,
 * part of a logo.
 :::
 
