@@ -2,7 +2,7 @@
 needsAdditionalResearch: true
 status: exploratory
 type: foundational
-title: Meaning of text appearance
+title: Use of text appearance
 ---
 
 Meaning conveyed by :term[text] appearance is also :term[programmatically] determinable.
