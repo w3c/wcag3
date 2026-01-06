@@ -7,8 +7,10 @@ title: Readable text style (minimum)
 
 The default/authored presentation of :term[text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
+<div class="issue" data-number="475"></div>
+
 :::ednote
-The metrics in the following table are still to be determined; the current content is an example. To make this requirement testable, phrases like "most text" needs to be defined, as noted in Issue 475. 
+The metrics in the following table are still to be determined; the current content is an example. 
 :::
 
 <table class="data">
