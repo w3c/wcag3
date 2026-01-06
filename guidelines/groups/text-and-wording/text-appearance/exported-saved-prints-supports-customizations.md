@@ -7,9 +7,7 @@ title: Exported/saved/prints supports text-appearance customizations
 
 Content that is exported, saved, or printed retains user-applied text-appearance customizations.
 
-:::ednote 
-Add sentence explaining why examples are included of interoperable vs non-interoperable formats.
-:::
+<div class="issue" data-number="502"></div>
 
 :::note 
 Examples of interoperable formats include:
@@ -25,11 +23,13 @@ Examples of non-interoperable formats include:
 :::
 
 :::tests
+
+<b>Procedure</b>
 1. Customize a page/view by adjusting aspects of the text appearance, such as size, style, and color. 
 2. Export, save, and print the content.
 3. Check that the customizations remain intact in the exported/saved/printed version. If there are multiple export options, check that at least one preserves the customizations.
 
-Expected Results
+<b>Expected results</b>
 * #3 is true.
 :::
 
