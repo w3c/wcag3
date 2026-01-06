@@ -5,7 +5,7 @@ type: foundational
 title: Text contrast (minimum)
 ---
 
-The default visual presentation of text meets @@[contrast algorithm to be determined].
+The default visual presentation of text meets @@[X contrast measure, to be determined].
 
 :::applies-when
 * text is presented, including text embedded in an image format.
