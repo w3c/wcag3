@@ -12,7 +12,7 @@ type: supplemental
 
 :::tests
 <b>Procedure</b>
-1. Identify if content contains flashing.
+1. Identify if content includes flashing.
 
 <b>Expected Results</b>
 * #1 is false

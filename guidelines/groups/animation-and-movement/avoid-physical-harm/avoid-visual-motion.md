@@ -12,7 +12,7 @@ type: foundational
 
 :::tests
 <b>Procedure</b>
-1. Identify if content contains visual motion or pseudomotion.
+1. Identify if content includes visual motion or pseudomotion.
 2. For each instance, identify if the visual motion or pseudomotion is essential.
 
 <b>Expected Results</b>
