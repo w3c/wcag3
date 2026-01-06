@@ -31,36 +31,6 @@ The metrics in the following table are still to be determined; the current conte
    </thead>
    <tbody>
      <tr>
-       <th scope="row">Underlining</th>
-       <td></td>
-       <td></td>
-       <td>
-        <ul>
-          <li>Disabled entirely</li>
-          <li>Enabled on links only</li>
-          <li>Enabled on links and author defined :term[text]</li>
-        </ul>
-       </td>
-       <td></td>
-       <td></td>
-     </tr>
-    <tr>
-       <th scope="row">Italics</th>
-       <td></td>
-       <td></td>
-       <td>Disabled</td>
-       <td></td>
-       <td></td>
-     </tr>  
-     <tr>
-       <th scope="row">Bold</th>
-       <td></td>
-       <td></td>
-       <td>Disabled</td>
-       <td></td>
-       <td></td>
-     </tr>
-     <tr>
        <th scope="row">Font face</th>
        <td></td>
        <td></td>
@@ -76,6 +46,20 @@ The metrics in the following table are still to be determined; the current conte
        <td></td>
        <td></td>
      </tr>
+      <tr>
+       <th scope="row">Text decoration</th>
+       <td></td>
+       <td></td>
+       <td>
+        <ul>
+          <li>Most text is not bold, italicized, and/or underlined</li>
+          <li>Text is not bold and italicized at the same time</li>
+          <li>Underlines are only used for links</li>
+        </ul>
+       </td>
+       <td></td>
+       <td></td>
+     </tr>
      <tr>
        <th scope="row">Letter spacing</th>
        <td></td>
@@ -88,17 +72,12 @@ The metrics in the following table are still to be determined; the current conte
        <th scope="row">Capitalization</th>
        <td></td>
        <td></td>
-       <td>
-        <ul>
-          <li>Sentence case</li>
-          <li>Title case (headings, titles), sentence case for all other text</li>
-        </ul>
-       </td>
+       <td></td>
        <td></td>
        <td></td>
      </tr>
     <tr>
-       <th scope="row">Automatic hyphenation</th>
+       <th scope="row">Automatic end-of-line hyphenation</th>
        <td></td>
        <td></td>
        <td>Disabled</td>
@@ -114,12 +93,12 @@ The metrics in the following table are still to be determined; the current conte
 
 :::tests
 
-Procedure
+<b>Procedure</b>
 
 For each block of text:
 1. Apply the highest level of change of each attribute from the table, for that language/script.
 2. Check that the text is changed by the override. 
 
-Expected Results
+<b>Expected results</b>
 * #2 is true.
 :::
