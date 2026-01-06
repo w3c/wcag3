@@ -5,6 +5,8 @@ type: supplemental
 
 Alternatives are provided for :term[complex numerical information] such as statistics.
 
+<div class="issue" data-number="491"></div>
+
 :::note
 Complex numerical information can increase cognitive load, especially for users with :term[dyscalculia] or low numeracy. Providing written explanations or visualizations can aid understanding.
 :::
