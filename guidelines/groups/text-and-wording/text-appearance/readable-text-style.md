@@ -72,10 +72,10 @@ The metrics in the following table are still to be determined; the current conte
        <td></td>
      </tr>
      <tr>
-       <th scope="row">Hyphenation</th>
+       <th scope="row">End-of-line hyphenation</th>
        <td></td>
        <td></td>
-       <td></td>
+       <td>Don't hard-code in the raw text.</td>
        <td></td>
        <td></td>
      </tr>
