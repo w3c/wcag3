@@ -3,7 +3,7 @@ status: developing
 title: high-frequency corpus
 ---
 
-large collections of :term[text] (corpora) used in linguistics to identify and analyze words and phrases that appear most often in a language. 
+large collections of :term[text] (corpora) used in linguistics to identify and analyze words and phrases that appear most often in a language
 
 :::example
 * English: British National Corpus, Corpus of Canadian English, Corpus of Contemporary American English 
