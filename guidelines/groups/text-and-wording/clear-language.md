@@ -10,9 +10,6 @@ children:
   - visual-aids
   - summaries
   - review-process
-  - clear-language-style-guide
-  - clear-language-training-policy
-  - plain-language-review
 
 status: developing
 ---
