@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: exploratory
 type: foundational
 title: Use of text appearance
@@ -22,11 +21,11 @@ Meaning conveyed by :term[text] appearance is also :term[programmatically] deter
 
 :::tests
 
-Procedure
+<b>Procedure</b>
 1. Identify any instances of text styling, weight, size or other text characteristics conveying meaning that is not just emphasis.
 2. Check that an additional indicator of that meaning is available. 
 
-Expected results
+<b>Expected results</b>
 * #2 is true.
 :::
 
