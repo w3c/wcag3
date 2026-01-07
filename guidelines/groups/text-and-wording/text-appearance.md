@@ -5,6 +5,7 @@ children:
   - text-contrast
   - adjustable-blocks-of-text
   - adjustable-text-style
+  - adjustable-text-size
   - adjustable-text-colors
   - readable-blocks-of-text-enhanced
   - readable-text-style-enhanced
