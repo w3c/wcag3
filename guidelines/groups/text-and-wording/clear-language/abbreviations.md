@@ -16,7 +16,7 @@ Explanations of :term[abbreviations] are available when first used.
 
 (Pass) ‘He has ADHD (attention deficit hyperactivity disorder).’
 
-(Pass) ‘He has [ADHD].’ — (link to a glossary or pop-up definition.)
+(Pass) ‘He has [ADHD].’ — (link to a glossary or tooltip.)
 
 (Fail) ‘He has ADHD.’ — (first reference, no explanation is available.)
 :::
