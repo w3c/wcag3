@@ -5,6 +5,7 @@ type: supplemental
 ---
 
 Common words are used, and definitions are available for uncommon words. 
+
 <div class="issue" data-number="425"></div>
 
 :::applies-when
@@ -28,12 +29,14 @@ Research shows that using common words and defining uncommon words improves unde
 
 :::tests
 
+<b>Procedure</b>
+
 For each word: 
 1. Check for any uncommon words that are not included in an established list of common words for the language used — this can be a generally known list for the language, or one specified by the author in the conformance statement.
 2. If a word is not in the list of common words, check that it has a definition available within the page/view.
 3. Check that a technology in the accessibility support set meets ‘Common words.’
 
-Expected result:
+<b>Expected results</b>
 * #2 is true, or 
 * #3 is true.
 :::
