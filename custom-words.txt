@@ -3,6 +3,7 @@ AGWG
 ATAG
 CIE
 COGA
+CVD
 FTE
 NOAA
 UAAG
@@ -21,3 +22,7 @@ numeronym
 numeronyms
 strobing
 TOTP
+dyscalculia 
+
+# Words used in examples
+אמר

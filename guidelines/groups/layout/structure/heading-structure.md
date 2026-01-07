@@ -9,10 +9,7 @@ status: developing
 * The technology does not support heading levels.
 :::
 
-:::ednote
-Method(s) to be written
-* Best practice: For each page or view, include an `H1` heading that makes clear the purpose of the page or view. This is addition to the `title` element, which can be hard to read. 
-:::
+<div class="issue" data-number="478"></div>
 
 :::tests
 <i>Headings set at right level</i>

@@ -6,6 +6,8 @@ status: developing
 
 Styling is used to enhance the visual separation between :term[meaningful blocks of content].
 
+<div class="issue" data-number="479"></div>
+
 :::tests
 <i>Visually identifiable meaningful blocks of content</i>
 

@@ -1,8 +1,9 @@
 ---
 type: foundational
 status: developing
-title: Visual indicators in 360-degree space
 ---
+
+<div class="issue" data-number="465"></div>
 
 In 360-degree digital environments, the direction of a sound or speech is indicated when :term[audio] is heard from outside the current :term[view]. 
 
@@ -11,3 +12,11 @@ In 360-degree digital environments, the direction of a sound or speech is indica
 * **Customizable styles:** Users can select various arrow sizes, colors, and outline colors
 :::
 
+:::tests
+<b>Procedure</b>
+For each caption in 360-degree digital environments, when audio is heard from outside the current view:
+1. Indicate the direction of a sound or speech.
+
+<b>Expected Results</b>
+* #1 is true
+:::

@@ -1,0 +1,18 @@
+---
+status: exploratory
+type: foundational
+---
+
+Content and functionality does not rely solely on eye tracking alone.
+
+**Except when**
+
+- Eye tracking is essential. 
+
+:::note
+This is primarily aimed at ensuring there is an alternative for people who cannot use eye-tracking (but do have sight) due to eye conditions.
+:::
+
+:::note
+Some platforms may only allow eye tracking. Ideally the platforms allow additional mechanisms for control. 
+:::

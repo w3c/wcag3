@@ -1,16 +1,21 @@
 ---
+needsAdditionalResearch: true 
 status: developing
 type: foundational
 ---
 
-The presentation of :term[blocks of text] can be adjusted to meet the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
+The presentation of :term[blocks of text] can be adjusted, without loss of content or functionality, to meet the corresponding values for the :term[content]'s language, or where that language is not listed in the table, for the language listed with the most similar orthography.
 
-:::ednote
-Information could be lost if the user overrides the appearance. See [other structural guideline] about ensuring the structure conveys the meaning when possible.
+:::note
+The requirement is that the text is manipulable and the style attributes can be overridden.
+:::
+
+:::except-when
+The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
 :::
 
 :::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example.
 :::
 
 <table class="data">
@@ -61,9 +66,26 @@ The metrics in the following table are still to be determined, the current conte
        <th scope="row">Justification</th>
        <td></td>
        <td>Not applicable</td>
-       <td>Left aligned</td>
+       <td>Default inline start to Left aligned</td>
        <td></td>
        <td></td>
      </tr>
     </tbody>
 </table>
+
+:::note
+
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+<b>Procedure</b>
+
+For each piece of text:
+1. Apply the highest level of change of each attribute from the table, for that language/script.
+2. Check that the text is changed by the override. 
+
+<b>Expected results</b>
+* #2 is true.
+:::

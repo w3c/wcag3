@@ -3,4 +3,19 @@ type: foundational
 status: developing
 ---
 
-:term[Media alternative] content is equivalent to :term[audio] and :term[video] content.
+Equivalent :term[media alternatives] are available for :term[audio] and :term[video] content.
+
+:::except-when
+Except when it is a background video with no spoken content.
+:::
+
+:::tests
+<i>Media alternative is equivalent</i>
+
+<b>Procedure</b>
+1. Check that the audio or video content has a media alternative.
+2. Check that the content of the media alternative is equivalent to the meaningful information in the media content.
+
+<b>Expected results</b>
+* #2 is true.
+:::

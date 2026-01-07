@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-:term[Content author(s)] follow a style guide that includes guidance on :term[media alternatives].
+:term[Content author(s)] assert that they follow a style guide that includes guidance on :term[media alternatives].
 
 :::example
 * **Name:** ABC Inc. Style Guide for Captions
@@ -21,3 +21,14 @@ status: developing
   * Identify no sound or long pause
   * &hellip;
 :::
+
+:::tests
+<i>Information that needs to be included publically</i>
+
+* Title, role or organization making the assertion (if different from the conformance claim).
+* Date of when the usability testing was conducted.
+* Date of assertion (if different from the date of the conformance claim).
+* Summary of the needs of users involved.
+* Identified issues and details of solutions applied.
+:::
+

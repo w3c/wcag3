@@ -4,11 +4,13 @@ type: foundational
 status: developing
 ---
 
-Pages/views have a :term[title] that describes the topic or purpose.
+Pages/views have a :term[title] that describes the name, topic or purpose.
 
 :::except-when
 The presented content has no way to include a title.
 :::
+
+<div class="issue" data-number="444"></div>
 
 :::tests
 <b>Procedure</b>

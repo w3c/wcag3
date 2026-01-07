@@ -3,4 +3,17 @@ status: developing
 type: supplemental
 ---
 
-:term[Content] does not include visual motion lasting longer than 5 seconds or :term[pseudo-motion].
+:term[Content] does not include :term[pseudo-motion] or visual motion lasting longer than 5 seconds.
+
+:::ednote
+<b>Method(s)</b>
+* Design content without using visual motion or pseudomotion.
+:::
+
+:::tests
+<b>Procedure</b>
+1. Identify if content includes visual motion or pseudomotion.
+
+<b>Expected Results</b>
+* #1 is false
+:::

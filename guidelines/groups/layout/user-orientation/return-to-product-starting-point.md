@@ -6,15 +6,15 @@ status: developing
 A visual and programmatically available mechanism exists that allows users to return to the :term[starting point] of the product.
 
 :::except-when
-The :term[page]/:term[view] is the starting point of the product.
+* The :term[page]/:term[view] is the starting point of the product.
+* It is essential to the functionality not to provide this mechanism.
 :::
 
 :::note
 Where the product is a sub-product then the starting point should be the sub-product starting point. For example, an organization's careers website that is separate from the main website.
 :::
 
-:::ednote
-This was changed supplemental since requiring this of all products would mean that checkout processes would be required to link to the product homepage. This undermines a common pattern which sets up checkout processes in a focused way.
+<div class="issue" data-number="448"></div>
 
 :::tests
 <i>HTML homepage link</i>

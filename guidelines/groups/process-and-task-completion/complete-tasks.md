@@ -2,7 +2,7 @@
 children:
   - action-required
   - inform-at-start-of-process
-  - steps-and-instructions
+  - multi-step-instructions
 ---
 
 Users understand how to complete tasks.

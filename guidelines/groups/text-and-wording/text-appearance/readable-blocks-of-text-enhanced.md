@@ -1,17 +1,16 @@
 ---
-title: Readable blocks of text (enhanced)
+needsAdditionalResearch: true
 status: developing
 type: supplemental
+title: Readable blocks of text (enhanced)
 ---
 
-The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
+The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
+
+<div class="issue" data-number="485"></div>
 
 :::ednote
-[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
-:::
-
-:::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example.
 :::
 
 <table class="data">
@@ -68,3 +67,19 @@ The metrics in the following table are still to be determined, the current conte
      </tr>
     </tbody>
 </table>
+
+:::note
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+<b>Procedure</b>
+
+For each block of text:
+1. <b>HTML:</b> Check CSS to confirm that relevant style attributes (such as line height, letter spacing, word spacing, text align) are set within the designated values for the text’s language.
+2. <b>Non-web apps:</b> Check GUI toolkit settings (or defaults) to confirm that they apply values within the designated range.
+
+<b>Expected results</b>
+* #1 or #2 is true.
+:::

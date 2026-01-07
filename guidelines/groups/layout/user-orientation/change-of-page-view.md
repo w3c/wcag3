@@ -6,6 +6,8 @@ status: developing
 
 When content triggers a change of page/view there is a visual change within the view and programmatic notification of the change.
 
+<div class="issue" data-number="447"></div>
+
 :::tests
 <i>Opening new page</i>
 

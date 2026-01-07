@@ -5,6 +5,10 @@ status: developing
 
 The relative order of :term[structural components] remains consistent throughout each specific :term[variation of product or process].
 
+:::applies-when
+In a :term[set of pages/views]
+:::
+
 :::note
 Relative order means that content can be added or removed, but repeated items are in the same order relative to each other.
 :::

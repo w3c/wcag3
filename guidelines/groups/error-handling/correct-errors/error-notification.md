@@ -15,6 +15,6 @@ Examples of errors include invalid form input, server errors or application erro
 2. Trigger errors.
 3. For each error, verify that the nature of the problem is identified and described
 
-<b>Expted results</b>
+<b>Expected results</b>
 * #3 is true for each error.
 :::

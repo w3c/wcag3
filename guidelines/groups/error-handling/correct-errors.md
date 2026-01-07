@@ -1,11 +1,11 @@
 ---
 children:
   - error-notification
-  - error-visibility
-  - input-errors
   - error-suggestion
-  - error-location
+  - error-visibility
   - error-persists
+  - input-errors
+  - error-location
 ---
 
 Users know about and can correct errors.

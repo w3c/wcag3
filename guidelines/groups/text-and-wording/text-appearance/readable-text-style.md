@@ -1,16 +1,16 @@
 ---
+needsAdditionalResearch: true 
 status: developing
 type: foundational
+title: Readable text style (minimum)
 ---
 
-The default/authored presentation of :term[text] meets the corresponding values for the :term[content]'s language (or the language of the ones listed with the most similar orthography).
+The default/authored presentation of :term[text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
+
+<div class="issue" data-number="475"></div>
 
 :::ednote
-[Readable blocks of text (foundational)](#readable-blocks-of-text) and [Readable text style (foundational)](#readable-text-style) are based on common usage, and their supplemental counterparts are based on readability research. We need more readability research in these languages.
-:::
-
-:::ednote
-The metrics in the following table are still to be determined, the current content is an example.
+The metrics in the following table are still to be determined; the current content is an example. 
 :::
 
 <table class="data">
@@ -74,12 +74,27 @@ The metrics in the following table are still to be determined, the current conte
        <td></td>
      </tr>
      <tr>
-       <th scope="row">Hyphenation</th>
+       <th scope="row">End-of-line hyphenation</th>
        <td></td>
        <td></td>
-       <td></td>
+       <td>Don't hard-code in the raw text.</td>
        <td></td>
        <td></td>
      </tr>
     </tbody>
 </table>
+
+:::note
+[Readable blocks of text (minimum)](#readable-blocks-of-text) and [Readable text style (minimum)](#readable-text-style) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
+:::
+
+:::tests
+
+<b>Procedure</b>
+
+For each block of text:
+1. Check that the attributes of the block of text are within the attributes in the table for the closest language.
+
+<b>Expected results</b>
+* #1 is true. 
+:::

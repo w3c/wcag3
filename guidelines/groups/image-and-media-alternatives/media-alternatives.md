@@ -1,18 +1,18 @@
 ---
 children:
-  - descriptive-transcripts
+  - transcripts-available
   - equivalent-media-alternatives
   - findable-media-alternatives
-  - controllable-media-alternatives
   - speakers-identity
   - language-identified
-  - media-alternatives-in-all-spoken-languages
   - meaningful-sounds
   - meaningful-visual-information
   - non-verbal-cues
+  - sign-language-prerecorded
+  - sign-language-live
   - media-alternatives-style-guide
-  - testing-media-alternatives-with-users
   - video-player
+  - testing-media-alternatives-with-users
   - reviewed-by-content-authors
 ---
 

@@ -1,9 +1,8 @@
 ---
 children:
+  - detectable-image
   - decorative-image
   - equivalent-text-alternative
-  - detectable-image
-  - image-role
   - image-type
   - editable-alternatives
   - style-guide
