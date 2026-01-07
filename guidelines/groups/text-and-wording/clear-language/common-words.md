@@ -32,11 +32,10 @@ Research shows that using common words and defining uncommon words improves unde
 <b>Procedure</b>
 
 For each word: 
-1. Check for any uncommon words that are not included in an established list of common words for the language used — this can be a generally known list for the language, or one specified by the author in the conformance statement.
-2. If a word is not in the list of common words, check that it has a definition available within the page/view.
+1. Check whether the word appears in the 1,500 most common words in a high-frequency corpus for the language used.
+2. If the word is not in the list of the 1,500 most common words, check that it has a definition available within the page/view.
 3. Check that a technology in the accessibility support set meets ‘Common words.’
 
 <b>Expected results</b>
-* #2 is true, or 
-* #3 is true.
+* #1, #2, or #3 is true.
 :::
