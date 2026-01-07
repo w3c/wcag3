@@ -1,9 +1,11 @@
 ---
-status: exploratory
+status: developing
 type: supplemental
 ---
 
 Letters or :term[diacritics] required to identify the correct meaning of each word are available.
+
+<div class="issue" data-number="490"></div>
 
 :::applies-when 
 * a human language has a version that removes letters or diacritics for proficient readers.
