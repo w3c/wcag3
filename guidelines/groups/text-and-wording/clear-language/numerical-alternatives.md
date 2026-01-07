@@ -11,12 +11,10 @@ Explanations or alternatives are provided for :term[complex numerical informatio
 Complex numerical information can increase cognitive load, especially for users with :term[dyscalculia] or low numeracy. Providing written explanations or visualizations can aid understanding.
 :::
 
-:::example
-* percentages or ratios (for example, ‘73% of respondents’)
-* large numbers that are difficult to visualize (for example, ‘3,742,891’)
-* fractions, decimals, or averages (for example, ‘3.7 hours’)
-* comparisons or trends requiring calculation (for example, ‘sales increased by 12%’)
-* embedded or multi-step calculations (for example, ‘40% of the college's 2,500 students …’)
+:::examples
+(Fail) 'The stadium holds 60,000 people.’
+(Pass) 'The stadium holds 60,000 people, which is about the size of a small city.'
+(Pass) 'The stadium holds many people.'
 :::
 
 :::tests
