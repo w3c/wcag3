@@ -9,8 +9,9 @@ Sentences do not include :term[nested clauses].
 * content provides legal or technical information.
 :::
 
-:::examples
+:::example
 (Fail) 'The teacher was surprised that the student who aced yesterday's test was absent today.'
+
 (Pass) 'The teacher was surprised that the student was absent today. This was unexpected because he aced yesterday's test.'
 :::
 

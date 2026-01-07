@@ -11,8 +11,7 @@ Explanations or alternatives are provided for :term[complex numerical informatio
 Complex numerical information can increase cognitive load, especially for users with :term[dyscalculia] or low numeracy. Providing written explanations or visualizations can aid understanding.
 :::
 
-:::examples
-
+:::example
 (Fail) 'The stadium holds 60,000 people.’
 
 (Pass) 'The stadium holds 60,000 people, which is about the size of a small city.'

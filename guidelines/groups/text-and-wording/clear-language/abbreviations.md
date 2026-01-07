@@ -12,8 +12,7 @@ Explanations of :term[abbreviations] are available when first used.
  of a longer phrase, such as "brand DNA," whose meaning needs to be defined to meet the [non-literal language requirement](#non-literal-language). 
 :::
 
-:::examples
-
+:::example
 (Pass) ‘He has ADHD (attention deficit hyperactivity disorder).’
 
 (Pass) ‘He has [ADHD].’ — (link to a glossary or tooltip.)
