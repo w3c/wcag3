@@ -10,7 +10,7 @@ Explanations of :term[abbreviations] are available when first used.
 * The abbreviation is part of a longer phrase, such as "brand DNA," whose meaning needs to be defined to meet the [non-literal language requirement](#non-literal-language). 
 :::
 
-:::example
+:::examples
 
 (Pass) ‘He has ADHD (attention deficit hyperactivity disorder).’
 
@@ -21,9 +21,11 @@ Explanations of :term[abbreviations] are available when first used.
 
 :::tests
 
+<b>Procedure</b>
+
 1. Check for any abbreviations in the content.
 2. Check that an explanation is available for the first use of the abbreviation.
 
-Expected result:
+<b>Expected result</b>
 * #2 is true.
 :::
