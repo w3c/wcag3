@@ -1,15 +1,15 @@
 ---
 children:
-  - no-unnecessary-words
-  - no-nested-clauses
-  - common-words
   - abbreviations
+  - no-nested-clauses
   - non-literal-language
-  - numerical-alternatives
-  - no-missing-letters-or-diacritics
-  - visual-aids
   - summaries
+  - common-words
+  - no-missing-letters-or-diacritics
+  - no-unnecessary-words
+  - numerical-alternatives
   - review-process
+  - visual-aids
 
 status: developing
 ---
