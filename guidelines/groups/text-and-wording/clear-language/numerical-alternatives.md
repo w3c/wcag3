@@ -3,7 +3,7 @@ status: exploratory
 type: supplemental
 ---
 
-Alternatives are provided for :term[complex numerical information] such as statistics.
+Explanations or alternatives are provided for :term[complex numerical information] such as statistics.
 
 <div class="issue" data-number="491"></div>
 
