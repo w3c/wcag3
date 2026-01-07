@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Numerical information includes visual and programmatic context to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
+Numerical information includes sufficient context in written text and a programmatic equivalent to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
 
 <div class="issue" data-number="487"></div>
 
