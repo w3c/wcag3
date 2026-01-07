@@ -17,7 +17,9 @@ For this supplemental level requirement, the default minimum contrast level shou
 * text is presented, including text embedded in an image format.
 :::
 
-:::except-when the text is:
+:::except-when
+the text is:
+
 * also present elsewhere in the page/view which meets the requirement,
 * part of an inactive Interactive element, 
 * pure decoration, 

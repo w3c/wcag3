@@ -11,7 +11,9 @@ The default visual presentation of text meets @@[X contrast measure, to be deter
 * text is presented, including text embedded in an image format.
 :::
 
-:::except-when the text is:
+:::except-when
+the text is:
+
 * also present elsewhere in the page/view which meets the requirement,
 * part of an inactive Interactive element, 
 * pure decoration, 
