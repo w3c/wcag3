@@ -236,7 +236,7 @@ a condition is true.
 :::
 ```
 
-The label. "Applies when", will be appended before the first paragraph of the block. If the first content item is anything other than a paragraph (e.g. if the block only contains a list), it will appear in a separate paragraph before the content.
+The label, "Applies when", will be prepended to the first paragraph in the block. If the first content item is anything other than a paragraph (e.g. if the block only contains a list), it will appear in a separate paragraph before the content.
 
 #### Except when
 
