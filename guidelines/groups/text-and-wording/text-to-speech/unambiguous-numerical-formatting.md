@@ -7,7 +7,7 @@ Numerical information includes sufficient context in written text and a programm
 
 <div class="issue" data-number="487"></div>
 
-:::examples
+:::example
 * Dates include markers for day and month such as “3 May 2025” instead of the ambiguous "03/05/2025."
 * Temperatures specify degrees Celsius or Fahrenheit such as "0° C" or "32° F." 
 * Times  specify am, pm, or 24-hour clock such as "1 pm" or "13:00."
