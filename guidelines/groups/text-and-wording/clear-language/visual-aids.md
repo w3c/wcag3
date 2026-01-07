@@ -3,7 +3,7 @@ status: developing
 type: assertion
 ---
 
-:term[Content author(s)] have reviewed written :term[content] for complex ideas such as processes, workflows, relationships, or chronological information and added supplemental :term[visual aids] to assist readers with understanding them. 
+Our organization has a process and policy for reviewing written :term[content] to identify complex ideas such as processes, workflows, relationships, or chronological information and adding :term[visual aids] to help readers understand them. 
 
 Information to include publicly
 * Title, role or organization making the assertion (if different from the conformance claim)
