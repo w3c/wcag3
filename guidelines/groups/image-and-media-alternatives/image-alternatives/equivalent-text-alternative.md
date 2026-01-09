@@ -13,7 +13,7 @@ Provide a text alternative for the image in a way that conveys the equivalent me
 <b>Procedure</b>
 1. Remove, hide, or mask the image.
 2. Replace it with the text alternative.
-3. Check that the meaningful content in the image is described by the text alternative).
+3. Check that the meaningful content in the image is described by the text alternative.
 4. If the image includes words that are important to understanding the content, check that those words are included in the text alternative.
 
 <b>Expected results</b>
