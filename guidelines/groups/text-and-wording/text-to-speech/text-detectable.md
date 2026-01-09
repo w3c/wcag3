@@ -1,7 +1,6 @@
 ---
 status: developing
 type: foundational
-title: Text detectable
 ---
 
 All visible text has a programmatically determinable equivalent.

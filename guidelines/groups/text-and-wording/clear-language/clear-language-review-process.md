@@ -1,7 +1,6 @@
 ---
 status: developing
 type: assertion
-title: Clear language review process 
 ---
 
 Our organization has a process and policy to review written content for :term[clear language] before publication. The process includes confirming:

@@ -1,7 +1,6 @@
 ---
 status: exploratory
 type: foundational
-title: Use of text appearance
 ---
 
 Meaning conveyed by :term[text] appearance is also :term[programmatically] determinable.
@@ -28,5 +27,3 @@ Meaning conveyed by :term[text] appearance is also :term[programmatically] deter
 <b>Expected results</b>
 * #2 is true.
 :::
-
-

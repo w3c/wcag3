@@ -1,6 +1,7 @@
 ---
 type: assertion
 status: developing
+title: Sign language available (live)
 ---
 
 <div class="issue" data-number="471"></div>

@@ -1,6 +1,7 @@
 ---
 type: supplemental
 status: developing
+title: Audio descriptions available (live)
 ---
 
 <div class="issue" data-number="453"></div>

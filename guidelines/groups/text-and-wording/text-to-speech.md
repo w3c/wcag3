@@ -1,9 +1,9 @@
 ---
 children:
-  - text-to-speech-supported
-  - human-language
-  - semantic-text-appearance
-  - unambiguous-numerical-formatting
+  - text-detectable
+  - human-language-available
+  - text-appearance-not-relied-on
+  - numerical-metadata-available
 title: Text-to-speech
 ---
 

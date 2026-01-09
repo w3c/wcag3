@@ -1,6 +1,7 @@
 ---
 type: foundational
 status: developing
+title: Captions centered (immersive)
 ---
 
 <div class="issue" data-number="462"></div>

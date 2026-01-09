@@ -1,11 +1,13 @@
 ---
-needsAdditionalResearch: true 
+needsAdditionalResearch: true
 status: developing
-type: foundational
-title: Readable blocks of text (minimum)
+type: supplemental
+title: Blocks of text readable (enhanced)
 ---
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
+
+<div class="issue" data-number="485"></div>
 
 :::ednote
 The metrics in the following table are still to be determined; the current content is an example.
@@ -35,7 +37,7 @@ The metrics in the following table are still to be determined; the current conte
        <th scope="row">Block Margin</th>
        <td></td>
        <td></td>
-       <td>≥0.5em around paragraphs</td>
+       <td></td>
        <td></td>
        <td></td>
      </tr>  
@@ -43,7 +45,7 @@ The metrics in the following table are still to be determined; the current conte
        <th scope="row">Line length</th>
        <td></td>
        <td></td>
-       <td>30-100 characters</td>
+       <td></td>
        <td></td>
        <td></td>
      </tr>
@@ -51,7 +53,15 @@ The metrics in the following table are still to be determined; the current conte
        <th scope="row">Line height</th>
        <td></td>
        <td></td>
-       <td>1.0 - paragraph separation height</td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th scope="row">Justification</th>
+       <td></td>
+       <td></td>
+       <td>Left aligned</td>
        <td></td>
        <td></td>
      </tr>
@@ -67,8 +77,9 @@ The metrics in the following table are still to be determined; the current conte
 <b>Procedure</b>
 
 For each block of text:
-1. Check that the attributes of the block of text are within the attributes in the table for the closest language.
+1. <b>HTML:</b> Check CSS to confirm that relevant style attributes (such as line height, letter spacing, word spacing, text align) are set within the designated values for the text’s language.
+2. <b>Non-web apps:</b> Check GUI toolkit settings (or defaults) to confirm that they apply values within the designated range.
 
-<b>Expected results</b> 
-* #1 is true.
+<b>Expected results</b>
+* #1 or #2 is true.
 :::
