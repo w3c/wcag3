@@ -1,7 +1,7 @@
 ---
 children:
-  - detectable-image
-  - decorative-image
+  - images-detectable
+  - decorative-images-hidden
   - equivalent-text-alternative
   - image-type
   - editable-alternatives

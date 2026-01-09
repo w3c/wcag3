@@ -1,7 +1,6 @@
 ---
 type: assertion
 status: developing
-title: Video player supports media alternative
 ---
 
 We provide a :term[video] player that supports appropriate :term[media alternatives]. The video player includes the following features [list all that apply]:

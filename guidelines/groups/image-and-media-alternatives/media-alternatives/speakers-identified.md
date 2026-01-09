@@ -1,7 +1,6 @@
 ---
 type: foundational
 status: developing
-title: Speakers identified
 ---
 
 <div class="issue" data-number="472"></div>
