@@ -3,7 +3,7 @@ type: foundational
 status: developing
 ---
 
-Equivalent :term[media alternatives] are available for :term[audio] and :term[video] content.
+:term[Equivalent] :term[media alternatives] are :term[available] for :term[audio] and :term[video] content.
 
 :::except-when
 Except when it is a background video with no spoken content.
