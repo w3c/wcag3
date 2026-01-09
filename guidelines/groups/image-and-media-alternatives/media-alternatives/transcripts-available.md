@@ -3,7 +3,7 @@ type: foundational
 status: developing
 ---
 
-:term[Transcripts] are available for all :term[audio] and :term[video] :term[content].
+:term[Transcripts] are :term[available] for all :term[audio] and :term[video] :term[content].
 
 :::except-when
 * Except when the audio or video content is an alternative for text and clearly labelled as such.
