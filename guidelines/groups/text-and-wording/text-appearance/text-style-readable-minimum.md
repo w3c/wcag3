@@ -2,7 +2,7 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
-title: Readable text style (minimum)
+title: Text style readable (minimum)
 ---
 
 The default/authored presentation of :term[text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.

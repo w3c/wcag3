@@ -1,6 +1,7 @@
 ---
 type: foundational
 status: developing
+title: No reliance on non-text content
 ---
 
 <div class="issue" data-number="474"></div>

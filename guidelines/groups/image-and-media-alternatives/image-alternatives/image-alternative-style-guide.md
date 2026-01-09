@@ -1,7 +1,6 @@
 ---
 status: exploratory
 type: assertion
-title: Image alternatives style guide
 ---
 
 We assert that we follow an organizational style guide for image :term[text alternatives].

@@ -1,15 +1,15 @@
 ---
 children:
-  - adaptable-captions
-  - captions-prerecorded
-  - captions-live
-  - captions-avoid-obstruction
-  - captions-are-synchronized
-  - captions-enhanced-features
+  - captions-adjustable
+  - captions-available-prerecorded
+  - captions-available-live
+  - captions-unobstructed
+  - captions-synchronized
+  - caption-features-available
   - consistent-captions
-  - captions-location-360
-  - controllable-captions
-  - visual-indicators-360
+  - captions-centered-immersive
+  - captions-controllable
+  - direction-indicated-immersive
 ---
 
 Users have :term[captions] for the :term[audio] :term[content].

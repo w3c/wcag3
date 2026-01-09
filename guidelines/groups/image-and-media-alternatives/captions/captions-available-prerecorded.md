@@ -1,6 +1,7 @@
 ---
 type: foundational
 status: developing
+title: Captions available (prerecorded)
 ---
 
 <div class="issue" data-number="463"></div>

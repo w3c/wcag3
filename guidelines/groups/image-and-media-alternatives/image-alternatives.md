@@ -1,11 +1,11 @@
 ---
 children:
-  - detectable-image
-  - decorative-image
-  - equivalent-text-alternative
+  - images-detectable
+  - decorative-images-hidden
+  - images-not-relied-on
   - image-type
-  - editable-alternatives
-  - style-guide
+  - alternative-text-editable
+  - image-alternative-style-guide
 ---
 
 Users have equivalent alternatives for images.

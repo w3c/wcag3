@@ -1,6 +1,7 @@
 ---
 type: foundational
 status: developing
+title: Direction indicated (immersive)
 ---
 
 <div class="issue" data-number="465"></div>

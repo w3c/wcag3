@@ -1,6 +1,7 @@
 ---
 type: foundational
 status: developing
+title: Audio descriptions available (prerecorded)
 ---
 
 <div class="issue" data-number="454"></div>

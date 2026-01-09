@@ -2,7 +2,7 @@
 needsAdditionalResearch: true 
 status: developing
 type: foundational
-title: Text contrast (minimum)
+title: Text contrast sufficient (minimum)
 ---
 
 The default visual presentation of text meets @@[X contrast measure, to be determined].

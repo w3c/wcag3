@@ -1,7 +1,6 @@
 ---
 status: developing
 type: foundational
-title: Non-literal language 
 ---
 
 Explanations or unambiguous alternatives are available for :term[non-literal language], such as idioms and metaphors.

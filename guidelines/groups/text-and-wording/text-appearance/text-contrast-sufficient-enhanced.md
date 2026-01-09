@@ -2,7 +2,7 @@
 needsAdditionalResearch: true 
 status: developing
 type: supplemental
-title: Text contrast (enhanced)
+title: Text contrast sufficient (enhanced)
 ---
 
 The default visual presentation of text meets @@[X contrast measure, at a higher level than the foundational requirement for Text contrast (minimum)].
