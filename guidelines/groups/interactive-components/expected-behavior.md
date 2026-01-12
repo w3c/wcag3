@@ -1,12 +1,12 @@
 ---
 children:
-  - consistent-interaction
+  - consistent-interactions
   - consistent-labels
   - consistent-visual-design
-  - control-location
-  - conventions
+  - consistent-control-location
   - familiar-component
   - reliable-positioning
+  - conventional-pattern-usage
 ---
 
 Users can navigate using :term[interactive components] that behave as expected.

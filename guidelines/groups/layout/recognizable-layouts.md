@@ -1,6 +1,6 @@
 ---
 children:
-  - conventional-layouts
+  - conventional-layout-review
 ---
 
 Users have consistent and recognizable layouts available.

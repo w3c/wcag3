@@ -1,9 +1,9 @@
 ---
 children:
-  - error-prevention
-  - submission-confirmation
-  - validation-timing
-  - reduce-mistakes
+  - errors-preventable
+  - submission-status-notified
+  - data-entry-validated
+  - error-prevention-review
 ---
 
 Users can review, confirm and fix information they submit in order to prevent errors. 

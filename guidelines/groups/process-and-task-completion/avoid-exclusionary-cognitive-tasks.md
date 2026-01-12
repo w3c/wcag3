@@ -1,7 +1,7 @@
 ---
 children:
-  - allow-automated-entry
-  - alternatives-to-cognitive-tests
+  - automated-entry-allowed
+  - cognitive-test-alternatives-available
   - no-memorization
   - copying-supported
 ---

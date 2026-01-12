@@ -1,10 +1,10 @@
 ---
 children:
-  - comparable-risk
-  - consequential-choices
-  - consequences-provided
-  - safety-and-security
-  - inclusive-algorithm
+  - risk-comparable
+  - consequences-of-choices-explained
+  - consequences-explained-before-agreement
+  - diverse-disabilities-considered
+  - algorithm-inclusivity-reviewed
 ---
 
 Users understand the benefits, risks, and consequences of options they select. 

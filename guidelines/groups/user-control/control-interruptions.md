@@ -1,6 +1,6 @@
 ---
 children:
-  - control-notifications
+  - notifications-adjustable
 ---
 
 Users can control interruptions.

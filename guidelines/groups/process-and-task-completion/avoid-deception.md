@@ -1,8 +1,8 @@
 ---
 children:
-  - no-hidden-preselections
-  - no-artificial-pressure
-  - messaging-usability-testing
+  - preselections-visible
+  - no-artificial-time-limits
+  - deceptive-practices-usability-testing
   - messaging-expert-review
 ---
 
