@@ -1,7 +1,7 @@
 ---
 children:
-  - speech-alternative
-  - real-time-bidirectional-voice-communication
+  - speech-alternative-available
+  - real-time-text-available
 ---
 
 Provide alternatives to speech input and facilitate speech control.

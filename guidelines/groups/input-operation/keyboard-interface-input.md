@@ -3,10 +3,10 @@ children:
   - all-elements-keyboard-actionable
   - all-content-keyboard-accessible
   - bidirectional-navigation
-  - conflicting-keyboard-commands
+  - no-keyboard-command-conflicts
   - keyboard-navigable-if-responsive
-  - no-keyboard-trap
-  - user-control-of-keyboard-focus
+  - no-keyboard-traps
+  - keyboard-focus-user-controlled
   - relevant-tab-order-keyboard-focus
 ---
 

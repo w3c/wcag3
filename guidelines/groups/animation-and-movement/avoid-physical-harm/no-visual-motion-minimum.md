@@ -1,6 +1,7 @@
 ---
 status: developing
 type: foundational
+title: No visual motion (minimum)
 ---
 
 :term[Content] does not include non-essential :term[pseudo-motion], or non-essential visual motion lasting longer than 5 seconds.

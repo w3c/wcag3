@@ -1,5 +1,4 @@
 ---
-title: Biometric identification (minimum)
 type: foundational
 status: developing
 ---

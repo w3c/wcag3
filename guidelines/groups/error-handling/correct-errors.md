@@ -1,11 +1,11 @@
 ---
 children:
-  - error-notification
-  - error-suggestion
-  - error-visibility
-  - error-persists
-  - input-errors
-  - error-location
+  - error-notifications-available
+  - error-suggestions-provided
+  - redundant-cueing-in-errors-provided
+  - error-messages-persistent
+  - errors-associated
+  - error-messages-collocated
 ---
 
 Users know about and can correct errors.

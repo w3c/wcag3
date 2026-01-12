@@ -1,14 +1,14 @@
 ---
 children:
-  - control-contrast
-  - control-importance
-  - control-labels
-  - control-updates
-  - distinguishable-controls
-  - field-constraints
-  - input-labels
-  - label-in-name
-  - name-role-value-state
+  - interactive-element-contrast-sufficient
+  - interactive-element-importance-indicated
+  - interactive-element-names-available
+  - changes-to-elements-notified
+  - interactive-elements-distinguishable
+  - input-constraints-used
+  - input-labels-visible
+  - label-included-in-programmatic-name
+  - roles-values-states-properties-available
 ---
 
 Users have information about :term[interactive components] that is identifiable and usable visually and using :term[assistive technology].
