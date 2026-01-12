@@ -4,4 +4,4 @@ title: Pointer visibility (enhanced)
 type: supplemental
 ---
 
-Provide a more visible pointer indicator than the platform default which can be either enabled in a setting, temporary (for a few seconds), or permanent.
+Provide a more visible :term[pointer] indicator than the platform default. The enhanced pointer indicator can be enabled in a setting, and be visible temporarily (for a few seconds) or permanently.
