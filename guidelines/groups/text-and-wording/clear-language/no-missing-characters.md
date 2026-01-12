@@ -1,9 +1,10 @@
 ---
 status: developing
 type: supplemental
+title: No missing diacritics
 ---
 
-Letters or :term[diacritics] required to identify the correct meaning of each word are available.
+:term[Diacritics] required to identify the correct meaning of each word are available.
 
 <div class="issue" data-number="490"></div>
 
