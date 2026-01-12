@@ -1,12 +1,12 @@
 ---
 children:
-  - avoid-flashing
-  - no-flashing
-  - avoid-visual-motion
-  - no-visual-motion
-  - trigger-warning
-  - manage-haptic-stimulation
-  - manage-audio-shifting
+  - no-flashing-minimum
+  - no-flashing-enhanced
+  - no-visual-motion-minimum
+  - no-visual-motion-enhanced
+  - trigger-warning-available
+  - haptic-stimulation-adjustable
+  - audio-shifting-adjustable
   - safe-content-review
 ---
 

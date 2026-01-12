@@ -1,6 +1,7 @@
 ---
 status: developing
 type: supplemental
+title: No flashing (enhanced)
 ---
 
 :term[Content] does not include :term[flashing].

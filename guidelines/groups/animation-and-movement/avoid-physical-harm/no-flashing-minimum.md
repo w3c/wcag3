@@ -1,6 +1,7 @@
 ---
-type: foundational
 status: developing
+type: foundational
+title: No flashing (minimum)
 ---
 
 :term[Content] does not include non-essential :term[flashing].
