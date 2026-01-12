@@ -1,5 +1,4 @@
 ---
-title: Multi-step navigation
 type: foundational
 status: developing
 ---

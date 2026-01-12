@@ -1,4 +1,5 @@
 ---
+title: Blocks of content available (minimum)
 type: foundational
 status: developing
 ---

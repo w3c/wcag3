@@ -1,6 +1,5 @@
 ---
 type: assertion
-title: Clear messaging usability testing
 status: developing
 ---
 

@@ -1,8 +1,8 @@
 ---
 children:
-  - go-back-in-process
-  - redundant-entry
-  - save-progress
+  - going-back-supported
+  - no-redundant-entry
+  - progress-saved
 ---
 
 Users do not have to reenter information or redo work.

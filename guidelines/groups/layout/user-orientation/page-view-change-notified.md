@@ -1,5 +1,5 @@
 ---
-title: Change of page/view
+title: Page/view change notified
 type: foundational
 status: developing
 ---

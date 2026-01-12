@@ -1,7 +1,7 @@
 ---
 status: developing
 type: assertion
-title: Supported decision-making
+title: Supported decision-making review
 ---
 
 A review was conducted to identify when users need to make substantial decisions about money, privacy, or well-being. In these situations, additional support was provided such as:
