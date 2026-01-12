@@ -1,5 +1,4 @@
 ---
-title: Location in multi-step process
 type: foundational
 status: developing
 ---

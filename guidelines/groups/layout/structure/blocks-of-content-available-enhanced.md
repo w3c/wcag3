@@ -1,5 +1,5 @@
 ---
-title: Clear blocks of content (enhanced)
+title: Blocks of content available (enhanced)
 type: supplemental
 status: developing
 ---

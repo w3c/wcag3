@@ -1,5 +1,5 @@
 ---
-title: Page/view title
+title: Page/view title available
 type: foundational
 status: developing
 ---
