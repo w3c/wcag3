@@ -1,6 +1,7 @@
 ---
 status: developing
 type: foundational
+title: Human language detectable
 ---
 
 The human language of all :term[content] within the :term[view] is :term[programmatically] determinable.
