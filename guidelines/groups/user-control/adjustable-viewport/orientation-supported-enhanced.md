@@ -1,6 +1,7 @@
 ---
 status: developing
 type: foundational
+title: Orientation supported (enhanced)
 ---
 
 Content supports both portrait and landscape orientations.
