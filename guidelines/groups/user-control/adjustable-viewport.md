@@ -1,7 +1,9 @@
 ---
 children:
-  - orientation-supported
-  - text-reflow-supported
+  - orientation-minimum
+  - orientation-enhanced
+  - text-reflow
+  - layout-reflow
 ---
 
-Users can transform size and orientation of :term[content] presentation to make it viewable and usable.
+Users can adjust the size and orientation of the :term[viewport], adjust text size of :term[content], or zoom content without loss of legibility or functionality.
