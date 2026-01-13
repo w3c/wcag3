@@ -1,6 +1,7 @@
 ---
 status: developing
 type: foundational
+title: Orientation supported (minimum)
 ---
 
 If the platform has a :term[default orientation], content supports that orientation. If the platform does not have a default orientation, content supports both portrait and landscape orientations.
