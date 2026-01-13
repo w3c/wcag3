@@ -1,6 +1,6 @@
 ---
 children:
-  - no-reliance-on-non-text-content
+  - non-text-content-not-relied-on
 title: Non-text alternatives
 ---
 

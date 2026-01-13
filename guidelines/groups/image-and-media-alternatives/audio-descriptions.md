@@ -3,7 +3,7 @@ children:
   - audio-descriptions-available-prerecorded
   - audio-descriptions-synchronized
   - audio-descriptions-available-live
-  - extended-audio-description
+  - extended-audio-descriptions-available
   - audio-description-volume-adjustable
   - audio-description-language-adjustable
 ---
