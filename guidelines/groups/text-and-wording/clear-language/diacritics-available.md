@@ -16,7 +16,7 @@ Hebrew and Arabic are examples of human languages that omit letters or diacritic
 :::
 
 :::example
-Without vowels or diacritics, the Hebrew word אמר can represent different verbs and nouns related to “to say” as well as the name of a city and a type of wheat. Proficient readers use context to figure out which meaning is intended.
+Without vowels or diacritics, the Hebrew word אמר can represent different verbs and nouns related to “to say” as well as a type of wheat. Proficient readers use context to figure out which meaning is intended.
 :::
 
 :::tests
