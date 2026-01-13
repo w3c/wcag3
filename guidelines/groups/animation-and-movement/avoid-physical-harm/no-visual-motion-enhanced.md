@@ -13,7 +13,7 @@ title: No visual motion (enhanced)
 
 :::tests
 <b>Procedure</b>
-1. Identify if content contains visual motion or pseudomotion.
+1. Identify if content includes visual motion or pseudomotion.
 
 <b>Expected Results</b>
 * #1 is false
