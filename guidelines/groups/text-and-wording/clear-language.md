@@ -2,10 +2,10 @@
 children:
   - abbreviations-explained
   - no-nested-clauses
-  - figurative-language-explained
+  - non-literal-language-explained
   - summaries-available
   - common-words-used
-  - no-missing-characters
+  - diacritics-available
   - no-unnecessary-words
   - numerical-alternatives-available
   - clear-language-review-process
