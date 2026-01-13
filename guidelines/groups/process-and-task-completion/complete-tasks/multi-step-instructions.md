@@ -1,5 +1,6 @@
 ---
 status: exploratory
+title: Multi-step instructions
 type: supplemental
 ---
 
