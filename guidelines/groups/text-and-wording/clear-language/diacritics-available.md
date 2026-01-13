@@ -1,7 +1,6 @@
 ---
 status: developing
 type: supplemental
-title: Diacritics available
 ---
 
 :term[Diacritics] required to identify the correct meaning of each word are available.
