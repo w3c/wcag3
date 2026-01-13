@@ -1,6 +1,6 @@
 ---
 status: exploratory
-title: Pointed indicated (enhanced)
+title: Pointer indicated (enhanced)
 type: supplemental
 ---
 

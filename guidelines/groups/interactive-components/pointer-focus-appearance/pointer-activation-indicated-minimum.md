@@ -1,6 +1,6 @@
 ---
 status: exploratory
-title: Pointer activated indicated (minimum)
+title: Pointer activation indicated (minimum)
 type: foundational
 ---
 

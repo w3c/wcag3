@@ -1,6 +1,5 @@
 ---
 status: exploratory
-title: Pointer visibility (enhanced)
 type: supplemental
 ---
 
