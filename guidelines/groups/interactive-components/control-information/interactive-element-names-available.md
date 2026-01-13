@@ -2,4 +2,8 @@
 status: exploratory
 ---
 
-Interactive :term[components] have visible labels that identify the purpose of the component.
+Persistent names (including labels) that identify the purpose of the interactive element are visually and programmatically available. 
+
+:::notes
+Visible labels can be text or non-text, for instance icons.
+:::
