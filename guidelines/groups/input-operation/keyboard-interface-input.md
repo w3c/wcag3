@@ -9,6 +9,7 @@ children:
   - no-keyboard-traps
   - keyboard-focus-user-controlled
   - relevant-keyboard-focus-order
+  - user-control-of-keyboard-focus
 ---
 
 Users can navigate and operate :term[content] using only the keyboard.
