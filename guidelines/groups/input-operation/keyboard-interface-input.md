@@ -3,6 +3,7 @@ children:
   - all-elements-keyboard-actionable
   - all-content-keyboard-accessible
   - bidirectional-navigation
+  - custom-keys-documented
   - no-keyboard-command-conflicts
   - keyboard-navigable-if-responsive
   - no-keyboard-traps
