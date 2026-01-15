@@ -3,7 +3,7 @@ status: exploratory
 type: foundational
 ---
 
-Content and functionality does not rely solely on eye tracking alone.
+Content and functionality does not rely solely on eye tracking.
 
 **Except when**
 
