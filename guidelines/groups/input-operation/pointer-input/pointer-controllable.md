@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-For functionality that can be activated using a :term[simple pointer input], at least one of the following is true:
+At least one of the following is true for functionality that can be activated using a :term[simple pointer input]:
 
 No Down Event
 : The :term[down event] of the :term[pointer] is not used to execute any part of the function
@@ -14,8 +14,9 @@ Cancel or Undo
 Up Reversal
 : The :term[up event] reverses any outcome of the preceding down event
 
-Essential
-: Completing the function on the down event is :term[essential]
+Except when:
+
+- Completing the function on the down event is :term[essential]
 
 :::example
 An example of Cancel would be dragging where there is a pickup action on button down, but it can be canceled by dropping anywhere other than the drop area.
