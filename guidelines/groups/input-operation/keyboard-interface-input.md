@@ -4,6 +4,7 @@ children:
   - all-content-keyboard-accessible
   - bidirectional-navigation
   - custom-keys-documented
+  - focus-placed
   - no-keyboard-command-conflicts
   - keyboard-navigable-if-responsive
   - no-keyboard-traps
