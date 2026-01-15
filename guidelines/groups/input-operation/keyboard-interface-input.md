@@ -1,6 +1,6 @@
 ---
 children:
-  - all-elements-keyboard-actionable
+  - all-components-keyboard-operable
   - all-content-keyboard-accessible
   - bidirectional-navigation
   - custom-keys-documented
