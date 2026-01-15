@@ -3,4 +3,8 @@ status: developing
 type: foundational
 ---
 
-Speech input is not the only way of achieving any functionality except where a speech input is :term[essential] to the functionality.
+Content or functionality does not rely on speech alone.
+
+Except when:
+
+- Speech input is :term[essential] to the functionality.
