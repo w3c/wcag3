@@ -1,6 +1,6 @@
 ---
 children:
-  - change-keyboard-focus-with-pointer-device
+  - focus-from-pointer
   - content-on-hover-or-keyboard-focus
   - path-based-gesture-not-relied-on
   - input-method-flexible
