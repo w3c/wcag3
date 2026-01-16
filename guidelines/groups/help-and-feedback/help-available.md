@@ -1,6 +1,6 @@
 ---
 children:
-  - consistent-help
+  - consistent-help-available
   - contextual-help-available
   - conversational-support-available
   - disabled-interactive-elements
