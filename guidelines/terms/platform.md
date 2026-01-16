@@ -17,7 +17,7 @@ The platform is the context in which the :term[product] exists.
 :::
 
 :::example
-* A web-browser is a platform as it provides software services to HTML and JavaScript based software.
+* A web-browser is a platform as it provides software services to HTML, CSS, and JavaScript based software.
 * An operating system provides software services to applications designed to run on that platform.
-* An e-reader is platform that provides software services to e-books.
+* An e-reader is a platform that provides software services to e-books.
 :::
