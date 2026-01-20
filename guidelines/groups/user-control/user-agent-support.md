@@ -1,7 +1,6 @@
 ---
 children:
   - assistive-technology-supported
-  - printing
   - user-settings-supported
   - virtual-cursor-supported
 ---
