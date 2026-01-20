@@ -3,14 +3,14 @@ status: developing
 type: supplemental
 ---
 
-The completion of a :term[process] does not include :term[artificial time limits]. 
+The completion of a :term[process] does not include time limits. 
 
 :::except-when 
 the time limit is essential, such as in an auction or timed exam. 
 :::
 
 :::note
-Implying to a user that they will lose a benefit if they don’t act immediately is an artificial time limit.
+Implying to a user that they will lose a benefit if they don’t act immediately is not an essential time limit.
 :::
 
 :::tests
