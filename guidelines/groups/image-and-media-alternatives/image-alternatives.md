@@ -11,7 +11,7 @@ children:
 Users have equivalent alternatives for images.
 
 :::decision-tree
-For each :term[image]:
+For each image:
 1. Would removing the image impact how people understand the :term[page]?
    - No, <a href="#decorative-image">Decorative image is programmatically hidden.</a> Stop.
    - Yes, continue.
