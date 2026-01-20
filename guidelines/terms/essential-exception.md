@@ -14,11 +14,11 @@ Content that must fail since it is an example of failure or a test sample to be 
 Real-time based exceptions such as:
 
 * purchasing items in limited supply;
-* a dutch auction where the price keeps dropping until the first person hits the BUY button;
+* an auction where the price keeps dropping until the first person hits the “Buy” button;
 * controlling a drone in flight;
 * submitting a proposal by deadline.
 :::
 
 :::example
-No undo exceptions such as purchasing things in an auction.
+Actions that cannot be undone, such as purchasing things in an auction.
 :::
