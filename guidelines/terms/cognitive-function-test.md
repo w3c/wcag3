@@ -2,7 +2,7 @@
 status: developing
 ---
 
-A task that requires the user to remember, manipulate, or transcribe information. 
+task that requires the user to remember, manipulate, or transcribe information
 
 :::note
 Examples include, but are not limited to:

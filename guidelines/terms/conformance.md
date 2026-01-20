@@ -4,7 +4,7 @@ synonyms:
   - conform
 ---
 
-satisfying all the requirements of the guidelines. 
+satisfying all the requirements of the guidelines
 
 :::note
 Conformance is an important part of following the guidelines even when not making a formal Conformance Claim
