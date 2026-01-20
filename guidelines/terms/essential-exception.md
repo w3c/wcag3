@@ -14,7 +14,7 @@ Content that must fail since it is an example of failure or a test sample to be 
 Real-time based exceptions such as:
 
 * purchasing items in limited supply;
-* a dutch auction where the price keeps dropping until the first person hits they BUY button;
+* a dutch auction where the price keeps dropping until the first person hits the BUY button;
 * controlling a drone in flight;
 * submitting a proposal by deadline.
 :::
