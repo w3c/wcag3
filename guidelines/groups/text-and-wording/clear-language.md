@@ -27,7 +27,7 @@ See also: [Structure](#structure) as these guidelines are closely related.
 
 :::ednote
 To ensure this guideline works well across different languages,
-members of AG, COGA, and internationalization (i18n) agreed on an initial set of languages to pressure-test the guidance.
+members of AGWG, Cognitive and Learning Disabilities Accessibility Task Force (COGA), and internationalization (i18n) agreed on an initial set of languages to pressure-test the guidance.
 
 The five "guardrail" languages are:
 
