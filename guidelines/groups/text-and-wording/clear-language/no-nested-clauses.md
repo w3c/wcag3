@@ -10,9 +10,9 @@ Sentences do not include :term[nested clauses].
 :::
 
 :::example
-(Fail) 'The teacher was surprised that the student who aced yesterday's test was absent today.'
+(Fail) 'The teacher was surprised that the student who did well on yesterday's test was absent today.'
 
-(Pass) 'The teacher was surprised that the student was absent today. This was unexpected because he aced yesterday's test.'
+(Pass) 'The teacher was surprised that the student was absent today. This was unexpected because he did well on yesterday's test.'
 :::
 
 :::tests
