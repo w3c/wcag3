@@ -155,6 +155,17 @@ Another shared term
 
 For more concrete examples, search for these directives in the repository.
 
+#### Comments
+
+Comment blocks will be excluded from output. They can be used e.g.
+to document thought processes that led to how content was written.
+
+```
+:::comment
+This will not be displayed.
+:::
+```
+
 #### Decision Trees
 
 The following block will be transformed into a decision tree `details` element,
