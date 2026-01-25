@@ -1,6 +1,5 @@
 ---
 children:
-  - color-adjustable
   - background-adjustable
   - font-size-not-relied-on
 ---
