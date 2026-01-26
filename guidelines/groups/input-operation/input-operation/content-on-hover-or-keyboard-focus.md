@@ -29,3 +29,24 @@ This applies to content that appears in addition to the triggering of the :term[
 :::example
 Custom tooltips, sub-menus, and other non-modal popups that display on hover and keyboard focus.
 :::
+
+:::tests
+
+**Procedure**
+
+For additional content that appears on hover check that:
+
+1. The pointer can be moved over the additional content without the additional content disappearing.
+2. The additional content stays visible and does not automatically close after a time.
+3. The content can be closed without moving the pointer way from the trigger. Either by pressing Esc, by pressing another documented keyboard shortcut, or by activating the trigger.
+
+For additional content that appears on focus check that:
+
+1. The additional content stays visible and does not automatically close after a time.
+2. The content can be closed without moving the focus way from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger.
+
+**Expected Results**
+
+- For additional content that appears on hover: #1, #2, and #3 are true.
+- For additional content that appears on focus: #1 and #2 are true.
+:::
