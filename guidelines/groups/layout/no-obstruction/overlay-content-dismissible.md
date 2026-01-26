@@ -20,6 +20,6 @@ Methods
 3. Verify that the dialog includes a mechanism to allow the dialog to be dismissed. 
 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 is true
 :::

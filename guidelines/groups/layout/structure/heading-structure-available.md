@@ -19,7 +19,7 @@ status: developing
 2. Headings for sibling content blocks have the same heading level.
 3. Headings for immediate child content blocks should be at most one level higher than parent content blocks.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true
 
 
@@ -29,6 +29,6 @@ status: developing
 1. Review the hierarchy of headings.
 2. Each heading level should be at most one numerical level higher than the preceding heading.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

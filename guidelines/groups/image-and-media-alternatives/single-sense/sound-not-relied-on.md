@@ -20,6 +20,6 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 2. For each instance identified in #1, identify the instances where the sound conveys information.
 3. For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 is true for all instances
 :::

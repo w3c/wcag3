@@ -19,6 +19,6 @@ Visual information needed to understand the media is described in the :term[tran
 2. Check that the transcript includes a description of any visual information needed to understand the content of the audio or video.
 3. Check that the audio description includes a description of any visual information needed to understand the content of the audio or video.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true.
 :::

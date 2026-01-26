@@ -20,6 +20,6 @@ Relative order means that content can be added or removed, but repeated items ar
 1. For each variation of the product in scope, identify common structural components across multiple pages/views.
 2. For each variation of the product in scope, verify that components are presented in the same order within each page/view.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

@@ -24,6 +24,6 @@ Best Practice: Conduct usability testing with screen reader users to evaluate th
 1. Identify situations in the conformance scope where elements that have or contain keyboard focus are removed.
 2. For each situation, verify that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
 
-**Expected Results**
+**Expected results**
 - #2 is true for each situation
 :::

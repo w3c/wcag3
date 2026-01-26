@@ -15,7 +15,7 @@ status: developing
 2. Examine the source code of the HTML document to identify each hierarchical section.
 3. Check that each section uses an appropriate semantic HTML element that reflects its position in the hierarchy.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 is true
 
 
@@ -25,7 +25,7 @@ status: developing
 1. Identify all input fields within the unit of conformance through visual and code inspection.
 2. Verify that each `<input>`, `<select>` and `<textarea>` in the source code has a programmatically associated `<label>` using `for` and `id` attributes.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 
 
@@ -37,7 +37,7 @@ status: developing
 3. Verify that each list item within the list is contained within an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 4. Verify that the immediate child element of the list is an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2, #3 and #4 are true
 
 
@@ -47,6 +47,6 @@ status: developing
 1. Identify all nested lists within the unit of conformance through visual and code inspection.
 2. Verify that all child lists are contained within a `<li>` of the parent list.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

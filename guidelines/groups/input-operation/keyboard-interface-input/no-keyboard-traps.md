@@ -20,6 +20,6 @@ Examples include:
 **Procedure**
 1. Navigate to each interface element. Ensure that you can exit from it in a forward or backward direction.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

@@ -12,7 +12,7 @@ Non-standard keyboard commands provided by content authors are documented and th
 2. Verify that documentation of keyboard commands exists.
 3. Verify that the documentation documents all keyboard commands identified in #1.
 
-**Expected Results**
+**Expected results**
 - #2 is true.
 - For each custom keyboard command, #3 is true.
 :::

@@ -18,6 +18,6 @@ Methods & best practices
 1. Identify the error messages. 
 2. Verify that the error messages persist until the user fixes the error or dismisses the message. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

@@ -21,6 +21,6 @@ Simple pointer input is different than :term[single pointer input] and is more r
 **Procedure**
 1. Check that any functionality that uses pointer input other than simple pointer input can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

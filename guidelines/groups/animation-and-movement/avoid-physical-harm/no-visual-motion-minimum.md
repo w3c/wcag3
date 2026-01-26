@@ -16,7 +16,7 @@ title: No visual motion (minimum)
 1. Identify if content includes visual motion or pseudomotion.
 2. For each instance, identify if the visual motion or pseudomotion is essential.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is false, or
 * #2 is true
 :::

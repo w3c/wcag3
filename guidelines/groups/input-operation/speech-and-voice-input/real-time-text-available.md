@@ -18,6 +18,6 @@ Method: Provide a chat option for any voice communication
 1. Locate any places where speech is used for communication (with human or AI)
 2. Check that there is an alternative way to achieve the same function using real-time text.
 
-**Expected Results**
+**Expected results**
 - #2 is true
 :::

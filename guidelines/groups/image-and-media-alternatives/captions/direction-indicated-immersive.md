@@ -18,6 +18,6 @@ In 360-degree digital environments, the direction of a sound or speech is indica
 For each caption in 360-degree digital environments, when audio is heard from outside the current view:
 1. Indicate the direction of a sound or speech.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is true
 :::

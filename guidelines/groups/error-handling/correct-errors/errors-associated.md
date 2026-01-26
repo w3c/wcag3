@@ -18,6 +18,6 @@ Examples of failing validation:
 2. Verify that validation errors are indicated visually.
 3. Verify that validation errors are indicated programmatically.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true.
 :::

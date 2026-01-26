@@ -24,6 +24,6 @@ operating system or user agent triggers audio shifting.
 1. Check for any audio shifting that is caused by the digital content (vs. the operating system or user agent).
 2. Check if there is a setting that allows for pause or turning off the audio shifting.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

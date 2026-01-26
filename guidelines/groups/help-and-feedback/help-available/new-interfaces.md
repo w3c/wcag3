@@ -18,7 +18,7 @@ The new interface is  essential.
 
 1. When an interface has been redesigned, check that a tutorial is available or that the user is given an opportunity to revert to the previous design. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 * #1 is true
 :::

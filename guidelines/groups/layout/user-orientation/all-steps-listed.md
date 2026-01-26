@@ -18,7 +18,7 @@ The total number of steps is unknown, or the sequence of steps depends on user a
 1. Review the content within each stage of a multi-step process.
 2. A list of steps in the process is included on each stage.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 
 <i>HTML multi-step listing</i>
@@ -28,6 +28,6 @@ The total number of steps is unknown, or the sequence of steps depends on user a
 2. An `<ol>` is included with a `<li>` for each step of the process at each step.
 3. The `<ol>` is included in the accessibility tree.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true
 :::

@@ -11,6 +11,6 @@ Keyboard commands provided by content authors do not conflict with :term[standar
 1. Compare the author generated keyboard commands against the standard platform keyboard commands 
 2. Check that any conflicts that exist can be remapped
 
-**Expected Results**
+**Expected results**
 - #2 is true
 :::

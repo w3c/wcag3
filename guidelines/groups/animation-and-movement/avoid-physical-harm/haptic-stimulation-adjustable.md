@@ -25,6 +25,6 @@ the operating system or user agent converts non-haptic feedback to haptics at us
 2. Identify if there is a setting that allows for reducing or turning off the haptic feedback.
 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is false, or #1 and #2 are true
 :::

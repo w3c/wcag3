@@ -25,6 +25,6 @@ Note: Triggers are flashing, motion lasting more than 5 seconds, and pseudo-moti
 3. For triggers, check that the same information is available without triggers. 
 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true
 :::

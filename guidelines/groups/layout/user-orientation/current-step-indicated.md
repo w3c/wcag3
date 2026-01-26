@@ -16,7 +16,7 @@ The current step within a multi-step process is visually and programmatically in
 2. Process navigation steps are included.
 3. Current process step is identified using `aria-current="step"`.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 * Check #2 and #3 are true
 
@@ -28,6 +28,6 @@ The current step within a multi-step process is visually and programmatically in
 2. Process navigation steps are viewable.
 3. The current process step is visually distinguishable from other steps.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * Check #2 and #3 are true
 :::

@@ -22,7 +22,7 @@ This includes lists and processes
 1. Review content and identify ordered processes.
 2. Each step in the process includes an indicator of its position within the process.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 
 
@@ -32,6 +32,6 @@ This includes lists and processes
 1. Review content and identify ordered lists.
 2. Examine the HTML code and check that each ordered list is marked up with an `<ol>` element.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

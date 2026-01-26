@@ -22,6 +22,6 @@ This relates to consistency and terminology within blocks of navigation. The con
 1. Identify repeated blocks of navigation across multiple pages/views of the product or process.
 2. Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

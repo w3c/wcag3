@@ -21,6 +21,6 @@ Styling is used to enhance the visual separation between :term[meaningful blocks
     * Position — blocks are located in the same area of the page/view (for example, header, navigation, footer)
     * Repeated visual feature — blocks contain a consistent visual feature (for example, bullets in a list, checkbox)
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

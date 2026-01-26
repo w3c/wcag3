@@ -22,6 +22,6 @@ For each media asset with audio content that provides enhanced features to allow
 1. Play the media with captions on.
 2. Check that a mechanism is available so that users can interact with the captions using all relative input methods.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

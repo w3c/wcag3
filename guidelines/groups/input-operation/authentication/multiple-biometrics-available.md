@@ -19,5 +19,5 @@ Methods & best practices
 For each method of user authentication:
 1. Verify that there is at least one other method of authentication (biometric or non-biometric).
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is true

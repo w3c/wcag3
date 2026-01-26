@@ -16,6 +16,6 @@ When content triggers a change of page/view there is a visual change within the 
 2. Verify that the change is conveyed in the view.
 3. Verify that the change is conveyed programmatically using the assistive technology in the accessibility support set.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true
 :::

@@ -45,7 +45,7 @@ For additional content that appears on focus check that:
 1. The additional content stays visible and does not automatically close after a time.
 2. The content can be closed without moving the focus way from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger.
 
-**Expected Results**
+**Expected results**
 
 - For additional content that appears on hover: #1, #2, and #3 are true.
 - For additional content that appears on focus: #1 and #2 are true.

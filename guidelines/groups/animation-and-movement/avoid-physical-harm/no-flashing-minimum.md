@@ -16,7 +16,7 @@ title: No flashing (minimum)
 1. Identify if content includes flashing.
 2. For each instance of flashing, identify if the flashing is essential.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is false, or
 * #2 is true
 :::

@@ -17,7 +17,7 @@ All :term[non-text content] that is not decorative includes a programmatically d
 3. The `alt` attribute provides a text alternative which conveys meaning or content that is displayed visually.
 4. If the image includes words that are important to understanding the content, the words are included in the text alternative.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2, #3 and #4 are true
 
 <i>(Mobile) Videos include accessible name</i>
@@ -27,6 +27,6 @@ All :term[non-text content] that is not decorative includes a programmatically d
 2. When videos are navigated to an accessible name is read out.
 3. The accessible name includes the title of the video.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 and #3 are true
 :::

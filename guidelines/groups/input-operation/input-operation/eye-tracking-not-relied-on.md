@@ -24,6 +24,6 @@ Some platforms may only allow eye tracking. Ideally the platforms allow addition
 If the platform uses eye-tracking for pointer use:
 1. Check for availability of an alternative, such as using a switch control.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

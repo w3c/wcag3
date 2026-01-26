@@ -21,6 +21,6 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 * For each instance identified in #1, identify the instances where the hue conveys information.
 * For each instance identified in #2, confirm that at least one * additional visual indicator is present that conveys the same information.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 * #2 is true

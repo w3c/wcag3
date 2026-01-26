@@ -11,6 +11,6 @@ Error messages are :term[visually collocated] with the error source or the focus
 2. Trigger errors
 3. Make sure the error is visible next to the trigger or that the focus moves to the error. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 is true
 :::

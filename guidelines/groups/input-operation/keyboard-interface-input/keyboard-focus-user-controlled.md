@@ -24,6 +24,6 @@ Methods & best practices
 3. Verify that the focus moves as a result of user interaction.
 4. If the focus moves automatically, verify that you were notified prior to the movement or it results from a security or emergency situation.
 
-**Expected Results**
+**Expected results**
 * #3 is true. 
 * #4 is true for all instances that focus moves automatically.

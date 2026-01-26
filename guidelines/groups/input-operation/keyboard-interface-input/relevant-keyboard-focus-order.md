@@ -19,6 +19,6 @@ A menu that expands when you tab to it, but then uses arrow keys to navigate in 
 2. Check that hidden content does not automatically expand (become visible) when you move to any part of the page/view (unless it is a visually hidden element specifically added to aid keyboard navigation) (e.g. skip to main content)
 3. Check that keyboard focus does not disappear into content that is not visible
 
-**Expected Results**
+**Expected results**
 - #1 and #2 are both true
 :::

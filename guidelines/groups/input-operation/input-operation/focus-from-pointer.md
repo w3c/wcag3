@@ -18,7 +18,7 @@ A user scrolls a document down six screens, then clicks on a paragraph with thei
 
 1. Check for click events on non-interactive elements.
 
-**Expected Results**
+**Expected results**
 
 - #1 is true
 :::

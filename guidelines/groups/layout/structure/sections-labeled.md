@@ -22,7 +22,7 @@ status: developing
 1. Review content and identify meaningful blocks with labels.
 2. Each label correctly describes the block.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 
 
@@ -32,7 +32,7 @@ status: developing
 1. Review content and identify meaningful blocks.
 2. Each block has a label that describes the block.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 
 
@@ -42,6 +42,6 @@ status: developing
 1. Visually identify each meaningful blocks.
 2. Heading text is marked up using an `<h?>` element.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

@@ -24,6 +24,6 @@ Where the product is a sub-product then the starting point should be the sub-pro
 2. Examine the source code of the HTML document.
 3. Verify that there is a link that points to the website's starting point.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 is true
 :::

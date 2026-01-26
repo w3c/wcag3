@@ -15,6 +15,6 @@ title: No flashing (enhanced)
 <b>Procedure</b>
 1. Identify if content includes flashing.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is false
 :::

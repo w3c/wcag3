@@ -25,6 +25,6 @@ For each instance of interactive content:
 
 1. Check that pointer pressure is not the only way to achieve any functionality.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

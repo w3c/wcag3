@@ -15,6 +15,6 @@ title: No visual motion (enhanced)
 <b>Procedure</b>
 1. Identify if content includes visual motion or pseudomotion.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is false
 :::

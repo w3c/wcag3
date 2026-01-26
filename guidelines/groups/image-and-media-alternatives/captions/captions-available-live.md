@@ -13,6 +13,6 @@ title: Captions available (live)
 For all live audio content:
 1. Check if captions are provided
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is true
 :::

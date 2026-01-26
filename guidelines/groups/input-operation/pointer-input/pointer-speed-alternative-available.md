@@ -18,6 +18,6 @@ Specific pointer speed would be essential to a paintbrush feature, advanced sign
 For each instance of functionality that uses a pointer:
 1. Check that pointer speed is not the only way to achieve any functionality.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

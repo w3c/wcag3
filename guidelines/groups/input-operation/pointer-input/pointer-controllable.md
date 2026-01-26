@@ -38,6 +38,6 @@ Examples of places where action on down event may be essential include a descend
     4. Essential
       - Completing the function on the down-event is essential.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

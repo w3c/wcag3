@@ -20,6 +20,6 @@ Except when:
     - The user is informed of the potential move and given the chance to avoid the move
     - The keyboard focus moves to the next item in keyboard navigation order
 
-**Expected Results**
+**Expected results**
 - #2 is true
 :::

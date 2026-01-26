@@ -16,6 +16,6 @@ This does not mean that all input technologies (:term[pointer], keyboard, voice,
 1. Set up multiple input types (pointer, keyboard, voice, gesture, etc)
 2. Check that you can switch between inputs and complete functionality
 
-**Expected Results**
+**Expected results**
 - #2 is true
 :::

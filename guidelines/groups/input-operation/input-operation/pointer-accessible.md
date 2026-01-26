@@ -24,6 +24,6 @@ Methods & best practices
 **Procedure**
 1. Check for click events on non-interactive elements.
 
-**Expected Results**
+**Expected results**
 - #1 is true
 :::

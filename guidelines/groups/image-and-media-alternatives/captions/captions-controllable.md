@@ -13,6 +13,6 @@ Captions are hard coded into the video content.
 <b>Procedure</b>
 For each caption:
 1. Check if content with captions provides a mechanism to turn on and off the captions.
-<b>Expected Results</b>
+<b>Expected results</b>
 * #1 is true
 :::
