@@ -81,7 +81,6 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
 
   visit(tree, (node, index, parent) => {
     if (node.type === "containerDirective") {
-      if (node.name === "comment") console.log(index, parent);
       if (node.name === "comment" && parent && typeof index !== "undefined") {
         parent.children.splice(index, 1);
       } else if (isGuideline && node.name === "decision-tree") {
