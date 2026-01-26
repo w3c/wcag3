@@ -2,7 +2,7 @@
 status: developing
 ---
 
-Information is not conveyed through visual depth alone.
+Information is not conveyed through visual depth perception alone.
 
 <div class="issue" data-number="422"></div>
 

@@ -1,5 +1,6 @@
 ---
-status: exploratory
+status: developing
+type: foundational
 ---
 
 Information is not conveyed by spatial audio alone.
