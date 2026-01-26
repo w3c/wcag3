@@ -3,8 +3,8 @@
     "assistive-techology-control",
     "control-text",
     "adjustable-viewport",
-    "transform-content",
     "media-control",
-    "control-possible-harm"
+    "control-possible-harm",
+    "content-changes"
   ]
 }
