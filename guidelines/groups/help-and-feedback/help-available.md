@@ -7,7 +7,7 @@ children:
   - data-visualizations
   - new-interfaces
   - personalizable-help
-  - sensory-characteristics
+  - sensory-characteristics-not-relied-on
   - support-available
   - supported-decision-making-review
   - help-usability-testing
