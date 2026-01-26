@@ -7,6 +7,7 @@ children:
   - trigger-warning-available
   - haptic-stimulation-adjustable
   - audio-shifting-adjustable
+  - visual-stimulation
   - safe-content-review
 ---
 
