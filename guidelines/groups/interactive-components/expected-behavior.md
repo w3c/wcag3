@@ -9,4 +9,4 @@ children:
   - conventional-pattern-usage
 ---
 
-Users can navigate using :term[interactive components] that behave as expected.
+Users can interact with :term[interactive elements] that behave as expected.

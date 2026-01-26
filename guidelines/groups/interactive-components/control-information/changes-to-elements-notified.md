@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Changes to :term[interactive components]' names, roles, values or states are visually and :term[programmatically indicated].
+Changes to :term[interactive elements]' names, roles, values or states are visually and :term[programmatically indicated].

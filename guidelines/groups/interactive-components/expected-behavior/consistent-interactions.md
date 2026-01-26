@@ -3,14 +3,14 @@ status: exploratory
 type: assertion
 ---
 
-We assert that :term[Interactive components] with the same functionality behave consistently.
+We assert that :term[components] with the same functionality behave consistently.
 
 :::example
 [Title, role, or organization]
-We assert that we have reviewed each interactive element in the scope of the claim and have ensured that:
+We assert that we have reviewed each component in the scope of the claim and have ensured that:
 
-- interactive elements that perform the same function behave in the same way and use the same visual indicators,
-- interactive components with the same function have consistent labels, and
+- components that perform the same function behave in the same way and use the same visual indicators,
+- within the component, :term[interactive elements] with the same function have consistent labels, and
 - standard user interface designs for the platform are used when applicable.
 
 Information that needs to be included publically:

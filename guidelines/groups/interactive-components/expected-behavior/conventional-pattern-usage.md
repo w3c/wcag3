@@ -3,17 +3,17 @@ status: exploratory
 type: assertion
 ---
 
-We assert that :term[interactive components] follow established conventions.
+We assert that :term[components] follow established conventions.
 
 :::example
 [Title, role, or organization] 
 
 We assert that:
 
-- each interactive element follows applicable platform conventions for how users interact with that type of interactive element
+- each components follows applicable platform conventions for how users interact with that type of component
 - if a component library is used, then each component in the library: 
     - is tested for accessibility before being used, and
-    - follows applicable platform conventions for how users interact with that type of interactive element.
+    - follows applicable platform conventions for how users interact with that type of component.
 :::
 
 :::note

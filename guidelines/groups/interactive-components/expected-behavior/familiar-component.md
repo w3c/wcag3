@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-Conventional :term[interactive components] are used.
+Conventional :term[components] are used.

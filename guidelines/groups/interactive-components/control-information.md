@@ -11,4 +11,4 @@ children:
   - roles-values-states-properties-available
 ---
 
-Users have information about :term[interactive components] that is identifiable and usable visually and using :term[assistive technology].
+Users have information about :term[interactive elements] that is identifiable and usable visually and using :term[assistive technology].

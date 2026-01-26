@@ -2,4 +2,4 @@
 status: exploratory
 ---
 
-:term[Interactive components] with the same functionality have consistent labels.
+:term[Interactive elements] with the same functionality have consistent labels.
