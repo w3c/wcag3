@@ -1,12 +1,12 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Sentences do not include :term[nested clauses].
 
 :::except-when
-* content provides legal or technical information.
+* content provides :term[legal information].
 :::
 
 :::example
