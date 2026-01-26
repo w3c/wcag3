@@ -14,7 +14,7 @@ Except when it is a decorative video.
 :::
 
 :::applies-when
-Applies when there is sound.
+there is sound.
 :::
 
 :::tests

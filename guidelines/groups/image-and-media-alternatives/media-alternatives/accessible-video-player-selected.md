@@ -12,7 +12,7 @@ We provide a :term[video] player that supports appropriate :term[media alternati
 * Changing the language of the audio descriptions.
 
 :::applies-when
-Applies when a video is used that does not play in standard browsers.
+a video is used that does not play in standard browsers.
 :::
 
 :::tests

@@ -10,7 +10,7 @@ Information and resources that are needed to complete a multi-step :term[process
 - overview of the process and next step.
 
 :::applies-when
-When the user needs to complete a multi-step process.
+the user needs to complete a multi-step process.
 :::
 
 :::tests
