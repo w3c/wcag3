@@ -22,7 +22,7 @@ changes are continuous, without pause.
 
 :::example
 - A new message is added in a conversation above the current location of focus. A message is provided that programmatically conveys that there is new content above.
-- Filters are adjusted which changes the number of items shonw. As the number of items changes, that is provided programmatically as a status update.
+- Filters are adjusted which changes the number of items shown. As the number of items changes, that is provided programmatically as a status update.
 :::
 
 :::tests
