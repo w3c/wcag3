@@ -1,6 +1,6 @@
 ---
 children:
-  - assistive-technology-supported
+  - assistive-technology-control
   - user-settings-supported
   - virtual-cursor-supported
   - control-notifications
