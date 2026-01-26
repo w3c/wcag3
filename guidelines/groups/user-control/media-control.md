@@ -1,9 +1,9 @@
 ---
 children:
 
-  - audio-control
-  - searchable-media-alternatives
-  - media-alternatives-controls
+  - page-view-audio-adjustable
+  - media-alternatives-searchable
+  - media-alternatives-controllable
   - media-chapters-available
 
 ---
