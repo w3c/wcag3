@@ -1,5 +1,6 @@
 ---
-status: exploratory
+status: developing
+type: foundational
 ---
 
 Closed :term[captions] and :term[audio descriptions] can be turned on and off.

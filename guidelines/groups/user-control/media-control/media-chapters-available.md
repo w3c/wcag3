@@ -1,6 +1,7 @@
 ---
 needsAdditionalResearch: true
-status: exploratory
+status: developing
+type: supplemental
 ---
 
 Audio or video that lasts five minutes or longer can be navigated by chapters.
