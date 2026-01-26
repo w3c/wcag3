@@ -23,6 +23,6 @@ Other languages may have other rules around line breaking: https://r12a.github.i
 4. Verify that the text in each block of text is legible.
 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #3 and #4 are true
 :::

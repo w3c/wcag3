@@ -20,6 +20,6 @@ All block-level elements fit within a 320px inline-size without requiring scroll
 1. Set the viewport at 320px in the direction of text.
 2. Verify that each section of content fits within 320 CSS pixels.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 * #2 is true
 :::

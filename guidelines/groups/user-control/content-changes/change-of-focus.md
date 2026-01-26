@@ -13,7 +13,7 @@ For each :
 
 1. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 For each instance of focus being changed by the content:
 1. Verify that the change is conveyed visually and programmatically using the assistive technology in the accessibility support set.

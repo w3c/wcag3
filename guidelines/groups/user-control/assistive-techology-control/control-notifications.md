@@ -19,7 +19,7 @@ The notification involves an emergency or is essential.
 For each notifications:
 1. check that settings allow the timing or location to be changed. 
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 * #1 is true
 :::

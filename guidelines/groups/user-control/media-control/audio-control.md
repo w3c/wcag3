@@ -26,7 +26,7 @@ Mechanisms include controls on each instance of content, or a single app-wide co
   a. There is a mechanism within the first three elements in the page / view for the user to pause, stop, or adjust the audio volume;
   b. There are keyboard controls that can pause, stop, or adjust the audio volume.
 
-<b>Expected Results</b>
+<b>Expected results</b>
 
 #3 or #4 or #5 is true
 
