@@ -14,5 +14,13 @@ When the previous focus location no longer exists, best practice is to put focus
 :::
 
 :::note
-This is also quite useful when moving between :term[pages] but this would usually have to be done by the browser, unless the user is in some :term[process] where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
+This is also quite useful when moving between pages but this would usually have to be done by the browser, unless the user is in some :term[process] where that information is stored in a cookie or on the server between pages in the process so that it still has the old location when the person returns to the page.
+:::
+
+:::tests
+**Procedure:**
+1. Check that all places where you can move to a new context within a web page (e.g. pop up or expansion), when you exit you are at the same location as when you triggered the move to the new context.
+
+**Expected Results:**
+- Check #1 is true
 :::
