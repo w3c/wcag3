@@ -2,7 +2,7 @@
 children:
   - default-focus-indicator-used
   - custom-focus-indicator
-  - supplementary-indicators
+  - custom-focus-indicator-size
   - focus-indicator-style-guide
 howto: focus-appearance
 status: developing
