@@ -17,9 +17,9 @@ Examples include:
 :::
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Navigate to each interface element. Ensure that you can exit from it in a forward or backward direction.
 
-**Expected Results:**
+**Expected Results**
 - PASS: You can navigate away from the element using a common keyboard navigation technique, or a technique for exiting is described on the page / view or on a page / view earlier in the process where it is used.
 :::

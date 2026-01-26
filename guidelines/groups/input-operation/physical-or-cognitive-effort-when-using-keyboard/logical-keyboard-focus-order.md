@@ -6,7 +6,7 @@ type: foundational
 The :term[keyboard focus] moves through :term[content] in an order and way that preserves meaning and operability.
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Use keyboard navigation to navigate through all the interactive elements on the :term[page] / :term[view] and the order appears to follow some logic.
 
 **Notes:**
@@ -15,6 +15,6 @@ The :term[keyboard focus] moves through :term[content] in an order and way that 
 - A strictly start-to-end order is not required.
 - Linear means in a single direction (forward/backward) - and is not required as long the non-linear  (x-y) technique is in the Common Keyboard Navigation Techniques or is described on the page or where the user will encounter it prior.
 
-**Expected Results:**
-- PASS: Check #1 is true
+**Expected Results**
+- #1 is true
 :::

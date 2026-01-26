@@ -20,8 +20,8 @@ Methods & best practices
 :::
 
 :::tests
-<b>Procedure</b>
+**Procedure**
 1. Check for click events on non-interactive elements.
 
-<b>Expected Results</b>
-* #1 is true
+**Expected Results**
+- #1 is true

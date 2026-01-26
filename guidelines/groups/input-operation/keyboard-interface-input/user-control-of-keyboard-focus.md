@@ -12,7 +12,7 @@ Except when:
 - The user is informed of the potential keyboard focus move before it happens and given the chance to avoid the move.
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Use the actionable elements of the :term[page] / :term[view]
 2. Check that each time the keyboard focus changes that one of the following is true
     - The focus was moved under direct user control
@@ -20,6 +20,6 @@ Except when:
     - The user is informed of the potential move and given the chance to avoid the move
     - The keyboard focus moves to the next item in keyboard navigation order
 
-**Expected Results:**
-- PASS: Check #2 is true
+**Expected Results**
+- #2 is true
 :::

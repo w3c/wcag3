@@ -7,10 +7,10 @@ Keyboard commands provided by content authors do not conflict with :term[standar
 
 :::tests
 
-**Procedure:**
+**Procedure**
 1. Compare the author generated keyboard commands against the standard platform keyboard commands 
 2. Check that any conflicts that exist can be remapped
 
-**Expected Results:**
-- Check 2 is true
+**Expected Results**
+- #2 is true
 :::

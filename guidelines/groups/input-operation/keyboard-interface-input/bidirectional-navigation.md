@@ -14,9 +14,9 @@ Tabbing through menus, hitting <kbd>space</kbd> to open a menu, tabbing off the 
 :::
 
 :::tests
-**Procedure:**
-- Move through content using forward navigation techniques. After each forward movement check that you can move back to the last position using the keyboard only. Repeat by moving forward two and back one etc until you reach the bottom of the page or the top of the :term[page] / :term[view] if there is rollover for the page / view.
+**Procedure**
+1. Move through content using forward navigation techniques. After each forward movement check that you can move back to the last position using the keyboard only. Repeat by moving forward two and back one etc until you reach the bottom of the page or the top of the :term[page] / :term[view] if there is rollover for the page / view.
 
-**Expected Results:**
-- PASS: you can always move back
+**Expected Results**
+- #1 is true
 :::

@@ -12,3 +12,12 @@ The :term[method] of :term[pointer] cancellation is consistent for each type of 
 :::note
 Where it is essential to be different, it can be helpful to alert the user.
 :::
+
+:::tests
+**Procedure**
+- For each set of pages / views, select each type of pointer interaction.
+- Check that each type of pointer interaction can be cancelled with a consistent interaction
+
+**Expected Results**
+- #1 is true.
+:::

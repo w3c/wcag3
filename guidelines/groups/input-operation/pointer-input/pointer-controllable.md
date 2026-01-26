@@ -27,7 +27,7 @@ Examples of places where action on down event may be essential include a descend
 :::
 
 :::tests
-**Procedure:**
+**Procedure**
 1. For each element that can be activated with a simple pointer, check the following until you find one that is true:
     1. No Down-Event
 	    - The down-event of the pointer is not used to execute any part of the function;
@@ -38,6 +38,6 @@ Examples of places where action on down event may be essential include a descend
     4. Essential
       - Completing the function on the down-event is essential.
 
-**Expected Results:**
-- Check #1 is true
+**Expected Results**
+- #1 is true
 :::

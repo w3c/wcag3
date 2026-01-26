@@ -18,9 +18,9 @@ This is also quite useful when moving between pages but this would usually have 
 :::
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Check that all places where you can move to a new context within a web page (e.g. pop up or expansion), when you exit you are at the same location as when you triggered the move to the new context.
 
-**Expected Results:**
-- Check #1 is true
+**Expected Results**
+- #1 is true
 :::

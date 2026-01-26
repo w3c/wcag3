@@ -18,12 +18,12 @@ Methods & best practices
 :::
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Using the keyboard, complete all functionality within the conformance scope.
 2. Pause (do not interact) at various times. Note: #1 and #2 is often done during other manual testing.
 3. Verify that the focus moves as a result of user interaction.
 4. If the focus moves automatically, verify that you were notified prior to the movement or it results from a security or emergency situation.
 
-**Expected Results:**
+**Expected Results**
 * #3 is true. 
 * #4 is true for all instances that focus moves automatically.

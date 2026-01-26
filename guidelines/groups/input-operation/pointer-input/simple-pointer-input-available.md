@@ -18,9 +18,9 @@ Simple pointer input is different than :term[single pointer input] and is more r
 :::
 
 :::tests
-**Procedure:**
+**Procedure**
 1. Check that any functionality that uses pointer input other than simple pointer input can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing.
 
-**Expected Results:**
-- Check #1 is true
+**Expected Results**
+- #1 is true
 :::
