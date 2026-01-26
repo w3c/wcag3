@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 ---
 
 :term[Content] responds to users’ platform and user agent accessibility-related settings. 

@@ -1,11 +1,11 @@
 ---
 children:
-  - adjust-captions
-  - page-view-audio-adjustable
-  - interactive-audio-alternative
-  - media-alternatives-controllable
+
+  - audio-control
+  - searchable-media-alternatives
+  - media-alternatives-controls
   - media-chapters-available
-  - media-alternatives-searchable
+
 ---
 
 Users can control media and media alternatives.
