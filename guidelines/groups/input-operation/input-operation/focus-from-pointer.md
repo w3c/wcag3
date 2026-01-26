@@ -12,3 +12,13 @@ Content can interfere with pointer or keyboard focus behavior.
 :::example
 A user scrolls a document down six screens, then clicks on a paragraph with their pointer. The user then presses the <kbd>Tab</kbd> key, which moves the focus to the first interactive :term[component] after the position on the screen that was clicked, rather than from the previous position, six screens up the document.
 :::
+
+:::tests
+**Procedure**
+
+1. Check for click events on non-interactive elements.
+
+**Expected Results**
+
+- #1 is true
+:::

@@ -4,9 +4,9 @@ children:
   - all-content-keyboard-accessible
   - bidirectional-navigation
   - custom-keys-documented
-  - focus-placed
   - no-keyboard-command-conflicts
   - keyboard-navigable-if-responsive
+  - meaningful-focus-movement
   - no-keyboard-traps
   - keyboard-focus-user-controlled
   - relevant-keyboard-focus-order

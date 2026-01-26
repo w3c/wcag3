@@ -1,10 +1,10 @@
 ---
 children:
   - pointer-activation-indicated-minimum
+  - pointer-activation-indicated-enhanced
   - pointer-contrast-sufficient
   - default-pointer-used
   - pointer-focus-indicated
-  - pointer-indicated-enhanced
   - pointer-visible
   - enhanced-pointer-available
 ---

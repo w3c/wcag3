@@ -16,3 +16,14 @@ This is primarily aimed at ensuring there is an alternative for people who canno
 :::note
 Some platforms may only allow eye tracking. Ideally the platforms allow additional mechanisms for control. 
 :::
+
+:::tests
+
+**Procedure**
+
+If the platform uses eye-tracking for pointer use:
+1. Check for availability of an alternative, such as using a switch control.
+
+**Expected Results**
+- #1 is true
+:::
