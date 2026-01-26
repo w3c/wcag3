@@ -3,11 +3,7 @@ status: developing
 type: foundational
 ---
 
-The custom focus indicator that has sufficient size, change of contrast, adjacent contrast, and adjacency.
-
-:::note
-Information conveyed includes presenting data or meaning, indicating an action, prompting a response, distinguishing between items, conveying boundaries, etc. Artistic expression is not part of information conveyed.
-:::
+The custom focus indicator has sufficient size, change of contrast, adjacent contrast, and adjacency.
 
 :::applies-when
 * the user agent's default focus indicator is replaced by a custom focus indicator.
