@@ -3,4 +3,4 @@ status: developing
 type: supplemental
 ---
 
-A custom focus indicator with sufficient size is used.
+If a custom focus indicator is used, it has sufficient size and adjacency.
