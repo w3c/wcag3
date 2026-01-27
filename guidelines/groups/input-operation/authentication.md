@@ -1,6 +1,6 @@
 ---
 children:
-  - biometric-identification-not-relied-on
+  - biometrics-not-relied-on
   - multiple-biometrics-available
   - voice-identification-not-relied-on
 ---
