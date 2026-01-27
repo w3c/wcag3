@@ -10,7 +10,7 @@ products and processes have a time limit
 :::
 
 :::except-when 
-hiding the existance of the time limit is essential
+hiding the existence of the time limit is essential
 :::
 
 :::tests
