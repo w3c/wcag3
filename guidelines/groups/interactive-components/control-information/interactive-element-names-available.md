@@ -8,3 +8,22 @@ Persistent names (including labels) that identify the purpose of the interactive
 :::note
 Visible labels can be text or non-text, for instance icons.
 :::
+
+:::ednote
+Methods &amp; best practices
+
+- Method: Provide unique, descriptive text or image (icon) for each interactive element. 
+- Best Practice: Ensure clarity by pairing an icon with a persistent visible text label or only use a persistent visible text label. 
+- Best Practice: When an icon is the only visual label, provide a tooltip (hover label) with the text description.
+:::
+
+:::tests
+**Procedure**
+
+1. Find all interactive elements. For each interactive element:
+2. Confirm it has a visual label that describes the element.
+3. Confirm the visual label persists during use
+
+**Expected results**
+- #2 and #3 are true
+:::
