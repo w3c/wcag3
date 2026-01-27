@@ -1,6 +1,7 @@
 ---
 status: developing
 type: supplemental
+title: Automated entry allowed (enhanced)
 ---
 
 Automated input of personal information from user agents, third-party tools, or paste is not prevented.

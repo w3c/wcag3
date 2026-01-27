@@ -1,7 +1,8 @@
 ---
 children:
-  - automated-entry-allowed
+  - automated-entry-allowed-minimum
   - cognitive-test-alternatives-available
+  - automated-entry-allowed-enhanced
   - no-memorization
   - copying-supported
 ---
