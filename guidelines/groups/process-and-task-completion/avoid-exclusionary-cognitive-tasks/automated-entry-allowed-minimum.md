@@ -5,6 +5,10 @@ type: foundational
 
 Automated input of personal information from user agents, third-party tools, or paste is not prevented.
 
+:::except-when
+- Manual information entry is :term[essential]
+such as a typing test:::
+
 :::note
 Personal information includes names, passwords, et cetera.
 :::

@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Automated input of personal information from user agents, third-party tools, or paste is not prevented.
