@@ -1,5 +1,6 @@
 ---
-status: exploratory
+status: developing
+type: foundational
 ---
 
 Persistent names (including labels) that identify the purpose of the interactive element are visually and programmatically available. 

@@ -1,6 +1,6 @@
 ---
 needsAdditionalResearch: true
-status: exploratory
+status: developing
 ---
 
 The importance of interactive :term[components] is indicated.
