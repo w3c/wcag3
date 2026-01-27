@@ -1,10 +1,7 @@
 ---
 children:
   - consistent-interactions
-  - consistent-visual-design
   - consistent-control-location
-  - familiar-component
-  - reliable-positioning
   - conventional-pattern-usage
 ---
 
