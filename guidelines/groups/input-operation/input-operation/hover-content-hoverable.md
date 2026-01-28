@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-If pointer hover can trigger :term[Content], then the pointer can be moved over the additional content without the additional content disappearing
+If pointer hover can trigger :term[content], then the pointer can be moved over the additional content without the additional content disappearing
 
 :::note
 Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <code class="language-html">title</code> attribute.
