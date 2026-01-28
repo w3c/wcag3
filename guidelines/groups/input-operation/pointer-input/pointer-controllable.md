@@ -14,9 +14,9 @@ Cancel or Undo
 Up Reversal
 : The :term[up event] reverses any outcome of the preceding down event
 
-Except when:
-
-- Completing the function on the down event is :term[essential]
+:::except-when
+Completing the function on the down event is :term[essential].
+:::
 
 :::example
 An example of Cancel would be dragging where there is a pickup action on button down, but it can be canceled by dropping anywhere other than the drop area.

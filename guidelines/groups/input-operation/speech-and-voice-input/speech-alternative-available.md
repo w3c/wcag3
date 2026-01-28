@@ -5,9 +5,9 @@ type: foundational
 
 Content or functionality does not rely on speech alone.
 
-Except when:
-
-- Speech input is :term[essential] to the functionality.
+:::except-when
+Speech input is :term[essential] to the functionality.
+:::
 
 :::ednote
 Methods &amp; best practices 

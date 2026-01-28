@@ -10,7 +10,7 @@ This includes sound effects and other non-spoken :term[audio] :term[content].
 :::
 
 :::except-when
-Except when it is a decorative video.
+It is a decorative video.
 :::
 
 :::applies-when

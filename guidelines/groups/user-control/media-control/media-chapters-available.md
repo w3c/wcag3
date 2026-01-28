@@ -6,9 +6,9 @@ type: supplemental
 
 Audio or video that lasts five minutes or longer can be navigated by chapters.
 
-**Except when**
-
-- The media is a piece of music that the composer has not divided into movements.
+:::except-when
+The media is a piece of music that the composer has not divided into movements.
+:::
 
 :::example
 Gustav Mahler's <cite>Symphony Number 5</cite> is approximately 70 minutes long and is divided into five movements. Each movement would be a chapter.

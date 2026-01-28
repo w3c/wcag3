@@ -6,7 +6,7 @@ status: developing
 When more than one language is spoken in :term[audio] :term[content], the language spoken by each speaker is identified in all :term[media alternatives].
 
 :::except-when
-Incidental word usage.
+Words are used incidentally.
 :::
 
 :::tests

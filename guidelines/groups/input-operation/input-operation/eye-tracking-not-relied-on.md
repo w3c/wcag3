@@ -5,9 +5,9 @@ type: foundational
 
 Content and functionality does not rely solely on eye tracking.
 
-**Except when**
-
-- Eye tracking is essential. 
+:::except-when
+Eye tracking is essential. 
+:::
 
 :::note
 This is primarily aimed at ensuring there is an alternative for people who cannot use eye-tracking (but do have sight) due to eye conditions.
