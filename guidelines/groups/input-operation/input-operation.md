@@ -1,7 +1,7 @@
 ---
 children:
   - focus-from-pointer
-  - hover-or-focus-content-dismissable
+  - hover-or-focus-content-dismissible
   - hover-content-hoverable
   - hover-or-focus-content-persistent
   - path-based-gesture-not-relied-on
