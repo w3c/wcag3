@@ -1,16 +1,16 @@
 ---
 children:
-  - all-components-keyboard-operable
-  - all-content-keyboard-accessible
+  - keyboard-operable
+  - keyboard-accessible
   - bidirectional-navigation
   - custom-keys-documented
-  - no-keyboard-command-conflicts
+  - no-keyboard-conflicts
   - keyboard-navigable-if-responsive
-  - meaningful-focus-movement
+  - focus-placed
   - no-keyboard-traps
+  - focus-user-controlled
+  - focus-movement-relevant
   - keyboard-focus-user-controlled
-  - relevant-keyboard-focus-order
-  - user-control-of-keyboard-focus
 ---
 
 Users can navigate and operate :term[content] using only the keyboard.

@@ -2,7 +2,7 @@
 children:
   - pointer-controllable
   - simple-pointer-input-available
-  - pointer-cancellation-consistent
+  - consistent-pointer-cancellation
   - pointer-pressure-alternative-available
   - pointer-speed-alternative-available
 ---
