@@ -1,6 +1,5 @@
 ---
 children:
-  - logical-keyboard-focus-order
   - standard-or-described-navigation-keys 
   - preserve-keyboard-focus
   - no-repetitive-links
