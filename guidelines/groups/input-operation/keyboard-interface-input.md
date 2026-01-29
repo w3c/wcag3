@@ -10,7 +10,6 @@ children:
   - no-keyboard-traps
   - focus-user-controlled
   - focus-movement-relevant
-  - keyboard-focus-user-controlled
 ---
 
 Users can navigate and operate :term[content] using only the keyboard.
