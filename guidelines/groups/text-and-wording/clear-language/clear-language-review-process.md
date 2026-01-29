@@ -4,7 +4,7 @@ type: assertion
 ---
 
 Our organization has a process and policy to review written content for :term[clear language] before publication. The process includes confirming:
-* All of the foundational requirements in the ‘Clear Language’ guideline are met.
+* All of the core requirements in the ‘Clear Language’ guideline are met.
 * Verb tense is chosen for ease of understanding.
 * Content uses short paragraphs.
 * Paragraphs that convey information begin with a sentence stating the main point or purpose (often called a topic sentence).

@@ -125,7 +125,8 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       if (requirementType == "assertion") {
         preText.innerHTML = "Assertion: ";
       } else if (requirementType == "foundational" || requirementType == "supplemental") {
-        preText.innerHTML = sentenceCase(requirementType) + " requirement: ";
+        preText.innerHTML =
+          sentenceCase(requirementType.replace(/^foundational$/, "core")) + " requirement: ";
       } else {
         preText.innerHTML = "Requirement: ";
       }

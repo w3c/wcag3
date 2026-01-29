@@ -5,7 +5,7 @@ type: supplemental
 title: Text contrast sufficient (enhanced)
 ---
 
-The default visual presentation of text meets @@[X contrast measure, at a higher level than the foundational requirement for Text contrast (minimum)].
+The default visual presentation of text meets @@[X contrast measure, at a higher level than the core requirement for Text contrast (minimum)].
 
 :::ednote
 The contrast algorithm used in WCAG 3 is yet to be determined. For this draft, the requirement assumes the algorithm will include a size/weight factor. If the algorithm does not include size/weight, it will need to be added to this requirement text.

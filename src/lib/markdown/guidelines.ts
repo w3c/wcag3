@@ -90,7 +90,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
         // Prepend summary to existing children (setting hChildren would clear them)
         node.children.unshift({
           type: "html",
-          value: "<summary>Which foundational requirements apply?</summary>",
+          value: "<summary>Which core requirements apply?</summary>",
         });
       } else if (isGuideline && node.name === "user-needs") {
         expectGuidelineFileType(file, "guideline", "user-needs");

@@ -169,7 +169,7 @@ This will not be displayed.
 #### Decision Trees
 
 The following block will be transformed into a decision tree `details` element,
-with "Which foundational requirements apply" summary automatically included:
+with "Which core requirements apply" summary automatically included:
 
 ```
 :::decision-tree

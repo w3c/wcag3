@@ -5,7 +5,7 @@ status: developing
 
 [Title, role, or organization] asserts that: 
 * Our organization has a process and policy for reviewing written content for clear structure before publication. The process includes confirming:
-    * all of the foundational requirements in the Structure guideline are met
+    * all of the core requirements in the Structure guideline are met
     * content sections are as concise as possible
     * icons are considered as possible ways to help users understand the content structure and identify key parts, and
     * authors consider when to turn sentences into lists to make the information easier to understand and remember
