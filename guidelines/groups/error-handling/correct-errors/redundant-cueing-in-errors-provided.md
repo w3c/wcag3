@@ -5,7 +5,7 @@ type: foundational
 
 Error messages are visually identifiable using at least two of the following:
 
-* An internally consistent symbol.
+* A symbol that is consistent throughout the :term[product].
 * Color that differentiates the error message from surrounding :term[content].
 * Text that clearly indicates the error.
 
