@@ -3,7 +3,7 @@ children:
   - pointer-controllable
   - simple-pointer-input-available
   - consistent-pointer-cancellation
-  - pointer-pressure-alternative-available
+  - pointer-pressure-not-relied-on
   - pointer-speed-alternative-available
 ---
 
