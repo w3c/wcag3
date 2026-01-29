@@ -5,7 +5,7 @@ children:
   - images-not-relied-on
   - image-type
   - alternative-text-editable
-  - image-alternative-style-guide
+  - image-alternatives-style-guide
 ---
 
 Users have equivalent alternatives for images.
