@@ -2,7 +2,7 @@
 children:
   - consistent-interactions
   - consistent-control-location
-  - conventional-patterns-used
+  - conventional-pattern-usage
 ---
 
 Users can interact with :term[interactive elements] that behave as expected.
