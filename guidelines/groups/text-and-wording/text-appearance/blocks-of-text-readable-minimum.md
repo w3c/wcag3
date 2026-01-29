@@ -7,6 +7,10 @@ title: Blocks of text readable (minimum)
 
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
+:::note
+An <a href="https://en.wiktionary.org/wiki/orthography#Noun">orthography</a> means how a lanuage is represented. This requirement aims to set a minumimal set of readability criteria that make sense in each orthography.
+:::
+
 :::ednote
 The metrics in the following table are still to be determined; the current content is an example.
 :::

@@ -5,7 +5,9 @@ type: foundational
 
 Numerical information includes sufficient context in written text and a programmatic equivalent to avoid confusion when presenting dates, temperatures, time, and Roman numerals.
 
-<div class="issue" data-number="487"></div>
+:::note
+Numerical metadata is information that provides context about the numbers presented. This context helps users understand what the numbers represent and how they should be read. Without these cues, numbers can be ambiguous or misleading, making it harder for users to understand the intended meaning—especially across different regions, disciplines, or assistive technologies. 
+:::
 
 :::example
 * Dates include markers for day and month such as “3 May 2025” instead of the ambiguous "03/05/2025."

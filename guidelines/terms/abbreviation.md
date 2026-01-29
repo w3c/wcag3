@@ -28,6 +28,10 @@ NOAA is an acronym made from the initial letters of the National Oceanic and Atm
 a11y is a numeronym that includes the first and last letter of the word 'accessibility' and the number 11 to indicate the 11 letters in between.
 :::
 
+:::example
+In non-alphabetic writing systems, abbreviated forms are created using different linguistic units, and the alphabetic model does not apply directly. For example, in Japanese, 全国学力・学習状況調査 (National Academic Achievement and Learning Status Survey) is abbreviated as 全国学調 (National Academic Survey).
+:::
+
 :::note
 Some companies have adopted what used to be an initialism as their company name. In these cases, the new name of the company is the letters (for example, Ecma) and the word is no longer considered an abbreviation.
 :::

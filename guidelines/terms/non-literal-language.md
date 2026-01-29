@@ -9,7 +9,8 @@ words or phrases used in a way that are beyond their standard or dictionary mean
 This is also called figurative language.
 
 To understand the content, users have to interpret the implied meaning behind the words, rather than just their literal or direct meaning.
-
+:::
+:::example
 Examples include:
 
 - allusions
