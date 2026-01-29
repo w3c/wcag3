@@ -8,8 +8,8 @@ children:
   - diacritics-available
   - no-unnecessary-words
   - numerical-alternatives-available
-  - clear-language-review-process
-  - visual-aids-review-process
+  - clear-language-review
+  - visual-aids-review
 
 status: developing
 ---

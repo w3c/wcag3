@@ -3,7 +3,7 @@ type: assertion
 status: developing
 ---
 
-[Title, role, or organization] asserts that:  
+[Title, role, or organization] asserts that:
 We have a policy and process to review — and have reviewed — the data set, results, and/or algorithm in order to minimize the possibility that algorithms are disadvantageous for people with disabilities.
 
 ::assertion-required

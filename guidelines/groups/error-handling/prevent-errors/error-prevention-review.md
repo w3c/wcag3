@@ -3,7 +3,7 @@ status: exploratory
 type: assertion
 ---
 
-[Title, role or organization] assert that, for each form in the conformance claim, we have reviewed the form designs to reduce the possibility of users making mistakes. This review includes checking to make sure that we:
+[Title, role or organization] asserts that, for each form in the conformance claim, we have reviewed the form designs to reduce the possibility of users making mistakes. This review includes checking to make sure that we:
 
 * make the user enter as little information as possible,
 * clearly indicate required fields,

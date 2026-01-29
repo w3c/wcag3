@@ -4,7 +4,7 @@ children:
   - consequences-of-choices-explained
   - consequences-explained-before-agreement
   - diverse-disabilities-considered
-  - algorithm-inclusivity-reviewed
+  - algorithm-inclusivity-review
 ---
 
 Users understand the benefits, risks, and consequences of options they select. 
