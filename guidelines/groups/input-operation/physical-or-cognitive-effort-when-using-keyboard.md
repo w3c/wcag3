@@ -1,7 +1,6 @@
 ---
 children:
   - standard-or-described-navigation-keys 
-  - preserve-keyboard-focus
   - no-repetitive-links
   - keyboard-effort-comparable
 ---
