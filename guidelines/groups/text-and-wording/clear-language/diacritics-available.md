@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-:term[Diacritics] required to identify the correct meaning of each word are available.
+Diacritics required to identify the correct meaning of each word are available.
 
 <div class="issue" data-number="490"></div>
 
@@ -12,11 +12,41 @@ type: supplemental
 :::
 
 :::note
+A diacritic is a small mark that is added to a letter or character that changes how it is pronounced or what it means. Diacritics may appear above, below, within, or between letters or characters.:::
+
+:::note
 Hebrew and Arabic are examples of human languages that omit letters or diacritics for proficient readers.
 :::
 
 :::example
-Without vowels or diacritics, the Hebrew word אמר can represent different verbs and nouns related to “to say” as well as a type of wheat. Proficient readers use context to figure out which meaning is intended.
+The Hebrew word אמר, with three consonants and no diacritics
+* Without diacritics, אמר can represent different verb and noun forms of “to say.”
+* Readers must rely on context to determine the intended pronunciation and meaning.
+:::
+
+:::example
+The Hebrew word אָמַר, with diacritics under two of the three consonants
+* Two perpendicular marks (similar to an uppercase T) under the א makes an “ah” sound.
+* A horizontal mark under the מ makes a short “a” sound.
+* Pronunciation: ah-mar
+* Meaning: "He said"
+:::
+
+:::example
+The Hebrew word יֹאמַר, with diacritics above one consonant and under another
+* A prefix mark (similar to a floating hook or a comma-like dash) indicates future tense, masculine.
+* A dot above the prefix makes an "o" sound.
+* A horizontal mark under the מ makes a short “a” sound.
+* Pronunciation: yo-mar
+* Meaning: "He will say"
+:::
+
+:::example
+The Hebrew word אֹמֶר, with a different set of diacritics above one consonant and under another
+* A dot that is above and between the first two letters makes an “o” sound.
+* The three dots (like a downward-pointing triangle) under the מ make a short “e” sound.
+* Pronunciation: oh-mer
+* Meaning: "utterance; saying" (noun) 
 :::
 
 :::tests
