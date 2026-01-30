@@ -1,6 +1,6 @@
 ---
 children:
-  - standard-or-described-navigation-keys 
+  - navigation-keys-described
   - no-repetitive-links
   - keyboard-effort-comparable
 ---
