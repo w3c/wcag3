@@ -14,12 +14,13 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 * automatically correct input errors when possible and reliable, and
 * provide the user with known suggestions and corrections.
 
-
-Information that needs to be included:
+Information that needs to be included publicly:
 
 * Title, role or organization making the assertion
 * Date of assertion
-* Recommended internal documentation (Informative)
+
+Recommended internal documentation (Informative):
+
 * Documentation of which forms were reviewed
 * Documentation of any changes made as a result of the review
 * Date of usability testing, if applicable

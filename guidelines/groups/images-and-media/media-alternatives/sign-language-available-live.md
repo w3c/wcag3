@@ -8,12 +8,12 @@ title: Sign language available (live)
 
 We provide :term[Sign language interpretation] for all :term[live] :term[audio] content in the primary sign language of the intended audience or region.
 
-:::tests
-<i>Information that needs to be included publicly</i>
+Information that needs to be included publicly:
+
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
 * Example recording of a signed live event.
 
-<i>Recommended internal documentation (Informative)</i>
+Recommended internal documentation (Informative):
+
 * Procurement procedure for sign language interpreters.
-:::

@@ -9,11 +9,9 @@ type: assertion
 Other input modalities include :term[pointing devices], voice and speech recognition, :term[gesture], :term[camera input], and any other means of input or control.
 :::
 
-:::tests
-**Information that needs to be included publicly:**
+Information that needs to be included publicly:
 
 - Title, role or organization making the assertion (if different from the conformance claim).
 - Date of when the policy was implemented.
 - Date of assertion (if different from the date of the conformance claim).
 - Scope of assertion.
-:::

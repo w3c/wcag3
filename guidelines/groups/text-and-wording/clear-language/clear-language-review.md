@@ -11,12 +11,14 @@ Our organization has a process and policy to review written content for :term[cl
 * If a style guide is used by authors, it must provide guidance on these aspects of clear language. 
 * If author training is provided, it must provide guidance on these aspects of clear language.
 
-Information to include publicly
+Information that needs to be included publicly:
+
 * Title, role, or organization making the assertion (if different from the conformance claim).
 * Date of when the policy was implemented.
 * Date of assertion (if different from the date of the conformance claim).
 
-Recommended internal documentation (informative)
+Recommended internal documentation (Informative):
+
 * Copy of the policy implementing the clear language review.
 * Date author training was provided (if any).
 * Number or proportion of authors who completed the training.

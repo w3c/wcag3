@@ -5,7 +5,6 @@ type: assertion
 
 :term[Content author(s)] follow a style guide that includes guidance on focus indicators.
 
-:::note
 Information that needs to be included publicly:
 
 - Title, role or organization making the assertion (if different from the conformance claim).
@@ -19,4 +18,3 @@ Recommended internal documentation (Informative):
 - Date training was provided.
 - Number or proportion of authors who completed the training.
 - A copy of the design style guide (if any) where focus style has been defined.
-:::

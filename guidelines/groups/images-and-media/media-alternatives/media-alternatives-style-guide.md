@@ -22,8 +22,7 @@ status: developing
   * &hellip;
 :::
 
-:::tests
-<i>Information that needs to be included publicly</i>
+Information that needs to be included publicly:
 
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of when the usability testing was conducted.
@@ -31,4 +30,3 @@ status: developing
 * Summary of the needs of users involved.
 * Identified issues and details of solutions applied.
 :::
-

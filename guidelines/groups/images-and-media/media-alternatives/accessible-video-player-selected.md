@@ -15,11 +15,11 @@ We provide a :term[video] player that supports appropriate :term[media alternati
 a video is used that does not play in standard browsers.
 :::
 
-:::tests
-<i>Information that needs to be included publicly</i>
+Information that needs to be included publicly:
+
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
 
-<i>Recommended internal documentation (Informative)</i>
+Recommended internal documentation (Informative):
+
 * Video player documentation exists detailing functional support for media alternatives.
-:::

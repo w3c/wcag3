@@ -19,7 +19,7 @@ Information that needs to be included publicly:
 - Date of when the review was completed.
 - Date of assertion (if different from the date of the conformance claim).
 
-Recommended internal documentation (informative):
+Recommended internal documentation (Informative):
 
 - Results from the review.
 - Process or policy for maintaining the review.
