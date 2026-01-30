@@ -1,9 +1,9 @@
 ---
 children:
-  - no-flashing-minimum
-  - no-flashing-enhanced
-  - no-visual-motion-minimum
-  - no-visual-motion-enhanced
+  - no-flashing
+  - no-flashing-no-exceptions
+  - no-visual-motion
+  - no-visual-motion-no-exceptions
   - trigger-warning-available
   - haptic-stimulation-adjustable
   - audio-shifting-adjustable

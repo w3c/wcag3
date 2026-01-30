@@ -1,10 +1,13 @@
 ---
 status: developing
 type: foundational
-title: No flashing (minimum)
 ---
 
-:term[Content] does not include non-essential :term[flashing].
+:term[Content] does not include :term[flashing].
+
+:::except-when
+The flashing is :term[essential].
+:::
 
 :::ednote
 <b>Method(s)</b>
