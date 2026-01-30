@@ -18,7 +18,7 @@ There are multiple speakers in the video.
 :::
 
 :::example
-Intially using "Maya Angelou" within the context of a story regarding poetry and then using "Angelou.
+Initially using "Maya Angelou" within the context of a story regarding poetry and then using "Angelou".
 :::
 
 :::tests

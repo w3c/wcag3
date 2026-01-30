@@ -16,7 +16,7 @@ a video is used that does not play in standard browsers.
 :::
 
 :::tests
-<i>Information that needs to be included publically</i>
+<i>Information that needs to be included publicly</i>
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
 

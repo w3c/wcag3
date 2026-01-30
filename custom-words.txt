@@ -7,24 +7,45 @@ CVD
 FTE
 ICT
 NOAA
+TOTP
 UAAG
 UCS
 WCAG
 
 # Proper names
 Brajnik
+Connor
 Lauriat
+ReSpec
+Spellman
 Yesilada
 
 # Words
+dyscalculia
+earcon
+earcons
+hoverable
 incentivizes
 inclusivity
 mouseup
 numeronym
 numeronyms
+oxymorons
+personalizable
+scriptable
 strobing
-TOTP
-dyscalculia 
 
-# Words used in examples
-אמר
+# Intentional compound words
+# (since useCompoundWords is too permissive)
+colorspace
+frontmatter
+headshot
+mousedown
+mouseup
+multipoint
+preselection
+preselections
+spacebar
+touchstart
+touchend
+ultrahaptics

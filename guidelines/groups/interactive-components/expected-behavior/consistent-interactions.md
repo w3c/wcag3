@@ -13,7 +13,7 @@ We assert that we have reviewed each component in the scope of the claim and hav
 - within the component, :term[interactive elements] with the same function have consistent labels, and
 - standard user interface designs for the platform are used when applicable.
 
-Information that needs to be included publically:
+Information that needs to be included publicly:
 
 - Title, role or organization making the assertion (if different from the conformance claim).
 - Date of when the review was completed.

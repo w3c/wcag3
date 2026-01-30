@@ -29,7 +29,7 @@ tests were conducted with users who need :term[media alternatives], and the issu
 :::
 
 :::tests
-<i>Information that needs to be included publically</i>
+<i>Information that needs to be included publicly</i>
 
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of when the usability testing was conducted.

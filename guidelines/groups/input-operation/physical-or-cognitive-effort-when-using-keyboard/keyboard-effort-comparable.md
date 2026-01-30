@@ -10,7 +10,7 @@ Other input modalities include :term[pointing devices], voice and speech recogni
 :::
 
 :::tests
-**Information that needs to be included publically:**
+**Information that needs to be included publicly:**
 
 - Title, role or organization making the assertion (if different from the conformance claim).
 - Date of when the policy was implemented.

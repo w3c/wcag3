@@ -19,8 +19,8 @@ Hebrew and Arabic are examples of human languages that omit letters or diacritic
 :::
 
 :::example
-The Hebrew word אמר, with three consonants and no diacritics
-* Without diacritics, אמר can represent different verb and noun forms of “to say.”
+The Hebrew word <span lang="he">אמר</span>, with three consonants and no diacritics
+* Without diacritics, <span lang="he">אמר</span> can represent different verb and noun forms of “to say.”
 * Readers must rely on context to determine the intended pronunciation and meaning.
 :::
 

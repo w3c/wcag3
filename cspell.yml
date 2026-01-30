@@ -1,8 +1,8 @@
 version: "0.2"
-allowCompoundWords: true
 minWordLength: 3
+language:
+  - en-us
 dictionaries:
-  - en_US
   - companies
   - softwareTerms
   - css
