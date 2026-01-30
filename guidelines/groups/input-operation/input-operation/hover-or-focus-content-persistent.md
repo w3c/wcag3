@@ -5,7 +5,7 @@ type: foundational
 
  :term[Content] that appears on :term[pointer] hover or :term[keyboard focus] remains visible until the hover or keyboard focus trigger is removed, the user dismisses it, or its information is no longer valid.
 
-:::note
+:::example
 Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <code class="language-html">title</code> attribute.
 :::
 

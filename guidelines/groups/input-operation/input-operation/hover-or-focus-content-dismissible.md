@@ -5,7 +5,7 @@ type: foundational
 
 A :term[mechanism] is available to dismiss :term[content] that appears on :term[pointer] hover or :term[keyboard focus] without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content
 
-:::note
+:::example
 Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <code class="language-html">title</code> attribute.
 :::
 

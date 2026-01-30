@@ -5,8 +5,14 @@ type: foundational
 
 All functionality and content available using :term[complex pointer inputs] is also available using a :term[simple pointer input] or a sequence of simple pointer inputs that do not require timing.
 
-:::note
-Examples of complex pointer inputs are double clicking, swipe :term[gestures], multipoint gestures like pinching or split tap or two-finger rotor, variable pressure or timing, and dragging movements.
+:::example
+Examples of complex pointer inputs:
+
+- Double clicks
+- Dragging movements
+- Swipe :term[gestures]
+- Multipoint gestures such as pinching, split tap, or two-finger rotor
+- Variable pressure or timing
 :::
 
 :::note

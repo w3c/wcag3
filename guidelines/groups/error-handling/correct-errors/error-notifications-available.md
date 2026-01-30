@@ -5,8 +5,12 @@ type: foundational
 
 Errors that are :term[programmatically determined] are identified and the problem is  described to the user.
 
-:::note
-Examples of errors include invalid form input, server errors or application errors.
+:::example
+Examples of errors:
+
+- Invalid form input
+- Server errors
+- Application errors
 :::
 
 :::tests
