@@ -8,12 +8,12 @@ title: No visual motion (no exceptions)
 
 :::ednote
 <b>Method(s)</b>
-* Design content without using visual motion or pseudomotion.
+* Design content without using visual motion or pseudo-motion.
 :::
 
 :::tests
 <b>Procedure</b>
-1. Identify if content includes visual motion or pseudomotion.
+1. Identify if content includes visual motion or pseudo-motion.
 
 <b>Expected results</b>
 * #1 is false
