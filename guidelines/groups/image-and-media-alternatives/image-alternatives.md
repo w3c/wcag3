@@ -9,16 +9,3 @@ children:
 ---
 
 Users have equivalent alternatives for images.
-
-:::decision-tree
-For each image:
-1. Would removing the image impact how people understand the :term[page]?
-   - No, <a href="#decorative-images-hidden">Decorative image is programmatically hidden.</a> Stop.
-   - Yes, continue.
-2. Is the image presented in a way that is available to :term[user agents] and :term[assistive technology]?
-   - Yes, image must meet <a href="#images-detectable">Image is programmatically determinable</a> AND the :term[accessibility support set] meets <a href="#images-not-relied-on">Equivalent text alternative is available for image that conveys :term[content]</a>. Stop.
-   - No, continue.
-3. Is an equivalent :term[text alternative] available for the image?
-   - Yes, image must meet <a href="#images-not-relied-on">Equivalent text alternative is available for image that conveys content</a>. Stop.
-   - No, fail.
-:::
