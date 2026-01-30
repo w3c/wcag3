@@ -25,7 +25,7 @@ The Hebrew word אמר, with three consonants and no diacritics
 :::
 
 :::example
-The Hebrew word אָמַר, with diacritics under two of the three consonants
+The Hebrew word <span lang="he">אָמַר</span>, with diacritics under two of the three consonants
 * Two perpendicular marks (similar to an uppercase T) under the א makes an “ah” sound.
 * A horizontal mark under the מ makes a short “a” sound.
 * Pronunciation: ah-mar
@@ -33,7 +33,7 @@ The Hebrew word אָמַר, with diacritics under two of the three consonants
 :::
 
 :::example
-The Hebrew word יֹאמַר, with diacritics above one consonant and under another
+The Hebrew word <span lang="he">יֹאמַר</span>, with diacritics above one consonant and under another
 * A prefix mark (similar to a floating hook or a comma-like dash) indicates future tense, masculine.
 * A dot above the prefix makes an "o" sound.
 * A horizontal mark under the מ makes a short “a” sound.
@@ -42,7 +42,7 @@ The Hebrew word יֹאמַר, with diacritics above one consonant and under anot
 :::
 
 :::example
-The Hebrew word אֹמֶר, with a different set of diacritics above one consonant and under another
+The Hebrew word <span lang="he">אֹמֶר</span>, with a different set of diacritics above one consonant and under another
 * A dot that is above and between the first two letters makes an “o” sound.
 * The three dots (like a downward-pointing triangle) under the מ make a short “e” sound.
 * Pronunciation: oh-mer
