@@ -25,9 +25,9 @@ Initially using "Maya Angelou" within the context of a story regarding poetry an
 <i>Consistent speaker name in transcript</i>
 
 <b>Procedure</b>
-1. Check for any speakers in the audio or video content.
-2. Check that each speaker in the audio or video is consistently identified in the transcript.
+For each media alternative: 
+1. Check that each speaker in the audio or video is consistently identified.
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.
 :::

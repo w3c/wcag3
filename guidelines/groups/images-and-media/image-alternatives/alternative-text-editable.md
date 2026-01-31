@@ -11,10 +11,10 @@ Automatically generated text descriptions are editable by the :term[content] cre
 :::tests
 <b>Procedure</b>
 For each image that has automatically generated text descriptions, check that:
-* the image's text description can be updated; and
-* the image can be marked as decorative.
+1. the image's text description can be updated; and
+2. the image can be marked as decorative.
 
 <b>Expected results</b>
-* #1a is true. 
-* #1b is true,.
+* #1 is true, and
+* #2 is true,.
 :::

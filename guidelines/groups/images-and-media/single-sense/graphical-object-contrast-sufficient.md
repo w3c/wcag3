@@ -13,11 +13,11 @@ Parts of graphical object required to understand the content meet a minimum :ter
 <b>Procedure</b>
 
 For each graphical object:
-1. Identify all parts of the graphical objects that convey information.
-2. Confirm that these parts meet the minimum contrast ratio with adjacent colors.
+For each graphical object that conveys information:
+1. Confirm that these parts meet the minimum contrast ratio with adjacent colors.
 
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.
 
 :::

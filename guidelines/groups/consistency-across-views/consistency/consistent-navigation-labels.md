@@ -19,9 +19,9 @@ This relates to consistency and terminology within blocks of navigation. The con
 <i>Consistent main navigation labels</i>
 
 <b>Procedure</b>
-1. Identify repeated blocks of navigation across multiple pages/views of the product or process.
-2. Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process. 
+For each repeated block of navigation across multiple pages/views of the product or process:
+1. Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process. 
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true
 :::

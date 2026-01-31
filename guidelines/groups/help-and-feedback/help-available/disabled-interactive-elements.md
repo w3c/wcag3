@@ -13,11 +13,11 @@ When a submit button is disabled until all required fields are filled in, explai
 
 <b>Procedure</b>
 
-1. Identify visible disabled controls.
-2. For all visible disabled controls, check that instructions are available that explain how to enable them. 
+For each visible disabled control:
+1. Check that instructions are available that explain how to enable them. 
 
 <b>Expected results</b>
 
-* #2 is true. 
+* #1 is true. 
 
 :::

@@ -25,9 +25,9 @@ Custom tooltips, sub-menus, and other non-modal popups that display on hover and
 
 **Procedure**
 
-For additional content or focus that appears on hover check that:
+For additional content or focus that appears on hover:
 
-1. The additional content stays visible and does not automatically close after a time.
+1. Check that the additional content stays visible and does not automatically close after a time.
 
 **Expected results**
 

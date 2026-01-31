@@ -22,7 +22,8 @@ Methods & best practices
 
 :::tests
 **Procedure**
-1. Check for click events on non-interactive elements.
+For every interactive element that allows pointer selection (including cick events on non-interative elements):
+1. Check that the keyboard focus moves when the pointer selects the element.
 
 **Expected results**
 - #1 is true

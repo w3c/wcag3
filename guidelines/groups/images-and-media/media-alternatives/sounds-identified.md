@@ -21,9 +21,9 @@ there is sound.
 <i>Meaningful sounds in captions</i>
 
 <b>Procedure</b>
-1. Identify all audio or video with captions within the unit of conformance.
-2. Identify which ones include meaningful non-verbal audio.
-3. Captions include a description of the meaningful non-verbal audio.
+For all audio content: 
+2. Identify meaningful non-verbal audio (sounds).
+3. Check that captions include a description of the meaningful non-verbal audio.
 
 <b>Expected results</b>
 * #3 is true.

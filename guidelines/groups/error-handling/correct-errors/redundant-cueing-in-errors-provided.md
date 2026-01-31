@@ -11,9 +11,9 @@ Error messages are visually identifiable using at least two of the following:
 
 :::tests
 <b>Procedure</b>
-1. Identify all validation errors.
-2. Verify that they meet at least two of the listed requirements.
+For each validation error:
+1. Verify that it meets at least two of the listed indicators (symbol, color or text).
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true
 :::

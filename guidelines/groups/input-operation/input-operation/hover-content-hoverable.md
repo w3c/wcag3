@@ -25,9 +25,9 @@ Custom tooltips, sub-menus, and other non-modal popups that display on hover and
 
 **Procedure**
 
-For additional content that appears on hover check that:
+For additional content that appears on hover:
 
-1. The pointer can be moved over the additional content without the additional content disappearing.
+1. Check that he pointer can be moved over the additional content without the additional content disappearing.
 
 
 **Expected results**

@@ -8,11 +8,10 @@ Non-standard keyboard commands provided by content authors are documented and th
 :::tests
 **Procedure**
 
-1. Identify all keyboard commands used in the page/view.
-2. Verify that documentation of keyboard commands exists.
-3. Verify that the documentation documents all keyboard commands identified in #1.
+For each non-standard (custom) keybaord command that works on a page/view: 
+1. Verify that documentation of keyboard commands exists.
+2. Verify that the documentation is available from the page/view.
 
 **Expected results**
-- #2 is true.
-- For each custom keyboard command, #3 is true.
+- #1 and #2 are true.
 :::

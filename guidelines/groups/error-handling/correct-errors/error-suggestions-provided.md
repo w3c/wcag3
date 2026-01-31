@@ -11,9 +11,9 @@ it would jeopardize the security or purpose of the :term[content].
 
 :::tests
 <b>Procedure</b>
-1. Review all error messages.
-2. Verify that the error messages include suggestions for how to fix the error.
+For each error message:
+1. Verify that the error messages include suggestions for how to fix the error.
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true
 :::

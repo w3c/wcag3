@@ -21,10 +21,10 @@ the operating system or user agent converts non-haptic feedback to haptics at us
 
 :::tests
 <b>Procedure</b>
-1. Identify any haptic feedback that is caused by the digital content (vs. the operating system or user agent).
-2. Identify if there is a setting that allows for reducing or turning off the haptic feedback.
+For haptic feedback caused by the digital content (vs. the operating system or user agent).
+1. Identify if there is a setting that allows for reducing or turning off the haptic feedback.
 
 
 <b>Expected results</b>
-* #1 is false, or #1 and #2 are true
+* #1 is true
 :::

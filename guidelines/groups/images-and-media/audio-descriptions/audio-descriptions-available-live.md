@@ -10,9 +10,9 @@ title: Audio descriptions available (live)
 
 :::tests
 <b>Procedure</b>
-1. Find a live media broadcast
-2. Check that a secondary audio option exists that provides live audio description of the broadcast.
+For each live media broadcast
+1. Check that a secondary audio option exists that provides live audio description of the broadcast.
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.
 :::

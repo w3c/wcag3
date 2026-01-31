@@ -21,9 +21,9 @@ operating system or user agent triggers audio shifting.
 
 :::tests
 <b>Procedure</b>
-1. Check for any audio shifting that is caused by the digital content (vs. the operating system or user agent).
-2. Check if there is a setting that allows for pause or turning off the audio shifting.
+For audio shifting caused by the digital content (vs. the operating system or user agent):
+1. Check that there is a setting to pause or turn off the audio shifting.
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true
 :::

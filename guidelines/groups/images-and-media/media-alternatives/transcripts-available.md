@@ -14,9 +14,9 @@ status: developing
 <i>(General) Transcript is available</i>
 
 <b>Procedure</b>
-1. Identify all audio or video within the unit of conformance through visual inspection.
-2. Determine that a transcript is available for each instance of audio and video content.
+For each instance of audio or video:
+1. Check that a transcript is available.
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.
 :::

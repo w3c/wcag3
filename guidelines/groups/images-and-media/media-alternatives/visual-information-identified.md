@@ -15,10 +15,10 @@ Visual information needed to understand the media is described in the :term[tran
 <i>Meaningful visual information in transcripts and audio descriptions</i>
 
 <b>Procedure</b>
-1. Check the content in the audio or video for any meaningful visual information.
-2. Check that the transcript includes a description of any visual information needed to understand the content of the audio or video.
-3. Check that the audio description includes a description of any visual information needed to understand the content of the audio or video.
+For each transcript:
+1. Check that the transcript includes a description of any visual information needed to understand the content of the audio or video.
+2. Check that the audio description includes a description of any visual information needed to understand the content of the audio or video.
 
 <b>Expected results</b>
-* #2 and #3 are true.
+* #1 and #2 are true.
 :::

@@ -16,6 +16,7 @@ The motion or pseudo-motion is :term[essential].
 
 :::tests
 <b>Procedure</b>
+For each page/view:
 1. Identify if content includes visual motion or pseudo-motion.
 2. For each instance, identify if the visual motion or pseudo-motion is essential.
 

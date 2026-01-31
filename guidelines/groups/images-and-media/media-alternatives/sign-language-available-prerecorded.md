@@ -14,9 +14,10 @@ It is a decorative background sound.
 <i>Sign language for audio only</i>
 
 <b>Procedure</b>
-1. Check the content in the audio has a sign language translation.
-2. Check that a sign language translation is provided that conveys all the auditory information needed to understand the full context and meaning in the pre-recorded audio content.
+For each instand of prerecorded audio content:
+1. Check that a sign language translation is available. 
+2. Check that the sign language translation conveys all the auditory information needed to understand the full context and meaning in the pre-recorded audio content.
 
 <b>Expected results</b>
-* #2 is true.
+* #1 and 2 are true.
 :::
