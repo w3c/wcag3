@@ -1,5 +1,6 @@
 ---
 status: developing
+type: foundational
 ---
 
 Information is not conveyed by hue alone.
@@ -17,9 +18,9 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 
 <b>Procedure</b>
 
-* Identify everywhere information is conveyed by hue. 
-* For each instance identified in #1, identify the instances where the hue conveys information.
-* For each instance identified in #2, confirm that at least one * additional visual indicator is present that conveys the same information.
+For each instance where information is conveyed by hue: 
+1. For each instance identified in #1, identify the instances where the hue conveys information.
+2. For each instance identified in #2, confirm that at least one * additional visual indicator is present that conveys the same information.
 
 <b>Expected results</b>
 
