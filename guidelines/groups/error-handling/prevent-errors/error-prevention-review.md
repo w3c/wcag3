@@ -20,11 +20,11 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 
 Information that needs to be included publicly:
 
-* Title, role or organization making the assertion.
-* Date of assertion (if different from the date of the conformance claim).
+* Title, role or organization making the assertion
+* Date of assertion (if different from the date of the conformance claim)
 
 Recommended internal documentation (Informative):
 
-* Documentation of which forms were reviewed.
-* Documentation of any changes made as a result of the review.
-* Date of usability testing, if applicable.
+* Documentation of which forms were reviewed
+* Documentation of any changes made as a result of the review
+* Date of usability testing, if applicable
