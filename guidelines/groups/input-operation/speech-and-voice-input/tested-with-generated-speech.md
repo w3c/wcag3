@@ -5,6 +5,12 @@ type: assertion
 
 We assert that we have tested voice input and communication systems with generated speech to ensure the systems work with artificial speech as well as human speech.
 
+:::example
+[Title, role, or organization] asserts that:
+
+We have tested voice input and communication systems with generated speech to ensure the systems work with artificial speech as well as human speech.
+:::
+
 Information that needs to be included publicly:
 
 - Title, role or organization making the assertion (if different from the conformance claim).
@@ -13,5 +19,5 @@ Information that needs to be included publicly:
 
 Recommended internal documentation (Informative):
 
-- Systems tested
-- Accuracy rates
+- Systems tested.
+- Accuracy rates.
