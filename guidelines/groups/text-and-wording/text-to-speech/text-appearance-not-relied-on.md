@@ -13,13 +13,12 @@ Meaning conveyed by :term[text] :term[style properties] is also :term[programmat
 * emphasis is the only additional meaning conveyed.
 :::
 
-:::examples
+:::example
 * (Pass) When bold or italics is used to indicate an error, an additional indicator such as an exclamation mark (!) is also provided.
 * (Pass) When larger text is used as a hint in a puzzle, an additional indicator such as an asterisk (*) is also provided.
 :::
 
 :::tests
-
 <b>Procedure</b>
 1. Identify any instances of text styling, weight, size, or other text characteristics conveying meaning that is not just emphasis.
 2. Check that an additional indicator of that meaning is available. 
