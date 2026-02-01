@@ -1,15 +1,16 @@
 ---
+type: foundational
 status: developing
 ---
 
-A mechanism exists to extend the time limit at timeout, or to disable the timeout at any point.
+A mechanism exists to extend the time limit before timeout, or the time limit can be disabled.
 
 :::applies-when
-Time limits exist.
+Time limit(s) exist.
 :::
 
 :::except-when
-The time limit is essential.
+The time limit is :term[essential].
 :::
 
 :::tests
@@ -17,8 +18,9 @@ The time limit is essential.
 
 <b>Procedure</b>
 1. Identify the presence of a time limit.
-2. Wait for the timeout.
-3. Verify that the timeout includes a notification with options to extend or disable the timeout.
+2. Verify if there is a way to disable it.
+3. Wait for the timeout.
+4. Verify that before the timeout, an option is given to extend the time limit.
 
 <b>Expected results</b>
 * #3 is true.
