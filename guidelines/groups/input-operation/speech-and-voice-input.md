@@ -1,8 +1,8 @@
 ---
 children:
-  - speech-not-relied-on
+  - speech-alternative-available
   - real-time-text-available
-  - generated-speech-testing
+  - tested-with-generated-speech
 ---
 
 Provide alternatives to speech input and facilitate speech control.
