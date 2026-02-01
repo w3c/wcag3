@@ -11,14 +11,14 @@ Content that is exported, saved, or printed retains user-applied text-appearance
 * the page/view can be exported, saved, or printed.
 :::
 
-:::note 
-Examples of interoperable formats include:
+:::examples of interoperable formats
 * PDF
 * HTML
 * SVG
 * OpenDocument
+:::
 
-Examples of non-interoperable formats include:
+:::examples of non-interoperable formats
 * Scriptable Network Graphics
 * DOCX, unless you know your audience has the required software (for example, you’re writing internal documents for your company which provides employees with the necessary software)
 * Java object code
