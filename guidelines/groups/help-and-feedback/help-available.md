@@ -3,7 +3,7 @@ children:
   - consistent-help-available
   - contextual-help-available
   - conversational-support-available
-  - disabled-interactive-elements
+  - disabled-interactive-elements-explained
   - data-visualizations
   - new-interfaces
   - personalizable-help
