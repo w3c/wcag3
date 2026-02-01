@@ -9,7 +9,7 @@ Numerical information includes sufficient context in written text and a programm
 Numerical metadata is information that provides context about the numbers presented. This context helps users understand what the numbers represent and how they should be read. Without these cues, numbers can be ambiguous or misleading, making it harder for users to understand the intended meaning—especially across different regions, disciplines, or assistive technologies. 
 :::
 
-:::example
+:::examples
 * Dates include markers for day and month such as “3 May 2025” instead of the ambiguous "03/05/2025."
 * Temperatures specify degrees Celsius or Fahrenheit such as "0° C" or "32° F." 
 * Times  specify am, pm, or 24-hour clock such as "1 pm" or "13:00."
