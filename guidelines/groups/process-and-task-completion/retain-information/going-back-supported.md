@@ -1,5 +1,5 @@
 ---
-status: exploratory
+status: developing
 ---
 
 In a multi-step :term[process], the interface supports stepping backwards in a process and returning to the current point without data loss.
@@ -9,7 +9,7 @@ In a multi-step :term[process], the interface supports stepping backwards in a p
 :::
  
 :::example
-Certain tests may require that the user cannot go back through previously-submitted responses and change them.
+Certain tests in education may require that the student cannot go back through previously-submitted responses and change them.
 :::
 
 :::tests
