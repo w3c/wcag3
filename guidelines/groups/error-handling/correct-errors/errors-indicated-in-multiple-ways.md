@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Error messages are visually identifiable using at least two of the following:
+Error messages are visually indicated using at least two of the following:
 
 * A symbol that is consistent throughout the :term[product].
 * Color that differentiates the error message from surrounding :term[content].
