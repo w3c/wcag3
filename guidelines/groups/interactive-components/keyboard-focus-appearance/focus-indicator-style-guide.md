@@ -5,6 +5,10 @@ type: assertion
 
 :term[Content author(s)] follow a style guide that includes guidance on focus indicators.
 
+:::example
+[Title, role, or organization] asserts that: Content author(s) follow a design style guide that includes guidance on focus indicators.
+:::
+
 Information that needs to be included publicly:
 
 - Title, role or organization making the assertion (if different from the conformance claim).
@@ -15,6 +19,6 @@ Recommended internal documentation (Informative):
 
 - Copy of the policy implementing the use of design style guide on focus style.
 - Whether training was provided for authors
-- Date training was provided.
-- Number or proportion of authors who completed the training.
+    - Date training was provided.
+    - Number or proportion of authors who completed the training.
 - A copy of the design style guide (if any) where focus style has been defined.
