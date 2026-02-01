@@ -12,8 +12,8 @@ Changing the pointer appearance is essential.
 :::ednote
 Methods &amp; best practices:
 
-1. No scripting or styling overrides the pointer indicator appearance.
-2. A setting is provided so that the pointer indicator appearance is not overridden.
+- No scripting or styling overrides the pointer indicator appearance.
+- A setting is provided so that the pointer indicator appearance is not overridden.
 :::
 
 :::tests

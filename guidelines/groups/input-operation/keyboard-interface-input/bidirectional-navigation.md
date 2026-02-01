@@ -9,16 +9,25 @@ The keyboard interface can always move forward to the next interactive element a
 Although keyboard navigation is required to be bidirectional, it is not required that it be symmetrical, even though this is usually best practice.
 :::
 
+:::note
+Methods &amp; best practices:
+
+- Method: Use standard HTML to create interactive elements.
+- Avoid modifying the tab order to be in only one direction.
+:::
+
 :::example
 Tabbing through menus, hitting <kbd>space</kbd> to open a menu, tabbing off the end of the menu lands you on the next menu. A <kbd><kbd>shift</kbd>+<kbd>tab</kbd></kbd> may go back to the last item in the previous menu (symmetrical) or to the last menu (not symmetrical but also does not fail this requirement).
 :::
 
 :::tests
 **Procedure**
-For each interactive element:
-1. Check that after a forward movement onto the interactive element, that you can move back to the last position using the keyboard only. 
-2. Check that after a forward movement on the interactive element, that you can move forward to the next position using the keyboard only. 
+1. Using the keyboard, navigate forward through the whole page or view.
+2. Check that when tabbing forwards you navigate to the next interactive element.
+3. Using the keyboard, navigate backward through the whole page or view.
+4. Check that when tabbing backwards #2, you navigate to the previous interactive element each time.  
+5. Check that during #1 and #2, when tabbing forwards or backwards, you are at no point blocked from continuing.
 
 **Expected results**
-- #1 and #2 are true
+- #2, #4, and #5 are true
 :::
