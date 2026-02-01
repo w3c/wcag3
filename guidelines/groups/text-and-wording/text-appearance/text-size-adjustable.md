@@ -12,7 +12,7 @@ Text can be increased in size to at least 200% of the platform’s default body-
 :::tests
 <b>Procedure</b>
 
-For each piece of text:
+For each block of text:
 1. Use each platform mechanism for increasing text size.
 2. Check that at least one mechanism can achieve a 200% text-size increase.
 
