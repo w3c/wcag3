@@ -81,7 +81,7 @@ The metrics in the following table are still to be determined; the current conte
 
 <b>Procedure</b>
 
-For each piece of text:
+For each block of text:
 1. Apply the highest level of change of each attribute from the table, for that language/script.
 2. Check that the text is changed by the override. 
 
