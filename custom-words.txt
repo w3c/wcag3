@@ -1,5 +1,6 @@
 # Expected acronyms and abbreviations
 AGWG
+ARFID
 ATAG
 CIE
 COGA
