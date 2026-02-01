@@ -1,6 +1,6 @@
 ---
 type: assertion
-title: Clear messaging expert review
+title: Deceptive messaging expert review
 status: developing
 ---
 
