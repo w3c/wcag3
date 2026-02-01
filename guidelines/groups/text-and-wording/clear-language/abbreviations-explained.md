@@ -27,7 +27,7 @@ the abbreviation is:
 
 1. Check for any abbreviations in the content.
 2. Check that an explanation is available for the first use of the abbreviation.
-3. For an abbreviation that have no explanation available, check that it is included in a dictionary intended for the general public.
+3. For an abbreviation that has no explanation available, check that it is included in a dictionary intended for the general public.
 
 <b>Expected result</b>
 * #2 or #3 is true.
