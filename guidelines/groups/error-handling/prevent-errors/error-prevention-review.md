@@ -3,7 +3,11 @@ status: exploratory
 type: assertion
 ---
 
-[Title, role or organization] asserts that, for each form in the conformance claim, we have reviewed the form designs to reduce the possibility of users making mistakes. This review includes checking to make sure that we:
+[Title, role or organization] asserts that: 
+
+* For each form in the conformance claim, we have reviewed the form designs to reduce the possibility of users making mistakes. 
+
+This review includes checking to make sure that we:
 
 * make the user enter as little information as possible,
 * clearly indicate required fields,
@@ -16,11 +20,11 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 
 Information that needs to be included publicly:
 
-* Title, role or organization making the assertion
-* Date of assertion
+* Title, role or organization making the assertion.
+* Date of assertion (if different from the date of the conformance claim).
 
 Recommended internal documentation (Informative):
 
-* Documentation of which forms were reviewed
-* Documentation of any changes made as a result of the review
-* Date of usability testing, if applicable
+* Documentation of which forms were reviewed.
+* Documentation of any changes made as a result of the review.
+* Date of usability testing, if applicable.
