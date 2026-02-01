@@ -24,7 +24,7 @@ Lists of common words are called high-frequency corpora. They exist for many lan
 :::
 
 :::ednote
-Research shows that using common words and defining uncommon words improves understanding. [Making Content Usable for People with Cognitive and Learning Disabilities] recommends using the 1,500 highest-frequency words or phrases because people with severe language impairments are most likely to know these terms. However, more research is needed to confirm if the same threshold applies to many languages for distinguishing common from uncommon words. 
+Research shows that using common words and defining uncommon words improves understanding. <a href="https://www.w3.org/TR/coga-usable/#what-to-do-12">Making Content Usable for People with Cognitive and Learning Disabilities</a> recommends using the 1,500 highest-frequency words or phrases because people with severe language impairments are most likely to know these terms. However, more research is needed to confirm if the same threshold applies to many languages for distinguishing common from uncommon words. 
 :::
 
 :::tests
@@ -32,9 +32,9 @@ Research shows that using common words and defining uncommon words improves unde
 <b>Procedure</b>
 
 For each word: 
-1. Check whether the word appears in the 1,500 most common words in a high-frequency corpus for the language used.
+1. Check that the word appears in the 1,500 most common words in a :term[high-frequency corpus] for the language used.
 2. If the word is not in the list of the 1,500 most common words, check that it has a definition available within the page/view.
-3. Check that a technology in the accessibility support set meets ‘Common words.’
+3. Check that a technology in the :term[accessibility support set] meets ‘Common words used.’
 
 <b>Expected results</b>
 * #1, #2, or #3 is true.
