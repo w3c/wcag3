@@ -8,7 +8,7 @@ Non-standard keyboard commands provided by content authors are documented and th
 :::tests
 **Procedure**
 
-For each non-standard (custom) keybaord command that works on a page/view: 
+For each non-standard (custom) keyboard command that works on a page/view: 
 1. Verify that documentation of keyboard commands exists.
 2. Verify that the documentation is available from the page/view.
 
