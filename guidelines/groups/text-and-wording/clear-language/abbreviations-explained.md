@@ -14,11 +14,11 @@ the abbreviation is:
 :::
 
 :::example
-(Pass) ‘He has ADHD (attention deficit hyperactivity disorder).’
+(Pass) ‘He has Avoidant/Restrictive Food Intake Disorder (ARFID).’
 
-(Pass) ‘He has [ADHD].’ — (link to a glossary or tooltip.)
+(Pass) ‘He has [ARFID].’ — (link to a glossary or tooltip.)
 
-(Fail) ‘He has ADHD.’ — (first reference, no explanation is available.)
+(Fail) ‘He has ARFID.’ — (first reference, no explanation is available.)
 :::
 
 :::tests
