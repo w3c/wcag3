@@ -10,7 +10,7 @@ Errors require corrections by the user.
 :::
 
 :::except-when
-it would jeopardize the security or purpose of the :term[content].
+including suggestions would jeopardize the security or purpose of the :term[content].
 :::
 
 :::tests

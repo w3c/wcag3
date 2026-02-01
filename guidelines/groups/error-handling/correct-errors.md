@@ -2,7 +2,7 @@
 children:
   - error-notifications-available
   - error-suggestions-provided
-  - redundant-cueing-in-errors-provided
+  - errors-indicated-in-multiple-ways
   - error-messages-persistent
   - errors-associated
   - error-messages-collocated
