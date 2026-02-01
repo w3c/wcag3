@@ -4,7 +4,7 @@ status: developing
 type: foundational
 ---
 
-A summary is available for :term[long-form written content] and:
+A summary is available for :term[long-form text content] and:
 * is identifiable visually and programmatically,
 * uses concise sentences, and
 * provides access to explanations of any uncommon words that are used in the summary.
@@ -26,7 +26,7 @@ Research is needed to determine the number of words that trigger the summary req
 
 <b>Procedure</b>
 
-For long-form text content that has 300 or more words, confirm each of the following is true:
+For :term[long-form text content] that has 300 or more words:
 1. Check that a summary is present.
 2. Check that the summary can be identified visually and programmatically.
 3. Check that the summary explains uncommon words and uses concise sentences.
