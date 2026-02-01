@@ -13,7 +13,7 @@ Numerical metadata is information that provides context about the numbers presen
 * Dates include markers for day and month such as “3 May 2025” instead of the ambiguous "03/05/2025."
 * Temperatures specify degrees Celsius or Fahrenheit such as "0° C" or "32° F." 
 * Times  specify am, pm, or 24-hour clock such as "1 pm" or "13:00."
-* Roman numerals use markup such as <span aria-label="Henry the Fourth">Henry IV</span> or inline alternatives such as Super Bowl LIX (59).
+* Roman numerals include a programmatic equivalent, such as an aria-label of "Henry the Fourth" for <span aria-label="Henry the Fourth">Henry IV</span>, or an inline alternative, such as Super Bowl LIX (59).
 :::
 
 :::tests
