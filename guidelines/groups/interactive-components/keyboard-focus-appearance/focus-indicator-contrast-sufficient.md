@@ -15,8 +15,8 @@ If a custom focus indicator is used, it has sufficient adjacent contrast and cha
 
 For each element able to attain focus:
 
-    1. Using a keyboard, tab to the component.
-    2. Check that the focus indicator contrast meets the minimum contrast ratio test.
+1. Using a keyboard, tab to the component.
+2. Check that the focus indicator contrast meets the minimum contrast ratio test.
 
 <b>Expected results</b>
 * #2 is true
