@@ -4,14 +4,14 @@ status: developing
 type: foundational
 ---
 
-The presentation of each of the following font features can be adjusted, without loss of content or functionality, to meet the corresponding values for the content’s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
+The presentation of each of the following :term[text] :term[style properties] can be adjusted, without loss of content or functionality, to meet the corresponding values for the content’s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::note
 The requirement is that the text is manipulable and the style attributes can be overridden.
 :::
 
 :::except-when
-The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
+* the text style property is hard-coded, such as raw text that is capitalized or hyphenated.
 :::
 
 :::ednote
@@ -96,7 +96,7 @@ The metrics in the following table are still to be determined; the current conte
 <b>Procedure</b>
 
 For each block of text:
-1. Apply the highest level of change of each attribute from the table, for that language/script.
+1. Apply the highest level of change of each attribute from the table, for the closest language.
 2. Check that the text is changed by the override. 
 
 <b>Expected results</b>
