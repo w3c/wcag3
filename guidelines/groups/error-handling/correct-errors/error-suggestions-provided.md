@@ -5,6 +5,10 @@ type: foundational
 
 Error messages include suggestions for corrections.
 
+:::applies-when
+Errors require corrections by the user.
+:::
+
 :::except-when
 it would jeopardize the security or purpose of the :term[content].
 :::
@@ -12,8 +16,9 @@ it would jeopardize the security or purpose of the :term[content].
 :::tests
 <b>Procedure</b>
 For each error message:
-1. Verify that the error messages include suggestions for how to fix the error.
+1. Verify it is an error that needs correction by the user.
+2. Verify that the error message includes suggestions for how to fix the error.
 
 <b>Expected results</b>
-* #1 is true
+* #1 and #2 are true
 :::
