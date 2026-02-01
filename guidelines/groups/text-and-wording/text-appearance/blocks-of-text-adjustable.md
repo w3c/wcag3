@@ -11,7 +11,7 @@ The requirement is that the text is manipulable and the style attributes can be 
 :::
 
 :::except-when
-The content is hard-coded (e.g., the raw text is capitalized or hyphenated).
+* the content is hard-coded, such as raw text that is capitalized or hyphenated.
 :::
 
 :::ednote
