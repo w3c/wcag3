@@ -16,8 +16,8 @@ Tabbing through menus, hitting <kbd>space</kbd> to open a menu, tabbing off the 
 :::tests
 **Procedure**
 For each interactive element:
-1. Check that after a forward movement onto the interactive elemennt, that you can move back to the last position using the keyboard only. 
-2. Check that after a forward movement on the interactive element, that you can move forward to teh next position using the keyboard only. 
+1. Check that after a forward movement onto the interactive element, that you can move back to the last position using the keyboard only. 
+2. Check that after a forward movement on the interactive element, that you can move forward to the next position using the keyboard only. 
 
 **Expected results**
 - #1 and #2 are true

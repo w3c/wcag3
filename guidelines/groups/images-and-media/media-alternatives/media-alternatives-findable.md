@@ -13,7 +13,7 @@ It is a decorative audio or video.
 <i>Link to text description of audio or video content</i>
 
 <b>Procedure</b>
-For each instace of audio or video:
+For each instance of audio or video:
 1. Check that a text description or link to a text description is provided for each audio or video.
 
 <b>Expected results</b>

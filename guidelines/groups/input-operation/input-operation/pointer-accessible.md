@@ -16,7 +16,7 @@ A user scrolls a document down six screens, then clicks on a paragraph with thei
 :::tests
 **Procedure**
 
-For every interactive element that allows pointer selection (including cick events on non-interative elements):
+For every interactive element that allows pointer selection (including click events on non-interactive elements):
 1. Check that the keyboard focus moves when the pointer selects the element.
 
 **Expected results**
