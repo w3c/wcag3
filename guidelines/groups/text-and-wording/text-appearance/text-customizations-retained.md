@@ -8,7 +8,7 @@ Content that is exported, saved, or printed retains user-applied text-appearance
 <div class="issue" data-number="502"></div>
 
 :::applies-when
-* the page/view can be exported or printed option.
+* the page/view can be exported, saved, or printed.
 :::
 
 :::note 
