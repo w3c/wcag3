@@ -1,7 +1,7 @@
 ---
 children:
   - hover-or-focus-content-dismissible
-  - hover-content-hoverable
+  - hover-content-persistent
   - hover-or-focus-content-persistent
   - path-based-gesture-not-relied-on
   - input-method-flexible
