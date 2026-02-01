@@ -36,7 +36,7 @@ The metrics in the following table are still to be determined; the current conte
        <td></td>
      </tr>
     <tr>
-       <th scope="row">Block Margin</th>
+       <th scope="row">Block margin</th>
        <td></td>
        <td></td>
        <td>≥0.5em around paragraphs</td>
