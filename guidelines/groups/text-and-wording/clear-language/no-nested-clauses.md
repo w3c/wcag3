@@ -24,7 +24,7 @@ For each sentence:
 
 2. Check that each initial nested clause does not contain other nested clauses within it.
 
-3. Check that a technology in the accessibility support set meets ‘No nested clauses’. 
+3. Check that a technology in the :term[accessibility support set] meets ‘No nested clauses’. 
 
 <b>Expected results</b>
 * #2 is true, or
