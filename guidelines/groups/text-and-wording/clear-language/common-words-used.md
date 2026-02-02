@@ -15,7 +15,7 @@ Common words are used, and definitions are available for uncommon words.
 * the language does not have a :term[high-frequency corpus].
 :::
 
-:::note 
+:::note
 This is not a core requirement because a list of common words would not cover terms that are known by specific audiences, such as accounting terms on an accounting site. However, in future guidance for policy makers, it is an example of a supplemental requirement that could be made mandatory for public service and education providers.
 
 Lists of common words are called high-frequency corpora. They exist for many languages including Arabic, Hindi, Mandarin, and Russian as well as American English, British English, and Canadian English.

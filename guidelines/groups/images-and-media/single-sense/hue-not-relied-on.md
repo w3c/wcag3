@@ -15,7 +15,6 @@ Information conveyed includes presenting data or meaning, indicating an action, 
 :::
 
 :::tests
-
 <b>Procedure</b>
 
 For each instance where information is conveyed by hue: 
@@ -25,3 +24,4 @@ For each instance where information is conveyed by hue:
 <b>Expected results</b>
 
 * #2 is true
+:::

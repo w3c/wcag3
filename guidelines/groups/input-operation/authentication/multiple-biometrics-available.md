@@ -21,3 +21,4 @@ For each method of user authentication:
 
 <b>Expected results</b>
 * #1 is true
+:::

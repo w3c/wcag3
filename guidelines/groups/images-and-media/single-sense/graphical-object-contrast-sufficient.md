@@ -7,7 +7,7 @@ Parts of graphical object required to understand the content meet a minimum :ter
 
 :::except-when
 * a particular presentation of graphical objects is essential to the information being conveyed.
-
+:::
 
 :::tests
 <b>Procedure</b>
@@ -19,5 +19,4 @@ For each graphical object that conveys information:
 
 <b>Expected results</b>
 * #1 is true.
-
 :::
