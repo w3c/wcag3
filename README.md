@@ -268,10 +268,12 @@ The following leaf directives are to be used before required and recommended doc
 
 ```
 ::assertion-required
+
 - List item
 - ...
 
 ::assertion-recommended
+
 - List item
 - ...
 ```

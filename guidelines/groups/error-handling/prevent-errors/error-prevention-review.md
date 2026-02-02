@@ -18,12 +18,12 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 * automatically correct input errors when possible and reliable, and
 * provide the user with known suggestions and corrections.
 
-Information that needs to be included publicly:
+::assertion-required
 
 * Title, role or organization making the assertion
 * Date of assertion (if different from the date of the conformance claim)
 
-Recommended internal documentation (Informative):
+::assertion-recommended
 
 * Documentation of which forms were reviewed
 * Documentation of any changes made as a result of the review

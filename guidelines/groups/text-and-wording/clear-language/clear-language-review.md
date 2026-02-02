@@ -13,13 +13,13 @@ type: assertion
     * If a style guide is used by :term[content authors], it must provide guidance on these aspects of clear language. 
     * If author training is provided, it must provide guidance on these aspects of clear language.
 
-Information that needs to be included publicly:
+::assertion-required
 
 * Title, role, or organization making the assertion (if different from the conformance claim).
 * Date of when the policy was implemented.
 * Date of assertion (if different from the date of the conformance claim).
 
-Recommended internal documentation (Informative):
+::assertion-recommended
 
 * Copy of the policy implementing the clear language review.
 * Date author training was provided (if any).

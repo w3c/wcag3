@@ -10,13 +10,13 @@ type: assertion
   - Within the component, :term[interactive elements] with the same function have consistent labels.
   - Standard user interface designs for the platform are used when applicable.
 
-Information that needs to be included publicly:
+::assertion-required
 
 - Title, role or organization making the assertion (if different from the conformance claim).
 - Date of when the review was completed.
 - Date of assertion (if different from the date of the conformance claim).
 
-Recommended internal documentation (Informative):
+::assertion-recommended
 
 - Results from the review.
 - Process or policy for maintaining the review.

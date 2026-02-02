@@ -10,9 +10,11 @@ status: developing
 * We removed any deceptive practices found.
 
 ::assertion-required
+
 * Title, role or organization making the assertion.
 * Date of assertion.
 * The deceptive practices evaluated.
 
 ::assertion-recommended
+
 * Maintain records of deceptive practices found, and resolutions.

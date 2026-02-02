@@ -13,12 +13,12 @@ status: developing
     * Changing the location of captions; and
     * Changing the language of the audio descriptions.
 
-Information that needs to be included publicly:
+::assertion-required
 
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
 
-Recommended internal documentation (Informative):
+::assertion-recommended
 
 * Video player documentation exists detailing functional support for media alternatives.
 

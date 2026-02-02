@@ -8,6 +8,7 @@ status: developing
 * We have a policy and process to review — and have reviewed — the data set, results, and/or algorithm in order to minimize the possibility that algorithms are disadvantageous for people with disabilities.
 
 ::assertion-required
+
 * Title, role or organization making the assertion
 * Date of assertion
 * Disabilities considered
@@ -15,6 +16,7 @@ status: developing
 * Review scope
 
 ::assertion-recommended
+
 * Results
 * Copy of any process and policy
 * Copy of usability testing, if conducted

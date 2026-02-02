@@ -15,9 +15,11 @@ It is often helpful for users to understand where within a product they are. The
 :::
 
 ::assertion-required
+
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
 
 ::assertion-recommended
+
 * Design log capturing decision to use specific approaches to current location patterns used within the product.
 * If a non-convention design pattern is used, usability testing results that demonstrate the utility of the design approach taken.
