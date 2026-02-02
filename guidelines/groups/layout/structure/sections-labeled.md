@@ -13,8 +13,6 @@ status: developing
 * Add example(s) of labels and heading usage
 :::
 
-<div class="issue" data-number="477"></div>
-
 :::tests
 <i>Meaningful label</i>
 

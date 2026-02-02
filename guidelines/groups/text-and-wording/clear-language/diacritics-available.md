@@ -5,8 +5,6 @@ type: supplemental
 
 Diacritics required to identify the correct meaning of each word are available.
 
-<div class="issue" data-number="490"></div>
-
 :::applies-when 
 * a human language has a version that removes diacritics for proficient readers.
 :::

@@ -3,9 +3,6 @@ status: exploratory
 type: foundational
 ---
 
-<div class="issue" data-number="441"></div>
-<div class="issue" data-number="442"></div>
-
 Use of assistive technology, accessible alternative versions, accessibility-related modifications of digital content, and accessibility-related settings do not expose people with disabilities to additional risk. 
 
 :::applies-when

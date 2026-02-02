@@ -5,8 +5,6 @@ type: foundational
 
 Information is not conveyed through visual depth perception alone.
 
-<div class="issue" data-number="422"></div>
-
 :::tests
 <b>Procedure</b>
 For each instance where information is conveyed by visual depth: 

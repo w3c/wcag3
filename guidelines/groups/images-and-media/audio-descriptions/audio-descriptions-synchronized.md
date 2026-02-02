@@ -3,8 +3,6 @@ type: foundational
 status: developing
 ---
 
-<div class="issue" data-number="455"></div>
-
 :term[Audio descriptions] are synchronized with :term[video] :term[content] without overlapping dialogue and meaningful :term[audio] content.
 
 :::except-when

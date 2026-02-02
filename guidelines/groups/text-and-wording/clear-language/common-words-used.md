@@ -6,8 +6,6 @@ type: supplemental
 
 Common words are used, and definitions are available for uncommon words. 
 
-<div class="issue" data-number="425"></div>
-
 :::applies-when
 * human languages have more than 1,500 words
 :::

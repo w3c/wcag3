@@ -14,8 +14,6 @@ A visual and programmatically available mechanism exists that allows users to re
 Where the product is a sub-product then the starting point should be the sub-product starting point. For example, an organization's careers website that is separate from the main website.
 :::
 
-<div class="issue" data-number="448"></div>
-
 :::tests
 <i>HTML homepage link</i>
 

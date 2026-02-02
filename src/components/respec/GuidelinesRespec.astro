@@ -254,24 +254,6 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
-  function collapseIssues() {
-    document.querySelectorAll(".issue").forEach((el) => {
-      const detailsEl = document.createElement("details");
-      detailsEl.id = el.id;
-      detailsEl.className = el.className;
-      for (const child of el.children) {
-        if (child.classList?.contains("issue-title")) {
-          const summaryEl = document.createElement("summary");
-          summaryEl.innerHTML = el.querySelector(".issue-title").innerHTML;
-          detailsEl.appendChild(summaryEl);
-        } else {
-          detailsEl.appendChild(child);
-        }
-      }
-      el.replaceWith(detailsEl);
-    });
-  }
-
   function outputJson() {
     const params = new URLSearchParams(window.location.search);
     if (params.get("json") != null) {
@@ -492,7 +474,6 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       numberNotes,
       renumberExamples,
       removeImgSize,
-      collapseIssues,
       outputJson,
     ],
 

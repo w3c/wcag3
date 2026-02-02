@@ -6,8 +6,6 @@ status: developing
 
 :term[Meaningful blocks of content] are programmatically determinable and visually presented with sufficient surrounding space.
 
-<div class="issue" data-number="476"></div>
-
 :::tests
 <i>HTML sufficient space</i>
 

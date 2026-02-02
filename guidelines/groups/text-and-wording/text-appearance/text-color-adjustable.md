@@ -5,8 +5,6 @@ type: foundational
 
 The foreground and background color of text can be adjusted without losing content or functionality.
 
-<div class="issue" data-number="501"></div>
-
 :::note
 The requirement is that the text is manipulable and the colors can be overridden. That could be achieved by the user-agent (including operating system, browser, and assistive technology), or provided by the content author.
 :::

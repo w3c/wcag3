@@ -5,8 +5,6 @@ status: developing
 
 :term[Relationships of meaning] between elements are conveyed programmatically.
 
-<div class="issue" data-number="451"></div>
-
 :::tests
 <i>HTML hierarchical relationship</i>
 

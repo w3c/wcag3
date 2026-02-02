@@ -4,8 +4,6 @@ status: exploratory
 type: supplemental
 ---
 
-<div class="issue" data-number="468"></div>
-
 Automatically generated text descriptions are editable by the :term[content] creator.
 
 :::tests

@@ -5,8 +5,6 @@ status: developing
 
 The current step within a multi-step process is visually and programmatically indicated.
 
-<div class="issue" data-number="445"></div>
-
 :::tests
 <i>ARIA current</i>
 

@@ -9,8 +9,6 @@ status: developing
 * The technology does not support heading levels.
 :::
 
-<div class="issue" data-number="478"></div>
-
 :::tests
 <i>Headings set at right level</i>
 

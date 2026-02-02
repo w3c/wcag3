@@ -5,8 +5,6 @@ type: supplemental
 
 Content that is exported, saved, or printed retains user-applied text-appearance customizations.
 
-<div class="issue" data-number="502"></div>
-
 :::applies-when
 * the page/view can be exported, saved, or printed.
 :::

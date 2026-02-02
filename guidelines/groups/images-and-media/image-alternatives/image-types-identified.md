@@ -3,8 +3,6 @@ status: exploratory
 type: supplemental
 ---
 
-<div class="issue" data-number="469"></div>
-
 The :term[image types] (photo, illustration, chart, etc.) are indicated.
 
 :::except-when

@@ -4,8 +4,6 @@ status: developing
 title: Direction indicated (immersive)
 ---
 
-<div class="issue" data-number="465"></div>
-
 In 360-degree digital environments, the direction of a sound or speech is indicated when :term[audio] is heard from outside the current :term[view]. 
 
 :::example

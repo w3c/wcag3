@@ -4,8 +4,6 @@ status: developing
 title: Audio descriptions available (prerecorded)
 ---
 
-<div class="issue" data-number="454"></div>
-
 :term[Audio descriptions] are available in prerecorded :term[video] for visual :term[content] needed to understand the media.
 
 :::ednote
