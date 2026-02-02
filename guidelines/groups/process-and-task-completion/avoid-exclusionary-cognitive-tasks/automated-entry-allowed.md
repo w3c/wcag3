@@ -1,7 +1,6 @@
 ---
 status: developing
 type: foundational
-title: Automated entry allowed
 ---
 
 Automated input of personal information from user agents, third-party tools, or paste is not prevented.
