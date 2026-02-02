@@ -1,11 +1,11 @@
 ---
 children:
   - abbreviations-explained
-  - no-nested-clauses
   - non-literal-language-explained
   - summaries-available
   - common-words-used
   - diacritics-available
+  - no-nested-clauses
   - no-unnecessary-words
   - numerical-alternatives-available
   - clear-language-review

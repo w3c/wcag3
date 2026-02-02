@@ -1,7 +1,7 @@
 ---
 children:
   - text-detectable
-  - human-language-available
+  - human-language-detectable
   - text-appearance-not-relied-on
   - numerical-metadata-available
 title: Text-to-speech
