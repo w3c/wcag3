@@ -71,7 +71,8 @@ export const collections = {
         .enum([
           "foundational",
           "supplemental",
-          "assertion", // TODO: do assertions warrant distinct (or fewer) fields?
+          "assertion",
+          "best practice",
         ])
         .optional(),
     }),

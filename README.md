@@ -48,9 +48,9 @@ Additional directories with special meaning:
     - `index.json` - Defines order of grouping sections
     - `{group-name}.json` - Defines order of underlying guideline sections; can specify status or title
     - `{group-name}/` - Contents of Guideline sections
-      - `{guideline-name}.md` - Defines content of guideline and order of its requirements/assertions
-      - `{guideline-name}/` - Subdirectory containing requirements/assertions under each guideline
-        - `{requirement-or-assertion-name}.md` - Defines content of an individual requirement or assertion
+      - `{guideline-name}.md` - Defines content of guideline and order of its child provisions
+      - `{guideline-name}/` - Subdirectory containing provisions (e.g. requirements/assertions) under each guideline
+        - `{provision-name}.md` - Defines content of an individual requirement or assertion
   - `terms/` - Contents of terms defined in the Glossary
 
 ### Notable Subdirectories under `src`
@@ -64,7 +64,7 @@ Additional directories with special meaning:
 ### Supported Fields
 
 This section explains the fields available to frontmatter defined at the top of Markdown files
-for guidelines, requirements/assertions, and terms, and within JSON files for groups.
+for guidelines, provisions, and terms, and within JSON files for groups.
 
 For those unfamiliar with the term, frontmatter refers to YAML written at the top of a file,
 surrounded on each side by a line consisting of 3 hyphens.
@@ -99,15 +99,15 @@ subdirectory with the same name.
 
 #### Guidelines
 
-Represents each fourth-level heading that multiple requirements/assertions are
-listed under. Each guideline is defined in a Markdown file, with its child
-requirements/assertions located in a subdirectory with the same name.
+Represents each fourth-level heading that multiple provisions (requirements/assertions)
+are listed under. Each guideline is defined in a Markdown file, with its child
+provisions located in a subdirectory with the same name.
 
 - Supports [common fields](#common-fields): `children`, `howto`, `status`, `title`
   - `status` for guidelines is optional, limited to `developing`, `refining`, `mature`
 - No additional unique fields
 
-#### Requirements and Assertions
+#### Provisions
 
 Represents each fifth-level heading specifying an individual requirement or assertion.
 
@@ -117,7 +117,7 @@ Represents each fifth-level heading specifying an individual requirement or asse
   display a "needs additional research" editor's note
 - `tags` - Optional list of strings, referencing values in `guidelines/tags.json`
   - Make sure to surround these values in double-quotes to avoid YAML parsing errors
-- `type` - Optional string: `foundational`, `supplemental`, or `assertion`
+- `type` - Optional string: `foundational`, `supplemental`, `assertion`, or `best practice`
   - If not specified, the entry will be rendered as "Requirement"
     (with neither "Foundational" nor "Supplemental" qualification)
 
@@ -353,7 +353,7 @@ To create a new guideline:
      @@ add guideline text here
 
      ```
-     We will expand `children` to a multi-line list when adding requirements/assertions.
+     We will expand `children` to a multi-line list when adding provisions.
      Note that including some content after the frontmatter is also necessary for the build to function.
 1. Follow the instructions below to create at least one requirement
    or assertion within the guideline
@@ -365,7 +365,7 @@ its parent group as `group-name`, and the new child requirement as `requirement-
 
 Note that the process is the same for requirements or assertions; the only difference is
 the value of `type` in the entry's frontmatter
-(see [Fields for Requirements and Assertions](#requirements-and-assertions)).
+(see [Fields for Provisions](#provisions)).
 
 1. Under the desired guideline's folder, create a Markdown file
    (e.g. `groups/group-name/guideline-name/requirement-name.md`)
@@ -399,5 +399,5 @@ built code is not expected to run properly when this is active!
 
 ### `WCAG_SKIP_WIP`
 
-When set, excludes requirements/assertions that have `needsAdditionalResearch` set to `true`,
+When set, excludes provisions that have `needsAdditionalResearch` set to `true`,
 or that have `status` set to `placeholder` or `exploratory`.
