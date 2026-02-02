@@ -9,8 +9,6 @@ The default visual presentation of text meets @@[X contrast measure, at a higher
 
 :::ednote
 The contrast algorithm used in WCAG 3 is yet to be determined. For this draft, the requirement assumes the algorithm will include a size/weight factor. If the algorithm does not include size/weight, it will need to be added to this requirement text.
-
-For this supplemental level requirement, the default minimum will likely be roughly equivalent to the WCAG 2 success criterion of a :term[contrast ratio] of at least 7:1 for text and at least 4.5:1 for :term[large-scale] text.
 :::
 
 :::applies-when
