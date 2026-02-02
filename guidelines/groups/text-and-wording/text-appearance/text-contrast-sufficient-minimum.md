@@ -30,8 +30,6 @@ Transparency can cause testing issues, but should be tested as the rendered colo
 The contrast algorithm used in WCAG 3 is yet to be determined. For this draft, the requirement assumes the algorithm will include a size/weight factor. If the algorithm does not include size/weight, it will need to be added to this requirement text.
 
 A separate requirement may be needed if red/green color vision deficiency (CVD) is not accounted for within the contrast algorithm.
-
-For this core requirement, the default minimum will likely be roughly equivalent to the WCAG 2 success criterion of a :term[contrast ratio] of at least 4.5:1 for text and at least 3:1 for :term[large-scale] text.
 :::
 
 :::tests
