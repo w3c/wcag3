@@ -1,6 +1,7 @@
 ---
 status: developing
 type: foundational
+title: Focus user-controlled
 ---
 
 The :term[keyboard focus] only moves as a result of user interaction.

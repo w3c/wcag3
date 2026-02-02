@@ -1,7 +1,7 @@
 ---
 children:
   - preselections-visible
-  - no-artificial-pressure
+  - no-artificial-time-limits
   - deceptive-practices-usability-testing
   - messaging-expert-review
 ---
