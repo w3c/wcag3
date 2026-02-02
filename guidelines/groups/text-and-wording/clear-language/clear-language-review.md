@@ -3,7 +3,6 @@ status: developing
 type: assertion
 ---
 
-:::example
 [Title, role, or organization] asserts that:
 
 * Our organization has a process and policy to review :term[text content] for :term[clear language] before publication. The process includes confirming:
@@ -13,7 +12,6 @@ type: assertion
     * Paragraphs that convey information begin with a sentence stating the main point or purpose (often called a topic sentence).
     * If a style guide is used by :term[content authors], it must provide guidance on these aspects of clear language. 
     * If author training is provided, it must provide guidance on these aspects of clear language.
-:::
 
 Information that needs to be included publicly:
 
