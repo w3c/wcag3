@@ -3,7 +3,7 @@ children:
   - images-detectable
   - decorative-images-hidden
   - image-alternatives-available
-  - image-type-identified
+  - image-types-identified
   - alternative-text-editable
   - image-alternatives-style-guide
 ---
