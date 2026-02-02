@@ -3,18 +3,15 @@ type: assertion
 status: developing
 ---
 
-:term[Content author(s)] have reviewed the :term[media alternatives].
-
-* Role of the creator
-* Number of creators (for each Role)
-* Date (Period) of review
-* Examples of fixed issues based on the feedback
-
-:::example
 [Title, role, or organization] asserts that:
 
-* content authors have reviewed the media alternatives.
+* We have reviewed the :term[media alternatives].
+  * Role of the creator
+  * Number of creators (for each Role)
+  * Date (Period) of review
+  * Examples of fixed issues based on the feedback
 
+:::example
 * **Roles and numbers:** 3 creators
   * 1 director
   * 1 planner

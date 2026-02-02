@@ -3,13 +3,11 @@ status: exploratory
 type: assertion
 ---
 
-We assert that we follow an organizational style guide for image :term[text alternatives].
-
-:::example
 [Title, role, or organization] asserts that:
 
-* This content is in the current organizational style guide for image text alternatives.
+* We follow an organizational style guide for image :term[text alternatives].
 
+:::example
 * Name: ABC Inc. Style Guide for text alternatives
 * Version 1.2
 * Date: 9 October 2024
@@ -20,10 +18,9 @@ We assert that we follow an organizational style guide for image :term[text alte
   * Recommended style of text alternatives
   * Resources
   * The style guide has requirements such as:
-     * Provide equivalent information
-     * Write text on the image as it is
-     * Don't omit information provided by the image
-and so on.
+    * Provide equivalent information.
+    * Write text on the image as it is.
+    * Don't omit information provided by the image.
 :::
 
 :::tests

@@ -6,11 +6,9 @@ title: Sign language available (live)
 
 <div class="issue" data-number="471"></div>
 
-We provide :term[Sign language interpretation] for all :term[live] :term[audio] content in the primary sign language of the intended audience or region.
+[Title, role, or organization] asserts that:
 
-:::example
-[Title, role, or organization] asserts that we provide sign language interpretation for all live audio content in the primary sign language of the intended audience or region.
-:::
+* We provide :term[Sign language interpretation] for all :term[live] :term[audio] content in the primary sign language of the intended audience or region.
 
 Information that needs to be included publicly:
 

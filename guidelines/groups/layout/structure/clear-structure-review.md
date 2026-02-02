@@ -3,8 +3,8 @@ type: assertion
 status: developing
 ---
 
-:::example
-[Title, role, or organization] asserts that: 
+[Title, role, or organization] asserts that:
+
 * Our organization has a process and policy for reviewing written content for clear structure before publication. The process includes confirming:
     * all of the core requirements in the Structure guideline are met
     * content sections are as concise as possible
@@ -12,7 +12,6 @@ status: developing
     * authors consider when to turn sentences into lists to make the information easier to understand and remember
 * If a style guide is used by authors, it must provide guidance on these aspects of clear structure. 
 * If author training is provided, it must provide guidance on these aspects of clear structure.
-:::
 
 ::assertion-required
 * Title, role or organization making the assertion (if different from the conformance claim).

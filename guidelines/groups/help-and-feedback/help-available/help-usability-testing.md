@@ -3,14 +3,9 @@ status: developing
 type: assertion
 ---
 
-Help and training was added based on usability testing with people with cognitive and mental health disabilities to identify gaps. Solutions include help with completing functionality such as data entry, task completion and search and understanding complex ideas and visualizations.
-
-:::example
 [Title, role, or organization] asserts that:
-- Help and training was added based on usability testing with people with cognitive and mental health disabilities to identify gaps.
-- Solutions include help with completing functionality such as data entry, task completion and search and understanding complex ideas and visualizations.
-:::
- 
+
+* Help and training was added based on usability testing with people with cognitive and mental health disabilities to identify gaps.
 
 ::assertion-required
 * Title, role or organization making the assertion (if different from the conformance claim).
@@ -21,3 +16,6 @@ Help and training was added based on usability testing with people with cognitiv
 * Usability findings
 * Solutions added
 
+:::example
+Solutions include help with completing functionality such as data entry, task completion, search, and understanding complex ideas and visualizations.
+:::

@@ -3,11 +3,9 @@ status: developing
 type: assertion
 ---
 
-:::example
 [Title, role, or organization] asserts that:
 
-* Our organization has a process and policy for reviewing :term[text content] to identify complex ideas such as processes, workflows, relationships, or chronological information and adding :term[visual aids] to help readers understand them.
-:::
+* Our organization has a process and policy for reviewing :term[text content] to identify complex ideas such as processes, workflows, relationships, or chronological information, and adding :term[visual aids] to help readers understand them.
 
 Information that needs to be included publicly:
 

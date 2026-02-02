@@ -3,11 +3,9 @@ type: assertion
 status: developing
 ---
 
-:::example
 [Title, role or organization] asserts that:
 
-- We conducted usability testing to ensure that a diverse group of users, including people with cognitive and mental health challenges, understand the the site's information hierarchy and menu organization and are able to find key information.
-:::
+* We conducted usability testing to ensure that a diverse group of users, including people with cognitive and mental health challenges, understand the site's information hierarchy and menu organization and are able to find key information.
 
 ::assertion-required
 * Title, role or organization making the assertion

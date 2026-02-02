@@ -3,13 +3,9 @@ status: developing
 type: assertion
 ---
 
-We assert that we have tested voice input and communication systems with generated speech to ensure the systems work with artificial speech as well as human speech.
-
-:::example
 [Title, role, or organization] asserts that:
 
 - We have tested voice input and communication systems with generated speech to ensure the systems work with artificial speech as well as human speech.
-:::
 
 Information that needs to be included publicly:
 

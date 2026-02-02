@@ -3,13 +3,11 @@ type: assertion
 status: developing
 ---
 
-:term[Content author(s)] assert that they follow a style guide that includes guidance on :term[media alternatives].
-
-:::example
 [Title, role, or organization] asserts that:
 
-* This content is in the current style guide for image media alternatives.
+* We follow a style guide that includes guidance on :term[media alternatives].
 
+:::example
 * **Name:** ABC Inc. Style Guide for Captions
 * **Version:** 1.2
 * **Date:** October 2024

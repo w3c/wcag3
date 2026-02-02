@@ -3,16 +3,13 @@ status: developing
 type: assertion
 ---
 
-We assert that :term[components] follow established conventions.
-
-:::example
 [Title, role, or organization] asserts that:
 
-- each component follows applicable platform conventions for how users interact with that type of component
-- if a component library is used, then each component in the library: 
-    - is tested for accessibility before being used, and
-    - follows applicable platform conventions for how users interact with that type of component.
-:::
+- :term[Components] follow established conventions.
+  - Each component follows applicable platform conventions for how users interact with that type of component.
+  - If a component library is used, then each component in the library: 
+    - is tested for accessibility before being used
+    - follows applicable platform conventions for how users interact with that type of component
 
 :::note
 A component library specifies a set of standardized components used in a product or products. It can include code to use, but at a minimum would define how the component is used and define pointer, keyboard, and assistive technology interactions.
