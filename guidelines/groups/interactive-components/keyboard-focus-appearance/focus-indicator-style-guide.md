@@ -6,7 +6,9 @@ type: assertion
 :term[Content author(s)] follow a style guide that includes guidance on focus indicators.
 
 :::example
-[Title, role, or organization] asserts that: Content author(s) follow a design style guide that includes guidance on focus indicators.
+[Title, role, or organization] asserts that:
+
+- Content author(s) follow a design style guide that includes guidance on focus indicators.
 :::
 
 Information that needs to be included publicly:

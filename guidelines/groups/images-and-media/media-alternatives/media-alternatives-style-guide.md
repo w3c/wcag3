@@ -6,6 +6,10 @@ status: developing
 :term[Content author(s)] assert that they follow a style guide that includes guidance on :term[media alternatives].
 
 :::example
+[Title, role, or organization] asserts that:
+
+* This content is in the current style guide for image media alternatives.
+
 * **Name:** ABC Inc. Style Guide for Captions
 * **Version:** 1.2
 * **Date:** October 2024
@@ -29,4 +33,3 @@ Information that needs to be included publicly:
 * Date of assertion (if different from the date of the conformance claim).
 * Summary of the needs of users involved.
 * Identified issues and details of solutions applied.
-:::

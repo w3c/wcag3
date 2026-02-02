@@ -8,6 +8,10 @@ title: Sign language available (live)
 
 We provide :term[Sign language interpretation] for all :term[live] :term[audio] content in the primary sign language of the intended audience or region.
 
+:::example
+[Title, role, or organization] asserts that we provide sign language interpretation for all live audio content in the primary sign language of the intended audience or region.
+:::
+
 Information that needs to be included publicly:
 
 * Title, role or organization making the assertion (if different from the conformance claim).

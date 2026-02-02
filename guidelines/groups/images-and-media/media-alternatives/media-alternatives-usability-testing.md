@@ -5,7 +5,7 @@ status: developing
 
 <div class="issue" data-number="473"></div>
 
-tests were conducted with users who need :term[media alternatives], and the issues were fixed based on the findings.
+We conduct tests with users who need :term[media alternatives], and the issues were fixed based on the findings.
 
 * Scope
 * Types of disabilities each user had
@@ -14,6 +14,10 @@ tests were conducted with users who need :term[media alternatives], and the issu
 * Examples of fixed issues based on the results
 
 :::example
+[Title, role, or organization] asserts that:
+
+* We conduct tests with users who need media alternatives, and the issues were fixed based on the findings.
+
 * **Scope:** videos on the following URLs:
   * "What is accessibility?" https://xxx.xxx/yyyy1
   * "About assistive technologies" https://xxx.xxx/yyyy2

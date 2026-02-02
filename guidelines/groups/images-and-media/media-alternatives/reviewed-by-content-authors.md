@@ -11,6 +11,10 @@ status: developing
 * Examples of fixed issues based on the feedback
 
 :::example
+[Title, role, or organization] asserts that:
+
+* content authors have reviewed the media alternatives.
+
 * **Roles and numbers:** 3 creators
   * 1 director
   * 1 planner

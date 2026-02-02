@@ -3,6 +3,7 @@ status: developing
 type: assertion
 ---
 
+:::example
 [Title, role or organization] asserts that: 
 
 * For each form in the conformance claim, we have reviewed the form designs to reduce the possibility of users making mistakes. 
@@ -17,6 +18,7 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 * use common words and metrics or units that users are likely to be familiar with,
 * automatically correct input errors when possible and reliable, and
 * provide the user with known suggestions and corrections.
+:::
 
 Information that needs to be included publicly:
 

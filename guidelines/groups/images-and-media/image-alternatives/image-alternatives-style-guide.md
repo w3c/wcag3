@@ -6,6 +6,10 @@ type: assertion
 We assert that we follow an organizational style guide for image :term[text alternatives].
 
 :::example
+[Title, role, or organization] asserts that:
+
+* This content is in the current organizational style guide for image text alternatives.
+
 * Name: ABC Inc. Style Guide for text alternatives
 * Version 1.2
 * Date: 9 October 2024

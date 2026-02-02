@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Components that can be activated or entered using the keyboard interface, can be deactivated or exited using a standard keyboard navigation-operation technique,standard platform keyboard commands.
+Components that can be activated or entered using the keyboard interface, can be deactivated or exited using a standard keyboard navigation-operation technique, standard platform keyboard commands.
 
 :::except-when
 The non-standard keyboard navigation technique is described on the :term[page] / :term[view] or earlier in the :term[process].

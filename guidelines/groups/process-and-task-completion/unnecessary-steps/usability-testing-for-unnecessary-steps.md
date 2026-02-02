@@ -3,9 +3,11 @@ status: developing
 type: assertion
 ---
 
+:::example
 [Title, role, or organization] asserts that:
 * usability testing has been conducted to review for unnecessary steps in the process or unnecessary information being requested, and
 * the sample of test participants included people with cognitive disabilities and/or mental health based disabilities.
+:::
 
 ::assertion-required
 * Title, role or organization making the assertion.

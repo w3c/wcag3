@@ -3,10 +3,12 @@ type: assertion
 status: developing
 ---
 
+:::example
 [Title, role, or organization] asserts that:
 
-* Reviewed conventions for presenting current location within a product or process.
+* We have reviewed conventions for presenting current location within a product or process.
 * The presentation of current location within a product or process uses appropriate visually and programmatically patterns.
+:::
 
 <div class="issue" data-number="449"></div>
 
