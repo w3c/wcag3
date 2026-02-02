@@ -14,7 +14,8 @@ The :term[image types] (photo, illustration, chart, etc.) are indicated.
 :::
 
 :::example
-Examples of the types include, but not limited to:
+Examples of the types include, but are not limited to:
+
 * Photograph
 * Illustration
 * Chart

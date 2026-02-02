@@ -6,7 +6,7 @@ children:
   - captions-unobstructed
   - captions-synchronized
   - caption-features-available
-  - consistent-captions
+  - captions-consistent
   - captions-centered-immersive
   - captions-controllable
   - direction-indicated-immersive

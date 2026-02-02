@@ -7,7 +7,7 @@ children:
   - speaker-language-identified
   - sounds-identified
   - visual-information-identified
-  - non-verbal-cues
+  - non-verbal-cues-identified
   - sign-language-available-prerecorded
   - sign-language-available-live
   - media-alternatives-style-guide

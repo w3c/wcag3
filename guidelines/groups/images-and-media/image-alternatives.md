@@ -2,8 +2,8 @@
 children:
   - images-detectable
   - decorative-images-hidden
-  - images-not-relied-on
-  - image-type
+  - image-alternatives-available
+  - image-type-identified
   - alternative-text-editable
   - image-alternatives-style-guide
 ---

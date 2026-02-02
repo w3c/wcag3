@@ -2,7 +2,7 @@
 needsAdditionalResearch: true
 status: exploratory
 type: supplemental
-title: Non-verbal cues
+title: Non-verbal cues identified
 ---
 
 Nonverbal cues needed to understand the media are explained in :term[media alternatives].
