@@ -5,7 +5,8 @@ type: supplemental
 
 Sentences do not include redundant or unnecessarily wordy phrases.
 
-:::except-when :term[text content] is:
+:::except-when
+:term[text content] is:
 * poetic,
 * scriptural,
 * artistic, or
