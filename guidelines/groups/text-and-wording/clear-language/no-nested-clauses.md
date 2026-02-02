@@ -5,8 +5,9 @@ type: supplemental
 
 Sentences do not include :term[nested clauses].
 
-:::except-when :term[text content]:
-* is poetic, scriptural, artistic, or expressive rather than informational, or :::
+:::except-when
+:term[text content]:
+* is poetic, scriptural, artistic, or expressive rather than informational, or
 * provides :term[legal information].
 :::
 
