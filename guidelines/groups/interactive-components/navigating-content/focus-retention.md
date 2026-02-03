@@ -7,6 +7,7 @@ A user can focus on a :term[content] "area", such as a modal or popup, then resu
 :::tests
 
 **Procedure**
+
 For each situation where the keyboard focus is removed:
 1. verify that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
 
