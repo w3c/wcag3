@@ -21,6 +21,7 @@ Content does not have to re-layout or change aspect ratio in a different orienta
 
 :::tests
 <b>Procedure</b>
+
 For platforms which have a default orientation:
 1. Open the content.
 2. Check that the orientation aligns with the platform default.
