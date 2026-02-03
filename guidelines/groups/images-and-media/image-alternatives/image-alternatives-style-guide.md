@@ -14,7 +14,7 @@ type: assertion
 
 ::assertion-recommended
 
-* Section labels relevent to image alterantives, or
+* Section labels relevant to image alternatives, or
 * Copy or snapshot of the style guide
 
 :::example
