@@ -1,7 +1,6 @@
 ---
 children:
   - focus-relevant
-  - focus-in-viewport
   - focus-retention
   - focus-order-meaningful
 ---
