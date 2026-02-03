@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-Sentences do not include :term[unnecessarily wordy] phrases.
+Sentences do not include :term[unnecessary words].
 
 :::except-when
 :term[text content] is:
@@ -21,7 +21,7 @@ Sentences do not include :term[unnecessarily wordy] phrases.
 :::
 
 :::note 
-Automated tools can help :term[content authors] identify unnecessarily wordy phrases in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
+Automated tools can help :term[content authors] identify unnecessary words in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
 :::
 
 :::tests
@@ -29,7 +29,7 @@ Automated tools can help :term[content authors] identify unnecessarily wordy phr
 <b>Procedure</b>
 
 For each sentence:
-1. Identify any phrases that may be unnecessarily wordy.
+1. Identify any words that may be unnecessary.
 2. Remove or replace the phrase with a simpler alternative.
 3. Check that no meaning is lost.
 4. Check that a technology in the :term[accessibility support set] meets ‘No unnecessary words.’
