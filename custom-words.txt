@@ -28,6 +28,7 @@ earcons
 hoverable
 incentivizes
 inclusivity
+leetspeak
 mouseup
 numeronym
 numeronyms
