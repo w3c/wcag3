@@ -27,7 +27,7 @@ status: developing
 ::assertion-required
 
 * Title, role or organization making the assertion (if different from the conformance claim).
-* Date of when the usability testing was conducted.
+* Date of when the style guide was published.
 * Date of assertion (if different from the date of the conformance claim).
 * Summary of the needs of users involved.
 * Identified issues and details of solutions applied.
