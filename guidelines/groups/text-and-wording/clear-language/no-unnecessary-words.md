@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-Sentences do not include redundant or unnecessarily wordy phrases.
+Sentences do not include :term[unnecessarily wordy] phrases.
 
 :::except-when
 :term[text content] is:
@@ -11,10 +11,6 @@ Sentences do not include redundant or unnecessarily wordy phrases.
 * scriptural,
 * artistic, or
 * expressive rather than informational. 
-:::
-
-:::note
-Automated tools can help identify redundant or unnecessarily wordy phrases in many languages, including Arabic, English, Hindi, Mandarin, and Russian. 
 :::
 
 :::example
@@ -27,8 +23,12 @@ Automated tools can help identify redundant or unnecessarily wordy phrases in ma
 :::tests
 
 <b>Procedure</b>
-1. Check that the :term[text content] does not include unnecessary words or phrases.
+For each sentence:
+1. Identify any phrases that may be unnecessarily wordy.
+2. Remove or replace the phrase with a simpler alternative.
+3. Check that no meaning is lost.
+4. Check that a technology in the :term[accessibility support set] meets ‘Common words used.’
 
 <b>Expected results</b>
-* #1 is true.
+* #3 or #4 is true.
 :::
