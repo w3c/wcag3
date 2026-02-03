@@ -20,6 +20,10 @@ Sentences do not include :term[unnecessarily wordy] phrases.
 * noun versions of verbs, such as ‘take into consideration’ (which can be shortened to ‘consider’)
 :::
 
+::note 
+Automated tools can help :[content authors] identify unnecessarily wordy phrases in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
+:::
+
 :::tests
 
 <b>Procedure</b>
