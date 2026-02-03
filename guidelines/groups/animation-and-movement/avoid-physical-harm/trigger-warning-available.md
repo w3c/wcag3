@@ -20,11 +20,12 @@ Note: Triggers are flashing, motion lasting more than 5 seconds, and pseudo-moti
 
 :::tests
 <b>Procedure</b>
-For each trigger: 
-2. Check if a warning is provided before the user encounters the trigger.
-3. Check that the same information is available without triggers. 
+
+For each trigger:
+1. Check if a warning is provided before the user encounters the trigger.
+2. Check that the same information is available without triggers. 
 
 
 <b>Expected results</b>
-* #2 and #3 are true
+* #1 and #2 are true
 :::
