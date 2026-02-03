@@ -5,7 +5,7 @@ type: assertion
 
 [Title, role, or organization] asserts that:
 
-* We have an organizational style guide that includes guidance on image :term[text alternatives] and a policy and/or processes that the style guide must be followed
+* Our organizational has a style guide that includes guidance on image :term[text alternatives] and a policy and/or processes that the style guide must be followed.
 
 ::assertion-required
 
@@ -14,7 +14,7 @@ type: assertion
 
 ::assertion-recommended
 
-* Section labels relevant to image alternatives, or
+* Section labels relevent to image alterantives, or
 * Copy or snapshot of the style guide
 
 :::example

@@ -11,6 +11,7 @@ status: developing
 
 * Title, role or organization making the assertion
 * Date of assertion
+* Date of the testing
 
 ::assertion-recommended
 
