@@ -5,12 +5,20 @@ status: developing
 
 [Title, role, or organization] asserts that:
 
-* We conduct tests with users who need :term[media alternatives], and the issues were fixed based on the findings.
-  * Scope
-  * Types of disabilities each user had
-  * Number of users (for each type of disability)
-  * Date of testing
-  * Examples of fixed issues based on the results
+* We have conducted usability testing with users who need :term[media alternatives], and changes were made to fix or mitigate the issues found.
+
+::assertion-required
+
+* Title, role or organization making the assertion (if different from the conformance claim).
+* Date of when the usability testing was conducted.
+* Date of assertion (if different from the date of the conformance claim).
+
+::assertion-recommended
+* Scope
+* Types of disabilities each user had
+* Number of users (for each type of disability)
+* Date of testing
+* Identified issues and details of solutions applied.
 
 :::example
 * **Scope:** videos on the following URLs:
@@ -26,11 +34,3 @@ status: developing
   * Described background music
   * Indicated that a dog was barking
 :::
-
-::assertion-required
-
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of when the usability testing was conducted.
-* Date of assertion (if different from the date of the conformance claim).
-* Summary of the needs of users involved.
-* Identified issues and details of solutions applied.

@@ -5,7 +5,17 @@ type: assertion
 
 [Title, role, or organization] asserts that:
 
-* We follow an organizational style guide for image :term[text alternatives].
+* We have an organizational style guide that includes guidance on image :term[text alternatives] and a policy and/or processes that the style guide must be followed
+
+::assertion-required
+
+* Title, role or organization making the assertion (if different from the conformance claim).
+* Date of assertion (if different from the date of the conformance claim).
+
+::assertion-recommended
+
+* Section labels relevent to image alterantives, or
+* Copy or snapshot of the style guide
 
 :::example
 * Name: ABC Inc. Style Guide for text alternatives
@@ -21,10 +31,4 @@ type: assertion
     * Provide equivalent information.
     * Write text on the image as it is.
     * Don't omit information provided by the image.
-:::
-
-:::tests
-<b>Information that needs to be included</b>
-* Title, role or organization making the assertion
-* Date of assertion
 :::

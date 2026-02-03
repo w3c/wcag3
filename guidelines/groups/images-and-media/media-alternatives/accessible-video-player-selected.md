@@ -13,15 +13,17 @@ status: developing
     * Changing the location of captions; and
     * Changing the language of the audio descriptions.
 
+:::applies-when
+a video is used that does not play in standard browsers.
+:::
+
 ::assertion-required
 
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion (if different from the date of the conformance claim).
+* Feature included from the list
 
 ::assertion-recommended
 
-* Video player documentation exists detailing functional support for media alternatives.
+* Video player documentation detailing functional support for media alternatives.
 
-:::applies-when
-a video is used that does not play in standard browsers.
-:::

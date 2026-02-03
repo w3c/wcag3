@@ -5,7 +5,21 @@ status: developing
 
 [Title, role, or organization] asserts that:
 
-* We follow a style guide that includes guidance on :term[media alternatives].
+* Our organizational has a style guide that includes guidance on :term[media alternatives] and a policy and/or processes that the style guide must be followed
+
+::assertion-required
+
+* Title, role or organization making the assertion (if different from the conformance claim).
+* Date of when the style guide was published.
+* Date of assertion (if different from the date of the conformance claim).
+
+::assertion-recommended
+
+* Summary of the needs of users involved.
+* Identified issues and details of solutions applied.
+* Section labels relevent to image alterantives, or
+* Copy or snapshot of the style guide
+
 
 :::example
 * **Name:** ABC Inc. Style Guide for Captions
@@ -24,10 +38,4 @@ status: developing
   * &hellip;
 :::
 
-::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of when the style guide was published.
-* Date of assertion (if different from the date of the conformance claim).
-* Summary of the needs of users involved.
-* Identified issues and details of solutions applied.

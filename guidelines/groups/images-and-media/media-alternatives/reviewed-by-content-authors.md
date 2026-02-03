@@ -6,10 +6,19 @@ status: developing
 [Title, role, or organization] asserts that:
 
 * We have reviewed the :term[media alternatives].
-  * Role of the creator
-  * Number of creators (for each Role)
-  * Date (Period) of review
-  * Examples of fixed issues based on the feedback
+
+::assertion-required
+
+* Title, role or organization making the assertion (if different from the conformance claim).
+* Date of the review
+* Date of assertion (if different from the date of the conformance claim).
+
+::assertion-recommended
+
+* Role of the creator
+* Number of creators (for each Role)
+* Date (Period) of review
+* Examples of fixed issues based on the review
 
 :::example
 * **Roles and numbers:** 3 creators

@@ -5,7 +5,7 @@ type: assertion
 
 [Title, role, or organization] asserts that:
 
-- :term[Content author(s)] follow a style guide that includes guidance on focus indicators.
+- Our organizational has a style guide that includes guidance on focus indicators and a policy and/or processes that the style guide must be followed.
 
 ::assertion-required
 
