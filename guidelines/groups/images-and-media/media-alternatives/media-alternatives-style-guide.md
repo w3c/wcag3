@@ -5,7 +5,7 @@ status: developing
 
 [Title, role, or organization] asserts that:
 
-* Our organizational has a style guide that includes guidance on :term[media alternatives] and a policy and/or processes that the style guide must be followed
+* Our organization has a style guide that includes guidance on :term[media alternatives] and a policy and/or processes that the style guide must be followed
 
 ::assertion-required
 
