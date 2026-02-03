@@ -13,8 +13,8 @@ status: developing
 
 * Title, role or organization making the assertion.
 * Date of assertion.
-* The deceptive practices evaluated.
 
 ::assertion-recommended
 
+* The deceptive practices evaluated.
 * Maintain records of deceptive practices found, and resolutions.

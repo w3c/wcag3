@@ -5,7 +5,7 @@ type: assertion
 
 [Title, role, or organization] asserts that:
 
-- :term[Components] with the same functionality behave consistently.
+- A review has been conducted and changes made (when necessary) to ensure that :term[Components] with the same functionality behave consistently:
   - Components that perform the same function behave in the same way and use the same visual indicators.
   - Within the component, :term[interactive elements] with the same function have consistent labels.
   - Standard user interface designs for the platform are used when applicable.

@@ -12,10 +12,10 @@ status: developing
 
 * Title, role or organization making the assertion (if different from the conformance claim).
 * Date of assertion.
-* Number of participants.
-* The deceptive practices evaluated.
 
 ::assertion-recommended
 
+* Number of participants.
+* The deceptive practices evaluated.
 * Maintain records of usability testing protocol, and results,
 * Disabilities represented within the group of participants.
