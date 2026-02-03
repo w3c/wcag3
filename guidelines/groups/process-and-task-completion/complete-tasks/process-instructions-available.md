@@ -10,7 +10,7 @@ The user needs to complete a multi-step process.
 :::
 
 :::tests
-<b>Procedure<b>
+<b>Procedure</b>
 
 For each multi-step process:
 
