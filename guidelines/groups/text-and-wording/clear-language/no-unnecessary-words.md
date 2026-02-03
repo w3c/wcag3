@@ -21,7 +21,7 @@ Sentences do not include :term[unnecessarily wordy] phrases.
 :::
 
 ::note 
-Automated tools can help :[content authors] identify unnecessarily wordy phrases in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
+Automated tools can help :term[content authors] identify unnecessarily wordy phrases in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
 :::
 
 :::tests
