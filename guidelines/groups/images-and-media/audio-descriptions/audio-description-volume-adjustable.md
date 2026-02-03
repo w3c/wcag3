@@ -7,6 +7,7 @@ A :term[mechanism] is available that allows users to control the :term[audio des
 
 :::tests
 <b>Procedure</b>
+
 For each media asset with visual content:
 1. Play the media with audio description on.
 2. Check that the media player provides users with control of the audio description volume separately from the main audio track.

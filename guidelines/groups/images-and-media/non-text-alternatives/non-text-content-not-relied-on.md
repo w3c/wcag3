@@ -21,6 +21,7 @@ All :term[non-text content] that is not decorative includes a programmatically d
 <i>(Mobile) Videos include accessible name</i>
 
 <b>Procedure</b>
+
 For each instance of non-text content:
 1. Using native mobile screen reader to review all videos in the app.
 2. When videos are navigated to an accessible name is read out.

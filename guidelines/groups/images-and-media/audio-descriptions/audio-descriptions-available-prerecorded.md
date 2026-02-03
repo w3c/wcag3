@@ -16,6 +16,7 @@ the video content is an alternative for text and clearly labelled as such.
 
 :::tests
 <b>Procedure</b>
+
 For prerecorded video:
 1. Check that audio description is available for visual content needed to understand the media
 

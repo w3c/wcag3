@@ -11,8 +11,9 @@ Accessibility-related user settings include font size, icon size, color scheme, 
 
 :::tests
 
-**Procedure** For each setting:
+**Procedure**
 
+For each setting:
 1. Change an accessibility-related setting in a platform or user agent in the :term[accessibility support set].
 2. Check content to see that the setting has been applied. 
 

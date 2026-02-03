@@ -11,6 +11,7 @@ content includes :term[non-decorative images].
 
 :::tests
 <b>Procedure</b>
+
 For each non-decorative image:
   1. Check the code to see if it has been marked up in a way that makes it detectable; or
   2. For technologies where the code cannot be checked, use a screen reader to test that the image is detectable.

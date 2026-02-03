@@ -7,6 +7,7 @@ A :term[mechanism] is available that allows users to change the :term[audio desc
 
 :::tests
 <b>Procedure</b>
+
 For each media asset with audio content:
 1. Check that a version of the media has audio description available in alternative languages.
 2. Alternatively, check that alternative versions of the media exist that have audio description available in alternative languages.

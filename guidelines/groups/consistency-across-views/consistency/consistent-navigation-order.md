@@ -17,6 +17,7 @@ This relates to consistency and terminology within blocks of navigation. The con
 <i>Consistent main navigation relative order</i>
 
 <b>Procedure</b>
+
 For each repeated blocks of navigation across multiple pages/views of the product or process:
 1. Verify that the navigation items within each block of navigation have the same relative order across all pages/views of the product or process.
 

@@ -11,6 +11,7 @@ Provide a text alternative for the image in a way that conveys the equivalent me
 <i>(General) Equivalent text alternative</i>
 
 <b>Procedure</b>
+
 For each non-decorative image:
 1. Remove, hide, or mask the image.
 2. Replace it with the text alternative.

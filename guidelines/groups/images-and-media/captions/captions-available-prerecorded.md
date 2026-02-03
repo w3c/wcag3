@@ -12,6 +12,7 @@ The audio content is an alternative for text and clearly labelled as such.
 
 :::tests
 <b>Procedure</b>
+
 For each pre-recorded media asset:
 1. If the captions format is closed captions:
   * Turn on the closed caption feature of the media player

@@ -28,6 +28,7 @@ changes are continuous, without pause.
 :::tests
 
 <b>Procedure</b>
+
 For each meaningful change of visual content:
 
 1. Check that the change is conveyed programmatically using the assistive technology in the accessibility support set.

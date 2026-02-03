@@ -11,6 +11,7 @@ Error messages are visually indicated using at least two of the following:
 
 :::tests
 <b>Procedure</b>
+
 For each validation error:
 1. Verify that it meets at least two of the listed indicators (symbol, color or text).
 

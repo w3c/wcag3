@@ -15,6 +15,7 @@ Methods & best practices
 
 :::tests
 <b>Procedure</b>
+
 For each error messages: 
 1. Verify that the error message persists until the user fixes the error or dismisses the message. 
 

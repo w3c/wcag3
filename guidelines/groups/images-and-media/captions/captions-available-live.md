@@ -8,6 +8,7 @@ title: Captions available (live)
 
 :::tests
 <b>Procedure</b>
+
 For all live audio content:
 1. Check that captions are provided
 

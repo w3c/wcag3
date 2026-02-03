@@ -14,6 +14,7 @@ Examples of failing validation:
 
 :::tests
 <b>Procedure</b>
+
 For each validation error:
 1. Verify that validation error is indicated visually.
 2. Verify that validation error is indicated programmatically.

@@ -17,6 +17,7 @@ Relative order means that content can be added or removed, but repeated items ar
 <i>Consistent relative order for website</i>
 
 <b>Procedure</b>
+
 For each variation of the product in scope:
 1. Identify common structural components across multiple pages/views.
 2. Verify that components are presented in the same order within each page/view.

@@ -15,6 +15,7 @@ Examples of errors:
 
 :::tests
 <b>Procedure</b>
+
 For each page/view:
 1. Trigger errors.
 2. For each error, verify that the nature of the problem is identified and described.

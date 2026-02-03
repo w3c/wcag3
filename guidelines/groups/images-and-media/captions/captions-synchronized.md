@@ -7,6 +7,7 @@ status: developing
 
 :::tests
 <b>Procedure</b>
+
 For each caption:
 1. Check if it is in sync with video content
 

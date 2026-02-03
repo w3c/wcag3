@@ -13,6 +13,7 @@ title: No flashing (no exceptions)
 
 :::tests
 <b>Procedure</b>
+
 For each page/view:
 1. Identify if content includes flashing.
 

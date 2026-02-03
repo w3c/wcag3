@@ -11,6 +11,7 @@ The :term[video] pauses to extend the :term[audio] track and provides an :term[e
 
 :::tests
 <b>Procedure</b>
+
 For each media asset with visual content:
 1. Play the media with the extended audio description on.
 2. Check that the extended audio description provides all of the information that is important and cannot be understood from the main soundtrack alone.
