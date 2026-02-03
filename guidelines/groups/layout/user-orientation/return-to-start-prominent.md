@@ -1,5 +1,5 @@
 ---
-type: supplemental
+type: best practice
 status: developing
 ---
 
@@ -7,10 +7,6 @@ Mechanisms that return the user to the :term[starting point] of the product are 
 
 :::note
 For HTML, a good programmatic positioning of such a mechanism would be early in the DOM.
-:::
-
-:::ednote
-This was originally labeled as "type: good-practice" but has been updated to "supplemental", possibly due to a missing parameter.
 :::
 
 :::example
