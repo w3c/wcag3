@@ -8,7 +8,7 @@ type: assertion
 - A review has been conducted and changes made (when necessary) to ensure that there is minimal difference between the number of input commands required when using the :term[keyboard interface] only and the number of commands when using other input modalities.
 
 :::note
-Other input modalities include :term[pointing devices], voice and speech recognition, :term[gesture], :term[camera input], and any other means of input or control.
+Other input modalities include :term[pointing devices], voice and speech recognition, :term[gesture], camera, and any other means of input or control.
 :::
 
 ::assertion-required
