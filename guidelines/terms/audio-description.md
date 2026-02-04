@@ -5,7 +5,7 @@ status: developing
 narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone
 
 :::note
-For audiovisual media, :term[audio description] provides information about actions, characters, scene changes, on-screen text, and other visual content.
+For audiovisual media, audio description provides information about actions, characters, scene changes, on-screen text, and other visual content.
 
 Audio description is also sometimes called “video description”, “described video”, “visual description”, or “descriptive narration”.
 
