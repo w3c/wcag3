@@ -14,7 +14,7 @@ The requirement is that the text is manipulable and the colors can be overridden
 :::
 
 :::except-when
-the text is:
+<p>the text is:</p>
 
 * also present elsewhere in the page/view which meets the requirement,
 * part of an inactive Interactive element, 

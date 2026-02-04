@@ -12,7 +12,7 @@ Speakers are identified understandably within all :term[media alternatives].
 :::
 
 :::applies-when
-There are multiple speakers in the video.
+- There are multiple speakers in the video.
 :::
 
 :::example

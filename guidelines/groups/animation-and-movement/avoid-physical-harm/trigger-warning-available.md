@@ -6,7 +6,7 @@ type: foundational
 A warning is provided before users encounter triggers and a mechanism is available to access the same information without the triggering :term[content].
 
 :::applies-when
-triggers are present
+- triggers are present
 :::
 
 :::note

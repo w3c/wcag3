@@ -7,7 +7,7 @@ type: supplemental
 Audio or video that lasts five minutes or longer can be navigated by chapters.
 
 :::except-when
-The media is a piece of music that the composer has not divided into movements.
+- The media is a piece of music that the composer has not divided into movements.
 :::
 
 :::example

@@ -6,7 +6,7 @@ type: foundational
 Pointer selection of elements moves the :term[keyboard focus] to that element, even if the user selects an :term[interactive element] and drags away from the element without activation.
 
 :::applies-when
-Content can interfere with pointer or keyboard focus behavior.
+- Content can interfere with pointer or keyboard focus behavior.
 :::
 
 :::example

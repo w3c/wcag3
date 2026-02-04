@@ -23,6 +23,7 @@ Methods &amp; best practices
 
 :::tests
 **Procedure**
+
 For adjacent links that go to the same destination:
 2. Check that only one of the links is in the focus or reading order.
 

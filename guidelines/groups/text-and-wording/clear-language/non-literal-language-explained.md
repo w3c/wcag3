@@ -7,7 +7,8 @@ title: Non-literal language explained
 Explanations or unambiguous alternatives are available in :term[text content] for :term[non-literal language], such as idioms and metaphors.
 
 :::except-when
-text content is:
+<p>text content is:</p>
+
 * poetic,
 * scriptural,
 * artistic, or

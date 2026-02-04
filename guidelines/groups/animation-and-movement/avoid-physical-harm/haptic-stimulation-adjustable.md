@@ -7,11 +7,11 @@ Haptic feedback can be reduced or turned off.
 
 
 :::applies-when
-content triggers haptic feedback.
+- content triggers haptic feedback.
 :::
 
 :::except-when
-the operating system or user agent converts non-haptic feedback to haptics at user request.
+- the operating system or user agent converts non-haptic feedback to haptics at user request.
 :::
 
 :::ednote

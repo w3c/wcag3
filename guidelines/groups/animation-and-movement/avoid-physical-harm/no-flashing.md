@@ -6,7 +6,7 @@ type: foundational
 :term[Content] does not include :term[flashing].
 
 :::except-when
-The flashing is :term[essential].
+- The flashing is :term[essential].
 :::
 
 :::ednote

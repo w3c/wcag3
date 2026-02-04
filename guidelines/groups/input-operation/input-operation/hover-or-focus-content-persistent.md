@@ -10,7 +10,7 @@ Examples of additional content controlled by the user agent include browser tool
 :::
 
 :::applies-when
-Receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent].
+- Receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent].
 :::
 
 :::note

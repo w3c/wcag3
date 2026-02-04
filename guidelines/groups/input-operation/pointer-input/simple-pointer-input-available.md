@@ -25,6 +25,7 @@ Simple pointer input is different than :term[single pointer input] and is more r
 
 :::tests
 **Procedure**
+
 For each functionality that uses pointer input other than simple pointer input:
 1. Check that it can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing.
 

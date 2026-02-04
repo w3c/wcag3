@@ -12,12 +12,10 @@ Meaningful changes in visual :term[content] are conveyed programmatically.
 - The amount of content changes.
 - The change affects the content’s meaning. 
 - The audience changes.
-
 :::
 
-
 :::except-when
-changes are continuous, without pause.
+ - changes are continuous, without pause.
 :::
 
 :::example

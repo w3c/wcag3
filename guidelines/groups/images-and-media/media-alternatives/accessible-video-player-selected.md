@@ -14,7 +14,7 @@ status: developing
     * Changing the language of the audio descriptions.
 
 :::applies-when
-a video is used that does not play in standard browsers.
+- a video is used that does not play in standard browsers.
 :::
 
 ::assertion-required

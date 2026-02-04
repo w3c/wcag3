@@ -9,7 +9,7 @@ Data entry interfaces allow for users to do at least one of the following before
 * Review and correct input errors found during validation.
 
 :::except-when
-entered data is auto-saved and/or reversible.
+- entered data is auto-saved and/or reversible.
 :::
 
 :::ednote

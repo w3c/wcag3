@@ -7,7 +7,7 @@ status: developing
 Pages/views have a :term[title] that describes the name, topic or purpose.
 
 :::except-when
-The presented content has no way to include a title.
+- The presented content has no way to include a title.
 :::
 
 :::tests

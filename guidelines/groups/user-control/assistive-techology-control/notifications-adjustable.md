@@ -6,11 +6,11 @@ type: supplemental
 The timing or positioning of notifications can be changed, suppressed or saved.
 
 :::applies-when
-Notifications or other interruptions are present.
+- Notifications or other interruptions are present.
 :::
 
 :::except-when
-The notification involves an emergency or is essential.
+- The notification involves an emergency or is essential.
 :::
 
 :::tests

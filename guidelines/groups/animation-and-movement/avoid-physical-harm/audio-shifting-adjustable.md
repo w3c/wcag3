@@ -7,11 +7,11 @@ Audio shifting designed to create a perception of motion can be paused or turned
 
 
 :::applies-when
-content includes audio shifting.
+- content includes audio shifting.
 :::
 
 :::except-when
-operating system or user agent triggers audio shifting.
+- operating system or user agent triggers audio shifting.
 :::
 
 :::ednote

@@ -14,6 +14,7 @@ The :term[keyboard focus] only moves as a result of user interaction.
 
 :::tests
 **Procedure**
+
 For each time the keyboard focus changes:
 1. Check that one of the following is true"
     - The focus was moved under direct user control

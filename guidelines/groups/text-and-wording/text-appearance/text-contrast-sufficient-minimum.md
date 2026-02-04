@@ -12,7 +12,7 @@ The default visual presentation of text meets @@[X contrast measure, to be deter
 :::
 
 :::except-when
-the text is:
+<p>the text is:</p>
 
 * also present elsewhere in the page/view which meets the requirement,
 * part of an inactive Interactive element, 

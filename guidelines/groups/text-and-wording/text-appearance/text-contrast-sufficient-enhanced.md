@@ -16,7 +16,7 @@ The contrast algorithm used in WCAG 3 is yet to be determined. For this draft, t
 :::
 
 :::except-when
-the text is:
+<p>the text is:</p>
 
 * also present elsewhere in the page/view which meets the requirement,
 * part of an inactive Interactive element, 

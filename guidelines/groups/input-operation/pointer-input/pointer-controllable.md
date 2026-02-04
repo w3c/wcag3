@@ -15,7 +15,7 @@ Up Reversal
 : The :term[up event] reverses any outcome of the preceding down event
 
 :::except-when
-Completing the function on the down event is :term[essential].
+- Completing the function on the down event is :term[essential].
 :::
 
 :::example
@@ -28,6 +28,7 @@ Examples of places where action on down event may be essential include a descend
 
 :::tests
 **Procedure**
+
 For each element that can be activated with a simple pointer:
  1. Check that the down-event of the pointer is not used to execute any part of the function.
  2. Check that completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion.

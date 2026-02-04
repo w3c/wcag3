@@ -6,7 +6,7 @@ type: foundational
 Specific :term[pointer] pressure is not the only way of achieving any functionality.
 
 :::except-when
-Specific pressure is :term[essential] to the functionality.
+- Specific pressure is :term[essential] to the functionality.
 :::
 
 :::example
@@ -21,6 +21,7 @@ Method: When building in functionality that relies on pointer pressure, add a sl
 
 :::tests
 **Procedure**
+
 For each instance of interactive content:
 
 1. Check that pointer pressure is not the only way to achieve any functionality.

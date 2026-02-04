@@ -6,7 +6,7 @@ status: developing
 A list of all steps in a multi-step process is visually and programmatically available at each step.
 
 :::except-when
-The total number of steps is unknown, or the sequence of steps depends on user actions.
+- The total number of steps is unknown, or the sequence of steps depends on user actions.
 :::
 
 :::tests

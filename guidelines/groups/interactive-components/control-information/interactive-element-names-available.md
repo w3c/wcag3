@@ -19,6 +19,7 @@ Methods &amp; best practices
 
 :::tests
 **Procedure**
+
 For each interactive element:
 1. Confirm it has a visual label that describes the element.
 2. Confirm the visual label persists during use.

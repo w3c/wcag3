@@ -11,7 +11,7 @@ title: Audio descriptions available (prerecorded)
 :::
 
 :::except-when
-the video content is an alternative for text and clearly labelled as such.
+- the video content is an alternative for text and clearly labelled as such.
 :::
 
 :::tests

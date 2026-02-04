@@ -8,6 +8,7 @@ Keyboard commands provided by content authors do not conflict with :term[standar
 :::tests
 
 **Procedure**
+
 For each author generated keyboard command:
 1. Check that it does not conflict against the standard platform keyboard commands.
 2. Check that it can be remapped.

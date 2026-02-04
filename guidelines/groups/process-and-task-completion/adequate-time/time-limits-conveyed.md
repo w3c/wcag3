@@ -6,11 +6,11 @@ type: supplemental
 Users are informed at the start of the process or product session that a time limit exists, its length, and that it can be adjusted.
 
 :::applies-when 
-products and processes have a time limit 
+- products and processes have a time limit 
 :::
 
 :::except-when 
-hiding the existence of the time limit is essential
+- hiding the existence of the time limit is essential
 :::
 
 :::tests
