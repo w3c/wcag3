@@ -19,11 +19,10 @@ Methods &amp; best practices
 
 :::tests
 **Procedure**
-
-1. Find all interactive elements. For each interactive element:
-2. Confirm it has a visual label that describes the element.
-3. Confirm the visual label persists during use
+For each interactive element:
+1. Confirm it has a visual label that describes the element.
+2. Confirm the visual label persists during use.
 
 **Expected results**
-- #2 and #3 are true
+- #1 and #2 are true.
 :::

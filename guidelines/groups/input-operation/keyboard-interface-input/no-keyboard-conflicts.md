@@ -8,9 +8,10 @@ Keyboard commands provided by content authors do not conflict with :term[standar
 :::tests
 
 **Procedure**
-1. Compare the author generated keyboard commands against the standard platform keyboard commands 
-2. Check that any conflicts that exist can be remapped
+For each author generated keyboard command:
+1. Check that it does not conflict against the standard platform keyboard commands
+3. Check that it can be remapped.
 
 **Expected results**
-- #2 is true
+- #1 or #2 is true
 :::

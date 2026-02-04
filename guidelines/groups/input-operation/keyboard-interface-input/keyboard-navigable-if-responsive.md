@@ -7,7 +7,8 @@ If the :term[page] / :term[view] uses responsive design, the page / view remains
 
 :::tests
 **Procedure**
-- Carry out all keyboard input tests with the responsive content at all breakpoints defined by the author and at minimum width.
+For each breakpoint defined by the author and at minimum width:
+1. Check that all keyboard input tests work.
 
 **Expected results**
 - #1 is true

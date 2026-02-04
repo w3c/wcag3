@@ -17,10 +17,9 @@ Method: When speech input is supported, an additional way of providing input is 
 
 :::tests
 **Procedure**
-
-1. Identify any functionality or content that is accessed using speech input
-2. Check that there is another way to do #1
+For each functionality or content that is accessed using speech input:
+1. Check that there is another way to complete the functionality.
 
 **Expected results**
-- #2 is true.
+- #1 is true.
 :::

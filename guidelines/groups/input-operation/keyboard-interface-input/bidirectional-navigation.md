@@ -22,12 +22,10 @@ Tabbing through menus, hitting <kbd>space</kbd> to open a menu, tabbing off the 
 
 :::tests
 **Procedure**
-1. Using the keyboard, navigate forward through the whole page or view.
-2. Check that when tabbing forwards you navigate to the next interactive element.
-3. Using the keyboard, navigate backward through the whole page or view.
-4. Check that when tabbing backwards #2, you navigate to the previous interactive element each time.  
-5. Check that during #1 and #2, when tabbing forwards or backwards, you are at no point blocked from continuing.
+For each interactive element:
+1. Check that when tabbing forwards, you can navigate to the interactive element and then to the next interactive element.
+2. Check that when tabbing backwards, you can navigate to the ineractive element and then to the previous interactive element.
 
 **Expected results**
-- #2, #4, and #5 are true
+- #1 and #2 are true
 :::

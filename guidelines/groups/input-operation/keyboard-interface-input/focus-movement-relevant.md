@@ -15,10 +15,10 @@ A menu that expands when you tab to it, but then uses arrow keys to navigate in 
 
 :::tests
 **Procedure**
-1. Navigate through the content using only the keyboard and  keyboard actions in the list of standard keyboard navigation techniques (or described on the page where it is required or on a page earlier in the process where it is required)
-2. Check that hidden content does not automatically expand (become visible) when you move to any part of the page/view (unless it is a visually hidden element specifically added to aid keyboard navigation) (e.g. skip to main content)
-3. Check that keyboard focus does not disappear into content that is not visible
+For any interactive element:
+1. Check that keyboard focus does not disappear into content that is not visible.
+2. Check that hidden element does not automatically expand (become visible) when the keboard focus is on it (unless it is a visually hidden element specifically added to aid keyboard navigation) (e.g. skip to main content).
 
 **Expected results**
-- #1 and #2 are both true
+- #1 and #2 are true.
 :::

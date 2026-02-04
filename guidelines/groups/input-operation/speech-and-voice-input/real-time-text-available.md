@@ -14,10 +14,9 @@ Method: Provide a chat option for any voice communication
 
 :::tests
 **Procedure**
-
-1. Locate any places where speech is used for communication (with human or AI)
-2. Check that there is an alternative way to achieve the same function using real-time text.
+For each places where speech is used for communication (with human or AI):
+1. Check that there is an alternative way to achieve the same function using real-time text.
 
 **Expected results**
-- #2 is true
+- #1 is true
 :::

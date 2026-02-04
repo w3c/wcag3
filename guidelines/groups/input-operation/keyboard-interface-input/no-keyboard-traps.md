@@ -18,7 +18,8 @@ Examples include:
 
 :::tests
 **Procedure**
-1. Navigate to each interface element. Ensure that you can exit from it in a forward or backward direction.
+For each interface element:
+1. Check that you can exit from it in a forward or backward direction.
 
 **Expected results**
 - #1 is true

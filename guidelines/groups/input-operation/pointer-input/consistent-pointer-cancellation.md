@@ -15,8 +15,8 @@ Where it is essential to be different, it can be helpful to alert the user.
 
 :::tests
 **Procedure**
-- For each set of pages / views, select each type of pointer interaction.
-- Check that each type of pointer interaction can be cancelled with a consistent interaction
+For each type of pointer interaction:
+#1. Check that it can be cancelled with a consistent interaction.
 
 **Expected results**
 - #1 is true.

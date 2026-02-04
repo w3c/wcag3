@@ -12,7 +12,8 @@ Here, and throughout this section, "camera input" refers to user control using a
 :::tests
 
 **Procedure**
-1. Using only the keyboard and keyboard actions in the [Standard Keyboard Navigation &amp; Operation Keys and Techniques](https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&-Operation-Keys-and-Techniques) or described on the page where it is required or on a page earlier in the process where it is required, try to move to all actionable elements on the :term[page] / :term[view]
+For each interactive element:
+1. Check that it is an be operated using only the keyboard and keyboard actions in the [Standard Keyboard Navigation &amp; Operation Keys and Techniques](https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&-Operation-Keys-and-Techniques) or described on the page where it is required or on a page earlier in the process where it is required.
 
 **Expected results**
 - #1 is true

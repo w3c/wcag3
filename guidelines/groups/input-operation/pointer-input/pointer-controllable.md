@@ -28,16 +28,12 @@ Examples of places where action on down event may be essential include a descend
 
 :::tests
 **Procedure**
-1. For each element that can be activated with a simple pointer, check the following until you find one that is true:
-    1. No Down-Event
-	    - The down-event of the pointer is not used to execute any part of the function;
-    2. Cancel or Undo
-      - Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;
-    3. Up Reversal
-      - The up-event reverses any outcome of the preceding down-event;
-    4. Essential
-      - Completing the function on the down-event is essential.
+For each element that can be activated with a simple pointer:
+ 1. Check that the down-event of the pointer is not used to execute any part of the function.
+ 2. Check that completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion.
+ 3. Check that the up-event reverses any outcome of the preceding down-event.
+ 4. Check that completing the function on the down-event is essential.
 
 **Expected results**
-- #1 is true
+- #1, #2, #3 or #4 is true
 :::

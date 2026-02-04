@@ -15,10 +15,9 @@ Methods &amp; best practices
 
 :::tests
 **Procedure**
-
-1. Find all interactive elements. For each interactive element:
-2. Inspect the code and accessibility tree (when available) to confirm that the role, value, state, and properties (when applicable) are indicated.
+For each interactive element:
+1. Inspect the code and accessibility tree (when available) to confirm that the role, value, state, and properties (when applicable) are indicated.
 
 **Expected results**
-- #2 is true
+- #1 is true.
 :::
