@@ -15,6 +15,7 @@ Best practice: the constraints remain persistent
 
 :::tests
 **Procedure**
+
 Find all inputs with constraints. For each input:
 
 - Confirm it has a visual information that describes the constraint.

@@ -14,6 +14,7 @@ status: developing
 <i>(General) Transcript is available</i>
 
 <b>Procedure</b>
+
 For each instance of audio or video:
 1. Check that a transcript is available.
 

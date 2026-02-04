@@ -15,6 +15,7 @@ Methods &amp; best practices:
 
 :::tests
 **Procedure**
+
 1. Find all interactive elements. For each interactive element:
 2. Confirm that the role, value, and state (when applicable) are visually indicated in all states
 3. Inspect the code and accessibility tree (when available) to confirm that the name, role, value and state (when applicable) are indicated.

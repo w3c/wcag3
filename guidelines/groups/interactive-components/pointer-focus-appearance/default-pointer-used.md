@@ -6,7 +6,7 @@ type: foundational
 The user can ensure that the appearance of the :term[pointer] is not overridden by the authored interface.
 
 :::except-when
-Changing the pointer appearance is essential.
+- Changing the pointer appearance is essential.
 :::
 
 :::ednote
@@ -18,6 +18,7 @@ Methods &amp; best practices:
 
 :::tests
 **Procedure**
+
 1. Check that the pointer uses the standard platform indicator.
 2. If it does not, check for a setting that the user can enable to use the standard platform indicator.
 

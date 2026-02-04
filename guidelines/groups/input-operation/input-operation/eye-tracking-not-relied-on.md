@@ -6,7 +6,7 @@ type: foundational
 Content and functionality does not rely solely on eye tracking.
 
 :::except-when
-Eye tracking is essential. 
+- Eye tracking is essential. 
 :::
 
 :::note

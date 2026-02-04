@@ -23,6 +23,7 @@ Initially using "Maya Angelou" within the context of a story regarding poetry an
 <i>Consistent speaker name in transcript</i>
 
 <b>Procedure</b>
+
 For each media alternative: 
 1. Check that each speaker in the audio or video is consistently identified.
 

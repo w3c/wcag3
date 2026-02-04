@@ -15,6 +15,7 @@ Methods
 <i>Modal dialogs on interaction</i>
 
 <b>Procedure</b>
+
 1. Identify elements that open a modal dialog when interacted with.
 2. Open the dialog.
 3. Verify that the dialog includes a mechanism to allow the dialog to be dismissed. 

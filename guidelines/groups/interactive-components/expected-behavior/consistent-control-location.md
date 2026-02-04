@@ -20,6 +20,7 @@ Methods &amp; best practices
 
 :::tests
 **Procedure**
+
 For each interactive component in a set of pages/views:
 
 1. Method: Components appear in the same relative visual position across pages/views, except when exceptions apply.

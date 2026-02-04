@@ -9,6 +9,7 @@ Where content includes :term[infinite scrolling], a mechanism is provided prior 
 <i>Infinite scrolling on/off control</i>
 
 <b>Procedure</b>
+
 1. Identify instances of infinite scrolling.
 2. Open the dialog.
 3. Verify that the dialog includes a mechanism to allow the dialog to be dismissed 

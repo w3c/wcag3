@@ -10,6 +10,7 @@ Styling is used to enhance the visual separation between :term[meaningful blocks
 <i>Visually identifiable meaningful blocks of content</i>
 
 <b>Procedure</b>
+
 1. Identify meaningful blocks of content in the page/view.
 2. Each meaningful block of content is grouped by one or more of the following characteristics:
     * Color or lightness — the same color scheme is used (Note that this should also meet requirements for 'Color alone' and 'Contrast')
