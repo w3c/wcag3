@@ -11,7 +11,6 @@ If something is essential to the outcome then: If it were removed, the informati
 :::
 
 :::example
-
 * Content and/or markup that fails because it is an example of failure or a test sample to be used testing a tool.
 * Real-time based exceptions such as:
   * purchasing items in limited supply;
@@ -19,5 +18,4 @@ If something is essential to the outcome then: If it were removed, the informati
   * controlling a drone in flight;
   * submitting a proposal by deadline.
 * There can be no ability to undo, such as purchasing things in an auction.
-
 :::

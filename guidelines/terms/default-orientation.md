@@ -2,10 +2,8 @@
 status: exploratory
 ---
 
-The orientation of view that is preferred or enforced by the :term[platform]
+the orientation of view that is preferred or enforced by the :term[platform]
 
 :::example
-
-Some mobile devices may default to portait orientation
-
+Some mobile devices may default to portrait orientation.
 :::

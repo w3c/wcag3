@@ -35,5 +35,5 @@ For each element that can be activated with a simple pointer:
  4. Check that completing the function on the down-event is essential.
 
 **Expected results**
-- #1, #2, #3 or #4 is true
+- #1, #2, #3, or #4 is true
 :::
