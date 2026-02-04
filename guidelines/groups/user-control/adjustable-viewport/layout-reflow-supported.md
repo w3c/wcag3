@@ -3,7 +3,7 @@ type: supplemental
 status: developing
 ---
 
-All content fits within 320 :term[CSS pixels] in the default orientation of text without requiring scrolling in more than one direction. Sections of content within the :term[page/view] that scroll in a different direction to the page/view fit within 320 CSS pixels of the page-scrolling direction.
+All content fits within 320 :term[CSS pixels] in the default orientation of text without requiring scrolling in more than one direction. Sections of content within the :term[page]/:term[view] that scroll in a different direction to the page/view fit within 320 CSS pixels of the page-scrolling direction.
 
 :::except-when
 * 2D relationships. For example, tables, electronic program guides.

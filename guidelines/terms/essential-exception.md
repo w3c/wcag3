@@ -1,7 +1,5 @@
 ---
 status: developing
-synonyms:
-  - essential
 ---
 
 exception because there is no way to carry out the function without doing it this way or fundamentally changing the functionality

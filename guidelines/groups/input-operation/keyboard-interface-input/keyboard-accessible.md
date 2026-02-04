@@ -19,7 +19,7 @@ The ["Keyboard operable" requirement](#keyboard-operable) allows you to navigate
 
 :::tests
 **Procedure**
-1. Using only the keyboard and keyboard actions in the [Standard Keyboard Navigation &amp; Operation Keys and Techniques](https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&-Operation-Keys-and-Techniques) or described on the page where it is required or on a page earlier in the process where it is required, try to view all content on the :term[page] / :term[view]
+1. Using only the keyboard and keyboard actions in the [Standard Keyboard Navigation &amp; Operation Keys and Techniques](https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&-Operation-Keys-and-Techniques) or described on the page where it is required or on a page earlier in the process where it is required, try to view all content on the :term[page]/:term[view]
 
 **Expected results**
 - #1 is true
