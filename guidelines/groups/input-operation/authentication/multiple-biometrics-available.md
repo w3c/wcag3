@@ -3,11 +3,7 @@ type: foundational
 status: developing
 ---
 
-Authentication does not rely solely on a single type of :term[biometric] information.
-
-:::note
-Biometrics includes vocal patterns and other voice characteristics. 
-:::
+Authentication does not rely solely on a single type of biometric information.
 
 :::ednote
 Methods & best practices
