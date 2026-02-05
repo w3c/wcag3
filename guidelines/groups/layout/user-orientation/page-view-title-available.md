@@ -16,5 +16,5 @@ Pages/views have a :term[title] that describes the name, topic or purpose.
 2. Check that the title element describes the document.
 
 <b>Expected results</b>
-* Check #1 and #2 are true.
+* #1 and #2 are true.
 :::
