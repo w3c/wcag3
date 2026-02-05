@@ -12,14 +12,13 @@ The default visual presentation of text meets @@[X contrast measure, to be deter
 :::
 
 :::except-when
-<p>the text is:</p>
-
-* also present elsewhere in the page/view which meets the requirement,
-* part of an inactive Interactive element, 
-* pure decoration, 
-* not visible to anyone,
-* part of a picture that includes significant other visual content,
-* part of a logo or brand name.
+- the text is:
+    * also present elsewhere in the :term[page]/:term[view] which meets the requirement,
+    * part of an inactive Interactive element, 
+    * pure decoration, 
+    * not visible to anyone,
+    * part of a picture that includes significant other visual content,
+    * part of a logo or brand name.
 :::
 
 :::note
