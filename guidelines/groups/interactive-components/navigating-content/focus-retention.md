@@ -1,5 +1,6 @@
 ---
 status: developing
+type: supplemental
 ---
 
 A user can focus on a :term[content] "area", such as a modal or popup, then resume their view of all content using a limited number of steps.
