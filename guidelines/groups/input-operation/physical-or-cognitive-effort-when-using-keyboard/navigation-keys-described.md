@@ -16,7 +16,7 @@ Any :term[platform]-related functions are not the responsibility of the author a
 **Procedure**
 
 For each keyboard command needed to operate functionality:
-1. Check that it is in the list of common keyboard navigation technique.
+1. Check that it is in the list of common keyboard navigation techniques.
 2. Check that it is described on the page / view where it is required or on a page / view earlier in the process where it is used.
 
 **Expected results**
