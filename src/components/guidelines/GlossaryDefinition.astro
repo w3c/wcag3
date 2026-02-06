@@ -8,11 +8,11 @@ interface Props {
 }
 
 const { termEntry } = Astro.props;
-const { status, synonyms } = termEntry.data;
+const { status, synonyms, hideDefinition } = termEntry.data;
 const { Content } = await render(termEntry);
 ---
 
 <dt data-status={status}>
-  <dfn data-lt={synonyms ? synonyms.join("|") : undefined}>{computeTermTitle(termEntry)}</dfn>
+  <dfn data-lt={synonyms ? synonyms.join("|") : undefined}  class={hideDefinition ? "lint-ignore" : undefined}>{computeTermTitle(termEntry)}</dfn>
 </dt>
 <dd><Content /></dd>

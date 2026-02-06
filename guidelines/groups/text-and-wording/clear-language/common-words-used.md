@@ -7,7 +7,7 @@ type: supplemental
 Common words are used, and definitions are available for uncommon words. 
 
 :::applies-when
-* human languages have more than 1,500 words
+* :term[human languages] have more than 1,500 words
 :::
 
 :::except-when

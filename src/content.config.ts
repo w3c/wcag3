@@ -87,6 +87,7 @@ export const collections = {
     schema: commonChildSchema.omit({ howto: true }).extend({
       status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
+      hideDefinition: z.boolean().optional(),
     }),
   }),
 };

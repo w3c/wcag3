@@ -1,4 +1,3 @@
 ---
 status: placeholder
-hideDefinition: true
 ---
