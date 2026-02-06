@@ -1,7 +1,7 @@
 ---
 children:
-  - interactions-consistent
-  - control-location-consistent
+  - consistent-interactions
+  - consistent-control-location
   - conventional-pattern-used
 ---
 
