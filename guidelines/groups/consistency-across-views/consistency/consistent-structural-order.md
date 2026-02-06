@@ -6,7 +6,7 @@ status: developing
 The relative order of :term[structural components] remains consistent throughout each specific :term[variation of product or process].
 
 :::applies-when
-- In a :term[set of pages/views]
+- In a set of :term[pages]/:term[views]
 :::
 
 :::note

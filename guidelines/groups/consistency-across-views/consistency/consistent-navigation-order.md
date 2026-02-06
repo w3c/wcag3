@@ -6,7 +6,7 @@ status: developing
 The relative order of navigation items is consistent within blocks of navigation that are repeated on multiple pages/views of the product or process.
 
 :::applies-when
-- In a :term[set of pages/views]
+- In a set of :term[pages]/:term[views]
 :::
 
 :::ednote

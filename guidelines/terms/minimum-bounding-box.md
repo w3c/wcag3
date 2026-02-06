@@ -1,5 +1,6 @@
 ---
 status: developing
+hideDefinition: true
 ---
 
 the smallest enclosing rectangle aligned to the horizontal axis within which all the points of a shape lie

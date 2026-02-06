@@ -3,10 +3,10 @@ status: developing
 type: supplemental
 ---
 
-Diacritics required to identify the correct meaning of each word are available.
+:term[Diacritics] required to identify the correct meaning of each word are available.
 
 :::applies-when 
-* a human language has a version that removes diacritics for proficient readers.
+* a :term[human language] has a version that removes diacritics for proficient readers.
 :::
 
 :::note

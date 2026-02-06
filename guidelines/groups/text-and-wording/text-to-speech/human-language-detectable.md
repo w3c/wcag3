@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-The human language of all :term[content] within the :term[view] is :term[programmatically determinable].
+The :term[human language] of all :term[content] within the :term[view] is :term[programmatically determinable].
 
 :::except-when
 * a language tag is not available in ISO 639 language codes, or
