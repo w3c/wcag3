@@ -9,7 +9,7 @@ Closed captions are equivalents that can be turned on and off with some players 
 :::
 
 :::note
-:term[Open captions] are any captions that cannot be turned off in the player. For example, if the captions are visual equivalent images of text embedded in :term[video].
+Open captions are any captions that cannot be turned off in the player. For example, if the captions are visual equivalent images of text embedded in :term[video].
 :::
 
 :::note
