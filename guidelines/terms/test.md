@@ -1,6 +1,6 @@
 ---
 status: developing
-hideDefinition: true
+unusedDefinition: true
 ---
 
 mechanism to evaluate implementation of a :term[method]

@@ -1,4 +1,4 @@
 ---
 status: placeholder
-hideDefinition: true
+unusedDefinition: true
 ---

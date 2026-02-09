@@ -1,7 +1,7 @@
 ---
 status: developing
 title: User-manipulable text
-hideDefinition: true
+unusedDefinition: true
 ---
 
 text which the user can adjust

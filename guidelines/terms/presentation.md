@@ -1,6 +1,6 @@
 ---
 status: developing
-hideDefinition: true
+unusedDefinition: true
 ---
 
 rendering of the :term[content] in a form to be perceived by users

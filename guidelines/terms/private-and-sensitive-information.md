@@ -1,6 +1,6 @@
 ---
 status: exploratory
-hideDefinition: true
+unusedDefinition: true
 ---
 
 private and sensitive information
