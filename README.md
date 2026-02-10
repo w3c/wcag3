@@ -129,6 +129,8 @@ Represents each `dt`/`dd` pair appearing in the Glossary section.
 - `synonyms` - Optional list of other words or phrases that can be used to reference this term
   - This does **not** need to include plurals where the final word ends in "s" or "es";
     this is automatically supported
+- `unusedDefinition` - Boolean flag; if true,
+  [suppresses ReSpec's unused definition warning](https://respec.org/docs/#lint-ignore) for this term
 
 **Note:** If a term file is empty, a "to be defined" Editor's Note will be inserted.
 
