@@ -1,4 +1,4 @@
 ---
 status: placeholder
-unusedDefinition: true
+title: non-decorative image
 ---

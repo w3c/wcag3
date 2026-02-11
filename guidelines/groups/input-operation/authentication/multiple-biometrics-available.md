@@ -3,7 +3,7 @@ type: foundational
 status: developing
 ---
 
-Authentication does not rely solely on a single type of biometric information.
+Authentication does not rely solely on a single type of :term[biometrics].
 
 :::ednote
 Methods & best practices
