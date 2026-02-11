@@ -1,7 +1,7 @@
 ---
 children:
   - focus-relevant
-  - focus-retention
+  - focus-retained
   - focus-order-meaningful
 ---
 

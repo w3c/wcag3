@@ -4,7 +4,7 @@ synonyms:
   - complex pointer inputs
 ---
 
-any pointer input other than a :term[single pointer] input
+any pointer input other than a :term[single pointer input]
 
 :::example
 - Double clicking
