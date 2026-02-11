@@ -17,13 +17,11 @@ Users can read visually rendered :term[text].
 
 :::ednote
 AGWG remains committed to providing Text Appearance guidance for multiple
-languages. To support our internationalization goals, AGWG is exploring
+scripts and/or languages. To support our internationalization goals, AGWG is exploring
 ways to:
 
-- not require WCAG 3 to be republished when metrics are added for more
-  languages,
-- make language-specific metrics normative,
-- meet the needs of different languages and scripts by allowing
-   flexibility in which metrics are required and in their values, and
+- not require WCAG 3 to be republished when metrics are added for more scripts/languages,
+- make script/language-specific metrics normative,
+- meet the needs of different scripts and languages by allowing flexibility in which metrics are required and in their values, and
 - preserve backward compatibility.
 :::
