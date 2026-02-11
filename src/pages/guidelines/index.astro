@@ -53,7 +53,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<li>Are there user-needs which are not covered?</li>
 				<li>The conformance model has been updated, there are several questions in the <a href="#conformance">conformance section</a></li>
 				<li>Is the "applies when" and "except when" format for requirements understandable and useful?</li>
-				<li>Does the increased granularity of the requirements help understanding and application?</li>
+				<li>Does the increased granularity of the requirements help understanding and application or would consolidating requirements be a better approach?</li>
 			</ul>
 	
 			<p>To provide feedback, please open a new issue in the <a href="https://github.com/w3c/wcag3/issues">WCAG 3 GitHub repository</a>. Create a separate GitHub issue for each topic, rather than commenting on multiple topics in a single issue.</p>
@@ -154,10 +154,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<div class="ednote" title="Goals for a new conformance model">
 				<p>In this draft, AG is exploring a model based on Core Requirements, Supplemental Requirements, and Assertions. We ask reviewers to consider the following questions:</p>
 				<ul>
-					<li>Should the core set of requirements be approximately the same as WCAG 2.2 A & AA? If not, should it be smaller or larger? If you think it should be a different size, what rules would you use to select the set?</li>
+					<li>Should the core set of requirements provide approximately the same coverage as WCAG 2.2 A & AA? If not, should it be smaller or larger? If you think it should be a different size, what rules would you use to select the set?</li>
 		            <li>Should we include assertions within the core set? Would organizations be willing to make public, attributable assertions about processes they completed?</li>
 		            <li>Should there be additional levels within the core set of requirements? If yes, what and why?</li>
 	            	<li>In WCAG 2, every provision within the minimum conformance level has to be met to conform at the lowest level of conformance. To conform at the lowest level in WCAG 3, every provision within the core set must be met AND then additional effort must be done to better support people with disabilities but WCAG 3 allows some flexibility on what and how that effort is provided. Does this approach work or would a stricter set of requirements with more flexibility within the methods be a preferred approach?</li>
+					<li>The proposed conformance model ties conformance to functional performance statements. This list is expanded from the one currently used in legistlation. What do you see as the positive and negative aspects of this approach? What statements should be added or changed? </li>
 	        	</ul>
 			</div>
 
@@ -205,9 +206,9 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>One of the following levels of conformance is met in full.</p>
 				<ul>
-					<li>For Bronze conformance (the minimum level of conformance), all of the </li>pages/views</a> and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each functional limitations.</li>
-					<li>For Silver conformance, all of the pages/views and processes within the conformance scope MUST satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Bronze.</li>
-					<li>For Gold conformance, all of the pages/views and processes within the conformance scope satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Silver.</li>
+					<li>For Bronze conformance (the minimum level of conformance), all of the </li>pages/views</a> and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each <a>functional perfomance statement</a>.</li>
+					<li>For Silver conformance, all of the pages/views and processes within the conformance scope MUST satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Bronze within each functional performance statement.</li>
+					<li>For Gold conformance, all of the pages/views and processes within the conformance scope satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Silver within each functional performance statement.</li>
 				</ul>
 
 				<h4>Accessibility supported</h4>
@@ -256,7 +257,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<section id="function-performance-statements">
 				<h3>Functional performance statements (expanded)</h3>
 
-				<p>Each core requirement, supplemental requirement, and assertion are tagged with one or more of the expanded functional performance statements below. The statements are intended to describe the functional performance of ICT enabling people to locate, identify, and operate ICT functions, and to access the information provided, regardless of physical, cognitive or sensory abilities.</p>
+				<p>Each core requirement, supplemental requirement, and assertion will be tagged with one or more of the expanded functional performance statements below. The statements are intended to describe the functional performance of ICT enabling people to locate, identify, and operate ICT functions, and to access the information provided, regardless of physical, cognitive or sensory abilities.</p>
 
 				<p>This is not a list of disabilities. Different disabilities may lead to the need for use with one or more of the limitations listed below. For example, a visual impairment or an inability to process visual information may require usage with limited vision.</p>
 
