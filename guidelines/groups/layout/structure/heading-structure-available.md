@@ -13,12 +13,12 @@ status: developing
 <i>Headings set at right level</i>
 
 <b>Procedure</b>
-1. Review the hierarchy of headings.
-2. Headings for sibling content blocks have the same heading level.
-3. Headings for immediate child content blocks should be at most one level higher than parent content blocks.
+For the hierarchy of headings:
+1. Check that hadings for sibling content blocks have the same heading level.
+2. Check that headings for immediate child content blocks should be at most one level higher than parent content blocks.
 
 <b>Expected results</b>
-* #2 and #3 are true
+* #1 and #2 are true
 
 
 <i>HTML Heading levels not skipped</i>

@@ -16,7 +16,7 @@ This is primarily aimed at eye-tracking and touch-screens, where it is useful fo
 
 :::tests
 **Procedure**
-
+For each pointer indicator:
 1. Check the settings of the OS or product for the ability to have an always-visible pointer indicator.
 
 **Expected results**
