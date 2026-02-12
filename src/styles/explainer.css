@@ -30,11 +30,6 @@ summary::after {
 	font-weight: bold;
 }
 
-/* removing for readability
-.howto-link, .outcome-link {
-	font-style: italic;
-} */
-
 .howto-link {
 	margin-top: 0;
 }
@@ -131,50 +126,4 @@ caption {
 }
 .marker {
 	position: relative;
-}
-.marker > a.self-link{
-	border: none;
-	color: inherit;
-	font-size: 83%;
-	height: 2em;
-	left: -3em;
-	opacity: .5;
-	position: absolute;
-	text-align: center;
-	text-decoration: none;
-	top: 0;
-	transition: opacity .2s;
-	width: 2em;
-}
-.marker > a.self-link::before {
-	content: "§";
-	display: block;
-}
-.status-marker {
-  font-weight: 700;
-  color: #091832;
-  font-size: 11px;
-  font-size: .6125rem;
-  line-height: 1.4;
-  vertical-align: middle;
-  margin-left: 1em;
-  padding: 4px 8px;
-  border-radius: 3px;
-  background: #d0e1f1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-a[href].status-link {
-	color: var(--text);
-}
-.status-filter 
-{
-	float: right;
-	border: thin solid #005A9C;
-	border-radius: 1ex;
-	padding: 1ex;
-	cursor: help;
-	text-indent: 0px;
-	font-weight: bolder;
-	font-size: .75em;
 }
