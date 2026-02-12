@@ -1,9 +1,10 @@
 ---
 import { computeTermTitle } from "@/lib/guidelines";
+import { processKeyTerms } from "@/lib/informative";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  /** HTML containing terms referenced via <a>...</a> */
+  /** List of terms resolved recursively via processKeyTerms */
   terms: CollectionEntry<"terms">[];
 }
 
@@ -25,9 +26,10 @@ for (const entry of terms) {
         <h2 id="key-terms">Key Terms</h2>
       </summary>
       <dl>
+        {/* Call processKeyTerms again to expand links between terms */}
         {terms.map((entry) => (
           <dt id={`dfn-${entry.id}`}>{computeTermTitle(entry)}</dt>
-          <dd set:html={entry.rendered!.html} />
+          <dd set:html={processKeyTerms(entry.rendered!.html).html} />
         ))}
       </dl>
     </details>

@@ -154,19 +154,23 @@ for (const entry of await getCollection("terms")) {
 const resolveTerm = (term: string) => termResolutions[term.toLowerCase()] || null;
 
 /**
- * Processes <a>...</a> within rendered HTML into key terms,
- * adding hrefs and also returning the alphabetized list of terms.
+ * Inner function that performs the actual work for processKeyTerms.
+ * This version of the function supports an extra parameter for recursion.
  */
-export function processKeyTerms(html: string) {
+function _processKeyTerms(html: string, terms = new Set<CollectionEntry<"terms">>()) {
   const $ = load(html, null, false);
-  const terms = new Set<CollectionEntry<"terms">>();
   $("a:not([href])").each((_, el) => {
     const $el = $(el);
     const text = $el.text().trim();
     const term = resolveTerm(text);
     if (term) {
-      terms.add(term);
       $el.attr("href", `#dfn-${term.id}`);
+      if (!terms.has(term)) {
+        terms.add(term);
+        // Process nested term references when adding one to the set for the first time.
+        // (If term.rendered is empty, it will be reported by the KeyTerms component.)
+        for (const t of _processKeyTerms(term.rendered?.html || "", terms).terms) terms.add(t);
+      }
     } else {
       console.warn(`Unable to resolve a glossary term for "${text}"`);
       $el.replaceWith($el.html()!);
@@ -178,3 +182,9 @@ export function processKeyTerms(html: string) {
     terms: sortBy(Array.from(terms), (entry) => computeTermTitle(entry).toLowerCase()),
   };
 }
+
+/**
+ * Processes <a>...</a> within rendered HTML into key terms,
+ * adding hrefs and also returning the alphabetized list of terms.
+ */
+export const processKeyTerms = (html: string) => _processKeyTerms(html);
