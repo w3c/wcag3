@@ -1,7 +1,5 @@
 ---
 import type { GetStaticPaths, GetStaticPathsResult } from "astro";
-import { render } from "astro:content";
-import { load } from "cheerio";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
@@ -39,21 +37,7 @@ if (!guideline.rendered || !guideline.normativeEntry.rendered) {
   );
 }
 
-const normativeHtml = formatNormativeContent(guideline.normativeEntry.rendered);
-
-const { headings } = await render(guideline);
-const h2Slugs = headings.filter(({ depth }) => depth === 2).map(({ slug }) => slug);
-const goalIndex = h2Slugs.indexOf("goal");
-const beforeSlug = goalIndex > -1 ? h2Slugs[goalIndex + 1] : h2Slugs[0];
-
-const { html, terms } = (() => {
-  if (beforeSlug) {
-    const $ = load(guideline.rendered.html, null, false);
-    $(`#${beforeSlug}`).before(normativeHtml);
-    return processKeyTerms($.html());
-  }
-  return processKeyTerms(normativeHtml + guideline.rendered.html);
-})();
+const { html, terms } = processKeyTerms(formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html);
 ---
 
 <InformativeLayout
