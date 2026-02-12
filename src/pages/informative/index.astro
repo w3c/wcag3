@@ -1,7 +1,6 @@
 ---
 import GithubSlugger from "github-slugger";
 
-import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
 import GuidelineSummary from "@/components/informative/GuidelineSummary.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import {
@@ -19,8 +18,7 @@ for (const { id } of informativeGroups) {
 const slugger = new GithubSlugger();
 ---
 
-<InformativeLayout title="All WCAG 3 Guidelines">
-  <Breadcrumbs slot="breadcrumbs" segments={[]} />
+<InformativeLayout title="All WCAG 3 Guidelines" breadcrumbSegments={[]}>
   {
     informativeGroups.map((group) => (
       <>

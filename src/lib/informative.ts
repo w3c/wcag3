@@ -1,4 +1,4 @@
-import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry, type RenderedContent } from "astro:content";
 import { load } from "cheerio";
 import noop from "lodash-es/noop";
 import sortBy from "lodash-es/sortBy";
@@ -115,6 +115,21 @@ export async function resolveInformativeRequirements(guidelineId: string) {
     if (informativeEntry) requirements.push(informativeEntry);
   }
   return requirements;
+}
+
+/** Formats normative content for inclusion within an informative page. */
+export function formatNormativeContent(rendered: RenderedContent) {
+  const $ = load(rendered.html, null, false);
+  $("summary").each((_, el) => {
+    const $el = $(el);
+    // Add child element to summaries to work with WAI excol styles
+    if ($el.text() === $el.html()) $el.html(`<strong>${$el.text()}</strong>`);
+  });
+
+  return `
+    <h2 id="normative-text">Normative Text</h2>
+    <div class="normative">${$.html()}</div>
+  `;
 }
 
 /**

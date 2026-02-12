@@ -1,13 +1,23 @@
 ---
+import type { ComponentProps } from "astro/types";
+
+import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
 import DraftBanner from "@/components/informative/DraftBanner.astro";
 import Header from "@/components/informative/Header.astro";
+import SideNav from "@/components/informative/SideNav.astro";
 import WaiFooter from "@/components/informative/WaiFooter.astro";
+import type { InformativeGuideline, InformativeRequirement } from "@/lib/informative";
 
 interface Props {
+  breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
+  nav?: {
+    current: InformativeGuideline | InformativeRequirement;
+    guideline: InformativeGuideline;
+  };
   title: string;
 }
 
-const { title } = Astro.props;
+const { breadcrumbSegments, nav, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,10 +32,11 @@ const { title } = Astro.props;
     <a href="#main" class="button button--skip-link">Skip to content</a>
     <DraftBanner />
     <Header />
+    {breadcrumbSegments && <Breadcrumbs segments={breadcrumbSegments} />}
     <slot name="breadcrumbs" />
-    {/* TODO: conditional side nav */}
     <div class="default-grid with-gap leftcol">
-      <main id="main" class="standalone-resource__main" tabindex="-1">
+      {nav && <SideNav {...nav} />}
+      <main id="main" class={nav ? "" : "standalone-resource__main"} tabindex="-1">
         <h1>{title || "How to Meet WCAG 3"}</h1>
         <slot />
       </main>
@@ -95,5 +106,18 @@ const { title } = Astro.props;
   .note::before {
     content: "Note: ";
     font-weight: bold;
+  }
+
+  .normative {
+    border: solid 1px var(--cloudy-subtle);
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border-left-width: 1em;
+  }
+
+  .decision-tree summary {
+    /* Override WAI styles */
+    margin-left: 0;
+    margin-right: 0;
   }
 </style>

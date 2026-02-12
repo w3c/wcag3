@@ -1,0 +1,53 @@
+---
+import { informativeSlug } from "@/lib/constants";
+import {
+  resolveInformativeRequirements,
+  type InformativeGuideline,
+  type InformativeRequirement,
+} from "@/lib/informative";
+
+interface Props {
+  current: InformativeGuideline | InformativeRequirement;
+  guideline: InformativeGuideline;
+}
+
+const { current, guideline } = Astro.props;
+
+const requirements = await resolveInformativeRequirements(guideline.id);
+---
+
+<div class="sidenav">
+  <nav class="sn-contents" aria-label="Secondary">
+    <ul class="sidenav--list">
+      <li>
+        <a
+          aria-current={current.id === guideline.id ? "page" : undefined}
+          href={`${import.meta.env.BASE_URL}${informativeSlug}/${guideline.id}/`}
+        >
+          {guideline.title}
+        </a>
+        <ul>
+          {
+            requirements.map((requirement) => (
+              <li>
+                <a
+                  aria-current={current.id === requirement.id ? "page" : undefined}
+                  href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}
+                >
+                  {requirement.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<style is:global>
+  .sidenav--list a+ul {
+    /* Override WAI styles */
+    display: block;
+  }
+</style>
