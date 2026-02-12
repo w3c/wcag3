@@ -2,6 +2,7 @@
 import { getEntry, type CollectionEntry } from "astro:content";
 import { load } from "cheerio";
 
+import { informativeSlug } from "@/lib/constants";
 import { computeGuidelineTitle } from "@/lib/guidelines";
 
 interface Props {
@@ -9,16 +10,10 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const idParts = entry.id.split("/");
-const parentHowto =
-  entry.collection === "requirements"
-    ? (await getEntry("guidelines", idParts.slice(0, 2).join("/")))?.data.howto
-    : null;
-const howtoSlug = entry.data.howto === true ? idParts.slice(-1) : entry.data.howto;
-const howtoPath = parentHowto
-  ? `${parentHowto === true ? idParts[1] : parentHowto}/${howtoSlug}/`
-  : `${howtoSlug}/`;
-const baseUrl = "https://w3c.github.io/wcag3/how-to/";
+const informativeEntry =
+  entry.collection === "guidelines"
+    ? await getEntry("informativeGuidelines", entry.id)
+    : await getEntry("informativeRequirements", entry.id);
 
 function processHtml() {
   if (!entry.rendered) {
@@ -31,10 +26,10 @@ function processHtml() {
 
   const doclinks: string[] = [];
 
-  if (howtoSlug) {
+  if (informativeEntry) {
     doclinks.push(`
       <p>
-        <a href="${baseUrl}${howtoPath}">
+        <a href="${import.meta.env.BASE_URL}${informativeSlug}/${informativeEntry.id}/">
           <svg aria-hidden="true" class="i-info">
             <use xlink:href="img/icons.svg#i-info" />
           </svg>

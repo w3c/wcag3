@@ -11,7 +11,7 @@ import { readFile, writeFile } from "fs/promises";
 import { basename, dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-import { guidelinesRehypePlugins, guidelinesRemarkPlugins } from "./src/lib/markdown/guidelines";
+import { remarkPlugins, rehypePlugins } from "./src/lib/markdown";
 
 const GH_REPO = process.env.GITHUB_REPOSITORY; // Only set during GitHub action
 
@@ -24,8 +24,8 @@ export default defineConfig({
   devToolbar: { enabled: false },
   trailingSlash: "always",
   markdown: {
-    remarkPlugins: [remarkDirective, remarkDefinitionList, ...guidelinesRemarkPlugins],
-    rehypePlugins: [...guidelinesRehypePlugins],
+    remarkPlugins: [remarkDirective, remarkDefinitionList, ...remarkPlugins],
+    rehypePlugins: rehypePlugins,
     remarkRehype: {
       // https://github.com/wataru-chocola/remark-definition-list/issues/50#issuecomment-1445130314
       handlers: { ...defListHastHandlers },

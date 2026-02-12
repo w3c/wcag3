@@ -2,16 +2,8 @@ import { defineCollection, reference, z } from "astro:content";
 import { file, glob } from "astro/loaders";
 import uniq from "lodash-es/uniq";
 
-/** howto can be set to true to indicate the informative and normative slugs are identical */
-const howtoSchema = z.boolean().or(z.string().regex(/^[\w-]+$/));
 const statusSchema = z.enum(["placeholder", "exploratory", "developing", "refining", "mature"]);
 const parentStatusSchema = statusSchema.exclude(["placeholder", "exploratory"]);
-
-/** Contains fields common between guidelines and requirements */
-const commonChildSchema = z.object({
-  howto: howtoSchema.optional(),
-  title: z.string().optional(),
-});
 
 const stringArrayParser = (fileContent: string) =>
   JSON.parse(fileContent).map((id: string) => ({ id }));
@@ -24,6 +16,8 @@ const childrenSchema = z
   });
 
 export const collections = {
+  // Content for normative WCAG 3 document
+
   acknowledgementsOrder: defineCollection({
     loader: file("./guidelines/acknowledgements/index.json", {
       parser: stringArrayParser,
@@ -52,21 +46,23 @@ export const collections = {
   }),
   guidelines: defineCollection({
     loader: glob({ pattern: "*/*.md", base: "./guidelines/groups" }),
-    schema: commonChildSchema.extend({
+    schema: z.object({
       // Note: can't use references for children while relying on default ids,
       // since auto-generated ids include every * segment rather than only the last.
       // Moreover, we can't override generateId for requirements to only use slug,
       // due to duplicates across separate guidelines, e.g. "style-guide"
       children: childrenSchema,
       status: parentStatusSchema.optional(),
+      title: z.string().optional(),
     }),
   }),
   requirements: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
-    schema: commonChildSchema.extend({
+    schema: z.object({
       tags: z.array(reference("tags")).optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
+      title: z.string().optional(),
       type: z
         .enum([
           "foundational",
@@ -84,10 +80,22 @@ export const collections = {
   }),
   terms: defineCollection({
     loader: glob({ pattern: "*.md", base: "./guidelines/terms" }),
-    schema: commonChildSchema.omit({ howto: true }).extend({
+    schema: z.object({
       status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
+      title: z.string().optional(),
       unusedDefinition: z.boolean().optional(),
     }),
+  }),
+
+  // Content for informative WCAG 3 docs
+
+  informativeGuidelines: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative" }),
+    schema: z.strictObject({}),
+  }),
+  informativeRequirements: defineCollection({
+    loader: glob({ pattern: "*/*/*.md", base: "./informative" }),
+    schema: z.strictObject({}),
   }),
 };
