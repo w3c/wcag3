@@ -1,6 +1,7 @@
 import { getCollection, getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
 import capitalize from "lodash-es/capitalize";
 import difference from "lodash-es/difference";
+import pluralize from "pluralize";
 
 import { isDevOrPreview } from "./constants";
 
@@ -133,3 +134,17 @@ export const computeGuidelineTitle = (entry: EntryWithTitle) =>
 /** Returns term title if specified, or falls back to converting from its slug. */
 export const computeTermTitle = (entry: CollectionEntry<"terms">) =>
   computeTitle(entry, { capitalize: false });
+
+/** Inverted map from every possible permutation of each term to its content entry. */
+const termResolutions: Record<string, CollectionEntry<"terms">> = {};
+for (const entry of await getCollection("terms")) {
+  const title = computeTermTitle(entry);
+  termResolutions[title.toLowerCase()] = entry;
+  for (const synonym of entry.data.synonyms || []) termResolutions[synonym] = entry;
+  // Support plurals the same way ReSpec does
+  const alt = pluralize.isSingular(title) ? pluralize.plural(title) : pluralize.singular(title);
+  termResolutions[alt.toLowerCase()] = entry;
+}
+
+/** Resolves a term, synonym, or plural to the originating term. */
+export const resolveTerm = (term: string) => termResolutions[term.toLowerCase()] || null;

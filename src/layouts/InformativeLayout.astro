@@ -1,0 +1,97 @@
+---
+import DraftBanner from "@/components/informative/DraftBanner.astro";
+import Header from "@/components/informative/Header.astro";
+import WaiFooter from "@/components/informative/WaiFooter.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>{`${title ? `${title} - ` : ""}How to Meet WCAG 3 | WAI | W3C`}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
+  </head>
+  <body dir="ltr">
+    <a href="#main" class="button button--skip-link">Skip to content</a>
+    <DraftBanner />
+    <Header />
+    <slot name="breadcrumbs" />
+    {/* TODO: conditional side nav */}
+    <div class="default-grid with-gap leftcol">
+      <main id="main" class="standalone-resource__main" tabindex="-1">
+        <h1>{title || "How to Meet WCAG 3"}</h1>
+        <slot />
+      </main>
+    </div>
+    <WaiFooter />
+  </body>
+</html>
+
+<style is:global>
+  main {
+    display: block;
+  }
+
+  main,
+  .sidenav {
+    margin-top: 2em;
+  }
+
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    margin-bottom: 0.25em;
+  }
+
+  .button--skip-link {
+    background-color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    outline-color: currentColor !important;
+    color: var(--off-black) !important;
+    font-weight: 600;
+    font-size: larger;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    top: 0.5em;
+    width: 10em;
+    opacity: 1;
+    transition:
+      transform 0.1875s ease-out,
+      opacity 0.1875s ease-out;
+  }
+
+  .button--skip-link:not(:focus):not(:hover) {
+    transform: translateY(-4em);
+    opacity: 0;
+  }
+
+  .ednote,
+  .note {
+    border-color: #52e052;
+    background: #e9fbe9;
+    overflow: auto;
+    padding: 0.5em;
+    border-width: 0 0 0 0.5em;
+    border-left-style: solid;
+    page-break-inside: avoid;
+    margin: 1.5em 0 0 0;
+  }
+  .ednote::before {
+    content: "Editor's Note: ";
+    font-weight: bold;
+  }
+  .note::before {
+    content: "Note: ";
+    font-weight: bold;
+  }
+</style>

@@ -1,0 +1,34 @@
+---
+// Component used to display short version of guideline in top-level informative listing.
+
+import type { InformativeGuideline } from "@/lib/informative";
+import { load } from "cheerio";
+import GithubSlugger from "github-slugger";
+
+interface Props {
+  guideline: InformativeGuideline;
+}
+
+const { guideline } = Astro.props;
+
+if (!guideline.normativeEntry.rendered)
+  throw new Error(
+    `GuidelineSummary: No rendered HTML found for ${guideline.id}; check for Markdown parse failures earlier in log`
+  );
+
+const $ = load(guideline.normativeEntry.rendered.html);
+// Unwrap term links
+$("a:not([href])").each((_, el) => {
+  const $el = $(el);
+  $el.replaceWith($el.html()!);
+});
+$("details").remove(); // Remove e.g. applicability trees
+// TODO: what else to remove from summary?
+const summaryHtml = $.html();
+
+const slugger = new GithubSlugger();
+---
+
+<h3 id={slugger.slug(guideline.title)}>{guideline.title}</h3>
+<Fragment set:html={summaryHtml} />
+<p><a href={guideline.id + "/"}>See more</a></p>

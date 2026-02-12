@@ -1,0 +1,148 @@
+---
+import GithubSlugger from "github-slugger";
+
+import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
+import GuidelineSummary from "@/components/informative/GuidelineSummary.astro";
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import {
+  resolveInformativeGroups,
+  resolveInformativeGuidelines,
+  type InformativeGuideline,
+} from "@/lib/informative";
+
+const informativeGroups = await resolveInformativeGroups();
+const guidelinesMap: Record<string, InformativeGuideline[]> = {};
+for (const { id } of informativeGroups) {
+  if (!(id in guidelinesMap)) guidelinesMap[id] = await resolveInformativeGuidelines(id);
+}
+
+const slugger = new GithubSlugger();
+---
+
+<InformativeLayout title="All WCAG 3 Guidelines">
+  <Breadcrumbs slot="breadcrumbs" segments={[]} />
+  {
+    informativeGroups.map((group) => (
+      <>
+        <h2 id={slugger.slug(group.title)}>{group.title}</h2>
+        {guidelinesMap[group.id].map((guideline) => (
+          <GuidelineSummary guideline={guideline} />
+        ))}
+      </>
+    ))
+  }
+</InformativeLayout>
+
+<style is:global>
+  /* Unneeded?
+  .minimal-header {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    -ms-grid-row: 1;
+    grid-column: 2/10;
+  }
+  */
+
+  /* Unused class
+  .main-content {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/span 6;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row-start: 2;
+  }
+  */
+
+  /* Unused class
+  #site-header.minimal-header.with-subtitle {
+    padding: 1.75em 0 0 0;
+  }
+  */
+
+  /* Unused selector
+  .minimal-header-logo img {
+    margin: 1px 0 1px 0;
+  }
+  */
+
+  /* Has no effect
+  #site-header.minimal-header {
+    margin: 1.2em 0;
+    align-items: stretch;
+  }
+  */
+
+  /* Has no effect
+  #site-header.minimal-header .minimal-header-name, 
+  #site-header.minimal-header .minimal-header-subtitle, 
+  #site-header.minimal-header .minimal-header-link 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .minimal-header-name {
+    flex: width 0 0;
+  }
+  */
+
+  /* Unused?
+  .minimal-header-subtitle,
+  .minimal-header-link {
+    border-left: 1px solid var(--gold);
+    padding-left: 8px;
+    margin-left: 18px;
+    display: block;
+    font-size: 80%;
+    flex: 1 0 0;
+  }
+
+  .minimal-header-subtitle {
+    font-style: italic;
+  }
+
+  .minimal-header-link {
+    text-decoration: underline !important;
+    font-weight: normal;
+    margin-right: 16px;
+  }
+  */
+
+  /* TODO: move to individual components as appropriate, and remove unneeded styles */
+
+  /* Used for "badges" for requirements and techniques */
+  .requirement-level,
+  .technology {
+    display: inline-block;
+    background: #6bc8fe;
+    color: #111111;
+    font-weight: 700;
+    font-size: 11px;
+    font-size: 0.6125rem;
+    line-height: 1.4;
+    vertical-align: middle;
+    margin-left: 1em;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  /* Nested span is visually hidden, for text providing further context */
+  .requirement-level span,
+  .technology span {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* TODO: move to specific nav component for requirements */
+  .sidenav--list a + ul {
+    display: block;
+  }
+</style>

@@ -1,0 +1,15 @@
+---
+import { isDraft } from "@/lib/constants";
+---
+
+{
+  isDraft && (
+    <section aria-label="draft preview" role="note" class="default-grid info" tabindex="0">
+      <p class="inner">
+        This is an unpublished editor's draft that might include content that is not finalized.
+        {/* TODO: finalize and uncomment link after first publish to WAI site */}
+        {/* <a href={`https://www.w3.org/WAI/WCAG3${Astro.url.pathname}`}>View the published version</a> */}
+      </p>
+    </section>
+  )
+}

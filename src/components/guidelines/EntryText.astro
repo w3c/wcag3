@@ -4,6 +4,7 @@ import { load } from "cheerio";
 
 import { informativeSlug } from "@/lib/constants";
 import { computeGuidelineTitle } from "@/lib/guidelines";
+import { silenceWarnings } from "@/lib/informative";
 
 interface Props {
   entry: CollectionEntry<"guidelines"> | CollectionEntry<"requirements">;
@@ -12,8 +13,8 @@ interface Props {
 const { entry } = Astro.props;
 const informativeEntry =
   entry.collection === "guidelines"
-    ? await getEntry("informativeGuidelines", entry.id)
-    : await getEntry("informativeRequirements", entry.id);
+    ? await silenceWarnings(() => getEntry("informativeGuidelines", entry.id))
+    : await silenceWarnings(() => getEntry("informativeRequirements", entry.id));
 
 function processHtml() {
   if (!entry.rendered) {

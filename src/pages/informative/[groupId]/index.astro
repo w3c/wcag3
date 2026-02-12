@@ -1,0 +1,14 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import { informativeSlug } from "@/lib/constants";
+import { resolveInformativeGroups } from "@/lib/informative";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return (await resolveInformativeGroups()).map(({ id }) => ({ params: { groupId: id } }));
+};
+
+const path = `${informativeSlug}/#${Astro.params.groupId}`;
+// path is always truthy, but this works around https://github.com/withastro/language-tools/issues/476
+if (path) return Astro.redirect(`${import.meta.env.BASE_URL}${path}`);
+---

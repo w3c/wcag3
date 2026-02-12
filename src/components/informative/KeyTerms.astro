@@ -1,0 +1,31 @@
+---
+import { computeTermTitle } from "@/lib/guidelines";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  /** HTML containing terms referenced via <a>...</a> */
+  terms: CollectionEntry<"terms">[];
+}
+
+const { terms } = Astro.props;
+
+for (const entry of terms) {
+  if (!entry.rendered) {
+    throw new Error(
+      `KeyTerms: No rendered HTML found for term ${entry.id}; check for Markdown parse failures earlier in log`
+    );
+  }
+}
+---
+
+{terms.length &&
+  <details>
+    <summary><h2 id="key-terms">Key Terms</h2></summary>
+    <dl>
+      {terms.map((entry) => (
+        <dt id={`dfn-${entry.id}`}>{computeTermTitle(entry)}</dt>
+        <dd set:html={entry.rendered!.html} />
+      ))}
+    </dl>
+  </details>
+}

@@ -1,0 +1,50 @@
+---
+import { informativeSlug } from "@/lib/constants";
+import type { InformativeGuideline, InformativeRequirement } from "@/lib/informative";
+
+interface ResolvedSegment {
+  slug: string;
+  title: string;
+}
+
+type Segment = InformativeGuideline | InformativeRequirement | ResolvedSegment;
+
+interface Props {
+  segments: Segment[];
+}
+
+const { segments } = Astro.props;
+
+const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) =>
+  "slug" in segment
+    ? segment
+    : {
+        slug: segment.id.split("/")[i],
+        title: segment.title,
+      }
+);
+---
+
+<nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul>
+    <li><a href={`${import.meta.env.BASE_URL}`}>WCAG 3</a></li>
+    <li>
+      <a
+        href={`${import.meta.env.BASE_URL}${informativeSlug}/`}
+        aria-current={resolvedSegments.length ? undefined : "page"}>How to meet WCAG 3</a
+      >
+    </li>
+    {
+      resolvedSegments.map(({ slug, title }, i) => (
+        <li>
+          <a
+            href={`${import.meta.env.BASE_URL}${slug}`}
+            aria-current={i < resolvedSegments.length - 1 ? undefined : "page"}
+          >
+            {title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
