@@ -2,8 +2,9 @@ import { getCollection, getEntry, type CollectionEntry, type RenderedContent } f
 import { load } from "cheerio";
 import noop from "lodash-es/noop";
 import sortBy from "lodash-es/sortBy";
+import pluralize from "pluralize";
 
-import { computeGuidelineTitle, computeTermTitle, resolveTerm } from "./guidelines";
+import { computeGuidelineTitle, computeTermTitle } from "./guidelines";
 
 /**
  * Wraps a function call to silence its console.warn calls,
@@ -47,7 +48,9 @@ export async function resolveInformativeRequirement(id: string) {
   const normativeRequirement = await getEntry("requirements", id);
   if (!normativeRequirement) throw new Error(`Normative data not found for requirement: ${id}`);
 
-  const informativeRequirement = await silenceWarnings(() => getEntry("informativeRequirements", id));
+  const informativeRequirement = await silenceWarnings(() =>
+    getEntry("informativeRequirements", id)
+  );
   if (!informativeRequirement) return null;
   return {
     ...informativeRequirement,
@@ -132,6 +135,24 @@ export function formatNormativeContent(rendered: RenderedContent) {
   `;
 }
 
+/** Inverted map from every possible permutation of each term to its content entry. */
+const termResolutions: Record<string, CollectionEntry<"terms">> = {};
+for (const entry of await getCollection("terms")) {
+  for (const key of [computeTermTitle(entry), ...(entry.data.synonyms || [])]) {
+    termResolutions[key.toLowerCase()] = entry;
+    // Support plurals the same way ReSpec does
+    const alt = pluralize.isSingular(key) ? pluralize.plural(key) : pluralize.singular(key);
+    termResolutions[alt.toLowerCase()] = entry;
+  }
+}
+
+/**
+ * Resolves a term, synonym, or plural to the originating term.
+ * This is exposed for use by informative documentation logic;
+ * it is generally unneeded in the normative document where ReSpec handles it.
+ */
+const resolveTerm = (term: string) => termResolutions[term.toLowerCase()] || null;
+
 /**
  * Processes <a>...</a> within rendered HTML into key terms,
  * adding hrefs and also returning the alphabetized list of terms.
@@ -143,9 +164,13 @@ export function processKeyTerms(html: string) {
     const $el = $(el);
     const text = $el.text().trim();
     const term = resolveTerm(text);
-    if (!term) throw new Error(`Unable to resolve term from ${text}`);
-    terms.add(term);
-    $el.attr("href", `#dfn-${term.id}`);
+    if (term) {
+      terms.add(term);
+      $el.attr("href", `#dfn-${term.id}`);
+    } else {
+      console.warn(`Unable to resolve a glossary term for "${text}"`);
+      $el.replaceWith($el.html()!);
+    }
   });
 
   return {
