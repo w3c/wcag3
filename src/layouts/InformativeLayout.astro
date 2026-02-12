@@ -37,6 +37,18 @@ const { breadcrumbSegments, nav, title } = Astro.props;
     <div class="default-grid with-gap leftcol">
       {nav && <SideNav {...nav} />}
       <main id="main" class={nav ? "" : "standalone-resource__main"} tabindex="-1">
+        {
+          nav && (
+            <aside class="box page-contents">
+              <header class="box-h">Page Contents</header>
+              <div class="box-i">
+                <nav class="navtoc" aria-label="Page Contents">
+                  <ul>{/* Contents added in middleware.ts */}</ul>
+                </nav>
+              </div>
+            </aside>
+          )
+        }
         <h1>{title || "How to Meet WCAG 3"}</h1>
         <slot />
       </main>
