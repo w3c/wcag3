@@ -1,6 +1,6 @@
 ---
 children:
-  - pointer-controllable
+  - pointer-activation-controllable
   - simple-pointer-input-available
   - consistent-pointer-cancellation
   - pointer-pressure-not-relied-on
