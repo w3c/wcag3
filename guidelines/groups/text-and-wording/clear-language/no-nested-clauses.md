@@ -22,13 +22,11 @@ Sentences do not include :term[nested clauses].
 <b>Procedure</b>
 
 For each sentence:
-1. Identify all nested clauses in the sentence (introduced by nesting conjunctions such as ‘because’, ‘although’, ‘if’, ‘that’, ‘which’, ‘who’, ‘when’, and ‘where’).
+For all nested clauses in the sentence (introduced by nesting conjunctions such as ‘because’, ‘although’, ‘if’, ‘that’, ‘which’, ‘who’, ‘when’, and ‘where’).
 
-2. Check that each initial nested clause does not contain other nested clauses within it.
-
-3. Check that a technology in the :term[accessibility support set] meets ‘No nested clauses’. 
+1. Check that each initial nested clause does not contain other nested clauses within it.
+2. Check that a technology in the :term[accessibility support set] meets ‘No nested clauses’. 
 
 <b>Expected results</b>
-* #2 is true, or
-* #3 is true.
+* #1 or #2 is true.
 :::

@@ -1,5 +1,5 @@
 ---
-type: supplemental
+type: foundational
 status: developing
 ---
 

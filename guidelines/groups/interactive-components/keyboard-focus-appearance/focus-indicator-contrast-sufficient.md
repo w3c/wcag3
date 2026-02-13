@@ -1,6 +1,6 @@
 ---
 status: developing
-type: supplemental
+type: foundational
 ---
 
 If a custom :term[focus indicator] is used, it has sufficient adjacent contrast and change of contrast.

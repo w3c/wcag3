@@ -20,7 +20,7 @@ Methods &amp; best practices
 **Procedure**
 
 If the pointer is ever not visible:
-1. Check whether it meets one of the exceptions.
+1. Check that it meets one of the exceptions.
 
 **Expected results**
 * #1 is is true

@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The user can ensure that the appearance of the :term[pointer] is not overridden by the authored interface.

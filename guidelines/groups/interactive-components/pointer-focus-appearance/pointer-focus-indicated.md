@@ -29,8 +29,9 @@ For example, a set of image-links are shown, and the one under the pointer is hi
 **Procedure**
 
 With appropriate user-settings enabled:
-1. Move the pointer (mouse, eye tracker, hand gesture in VR space, …) and verify if there is some form of indication of where the user is pointing to.
+1. Move the pointer (mouse, eye tracker, hand gesture in VR space, …).
+2. Check that there is some form of indication of where the user is pointing to.
 
 **Expected results**
-- #1 is true
+- #2 is true
 :::
