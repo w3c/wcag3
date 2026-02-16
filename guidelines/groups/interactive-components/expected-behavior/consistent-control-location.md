@@ -1,6 +1,7 @@
 ---
 needsAdditionalResearch: true
 status: developing
+type: supplemental
 ---
 
 Where an :term[interactive element] with the same purpose is used across :term[pages]/:term[views], its visual position in the layout is maintained.
