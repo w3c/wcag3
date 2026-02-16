@@ -14,7 +14,7 @@ status: developing
 
 <b>Procedure</b>
 For the hierarchy of headings:
-1. Check that hadings for sibling content blocks have the same heading level.
+1. Check that headings for sibling content blocks have the same heading level.
 2. Check that headings for immediate child content blocks should be at most one level higher than parent content blocks.
 
 <b>Expected results</b>
