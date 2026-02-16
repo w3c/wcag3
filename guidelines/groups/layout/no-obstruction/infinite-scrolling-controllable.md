@@ -10,7 +10,7 @@ Where content includes :term[infinite scrolling], a mechanism is provided prior 
 
 For each instance of infinite scrolling:
 1. Open the dialog.
-2. Verify that the dialog includes a mechanism to allow the dialog to be dismissed 
+2. Check that the dialog includes a mechanism to allow the dialog to be dismissed 
 
 
 <b>Expected results</b>

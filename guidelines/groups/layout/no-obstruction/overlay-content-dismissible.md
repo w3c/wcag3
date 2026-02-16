@@ -18,7 +18,7 @@ Methods
 
 For each element that opens a modal dialog when interacted with:
 1. Open the dialog.
-2. Verify that the dialog includes a mechanism to allow the dialog to be dismissed. 
+2. Check that the dialog includes a mechanism to allow the dialog to be dismissed. 
 
 
 <b>Expected results</b>

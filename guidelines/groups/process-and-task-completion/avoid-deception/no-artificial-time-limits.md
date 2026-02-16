@@ -13,7 +13,7 @@ The completion of a process does not include artificial time limits.
 <b>Procedure</b>
 
 For each time limit:
-1. Verify that it does not restart or reset immediately.
+1. Check that it does not restart or reset immediately.
 
 
 <b>Expected results</b>

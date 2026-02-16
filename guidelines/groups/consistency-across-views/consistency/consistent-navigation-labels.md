@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -19,7 +19,7 @@ This relates to consistency and terminology within blocks of navigation. The con
 <b>Procedure</b>
 
 For each repeated block of navigation across multiple pages/views of the product or process:
-1. Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process. 
+1. Check that the navigation items within each block of navigation have the same names across all pages/views of the product or process. 
 
 <b>Expected results</b>
 * #1 is true

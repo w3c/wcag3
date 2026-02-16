@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -24,6 +24,7 @@ For the hierarchy of headings:
 <i>HTML Heading levels not skipped</i>
 
 <b>Procedure</b>
+For each page/view:
 1. Review the hierarchy of headings.
 2. Each heading level should be at most one numerical level higher than the preceding heading.
 

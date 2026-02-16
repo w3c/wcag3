@@ -18,10 +18,9 @@ Where the product is a sub-product then the starting point should be the sub-pro
 <i>HTML homepage link</i>
 
 <b>Procedure</b>
-1. Select and view a website's page other than the homepage.
-2. Examine the source code of the HTML document.
-3. Verify that there is a link that points to the website's starting point.
+For each page/view that is not the website's home page: 
+1. Check that there is a link that points to the website's home page.
 
 <b>Expected results</b>
-* #3 is true
+* #1 is true
 :::

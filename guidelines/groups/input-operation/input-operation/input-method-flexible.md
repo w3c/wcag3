@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The ability to switch between input :term[methods] is available at any time.

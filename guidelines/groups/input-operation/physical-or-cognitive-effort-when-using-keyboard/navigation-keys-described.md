@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 If any keyboard action needed to navigate, perceive, and operate the full :term[content] of the :term[page]/:term[view] is not a :term[common keyboard navigation technique], then it is described in the page/view where it is required or on a page/view earlier in the :term[process] where it is used. 

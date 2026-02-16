@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The :term[method] of :term[pointer] cancellation is consistent for each type of interaction within a set of :term[pages]/:term[views].
