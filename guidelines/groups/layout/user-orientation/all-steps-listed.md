@@ -18,7 +18,7 @@ For each multi-step process:
 2. A list of steps in the process is included on each stage.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 
 <i>HTML multi-step listing</i>
 
@@ -29,5 +29,5 @@ For each multi-step process:
 3. The `<ol>` is included in the accessibility tree.
 
 <b>Expected results</b>
-* #2 and #3 are true
+* #2 and #3 are true.
 :::

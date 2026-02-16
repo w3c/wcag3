@@ -23,6 +23,6 @@ For information that is personal or sensitive:
 5. Check that the accessible alternative or modification of the digital content does not include additional risk beyond what’s in the inaccessible alternative.
 
 <b>Expected results</b>
-* #1, #2, and #3 are true
-* If #4 is true, then #5 is true
+* #1, #2, and #3 are true.
+* If #4 is true, then #5 is true.
 :::

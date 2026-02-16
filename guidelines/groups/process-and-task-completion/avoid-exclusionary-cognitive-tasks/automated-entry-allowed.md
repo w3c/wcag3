@@ -18,5 +18,5 @@ For each form that requests personal information:
 3. Check that the browser tools automatically populate personal information into the form.
 
 <b>Expected results</b>
-* #3 is true
+* #3 is true.
 :::

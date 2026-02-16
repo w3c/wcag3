@@ -18,7 +18,7 @@ For the hierarchy of headings:
 2. Check that headings for immediate child content blocks should be at most one level higher than parent content blocks.
 
 <b>Expected results</b>
-* #1 and #2 are true
+* #1 and #2 are true.
 
 
 <i>HTML Heading levels not skipped</i>
@@ -29,5 +29,5 @@ For each page/view:
 2. Each heading level should be at most one numerical level higher than the preceding heading.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

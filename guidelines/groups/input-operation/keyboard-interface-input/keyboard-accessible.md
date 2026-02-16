@@ -24,6 +24,6 @@ For all content on the :term[page]/:term[view]:
 2. Check that the content can be viewed using keyboard actions described on the page where it is required or on a page earlier in the process where it is required.
 
 **Expected results**
-- #1 or 2 is true
+- #1 or 2 is true.
 :::
 

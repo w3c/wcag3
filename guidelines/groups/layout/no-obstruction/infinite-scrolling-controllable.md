@@ -14,5 +14,5 @@ For each instance of infinite scrolling:
 
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

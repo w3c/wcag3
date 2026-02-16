@@ -18,5 +18,5 @@ For each pointer indicator:
 2. Check that it works in the conformance scope of web pages/views.
 
 **Expected results**
-- #1 and #2 are true
+- #1 and #2 are true.
 :::

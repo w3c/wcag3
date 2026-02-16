@@ -23,5 +23,5 @@ For each variation of the product in scope:
 2. Check that components are presented in the same order within each page/view.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

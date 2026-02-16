@@ -12,5 +12,5 @@ For each instance of focus being changed by the content:
 1. Check that the change is conveyed visually and programmatically using the assistive technology in the accessibility support set.
 
 <b>Expected results</b>
-- #1 is true
+- #1 is true.
 :::

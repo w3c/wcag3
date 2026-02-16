@@ -27,5 +27,5 @@ For each interactive element:
 2. Check that when tabbing backwards, you can navigate to the interactive element and then to the previous interactive element.
 
 **Expected results**
-- #1 and #2 are true
+- #1 and #2 are true.
 :::

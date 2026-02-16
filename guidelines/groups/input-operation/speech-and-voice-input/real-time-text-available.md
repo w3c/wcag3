@@ -19,5 +19,5 @@ For each places where speech is used for communication (with human or AI):
 1. Check that there is an alternative way to achieve the same function using real-time text.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

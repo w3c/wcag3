@@ -17,6 +17,5 @@ For all visible text:
 3. If text content, check that the text is not hidden using code such as the `aria-hidden` attribute.
 
 <b>Expected results</b>
-* #2 is true.
-* #3 is true.
+* #2 and #3 are true.
 :::

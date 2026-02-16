@@ -22,5 +22,5 @@ For each element that opens a modal dialog when interacted with:
 
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

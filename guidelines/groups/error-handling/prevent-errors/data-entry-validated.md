@@ -15,6 +15,5 @@ Data entered is validated after the user enters data, either:
 3. Check that validation is provided immediately after data entry or occurs before submission.
 
 <b>Expected results</b>
-* #1 is true.
-* #2 is true.
+* #1 and #2 are true.
 :::

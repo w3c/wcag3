@@ -16,7 +16,7 @@ For each multi-step process:
 
 <b>Expected results</b>
 
-* Check #2 and #3 are true
+* Check #2 and #3 are true.
 
 <i>Current step visually identifiable</i>
 
@@ -27,5 +27,5 @@ For each multi-step process:
 3. The current process step is visually distinguishable from other steps.
 
 <b>Expected results</b>
-* Check #2 and #3 are true
+* Check #2 and #3 are true.
 :::

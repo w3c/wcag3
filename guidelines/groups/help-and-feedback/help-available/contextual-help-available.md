@@ -13,6 +13,5 @@ For each interactive element:
 2. For any element identified in #1, check that context-sensitive help is available.
 
 <b>Expected results</b>
-
 * #2 is true.
 :::

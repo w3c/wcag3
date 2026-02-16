@@ -56,6 +56,5 @@ For all text content:
 3. Check that the :term[accessibility support set] meets ‘Diacritics available’.
 
 <b>Expected results</b> 
-* #2 is true, or 
-* #3 is true.
+* #2 or #3 is true.
 :::

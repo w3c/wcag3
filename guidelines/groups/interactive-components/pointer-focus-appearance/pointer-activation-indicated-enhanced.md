@@ -21,5 +21,5 @@ For each pointer indicator:
 
 **Expected results**
 
-- #1 is true
+- #1 is true.
 :::

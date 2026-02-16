@@ -23,5 +23,5 @@ For each pointer indicator:
 2. Check for a setting that the user can enable to use the standard platform indicator.
 
 **Expected results**
-- #1 or #2 is true
+- #1 or #2 is true.
 :::

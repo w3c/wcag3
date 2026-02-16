@@ -15,7 +15,7 @@ status: developing
 3. The spacing between all adjacent meaningful blocks of content is sufficient.
 
 <b>Expected results</b>
-* #3 is true
+* #3 is true.
 
 
 <i>Programmatically identifiable meaningful blocks of content</i>
@@ -26,5 +26,5 @@ For each meaningful blocks of content in the page/view:
 2. Check using assistive technology that an appropriate role is being used for the meaningful blocks of content.
 
 <b>Expected results</b>
-* #1 or #2 is true
+* #1 or #2 is true.
 :::

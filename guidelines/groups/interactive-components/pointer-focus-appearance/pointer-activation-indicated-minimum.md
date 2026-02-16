@@ -21,5 +21,5 @@ Where the platform does not use a visible pointer indicator, for each interactiv
 1. Check that there is an indicator of activation.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

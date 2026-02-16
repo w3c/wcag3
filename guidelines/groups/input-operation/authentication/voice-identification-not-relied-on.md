@@ -11,5 +11,5 @@ For each place where voice is used for identification:
 1. Check that there is an alternative way to achieve authentication.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

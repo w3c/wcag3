@@ -21,5 +21,5 @@ For each page/view:
 3. Check that the focus order of the interactive elements in the content is the same as the logical order in #1.
 
 **Expected results**
-- #3 is true
+- #3 is true.
 :::

@@ -27,5 +27,5 @@ For haptic feedback caused by the digital content (vs. the operating system or u
 
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

@@ -21,5 +21,5 @@ For each meaningful block of content in the page/view:
     * Repeated visual feature — blocks contain a consistent visual feature (for example, bullets in a list, checkbox)
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

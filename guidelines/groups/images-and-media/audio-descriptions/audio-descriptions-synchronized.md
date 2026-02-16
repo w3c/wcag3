@@ -17,5 +17,5 @@ For synchronized media with audio description:
 2. Check that audio description doesn’t overlap with dialogue and meaningful audio content.
 
 <b>Expected results</b>
-* #1 and #2 are true
+* #1 and #2 are true.
 :::

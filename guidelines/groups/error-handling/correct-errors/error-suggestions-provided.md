@@ -21,5 +21,5 @@ For each error message:
 2. Check that the error message includes suggestions for how to fix the error.
 
 <b>Expected results</b>
-* #1 and #2 are true
+* #1 and #2 are true.
 :::

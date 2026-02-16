@@ -14,7 +14,7 @@ status: developing
 3. Check that each section uses an appropriate semantic HTML element that reflects its position in the hierarchy.
 
 <b>Expected results</b>
-* #3 is true
+* #3 is true.
 
 
 <i>HTML input field/label relationship</i>
@@ -24,7 +24,7 @@ For each input field within the unit of conformance:
 1. Check that each `<input>`, `<select>` and `<textarea>` in the source code has a programmatically associated `<label>` using `for` and `id` attributes. 
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 
 
 <i>HTML list relationship</i>
@@ -36,7 +36,7 @@ For each list within the unit of conformance:
 3. Check that the immediate child element of the list is an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 
 <b>Expected results</b>
-* #1, #2 and #3 are true
+* #1, #2 and #3 are true.
 
 
 <i>HTML nested list relationship</i>
@@ -46,5 +46,5 @@ For each nested list within the unit of conformance:
 1. Check that all child lists are contained within a `<li>` of the parent list.
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

@@ -22,5 +22,5 @@ For each interactive element:
 3. Check that #1 includes all of #2.
 
 **Expected results**
-- #3 is true
+- #3 is true.
 :::

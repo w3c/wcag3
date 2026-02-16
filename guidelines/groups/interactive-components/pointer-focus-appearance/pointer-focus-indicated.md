@@ -33,5 +33,5 @@ With appropriate user-settings enabled:
 2. Check that there is some form of indication of where the user is pointing to.
 
 **Expected results**
-- #2 is true
+- #2 is true.
 :::

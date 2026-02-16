@@ -26,5 +26,5 @@ For each situation where elements that have or contain keyboard focus are remove
 1. Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
 
 **Expected results**
-- #1 is true for each situation
+- #1 is true for each situation.
 :::

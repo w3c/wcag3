@@ -18,5 +18,5 @@ For each input:
 2. Check that you can switch between inputs and complete functionality
 
 **Expected results**
-- #2 is true
+- #2 is true.
 :::

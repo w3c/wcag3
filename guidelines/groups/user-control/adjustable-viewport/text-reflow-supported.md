@@ -25,5 +25,5 @@ For each page/view:
 
 
 <b>Expected results</b>
-* #3 and #4 are true
+* #3 and #4 are true.
 :::

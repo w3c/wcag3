@@ -24,5 +24,5 @@ For each data entry point:
 
 <b>Expected results</b>
 * #1 is true, or
-* #2 is true
+* #2 is true.
 :::

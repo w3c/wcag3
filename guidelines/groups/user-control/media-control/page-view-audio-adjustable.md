@@ -28,6 +28,6 @@ For each page / view:
   b. There are keyboard controls that can pause, stop, or adjust the audio volume.
 
 <b>Expected results</b>
-* #2, #3, or #4 is true
+* #2, #3, or #4 is true.
 
 :::

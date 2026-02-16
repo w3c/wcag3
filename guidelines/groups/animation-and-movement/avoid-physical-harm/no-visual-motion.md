@@ -23,6 +23,6 @@ For each page/view:
 
 <b>Expected results</b>
 * #1 is false, or
-* #2 is true
+* #2 is true.
 :::
 
