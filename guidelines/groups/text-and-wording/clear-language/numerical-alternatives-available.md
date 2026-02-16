@@ -20,7 +20,7 @@ Complex numerical information can increase cognitive load, especially for users 
 :::tests
 **Procedure**
 
-For for any complex numerical information in the content:
+For any complex numerical information in the content:
 1. Check that an alternative is available that is not presented as complex numerical information.
 
 **Expected results**

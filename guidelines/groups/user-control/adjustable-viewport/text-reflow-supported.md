@@ -17,6 +17,7 @@ Other languages may have other rules around line breaking: https://r12a.github.i
 <i>HTML paragraph reflow without requiring scrolling in two dimensions</i>
 
 <b>Procedure</b>
+
 For each page/view:
 1. Set the viewport at 320 CSS pixels in the direction of text.
 2. Identify all the blocks of text within the scope.

@@ -50,6 +50,7 @@ The Hebrew word <span lang="he">אֹמֶר</span>, with a different set of diacr
 
 :::tests
 <b>Procedure</b>
+
 For all text content:
 1. Check for content that has missing diacritics.
 2. Check that an alternative version to text identified in #1 is provided that includes diacritics needed to identify the correct meaning of each word.

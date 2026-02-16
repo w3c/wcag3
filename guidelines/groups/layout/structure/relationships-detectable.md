@@ -30,6 +30,7 @@ For each input field within the unit of conformance:
 <i>HTML list relationship</i>
 
 <b>Procedure</b>
+
 For each list within the unit of conformance:
 1. Check that each list consists of a `<ul>`, `<ol>` or `<dl>`.
 2. Check that each list item within the list is contained within an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
@@ -42,6 +43,7 @@ For each list within the unit of conformance:
 <i>HTML nested list relationship</i>
 
 <b>Procedure</b>
+
 For each nested list within the unit of conformance:
 1. Check that all child lists are contained within a `<li>` of the parent list.
 

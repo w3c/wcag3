@@ -19,6 +19,7 @@ Mechanisms include controls on each instance of content, or a single app-wide co
 :::tests
 
 <b>Procedure</b>
+
 For each page / view:
 1. Check for audio that starts automatically.
 2. For audio content in a media player, check that the media player has controls that can pause, stop, or adjust the audio volume.

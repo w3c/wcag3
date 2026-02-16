@@ -12,6 +12,7 @@ Personal information includes names, passwords, et cetera.
 :::tests
 
 <b>Procedure</b>
+
 For each form that requests personal information:
 1. Ensure there is a test identity set up in the browser.
 2. Navigate to a form requiring the input of personal information.

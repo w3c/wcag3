@@ -15,6 +15,7 @@ Implying to a user that they will lose a benefit if they don’t act immediately
 
 :::tests
 <b>Procedure</b>
+
 For each page/view:
 1. Check if content includes time limits.
 

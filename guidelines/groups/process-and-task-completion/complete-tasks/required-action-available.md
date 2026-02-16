@@ -11,6 +11,7 @@ The interface indicates when user input or action is required in order to procee
 
 :::tests
 <b>Procedure</b>
+
 For any parts of a process that cannot be completed without the user doing a required action:
 1. Enter in all the information except for the required action(s).
 2. Try to complete the process.

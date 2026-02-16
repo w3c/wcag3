@@ -16,7 +16,7 @@ The timing or positioning of notifications can be changed, suppressed or saved.
 :::tests
 <b>Procedure</b>
 
-For each notifications:
+For each notification:
 1. Check that settings allow the timing or location to be changed. 
 
 <b>Expected results</b>

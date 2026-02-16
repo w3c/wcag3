@@ -11,6 +11,7 @@ Data entry and other task completion :term[processes] allow saving and resuming 
 
 :::tests
 <b>Procedure</b>
+
 For any processes that require the user to enter information:
 1. Log in, if needed, and begin the timed activity.
 2. Allow the session to time out.

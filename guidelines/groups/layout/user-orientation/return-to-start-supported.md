@@ -18,6 +18,7 @@ Where the product is a sub-product then the starting point should be the sub-pro
 <i>HTML homepage link</i>
 
 <b>Procedure</b>
+
 For each page/view that is not the website's home page: 
 1. Check that there is a link that points to the website's home page.
 

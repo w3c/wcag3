@@ -15,6 +15,7 @@ Additional risk includes risk to privacy, finances and personal safety — for e
 
 :::tests
 <b>Procedure</b>
+
 For information that is personal or sensitive:
 1. Check that personal or sensitive information is visually hidden by default.
 2. Check that the personal or sensitive  information is programmatically hidden by default.

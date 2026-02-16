@@ -11,6 +11,7 @@ Data entry interfaces notify users of submission status at the time of submissio
 
 :::tests
 <b>Procedure</b>
+
 For each data submission:
 1. Check that the user is notified about the submission immediately afterwards.
 

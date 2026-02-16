@@ -9,6 +9,7 @@ The current step within a multi-step process is visually and programmatically in
 <i>ARIA current</i>
 
 <b>Procedure</b>
+
 For each multi-step process:
 1. Examine the source code of the HTML document.
 2. Process navigation steps are included.
@@ -21,6 +22,7 @@ For each multi-step process:
 <i>Current step visually identifiable</i>
 
 <b>Procedure</b>
+
 For each multi-step process:
 1. Visually examine the content.
 2. Process navigation steps are viewable.
