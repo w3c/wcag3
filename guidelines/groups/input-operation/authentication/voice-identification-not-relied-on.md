@@ -1,6 +1,6 @@
 ---
 status: developing
-type: exploratory
+type: core
 ---
 
 Voice identification is not the only way to identify or authenticate.
