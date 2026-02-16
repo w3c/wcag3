@@ -7,7 +7,7 @@ Error messages are visually indicated using at least two of the following:
 
 * A symbol that is consistent throughout the :term[product].
 * Color that differentiates the error message from surrounding :term[content].
-* Text that clearly indicates the error.
+* A textual indication, for example “Error: ”.
 
 :::tests
 <b>Procedure</b>
