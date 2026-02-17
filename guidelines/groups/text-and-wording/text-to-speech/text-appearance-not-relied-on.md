@@ -3,7 +3,7 @@ status: exploratory
 type: foundational
 ---
 
-Meaning conveyed by :term[text] :term[style properties] is also :term[programmatically determinable].
+Meaning conveyed by :term[text] style properties is also :term[programmatically determinable].
 
 :::applies-when
 * the styling, weight, or other text characteristics convey meaning beyond what the text itself says.
