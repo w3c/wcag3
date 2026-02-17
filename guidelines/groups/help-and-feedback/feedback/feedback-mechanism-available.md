@@ -8,7 +8,7 @@ A :term[mechanism] is available to provide feedback to authors.
 :::tests
 **Procedure**
 
-For each product:
+Within the :term[conformace scope]:
 1. Check that a feedback mechanism exists.
 2. Check that the feedback is sent to authors.
 
