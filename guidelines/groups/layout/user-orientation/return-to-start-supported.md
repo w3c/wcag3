@@ -11,7 +11,7 @@ A visual and programmatically available mechanism exists that allows users to re
 :::
 
 :::note
-Where the :term[conformance scope] is a sub-part of larger digital product, then the starting point should be the conformace scope starting point. For example, an organization's careers website that is separate from the main website.
+Where the :term[conformance scope] is a sub-part of larger digital product, then the starting point should be the conformance scope starting point. For example, an organization's careers website that is separate from the main website.
 :::
 
 :::tests
