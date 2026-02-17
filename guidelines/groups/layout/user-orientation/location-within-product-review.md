@@ -19,5 +19,5 @@ It is often helpful for users to understand where within a digital product they 
 
 ::assertion-recommended
 
-* Design log capturing decision to use specific approaches to current location patterns used within the conformace scope.
+* Design log capturing decision to use specific approaches to current location patterns used within the conformance scope.
 * If a non-convention design pattern is used, usability testing results that demonstrate the utility of the design approach taken.
