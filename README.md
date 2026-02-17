@@ -82,6 +82,10 @@ These are available to multiple data types, as specified in each respective sect
   - `true` indicates the slug to reach the howto is consistent with the folder and filename of the current file
   - A string value indicates an exact slug
   - *This should currently be avoided until the informative documentation is revisited*
+- `issueLabel` - Optional string; specifies the issue label corresponding to a provision
+  - This is only necessary when the label does not match the provision's title, e.g. if a provision is renamed after it was first published
+  - Excludes the "P - " prefix
+  - It may help to think of this as a "legacy title" field
 - `status` - Optional string: one of the status indicators outlined in the Explainer (in lowercase)
 - `title` - Optional title of the guideline, requirement, or term
   - If unspecified, this will be derived from the slug,
@@ -103,7 +107,7 @@ Represents each fourth-level heading that multiple provisions (requirements/asse
 are listed under. Each guideline is defined in a Markdown file, with its child
 provisions located in a subdirectory with the same name.
 
-- Supports [common fields](#common-fields): `children`, `howto`, `status`, `title`
+- Supports [common fields](#common-fields): `children`, `howto`, `issueLabel`, `status`, `title`
   - `status` for guidelines is optional, limited to `developing`, `refining`, `mature`
 - No additional unique fields
 
@@ -111,7 +115,7 @@ provisions located in a subdirectory with the same name.
 
 Represents each fifth-level heading specifying an individual requirement or assertion.
 
-- Supports [common fields](#common-fields): `howto`, `status`, `title`
+- Supports [common fields](#common-fields): `howto`, `issueLabel`, `status`, `title`
   - `status` for requirements and assertions defaults to `exploratory` if not specified
 - `needsAdditionalResearch` - Optional boolean, indicating whether to
   display a "needs additional research" editor's note

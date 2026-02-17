@@ -58,6 +58,7 @@ export const collections = {
       // Moreover, we can't override generateId for requirements to only use slug,
       // due to duplicates across separate guidelines, e.g. "style-guide"
       children: childrenSchema,
+      issueLabel: z.string().optional(),
       status: parentStatusSchema.optional(),
     }),
   }),
@@ -65,6 +66,7 @@ export const collections = {
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: commonChildSchema.extend({
       tags: z.array(reference("tags")).optional(),
+      issueLabel: z.string().optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       type: z
