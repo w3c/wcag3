@@ -3,7 +3,7 @@ import node from "@astrojs/node";
 import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { load } from "cheerio";
 import fg from "fast-glob";
-import difference from "lodash-es/difference";
+import difference from "lodash/difference";
 import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
 

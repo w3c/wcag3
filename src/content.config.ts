@@ -1,6 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
 import { file, glob } from "astro/loaders";
-import uniq from "lodash-es/uniq";
+import uniq from "lodash/uniq";
 
 /** howto can be set to true to indicate the informative and normative slugs are identical */
 const howtoSchema = z.boolean().or(z.string().regex(/^[\w-]+$/));
