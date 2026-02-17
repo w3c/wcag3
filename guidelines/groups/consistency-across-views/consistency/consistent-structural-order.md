@@ -3,7 +3,7 @@ type: supplemental
 status: developing
 ---
 
-The relative order of :term[structural components] remains consistent throughout each specific :term[variation of product or process].
+The relative order of :term[structural components] remains consistent throughout each variation of :term[pages]/:term[views] in the :term[conformance scope].
 
 :::applies-when
 - In a set of :term[pages]/:term[views]
