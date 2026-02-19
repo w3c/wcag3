@@ -6,13 +6,13 @@ type: foundational
 At least one of the following is true for functionality that can be activated using a :term[simple pointer input]:
 
 No Down Event
-: The :term[down event] of the :term[pointer] is not used to execute any part of the function
+: The :term[down event] of the :term[pointer] is not used to execute any part of the function.
 
 Cancel or Undo
-: Completion of the function is on the :term[up event], and a :term[mechanism] is available to cancel the function before completion or to undo the function after completion
+: Completion of the function is on the :term[up event] and a :term[mechanism] is available to cancel the function before completion, or there is a mechanism to undo the function after completion.
 
 Up Reversal
-: The :term[up event] reverses any outcome of the preceding down event
+: The :term[up event] reverses any outcome of the preceding down event.
 
 :::except-when
 - Completing the function on the down event is :term[essential].
@@ -36,5 +36,5 @@ For each element that can be activated with a simple pointer:
  4. Check that completing the function on the down-event is essential.
 
 **Expected results**
-- #1, #2, #3, or #4 is true
+- Any of #1, #2, #3, or #4 is true.
 :::

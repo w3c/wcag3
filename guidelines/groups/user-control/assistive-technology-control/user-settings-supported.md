@@ -19,5 +19,5 @@ For each setting:
 
 **Expected results**
 
-- #2 is true
+- #2 is true.
 :::

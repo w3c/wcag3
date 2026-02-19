@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -15,5 +15,5 @@ A :term[mechanism] is available to turn :term[captions] on and off.
 For each caption:
 1. Check that content with captions provides a mechanism to turn on and off the captions.
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

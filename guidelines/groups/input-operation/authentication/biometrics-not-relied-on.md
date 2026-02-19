@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Biometric identification is not the only way to identify or authenticate.
+:term[Biometric] identification is not the only way to identify or authenticate.
 
 :::note
 Biometrics includes facial recognition software, fingerprinting, vocal patterns and other voice characteristics.
@@ -18,8 +18,8 @@ Methods &amp; best practices
 :::tests
 **Procedure**
 
-For each method of user authentication:
-1. Verify that there is at least one other method of non-biometric authentication.
+For each method of biometric user authentication:
+1. Check that there is at least one other method of non-biometric authentication.
 
 **Expected results**
 - #1 is true.

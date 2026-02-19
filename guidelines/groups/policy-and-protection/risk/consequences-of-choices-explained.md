@@ -7,10 +7,11 @@ Choices with legal, financial, privacy, or security consequences are accompanied
 
 :::tests
 <b>Procedure</b>
-1. Identify any choices being made by the user.
-2. Identify any potential legal, financial, privacy and security consequences to the user as a result of the choice.
-3. Verify that the consequences are provided when the user  makes the choice.
+
+For any choices being made by the user:
+1. Identify any potential legal, financial, privacy and security consequences to the user as a result of the choice.
+2. Check that the consequences are provided when the user makes the choice.
 
 <b>Expected results</b>
-* #3 is true.
+* #2 is true.
 :::

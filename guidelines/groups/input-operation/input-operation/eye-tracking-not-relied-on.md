@@ -25,5 +25,5 @@ For platforms that use eye-tracking for pointer use:
 1. Check that alternative, such as using a switch control, is available.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

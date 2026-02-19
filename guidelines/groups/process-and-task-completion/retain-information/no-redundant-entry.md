@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Information previously entered by or provided to the user that is required to be entered again in the same :term[process] is either auto-populated, or available for the user to select.
@@ -13,10 +13,11 @@ Information previously entered by or provided to the user that is required to be
 
 :::tests
 <b>Procedure</b>
-1. Identify any processes that require the user to enter information.
-2. Check whether the information has already been requested ion a previous step of the process.
-3. Verify that the information entered previously is prepopulated in the respective field(s) or is displayed on the page for copying.
+
+For any process that requires the user to enter information:
+1. Check whether the information has already been requested ion a previous step of the process.
+2. Check that the information entered previously is prepopulated in the respective field(s) or is displayed on the page for copying.
 
 <b>Expected results</b>
-* #3 is true.
+* #2 is true.
 :::

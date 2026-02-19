@@ -20,7 +20,7 @@ Complex pointer inputs are not banned, but they cannot be the only way to accomp
 :::
 
 :::note
-Simple pointer input is different than :term[single pointer input] and is more restrictive than simply using a :term[single pointer].
+Simple pointer input is different than :term[single pointer input] and is more restrictive than simply using a single pointer.
 :::
 
 :::tests
@@ -30,5 +30,5 @@ For each functionality that uses pointer input other than simple pointer input:
 1. Check that it can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

@@ -22,10 +22,11 @@ Tabbing through menus, hitting <kbd>space</kbd> to open a menu, tabbing off the 
 
 :::tests
 **Procedure**
+
 For each interactive element:
 1. Check that when tabbing forwards, you can navigate to the interactive element and then to the next interactive element.
 2. Check that when tabbing backwards, you can navigate to the interactive element and then to the previous interactive element.
 
 **Expected results**
-- #1 and #2 are true
+- #1 and #2 are true.
 :::

@@ -1,5 +1,6 @@
 ---
 status: developing
+type: supplemental
 ---
 
 A user can focus on a :term[content] "area", such as a modal or popup, then resume their view of all content using a limited number of steps.
@@ -9,7 +10,7 @@ A user can focus on a :term[content] "area", such as a modal or popup, then resu
 **Procedure**
 
 For each situation where the keyboard focus is removed:
-1. verify that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
+1. Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
 
 **Expected results**
 

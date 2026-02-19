@@ -15,8 +15,8 @@ title: No flashing (no exceptions)
 <b>Procedure</b>
 
 For each page/view:
-1. Identify if content includes flashing.
+1. Check if content includes flashing.
 
 <b>Expected results</b>
-* #1 is false
+* #1 is false.
 :::

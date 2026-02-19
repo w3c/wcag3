@@ -21,7 +21,7 @@ status: developing
 2. Each label correctly describes the block.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 
 
 <i>Label exists</i>
@@ -31,7 +31,7 @@ status: developing
 2. Each block has a label that describes the block.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 
 
 <i>HTML heading semantics</i>
@@ -41,5 +41,5 @@ status: developing
 2. Heading text is marked up using an `<h?>` element.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

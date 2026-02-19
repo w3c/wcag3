@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Except for skip links and other elements that are hidden but specifically added to aid keyboard navigation, tabbing does not move the :term[keyboard focus] onto :term[content] that was not visible before the tab action.

@@ -7,11 +7,12 @@ During the completion of a :term[process], preselected options that impact finan
 
 :::tests
 <b>Procedure</b>
-1. Identify all options that affect finance, privacy and safety.
-2. For all identified in Step 1, verify that these are visible when completing a process.
-3. For all identified in Step 1, verify that they are programmatically available before completing the process.
+
+For all options that affect finance, privacy and safety"
+1. Check that the options are visible when completing a process.
+2. Check that that they are programmatically available before completing the process.
 
 <b>Expected results</b>
-* #2 is true.
-* #3 is true.
+* #1 and #2 are true.
+
 :::

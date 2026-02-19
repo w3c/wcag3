@@ -19,8 +19,8 @@ For each interactive element:
 
 1. Identify the interactive elements' programmatic name. 
 2. Identify the interactive element's visual name.
-3. Verify that #1 includes all of #2.
+3. Check that #1 includes all of #2.
 
 **Expected results**
-- #3 is true
+- #3 is true.
 :::

@@ -3,10 +3,10 @@ status: developing
 type: foundational
 ---
 
-:term[Non-decorative images] are detectable
+Non-:term[decorative] images are detectable.
 
 :::applies-when
-- content includes :term[non-decorative images].
+- content includes non-:term[decorative] images.
 :::
 
 :::tests

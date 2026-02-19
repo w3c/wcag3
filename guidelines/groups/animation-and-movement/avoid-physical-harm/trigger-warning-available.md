@@ -27,5 +27,5 @@ For each trigger:
 
 
 <b>Expected results</b>
-* #1 and #2 are true
+* #1 and #2 are true.
 :::

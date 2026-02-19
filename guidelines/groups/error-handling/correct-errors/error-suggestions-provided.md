@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Error messages include suggestions for corrections.
@@ -17,9 +17,9 @@ Error messages include suggestions for corrections.
 <b>Procedure</b>
 
 For each error message:
-1. Verify it is an error that needs correction by the user.
-2. Verify that the error message includes suggestions for how to fix the error.
+1. Check that the error needs correction by the user.
+2. Check that the error message includes suggestions for how to fix the error.
 
 <b>Expected results</b>
-* #1 and #2 are true
+* #1 and #2 are true.
 :::

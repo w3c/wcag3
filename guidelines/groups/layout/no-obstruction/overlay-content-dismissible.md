@@ -16,11 +16,11 @@ Methods
 
 <b>Procedure</b>
 
-1. Identify elements that open a modal dialog when interacted with.
-2. Open the dialog.
-3. Verify that the dialog includes a mechanism to allow the dialog to be dismissed. 
+For each element that opens a modal dialog when interacted with:
+1. Open the dialog.
+2. Check that the dialog includes a mechanism to allow the dialog to be dismissed. 
 
 
 <b>Expected results</b>
-* #3 is true
+* #2 is true.
 :::

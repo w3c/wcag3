@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: exploratory
 ---
 

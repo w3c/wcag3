@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-:term[Decorative] :term[images] are :term[programmatically] hidden.
+:term[Decorative] images are :term[programmatically] hidden.
 
 :::tests
 <i>(General) No accessible name</i>

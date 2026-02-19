@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The user can ensure that the appearance of the :term[pointer] is not overridden by the authored interface.
@@ -19,9 +19,10 @@ Methods &amp; best practices:
 :::tests
 **Procedure**
 
+For each pointer indicator:
 1. Check that the pointer uses the standard platform indicator.
-2. If it does not, check for a setting that the user can enable to use the standard platform indicator.
+2. Check for a setting that the user can enable to use the standard platform indicator.
 
 **Expected results**
-- #1 or #2 is true
+- #1 or #2 is true.
 :::

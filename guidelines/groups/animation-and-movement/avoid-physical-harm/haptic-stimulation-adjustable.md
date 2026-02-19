@@ -23,9 +23,9 @@ Haptic feedback can be reduced or turned off.
 <b>Procedure</b>
 
 For haptic feedback caused by the digital content (vs. the operating system or user agent).
-1. Identify if there is a setting that allows for reducing or turning off the haptic feedback.
+1. Check if there is a setting that allows for reducing or turning off the haptic feedback.
 
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

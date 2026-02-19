@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
  :term[Content] that appears on :term[pointer] hover or :term[keyboard focus] remains visible until the hover or keyboard focus trigger is removed, the user dismisses it, or its information is no longer valid.

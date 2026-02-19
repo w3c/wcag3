@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 When :term[keyboard focus] moves from one context to another within a :term[page]/:term[view], whether automatically or by user request, the keyboard focus is preserved so that, when the user returns to the previous context, the keyboard focus is restored to its previous location unless that location no longer exists.
@@ -26,5 +26,5 @@ For each situation where elements that have or contain keyboard focus are remove
 1. Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
 
 **Expected results**
-- #1 is true for each situation
+- #1 is true for each situation.
 :::

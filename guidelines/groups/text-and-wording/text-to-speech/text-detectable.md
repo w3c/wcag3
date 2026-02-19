@@ -12,11 +12,10 @@ All visible :term[text] has a :term[programmatically determinable] equivalent.
 :::tests
 
 <b>Procedure</b>
-1. Identify all visible text. 
-2. For text that is embedded in an image, check if text has a :term[text alternative] or can be accurately read using the :term[accessibility support set].
-3. For text content, check that the text is not hidden using code such as the `aria-hidden` attribute.
+For all visible text: 
+2. If the text is embedded in an image, check that the text has a :term[text alternative] or can be accurately read using the :term[accessibility support set].
+3. If text content, check that the text is not hidden using code such as the `aria-hidden` attribute.
 
 <b>Expected results</b>
-* #2 is true.
-* #3 is true.
+* #2 and #3 are true.
 :::
