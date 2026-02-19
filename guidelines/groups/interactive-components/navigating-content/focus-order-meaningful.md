@@ -15,10 +15,11 @@ The :term[keyboard focus] moves sequentially through :term[content] in an order 
 :::tests
 **Procedure**
 
+For each page/view: 
 1. Determine the logical order of the interactive elements.
 2. Starting with the first focusable element in the page/view, tab through the interactive elements in the content.
 3. Check that the focus order of the interactive elements in the content is the same as the logical order in #1.
 
 **Expected results**
-- #3 is true
+- #3 is true.
 :::

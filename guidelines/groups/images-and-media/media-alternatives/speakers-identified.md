@@ -1,14 +1,13 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
 Speakers are identified understandably within all :term[media alternatives].
 
-:::note
-* Full name then use part of name
-* Hidden identity as part of narrative structure
-* Recognizable position within the context of use
+:::except-when
+- The speaker has a hidden identity as part of narrative structure.
+- Identity is identifiable within the context of use.
 :::
 
 :::applies-when

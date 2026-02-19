@@ -3,7 +3,7 @@ status: developing
 type: foundational 
 ---
 
-:term[Equivalent] :term[text alternatives] are :term[available] for :term[images] that convey :term[content].
+:term[Equivalent] :term[text alternatives] are :term[available] for images that convey :term[content].
 
 :::tests
 Provide a text alternative for the image in a way that conveys the equivalent meaning or content that's displayed visually.

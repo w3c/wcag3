@@ -1,5 +1,4 @@
 ---
 status: placeholder
-synonyms:
-  - role
+unusedDefinition: true
 ---

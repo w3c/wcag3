@@ -24,8 +24,8 @@ Methods &amp; best practices
 :::tests
 **Procedure**
 
-For adjacent links that go to the same destination:
-2. Check that only one of the links is in the focus or reading order.
+For set of adjacent links that go to the same destination:
+1. Check that only one of the links is in the focus and reading order.
 
 **Expected Results**
 - #1 is true.

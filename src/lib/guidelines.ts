@@ -1,6 +1,6 @@
 import { getCollection, getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
-import capitalize from "lodash-es/capitalize";
-import difference from "lodash-es/difference";
+import capitalize from "lodash/capitalize";
+import difference from "lodash/difference";
 
 import { isDevOrPreview } from "./constants";
 

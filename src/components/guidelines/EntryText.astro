@@ -1,6 +1,7 @@
 ---
 import { getEntry, type CollectionEntry } from "astro:content";
 import { load } from "cheerio";
+import capitalize from "lodash-es/capitalize";
 
 import { computeGuidelineTitle } from "@/lib/guidelines";
 
@@ -49,7 +50,9 @@ function processHtml() {
   if (entry.collection === "requirements") {
     doclinks.push(`
       <p>
-        <a href="https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22P%20-%20${encodeURIComponent(entryTitle.replace(/,/g, ""))}%22">
+        <a href="https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22P%20-%20${
+          encodeURIComponent((capitalize(entry.data.issueLabel) || entryTitle).replace(/,/g, ""))
+        }%22">
           <svg aria-hidden="true" class="i-list">
             <use xlink:href="img/icons.svg#i-list" />
           </svg>

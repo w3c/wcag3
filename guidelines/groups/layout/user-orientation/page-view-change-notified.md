@@ -11,10 +11,10 @@ When content triggers a change of page/view there is a visual change within the 
 
 <b>Procedure</b>
 
-1. Activate a link in the product that should open a new page/view.
-2. Verify that the change is conveyed in the view.
-3. Verify that the change is conveyed programmatically using the assistive technology in the accessibility support set.
+For each change of page/view triggered by content:
+1. Check that the change is conveyed in the view.
+2. Check that the change is conveyed programmatically using the assistive technology in the accessibility support set.
 
 <b>Expected results</b>
-* #2 and #3 are true
+* #1 and #2 are true.
 :::

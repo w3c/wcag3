@@ -13,7 +13,7 @@ Content can be presented through one or more viewports. Viewports include window
 :::
 
 :::example
-For a webpage author, the viewport is the HTML viewport.
+For a web page author, the viewport is the HTML viewport.
 :::
 
 :::example

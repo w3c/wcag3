@@ -1,9 +1,9 @@
 ---
 status: developing
-type: supplemental
+type: foundational
 ---
 
-If a custom focus indicator is used, it has sufficient adjacent contrast and change of contrast.
+If a custom :term[focus indicator] is used, it has sufficient adjacent contrast and change of contrast.
 
 :::applies-when
 * the user agent's default focus indicator is replaced by a custom focus indicator.
@@ -19,6 +19,6 @@ For each element able to attain focus:
 2. Check that the focus indicator contrast meets the minimum contrast ratio test.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 
 :::

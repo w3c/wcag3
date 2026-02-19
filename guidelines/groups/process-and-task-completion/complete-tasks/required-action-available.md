@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The interface indicates when user input or action is required in order to proceed to the next step.
@@ -11,10 +11,11 @@ The interface indicates when user input or action is required in order to procee
 
 :::tests
 <b>Procedure</b>
-1. Identify any parts of the process that cannot be completed without the user doing a required action.
-2. Enter in all the information except for the required action(s).
-3. Try to complete the process.
-4. Verify that there is a notification that explains what the user needs to do before the process can be completed.
+
+For any parts of a process that cannot be completed without the user doing a required action:
+1. Enter in all the information except for the required action(s).
+2. Try to complete the process.
+3. Check that there is a notification that explains what the user needs to do before the process can be completed.
 
 <b>Expected results</b>
 * #3 is true.

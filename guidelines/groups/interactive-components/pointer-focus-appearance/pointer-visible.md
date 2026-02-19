@@ -6,7 +6,7 @@ type: foundational
 The :term[pointer] indicator is always visible.
 
 :::except-when
-- The pointer is on a video, it can be hidden if it is not moving.
+- The pointer is on a video and is not moving.
 - The pointer controls the direction of view in a virtual or real world environment.
 :::
 
@@ -20,8 +20,8 @@ Methods &amp; best practices
 **Procedure**
 
 If the pointer is ever not visible:
-1. Check whether it meets one of the exceptions.
+1. Check that it meets one of the exceptions.
 
 **Expected results**
-* #1 is is true
+* #1 is true.
 :::

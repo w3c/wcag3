@@ -314,6 +314,49 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     }
   }
 
+  function checkReferencedExploratoryDefinitions(_, _, utils) {
+    const referencedDfnIds = new Set();
+    function crawlDefinitions(parentSelector) {
+      const newIds = [];
+      document.querySelectorAll(`${parentSelector} a.internalDFN[href^="#"]`).forEach((el) => {
+        const id = el.getAttribute("href").slice(1);
+        if (!referencedDfnIds.has(id)) {
+          newIds.push(id);
+          referencedDfnIds.add(id);
+        }
+        for (const newId of newIds) crawlDefinitions(`#${newId}`);
+      });
+    }
+
+    const developingOrLaterSelector =
+      ":not([data-status='placeholder']):not([data-status='exploratory'])";
+    crawlDefinitions(
+      `section.guideline${developingOrLaterSelector} section.requirement${developingOrLaterSelector}`
+    );
+    const placeholderDfns = Array.from(referencedDfnIds)
+      .filter((dfnId) => {
+        const status = document.getElementById(dfnId).parentNode.getAttribute("data-status");
+        return status === "placeholder";
+      })
+      .map((id) => document.getElementById(id));
+
+    if (placeholderDfns.length) {
+      utils.showError(
+        `The following ${
+          placeholderDfns.length
+        } placeholder definitions are actively referenced by provisions in developing status or higher:`,
+        {
+          details: `<ul>${placeholderDfns
+            .map(
+              (el) =>
+                `<a href="#${el.id}"><li>${el.innerHTML.replace(/<span class="status-marker".*$/, "")}</li></a>`
+            )
+            .join("\n")}</ul>`,
+        }
+      );
+    }
+  }
+
   respecConfig = {
     // embed RDFa data in the output
     trace: true,
@@ -475,6 +518,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       renumberExamples,
       removeImgSize,
       outputJson,
+      checkReferencedExploratoryDefinitions,
     ],
 
     localBiblio: {

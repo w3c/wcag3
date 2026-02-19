@@ -17,19 +17,21 @@ This includes lists and processes
 <i>Process steps</i>
 
 <b>Procedure</b>
-1. Review content and identify ordered processes.
-2. Each step in the process includes an indicator of its position within the process.
+
+For each ordered process:
+1. Check that each step in the process includes an indicator of its position within the process.
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true.
 
 
 <i>HTML ordered lists</i>
 
 <b>Procedure</b>
-1. Review content and identify ordered lists.
-2. Examine the HTML code and check that each ordered list is marked up with an `<ol>` element.
+
+For each ordered list:
+1. Examine the HTML code and check that each ordered list is marked up with an `<ol>` element.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

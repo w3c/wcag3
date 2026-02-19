@@ -1,6 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
 import { file, glob } from "astro/loaders";
-import uniq from "lodash-es/uniq";
+import uniq from "lodash/uniq";
 
 /** howto can be set to true to indicate the informative and normative slugs are identical */
 const howtoSchema = z.boolean().or(z.string().regex(/^[\w-]+$/));
@@ -58,6 +58,7 @@ export const collections = {
       // Moreover, we can't override generateId for requirements to only use slug,
       // due to duplicates across separate guidelines, e.g. "style-guide"
       children: childrenSchema,
+      issueLabel: z.string().optional(),
       status: parentStatusSchema.optional(),
     }),
   }),
@@ -65,6 +66,7 @@ export const collections = {
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: commonChildSchema.extend({
       tags: z.array(reference("tags")).optional(),
+      issueLabel: z.string().optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       type: z
@@ -87,6 +89,7 @@ export const collections = {
     schema: commonChildSchema.omit({ howto: true }).extend({
       status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
+      unusedDefinition: z.boolean().optional(),
     }),
   }),
 };

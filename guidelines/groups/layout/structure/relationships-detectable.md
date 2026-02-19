@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -14,37 +14,39 @@ status: developing
 3. Check that each section uses an appropriate semantic HTML element that reflects its position in the hierarchy.
 
 <b>Expected results</b>
-* #3 is true
+* #3 is true.
 
 
 <i>HTML input field/label relationship</i>
 
 <b>Procedure</b>
-1. Identify all input fields within the unit of conformance through visual and code inspection.
-2. Verify that each `<input>`, `<select>` and `<textarea>` in the source code has a programmatically associated `<label>` using `for` and `id` attributes.
+For each input field within the unit of conformance:
+1. Check that each `<input>`, `<select>` and `<textarea>` in the source code has a programmatically associated `<label>` using `for` and `id` attributes. 
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true.
 
 
 <i>HTML list relationship</i>
 
 <b>Procedure</b>
-1. Identify all lists within the unit of conformance through visual and code inspection.
-2. Verify that each list consists of a `<ul>`, `<ol>` or `<dl>`.
-3. Verify that each list item within the list is contained within an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
-4. Verify that the immediate child element of the list is an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
+
+For each list within the unit of conformance:
+1. Check that each list consists of a `<ul>`, `<ol>` or `<dl>`.
+2. Check that each list item within the list is contained within an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
+3. Check that the immediate child element of the list is an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 
 <b>Expected results</b>
-* #2, #3 and #4 are true
+* #1, #2 and #3 are true.
 
 
 <i>HTML nested list relationship</i>
 
 <b>Procedure</b>
-1. Identify all nested lists within the unit of conformance through visual and code inspection.
-2. Verify that all child lists are contained within a `<li>` of the parent list.
+
+For each nested list within the unit of conformance:
+1. Check that all child lists are contained within a `<li>` of the parent list.
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true.
 :::

@@ -4,7 +4,7 @@ title: Roles, values, states, properties available
 type: foundational
 ---
 
-Accurate names, roles, values, and states are available for :term[interactive elements].
+Accurate names, roles, values, and :term[states] are available for :term[interactive elements].
 
 :::ednote
 Methods &amp; best practices

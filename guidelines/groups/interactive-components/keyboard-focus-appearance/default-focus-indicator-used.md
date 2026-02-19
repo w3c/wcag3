@@ -1,9 +1,9 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
-The focusable :term[item] uses the :term[user agent] default focus indicator.
+The focusable :term[item] uses the :term[user agent] default :term[focus indicator].
 
 :::tests
 **Procedure**

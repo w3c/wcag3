@@ -21,5 +21,5 @@ For every interactive element that allows pointer selection (including click eve
 
 **Expected results**
 
-- #1 is true
+- #1 is true.
 :::

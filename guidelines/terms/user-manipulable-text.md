@@ -1,6 +1,7 @@
 ---
 status: developing
-title: User-manipulable text
+title: user-manipulable text
+unusedDefinition: true
 ---
 
 text which the user can adjust

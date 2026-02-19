@@ -17,9 +17,9 @@ This is primarily aimed at touch-interfaces and VR where you don’t have a poin
 :::tests
 **Procedure**
 
-Where the platform does not use a visible pointer indicator:
-1. For each interactive element, check that there is an indicator of activation.
+Where the platform does not use a visible pointer indicator, for each interactive element:
+1. Check that there is an indicator of activation.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::

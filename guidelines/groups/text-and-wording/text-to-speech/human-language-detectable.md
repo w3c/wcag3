@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-The human language of all :term[content] within the :term[view] is :term[programmatically determinable].
+The :term[human language] of all :term[content] within the :term[view] is :term[programmatically determinable].
 
 :::except-when
 * a language tag is not available in ISO 639 language codes, or
@@ -13,7 +13,9 @@ The human language of all :term[content] within the :term[view] is :term[program
 :::tests
 
 <b>Procedure</b>
-1. Establish which languages are used in the view.
+
+For text content:
+1. Establish which language is used.
 2. Check that the content’s language is identified in the HTML code with a lang attribute.
 
 <b>Expected results</b>

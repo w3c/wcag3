@@ -13,7 +13,7 @@ Components that can be activated or entered using the keyboard interface, can be
 Examples include:
 
 1. Ensuring that users can exit a modal dialog, menu, or calendar picker after entering it
-2. Ensuring that users users can deactivate an animation, video, drop down menu, or carousel after activating it.
+2. Ensuring that users can deactivate an animation, video, drop down menu, or carousel after activating it.
 :::
 
 :::tests
@@ -23,5 +23,5 @@ For each interface element:
 1. Check that you can exit from it in a forward or backward direction.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::
