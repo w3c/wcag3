@@ -3,7 +3,7 @@ status: exploratory
 type: foundational
 ---
 
-Meaning conveyed by :term[text] :term[style properties] is also :term[programmatically determinable].
+Meaning conveyed by :term[text] style properties is also :term[programmatically determinable].
 
 :::applies-when
 * the styling, weight, or other text characteristics convey meaning beyond what the text itself says.
@@ -20,9 +20,10 @@ Meaning conveyed by :term[text] :term[style properties] is also :term[programmat
 
 :::tests
 <b>Procedure</b>
-1. Identify any instances of text styling, weight, size, or other text characteristics conveying meaning that is not just emphasis.
-2. Check that an additional indicator of that meaning is available. 
+
+For each instance of text styling, weight, size, or other text characteristics that conveys meaning that is not just emphasis:
+1. Check that an additional indicator of that meaning is available. 
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.
 :::

@@ -20,5 +20,5 @@ A :term[mechanism] to learn a new interface or revert to the older design is ava
 
 <b>Expected results</b>
 
-* #1 is true
+* #1 is true.
 :::

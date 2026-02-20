@@ -29,7 +29,7 @@ For additional content that appears on hover:
 1. Check that the content can be closed without moving the pointer way from the trigger. Either by pressing Esc, by pressing another documented keyboard shortcut, or by activating the trigger.
 
 For additional content that appears on focus:
-1. Check that the content can be closed without moving the focus way from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger.
+1. Check that the content can be closed without moving the focus away from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger.
 
 **Expected results**
 

@@ -16,9 +16,9 @@ Examples of failing validation:
 <b>Procedure</b>
 
 For each validation error:
-1. Verify that validation error is indicated visually.
-2. Verify that validation error is indicated programmatically.
+1. Check that validation error is indicated visually.
+2. Check that validation error is indicated programmatically.
 
 <b>Expected results</b>
-* #2 and #3 are true.
+* #1 and #2 are true.
 :::

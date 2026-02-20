@@ -1,5 +1,5 @@
 ---
-type: supplemental
+type: foundational
 status: developing
 ---
 
@@ -14,8 +14,8 @@ The :term[video] pauses to extend the :term[audio] track and provides an :term[e
 
 For each media asset with visual content:
 1. Play the media with the extended audio description on.
-2. Check that the extended audio description provides all of the information that is important and cannot be understood from the main soundtrack alone.
+2. Check that the extended audio description includes all  important visual information that cannot be understood from the main soundtrack alone.
 
 <b>Expected results</b>
-* Extended audio description is equivalent and equal to the visual content in the media.
+* #2 is true.
 :::

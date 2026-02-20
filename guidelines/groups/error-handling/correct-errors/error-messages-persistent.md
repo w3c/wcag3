@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 Error messages persist at least until the error is resolved or the user dismisses them.
@@ -17,8 +17,8 @@ Methods & best practices
 <b>Procedure</b>
 
 For each error messages: 
-1. Verify that the error message persists until the user fixes the error or dismisses the message. 
+1. Check that the error message persists until the user fixes the error or dismisses the message. 
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

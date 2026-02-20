@@ -13,7 +13,7 @@ A particular software component might play the role of a platform in some situat
 :::
 
 :::note
-The platform is the context in which the :term[product] exists.
+The platform is the context in which the :term[conformance scope] exists.
 :::
 
 :::example

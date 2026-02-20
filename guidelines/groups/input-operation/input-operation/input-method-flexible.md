@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 ---
 
 The ability to switch between input :term[methods] is available at any time.
@@ -14,9 +14,9 @@ This does not mean that all input technologies (:term[pointer], keyboard, voice,
 **Procedure**
 
 For each input:
-1. Set up multiple input types (pointer, keyboard, voice, gesture, etc)
+1. Set up multiple input types (pointer, keyboard, voice, gesture, etc.)
 2. Check that you can switch between inputs and complete functionality
 
 **Expected results**
-- #2 is true
+- #2 is true.
 :::

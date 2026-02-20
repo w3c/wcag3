@@ -5,7 +5,7 @@ type: foundational
 title: Text style readable (minimum)
 ---
 
-The default/authored presentation of :term[text] :term[style property] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
+The default/authored presentation of :term[text] style property meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::ednote
 The metrics in the following table are still to be determined; the current content is an example. 

@@ -12,6 +12,8 @@ status: developing
 
 :::tests
 <b>Procedure</b>
+
+For each page/view:
 1. Examine the source code of the HTML document and check that the first `title` element is not-empty.
 2. Check that the title element describes the document.
 

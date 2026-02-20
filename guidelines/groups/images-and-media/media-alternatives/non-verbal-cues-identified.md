@@ -1,7 +1,7 @@
 ---
 needsAdditionalResearch: true
 status: exploratory
-type: supplemental
+type: foundational
 title: Non-verbal cues identified
 ---
 

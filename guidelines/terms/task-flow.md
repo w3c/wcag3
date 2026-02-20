@@ -1,5 +1,6 @@
 ---
 status: developing
+unusedDefinition: true
 ---
 
 testing scope that includes a series views that support a specified user activity

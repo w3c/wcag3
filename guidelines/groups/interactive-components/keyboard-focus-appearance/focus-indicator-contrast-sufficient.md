@@ -1,6 +1,6 @@
 ---
 status: developing
-type: supplemental
+type: foundational
 ---
 
 If a custom :term[focus indicator] is used, it has sufficient adjacent contrast and change of contrast.
@@ -19,6 +19,6 @@ For each element able to attain focus:
 2. Check that the focus indicator contrast meets the minimum contrast ratio test.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 
 :::

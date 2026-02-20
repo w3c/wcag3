@@ -8,11 +8,11 @@ Where content includes :term[infinite scrolling], a mechanism is provided prior 
 :::tests
 <b>Procedure</b>
 
-1. Identify instances of infinite scrolling.
-2. Open the dialog.
-3. Verify that the dialog includes a mechanism to allow the dialog to be dismissed 
+For each instance of infinite scrolling:
+1. Open the dialog.
+2. Check that the dialog includes a mechanism to allow the dialog to be dismissed 
 
 
 <b>Expected results</b>
-* #3 is true
+* #2 is true.
 :::

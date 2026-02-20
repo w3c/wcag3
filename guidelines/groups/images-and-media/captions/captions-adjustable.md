@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -12,5 +12,5 @@ For each caption:
 1. Check that the appearance of captions and associated visual indicators is adaptable including font size, font weight, font style, font color, background color, background transparency, and placement
 
 <b>Expected results</b>
-* #1 is true
+* #1 is true.
 :::

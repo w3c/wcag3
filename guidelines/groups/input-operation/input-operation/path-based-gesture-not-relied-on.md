@@ -17,5 +17,5 @@ For each path-based gesture:
 1. Check that the functionality is available without a path-based gesture.
 
 **Expected results**
-- #1 is true
+- #1 is true.
 :::
