@@ -10,7 +10,7 @@ Error messages are visually indicated using at least two of the following:
 * A textual indication.
 
 :::example
-An example of textually indicating an error is to add “Error: ” before the error description.
+Adding “Error: ” before the error description.
 :::
 
 :::tests
