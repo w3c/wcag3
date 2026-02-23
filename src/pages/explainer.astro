@@ -54,7 +54,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             variety of platforms. WCAG 3 will use a model that allows it to:</p>
         <ul>
             <li>address more disability needs than WCAG 2,</li>
-            <li>incorporate publishing requirements and emerging technologies such as web XR (augmented, virtual, and mixed reality) and voice input,</li>
+            <li>incorporate publishing requirements and emerging technologies such as XR (augmented, virtual, and mixed reality) and voice input,</li>
             <li>facilitate maintenance, so that the new model will be more enduring over time as technologies evolve, and</li>
             <li>include additional information about the ways web technologies need to work with <a>authoring tools</a>, <a>user agents</a>, and <a>assistive technologies</a>.</li>
         </ul>
@@ -174,6 +174,12 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                             </li>
                         </ul>
                     </li>
+                    <li>Best practices - informative
+                        <ul>
+                            <li>How to Documents - informative
+                            </li>
+                        </ul>
+                    </li>                    
                 </ul>
             </li>
         </ul>
@@ -197,23 +203,18 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>Requirements and Methods</h3>
         <p>Each Guideline contains multiple Requirements:</p>
         <ul><li>Core Requirements will be required to meet base level conformance. They will be part, but not all, of base level
-         conformance. This set of requirements will
-            cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
+         conformance. This set of requirements will cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
             <li>Supplemental Requirements will be used at all levels of conformance, but testers or policy makers will be able to select 
                 which supplemental requirements to meet.</li>
         </li></ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
-        <p>Each set of Core Requirements are organized into a decision tree to show the relationship between requirements and 
-            to allow for accessibility-supported solutions in the future.</p>
 
         <p>Each Requirement is associated with at least one <a>Method</a>.
             Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and sets of tests. Methods can apply to a
             specific technology, such as HTML, or can be more generic where the advice applies no matter what
             technology. For example, the methods supporting the Clear Language guideline.</p>
-
-        <p class="ednote">The AGWG has discussed also including "Best Practices" displayed along with Requirements and Assertions. Best practices would be things which could help improve accessibility but may not be objectively testable. Best practices would not contribute to conformance.</p>
 
         <h3>Assertions</h3>
             <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3, an
@@ -278,9 +279,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                     <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
                     <p>AG's next steps include:</p>
                     <ul>
-                        <li>Define criteria for which requirements are core and which are supplemental.</li>
                         <li>Develop mature examples of 2 guidelines with associated requirements, methods, tests, and How to documentation.</li>
-                        <li>Mature all guidelines to the developing stage.</li>
                         <li>Further explore how conditional requirements and alternate ways to measure might be used to support Guidelines.</li>
                     </ul>
 
@@ -306,6 +305,13 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                         or it may be any process that an organization uses to improve accessibility.</li>
                     </ul>
                 </div>
+ 
+        <h3>Best practices</h3>
+        <p>Best practices reduce or eliminate barriers that people with disabilities experience. They provide important guidance that often saves time and improve accessibility, but they cannot be requirements because:
+            <ul><li>they may not be objectively testable, or</li> 
+                <li>the situations to which they apply may not be clearly defined and may require a judgement call.</li>
+            </ul></p>
+                <p>Best practices are informative and do not affect conformance.</p>
         </section>
 
         <section id="testing" data-status="exploratory">
@@ -325,6 +331,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             metrics.</p>
         
         <h5>Example Tests</h5>
+
+        <div class="ednote">
+                <p>Tests in the current draft of WCAG 3 will evolve into ACT style rules similar to the ones listed in the section over the next few publications.</p>
+        </div>
+
         <p>Tests may be objective or subjective. For example, from WCAG 2:</p>
         <ul>
             <li>Example for 1.1.1: <a href="https://www.w3.org/WAI/standards-guidelines/act/rules/23a2a8/">Image has
@@ -401,21 +412,40 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p>The most basic level of conformance will require meeting all of the Core Requirements. This set will be somewhat
             comparable to WCAG 2.2 Level AA.</p>
+
+			<p><b>Core Requirements</b> &mdash; Requirements that must be met in order to conform. These include requirements that ensure:</p>
+				<ul>
+					<li>content is detectable by user agents and AT,</li>
+					<li>content is conveyed to multiple senses and can be used by multiple inputs,</li>
+					<li>content does not cause immediate, physical harm, and</li>
+					<li>necessary support is available such as captions, text alternatives, and expanded forms of abbreviations.</li>
+				</ul>
             
        <p>Higher levels of conformance will be defined and met using Supplemental Requirements and Assertions. AGWG will be exploring
         whether meeting the higher levels would work best based on points, percentages, or predefined sets of provisions (modules).</p>
 
+            <p><b>Supplemental Requirements</b> &mdash; Requirements that build on the core set. These include:</p>
+            <ul>
+                <li>quality checks,</li>
+                <li>stricter or higher levels than those in a comparable core requirement,</li>
+                <li>requirements that are currently more difficult or expensive to implement, and</li>
+                <li>requirements that may apply in certain situations.</li>
+            </ul>
+
+        <h4>Conformance level</h4>
+        <p>AGWG continues to explore possible conformance approaches. For the approach outlined in the draft, one of the following three levels of conformance must be met in full.</p>
+        <ul>
+            <li>For Bronze conformance (the minimum level of conformance), all of the </li>pages/views</a> and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each <a href="#function-performance-statements">functional performance statement</a>.</li>
+            <li>For Silver conformance, all of the pages/views and processes within the conformance scope MUST satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Bronze within each functional performance statement.</li>
+            <li>For Gold conformance, all of the pages/views and processes within the conformance scope satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Silver within each functional performance statement.</li>
+        </ul>
+        <p>A draft list of functional performance statements are included in the WCAG 3 draft. The purpose of using this list when measuring higher levels of conformance is to ensure
+            better equity across user needs.</p>
+
+
         <h3>Additional Concepts</h3>    
         <p>Key concepts AGWG has and previously considered and continues to explore the following:</p>
-        <ul><li>Bronze, Silver and Gold conformance levels: AGWG has considered using three traditionally named conformance levels. 
-            <ul><li>Bronze would be the minimum conformance level. Content that does not meet the requirements of the
-                bronze level does not conform to WCAG 3. The subset will require enough requirements and
-                assertions to improve <a>equity</a> across functional needs.</li>
-            <li>Silver level incentivizes organizations to go further to improve accessibility. The goal is to encourage 
-                organizations to go beyond the minimum, especially where organizations want to be recognized for their efforts to go beyond minimum
-                accessibility.</li>
-            <li>Gold level identifies measures we want to include for those organizations that do achieve
-                Silver so that some can stand out as exemplary, cutting edge, and role models.</li></ul></li>
+        <ul>
             <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
             <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or
                 exceeding a goal. Example of possible adjectival ratings are:
@@ -428,6 +458,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                 assess conformance. The intent of specifying these would be to help implementers prepare for conformance
                 testing, not to create a new level of conformance. </li>
         </ul>  
+
         <section id="accessibility-supported">
             <h3>Only accessibility-supported ways of using technologies</h3>
 
