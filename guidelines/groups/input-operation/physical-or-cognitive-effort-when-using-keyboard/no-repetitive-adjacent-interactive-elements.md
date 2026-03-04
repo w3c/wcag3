@@ -22,7 +22,7 @@ Methods &amp; best practices
 :::
 
 :::example
-A modal dialog has a button displaying an X. It also has a button labelled Close. The buttons are next to each other in the DOM (Document Object Model) and both dismiss the modal dialog. This meets the exception.
+A modal dialog has a button labelled X. It also has a button labelled Close. The buttons are next to each other in the DOM (Document Object Model) and both dismiss the modal dialog. This meets the exception.
 :::
 
 :::tests
