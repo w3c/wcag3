@@ -14,13 +14,7 @@ import {
 const informativeGroups = await resolveInformativeGroups();
 const guidelinesMap: Record<string, InformativeGuideline[]> = {};
 for (const { id } of informativeGroups) {
-  if (!(id in guidelinesMap)) {
-    guidelinesMap[id] = await resolveInformativeGuidelines(id);
-    console.log("Guideline ID: " + id);
-    // for (const { requirementId } of )
-    // guidelinesMap[id].requirements = await resolveInformativeRequirements(id);
-
-  }
+  if (!(id in guidelinesMap)) guidelinesMap[id] = await resolveInformativeGuidelines(id);
 }
 
 const slugger = new GithubSlugger();

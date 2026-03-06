@@ -6,7 +6,6 @@ import {
   type InformativeRequirement,
 } from "@/lib/informative";
 
-import { Debug } from "astro:components";
 
 interface Props {
   current: InformativeGuideline | InformativeRequirement;
@@ -14,7 +13,7 @@ interface Props {
 }
 
 const { guideline } = Astro.props;
-console.log(Astro.props);
+
 const requirements = await resolveInformativeRequirements(guideline.id);
 ---
 
