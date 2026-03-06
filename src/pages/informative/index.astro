@@ -3,16 +3,24 @@ import GithubSlugger from "github-slugger";
 
 import GuidelineSummary from "@/components/informative/GuidelineSummary.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import RequirementsList from "@/components/informative/RequirementsList.astro";
 import {
   resolveInformativeGroups,
   resolveInformativeGuidelines,
+  resolveInformativeRequirements,
   type InformativeGuideline,
 } from "@/lib/informative";
 
 const informativeGroups = await resolveInformativeGroups();
 const guidelinesMap: Record<string, InformativeGuideline[]> = {};
 for (const { id } of informativeGroups) {
-  if (!(id in guidelinesMap)) guidelinesMap[id] = await resolveInformativeGuidelines(id);
+  if (!(id in guidelinesMap)) {
+    guidelinesMap[id] = await resolveInformativeGuidelines(id);
+    console.log("Guideline ID: " + id);
+    // for (const { requirementId } of )
+    // guidelinesMap[id].requirements = await resolveInformativeRequirements(id);
+
+  }
 }
 
 const slugger = new GithubSlugger();
@@ -23,9 +31,13 @@ const slugger = new GithubSlugger();
     informativeGroups.map((group) => (
       <>
         <h2 id={slugger.slug(group.title)}>{group.title}</h2>
-        {guidelinesMap[group.id].map((guideline) => (
-          <GuidelineSummary guideline={guideline} />
-        ))}
+        <ul>
+          {guidelinesMap[group.id].map((guideline) => (
+            <li><a href={guideline.id + "/"}>{guideline.title}</a>
+              <RequirementsList guideline={guideline} />
+            </li>
+          ))}
+        </ul>
       </>
     ))
   }
