@@ -1,0 +1,91 @@
+---
+import TextRegistryRespec from "@/components/respec/TextRegistryRespec.astro";
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>WCAG 3 Text Metrics Registry</title>
+    <TextRegistryRespec />
+    <script is:inline src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
+</head>
+
+<body>
+    <section id='abstract'>
+        <p>This registry is intended to provide a framework for [[wcag-3.0]] to include text metrics from a wide range of scripts and languages. Including specific text metrics in the main document is prohibitive in terms of how to present multiple languages. Separating the specific metrics for different scripts from the main document allows for scripts to be added independantly to the recommendation. Ultimately this supports quicker adoption as more is learned about the needs of readers of different scripts and languages.</p> 
+        <p>The registy is non-normative.</p>
+    </section>
+
+    <section id='sotd'>
+        <p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the registry can be viewed in the <a href="https://w3c.github.io/wcag3/text-registry/">public editors’ draft</a>.</p>
+    </section>
+
+    <section id="intro">
+        <h2>Introduction</h2>
+
+        <p>TBD</p>
+    </section>
+
+    <section id="purpose">
+        <h2>Purpose</h2>
+
+        <p>TBD</p>
+    </section>
+
+    <section id="organization">
+        <h2>Organization</h2>
+
+        <p>TBD</p>
+    </section>
+
+    <section id="entry-requirements">
+        <h2>Entry requirements</h2>
+
+        <ul>
+            <li>Each entry must include a unique pairing of script name and applicable langage code. The language code must be a valid [[iso-639-2023]] code. If the text metric guidance is broadly applicable to all languages using that script then "All" should be used. More specific script/language pairings will take precedent over a general script/"All" entry.</li>
+            <li>Each entry must include a link that references a publicly available normative specification. It is recommended that such a specification be made available without cost (other than reasonable shipping and handling if not avaiable by online means).</li>
+            <li>Specifications external to W3C should follow the principals outlined in the W3C Technical issues Lead Team <a href="https://www.w3.org/guide/process/tilt/normative-references.html">guidance to Normative References</a></li>
+            <li>Each referenced specification must include the following sections
+                <ul>
+                    <li>Blocks of text readable (minimum)</li>
+                    <li>Blocks of text readable (enhanced)</li>
+                    <li>Text style readable (minimum)</li>
+                    <li>Text style readable (enhanced)</li>
+                    <li>Blocks of text adjustable</li>
+                    <li>Text style adjustable</li>
+                </ul>
+            </li>
+            <li>Each section must only contain guidance on the specifics of how to present text using the identified script for any specified language.</li>
+            <li>Where there are no specific metrics that must be included, a section should still be included with the text "Not applicable".</li>
+            <li>Candidate entries must be announced by filing an issue in the <a href="https://www.github.com/w3c/wcag3/issues">WCAG3 GitHub repository</a></li>
+            <li>If the Accessibility Guidelines Working Group reaches consensus to accept the candidate, a pull request should be drafted to register the candidate. The registry editors will review and merge the pull request.</li>
+            <li>Entries may be updated to include a reference to a more recent version of the referenced specification.</li>
+            <li>Entries may be deleted or depricated.</li>
+            <li>Deleted or depricated script/language pairings may be reused.</li>
+        </ul>
+    </section>
+
+    <section id="registry">
+        <h2>Registry</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Script</th>
+                    <th>Language</th>
+                    <th>Public specification(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Latin</td>
+                    <td>All</td>
+                    <td>Link to specification outlining Latin based metrics</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
