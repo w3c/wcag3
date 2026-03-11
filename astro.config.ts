@@ -37,7 +37,7 @@ export default defineConfig({
   },
   integrations: [
     {
-      /** Checks for mismatched children array vs. subdirectory contents */
+      /** Checks sync of children array vs. subdirectory contents and normative vs. informative */
       name: "children-check",
       hooks: {
         "astro:build:start": async () => {
@@ -71,14 +71,25 @@ export default defineConfig({
           for (const id of groupIds) {
             const data = JSON.parse(await readFile(join(groupsPath, `${id}.json`), "utf8"));
 
-            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
-            if (data.children.length !== actualFiles.length) {
+            if (data.children.length !== normativeFiles.length) {
               throw new Error(
                 `groups/${id}.json lists ${data.children.length} children but groups/${id}/ contains ${
-                  actualFiles.length
-                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
+                  normativeFiles.length
+                } files (check: ${getUniqueEntries(normativeFiles, data.children)})`
+              );
+            }
+            
+            const informativeFiles = (await fg.glob("*.md", { cwd: join("informative", id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (normativeFiles.join() !== informativeFiles.join()) {
+              throw new Error(
+                `Mismatch between normative and informative directory contents for ${id} (check: ${
+                  getUniqueEntries(normativeFiles, informativeFiles)
+                })`
               );
             }
           }
@@ -88,14 +99,25 @@ export default defineConfig({
             const id = join(basename(dirname(filename)), basename(filename, ".md"));
             const data = parseFrontmatter(await readFile(filename, "utf8")).frontmatter;
 
-            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
-            if (data.children.length !== actualFiles.length) {
+            if (data.children.length !== normativeFiles.length) {
               throw new Error(
                 `groups/${id}.md lists ${data.children.length} children but groups/${id}/ contains ${
-                  actualFiles.length
-                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
+                  normativeFiles.length
+                } files (check: ${getUniqueEntries(normativeFiles, data.children)})`
+              );
+            }
+
+            const informativeFiles = (await fg.glob("*.md", { cwd: join("informative", id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (normativeFiles.join() !== informativeFiles.join()) {
+              throw new Error(
+                `Mismatch between normative and informative directory contents for ${id} (check: ${
+                  getUniqueEntries(normativeFiles, informativeFiles)
+                })`
               );
             }
           }
