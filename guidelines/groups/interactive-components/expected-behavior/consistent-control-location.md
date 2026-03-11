@@ -1,6 +1,7 @@
 ---
 needsAdditionalResearch: true
 status: developing
+type: supplemental
 ---
 
 Where an :term[interactive element] with the same purpose is used across :term[pages]/:term[views], its visual position in the layout is maintained.
@@ -23,8 +24,7 @@ Methods &amp; best practices
 
 For each interactive component in a set of pages/views:
 
-1. Method: Components appear in the same relative visual position across pages/views, except when exceptions apply.
-2. Best practice: Verify that any change in component position is intentional and documented.
+1. Check that components appear in the same relative visual position across pages/views, except when exceptions apply.
 
 **Expected results**
 - #1 is true.

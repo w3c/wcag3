@@ -11,8 +11,8 @@ Styling is used to enhance the visual separation between :term[meaningful blocks
 
 <b>Procedure</b>
 
-1. Identify meaningful blocks of content in the page/view.
-2. Each meaningful block of content is grouped by one or more of the following characteristics:
+For each meaningful block of content in the page/view:
+1. Check that each meaningful block of content is grouped by one or more of the following characteristics:
     * Color or lightness — the same color scheme is used (Note that this should also meet requirements for 'Color alone' and 'Contrast')
     * Borders — blocks are contained within the same borders
     * Spacing — blocks are grouped based on their proximity to others within the same area, while spacing is used to separate different sections of content
@@ -21,5 +21,5 @@ Styling is used to enhance the visual separation between :term[meaningful blocks
     * Repeated visual feature — blocks contain a consistent visual feature (for example, bullets in a list, checkbox)
 
 <b>Expected results</b>
-* #2 is true
+* #1 is true.
 :::

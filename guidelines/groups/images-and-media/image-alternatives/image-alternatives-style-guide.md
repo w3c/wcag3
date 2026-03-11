@@ -21,7 +21,7 @@ type: assertion
 * Name: ABC Inc. Style Guide for text alternatives
 * Version 1.2
 * Date: 9 October 2024
-* Description: The style guide include sections such as:
+* Description: The style guide includes sections such as:
   * What are text alternatives?
   * Who needs text alternatives?
   * Guideline provided by WCAG 3

@@ -5,7 +5,7 @@ type: foundational
 title: Text contrast sufficient (minimum)
 ---
 
-The:term[default visual presentation] of text meets @@[X contrast measure, to be determined].
+The :term[default visual presentation] of text meets @@[X contrast measure, to be determined].
 
 :::applies-when
 * text is presented, including text embedded in an image format.
@@ -40,6 +40,6 @@ For each foreground and background combination of text:
 3. Check the contrast of text meets the [TBD algorithm].
 
 <b>Expected results</b>
-* #3 is true
+* #3 is true.
 :::
 

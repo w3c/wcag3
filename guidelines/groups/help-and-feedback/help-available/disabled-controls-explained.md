@@ -1,5 +1,5 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
@@ -14,10 +14,9 @@ When a submit button is disabled until all required fields are filled in, explai
 <b>Procedure</b>
 
 For each visible disabled control:
-1. Check that instructions are available that explain how to enable them. 
+1. Check that instructions are available that explain how to enable it. 
 
 <b>Expected results</b>
-
-* #1 is true. 
+* #1 is true.
 
 :::

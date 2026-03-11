@@ -18,8 +18,8 @@ Methods &amp; best practices
 :::tests
 **Procedure**
 
-For each method of user authentication:
-1. Verify that there is at least one other method of non-biometric authentication.
+For each method of biometric user authentication:
+1. Check that there is at least one other method of non-biometric authentication.
 
 **Expected results**
 - #1 is true.

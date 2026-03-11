@@ -15,9 +15,10 @@ Implying to a user that they will lose a benefit if they don’t act immediately
 
 :::tests
 <b>Procedure</b>
-1. Identify time limits in the page/view.
-2. For each time limit, verify that it does not restart or reset immediately.
+
+For each page/view:
+1. Check if content includes time limits.
 
 <b>Expected results</b>
-* #2 is true
+* #1 is false.
 :::

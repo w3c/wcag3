@@ -12,7 +12,7 @@ index 04d0b74..7007630 100644
  /**
   * Loads multiple entries, using a glob pattern to match files.
 diff --git a/node_modules/astro/dist/content/loaders/glob.js b/node_modules/astro/dist/content/loaders/glob.js
-index 8689525..fcbf9f4 100644
+index 1448e64..0fbbb71 100644
 --- a/node_modules/astro/dist/content/loaders/glob.js
 +++ b/node_modules/astro/dist/content/loaders/glob.js
 @@ -156,7 +156,8 @@ function glob(globOptions) {

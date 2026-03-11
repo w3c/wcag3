@@ -18,11 +18,11 @@ Numerical metadata is information that provides context about the numbers presen
 
 :::tests
 <b>Procedure</b>
-1. Identify any dates, temperatures, times, and Roman numerals that are presented visually.
-2. Check that it uses an unambiguous format.
-3. Check that it provides an alternative in an unambiguous format within the same page/view.
+
+For each date, temperature, time, or Roman numeral presented visually:
+1. Check that it uses an unambiguous format.
+2. Check that it provides an alternative in an unambiguous format within the same page/view.
 
 <b>Expected results</b>
-* #2 is true, or 
-* #3 is true.
+* #1 or #2 are true.
 :::

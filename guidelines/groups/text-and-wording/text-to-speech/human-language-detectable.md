@@ -13,7 +13,9 @@ The :term[human language] of all :term[content] within the :term[view] is :term[
 :::tests
 
 <b>Procedure</b>
-1. Establish which languages are used in the view.
+
+For text content:
+1. Establish which language is used.
 2. Check that the content’s language is identified in the HTML code with a lang attribute.
 
 <b>Expected results</b>

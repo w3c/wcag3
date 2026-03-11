@@ -1,6 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
 import { file, glob } from "astro/loaders";
-import uniq from "lodash-es/uniq";
+import uniq from "lodash/uniq";
 
 const statusSchema = z.enum(["placeholder", "exploratory", "developing", "refining", "mature"]);
 const parentStatusSchema = statusSchema.exclude(["placeholder", "exploratory"]);
@@ -52,6 +52,7 @@ export const collections = {
       // Moreover, we can't override generateId for requirements to only use slug,
       // due to duplicates across separate guidelines, e.g. "style-guide"
       children: childrenSchema,
+      issueLabel: z.string().optional(),
       status: parentStatusSchema.optional(),
       title: z.string().optional(),
     }),
@@ -60,6 +61,7 @@ export const collections = {
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: z.object({
       tags: z.array(reference("tags")).optional(),
+      issueLabel: z.string().optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       title: z.string().optional(),

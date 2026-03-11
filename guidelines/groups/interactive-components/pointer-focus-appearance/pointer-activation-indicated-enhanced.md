@@ -17,9 +17,10 @@ This is primarily aimed at eye-tracking and touch-screens, where it is useful fo
 :::tests
 **Procedure**
 
-1. Check the settings of the OS or product for the ability to have an always-visible pointer indicator.
+For each pointer indicator:
+1. Check the settings of the :term[platform] or :term[conformance scope] for the ability to have an always-visible pointer indicator.
 
 **Expected results**
 
-- #1 is true
+- #1 is true.
 :::

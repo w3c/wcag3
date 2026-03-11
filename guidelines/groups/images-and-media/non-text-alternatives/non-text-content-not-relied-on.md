@@ -17,7 +17,7 @@ All :term[non-text content] that is not decorative includes a programmatically d
 4. If the image includes words that are important to understanding the content, the words are included in the text alternative.
 
 <b>Expected results</b>
-* #2, #3 and #4 are true
+* #2, #3 and #4 are true.
 
 <i>(Mobile) Videos include accessible name</i>
 
@@ -29,5 +29,5 @@ For each instance of non-text content:
 3. The accessible name includes the title of the video.
 
 <b>Expected results</b>
-* #2 and #3 are true
+* #2 and #3 are true.
 :::

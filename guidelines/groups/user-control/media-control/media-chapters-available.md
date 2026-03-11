@@ -27,6 +27,6 @@ For media that lasts five minutes or more:
 3. Check that the chapter titles have descriptive names which are suitable for their content.
 
 <b>Expected results</b>
-#2 and #3 are true
+* #2 and #3 are true.
 
 :::

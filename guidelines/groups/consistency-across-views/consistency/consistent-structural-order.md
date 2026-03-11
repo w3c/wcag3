@@ -1,9 +1,9 @@
 ---
-type: foundational
+type: supplemental
 status: developing
 ---
 
-The relative order of :term[structural components] remains consistent throughout each specific :term[variation of product or process].
+The relative order of :term[structural components] remains consistent throughout each variation of :term[pages]/:term[views] in the :term[conformance scope].
 
 :::applies-when
 - In a set of :term[pages]/:term[views]
@@ -18,10 +18,10 @@ Relative order means that content can be added or removed, but repeated items ar
 
 <b>Procedure</b>
 
-For each variation of the product in scope:
+For each variation of :term[pages]/:term[views] in the :term[conformance scope]:
 1. Identify common structural components across multiple pages/views.
-2. Verify that components are presented in the same order within each page/view.
+2. Check that components are presented in the same order within each page/view.
 
 <b>Expected results</b>
-* #2 is true
+* #2 is true.
 :::

@@ -5,7 +5,7 @@ status: developing
 synchronized visual and/or :term[text alternative] for both the speech and non-speech :term[audio] portion of a work of audiovisual :term[content]
 
 :::note
-Closed captions are equivalents that can be turned on and off with some players and can often be read using assistive technology..
+Closed captions are equivalents that can be turned on and off with some players and can often be read using assistive technology.
 :::
 
 :::note

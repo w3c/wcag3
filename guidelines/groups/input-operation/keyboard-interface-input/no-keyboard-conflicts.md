@@ -14,5 +14,5 @@ For each author generated keyboard command:
 2. Check that it can be remapped.
 
 **Expected results**
-- #1 or #2 is true
+- #1 or #2 is true.
 :::

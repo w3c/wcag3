@@ -1,6 +1,6 @@
 ---
 status: developing
-type: foundational
+type: supplemental
 title: Non-literal language explained
 ---
 

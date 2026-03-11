@@ -14,6 +14,5 @@ For each image that has automatically generated text descriptions, check that:
 2. the image can be marked as decorative.
 
 <b>Expected results</b>
-* #1 is true, and
-* #2 is true,.
+* #1 and#2 is true.
 :::
