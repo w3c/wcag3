@@ -11,6 +11,7 @@ NOAA
 TOTP
 UAAG
 UCS
+WAI
 WCAG
 
 # Proper names
