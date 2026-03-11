@@ -1,7 +1,7 @@
 import { getCollection, getEntry, type CollectionEntry, type RenderedContent } from "astro:content";
 import { load } from "cheerio";
-import noop from "lodash-es/noop";
-import sortBy from "lodash-es/sortBy";
+import noop from "lodash/noop";
+import sortBy from "lodash/sortBy";
 import pluralize from "pluralize";
 
 import { computeGuidelineTitle, computeTermTitle } from "./guidelines";
