@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
 import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { load } from "cheerio";
-import fg from "fast-glob";
+import { glob } from "tinyglobby";
 import difference from "lodash/difference";
 import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
@@ -49,7 +49,7 @@ export default defineConfig({
 
           const groupsPath = join("guidelines", "groups");
           const groupIds = (
-            await fg.glob("*.json", {
+            await glob("*.json", {
               cwd: groupsPath,
               ignore: ["index.json"],
             })
@@ -71,7 +71,7 @@ export default defineConfig({
           for (const id of groupIds) {
             const data = JSON.parse(await readFile(join(groupsPath, `${id}.json`), "utf8"));
 
-            const normativeFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
             if (data.children.length !== normativeFiles.length) {
@@ -82,7 +82,7 @@ export default defineConfig({
               );
             }
             
-            const informativeFiles = (await fg.glob("*.md", { cwd: join("informative", id) })).map(
+            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
               (filename) => basename(filename, ".md")
             );
             if (normativeFiles.join() !== informativeFiles.join()) {
@@ -95,11 +95,11 @@ export default defineConfig({
           }
 
           // Check at guideline level (*/*.md -> */*/*.md)
-          for (const filename of await fg.glob(join(groupsPath, "*", "*.md"))) {
+          for (const filename of await glob(join(groupsPath, "*", "*.md"))) {
             const id = join(basename(dirname(filename)), basename(filename, ".md"));
             const data = parseFrontmatter(await readFile(filename, "utf8")).frontmatter;
 
-            const normativeFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
             if (data.children.length !== normativeFiles.length) {
@@ -110,7 +110,7 @@ export default defineConfig({
               );
             }
 
-            const informativeFiles = (await fg.glob("*.md", { cwd: join("informative", id) })).map(
+            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
               (filename) => basename(filename, ".md")
             );
             if (normativeFiles.join() !== informativeFiles.join()) {
@@ -131,7 +131,7 @@ export default defineConfig({
         "astro:build:done": async ({ dir }) => {
           if (!process.env.WCAG_DIFFABLE) return;
           const distPath = fileURLToPath(dir);
-          const htmlPaths = await fg.glob("**/*.html", { cwd: distPath });
+          const htmlPaths = await glob("**/*.html", { cwd: distPath });
           const start = Date.now();
           for (const path of htmlPaths) {
             const filePath = join(distPath, path);
