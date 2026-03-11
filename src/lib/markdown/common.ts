@@ -31,5 +31,26 @@ const customDirectives: RemarkPlugin = () => (tree) => {
   });
 };
 
-export const remarkPlugins = [customDirectives];
+const directivePrefixMap = {
+  containerDirective: ":::",
+  leafDirective: "::",
+  textDirective: ":",
+} as const;
+
+const checkDirectives: RemarkPlugin = () => (tree, file) => {
+  visit(tree, (node) => {
+    if (
+      (node.type === "containerDirective" ||
+        node.type === "leafDirective" ||
+        node.type === "textDirective") &&
+      !node.data
+    ) {
+      file.fail(
+        `Unrecognized ${node.type.replace(/D/, " d")} ${directivePrefixMap[node.type]}${node.name}`
+      );
+    }
+  });
+};
+
+export const remarkPlugins = [customDirectives, checkDirectives];
 export const rehypePlugins = [];
