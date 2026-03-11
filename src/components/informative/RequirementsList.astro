@@ -19,8 +19,8 @@ const requirements = await resolveInformativeRequirements(guideline.id);
     {requirements.map((requirement) => (
         <li>
           <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>{requirement.title}</a>
-          <span class="status-marker">{requirement.normativeEntry.data.type}</span>
-          <span class="maturity-marker">{requirement.normativeEntry.data.status}</span>
+          ({requirement.normativeEntry.data.type})
+          <span class="status-marker">{requirement.normativeEntry.data.status}</span>
         </li>
     ))}
 </ul>
