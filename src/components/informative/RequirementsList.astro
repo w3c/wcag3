@@ -1,0 +1,26 @@
+---
+import { informativeSlug } from "@/lib/constants";
+import {
+  resolveInformativeRequirements,
+  type InformativeGuideline,
+} from "@/lib/informative";
+
+
+interface Props {
+  guideline: InformativeGuideline;
+}
+
+const { guideline } = Astro.props;
+
+const requirements = await resolveInformativeRequirements(guideline.id);
+---
+
+<ul>
+    {requirements.map((requirement) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>{requirement.title}</a>
+          ({requirement.normativeEntry.data.type})
+          <span class="status-marker">{requirement.normativeEntry.data.status}</span>
+        </li>
+    ))}
+</ul>

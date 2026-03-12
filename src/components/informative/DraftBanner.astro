@@ -1,0 +1,13 @@
+---
+import { isDraft } from "@/lib/constants";
+---
+
+{
+  isDraft && (
+    <section aria-label="draft preview" role="note" class="default-grid info" tabindex="0">
+      <p class="inner">
+        This is an early unpublished editor's draft; content is incomplete and subject to change.
+      </p>
+    </section>
+  )
+}
