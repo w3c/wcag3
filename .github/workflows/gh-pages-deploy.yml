@@ -40,12 +40,6 @@ jobs:
           curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@guidelines.tar -o dist/client/guidelines/index.html -f --retry 3
           curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
           curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
-      - name: Build and copy how-tos
-        run: |
-          cd how-to
-          npm ci
-          npm run build:gh-pages
-          cp -r _site ../dist/client/how-to
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
