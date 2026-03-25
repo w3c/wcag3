@@ -1,0 +1,50 @@
+---
+import type { GetStaticPaths, GetStaticPathsResult } from "astro";
+
+import KeyTerms from "@/components/informative/KeyTerms.astro";
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import {
+  formatNormativeContent,
+  processKeyTerms,
+  resolveInformativeGroups,
+  resolveInformativeGuideline,
+  resolveInformativeGuidelines,
+} from "@/lib/informative";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: GetStaticPathsResult = [];
+  for (const group of await resolveInformativeGroups()) {
+    for (const guideline of await resolveInformativeGuidelines(group.id)) {
+      paths.push({
+        params: {
+          groupId: group.id,
+          guidelineSlug: guideline.id.slice(guideline.id.lastIndexOf("/") + 1),
+        },
+      });
+    }
+  }
+  return paths;
+};
+
+const { groupId, guidelineSlug } = Astro.params;
+const guidelineId = `${groupId}/${guidelineSlug}`;
+
+const guideline = await resolveInformativeGuideline(guidelineId);
+if (!guideline) throw new Error(`Unresolvable informative guideline ID: ${guidelineId}`);
+if (!guideline.rendered || !guideline.normativeEntry.rendered) {
+  throw new Error(
+    `informative/[group]/[guideline]: Rendered HTML missing for ${guideline.id}; check for Markdown parse failures earlier in log`
+  );
+}
+
+const { html, terms } = processKeyTerms(formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html);
+---
+
+<InformativeLayout
+  title={guideline.title}
+  breadcrumbSegments={[guideline]}
+  nav={{ current: guideline, guideline }}
+>
+  <Fragment set:html={html} />
+  <KeyTerms terms={terms} />
+</InformativeLayout>

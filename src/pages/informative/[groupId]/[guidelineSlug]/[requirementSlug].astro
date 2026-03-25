@@ -1,0 +1,61 @@
+---
+import type { GetStaticPaths, GetStaticPathsResult } from "astro";
+
+import KeyTerms from "@/components/informative/KeyTerms.astro";
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import {
+  formatNormativeContent,
+  processKeyTerms,
+  resolveInformativeGroups,
+  resolveInformativeGuideline,
+  resolveInformativeGuidelines,
+  resolveInformativeRequirement,
+  resolveInformativeRequirements,
+} from "@/lib/informative";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: GetStaticPathsResult = [];
+  for (const group of await resolveInformativeGroups()) {
+    for (const guideline of await resolveInformativeGuidelines(group.id)) {
+      for (const requirement of await resolveInformativeRequirements(guideline.id)) {
+        paths.push({
+          params: {
+            groupId: group.id,
+            guidelineSlug: guideline.id.slice(guideline.id.lastIndexOf("/") + 1),
+            requirementSlug: requirement.id.slice(requirement.id.lastIndexOf("/") + 1),
+          },
+        });
+      }
+    }
+  }
+  return paths;
+};
+
+const { groupId, guidelineSlug, requirementSlug } = Astro.params;
+const guidelineId = `${groupId}/${guidelineSlug}`;
+const requirementId = `${groupId}/${guidelineSlug}/${requirementSlug}`;
+
+const guideline = await resolveInformativeGuideline(guidelineId);
+if (!guideline) throw new Error(`Unresolvable informative guideline ID: ${guidelineId}`);
+const requirement = await resolveInformativeRequirement(requirementId);
+if (!requirement) throw new Error(`Unresolvable informative requirement ID: ${requirementId}`);
+if (!requirement.rendered || !requirement.normativeEntry.rendered) {
+  throw new Error(
+    `how-to/[group]/[guideline]: Rendered HTML missing for ${requirement.id}; check for Markdown parse failures earlier in log`
+  );
+}
+
+const { html, terms } = processKeyTerms(
+  formatNormativeContent(requirement.normativeEntry.rendered) + requirement.rendered.html
+);
+---
+
+<InformativeLayout
+  title={requirement.title}
+  breadcrumbSegments={[guideline, requirement]}
+  nav={{ current: requirement, guideline }}
+>
+  <div><span class="status-marker">{requirement.normativeEntry.data.type}</span></div>
+  <Fragment set:html={html} />
+  <KeyTerms terms={terms} />
+</InformativeLayout>
