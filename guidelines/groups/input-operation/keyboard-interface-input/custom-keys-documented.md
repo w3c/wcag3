@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-:term[Custom keyboard commands] are documented, and that documentation is programmatically and visually available from any :term[page]/:term[view] to which they apply.
+:term[Custom keyboard commands] are documented. That documentation is :term[actively available] from any :term[page]/:term[view] to which it applies.
 
 :::tests
 **Procedure**
