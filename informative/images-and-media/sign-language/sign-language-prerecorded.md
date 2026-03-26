@@ -1,6 +1,6 @@
 ## Intent
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.
+[include information on the intent of the guideline]
 
 ## Tests
 
