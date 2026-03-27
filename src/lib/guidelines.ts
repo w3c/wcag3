@@ -130,6 +130,19 @@ function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
 export const computeGuidelineTitle = (entry: EntryWithTitle) =>
   computeTitle(entry, { capitalize: true });
 
+/**
+ * Returns text representation of each provision type,
+ * useful e.g. in front of each provision name in the normative document,
+ * and for the heading above the normative text in each informative document.
+ */
+export const computeProvisionTypeLabel = (entry: CollectionEntry<"requirements">) => {
+  var requirementType = entry.data.type;
+  if (!requirementType) return "Requirement";
+  if (requirementType === "foundational" || requirementType === "supplemental")
+    return `${capitalize(requirementType.replace(/^foundational$/, "core"))} requirement`;
+  return capitalize(requirementType);
+}
+
 /** Returns term title if specified, or falls back to converting from its slug. */
 export const computeTermTitle = (entry: CollectionEntry<"terms">) =>
   computeTitle(entry, { capitalize: false });

@@ -37,7 +37,9 @@ if (!guideline.rendered || !guideline.normativeEntry.rendered) {
   );
 }
 
-const { html, terms } = processKeyTerms(formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html);
+const { html, terms } = processKeyTerms(
+  formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html
+);
 ---
 
 <InformativeLayout
@@ -45,6 +47,7 @@ const { html, terms } = processKeyTerms(formatNormativeContent(guideline.normati
   breadcrumbSegments={[guideline]}
   nav={{ current: guideline, guideline }}
 >
+  <h2>Guideline</h2>
   <Fragment set:html={html} />
   <KeyTerms terms={terms} />
 </InformativeLayout>

@@ -129,10 +129,7 @@ export function formatNormativeContent(rendered: RenderedContent) {
     if ($el.text() === $el.html()) $el.html(`<strong>${$el.text()}</strong>`);
   });
 
-  return `
-    <h2 id="normative-text">Normative Text</h2>
-    <div class="normative">${$.html()}</div>
-  `;
+  return `<div class="normative">${$.html()}</div>`;
 }
 
 /** Inverted map from every possible permutation of each term to its content entry. */
