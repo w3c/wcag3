@@ -1,6 +1,4 @@
 ---
-import GithubSlugger from "github-slugger";
-
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import RequirementsList from "@/components/informative/RequirementsList.astro";
 import {
@@ -14,15 +12,13 @@ const guidelinesMap: Record<string, InformativeGuideline[]> = {};
 for (const { id } of informativeGroups) {
   if (!(id in guidelinesMap)) guidelinesMap[id] = await resolveInformativeGuidelines(id);
 }
-
-const slugger = new GithubSlugger();
 ---
 
 <InformativeLayout title="All WCAG 3 Guidelines" breadcrumbSegments={[]}>
   {
     informativeGroups.map((group) => (
       <>
-        <h2 id={slugger.slug(group.title)}>{group.title}</h2>
+        <h2>{group.title}</h2>
         <ul>
           {guidelinesMap[group.id].map((guideline) => (
             <li><a href={guideline.id + "/"}>{guideline.title}</a>
