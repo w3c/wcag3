@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-:term[Content] does not include :term[flashing].
+All :term[flashes] are below the :term[general flash and red flash thresholds].
 
 :::except-when
 - The flashing is :term[essential].
