@@ -2,6 +2,7 @@
 status: developing
 type: supplemental
 title: No flashing over threshold (no exceptions)
+issueLabel: No flashing (no exceptions)
 ---
 
 :term[Content] does not include :term[flashing].
