@@ -7,6 +7,7 @@ Content does not include a change of contrast (over 4.5:1) going from light to d
 
 :::except-when
 - A new :term[page]/:term[view] is loaded.
+- The flash is :term[essential].
 :::
 
 
