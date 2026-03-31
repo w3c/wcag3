@@ -10,6 +10,14 @@ All :term[flashes] are below the :term[general flash and red flash thresholds].
 - The flashing is :term[essential].
 :::
 
+:::note
+If there is an :term[accessibility supported] method of setting a user-preference to prevent flashing, the content can be considered to avoid flashing if that preference is respected.
+:::
+
+:::ednote
+There is research into the size and frequency metrics underway. The exact values are likely to change before WCAG3 is published.
+:::
+
 :::ednote
 <b>Method(s)</b>
 * Consider if :term[flashing] is :term[essential] and, if it is not, refrain from including it.
