@@ -51,11 +51,7 @@ const { html, terms } = processKeyTerms(
 );
 ---
 
-<InformativeLayout
-  title={requirement.title}
-  breadcrumbSegments={[guideline, requirement]}
-  nav={{ current: requirement, guideline }}
->
+<InformativeLayout title={requirement.title} breadcrumbSegments={[guideline, requirement]}>
   <h2>{computeProvisionTypeLabel(requirement.normativeEntry)}</h2>
   <Fragment set:html={html} />
   <KeyTerms terms={terms} />

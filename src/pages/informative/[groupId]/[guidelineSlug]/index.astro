@@ -46,11 +46,7 @@ const { html, terms } = processKeyTerms(
 );
 ---
 
-<InformativeLayout
-  title={guideline.title}
-  breadcrumbSegments={[guideline]}
-  nav={{ current: guideline, guideline }}
->
+<InformativeLayout title={guideline.title} breadcrumbSegments={[guideline]}>
   <h2>Guideline</h2>
   <Fragment set:html={html} />
   <h2>Provisions under this guideline</h2>
@@ -58,9 +54,7 @@ const { html, terms } = processKeyTerms(
     {
       requirements.map((requirement) => (
         <li>
-          <a
-            href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}
-          >
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>
             {requirement.title}
           </a>
         </li>
