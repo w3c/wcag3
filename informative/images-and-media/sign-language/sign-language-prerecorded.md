@@ -4,16 +4,16 @@
 
 ## Tests
 
-<i>Sign language available</i>
+### Sign language available
 
-### Procedure
+#### Procedure
 
 For each instance of prerecorded audio:
 
 1. Sign language interpretation is available
 2. Sign language interpretation uses a version of sign language appropriate for the locale of the page/view
 
-### Expected results
+#### Expected results
 * #1 and #2 are true for each instance.
 
 ## HTML
