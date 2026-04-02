@@ -1,17 +1,15 @@
 ---
 import {
-  buildGuidelinesHierarchy,
   computeGuidelineTitle,
   computeProvisionTypeLabel,
+  groupsTree,
 } from "@/lib/guidelines";
 
 import EntryText from "./EntryText.astro";
-
-const groups = await buildGuidelinesHierarchy();
 ---
 
 {
-  groups.map((group) => (
+  groupsTree.map((group) => (
     <section data-status={group.data.status || undefined}>
       <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
