@@ -41,7 +41,7 @@ export const collections = {
     loader: glob({ pattern: ["*.md*"], base: "./guidelines/acknowledgements" }),
   }),
   groupOrder: defineCollection({
-    loader: file("./guidelines/groups/index.json", {
+    loader: file("./guidelines/groups.json", {
       parser: stringArrayParser,
     }),
     schema: z.object({
@@ -51,7 +51,7 @@ export const collections = {
     }),
   }),
   groups: defineCollection({
-    loader: glob({ pattern: "*.json", base: "./guidelines/groups", ignore: "index.json" }),
+    loader: glob({ pattern: ["*.json"], base: "./guidelines/groups" }),
     schema: z.object({
       children: childrenSchema,
       status: parentStatusSchema.optional(),
