@@ -1,0 +1,22 @@
+---
+/** @file Outputs a link to a provision, given either a complete entry, an ID, or only a slug. */
+
+import { informativeSlug } from "@/lib/constants";
+import { provisionSlugMap } from "@/lib/guidelines";
+import { resolveInformativeRequirement, type InformativeRequirement } from "@/lib/informative";
+
+type Props = { entry: InformativeRequirement } | { id: string } | { slug: string };
+
+const provision =
+  "entry" in Astro.props
+    ? Astro.props.entry
+    : await resolveInformativeRequirement(
+        "id" in Astro.props ? Astro.props.id : provisionSlugMap[Astro.props.slug]
+      );
+if (!provision)
+  throw new Error(
+    `ProvisionLink: Could not resolve provision based on ${JSON.stringify(Astro.props)}`
+  );
+---
+
+<a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>{provision.title}</a>
