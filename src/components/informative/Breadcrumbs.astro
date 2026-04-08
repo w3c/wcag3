@@ -15,14 +15,16 @@ interface Props {
 
 const { segments } = Astro.props;
 
-const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) =>
-  "slug" in segment
-    ? segment
-    : {
-        slug: segment.id.split("/")[i],
-        title: segment.title,
-      }
-);
+function resolveSlug(segment: Segment) {
+  if ("slug" in segment) return segment.slug;
+  if (segment.collection === "informativeGuidelines") return segment.id;
+  return segment.id.slice(segment.id.lastIndexOf("/") + 1);
+}
+
+const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) => ({
+  slug: resolveSlug(segment),
+  title: segment.title,
+}));
 ---
 
 <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
@@ -38,11 +40,12 @@ const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) =>
       resolvedSegments.map(({ slug, title }, i) => (
         <li>
           <a
-            href={`${import.meta.env.BASE_URL}${slug}`}
+            href={`${import.meta.env.BASE_URL}${informativeSlug}/${resolvedSegments
+              .slice(0, i)
+              .map(({ slug }) => `${slug}/`)}${slug}/`}
             aria-current={i < resolvedSegments.length - 1 ? undefined : "page"}
-          >
-            {title}
-          </a>
+            set:text={title}
+          />
         </li>
       ))
     }

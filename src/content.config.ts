@@ -15,6 +15,20 @@ const childrenSchema = z
     message: "children should not contain duplicates",
   });
 
+const relatedSchema = z.strictObject({
+  /** Provision filename slugs (validated at runtime) */
+  provisions: z.array(z.string()),
+  title: z.string(),
+});
+
+/**
+ * Matches informative directories except reserved top-level names belonging to other collections.
+ */
+const generateInformativePatternWithIgnores = (pattern: string) => [
+  pattern,
+  ...["act-rules", "best-practices", "methods"].map((dir) => pattern.replace(/^\*+/, `!${dir}`)),
+];
+
 export const collections = {
   // Content for normative WCAG 3 document
 
@@ -65,14 +79,7 @@ export const collections = {
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       title: z.string().optional(),
-      type: z
-        .enum([
-          "foundational",
-          "supplemental",
-          "assertion",
-          "best practice",
-        ])
-        .optional(),
+      type: z.enum(["foundational", "supplemental", "assertion", "best practice"]).optional(),
     }),
   }),
   tags: defineCollection({
@@ -93,11 +100,32 @@ export const collections = {
   // Content for informative WCAG 3 docs
 
   informativeGuidelines: defineCollection({
-    loader: glob({ pattern: "*/*.md", base: "./informative" }),
+    loader: glob({
+      pattern: generateInformativePatternWithIgnores("*/*.md"),
+      base: "./informative",
+    }),
     schema: z.strictObject({}),
   }),
   informativeRequirements: defineCollection({
-    loader: glob({ pattern: "*/*/*.md", base: "./informative" }),
+    loader: glob({
+      pattern: generateInformativePatternWithIgnores("*/*/*.md"),
+      base: "./informative",
+    }),
     schema: z.strictObject({}),
+  }),
+
+  actRules: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/act-rules" }),
+    schema: relatedSchema,
+  }),
+
+  bestPractices: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/best-practices" }),
+    schema: relatedSchema,
+  }),
+
+  methods: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/methods" }),
+    schema: relatedSchema,
   }),
 };

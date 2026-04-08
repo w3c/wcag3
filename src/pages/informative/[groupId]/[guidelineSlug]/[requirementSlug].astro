@@ -1,16 +1,23 @@
 ---
 import type { GetStaticPaths, GetStaticPathsResult } from "astro";
+import capitalize from "lodash/capitalize";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import { informativeSlug } from "@/lib/constants";
+import { computeProvisionTypeLabel } from "@/lib/guidelines";
 import {
+  detectTechnology,
   formatNormativeContent,
+  informativeProvisionSlugRelationMap,
+  informativeRelatedTypes,
   processKeyTerms,
   resolveInformativeGroups,
   resolveInformativeGuideline,
   resolveInformativeGuidelines,
   resolveInformativeRequirement,
   resolveInformativeRequirements,
+  type InformativeRelatedCollection,
 } from "@/lib/informative";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -48,14 +55,28 @@ if (!requirement.rendered || !requirement.normativeEntry.rendered) {
 const { html, terms } = processKeyTerms(
   formatNormativeContent(requirement.normativeEntry.rendered) + requirement.rendered.html
 );
+
+const relatedEntries = informativeProvisionSlugRelationMap[requirementSlug!];
 ---
 
-<InformativeLayout
-  title={requirement.title}
-  breadcrumbSegments={[guideline, requirement]}
-  nav={{ current: requirement, guideline }}
->
-  <div><span class="status-marker">{requirement.normativeEntry.data.type}</span></div>
+<InformativeLayout title={requirement.title} breadcrumbSegments={[guideline, requirement]}>
+  <h2>{computeProvisionTypeLabel(requirement.normativeEntry)}</h2>
   <Fragment set:html={html} />
+  {
+    relatedEntries && Object.entries(relatedEntries).map(([type, entries]) => (
+      <h2>{informativeRelatedTypes[type as InformativeRelatedCollection].title}</h2>
+      <ul>
+        {entries.map((entry) => (
+          <li>
+            <a
+              href={`${import.meta.env.BASE_URL}${informativeSlug}/${
+                informativeRelatedTypes[type as InformativeRelatedCollection].slug}/${entry.id}/`}
+              set:text={`${capitalize(detectTechnology(entry))}: ${entry.data.title}`}
+            />
+          </li>
+        ))}
+      </ul>
+    ))
+  }
   <KeyTerms terms={terms} />
 </InformativeLayout>

@@ -1,4 +1,11 @@
-import { getCollection, getEntry, type CollectionEntry, type RenderedContent } from "astro:content";
+import type { GetStaticPaths, Params } from "astro";
+import {
+  getCollection,
+  getEntry,
+  type CollectionEntry,
+  type CollectionKey,
+  type RenderedContent,
+} from "astro:content";
 import { load } from "cheerio";
 import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
@@ -129,10 +136,7 @@ export function formatNormativeContent(rendered: RenderedContent) {
     if ($el.text() === $el.html()) $el.html(`<strong>${$el.text()}</strong>`);
   });
 
-  return `
-    <h2 id="normative-text">Normative Text</h2>
-    <div class="normative">${$.html()}</div>
-  `;
+  return `<div class="normative">${$.html()}</div>`;
 }
 
 /** Inverted map from every possible permutation of each term to its content entry. */
@@ -188,3 +192,74 @@ function _processKeyTerms(html: string, terms = new Set<CollectionEntry<"terms">
  * adding hrefs and also returning the alphabetized list of terms.
  */
 export const processKeyTerms = (html: string) => _processKeyTerms(html);
+
+/**
+ * Metadata for types of informative content related to provisions.
+ */
+export const informativeRelatedTypes = {
+  actRules: {
+    slug: "act-rules",
+    title: "ACT Rules",
+  },
+  bestPractices: {
+    slug: "best-practices",
+    title: "Best Practices",
+  },
+  methods: {
+    slug: "methods",
+    title: "Methods",
+  },
+} satisfies Partial<Record<CollectionKey, { slug: string; title: string }>>;
+export type InformativeRelatedCollection = keyof typeof informativeRelatedTypes;
+
+export const technologies = ["documents", "mobile", "web"] as const;
+export type Technology = (typeof technologies)[number];
+export function assertTechnology(str: string): asserts str is Technology {
+  if (!technologies.includes(str as Technology))
+    throw new Error(`Invalid technology string: ${str}`);
+}
+
+/**
+ * Determines technology label for related informative content based on entry ID (path/basename).
+ */
+export function detectTechnology(entry: CollectionEntry<InformativeRelatedCollection>) {
+  const technology = entry.id.slice(0, entry.id.indexOf("/"));
+  assertTechnology(technology);
+  return technology;
+}
+
+/** Generates a getStaticPaths function for leaf pages for informative related collections. */
+export const generateInformativeRelatedGetStaticPaths =
+  (collectionName: InformativeRelatedCollection): GetStaticPaths =>
+  async () =>
+    (await getCollection(collectionName)).map((entry) => ({
+      params: {
+        slug: entry.id.slice(entry.id.indexOf("/") + 1),
+        technology: detectTechnology(entry),
+      },
+    }));
+
+/**
+ * Object hash mapping provision slugs to arrays of IDs for each informative relation type
+ * (e.g. actRules, bestPractices, methods).
+ * Used to reverse-map each provision to the other types of related informative entries,
+ * whereas those related entries are where the mappings are defined in frontmatter.
+ */
+export const informativeProvisionSlugRelationMap: Record<
+  string,
+  Partial<Record<InformativeRelatedCollection, CollectionEntry<InformativeRelatedCollection>[]>>
+> = {};
+for (const key of Object.keys(informativeRelatedTypes)) {
+  const type = key as InformativeRelatedCollection;
+  for (const entry of await getCollection(type)) {
+    for (const provision of entry.data.provisions) {
+      if (provision in informativeProvisionSlugRelationMap) {
+        if (informativeProvisionSlugRelationMap[provision][type])
+          informativeProvisionSlugRelationMap[provision][type].push(entry);
+        else informativeProvisionSlugRelationMap[provision][type] = [entry];
+      } else {
+        informativeProvisionSlugRelationMap[provision] = { [type]: [entry] };
+      }
+    }
+  }
+}
