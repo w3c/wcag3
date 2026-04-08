@@ -4,7 +4,7 @@ synonyms:
   - views
 ---
 
-The collection of :term[content] that is :term[actively available] in a :term[viewport] including that which can be scrolled, zoomed or panned to, and any additional content that is conditionally shown while leaving the rest of the content in the viewport actively available 
+the collection of :term[content] that is :term[actively available] in a :term[viewport] including that which can be scrolled, zoomed or panned to, and any additional content that is conditionally shown while leaving the rest of the content in the viewport actively available 
 
 :::note
 “Conditionally shown content” is content that appears based on conditions like user interaction, changes in application state, changes in viewport size, or changes in screen orientation.
