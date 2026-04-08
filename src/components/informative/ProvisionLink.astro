@@ -7,6 +7,9 @@ import { resolveInformativeRequirement, type InformativeRequirement } from "@/li
 
 type Props = { entry: InformativeRequirement } | { id: string } | { slug: string };
 
+if ("slug" in Astro.props && !provisionSlugMap[Astro.props.slug])
+  throw new Error(`ProvisionLink: Unresolvable provision slug ${Astro.props.slug}`);
+
 const provision =
   "entry" in Astro.props
     ? Astro.props.entry
