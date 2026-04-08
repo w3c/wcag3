@@ -15,11 +15,9 @@ import InformativeLayout from "./InformativeLayout.astro";
 
 interface Props {
   entry: CollectionEntry<"actRules" | "bestPractices" | "methods">;
-  /** Optional title override (defaults to collection entry's title otherwise) */
-  title?: string;
 }
 
-const { entry, title } = Astro.props;
+const { entry } = Astro.props;
 
 const { Content } = await render(entry);
 
@@ -30,7 +28,7 @@ const singularTitle = pluralize.singular(informativeRelatedType.title);
 <InformativeLayout
   breadcrumbSegments={[
     informativeRelatedType,
-    { slug: entry.id.slice(entry.id.lastIndexOf("/")), title: title || entry.data.title },
+    { slug: entry.id.slice(entry.id.lastIndexOf("/")), title: entry.data.title },
   ]}
   title={entry.data.title}
 >
