@@ -9,8 +9,7 @@
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "astro sync --force",
-    "astro": "astro",
-    "postinstall": "patch-package"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.10",
@@ -20,7 +19,6 @@
     "github-slugger": "^2.0.0",
     "hast-util-to-html": "^9.0.5",
     "lodash": "^4.17.23",
-    "patch-package": "^8.0.0",
     "pluralize": "^8.0.0",
     "remark-definition-list": "^2.0.0",
     "remark-directive": "^3.0.1",

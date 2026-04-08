@@ -48,20 +48,17 @@ export default defineConfig({
             ).join(", ");
 
           const groupsPath = join("guidelines", "groups");
-          const groupIds = (
-            await glob("*.json", {
-              cwd: groupsPath,
-              ignore: ["index.json"],
-            })
-          ).map((filename) => basename(filename, ".json"));
+          const groupIds = (await glob("*.json", { cwd: groupsPath })).map((filename) =>
+            basename(filename, ".json")
+          );
 
           // Check at group level (index.json -> *.json)
           const topLevelChildren = JSON.parse(
-            await readFile(join(groupsPath, "index.json"), "utf8")
+            await readFile(join("guidelines", "groups.json"), "utf8")
           );
           if (topLevelChildren.length !== groupIds.length) {
             throw new Error(
-              `groups/index.json lists ${topLevelChildren.length} children but there are ${
+              `groups.json lists ${topLevelChildren.length} children but there are ${
                 groupIds.length
               } files (check: ${getUniqueEntries(topLevelChildren, groupIds)})`
             );
@@ -81,15 +78,16 @@ export default defineConfig({
                 } files (check: ${getUniqueEntries(normativeFiles, data.children)})`
               );
             }
-            
+
             const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
               (filename) => basename(filename, ".md")
             );
             if (normativeFiles.join() !== informativeFiles.join()) {
               throw new Error(
-                `Mismatch between normative and informative directory contents for ${id} (check: ${
-                  getUniqueEntries(normativeFiles, informativeFiles)
-                })`
+                `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
+                  normativeFiles,
+                  informativeFiles
+                )})`
               );
             }
           }
@@ -115,9 +113,10 @@ export default defineConfig({
             );
             if (normativeFiles.join() !== informativeFiles.join()) {
               throw new Error(
-                `Mismatch between normative and informative directory contents for ${id} (check: ${
-                  getUniqueEntries(normativeFiles, informativeFiles)
-                })`
+                `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
+                  normativeFiles,
+                  informativeFiles
+                )})`
               );
             }
           }
