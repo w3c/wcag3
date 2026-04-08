@@ -4,9 +4,8 @@ import type { GetStaticPaths } from "astro";
 import { informativeSlug } from "@/lib/constants";
 import { technologies } from "@/lib/informative";
 
-export const getStaticPaths: GetStaticPaths = () => {
-  return technologies.map((technology) => ({ params: { technology } }));
-};
+export const getStaticPaths: GetStaticPaths = () =>
+  technologies.map((technology) => ({ params: { technology } }));
 
 const path = `${informativeSlug}/act-rules/#${Astro.params.technology}`;
 // path is always truthy, but this works around https://github.com/withastro/language-tools/issues/476
