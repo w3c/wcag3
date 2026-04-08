@@ -1,7 +1,11 @@
 ---
+import capitalize from "lodash/capitalize";
+
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import RequirementsList from "@/components/informative/RequirementsList.astro";
+import { informativeSlug } from "@/lib/constants";
 import {
+  informativeRelatedTypes,
   resolveInformativeGroups,
   resolveInformativeGuidelines,
   type InformativeGuideline,
@@ -21,7 +25,8 @@ for (const { id } of informativeGroups) {
         <h2>{group.title}</h2>
         <ul>
           {guidelinesMap[group.id].map((guideline) => (
-            <li><a href={guideline.id + "/"}>{guideline.title}</a>
+            <li>
+              <a href={guideline.id + "/"}>{guideline.title}</a>
               <RequirementsList guideline={guideline} />
             </li>
           ))}
@@ -29,4 +34,14 @@ for (const { id } of informativeGroups) {
       </>
     ))
   }
+  <h1>Indexes</h1>
+  <ul>
+    {
+      Object.entries(informativeRelatedTypes).map(([type, { slug, title }]) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${slug}/`}>{title}</a>
+        </li>
+      ))
+    }
+  </ul>
 </InformativeLayout>
