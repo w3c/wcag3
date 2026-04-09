@@ -1,0 +1,52 @@
+---
+/**
+ * @file Layout used for informative materials related to provisions,
+ * e.g. ACT Rules, Best Practices, Methods
+ */
+
+import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
+import pluralize from "pluralize";
+
+import ProvisionLink from "@/components/informative/ProvisionLink.astro";
+import { informativeRelatedTypes } from "@/lib/informative";
+
+import InformativeLayout from "./InformativeLayout.astro";
+
+interface Props {
+  entry: CollectionEntry<"actRules" | "bestPractices" | "methods">;
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await render(entry);
+
+const informativeRelatedType = informativeRelatedTypes[entry.collection];
+const singularTitle = pluralize.singular(informativeRelatedType.title);
+---
+
+<InformativeLayout
+  breadcrumbSegments={[
+    informativeRelatedType,
+    { slug: entry.id.slice(entry.id.lastIndexOf("/")), title: entry.data.title },
+  ]}
+  title={entry.data.title}
+>
+  <aside class="box">
+    <h2 class="box-h">About this {singularTitle}</h2>
+    <div class="box-i">
+      <p>This {singularTitle} relates to:</p>
+      <ul>
+        {
+          entry.data.provisions.map((slug) => (
+            <li>
+              <ProvisionLink {slug} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </aside>
+  <Content />
+  {/* TODO: Key Terms? */}
+</InformativeLayout>

@@ -4,20 +4,16 @@ import type { ComponentProps } from "astro/types";
 import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
 import DraftBanner from "@/components/informative/DraftBanner.astro";
 import Header from "@/components/informative/Header.astro";
-import SideNav from "@/components/informative/SideNav.astro";
 import WaiFooter from "@/components/informative/WaiFooter.astro";
 import type { InformativeGuideline, InformativeRequirement } from "@/lib/informative";
 
 interface Props {
   breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
-  nav?: {
-    current: InformativeGuideline | InformativeRequirement;
-    guideline: InformativeGuideline;
-  };
   title: string;
+  withNav?: boolean;
 }
 
-const { breadcrumbSegments, nav, title } = Astro.props;
+const { breadcrumbSegments, title, withNav = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -35,20 +31,19 @@ const { breadcrumbSegments, nav, title } = Astro.props;
     {breadcrumbSegments && <Breadcrumbs segments={breadcrumbSegments} />}
     <slot name="breadcrumbs" />
     <div class="default-grid with-gap leftcol">
-      {nav && <SideNav {...nav} />}
-      <main id="main" class={nav ? "" : "standalone-resource__main"} tabindex="-1">
-        {
-          nav && (
-            <aside class="box page-contents">
-              <header class="box-h">Page Contents</header>
-              <div class="box-i">
-                <nav class="navtoc" aria-label="Page Contents">
-                  <ul>{/* Contents added in middleware.ts */}</ul>
-                </nav>
-              </div>
-            </aside>
-          )
-        }
+      {
+        withNav && (
+          <aside class="box sidebar standalone-resource__sidebar">
+            <header class="box-h">Page Contents</header>
+            <div class="box-i">
+              <nav class="navtoc" aria-label="Page Contents">
+                <ul>{/* Contents added in middleware.ts */}</ul>
+              </nav>
+            </div>
+          </aside>
+        )
+      }
+      <main id="main" class="standalone-resource__main" tabindex="-1">
         <h1>{title || "How to Meet WCAG 3"}</h1>
         <slot />
       </main>
@@ -64,15 +59,29 @@ const { breadcrumbSegments, nav, title } = Astro.props;
     display: block;
   }
 
-  main,
-  .sidenav {
-    margin-top: 2em;
+  .sidebar {
+    align-self: start;
+    margin: 0;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin: 0.5em 0;
   }
 
   h1 span {
     display: block;
     font-size: 0.5em;
     margin-bottom: 0.25em;
+  }
+
+  .box h2 {
+    margin: 0;
   }
 
   .button--skip-link {

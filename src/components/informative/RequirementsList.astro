@@ -1,9 +1,9 @@
 ---
-import { informativeSlug } from "@/lib/constants";
 import {
   resolveInformativeRequirements,
   type InformativeGuideline,
 } from "@/lib/informative";
+import ProvisionLink from "./ProvisionLink.astro";
 
 
 interface Props {
@@ -18,7 +18,7 @@ const requirements = await resolveInformativeRequirements(guideline.id);
 <ul>
     {requirements.map((requirement) => (
         <li>
-          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>{requirement.title}</a>
+          <ProvisionLink entry={requirement} />
           ({requirement.normativeEntry.data.type})
           <span class="status-marker">{requirement.normativeEntry.data.status}</span>
         </li>
