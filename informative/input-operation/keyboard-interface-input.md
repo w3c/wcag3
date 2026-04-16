@@ -17,7 +17,7 @@
 * As a keyboard user, I am warned about changes in context before they occur.
 * As a keyboard user, I am warned about changes in focus before they occur.
 * As a keyboard user, I am not expected to use a certain viewport in order to use a keyboard.
-* As a keyboard user, applications should be flexible in allowing me to use the keyboard commands I want to use (e.g. through personalisation).
+* As a keyboard user, applications should be flexible in allowing me to use the keyboard commands I want to use (e.g. through personalization).
 * As a keyboard user, I shouldn't have my expected keyboard commands disabled. 
 * As a keyboard user, I should be able to access all scrollable regions of a view/app so I can read all text within these regions.
 * As a keyboard user, when I reach a custom implementation of a common component, all keyboard commands that exist are implemented.
