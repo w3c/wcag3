@@ -25,7 +25,7 @@
 * [TODO] I need numerical concepts (Clear Language)
 * As a person with a cognitive disability, I need clear conveying visual hierarchy 
 * As a person with a cognitive disability, I need text that is consistent with the regular orientation of text (no tabs with rotated text).  
-* As a person who uses a screen reader, I need the ability to understand the semantics of text like strikethrough (delete), insert, bold, italics or all caps. 
+* As a person who uses a screen reader, I need the ability to understand the semantics of text like strike through (delete), insert, bold, italics or all caps. 
 * As a person who uses a screen reader, I need the ability to personalize the surfacing of semantics.
 * [TODO] Users need relative text sizes in content that convey meaning to be represented/matched by semantic structure.
 * [TODO] Users need semantic text indicators to be used appropriately, not for appearance only.
