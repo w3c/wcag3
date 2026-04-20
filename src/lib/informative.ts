@@ -1,4 +1,4 @@
-import type { GetStaticPaths, Params } from "astro";
+import type { GetStaticPaths } from "astro";
 import {
   getCollection,
   getEntry,
