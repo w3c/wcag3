@@ -5,6 +5,16 @@ import GithubSlugger from "github-slugger";
 
 import { informativeSlug } from "./lib/constants";
 
+const restrictDevAndSSR: MiddlewareHandler = async ({ isPrerendered, url }, next) => {
+  // /dev/... and non-prerendered pages should only be available when running the dev server
+  if (
+    !import.meta.env.DEV &&
+    (!isPrerendered || url.pathname.startsWith(import.meta.env.BASE_URL + "dev/"))
+  )
+    return new Response(null, { status: 404 });
+  return next();
+};
+
 const processInformative: MiddlewareHandler = async ({ request, url }, next) => {
   if (!url.pathname.startsWith(import.meta.env.BASE_URL + informativeSlug)) return next();
 
@@ -32,4 +42,4 @@ const processInformative: MiddlewareHandler = async ({ request, url }, next) => 
   return new Response($.html(), response);
 };
 
-export const onRequest = sequence(processInformative);
+export const onRequest = sequence(restrictDevAndSSR, processInformative);

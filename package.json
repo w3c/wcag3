@@ -29,10 +29,13 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@types/hast": "^3.0.4",
+    "@types/js-yaml": "^4.0.9",
     "@types/lodash": "^4.17.23",
     "@types/node": "^20.19.33",
     "@types/pluralize": "^0.0.33",
     "cspell": "^9.2.1",
+    "detect-eol": "^3.0.1",
+    "js-yaml": "^4.1.1",
     "typescript": "^5.8.2"
   },
   "overrides": {

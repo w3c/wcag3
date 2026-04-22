@@ -1,0 +1,148 @@
+---
+import capitalize from "lodash/capitalize";
+import pluralize from "pluralize";
+
+import DevLayout from "@/layouts/DevLayout.astro";
+import { idToSlug } from "@/lib/common";
+import { devManageableCollections, type DevManageableCollection } from "@/lib/constants";
+import { computeGuidelineTitle, groupsTree, type EntryWithTitle } from "@/lib/guidelines";
+import { actions } from "astro:actions";
+
+export const prerender = false;
+
+const { data, error } = Astro.getActionResult(actions.rename) || {};
+if (data) return Astro.redirect(`${Astro.url.pathname}?renamed=${data.name}`);
+if (error) console.error("Rename action error:", error);
+const renamedSlug = Astro.url.searchParams.get("renamed");
+
+const computeOption = (entry: EntryWithTitle) => ({
+  value: entry.id,
+  label: `${computeGuidelineTitle(entry)} (${idToSlug(entry.id)})`,
+});
+
+const optionsByCollection: Record<
+  (typeof devManageableCollections)[number],
+  { label: string; value: string }[]
+> = {
+  groups: groupsTree.map(computeOption),
+  guidelines: groupsTree.flatMap((group) => group.data.guidelines.map(computeOption)),
+  requirements: groupsTree.flatMap((group) =>
+    group.data.guidelines.flatMap((guideline) => guideline.data.requirements.map(computeOption))
+  ),
+};
+
+const collection = Astro.params.collection as DevManageableCollection;
+const noun = capitalize(pluralize.singular(collection));
+const options = optionsByCollection[collection];
+if (!options) return Astro.redirect("/dev/"); // This will only happen on invalid collection param
+---
+
+<DevLayout title={`Rename ${noun}`}>
+  {
+    renamedSlug && (
+      <p class="l-box note note--success">
+        {noun} <code>{renamedSlug}</code> was renamed successfully.
+      </p>
+    )
+  }
+  {error && <p class="l-box note note--error">Error: {error.message}</p>}
+  <details>
+    <summary>About this dev tool</summary>
+    <p>This dev tool handles updating:</p>
+    <ul>
+      <li>File and folder names for both normative and informative content</li>
+      <li>The relevant children entry within the parent entry</li>
+      {
+        collection === "requirements" && (
+          <>
+            <li>
+              Addition of <code>issueLabel</code> to avoid breaking links in the current Working
+              Draft
+            </li>
+            <li>
+              Slug references from other informative docs, e.g. ACT rules, best practices, and
+              methods
+            </li>
+          </>
+        )
+      }
+    </ul>
+    <p>
+      This <strong>does not</strong> handle updating links or references within content. You are still
+      advised to perform a project-wide search for the old short name and slug.
+    </p>
+  </details>
+
+  <form action={actions.rename} method="POST">
+    <input type="hidden" name="collection" value={collection} />
+    <div class="field" id="field-groups-id">
+      <label for="id" class="field-label">{noun} to rename</label>
+      <select id="id" name="id">
+        {
+          options.map(({ label, value }) => (
+            <option value={value} selected={idToSlug(value) === renamedSlug ? true : undefined}>
+              {label}
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="name" class="field-label">New slug</label>
+      <div id="hint-name" class="field-hint">
+        This represents the file's basename, i.e. no parent directory or file extension.
+      </div>
+      <input
+        id="name"
+        class="input-width-20"
+        name="name"
+        type="text"
+        aria-describedby="hint-name"
+      />
+    </div>
+    <div class="field">
+      <label for="title" class="field-label">Short name</label>
+      <div id="hint-title" class="field-hint">
+        This value will initially populate based on the name entered above. It can often be left
+        as-is, unless the title is a special case, e.g. involving additional capitalization or
+        special characters such as hyphens or slashes.
+      </div>
+      <input
+        id="title"
+        class="input-width-20"
+        name="title"
+        type="text"
+        aria-describedby="hint-title"
+      />
+    </div>
+
+    <div class="input-group">
+      <button class="button">Submit</button>
+    </div>
+  </form>
+  <p class="back">
+    <a href="../../">Back to WCAG 3 Dev Tools Index</a>
+  </p>
+</DevLayout>
+
+<script>
+  import { idToSlug, idToTitle } from "@/lib/common";
+
+  const entrySelect = document.getElementById("id") as HTMLSelectElement;
+  const nameInput = document.getElementById("name") as HTMLInputElement;
+  const titleInput = document.getElementById("title") as HTMLInputElement;
+
+  function handleIdChange() {
+    nameInput.value = idToSlug(entrySelect.value);
+    handleNameChange();
+  }
+
+  function handleNameChange() {
+    titleInput.value = idToTitle(nameInput.value, { capitalize: true });
+  }
+
+  document.addEventListener("DOMContentLoaded", handleIdChange);
+  entrySelect.addEventListener("change", handleIdChange);
+  nameInput.addEventListener("change", handleNameChange);
+</script>

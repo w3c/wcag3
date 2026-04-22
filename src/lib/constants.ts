@@ -5,3 +5,7 @@ export const isDevOrPreview = !!import.meta.env.DEV || !!import.meta.env.NETLIFY
 export const isDraft = isDevOrPreview || !!import.meta.env.GITHUB_ACTION;
 
 export const informativeSlug = "informative";
+
+/** Collections that have actions exposed via the dev server */
+export const devManageableCollections = ["groups", "guidelines", "requirements"] as const;
+export type DevManageableCollection = typeof devManageableCollections[number];
