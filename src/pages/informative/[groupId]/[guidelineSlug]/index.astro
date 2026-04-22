@@ -1,0 +1,65 @@
+---
+import type { GetStaticPaths, GetStaticPathsResult } from "astro";
+
+import KeyTerms from "@/components/informative/KeyTerms.astro";
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import { informativeSlug } from "@/lib/constants";
+import {
+  formatNormativeContent,
+  processKeyTerms,
+  resolveInformativeGroups,
+  resolveInformativeGuideline,
+  resolveInformativeGuidelines,
+  resolveInformativeRequirements,
+} from "@/lib/informative";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: GetStaticPathsResult = [];
+  for (const group of await resolveInformativeGroups()) {
+    for (const guideline of await resolveInformativeGuidelines(group.id)) {
+      paths.push({
+        params: {
+          groupId: group.id,
+          guidelineSlug: guideline.id.slice(guideline.id.lastIndexOf("/") + 1),
+        },
+      });
+    }
+  }
+  return paths;
+};
+
+const { groupId, guidelineSlug } = Astro.params;
+const guidelineId = `${groupId}/${guidelineSlug}`;
+
+const guideline = await resolveInformativeGuideline(guidelineId);
+if (!guideline) throw new Error(`Unresolvable informative guideline ID: ${guidelineId}`);
+if (!guideline.rendered || !guideline.normativeEntry.rendered) {
+  throw new Error(
+    `informative/[group]/[guideline]: Rendered HTML missing for ${guideline.id}; check for Markdown parse failures earlier in log`
+  );
+}
+
+const requirements = await resolveInformativeRequirements(guidelineId);
+
+const { html, terms } = processKeyTerms(
+  formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html
+);
+---
+
+<InformativeLayout title={guideline.title} breadcrumbSegments={[guideline]}>
+  <h2>Guideline</h2>
+  <Fragment set:html={html} />
+  <h2>Provisions under this guideline</h2>
+  <ul>
+    {
+      requirements.map((requirement) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>
+            {requirement.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <KeyTerms terms={terms} />
+</InformativeLayout>

@@ -12,6 +12,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
     <ExplainerRespec />
     <script is:inline src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
     <style is:global>
+        @import "@/styles/common.css";
         @import "@/styles/explainer.css";
     </style>
 </head>
@@ -75,7 +76,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </ul>
         <div class="ednote">
             <p>W3C strives to be as inclusive as possible, and has actively sought participation and input from a broad
-                range of stakeholder groups. We recognize, however, that there is always room for improvement in
+                range of stakeholder groups. Part of our upcoming focus is exploring using registries to broaden support 
+                for scripts other than Latin.
+             </p>
+                
+             <p>We recognize that there is always room for improvement in
                 practices to support inclusion and representation. As you evaluate this document, please consider
                 whether there are ways the Working Group can better support your review, feedback, or inclusion within
                 the process of creating this standard. We welcome feedback on this question as part of your comments.
@@ -433,14 +438,15 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             </ul>
 
         <h4>Conformance level</h4>
-        <p>For the approach outlined in the draft, one of the following three levels of conformance must be met in full.</p>
+        <p>AGWG continues to explore possible conformance approaches. For the approach outlined in the draft, one of the following three levels of conformance must be met in full.</p>
         <ul>
-            <li>For Bronze conformance (the minimum level of conformance), all of the </li>pages/views</a> and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each functional performance statement.</li>
+            <li>For Bronze conformance (the minimum level of conformance), all of the pages/views and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each <a href="https://www.w3.org/TR/wcag-3.0/#function-performance-statements">functional performance statement</a>.</li>
             <li>For Silver conformance, all of the pages/views and processes within the conformance scope MUST satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Bronze within each functional performance statement.</li>
             <li>For Gold conformance, all of the pages/views and processes within the conformance scope satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Silver within each functional performance statement.</li>
         </ul>
-        <p>A draft list of functional performance statements are included in section 3.3 in the WCAG 3 draft. The purpose of using this list when measuring higher levels of conformance is to ensure
+        <p>A draft list of functional performance statements are included in the WCAG 3 draft. The purpose of using this list when measuring higher levels of conformance is to ensure
             better equity across user needs.</p>
+
 
         <h3>Additional Concepts</h3>    
         <p>Key concepts AGWG has and previously considered and continues to explore the following:</p>

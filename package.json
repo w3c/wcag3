@@ -9,20 +9,20 @@
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "astro sync --force",
-    "astro": "astro",
-    "postinstall": "patch-package"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.10",
     "@astrojs/node": "^9.5.3",
     "astro": "~5.15.9",
     "cheerio": "^1.0.0",
-    "fast-glob": "^3.3.3",
+    "github-slugger": "^2.0.0",
     "hast-util-to-html": "^9.0.5",
     "lodash": "^4.17.23",
-    "patch-package": "^8.0.0",
+    "pluralize": "^8.0.0",
     "remark-definition-list": "^2.0.0",
     "remark-directive": "^3.0.1",
+    "tinyglobby": "^0.2.15",
     "unist-util-visit": "^5.0.0",
     "vfile": "^6.0.3"
   },
@@ -31,6 +31,7 @@
     "@types/hast": "^3.0.4",
     "@types/lodash": "^4.17.23",
     "@types/node": "^20.19.33",
+    "@types/pluralize": "^0.0.33",
     "cspell": "^9.2.1",
     "typescript": "^5.8.2"
   },

@@ -1,0 +1,37 @@
+---
+import { computeTermTitle } from "@/lib/guidelines";
+import { processKeyTerms } from "@/lib/informative";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  /** List of terms resolved recursively via processKeyTerms */
+  terms: CollectionEntry<"terms">[];
+}
+
+const { terms } = Astro.props;
+
+for (const entry of terms) {
+  if (!entry.rendered) {
+    throw new Error(
+      `KeyTerms: No rendered HTML found for term ${entry.id}; check for Markdown parse failures earlier in log`
+    );
+  }
+}
+---
+
+{
+  terms.length ? (
+    <details>
+      <summary>
+        <h2>Key Terms</h2>
+      </summary>
+      <dl>
+        {/* Call processKeyTerms again to expand links between terms */}
+        {terms.map((entry) => (
+          <dt id={`dfn-${entry.id}`}>{computeTermTitle(entry)}</dt>
+          <dd set:html={processKeyTerms(entry.rendered!.html).html} />
+        ))}
+      </dl>
+    </details>
+  ) : null
+}

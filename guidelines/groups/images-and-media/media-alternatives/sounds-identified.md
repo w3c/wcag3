@@ -9,12 +9,12 @@ Sounds needed to understand the media are identified or described in :term[capti
 This includes sound effects and other non-spoken :term[audio] :term[content].
 :::
 
-:::except-when
-- it is a decorative video.
-:::
-
 :::applies-when
 - there is sound.
+:::
+
+:::except-when
+- it is a decorative video.
 :::
 
 :::tests

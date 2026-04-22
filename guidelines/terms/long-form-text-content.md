@@ -1,6 +1,7 @@
 ---
 title: long-form text content
 status: exploratory
+unusedDefinition: true
 ---
 
 written material made up of multiple :term[blocks of text], along with structural elements such as headings and lists, that work together to explain, inform, or convey a narrative

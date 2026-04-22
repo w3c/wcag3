@@ -26,12 +26,10 @@ function expectGuidelineFileType(
 ) {
   const type = getGuidelineFileType(file);
   if (type !== expectedType)
-    file.fail(`:::${directiveName} expected at ${expectedType} level but found at ${type} level`);
+    file.fail(`${directiveName} expected at ${expectedType} level but found at ${type} level`);
 }
 
 const isTermFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/guidelines/terms`);
-
-const getFrontmatter = (file: VFile) => file.data.astro!.frontmatter!;
 
 /** Adds standard editor's note to terms with empty content. */
 const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
@@ -81,9 +79,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
 
   visit(tree, (node, index, parent) => {
     if (node.type === "containerDirective") {
-      if (node.name === "comment" && parent && typeof index !== "undefined") {
-        parent.children.splice(index, 1);
-      } else if (isGuideline && node.name === "decision-tree") {
+      if (isGuideline && node.name === "decision-tree") {
         const data = node.data || (node.data = {});
         data.hName = "details";
         data.hProperties = { class: "decision-tree" };
@@ -93,7 +89,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Which core requirements apply?</summary>",
         });
       } else if (isGuideline && node.name === "user-needs") {
-        expectGuidelineFileType(file, "guideline", "user-needs");
+        expectGuidelineFileType(file, "guideline", ":::user-needs");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
@@ -103,7 +99,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "requirement", "tests");
+        expectGuidelineFileType(file, "requirement", ":::tests");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
@@ -113,34 +109,32 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "applies-when") {
-        expectGuidelineFileType(file, "requirement", "applies-when");
+        expectGuidelineFileType(file, "requirement", ":::applies-when");
 
         prependBoldText(node, "Applies when");
         if (parent && typeof index !== "undefined") {
           parent.children.splice(index!, 1, ...node.children);
         }
       } else if (isGuideline && node.name === "except-when") {
-        expectGuidelineFileType(file, "requirement", "except-when");
+        expectGuidelineFileType(file, "requirement", ":::except-when");
+
+        if (
+          parent &&
+          typeof index !== "undefined" &&
+          parent.children
+            .slice(index + 1)
+            .some((node) => node.type === "containerDirective" && node.name === "applies-when")
+        ) {
+          file.fail(`:::applies-when must appear before :::except-when, not after`);
+        }
 
         prependBoldText(node, "Except when");
         if (parent && typeof index !== "undefined")
           parent.children.splice(index!, 1, ...node.children);
-      } else if (node.name === "ednote") {
-        const data = node.data || (node.data = {});
-        data.hName = "div";
-        data.hProperties = { class: "ednote" };
-      } else if (node.name === "example") {
-        const data = node.data || (node.data = {});
-        data.hName = "aside";
-        data.hProperties = { class: "example" };
-      } else if (node.name === "note") {
-        const data = node.data || (node.data = {});
-        data.hName = "div";
-        data.hProperties = { class: "note" };
-      } else file.fail(`Unrecognized container directive :::${node.name}`);
+      }
     } else if (node.type === "leafDirective") {
       if (isGuideline && node.name === "assertion-required") {
-        expectGuidelineFileType(file, "requirement", "assertion-required");
+        expectGuidelineFileType(file, "requirement", "::assertion-required");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -150,7 +144,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           },
         ];
       } else if (isGuideline && node.name === "assertion-recommended") {
-        expectGuidelineFileType(file, "requirement", "assertion-recommended");
+        expectGuidelineFileType(file, "requirement", "::assertion-recommended");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -160,14 +154,9 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           },
         ];
       } else file.fail(`Unrecognized leaf directive ::${node.name}`);
-    } else if (node.type === "textDirective") {
-      if (node.name === "term") {
-        const data = node.data || (node.data = {});
-        data.hName = "a";
-      } else file.fail(`Unrecognized inline directive :${node.name}`);
     }
   });
 };
 
-export const guidelinesRemarkPlugins = [addEmptyTermNote, customDirectives];
-export const guidelinesRehypePlugins = [];
+export const remarkPlugins = [addEmptyTermNote, customDirectives];
+export const rehypePlugins = [];

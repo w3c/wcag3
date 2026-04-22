@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
 import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { load } from "cheerio";
-import fg from "fast-glob";
+import { glob } from "tinyglobby";
 import difference from "lodash/difference";
 import { remarkDefinitionList, defListHastHandlers } from "remark-definition-list";
 import remarkDirective from "remark-directive";
@@ -11,7 +11,7 @@ import { readFile, writeFile } from "fs/promises";
 import { basename, dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-import { guidelinesRehypePlugins, guidelinesRemarkPlugins } from "./src/lib/markdown/guidelines";
+import { remarkPlugins, rehypePlugins } from "./src/lib/markdown";
 
 const GH_REPO = process.env.GITHUB_REPOSITORY; // Only set during GitHub action
 
@@ -24,8 +24,8 @@ export default defineConfig({
   devToolbar: { enabled: false },
   trailingSlash: "always",
   markdown: {
-    remarkPlugins: [remarkDirective, remarkDefinitionList, ...guidelinesRemarkPlugins],
-    rehypePlugins: [...guidelinesRehypePlugins],
+    remarkPlugins: [remarkDirective, remarkDefinitionList, ...remarkPlugins],
+    rehypePlugins: rehypePlugins,
     remarkRehype: {
       // https://github.com/wataru-chocola/remark-definition-list/issues/50#issuecomment-1445130314
       handlers: { ...defListHastHandlers },
@@ -37,7 +37,7 @@ export default defineConfig({
   },
   integrations: [
     {
-      /** Checks for mismatched children array vs. subdirectory contents */
+      /** Checks sync of children array vs. subdirectory contents and normative vs. informative */
       name: "children-check",
       hooks: {
         "astro:build:start": async () => {
@@ -48,20 +48,17 @@ export default defineConfig({
             ).join(", ");
 
           const groupsPath = join("guidelines", "groups");
-          const groupIds = (
-            await fg.glob("*.json", {
-              cwd: groupsPath,
-              ignore: ["index.json"],
-            })
-          ).map((filename) => basename(filename, ".json"));
+          const groupIds = (await glob("*.json", { cwd: groupsPath })).map((filename) =>
+            basename(filename, ".json")
+          );
 
           // Check at group level (index.json -> *.json)
           const topLevelChildren = JSON.parse(
-            await readFile(join(groupsPath, "index.json"), "utf8")
+            await readFile(join("guidelines", "groups.json"), "utf8")
           );
           if (topLevelChildren.length !== groupIds.length) {
             throw new Error(
-              `groups/index.json lists ${topLevelChildren.length} children but there are ${
+              `groups.json lists ${topLevelChildren.length} children but there are ${
                 groupIds.length
               } files (check: ${getUniqueEntries(topLevelChildren, groupIds)})`
             );
@@ -71,31 +68,55 @@ export default defineConfig({
           for (const id of groupIds) {
             const data = JSON.parse(await readFile(join(groupsPath, `${id}.json`), "utf8"));
 
-            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
-            if (data.children.length !== actualFiles.length) {
+            if (data.children.length !== normativeFiles.length) {
               throw new Error(
                 `groups/${id}.json lists ${data.children.length} children but groups/${id}/ contains ${
-                  actualFiles.length
-                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
+                  normativeFiles.length
+                } files (check: ${getUniqueEntries(normativeFiles, data.children)})`
+              );
+            }
+
+            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (normativeFiles.join() !== informativeFiles.join()) {
+              throw new Error(
+                `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
+                  normativeFiles,
+                  informativeFiles
+                )})`
               );
             }
           }
 
           // Check at guideline level (*/*.md -> */*/*.md)
-          for (const filename of await fg.glob(join(groupsPath, "*", "*.md"))) {
+          for (const filename of await glob(join(groupsPath, "*", "*.md"))) {
             const id = join(basename(dirname(filename)), basename(filename, ".md"));
             const data = parseFrontmatter(await readFile(filename, "utf8")).frontmatter;
 
-            const actualFiles = (await fg.glob("*.md", { cwd: join(groupsPath, id) })).map(
+            const normativeFiles = (await glob("*.md", { cwd: join(groupsPath, id) })).map(
               (filename) => basename(filename, ".md")
             );
-            if (data.children.length !== actualFiles.length) {
+            if (data.children.length !== normativeFiles.length) {
               throw new Error(
                 `groups/${id}.md lists ${data.children.length} children but groups/${id}/ contains ${
-                  actualFiles.length
-                } files (check: ${getUniqueEntries(actualFiles, data.children)})`
+                  normativeFiles.length
+                } files (check: ${getUniqueEntries(normativeFiles, data.children)})`
+              );
+            }
+
+            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
+              (filename) => basename(filename, ".md")
+            );
+            if (normativeFiles.join() !== informativeFiles.join()) {
+              throw new Error(
+                `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
+                  normativeFiles,
+                  informativeFiles
+                )})`
               );
             }
           }
@@ -109,7 +130,7 @@ export default defineConfig({
         "astro:build:done": async ({ dir }) => {
           if (!process.env.WCAG_DIFFABLE) return;
           const distPath = fileURLToPath(dir);
-          const htmlPaths = await fg.glob("**/*.html", { cwd: distPath });
+          const htmlPaths = await glob("**/*.html", { cwd: distPath });
           const start = Date.now();
           for (const path of htmlPaths) {
             const filePath = join(distPath, path);

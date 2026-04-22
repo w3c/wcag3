@@ -1,0 +1,47 @@
+---
+import capitalize from "lodash/capitalize";
+
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import RequirementsList from "@/components/informative/RequirementsList.astro";
+import { informativeSlug } from "@/lib/constants";
+import {
+  informativeRelatedTypes,
+  resolveInformativeGroups,
+  resolveInformativeGuidelines,
+  type InformativeGuideline,
+} from "@/lib/informative";
+
+const informativeGroups = await resolveInformativeGroups();
+const guidelinesMap: Record<string, InformativeGuideline[]> = {};
+for (const { id } of informativeGroups) {
+  if (!(id in guidelinesMap)) guidelinesMap[id] = await resolveInformativeGuidelines(id);
+}
+---
+
+<InformativeLayout title="All WCAG 3 Guidelines" breadcrumbSegments={[]} withNav={false}>
+  {
+    informativeGroups.map((group) => (
+      <>
+        <h2>{group.title}</h2>
+        <ul>
+          {guidelinesMap[group.id].map((guideline) => (
+            <li>
+              <a href={guideline.id + "/"}>{guideline.title}</a>
+              <RequirementsList guideline={guideline} />
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+  <h1>Indexes</h1>
+  <ul>
+    {
+      Object.entries(informativeRelatedTypes).map(([type, { slug, title }]) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${slug}/`}>{title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</InformativeLayout>
