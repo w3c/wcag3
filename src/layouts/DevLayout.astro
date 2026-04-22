@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title} | WCAG 3</title>
+    <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/core.css?ver=1.5" />
+  </head>
+  <body>
+    <main>
+      <h1>{title}</h1>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  details {
+    margin-bottom: 2rem;
+  }
+  details[open] summary {
+    margin-bottom: 0;
+  }
+
+  .back {
+    margin-top: 4rem;
+  }
+</style>

@@ -2,6 +2,7 @@ import { getCollection, getEntry, type CollectionEntry, type CollectionKey } fro
 import capitalize from "lodash/capitalize";
 import difference from "lodash/difference";
 
+import { idToTitle, type IdToTitleOptions } from "./common";
 import { isDevOrPreview } from "./constants";
 
 /**
@@ -124,16 +125,8 @@ export interface EntryWithTitle {
   data: { title?: string };
 }
 
-interface ComputeTitleOptions {
-  capitalize: boolean;
-}
-
-function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
-  if (entry.data.title) return entry.data.title;
-  const slug = entry.id.replace(/^.*\//, "");
-  const title = slug.replace(/-/g, " ");
-  return options.capitalize ? capitalize(title) : title;
-}
+const computeTitle = (entry: EntryWithTitle, options: IdToTitleOptions) =>
+  entry.data.title || idToTitle(entry.id, options);
 
 /**
  * Returns group/guideline/requirement/assertion title if specified,
