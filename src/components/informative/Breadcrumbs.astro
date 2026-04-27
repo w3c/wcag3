@@ -21,7 +21,7 @@ function resolveSlug(segment: Segment) {
   return segment.id.slice(segment.id.lastIndexOf("/") + 1);
 }
 
-const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) => ({
+const resolvedSegments: ResolvedSegment[] = segments.map((segment) => ({
   slug: resolveSlug(segment),
   title: segment.title,
 }));

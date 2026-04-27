@@ -1,6 +1,4 @@
 ---
-import capitalize from "lodash/capitalize";
-
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import RequirementsList from "@/components/informative/RequirementsList.astro";
 import { informativeSlug } from "@/lib/constants";
@@ -37,7 +35,7 @@ for (const { id } of informativeGroups) {
   <h1>Indexes</h1>
   <ul>
     {
-      Object.entries(informativeRelatedTypes).map(([type, { slug, title }]) => (
+      Object.values(informativeRelatedTypes).map(({ slug, title }) => (
         <li>
           <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${slug}/`}>{title}</a>
         </li>
