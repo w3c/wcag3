@@ -110,7 +110,7 @@ export const server = {
       /** Path upon which most normative collections (and their entry IDs) are based */
       const normativeBase = join("guidelines", "groups");
       /** Path upon which informative collections (and their entry IDs) are based */
-      const informativeBase = "informative";
+      const informativeGuidelinesBase = join("informative", "guidelines");
 
       // Edits (performed before renames so that id can be reused for file path)
 
@@ -170,7 +170,8 @@ export const server = {
             for (const relatedEntry of relatedEntries) {
               await updateYamlFrontmatter<InformativeRelatedCollection>(
                 `${join(
-                  informativeBase,
+                  informativeGuidelinesBase,
+                  "..",
                   informativeRelatedTypes[relatedCollection as InformativeRelatedCollection].slug,
                   ...relatedEntry.id.split("/")
                 )}.md`,
@@ -190,11 +191,17 @@ export const server = {
 
       if (collection === "groups") {
         // Group file
-        await renameAndStage(join(normativeBase, `${id}.json`), join(normativeBase, `${name}.json`));
+        await renameAndStage(
+          join(normativeBase, `${id}.json`),
+          join(normativeBase, `${name}.json`)
+        );
         // Folder containing guidelines
         await renameAndStage(join(normativeBase, `${id}`), join(normativeBase, `${name}`));
         // Folder containing informative docs
-        await renameAndStage(join(informativeBase, `${id}`), join(informativeBase, `${name}`));
+        await renameAndStage(
+          join(informativeGuidelinesBase, `${id}`),
+          join(informativeGuidelinesBase, `${name}`)
+        );
       } else {
         // Both guidelines and provisions have md files; only guidelines have a subfolder
         const paths = [`${id}.md`];
@@ -210,9 +217,9 @@ export const server = {
           );
           // Informative
           await renameAndStage(
-            join(informativeBase, ...parts),
+            join(informativeGuidelinesBase, ...parts),
             join(
-              informativeBase,
+              informativeGuidelinesBase,
               ...parts.map((part, i) => (i < parts.length - 1 ? part : `${name}${extname(part)}`))
             )
           );
