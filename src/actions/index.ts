@@ -1,13 +1,16 @@
 /** @file Server actions, only used in dev mode */
 
+import { exec } from "child_process";
+import { readFile, rename, writeFile } from "fs/promises";
+import { extname, join } from "path";
+import { EOL } from "os";
+import { promisify } from "util";
+
 import { parseFrontmatter } from "@astrojs/markdown-remark";
 import { z } from "astro/zod";
 import { ActionError, defineAction } from "astro:actions";
 import { getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
 import detectEOL from "detect-eol";
-import { readFile, rename, writeFile } from "fs/promises";
-import { extname, join } from "path";
-import { EOL } from "os";
 import yaml from "js-yaml";
 
 import { devManageableCollections } from "@/lib/constants";
@@ -18,6 +21,22 @@ import {
   informativeRelatedTypes,
   type InformativeRelatedCollection,
 } from "@/lib/informative";
+
+const execAsync = promisify(exec);
+
+/** Stages file(s) in git. */
+const stageFiles = (...filenames: string[]) => execAsync(`git add ${filenames.join(" ")}`);
+
+async function renameAndStage(source: string, destination: string) {
+  // Use fs rename first as a means of validating up-front before changing git state
+  await rename(source, destination);
+  await stageFiles(source, destination);
+}
+
+async function writeAndStage(path: string, content: string) {
+  await writeFile(path, content);
+  await stageFiles(path);
+}
 
 /** Preserves existing line break type, to attempt to honor git/editor config. */
 const replaceEol = (content: string, eolReference: string) =>
@@ -31,7 +50,7 @@ async function updateJson<K extends CollectionKey>(
   const currentJson = await readFile(path, "utf8");
   const currentData = JSON.parse(currentJson) as K;
   const updatedData = update(currentData);
-  await writeFile(path, replaceEol(JSON.stringify(updatedData, null, "  "), currentJson));
+  await writeAndStage(path, replaceEol(JSON.stringify(updatedData, null, "  "), currentJson));
 }
 
 /** Updates frontmatter of a Markdown file with the given data. */
@@ -47,7 +66,7 @@ async function updateYamlFrontmatter<K extends CollectionKey>(
     lineWidth: -1,
     quotingType: '"',
   });
-  await writeFile(
+  await writeAndStage(
     path,
     content.replace(`---${rawFrontmatter}---`, replaceEol(`---\n${updatedYaml}---`, content))
   );
@@ -171,18 +190,18 @@ export const server = {
 
       if (collection === "groups") {
         // Group file
-        await rename(join(normativeBase, `${id}.json`), join(normativeBase, `${name}.json`));
+        await renameAndStage(join(normativeBase, `${id}.json`), join(normativeBase, `${name}.json`));
         // Folder containing guidelines
-        await rename(join(normativeBase, `${id}`), join(normativeBase, `${name}`));
+        await renameAndStage(join(normativeBase, `${id}`), join(normativeBase, `${name}`));
         // Folder containing informative docs
-        await rename(join(informativeBase, `${id}`), join(informativeBase, `${name}`));
+        await renameAndStage(join(informativeBase, `${id}`), join(informativeBase, `${name}`));
       } else {
         // Both guidelines and provisions have md files; only guidelines have a subfolder
         const paths = [`${id}.md`];
         if (collection === "guidelines") paths.push(id);
         for (const parts of paths.map((path) => path.split("/"))) {
           // Normative
-          await rename(
+          await renameAndStage(
             join(normativeBase, ...parts),
             join(
               normativeBase,
@@ -190,7 +209,7 @@ export const server = {
             )
           );
           // Informative
-          await rename(
+          await renameAndStage(
             join(informativeBase, ...parts),
             join(
               informativeBase,
