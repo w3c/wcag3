@@ -21,14 +21,6 @@ const relatedSchema = z.strictObject({
   title: z.string(),
 });
 
-/**
- * Matches informative directories except reserved top-level names belonging to other collections.
- */
-const generateInformativePatternWithIgnores = (pattern: string) => [
-  pattern,
-  ...["act-rules", "best-practices", "methods"].map((dir) => pattern.replace(/^\*+/, `!${dir}`)),
-];
-
 export const collections = {
   // Content for normative WCAG 3 document
 
@@ -101,15 +93,15 @@ export const collections = {
 
   informativeGuidelines: defineCollection({
     loader: glob({
-      pattern: generateInformativePatternWithIgnores("*/*.md"),
-      base: "./informative",
+      pattern: "*/*.md",
+      base: "./informative/guidelines",
     }),
     schema: z.strictObject({}),
   }),
   informativeRequirements: defineCollection({
     loader: glob({
-      pattern: generateInformativePatternWithIgnores("*/*/*.md"),
-      base: "./informative",
+      pattern: "*/*/*.md",
+      base: "./informative/guidelines",
     }),
     schema: z.strictObject({}),
   }),

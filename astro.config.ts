@@ -79,9 +79,9 @@ export default defineConfig({
               );
             }
 
-            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
-              (filename) => basename(filename, ".md")
-            );
+            const informativeFiles = (
+              await glob("*.md", { cwd: join("informative", "guidelines", id) })
+            ).map((filename) => basename(filename, ".md"));
             if (normativeFiles.join() !== informativeFiles.join()) {
               throw new Error(
                 `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
@@ -108,9 +108,9 @@ export default defineConfig({
               );
             }
 
-            const informativeFiles = (await glob("*.md", { cwd: join("informative", id) })).map(
-              (filename) => basename(filename, ".md")
-            );
+            const informativeFiles = (
+              await glob("*.md", { cwd: join("informative", "guidelines", id) })
+            ).map((filename) => basename(filename, ".md"));
             if (normativeFiles.join() !== informativeFiles.join()) {
               throw new Error(
                 `Mismatch between normative and informative directory contents for ${id} (check: ${getUniqueEntries(
