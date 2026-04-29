@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - down
 ---
 
 platform event that occurs when the trigger stimulus of a pointer is depressed
