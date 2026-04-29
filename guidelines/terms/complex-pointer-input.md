@@ -7,6 +7,7 @@ synonyms:
 any pointer input other than a :term[single pointer input]
 
 :::example
+- Press and hold
 - Double clicking
 - Multipoint clicking
 - Dragging (single or multipoint)
