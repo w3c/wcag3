@@ -23,3 +23,4 @@
 * As a keyboard user, when I reach a custom implementation of a common component, all keyboard commands that exist are implemented.
 * As a user, I don’t want a keyboard shortcut to be the only way to do something. (or, there should not be only one way to do something).
 * As a keyboard user typing content, I need to know what the return/tab/delete/… key will do.
+* [TODO] I need multiple ways/formats to access content.

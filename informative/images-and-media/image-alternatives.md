@@ -17,3 +17,4 @@
 * [TODO] As a user who uses image descriptions to aid in my comprehension of content, I need to have an equivalent experience of the content to other users.
 * [TODO] As a user, I need to personalize text description for example to alter content that may otherwise be disturbing, harmful or offensive.  Summarizations. Translations. Simplification.
 * [TODO] As a user without vision, I need to know if the imagine content is a photograph so that I can ask somebody to see the same webpage and describe the photo for me if I want.
+* [TODO] I need multiple ways/formats to access content.

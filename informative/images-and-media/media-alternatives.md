@@ -24,3 +24,6 @@
 * As a user who is deaf, I need to be aware of the presence of audio that is communicating information such as notification in an alternative format.
 * [TODO] People who are blind or visually impaired need access to the visual information in a synchronized media presentation.
 * [TODO] As a person with a cognitive disability, I need an easy way to find specific content in media.
+* [TODO] I need multiple ways/formats to access content.
+* [TODO] I need to distinguish sections of audio / video content
+

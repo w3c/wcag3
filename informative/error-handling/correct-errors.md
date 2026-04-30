@@ -18,4 +18,4 @@
 * [TODO] User needs an error message that is provided when the error occurs so they can readily refocus on the source of the error.
 * [TODO] User needs an error message that persists until the error is remedied so they can access the remedy instructions for as long as it takes to address the error.
 * [TODO] User needs an error message that is focused when the page reloads so they know there was an error.
-* [TODO] 
+* [TODO] I need to be able to recover from making mistakes.

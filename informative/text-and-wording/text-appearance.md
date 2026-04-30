@@ -33,3 +33,4 @@
 * As a user with limited visual field, I need the ability to make the text smaller to fit more text in my field of vision.
 * As a user who increases the text size on the web page, I need large text such as headings that are already large to proportionally enlarge so they do not take up too much of the screen which impacts my reading.
 * [TODO] As a person with age-related vision loss, I need the font weight to be a minimum of the regular font weight of 400.
+* [TODO] I need to adjust the presentation of the content, including headings and paragraph presentation.

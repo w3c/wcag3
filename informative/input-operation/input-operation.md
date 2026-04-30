@@ -8,3 +8,4 @@
 * [TODO] User must be able to perceive/know that their pointer is currently “down” (e.g. somebody who doesn’t have sufficient pressure sensitivity in their fingers may not know if they’re pressing on the touchscreen), so provide some form of feedback (visual, haptic, aural?).
 * [TODO] For hover-based interactions (e.g. hovering stylus), user must be able to … without needing to do that.
 * [TODO] Users are able to “move”/navigate/operate without the need to physically move.
+* [TODO] I need multiple ways/formats to access content.
