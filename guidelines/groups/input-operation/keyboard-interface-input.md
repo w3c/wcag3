@@ -5,7 +5,6 @@ children:
   - bidirectional-navigation
   - custom-keys-documented
   - no-keyboard-conflicts
-  - keyboard-navigable-if-responsive
   - focus-placed
   - no-keyboard-traps
   - focus-user-controlled
