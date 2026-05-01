@@ -50,7 +50,7 @@ async function updateJson<K extends CollectionKey>(
   const currentJson = await readFile(path, "utf8");
   const currentData = JSON.parse(currentJson) as K;
   const updatedData = update(currentData);
-  await writeAndStage(path, replaceEol(JSON.stringify(updatedData, null, "  "), currentJson));
+  await writeAndStage(path, replaceEol(JSON.stringify(updatedData, null, "  ") + "\n", currentJson));
 }
 
 /** Updates frontmatter of a Markdown file with the given data. */
