@@ -98,6 +98,12 @@ export const server = {
           message: `Could not resolve ${id} to a ${collection} entry`,
           code: "NOT_FOUND",
         });
+      if (await getEntry(collection, id.replace(/[^\/]+$/, name))) {
+        throw new ActionError({
+          message: "Could not rename because destination name already exists",
+          code: "CONFLICT",
+        });
+      }
 
       const shouldSetTitle = !!title && title !== idToTitle(name, { capitalize: true });
       function setOrUnsetTitle<T extends EntryWithTitle["data"]>(entryData: T) {
