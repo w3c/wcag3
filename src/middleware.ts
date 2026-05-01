@@ -5,7 +5,7 @@ import GithubSlugger from "github-slugger";
 
 import { informativeSlug } from "./lib/constants";
 
-const processInformative: MiddlewareHandler = async ({ request, url }, next) => {
+const processInformative: MiddlewareHandler = async ({ url }, next) => {
   if (!url.pathname.startsWith(import.meta.env.BASE_URL + informativeSlug)) return next();
 
   const response = await next();
