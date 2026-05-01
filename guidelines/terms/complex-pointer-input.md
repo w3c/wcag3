@@ -4,9 +4,10 @@ synonyms:
   - complex pointer inputs
 ---
 
-any pointer input other than a :term[single pointer input]
+any pointer input other than a :term[simple pointer input]
 
 :::example
+- Press and hold
 - Double clicking
 - Multipoint clicking
 - Dragging (single or multipoint)

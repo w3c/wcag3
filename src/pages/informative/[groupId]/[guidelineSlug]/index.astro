@@ -3,12 +3,14 @@ import type { GetStaticPaths, GetStaticPathsResult } from "astro";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import { informativeSlug } from "@/lib/constants";
 import {
   formatNormativeContent,
   processKeyTerms,
   resolveInformativeGroups,
   resolveInformativeGuideline,
   resolveInformativeGuidelines,
+  resolveInformativeRequirements,
 } from "@/lib/informative";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -37,14 +39,27 @@ if (!guideline.rendered || !guideline.normativeEntry.rendered) {
   );
 }
 
-const { html, terms } = processKeyTerms(formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html);
+const requirements = await resolveInformativeRequirements(guidelineId);
+
+const { html, terms } = processKeyTerms(
+  formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html
+);
 ---
 
-<InformativeLayout
-  title={guideline.title}
-  breadcrumbSegments={[guideline]}
-  nav={{ current: guideline, guideline }}
->
+<InformativeLayout title={guideline.title} breadcrumbSegments={[guideline]}>
+  <h2>Guideline</h2>
   <Fragment set:html={html} />
+  <h2>Provisions under this guideline</h2>
+  <ul>
+    {
+      requirements.map((requirement) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>
+            {requirement.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
   <KeyTerms terms={terms} />
 </InformativeLayout>

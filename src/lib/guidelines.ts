@@ -53,7 +53,12 @@ async function validateTags({ id, data }: CollectionEntry<"requirements">) {
   }
 }
 
-export async function buildGuidelinesHierarchy() {
+// Compute hierarchy ahead-of-time and build flat basename map at the same time,
+// partly to check for duplicates, partly to assist with informative templates/data
+
+/** Object hash mapping provision slugs to fully-qualified IDs */
+export const provisionSlugMap: Record<string, string> = {};
+export const groupsTree = await (async () => {
   // Cache collated collection data for subsequent calls
   if (!Object.keys(groups).length) {
     for (const groupId of groupIds) {
@@ -77,6 +82,13 @@ export async function buildGuidelinesHierarchy() {
             `${groupId}/${guidelineSlug}/${requirementSlug}`
           );
           if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
+          if (requirementSlug in provisionSlugMap)
+            throw new Error(
+              `Duplicate provision filename: ${requirementSlug} (found at ${
+                provisionSlugMap[requirementSlug]
+              } and ${groupId}/${guidelineSlug}/${requirementSlug})`
+            );
+          provisionSlugMap[requirementSlug] = requirement.id;
           await validateTags(requirement);
           requirements[requirement.id] = skippableChildren.includes(requirementSlug)
             ? { ...requirement, skippable: true }
@@ -104,7 +116,7 @@ export async function buildGuidelinesHierarchy() {
       }),
     },
   }));
-}
+})();
 
 export interface EntryWithTitle {
   id: string;
@@ -129,6 +141,19 @@ function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
  */
 export const computeGuidelineTitle = (entry: EntryWithTitle) =>
   computeTitle(entry, { capitalize: true });
+
+/**
+ * Returns text representation of each provision type,
+ * useful e.g. in front of each provision name in the normative document,
+ * and for the heading above the normative text in each informative document.
+ */
+export const computeProvisionTypeLabel = (entry: CollectionEntry<"requirements">) => {
+  var requirementType = entry.data.type;
+  if (!requirementType) return "Requirement";
+  if (requirementType === "foundational" || requirementType === "supplemental")
+    return `${capitalize(requirementType.replace(/^foundational$/, "core"))} requirement`;
+  return capitalize(requirementType);
+};
 
 /** Returns term title if specified, or falls back to converting from its slug. */
 export const computeTermTitle = (entry: CollectionEntry<"terms">) =>
