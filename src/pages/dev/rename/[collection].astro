@@ -1,19 +1,26 @@
 ---
+import { actions } from "astro:actions";
 import capitalize from "lodash/capitalize";
 import pluralize from "pluralize";
 
 import DevLayout from "@/layouts/DevLayout.astro";
 import { idToSlug } from "@/lib/common";
 import { devManageableCollections, type DevManageableCollection } from "@/lib/constants";
+import { getAndDiscardActionResult, storeActionResult } from "@/lib/dev";
 import { computeGuidelineTitle, groupsTree, type EntryWithTitle } from "@/lib/guidelines";
-import { actions } from "astro:actions";
 
 export const prerender = false;
 
-const { data, error } = Astro.getActionResult(actions.rename) || {};
-if (data) return Astro.redirect(`${Astro.url.pathname}?renamed=${data.name}`);
+const storageKey = "rename";
+
+const result = Astro.getActionResult(actions.rename);
+if (result) {
+  storeActionResult(Astro.session, storageKey, result);
+  return Astro.redirect(`${Astro.url.pathname}`);
+}
+
+const { data, error } = (await getAndDiscardActionResult(Astro.session, storageKey));
 if (error) console.error("Rename action error:", error);
-const renamedSlug = Astro.url.searchParams.get("renamed");
 
 const computeOption = (entry: EntryWithTitle) => ({
   value: entry.id,
@@ -39,9 +46,9 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
 
 <DevLayout title={`Rename ${noun}`}>
   {
-    renamedSlug && (
+    data && (
       <p class="l-box note note--success">
-        {noun} <code>{renamedSlug}</code> was renamed successfully.
+        {noun} <code>{data.name}</code> was renamed successfully.
       </p>
     )
   }
@@ -80,7 +87,7 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
       <select id="id" name="id">
         {
           options.map(({ label, value }) => (
-            <option value={value} selected={idToSlug(value) === renamedSlug ? true : undefined}>
+            <option value={value} selected={idToSlug(value) === data?.name ? true : undefined}>
               {label}
             </option>
           ))
