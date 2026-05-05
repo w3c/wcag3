@@ -7,3 +7,5 @@
 * [TODO] I need processes and content to be simple enough to avoid being overwhelmed so I can process the most essential information.
 * [TODO] I need no extraneous instructions that add to cognitive load.2.4 Input/operation.
 * [TODO] I need multiple ways/formats to access content.
+* [TODO] I need to identify and understand the unconventional usage of text styling to represent semantic meaning.
+* [TODO] Terms used should be as simple as possible.

@@ -5,3 +5,4 @@
 * [TODO] I need help avoiding mistakes.
 * [TODO] I need to be able to easily access to human help.
 * [TODO] I need a way to bypass chatbots and voice menus to communicate with a human.
+* [TODO] Error recovery should be simple, and take you to a human operator.

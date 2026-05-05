@@ -8,3 +8,6 @@
 * [TODO] I need to understand the sections of content (Non-visual)
 * TODO] I need to identify the meaning of the sections.
 * [TODO] I need to understand relationships between portions of content.
+* As a person with a cognitive disability, I need a good use of white space, so that the chunks of content are clear, visual hierarchy is obvious, and the page does not get overwhelming.
+* [TODO] Users can interact with content without being overwhelmed or getting lost in unrelated content
+* [TODO] User can navigate to different sections of the long pages.

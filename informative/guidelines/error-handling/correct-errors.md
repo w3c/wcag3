@@ -19,3 +19,4 @@
 * [TODO] User needs an error message that persists until the error is remedied so they can access the remedy instructions for as long as it takes to address the error.
 * [TODO] User needs an error message that is focused when the page reloads so they know there was an error.
 * [TODO] I need to be able to recover from making mistakes.
+* [TODO] Error recovery should be simple, and take you to a human operator. Error response should not throw the user off the line or send them to a more complex menu. 
