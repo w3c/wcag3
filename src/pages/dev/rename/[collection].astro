@@ -4,7 +4,7 @@ import capitalize from "lodash/capitalize";
 import pluralize from "pluralize";
 
 import DevLayout from "@/layouts/DevLayout.astro";
-import { idToSlug } from "@/lib/common";
+import { convertIdToSlug } from "@/lib/common";
 import {
   type DevManageableCollection,
   devManageableCollections,
@@ -28,7 +28,7 @@ const { data, error } = await getAndDiscardActionResult(Astro.session, storageKe
 
 const computeOption = (entry: EntryWithTitle) => ({
   value: entry.id,
-  label: `${computeGuidelineTitle(entry)} (${idToSlug(entry.id)})`,
+  label: `${computeGuidelineTitle(entry)} (${convertIdToSlug(entry.id)})`,
 });
 
 const optionsByCollection: Record<
@@ -91,7 +91,10 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
       <select id="id" name="id">
         {
           options.map(({ label, value }) => (
-            <option value={value} selected={idToSlug(value) === data?.name ? true : undefined}>
+            <option
+              value={value}
+              selected={convertIdToSlug(value) === data?.name ? true : undefined}
+            >
               {label}
             </option>
           ))
@@ -138,19 +141,19 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
 </DevLayout>
 
 <script>
-  import { idToSlug, idToTitle } from "@/lib/common";
+  import { convertIdToSlug, convertIdToTitle } from "@/lib/common";
 
   const entrySelect = document.getElementById("id") as HTMLSelectElement;
   const nameInput = document.getElementById("name") as HTMLInputElement;
   const titleInput = document.getElementById("title") as HTMLInputElement;
 
   function handleIdChange() {
-    nameInput.value = idToSlug(entrySelect.value);
+    nameInput.value = convertIdToSlug(entrySelect.value);
     handleNameChange();
   }
 
   function handleNameChange() {
-    titleInput.value = idToTitle(nameInput.value, { capitalize: true });
+    titleInput.value = convertIdToTitle(nameInput.value, { capitalize: true });
   }
 
   document.addEventListener("DOMContentLoaded", handleIdChange);

@@ -13,7 +13,7 @@ import { getEntry, type CollectionEntry, type CollectionKey } from "astro:conten
 import detectEOL from "detect-eol";
 import yaml from "js-yaml";
 
-import { idToSlug, idToTitle } from "@/lib/common";
+import { convertIdToSlug, convertIdToTitle } from "@/lib/common";
 import { devManageableCollections } from "@/lib/dev";
 import { computeGuidelineTitle, type EntryWithTitle } from "@/lib/guidelines";
 import {
@@ -106,7 +106,7 @@ export const server = {
         });
       }
 
-      const shouldSetTitle = !!title && title !== idToTitle(name, { capitalize: true });
+      const shouldSetTitle = !!title && title !== convertIdToTitle(name, { capitalize: true });
       function setOrUnsetTitle<T extends EntryWithTitle["data"]>(entryData: T) {
         const updatedEntry = { ...entryData };
         if (shouldSetTitle) updatedEntry.title = title;
@@ -131,7 +131,7 @@ export const server = {
           await updateJson<"groups">(join(normativeBase, `${id}.json`), setOrUnsetTitle);
         }
       } else if (collection === "guidelines") {
-        const slug = idToSlug(id);
+        const slug = convertIdToSlug(id);
         // Update child reference in groups/{group}.json
         await updateJson<"groups">(
           join(normativeBase, `${id.slice(0, id.indexOf("/"))}.json`),
@@ -150,7 +150,7 @@ export const server = {
           );
         }
       } else {
-        const slug = idToSlug(id);
+        const slug = convertIdToSlug(id);
         // Update child reference in groups/{group}/{guideline}.md
         await updateYamlFrontmatter<"guidelines">(
           join(normativeBase, `${id.slice(0, id.lastIndexOf("/"))}.md`),
