@@ -27,7 +27,10 @@ const provisionsWithIssueLabel = await getCollection(
             </li>
           ))}
         </ul>
-        <p>Once the labels are renamed, <code>issueLabel</code> values should be cleared from this repo.</p>
+        <p>
+          Once the labels are renamed, <code>issueLabel</code> values should be cleared from this
+          repo, which will also reset the list on this page.
+        </p>
       </>
     ) : (
       <p>No provisions have been renamed since the last publication.</p>
