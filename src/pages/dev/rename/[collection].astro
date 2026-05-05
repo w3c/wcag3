@@ -153,7 +153,12 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
   }
 
   function handleNameChange() {
-    titleInput.value = convertIdToTitle(nameInput.value, { capitalize: true });
+    const entrySlug = convertIdToSlug(entrySelect.value);
+    // Reconstruct custom title from selected option label when name is unchanged
+    titleInput.value =
+      nameInput.value === entrySlug
+        ? entrySelect.selectedOptions[0].innerText.trim().replace(/ \([^\(]+\)$/, "")
+        : convertIdToTitle(nameInput.value, { capitalize: true });
   }
 
   document.addEventListener("DOMContentLoaded", handleIdChange);
