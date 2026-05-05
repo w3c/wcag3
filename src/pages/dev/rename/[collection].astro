@@ -6,7 +6,7 @@ import pluralize from "pluralize";
 import DevLayout from "@/layouts/DevLayout.astro";
 import { idToSlug } from "@/lib/common";
 import { devManageableCollections, type DevManageableCollection } from "@/lib/constants";
-import { getAndDiscardActionResult, storeActionResult } from "@/lib/dev";
+import { getActionErrorMessage, getAndDiscardActionResult, storeActionResult } from "@/lib/dev";
 import { computeGuidelineTitle, groupsTree, type EntryWithTitle } from "@/lib/guidelines";
 
 export const prerender = false;
@@ -19,8 +19,7 @@ if (result) {
   return Astro.redirect(`${Astro.url.pathname}`);
 }
 
-const { data, error } = (await getAndDiscardActionResult(Astro.session, storageKey));
-if (error) console.error("Rename action error:", error);
+const { data, error } = await getAndDiscardActionResult(Astro.session, storageKey);
 
 const computeOption = (entry: EntryWithTitle) => ({
   value: entry.id,
@@ -52,7 +51,7 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
       </p>
     )
   }
-  {error && <p class="l-box note note--error">Error: {error.message}</p>}
+  {error && <p class="l-box note note--error">{getActionErrorMessage(error)}</p>}
   <details>
     <summary>About this dev tool</summary>
     <p>This dev tool handles updating:</p>

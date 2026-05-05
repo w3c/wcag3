@@ -87,7 +87,7 @@ export const server = {
         .string()
         .regex(
           /^[A-Z].+/,
-          "title must begin with a capital letter; subsequent words should not be capitalized other than proper nouns or acronyms"
+          "title must begin with a capital letter, and subsequent words should not be capitalized other than proper nouns or acronyms"
         )
         .trim()
         .optional(),
