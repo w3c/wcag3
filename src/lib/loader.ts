@@ -1,3 +1,5 @@
+/** @file Customizations applied to Astro's default loaders */
+
 import type { Loader } from "astro/loaders";
 import debounce from "lodash/debounce";
 import EventEmitter from "events";

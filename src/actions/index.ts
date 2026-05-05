@@ -54,7 +54,7 @@ async function updateJson<K extends CollectionKey>(
   await writeAndStage(path, replaceEol(JSON.stringify(updatedData, null, "  ") + "\n", currentJson));
 }
 
-/** Updates frontmatter of a Markdown file with the given data. */
+/** Modifies a Markdown file's frontmatter by running its data through the given function. */
 async function updateYamlFrontmatter<K extends CollectionKey>(
   path: string,
   update: (data: CollectionEntry<K>["data"]) => CollectionEntry<K>["data"]

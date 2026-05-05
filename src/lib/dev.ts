@@ -1,4 +1,4 @@
-/** @file Utilities related to dev-mode-only pages. */
+/** @file Utilities related to dev-mode-only pages */
 
 import type { AstroSession } from "astro";
 import {
