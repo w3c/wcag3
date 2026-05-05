@@ -5,8 +5,13 @@ import pluralize from "pluralize";
 
 import DevLayout from "@/layouts/DevLayout.astro";
 import { idToSlug } from "@/lib/common";
-import { devManageableCollections, type DevManageableCollection } from "@/lib/constants";
-import { getActionErrorMessage, getAndDiscardActionResult, storeActionResult } from "@/lib/dev";
+import {
+  type DevManageableCollection,
+  devManageableCollections,
+  getActionErrorMessage,
+  getAndDiscardActionResult,
+  storeActionResult,
+} from "@/lib/dev";
 import { computeGuidelineTitle, groupsTree, type EntryWithTitle } from "@/lib/guidelines";
 
 export const prerender = false;

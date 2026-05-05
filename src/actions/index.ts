@@ -13,8 +13,8 @@ import { getEntry, type CollectionEntry, type CollectionKey } from "astro:conten
 import detectEOL from "detect-eol";
 import yaml from "js-yaml";
 
-import { devManageableCollections } from "@/lib/constants";
 import { idToSlug, idToTitle } from "@/lib/common";
+import { devManageableCollections } from "@/lib/dev";
 import { computeGuidelineTitle, type EntryWithTitle } from "@/lib/guidelines";
 import {
   informativeProvisionSlugRelationMap,
