@@ -81,12 +81,12 @@ export const server = {
       id: z.string(),
       name: z
         .string()
-        .regex(/[a-z-]+/, "name must only consist of lowercase letters and hyphens")
+        .regex(/^[a-z-]+$/, "name must only consist of lowercase letters and hyphens")
         .trim(),
       title: z
         .string()
         .regex(
-          /[A-Z].+/,
+          /^[A-Z].+/,
           "title must begin with a capital letter; subsequent words should not be capitalized other than proper nouns or acronyms"
         )
         .trim()
