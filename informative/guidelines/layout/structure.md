@@ -11,3 +11,11 @@
 * As a person with a cognitive disability, I need a good use of white space, so that the chunks of content are clear, visual hierarchy is obvious, and the page does not get overwhelming.
 * [TODO] Users can interact with content without being overwhelmed or getting lost in unrelated content
 * [TODO] User can navigate to different sections of the long pages.
+* As a user I need to know that the page is made up of logical sections on a page, and understand the purpose of those sections.
+* As a user, I need to understand the relationship between parts of the content.
+* As a user with a memory impairment, attention impairment, or executive function impairment or as a user with a communication disability who uses symbols, I need to know the purpose of the content so that I know if I am in the right place, and what I am doing, even if I lose attention and focus for a time.
+* [TODO] I need content and interactions presented to me in a logical order.
+* As a user of assistive technologies (i.e. JAWS, NVDA) or alternative devices (i.e. Alexa, Google Assistant) I need content and interactions presented to me in a logical order.
+* [TODO] I need summaries to be presented to me in a logical order.
+* As a user of an assistive technology who uses alternative ways to present points of regard (i.e. virtual cursor), the content and interactions are presented to me in a logical order.
+* [TODO] I need to navigate content efficiently.

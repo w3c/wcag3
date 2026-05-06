@@ -5,3 +5,4 @@
 * As a keyboard user, I always know where I am in the interface. 
 * As a keyboard user, I need to be able to see what is currently focused.
 * [TODO] I need to know where to look; what is the focus of the content?
+* As someone with low-vision, I can identify/perceive all visible focus indicators.

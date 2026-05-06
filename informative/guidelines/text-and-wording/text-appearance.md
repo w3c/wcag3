@@ -45,3 +45,11 @@
 * [TODO] I need text that is consistent with the regular orientation of text (no tabs with rotated text).
 * [TODO] Some users with dyslexia need style variations by line, sentence, or paragraph.
 * [TODO] Users can turn hyphenation on or off.
+* As someone with low-vision, I need to be able to read text, which requires contrast and/or larger text size.
+* As someone with low-vision, I need to adjust the background color and the text color from the full color spectrum that the technology will render.
+* As someone with low-vision, I need to adjust color combinations of content next to each other from the full color spectrum that the technology will render. (e.g.: background color, focus indicator, actionable items,, pie charts, etc)
+* As a user with autism, aspergers, or who experience eye strain, I need large amounts of text presented in a more muted contrast.
+* As a user with low vision, I need to customise the text characteristics such as justification, line spacing, and margins around paragraphs.
+* As someone with dementia or age-related forgetfulness or processing speed issues, I need to read text and identify/perceive all interactive elements, which requires good contrast and plain backgrounds to support understanding and avoid distraction.
+* As a person affected emotionally or cognitively by color, I need to minimize my exposure to a sustained strong color while using content.
+* [TODO] I need to be able to complete a journey without experiencing a high level of visual fatigue

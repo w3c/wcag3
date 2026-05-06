@@ -18,4 +18,8 @@
 * [TODO] Advertisement and other information should not be read as it can confuse the user and can make it harder to retain attention.
 * As someone with reduced motor control, I need my assistive devices to map to existing APIs [I want to replace the actions to use the controls I prefer]
 * As a disabled gamer, I need a way of connecting my controllers to the game UI to support not just my need for user input, but for modifying the outputs from the game UI to my controller.
-
+* As someone with low-vision, I need to adjust color combinations of content next to each other from the full color spectrum that the technology will render. (e.g.: background color, focus indicator, actionable items,, pie charts, etc)
+* As a person affected emotionally or cognitively by color, I need to minimize my exposure to a sustained strong color while using content.
+* [TODO] I need to be able to complete a journey without experiencing a high level of visual fatigue.
+* As a person who gets confused by visual differences from site to site and app to app, I want to see my personal icon set. When the different screens in the site or app are consistent with each other, the heuristics (e.g., AI) of my personalization tool can apply my preferred icons more effectively.
+* [TODO] I need to adjust the content order in a way that is meaningful for me.

@@ -13,3 +13,5 @@
 * [TODO] I need a way to control all aspects of a media player, including the display of captions.
 * [TODO] I need to easily perceive the content, for example: Media does not have distracting background noise.
 * [TODO] I need to mute the system volume without "pausing or stopping" the autoplay audio (which will continue to play but will not be audible).
+* [TODO] In videos and multimedia: I need to know what is in the video, I can jump to the content I need, and I can restore context if I get distracted.
+* 
