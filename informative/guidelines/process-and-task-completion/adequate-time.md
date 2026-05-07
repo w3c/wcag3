@@ -8,3 +8,5 @@
 * [TODO] Users can have adequate time to complete a task before timeout.
 * [TODO] Users can interact with a site interface without stress or pressure to perform (excluding specific performative testing)(coga)(time blindness?) unless required or essential
 * [TODO] The user should be able to extend or disable time out as a system default on their device.
+* As an individual who experiences accessibility barriers due to motion, such as sensory overload and/or visual processing difficulties, I need to be able to remove the motion and stress of a visual countdown timer.
+

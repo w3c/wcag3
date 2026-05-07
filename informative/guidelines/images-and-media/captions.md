@@ -10,3 +10,4 @@
 * As a person who is deaf or hard of hearing, I need to be able to customize the size of my captions.
 * [TODO] Some users need visual highlight or tickertape synchronized to audio track.
 * [TODO] I need a way to control all aspects of a media player, including the display of captions.
+* As a user with low vision and contrast limitations I need closed captions to appear in a font, typography, and placement that I can read more easily.

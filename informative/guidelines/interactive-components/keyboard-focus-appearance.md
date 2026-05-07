@@ -6,3 +6,4 @@
 * As a keyboard user, I need to be able to see what is currently focused.
 * [TODO] I need to know where to look; what is the focus of the content?
 * As someone with low-vision, I can identify/perceive all visible focus indicators.
+* As a user with limited contrast and acuity, I need the visual indicator of focus to have a default sufficient level of contrast and size.

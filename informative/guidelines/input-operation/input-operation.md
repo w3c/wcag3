@@ -9,3 +9,6 @@
 * [TODO] For hover-based interactions (e.g. hovering stylus), user must be able to … without needing to do that.
 * [TODO] Users are able to “move”/navigate/operate without the need to physically move.
 * [TODO] I need multiple ways/formats to access content.
+* As a user, I need to* As an individual who experiences difficulty with motor control, I need controls to remain accessible without having to reposition my hand or re-program assistive technology devices that aid with touch inputs to help me through the task.
+* As an individual who experiences difficulty with motor control, I need to not have to “chase” a control when trying to activate it
+*

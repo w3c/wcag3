@@ -52,4 +52,12 @@
 * As a user with low vision, I need to customise the text characteristics such as justification, line spacing, and margins around paragraphs.
 * As someone with dementia or age-related forgetfulness or processing speed issues, I need to read text and identify/perceive all interactive elements, which requires good contrast and plain backgrounds to support understanding and avoid distraction.
 * As a person affected emotionally or cognitively by color, I need to minimize my exposure to a sustained strong color while using content.
-* [TODO] I need to be able to complete a journey without experiencing a high level of visual fatigue
+* [TODO] I need to be able to complete a journey without experiencing a high level of visual fatigue.
+* As a user, I need the ability to change the text and spacing of all controls to be able to easily read them.
+*  As a person with contrast limitations I need the ability to control the contrast, colors, fonts, background, and other visual aspects of text in order to read text.
+* As a person with color blindness I need the ability to control the contrast, colors, fonts, background, and other visual aspects of text in order to read text.
+* As a user with low vision and limited acuity, who has a challenge reading small text, I need the ability to enlarge the text to many times the default size.
+* As a user who increases the text size on the web page, I need large text such as headings that are already large to proportionally enlarge so they do not take up too much of the screen which impacts my reading.
+* As a person with age-related vision loss, I need text to have a minimum font size so that I can read the text without difficulty.
+* As a person with age-related vision loss, I need the font weight to be a minimum of the regular font weight of 400.
+* As a person with a cognitive disability such as dyslexia, I need to be able to customize (tbd)
