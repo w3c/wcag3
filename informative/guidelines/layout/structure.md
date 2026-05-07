@@ -19,3 +19,7 @@
 * [TODO] I need summaries to be presented to me in a logical order.
 * As a user of an assistive technology who uses alternative ways to present points of regard (i.e. virtual cursor), the content and interactions are presented to me in a logical order.
 * [TODO] I need to navigate content efficiently.
+* As a user, I need to be able to navigate through content.
+* As a user, I shouldn’t be overwhelmed or confused by the controls or interface.
+* As a user with limited visual field, I need related items close enough together so that I can find each piece of related content.
+* * As an individual with working and/or photographic memory difficulties, or limitations to my field of vision, I need clear indicators of where critical controls and content are located.

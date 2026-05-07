@@ -23,3 +23,14 @@
 * [TODO] I need to be able to complete a journey without experiencing a high level of visual fatigue.
 * As a person who gets confused by visual differences from site to site and app to app, I want to see my personal icon set. When the different screens in the site or app are consistent with each other, the heuristics (e.g., AI) of my personalization tool can apply my preferred icons more effectively.
 * [TODO] I need to adjust the content order in a way that is meaningful for me.
+* As a user, I need my operating system preferences to be honored wherever I browse digital content.
+* As a user, my user agent settings should be honored.
+* As a user, the content should support personalization.
+* As a user, I need text alternatives defined and where they are not defined, I need them to be automatically added by the user agent or by automatic author (AI as an example).
+* As a user, I need to be able to find and use all of the controls by voice.
+* As a user, I need the interface and controls to support automatic translation.
+* As a user who has enabled dark mode, increased contrast, reduced motion, and/or reduced transparency on my device preferences; I want my digital experience to respect those settings.
+* As a person with low vision, I want to enhance the appearance of focus indicators so I can easily find where I am.
+* As a person with low vision, I want to enhance the appearance of cursors so I can easily find where I am.
+* As a user who might experience harm from motion, I need my personalized settings at the device and user-agent level, such as “reduced-motion,” to be respected.
+
