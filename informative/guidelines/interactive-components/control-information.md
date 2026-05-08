@@ -14,6 +14,8 @@
 * As a user, I need to be able to distinguish controls from other content visually and non-visually.
 * As a user, I need to know when the states of any content have changed.
 * As a person with low vision with visual field loss who looks closely at the screen I need labels and controls to be near each other so I can understand they relate to each other or even exist.
+* [TODO] I need help understanding a control’s purpose.
+* [TODO] I need help understanding which are the controls or actions/that something is a control
 
 
 

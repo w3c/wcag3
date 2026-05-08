@@ -9,4 +9,5 @@
 * As a user of an assistive technology, content that is hidden is presented to me in a logical order.
 * [TODO] I need to return to my point of regard or focus when I undo a temporary change of view to the content.
 * [TODO] I need to navigate content efficiently.
-* * As a person who uses screen magnification software and only can view a portion of the viewport at once, I need focus (point of regard) not to move or need help getting back to where I was after focus is shifted
+* * As a person who uses screen magnification software and only can view a portion of the viewport at once, I need focus (point of regard) not to move or need help getting back to where I was after focus is shifted.
+* [TODO] I need help finding a control.

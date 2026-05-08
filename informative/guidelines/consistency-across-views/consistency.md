@@ -8,5 +8,4 @@
 * [TODO] I need Consistent design of non-interactive objects, such as notification banners, typography
 * [TODO] I need Consistent tone of voice or reading age.
 * [TODO] I need my mental map of the content to remain relevant/usable/in sync with the content.
-*  [TODO] I need the order of content and interactions to remain consistent throughout my session, so that my expectations of how I interact with content are satisfied.
-
+* [TODO] I need the order of content and interactions to remain consistent throughout my session, so that my expectations of how I interact with content are satisfied.

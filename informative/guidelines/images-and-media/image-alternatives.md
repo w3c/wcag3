@@ -18,3 +18,6 @@
 * [TODO] As a user, I need to personalize text description for example to alter content that may otherwise be disturbing, harmful or offensive.  Summarizations. Translations. Simplification.
 * [TODO] As a user without vision, I need to know if the imagine content is a photograph so that I can ask somebody to see the same webpage and describe the photo for me if I want.
 * [TODO] I need multiple ways/formats to access content.
+* [TODO] I need to understand the message being conveyed in a data visualization.
+* [TODO] I need to find information in a data visualization to complete a task or answer a question.
+* [TODO] I need to simplify the information presented in an interactive data visualization
