@@ -51,7 +51,10 @@ async function updateJson<K extends CollectionKey>(
   const currentJson = await readFile(path, "utf8");
   const currentData = JSON.parse(currentJson) as K;
   const updatedData = update(currentData);
-  await writeAndStage(path, replaceEol(JSON.stringify(updatedData, null, "  ") + "\n", currentJson));
+  await writeAndStage(
+    path,
+    replaceEol(JSON.stringify(updatedData, null, "  ") + "\n", currentJson)
+  );
 }
 
 /** Modifies a Markdown file's frontmatter by running its data through the given function. */
@@ -59,7 +62,7 @@ async function updateYamlFrontmatter<K extends CollectionKey>(
   path: string,
   update: (data: CollectionEntry<K>["data"]) => CollectionEntry<K>["data"]
 ) {
-  const { content, frontmatter, rawFrontmatter } = await parseFrontmatter(
+  const { content, frontmatter, rawFrontmatter } = parseFrontmatter(
     await readFile(path, "utf8"),
     { frontmatter: "preserve" }
   );

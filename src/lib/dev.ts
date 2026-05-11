@@ -13,7 +13,7 @@ import { createMessageBuilder } from "zod-validation-error/v3";
 
 /** Collections that have actions exposed via the dev server */
 export const devManageableCollections = ["groups", "guidelines", "requirements"] as const;
-export type DevManageableCollection = typeof devManageableCollections[number];
+export type DevManageableCollection = (typeof devManageableCollections)[number];
 
 /** Stores an action result in the Astro session for recall on next page load. */
 export function storeActionResult<K extends keyof Actions>(
