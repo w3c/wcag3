@@ -153,7 +153,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
             value: "Recommended internal documentation (Informative):",
           },
         ];
-      } else file.fail(`Unrecognized leaf directive ::${node.name}`);
+      }
     }
   });
 };
