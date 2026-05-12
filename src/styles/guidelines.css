@@ -38,14 +38,10 @@ summary::after {
 	word-wrap: normal !important;  
 }
 
-.howto-link {
-	margin-top: 0;
-}
-
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
 }
-.requirement h4, .requirement h5 {
+.requirement h5 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 100%;
@@ -72,14 +68,14 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	}
 }
 
-.guideline h3, .requirement h4, .requirement h5 {
+.requirement h5 {
 	width: 100%;
 	margin-bottom: 0;
 	margin-top: .4em;
 }
-.guideline h3, .guideline h4 {
-font-size: 110%;
-color: black;
+.guideline h4 {
+	font-size: 110%;
+	color: black;
 }
 
 .guideline p {
@@ -92,7 +88,9 @@ h2, h3, h4 {
 	margin-top: .75em;
 }
 
-h4 {font-size: 110%}
+h4 {
+	font-size: 110%;
+}
 
 h5, h6 {
 	width: 100%;
@@ -102,37 +100,10 @@ h5, h6 {
 
 }
 
-.methods h5, .errors h5, .rating h5 {
-	font-size: 100%;
-	color: #005A9C;
-}
 caption {
 	font-style: normal !important;
 	font-weight: bold;
 	font-size: 100% !important;
-}
-.figure-float {
-	float: right;
-	margin-left: 2em;
-	margin-right: 0;
-	margin-top: 0;
-}
-.figure-float-odd {
-	float: right;
-	margin-left: 2em;
-	margin-right: 0;
-}
-.figure-float-even {
-	float: left;
-	margin-right: 2em;
-	margin-left: 0;
-}
-.figure-full {
-	display: block;
-	margin: auto;
-}
-.screenshot {
-	width: 400px;
 }
 .note {
 	overflow: visible !important;

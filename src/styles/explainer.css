@@ -25,43 +25,9 @@ summary::after {
 .summary summary::after {
 	content: url(img/summary.svg);
 }
-.summaryEnd {
-	text-align: center;
-	font-weight: bold;
-}
-
-.howto-link {
-	margin-top: 0;
-}
 
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
-}
-.outcome h4 {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 100%;
-	color: #005A9C;
-}
-.guideline-text, .outcome-text {
-	font-size: 110%;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-indent: 50px;
-}
-.guideline h3, .outcome h4 {
-	width: 100%;
-	margin-bottom: 0;
-	margin-top: .4em;
-}
-.guideline h3 {
-font-size: 120%;
-color: black;
-}
-
-.guideline p {
-	margin-top: 0;
-	text-indent: 50px;
 }
 
 h2, h3, h4 {
@@ -80,47 +46,12 @@ h5, h6 {
 
 }
 
-.methods h5, .errors h5, .rating h5 {
-	font-size: 100%;
-	color: #005A9C;
-}
-.rating-table, .rating-table th, .rating-table td {
-	border: 1px solid black;
-	vertical-align: top;
-	border-collapse: collapse;
-	padding: 5px;
-}
-.rating-table th[scope=row] {
-	white-space: nowrap;
-}
 caption {
 	font-style: normal !important;
 	font-weight: bold;
 	font-size: 100% !important;
 }
-.figure-float {
-	float: right;
-	margin-left: 2em;
-	margin-right: 0;
-	margin-top: 0;
-}
-.figure-float-odd {
-	float: right;
-	margin-left: 2em;
-	margin-right: 0;
-}
-.figure-float-even {
-	float: left;
-	margin-right: 2em;
-	margin-left: 0;
-}
-.figure-full {
-	display: block;
-	margin: auto;
-}
-.screenshot {
-	width: 400px;
-}
+
 .note {
 	overflow: visible !important;
 }
