@@ -32,4 +32,10 @@ const { title } = Astro.props;
   .back {
     margin-top: 4rem;
   }
+
+  /* Add a visible focus border to boxes, for when errors are displayed client-side */
+  .l-box:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
 </style>

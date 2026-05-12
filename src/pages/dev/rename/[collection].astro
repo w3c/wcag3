@@ -5,26 +5,10 @@ import pluralize from "pluralize";
 
 import DevLayout from "@/layouts/DevLayout.astro";
 import { convertIdToSlug } from "@/lib/common";
-import {
-  type DevManageableCollection,
-  devManageableCollections,
-  getActionErrorMessage,
-  getAndDiscardActionResult,
-  storeActionResult,
-} from "@/lib/dev";
+import { type DevManageableCollection, devManageableCollections } from "@/lib/dev";
 import { computeGuidelineTitle, groupsTree, type EntryWithTitle } from "@/lib/guidelines";
 
 export const prerender = false;
-
-const storageKey = "rename";
-
-const result = Astro.getActionResult(actions.rename);
-if (result) {
-  storeActionResult(Astro.session, storageKey, result);
-  return Astro.redirect(`${Astro.url.pathname}`);
-}
-
-const { data, error } = await getAndDiscardActionResult(Astro.session, storageKey);
 
 const computeOption = (entry: EntryWithTitle) => ({
   value: entry.id,
@@ -49,14 +33,7 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
 ---
 
 <DevLayout title={`Rename ${noun}`}>
-  {
-    data && (
-      <p class="l-box note note--success">
-        {noun} <code>{data.name}</code> was renamed successfully.
-      </p>
-    )
-  }
-  {error && <p class="l-box note note--error">{getActionErrorMessage(error)}</p>}
+  <p id="result" class="l-box note" hidden tabindex="-1"></p>
   <details>
     <summary>About this dev tool</summary>
     <p>This dev tool handles updating:</p>
@@ -89,16 +66,7 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
     <div class="field" id="field-groups-id">
       <label for="id" class="field-label">{noun} to rename</label>
       <select id="id" name="id">
-        {
-          options.map(({ label, value }) => (
-            <option
-              value={value}
-              selected={convertIdToSlug(value) === data?.name ? true : undefined}
-            >
-              {label}
-            </option>
-          ))
-        }
+        {options.map(({ label, value }) => <option value={value}>{label}</option>)}
       </select>
     </div>
 
@@ -141,8 +109,11 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
 </DevLayout>
 
 <script>
+  import { actions } from "astro:actions";
   import { convertIdToSlug, convertIdToTitle } from "@/lib/common";
+  import { getActionErrorMessage, resultBox, storage } from "@/lib/dev-client";
 
+  const form = document.querySelector("form")!;
   const entrySelect = document.getElementById("id") as HTMLSelectElement;
   const nameInput = document.getElementById("name") as HTMLInputElement;
   const titleInput = document.getElementById("title") as HTMLInputElement;
@@ -161,7 +132,30 @@ if (!options) return Astro.redirect("/dev/"); // This will only happen on invali
         : convertIdToTitle(nameInput.value, { capitalize: true });
   }
 
-  document.addEventListener("DOMContentLoaded", handleIdChange);
   entrySelect.addEventListener("change", handleIdChange);
   nameInput.addEventListener("change", handleNameChange);
+
+  const result = storage.getAndDel("rename");
+  document.addEventListener("DOMContentLoaded", () => {
+    if (result) {
+      const resultEl = document.getElementById("result") as HTMLParagraphElement;
+      resultEl.classList.add("note--success");
+      resultEl.textContent = `${result.name} was renamed successfully.`;
+      resultEl.hidden = false;
+      for (const option of entrySelect.options) {
+        if (convertIdToSlug(option.value) === result.name) {
+          entrySelect.value = option.value;
+          break;
+        }
+      }
+    }
+    handleIdChange();
+  });
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const { data, error } = await actions.rename(new FormData(form));
+    if (data) storage.set("rename", data);
+    else resultBox.error(getActionErrorMessage(error));
+  });
 </script>

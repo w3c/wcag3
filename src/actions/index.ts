@@ -21,7 +21,6 @@ import {
   informativeRelatedTypes,
   type InformativeRelatedCollection,
 } from "@/lib/informative";
-import { waitForLoaderChange } from "@/lib/loader";
 
 const execAsync = promisify(exec);
 
@@ -236,7 +235,6 @@ export const server = {
         }
       }
 
-      await waitForLoaderChange();
       return { name };
     },
   }),

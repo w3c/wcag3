@@ -1,11 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
-import * as loaders from "astro/loaders";
+import { file, glob } from "astro/loaders";
 import uniq from "lodash/uniq";
-
-import { wrapLoaderFunction } from "./lib/loader";
-
-const file = wrapLoaderFunction(loaders.file);
-const glob = wrapLoaderFunction(loaders.glob);
 
 const statusSchema = z.enum(["placeholder", "exploratory", "developing", "refining", "mature"]);
 const parentStatusSchema = statusSchema.exclude(["placeholder", "exploratory"]);
