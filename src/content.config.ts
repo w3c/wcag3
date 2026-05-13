@@ -63,7 +63,7 @@ export const collections = {
       title: z.string().optional(),
     }),
   }),
-  requirements: defineCollection({
+  provisions: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
     schema: z.object({
       tags: z.array(reference("tags")).optional(),
@@ -98,7 +98,7 @@ export const collections = {
     }),
     schema: z.strictObject({}),
   }),
-  informativeRequirements: defineCollection({
+  informativeProvisions: defineCollection({
     loader: glob({
       pattern: "*/*/*.md",
       base: "./informative/guidelines",

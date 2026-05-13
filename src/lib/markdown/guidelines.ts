@@ -8,7 +8,7 @@ import { join, sep } from "path";
 const groupsPath = `guidelines/groups`;
 const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, groupsPath));
 
-type GuidelineFileType = "group" | "guideline" | "requirement";
+type GuidelineFileType = "group" | "guideline" | "provision";
 
 function getGuidelineFileType(file: VFile): GuidelineFileType | null {
   if (!isGuidelineFile(file)) return null;
@@ -16,7 +16,7 @@ function getGuidelineFileType(file: VFile): GuidelineFileType | null {
   const segments = remainingPath?.split(sep);
   if (segments.length === 0) return "group";
   if (segments.length === 1) return "guideline";
-  if (segments.length === 2) return "requirement";
+  if (segments.length === 2) return "provision";
   return null;
 }
 
@@ -101,7 +101,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "requirement", ":::tests");
+        expectGuidelineFileType(file, "provision", ":::tests");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
@@ -111,14 +111,14 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "applies-when") {
-        expectGuidelineFileType(file, "requirement", ":::applies-when");
+        expectGuidelineFileType(file, "provision", ":::applies-when");
 
         prependBoldText(node, "Applies when");
         if (parent && typeof index !== "undefined") {
           parent.children.splice(index!, 1, ...node.children);
         }
       } else if (isGuideline && node.name === "except-when") {
-        expectGuidelineFileType(file, "requirement", ":::except-when");
+        expectGuidelineFileType(file, "provision", ":::except-when");
 
         if (
           parent &&
@@ -136,7 +136,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
       }
     } else if (node.type === "leafDirective") {
       if (isGuideline && node.name === "assertion-required") {
-        expectGuidelineFileType(file, "requirement", "::assertion-required");
+        expectGuidelineFileType(file, "provision", "::assertion-required");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -146,7 +146,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           },
         ];
       } else if (isGuideline && node.name === "assertion-recommended") {
-        expectGuidelineFileType(file, "requirement", "::assertion-recommended");
+        expectGuidelineFileType(file, "provision", "::assertion-recommended");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
