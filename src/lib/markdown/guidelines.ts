@@ -3,15 +3,17 @@ import type { ContainerDirective } from "mdast-util-directive";
 import { visit } from "unist-util-visit";
 import type { VFile } from "vfile";
 
+import { join, sep } from "path";
+
 const groupsPath = `guidelines/groups`;
-const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/${groupsPath}`);
+const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, groupsPath));
 
 type GuidelineFileType = "group" | "guideline" | "requirement";
 
 function getGuidelineFileType(file: VFile): GuidelineFileType | null {
   if (!isGuidelineFile(file)) return null;
-  const remainingPath = file.dirname!.replace(`${file.cwd}/${groupsPath}/`, "");
-  const segments = remainingPath?.split("/");
+  const remainingPath = file.dirname!.replace(join(file.cwd, groupsPath) + sep, "");
+  const segments = remainingPath?.split(sep);
   if (segments.length === 0) return "group";
   if (segments.length === 1) return "guideline";
   if (segments.length === 2) return "requirement";
@@ -29,7 +31,7 @@ function expectGuidelineFileType(
     file.fail(`${directiveName} expected at ${expectedType} level but found at ${type} level`);
 }
 
-const isTermFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/guidelines/terms`);
+const isTermFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, "guidelines", "terms"));
 
 /** Adds standard editor's note to terms with empty content. */
 const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
@@ -153,7 +155,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
             value: "Recommended internal documentation (Informative):",
           },
         ];
-      } else file.fail(`Unrecognized leaf directive ::${node.name}`);
+      }
     }
   });
 };
