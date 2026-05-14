@@ -1,10 +1,12 @@
 import { rehypeHeadingIds, type RehypePlugin, type RemarkPlugin } from "@astrojs/markdown-remark";
 import type { VFile } from "vfile";
 
+import { join } from "path";
+
 import { informativeSlug } from "../constants";
 
 export const isInformativeFile = (file: VFile) =>
-  file.dirname?.startsWith(`${file.cwd}/${informativeSlug}`);
+  file.dirname?.startsWith(join(file.cwd, informativeSlug));
 
 const customDirectives: RemarkPlugin = () => (tree, file) => {
   if (!isInformativeFile(file)) return;
