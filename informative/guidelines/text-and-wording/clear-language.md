@@ -16,7 +16,7 @@
 * [TODO] I need to know what features and content are on this page or if I should move on.
 * [TODO] I need Consistent tone of voice or reading age.
 * As a user with limited visual field who finds locating and reading text difficult, I need controls with visual signifiers so I can locate interactive elements on the page so I don’t have to read each piece of text to determine if the label (especially a text label) indicates the control is actionable.
-* As a person with limited acuity, I need the ability to distinguish icon shapes from each other. So that I can tell icons apart from each other so I do not accidently perform the wrong action or enter the wrong information.
+* As a person with limited acuity, I need the ability to distinguish icon shapes from each other. So that I can tell icons apart from each other so I do not accidentally perform the wrong action or enter the wrong information.
 * As an individual with working and/or photographic memory difficulties, or limitations to my field of vision, I need clear indicators of where critical controls and content are located.
 
 
