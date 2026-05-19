@@ -4,7 +4,6 @@ children:
   - focus-indicator-contrast-sufficient
   - focus-indicator-size-sufficient
   - focus-indicator-style-guide
-howto: focus-appearance
 status: developing
 ---
 

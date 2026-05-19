@@ -14,8 +14,6 @@ dictionaryDefinitions:
     addWords: true
 ignorePaths:
   - "guidelines/acknowledgements/**"
-  - "how-to/**"
-  - "patches/**"
   - "src/components/**"
   - "*.css"
   - "*.json"
