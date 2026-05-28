@@ -1,7 +1,7 @@
 ## User needs
 
 * As a user of assistive technology, I need my keyboard commands to remain consistent. 
-* As a user of a keyboard, the complexity and number of input commands required to complete a task should be comparable with those of a user of other methods of input.
+* As a keyboard user, the complexity and number of input commands required to complete a task should be comparable with those of a user of other methods of input.
 * As a keyboard user, I should be able to perform all actions using a keyboard exclusively.
 * As a keyboard user, I should not get unintentionally stuck.
 * As a keyboard user, keyboard shortcuts and assistive technologies do not interfere with each other.
