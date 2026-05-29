@@ -111,7 +111,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "actrules") {
-        expectGuidelineFileType(file, "requirement", "actrules");
+        expectGuidelineFileType(file, "provision", "actrules");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
