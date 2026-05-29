@@ -1,0 +1,39 @@
+---
+import DevLayout from "@/layouts/DevLayout.astro";
+import { computeProvisionIssueLabel } from "@/lib/guidelines";
+import { getCollection } from "astro:content";
+
+const provisionsWithIssueLabel = await getCollection(
+  "requirements",
+  ({ data }) => !!data.issueLabel
+);
+---
+
+<DevLayout title="Pending issue label updates">
+  {
+    provisionsWithIssueLabel.length ? (
+      <>
+        <p>
+          The following provisions have been renamed and should be migrated in GitHub prior to
+          republication:
+        </p>
+        <ul>
+          {provisionsWithIssueLabel.map((entry) => (
+            <li>
+              <code>
+                gh label -R w3c/wcag3 edit '{computeProvisionIssueLabel(entry)}' -n
+                {`'${computeProvisionIssueLabel({ ...entry, data: { ...entry.data, issueLabel: "" } })}'`}
+              </code>
+            </li>
+          ))}
+        </ul>
+        <p>
+          Once the labels are renamed, <code>issueLabel</code> values should be cleared from this
+          repo, which will also reset the list on this page.
+        </p>
+      </>
+    ) : (
+      <p>No provisions have been renamed since the last publication.</p>
+    )
+  }
+</DevLayout>

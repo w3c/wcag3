@@ -36,7 +36,7 @@ export const collections = {
     loader: file("./guidelines/groups.json", {
       parser: stringArrayParser,
     }),
-    schema: z.object({
+    schema: z.strictObject({
       // This _should_ be able to use reference("groups"),
       // but it's not finding some of them even when they exist?
       id: z.string(),
@@ -44,7 +44,7 @@ export const collections = {
   }),
   groups: defineCollection({
     loader: glob({ pattern: ["*.json"], base: "./guidelines/groups" }),
-    schema: z.object({
+    schema: z.strictObject({
       children: childrenSchema,
       status: parentStatusSchema.optional(),
       title: z.string().optional(),
@@ -52,7 +52,7 @@ export const collections = {
   }),
   guidelines: defineCollection({
     loader: glob({ pattern: "*/*.md", base: "./guidelines/groups" }),
-    schema: z.object({
+    schema: z.strictObject({
       // Note: can't use references for children while relying on default ids,
       // since auto-generated ids include every * segment rather than only the last.
       // Moreover, we can't override generateId for requirements to only use slug,
@@ -65,7 +65,7 @@ export const collections = {
   }),
   provisions: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
-    schema: z.object({
+    schema: z.strictObject({
       tags: z.array(reference("tags")).optional(),
       issueLabel: z.string().optional(),
       needsAdditionalResearch: z.boolean().optional(),
@@ -81,7 +81,7 @@ export const collections = {
   }),
   terms: defineCollection({
     loader: glob({ pattern: "*.md", base: "./guidelines/terms" }),
-    schema: z.object({
+    schema: z.strictObject({
       status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
       title: z.string().optional(),

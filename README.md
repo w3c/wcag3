@@ -77,11 +77,6 @@ These are available to multiple data types, as specified in each respective sect
 
 - `children` - A list containing every slug found under a parent entry's corresponding subdirectory,
   in the order they are intended to be listed in the document
-- `howto` - *Deprecated* Optional boolean or string indicating the presence of a howto page
-  for the given guideline or requirement
-  - `true` indicates the slug to reach the howto is consistent with the folder and filename of the current file
-  - A string value indicates an exact slug
-  - *This should currently be avoided until the informative documentation is revisited*
 - `issueLabel` - Optional string; specifies the issue label corresponding to a provision
   - This is only necessary when the label does not match the provision's title, e.g. if a provision is renamed after it was first published
   - Excludes the "P - " prefix
