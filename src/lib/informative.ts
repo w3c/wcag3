@@ -48,25 +48,25 @@ export type InformativeGuideline = NonNullable<
 >;
 
 /**
- * Assembles data for informative documentation of the specified requirement,
+ * Assembles data for informative documentation of the specified provision,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeRequirement(id: string) {
-  const normativeRequirement = await getEntry("requirements", id);
-  if (!normativeRequirement) throw new Error(`Normative data not found for requirement: ${id}`);
+export async function resolveInformativeProvision(id: string) {
+  const normativeProvision = await getEntry("provisions", id);
+  if (!normativeProvision) throw new Error(`Normative data not found for provision: ${id}`);
 
-  const informativeRequirement = await silenceWarnings(() =>
-    getEntry("informativeRequirements", id)
+  const informativeProvision = await silenceWarnings(() =>
+    getEntry("informativeProvisions", id)
   );
-  if (!informativeRequirement) return null;
+  if (!informativeProvision) return null;
   return {
-    ...informativeRequirement,
-    title: computeGuidelineTitle(normativeRequirement),
-    normativeEntry: normativeRequirement,
+    ...informativeProvision,
+    title: computeGuidelineTitle(normativeProvision),
+    normativeEntry: normativeProvision,
   };
 }
-export type InformativeRequirement = NonNullable<
-  Awaited<ReturnType<typeof resolveInformativeRequirement>>
+export type InformativeProvision = NonNullable<
+  Awaited<ReturnType<typeof resolveInformativeProvision>>
 >;
 
 /**
@@ -109,22 +109,22 @@ export async function resolveInformativeGuidelines(groupId: string) {
 }
 
 /**
- * Assembles data for informative documentation of requirements under the specified guideline,
+ * Assembles data for informative documentation of provisions under the specified guideline,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeRequirements(guidelineId: string) {
+export async function resolveInformativeProvisions(guidelineId: string) {
   const normativeGuideline = await getEntry("guidelines", guidelineId);
   if (!normativeGuideline)
     throw new Error(`Normative data not found for guideline: ${guidelineId}`);
 
-  const requirements: InformativeRequirement[] = [];
-  for (const requirementSlug of normativeGuideline.data.children) {
-    const informativeEntry = await resolveInformativeRequirement(
-      `${guidelineId}/${requirementSlug}`
+  const provisions: InformativeProvision[] = [];
+  for (const provisionSlug of normativeGuideline.data.children) {
+    const informativeEntry = await resolveInformativeProvision(
+      `${guidelineId}/${provisionSlug}`
     );
-    if (informativeEntry) requirements.push(informativeEntry);
+    if (informativeEntry) provisions.push(informativeEntry);
   }
-  return requirements;
+  return provisions;
 }
 
 /** Formats normative content for inclusion within an informative page. */

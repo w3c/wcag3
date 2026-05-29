@@ -2,19 +2,26 @@
 const title = "Web Content Accessibility Guidelines 3.0";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-		<meta charset="utf-8"/>
-		<title>{title}</title>
-	</head>
-	<body>
-		<h1>{title}</h1>
-		<ul>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>{title}</h1>
+    <ul>
       <li><a href="guidelines/">Guidelines</a></li>
       <li><a href="explainer/">Explainer</a></li>
       <li><a href="requirements/">Requirements</a></li>
       <li><a href="informative/">Informative Docs</a></li>
-		</ul>
-	</body>
+      {
+        import.meta.env.DEV && (
+          <li>
+            <a href="dev/">Dev Tools</a> (local dev only)
+          </li>
+        )
+      }
+    </ul>
+  </body>
 </html>

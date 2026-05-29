@@ -10,7 +10,7 @@ import {
   resolveInformativeGroups,
   resolveInformativeGuideline,
   resolveInformativeGuidelines,
-  resolveInformativeRequirements,
+  resolveInformativeProvisions,
 } from "@/lib/informative";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -39,7 +39,7 @@ if (!guideline.rendered || !guideline.normativeEntry.rendered) {
   );
 }
 
-const requirements = await resolveInformativeRequirements(guidelineId);
+const provisions = await resolveInformativeProvisions(guidelineId);
 
 const { html, terms } = processKeyTerms(
   formatNormativeContent(guideline.normativeEntry.rendered) + guideline.rendered.html
@@ -52,10 +52,10 @@ const { html, terms } = processKeyTerms(
   <h2>Provisions under this guideline</h2>
   <ul>
     {
-      requirements.map((requirement) => (
+      provisions.map((provision) => (
         <li>
-          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${requirement.id}/`}>
-            {requirement.title}
+          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>
+            {provision.title}
           </a>
         </li>
       ))
