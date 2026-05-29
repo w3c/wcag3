@@ -1,6 +1,7 @@
 ---
 status: developing
 title: high-frequency corpus
+unusedDefinition: true
 ---
 
 large collections of :term[text] (corpora) used in linguistics to identify and analyze words and phrases that appear most often in a language

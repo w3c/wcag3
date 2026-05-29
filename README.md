@@ -50,7 +50,7 @@ Additional directories with special meaning:
     - `{group-name}/` - Contents of Guideline sections
       - `{guideline-name}.md` - Defines content of guideline and order of its child provisions
       - `{guideline-name}/` - Subdirectory containing provisions (e.g. requirements/assertions) under each guideline
-        - `{provision-name}.md` - Defines content of an individual requirement or assertion
+        - `{provision-name}.md` - Defines content of an individual provision
   - `terms/` - Contents of terms defined in the Glossary
 
 ### Notable Subdirectories under `src`
@@ -77,17 +77,12 @@ These are available to multiple data types, as specified in each respective sect
 
 - `children` - A list containing every slug found under a parent entry's corresponding subdirectory,
   in the order they are intended to be listed in the document
-- `howto` - *Deprecated* Optional boolean or string indicating the presence of a howto page
-  for the given guideline or requirement
-  - `true` indicates the slug to reach the howto is consistent with the folder and filename of the current file
-  - A string value indicates an exact slug
-  - *This should currently be avoided until the informative documentation is revisited*
 - `issueLabel` - Optional string; specifies the issue label corresponding to a provision
   - This is only necessary when the label does not match the provision's title, e.g. if a provision is renamed after it was first published
   - Excludes the "P - " prefix
   - It may help to think of this as a "legacy title" field
 - `status` - Optional string: one of the status indicators outlined in the Explainer (in lowercase)
-- `title` - Optional title of the guideline, requirement, or term
+- `title` - Optional title of the guideline, provision, or term
   - If unspecified, this will be derived from the slug,
     capitalizing the first letter of the first word and replacing hyphens with spaces
 
@@ -116,7 +111,7 @@ provisions located in a subdirectory with the same name.
 Represents each fifth-level heading specifying an individual requirement or assertion.
 
 - Supports [common fields](#common-fields): `howto`, `issueLabel`, `status`, `title`
-  - `status` for requirements and assertions defaults to `exploratory` if not specified
+  - `status` for provisions defaults to `exploratory` if not specified
 - `needsAdditionalResearch` - Optional boolean, indicating whether to
   display a "needs additional research" editor's note
 - `tags` - Optional list of strings, referencing values in `guidelines/tags.json`
@@ -331,7 +326,7 @@ To create a new top-level group:
    - This is what makes the group appear in the document structure,
      and determines its order among the other top-level groups
 1. Follow the instructions below to create at least one guideline
-   within the group, and at least one requirement or assertion within
+   within the group, and at least one provision within
    each guideline
 
 ### New Guideline
@@ -351,7 +346,7 @@ To create a new guideline:
 1. Also under the group's folder (not the new subfolder),
    create a Markdown file with the same basename as the new subfolder
    (e.g. `groups/group-name/guideline-name.md`)
-   - To prevent the build from failing before any requirements or assertions are added,
+   - To prevent the build from failing before any provisions are added,
      include the following initial content:
      ```
      ---
@@ -363,29 +358,29 @@ To create a new guideline:
      ```
      We will expand `children` to a multi-line list when adding provisions.
      Note that including some content after the frontmatter is also necessary for the build to function.
-1. Follow the instructions below to create at least one requirement
+1. Follow the instructions below to create at least one provision
    or assertion within the guideline
 
-### New Requirement or Assertion
+### New Provision
 
 For illustrative purposes, this refers to the existing parent guideline as `guideline-name`,
-its parent group as `group-name`, and the new child requirement as `requirement-name`.
+its parent group as `group-name`, and the new child provision as `provision-name`.
 
 Note that the process is the same for requirements or assertions; the only difference is
 the value of `type` in the entry's frontmatter
 (see [Fields for Provisions](#provisions)).
 
 1. Under the desired guideline's folder, create a Markdown file
-   (e.g. `groups/group-name/guideline-name/requirement-name.md`)
+   (e.g. `groups/group-name/guideline-name/provision-name.md`)
 1. Edit the Markdown file for the guideline (e.g. `groups/group-name/guideline-name.md`)
    to add an entry in its `children` array for the new guideline
-   - This is what makes the requirement/assertion appear in the document structure,
+   - This is what makes the provision appear in the document structure,
      and determines its order among the other entries under the same guideline
    - Arrays in frontmatter can be expressed similarly to Markdown lists, e.g.:
    ```
    ---
    children:
-     - requirement-name
+     - provision-name
    ---
    ```
 

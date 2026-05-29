@@ -1,0 +1,13 @@
+---
+import InformativeRelatedLayout from "@/layouts/InformativeRelatedLayout.astro";
+import { generateInformativeRelatedGetStaticPaths } from "@/lib/informative";
+import { getEntry } from "astro:content";
+
+export const getStaticPaths = generateInformativeRelatedGetStaticPaths("methods");
+
+const id = `${Astro.params.technology}/${Astro.params.slug}`;
+const entry = await getEntry("methods", id);
+if (!entry) throw new Error(`Unresolvable Method ID: ${id}`);
+---
+
+<InformativeRelatedLayout entry={entry} />
