@@ -6,51 +6,51 @@ import { convertIdToTitle, type IdToTitleOptions } from "./common";
 import { isDevOrPreview } from "./constants";
 
 /**
- * Returns a list of requirement/assertion slugs under the given group and guideline that would be
+ * Returns a list of provision slugs under the given group and guideline that would be
  * skipped for a major publication (i.e. exploratory/placeholder or needs additional research).
  * Note this returns an empty array when building for situations that do not allow for skipping
  * either at build time or client-side (e.g. Editor's Drafts).
  */
-async function determineSkippableRequirements(groupId: string, guidelineSlug: string) {
+async function determineSkippableProvisions(groupId: string, guidelineSlug: string) {
   // Only populate when running a build that needs to skip at build time or client-side
   if (!import.meta.env.WCAG_SKIP_WIP && !isDevOrPreview) return [];
 
   const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
   if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
 
-  const skippableRequirements: string[] = [];
-  for (const requirementSlug of guideline.data.children) {
-    const requirement = await getEntry(
-      "requirements",
-      `${groupId}/${guidelineSlug}/${requirementSlug}`
+  const skippableProvisions: string[] = [];
+  for (const provisionSlug of guideline.data.children) {
+    const provision = await getEntry(
+      "provisions",
+      `${groupId}/${guidelineSlug}/${provisionSlug}`
     );
-    if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
+    if (!provision) throw new Error(`Unresolvable provision ID: ${provisionSlug}`);
     if (
-      requirement.data.needsAdditionalResearch ||
-      requirement.data.status === "placeholder" ||
-      requirement.data.status === "exploratory"
+      provision.data.needsAdditionalResearch ||
+      provision.data.status === "placeholder" ||
+      provision.data.status === "exploratory"
     ) {
-      skippableRequirements.push(requirementSlug);
+      skippableProvisions.push(provisionSlug);
     }
   }
-  return skippableRequirements;
+  return skippableProvisions;
 }
 
-/** Extension of Requirement to facilitate client-side skipping in previews */
-interface SkippableRequirement extends CollectionEntry<"requirements"> {
+/** Extension of Provision to facilitate client-side skipping in previews */
+interface SkippableProvision extends CollectionEntry<"provisions"> {
   skippable?: boolean;
 }
 
 let groupIds = (await getCollection("groupOrder")).map(({ id }) => id);
 let groups: Record<string, CollectionEntry<"groups">> = {};
 let guidelines: Record<string, CollectionEntry<"guidelines">> = {};
-let requirements: Record<string, SkippableRequirement> = {};
+let provisions: Record<string, SkippableProvision> = {};
 
-async function validateTags({ id, data }: CollectionEntry<"requirements">) {
+async function validateTags({ id, data }: CollectionEntry<"provisions">) {
   if (!data.tags) return;
   for (const tagRef of data.tags) {
     if (!(await getEntry(tagRef)))
-      throw new Error(`Requirement ${id} references unknown tag: ${tagRef.id}`);
+      throw new Error(`Provision ${id} references unknown tag: ${tagRef.id}`);
   }
 }
 
@@ -72,28 +72,28 @@ export const groupsTree = await (async () => {
         if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
         guidelines[guideline.id] = guideline;
 
-        const skippableChildren = await determineSkippableRequirements(groupId, guidelineSlug);
+        const skippableChildren = await determineSkippableProvisions(groupId, guidelineSlug);
         if (import.meta.env.WCAG_SKIP_WIP)
           // Filter children directly in case of build-time skip
           guideline.data.children = difference(guideline.data.children, skippableChildren);
 
-        for (const requirementSlug of guideline.data.children) {
-          const requirement = await getEntry(
-            "requirements",
-            `${groupId}/${guidelineSlug}/${requirementSlug}`
+        for (const provisionSlug of guideline.data.children) {
+          const provision = await getEntry(
+            "provisions",
+            `${groupId}/${guidelineSlug}/${provisionSlug}`
           );
-          if (!requirement) throw new Error(`Unresolvable requirement ID: ${requirementSlug}`);
-          if (requirementSlug in provisionSlugMap)
+          if (!provision) throw new Error(`Unresolvable provision ID: ${provisionSlug}`);
+          if (provisionSlug in provisionSlugMap)
             throw new Error(
-              `Duplicate provision filename: ${requirementSlug} (found at ${
-                provisionSlugMap[requirementSlug]
-              } and ${groupId}/${guidelineSlug}/${requirementSlug})`
+              `Duplicate provision filename: ${provisionSlug} (found at ${
+                provisionSlugMap[provisionSlug]
+              } and ${groupId}/${guidelineSlug}/${provisionSlug})`
             );
-          provisionSlugMap[requirementSlug] = requirement.id;
-          await validateTags(requirement);
-          requirements[requirement.id] = skippableChildren.includes(requirementSlug)
-            ? { ...requirement, skippable: true }
-            : requirement;
+          provisionSlugMap[provisionSlug] = provision.id;
+          await validateTags(provision);
+          provisions[provision.id] = skippableChildren.includes(provisionSlug)
+            ? { ...provision, skippable: true }
+            : provision;
         }
       }
     }
@@ -109,8 +109,8 @@ export const groupsTree = await (async () => {
           ...guideline,
           data: {
             ...guideline.data,
-            requirements: guideline.data.children.map(
-              (requirementSlug) => requirements[`${groupId}/${guidelineSlug}/${requirementSlug}`]
+            provisions: guideline.data.children.map(
+              (provisionSlug) => provisions[`${groupId}/${guidelineSlug}/${provisionSlug}`]
             ),
           },
         };
@@ -129,7 +129,7 @@ const computeTitle = (entry: EntryWithTitle, options: IdToTitleOptions) =>
   entry.data.title || convertIdToTitle(entry.id, options);
 
 /**
- * Returns group/guideline/requirement/assertion title if specified,
+ * Returns group/guideline/provision title if specified,
  * or falls back to converting from its slug.
  */
 export const computeGuidelineTitle = (entry: EntryWithTitle) =>
@@ -144,12 +144,12 @@ export const computeProvisionIssueLabel = (entry: CollectionEntry<"requirements"
  * useful e.g. in front of each provision name in the normative document,
  * and for the heading above the normative text in each informative document.
  */
-export const computeProvisionTypeLabel = (entry: CollectionEntry<"requirements">) => {
-  var requirementType = entry.data.type;
-  if (!requirementType) return "Requirement";
-  if (requirementType === "foundational" || requirementType === "supplemental")
-    return `${capitalize(requirementType.replace(/^foundational$/, "core"))} requirement`;
-  return capitalize(requirementType);
+export const computeProvisionTypeLabel = (entry: CollectionEntry<"provisions">) => {
+  var provisionType = entry.data.type;
+  if (!provisionType) return "Requirement";
+  if (provisionType === "foundational" || provisionType === "supplemental")
+    return `${capitalize(provisionType.replace(/^foundational$/, "core"))} requirement`;
+  return capitalize(provisionType);
 };
 
 /** Returns term title if specified, or falls back to converting from its slug. */

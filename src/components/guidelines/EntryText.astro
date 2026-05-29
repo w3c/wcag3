@@ -7,14 +7,14 @@ import { computeGuidelineTitle, computeProvisionIssueLabel } from "@/lib/guideli
 import { silenceWarnings } from "@/lib/informative";
 
 interface Props {
-  entry: CollectionEntry<"guidelines"> | CollectionEntry<"requirements">;
+  entry: CollectionEntry<"guidelines"> | CollectionEntry<"provisions">;
 }
 
 const { entry } = Astro.props;
 const informativeEntry =
   entry.collection === "guidelines"
     ? await silenceWarnings(() => getEntry("informativeGuidelines", entry.id))
-    : await silenceWarnings(() => getEntry("informativeRequirements", entry.id));
+    : await silenceWarnings(() => getEntry("informativeProvisions", entry.id));
 
 function processHtml() {
   if (!entry.rendered) {
@@ -42,7 +42,7 @@ function processHtml() {
         </a>
       </p>`);
   }
-  if (entry.collection === "requirements") {
+  if (entry.collection === "provisions") {
     doclinks.push(`
       <p>
         <a href="https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22${
@@ -75,7 +75,7 @@ function processHtml() {
 ---
 
 {
-  entry.collection === "requirements" && entry.data.needsAdditionalResearch && (
+  entry.collection === "provisions" && entry.data.needsAdditionalResearch && (
     <p class="ednote">
       Needs <a href="#additional_research">additional research</a>
     </p>
