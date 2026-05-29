@@ -1,4 +1,11 @@
-import { getCollection, getEntry, type CollectionEntry, type RenderedContent } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import {
+  getCollection,
+  getEntry,
+  type CollectionEntry,
+  type CollectionKey,
+  type RenderedContent,
+} from "astro:content";
 import { load } from "cheerio";
 import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
@@ -41,25 +48,25 @@ export type InformativeGuideline = NonNullable<
 >;
 
 /**
- * Assembles data for informative documentation of the specified requirement,
+ * Assembles data for informative documentation of the specified provision,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeRequirement(id: string) {
-  const normativeRequirement = await getEntry("requirements", id);
-  if (!normativeRequirement) throw new Error(`Normative data not found for requirement: ${id}`);
+export async function resolveInformativeProvision(id: string) {
+  const normativeProvision = await getEntry("provisions", id);
+  if (!normativeProvision) throw new Error(`Normative data not found for provision: ${id}`);
 
-  const informativeRequirement = await silenceWarnings(() =>
-    getEntry("informativeRequirements", id)
+  const informativeProvision = await silenceWarnings(() =>
+    getEntry("informativeProvisions", id)
   );
-  if (!informativeRequirement) return null;
+  if (!informativeProvision) return null;
   return {
-    ...informativeRequirement,
-    title: computeGuidelineTitle(normativeRequirement),
-    normativeEntry: normativeRequirement,
+    ...informativeProvision,
+    title: computeGuidelineTitle(normativeProvision),
+    normativeEntry: normativeProvision,
   };
 }
-export type InformativeRequirement = NonNullable<
-  Awaited<ReturnType<typeof resolveInformativeRequirement>>
+export type InformativeProvision = NonNullable<
+  Awaited<ReturnType<typeof resolveInformativeProvision>>
 >;
 
 /**
@@ -102,22 +109,22 @@ export async function resolveInformativeGuidelines(groupId: string) {
 }
 
 /**
- * Assembles data for informative documentation of requirements under the specified guideline,
+ * Assembles data for informative documentation of provisions under the specified guideline,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeRequirements(guidelineId: string) {
+export async function resolveInformativeProvisions(guidelineId: string) {
   const normativeGuideline = await getEntry("guidelines", guidelineId);
   if (!normativeGuideline)
     throw new Error(`Normative data not found for guideline: ${guidelineId}`);
 
-  const requirements: InformativeRequirement[] = [];
-  for (const requirementSlug of normativeGuideline.data.children) {
-    const informativeEntry = await resolveInformativeRequirement(
-      `${guidelineId}/${requirementSlug}`
+  const provisions: InformativeProvision[] = [];
+  for (const provisionSlug of normativeGuideline.data.children) {
+    const informativeEntry = await resolveInformativeProvision(
+      `${guidelineId}/${provisionSlug}`
     );
-    if (informativeEntry) requirements.push(informativeEntry);
+    if (informativeEntry) provisions.push(informativeEntry);
   }
-  return requirements;
+  return provisions;
 }
 
 /** Formats normative content for inclusion within an informative page. */
@@ -129,10 +136,7 @@ export function formatNormativeContent(rendered: RenderedContent) {
     if ($el.text() === $el.html()) $el.html(`<strong>${$el.text()}</strong>`);
   });
 
-  return `
-    <h2 id="normative-text">Normative Text</h2>
-    <div class="normative">${$.html()}</div>
-  `;
+  return `<div class="normative">${$.html()}</div>`;
 }
 
 /** Inverted map from every possible permutation of each term to its content entry. */
@@ -188,3 +192,74 @@ function _processKeyTerms(html: string, terms = new Set<CollectionEntry<"terms">
  * adding hrefs and also returning the alphabetized list of terms.
  */
 export const processKeyTerms = (html: string) => _processKeyTerms(html);
+
+/**
+ * Metadata for types of informative content related to provisions.
+ */
+export const informativeRelatedTypes = {
+  actRules: {
+    slug: "act-rules",
+    title: "ACT Rules",
+  },
+  bestPractices: {
+    slug: "best-practices",
+    title: "Best Practices",
+  },
+  methods: {
+    slug: "methods",
+    title: "Methods",
+  },
+} satisfies Partial<Record<CollectionKey, { slug: string; title: string }>>;
+export type InformativeRelatedCollection = keyof typeof informativeRelatedTypes;
+
+export const technologies = ["documents", "mobile", "web"] as const;
+export type Technology = (typeof technologies)[number];
+export function assertTechnology(str: string): asserts str is Technology {
+  if (!technologies.includes(str as Technology))
+    throw new Error(`Invalid technology string: ${str}`);
+}
+
+/**
+ * Determines technology label for related informative content based on entry ID (path/basename).
+ */
+export function detectTechnology(entry: CollectionEntry<InformativeRelatedCollection>) {
+  const technology = entry.id.slice(0, entry.id.indexOf("/"));
+  assertTechnology(technology);
+  return technology;
+}
+
+/** Generates a getStaticPaths function for leaf pages for informative related collections. */
+export const generateInformativeRelatedGetStaticPaths =
+  (collectionName: InformativeRelatedCollection): GetStaticPaths =>
+  async () =>
+    (await getCollection(collectionName)).map((entry) => ({
+      params: {
+        slug: entry.id.slice(entry.id.indexOf("/") + 1),
+        technology: detectTechnology(entry),
+      },
+    }));
+
+/**
+ * Object hash mapping provision slugs to arrays of IDs for each informative relation type
+ * (e.g. actRules, bestPractices, methods).
+ * Used to reverse-map each provision to the other types of related informative entries,
+ * whereas those related entries are where the mappings are defined in frontmatter.
+ */
+export const informativeProvisionSlugRelationMap: Record<
+  string,
+  Partial<Record<InformativeRelatedCollection, CollectionEntry<InformativeRelatedCollection>[]>>
+> = {};
+for (const key of Object.keys(informativeRelatedTypes)) {
+  const type = key as InformativeRelatedCollection;
+  for (const entry of await getCollection(type)) {
+    for (const provision of entry.data.provisions) {
+      if (provision in informativeProvisionSlugRelationMap) {
+        if (informativeProvisionSlugRelationMap[provision][type])
+          informativeProvisionSlugRelationMap[provision][type].push(entry);
+        else informativeProvisionSlugRelationMap[provision][type] = [entry];
+      } else {
+        informativeProvisionSlugRelationMap[provision] = { [type]: [entry] };
+      }
+    }
+  }
+}

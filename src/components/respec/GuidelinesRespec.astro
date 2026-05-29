@@ -116,23 +116,16 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
   }
 
   function addRequirementType() {
-    var requirements = document.querySelectorAll(".requirement");
-    requirements.forEach(function (requirement) {
-      var requirementType = requirement.getAttribute("data-requirement-type");
-      var preText = document.createElement("span");
-      var heading = requirement.querySelector("h5");
+    const attributeName = "data-requirement-type-label";
+    document.querySelectorAll(`[${attributeName}]`).forEach(function (requirementEl) {
+      const preText = document.createElement("span");
       preText.classList.add("requirement-type");
-      if (requirementType == "assertion") {
-        preText.innerHTML = "Assertion: ";
-      } else if (requirementType === "best practice") {
-        preText.innerHTML = "Best practice: ";
-      } else if (requirementType == "foundational" || requirementType == "supplemental") {
-        preText.innerHTML =
-          sentenceCase(requirementType.replace(/^foundational$/, "core")) + " requirement: ";
-      } else {
-        preText.innerHTML = "Requirement: ";
-      }
+      preText.textContent = requirementEl.getAttribute(attributeName) + ": ";
+
+      const heading = requirementEl.querySelector("h5");
       heading.insertAdjacentElement("afterbegin", preText);
+
+      requirementEl.removeAttribute(attributeName);
     });
   }
 

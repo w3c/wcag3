@@ -15,6 +15,12 @@ const childrenSchema = z
     message: "children should not contain duplicates",
   });
 
+const relatedSchema = z.strictObject({
+  /** Provision filename slugs (validated at runtime) */
+  provisions: z.array(z.string()),
+  title: z.string(),
+});
+
 export const collections = {
   // Content for normative WCAG 3 document
 
@@ -27,18 +33,18 @@ export const collections = {
     loader: glob({ pattern: ["*.md*"], base: "./guidelines/acknowledgements" }),
   }),
   groupOrder: defineCollection({
-    loader: file("./guidelines/groups/index.json", {
+    loader: file("./guidelines/groups.json", {
       parser: stringArrayParser,
     }),
-    schema: z.object({
+    schema: z.strictObject({
       // This _should_ be able to use reference("groups"),
       // but it's not finding some of them even when they exist?
       id: z.string(),
     }),
   }),
   groups: defineCollection({
-    loader: glob({ pattern: "*.json", base: "./guidelines/groups", ignore: "index.json" }),
-    schema: z.object({
+    loader: glob({ pattern: ["*.json"], base: "./guidelines/groups" }),
+    schema: z.strictObject({
       children: childrenSchema,
       status: parentStatusSchema.optional(),
       title: z.string().optional(),
@@ -46,7 +52,7 @@ export const collections = {
   }),
   guidelines: defineCollection({
     loader: glob({ pattern: "*/*.md", base: "./guidelines/groups" }),
-    schema: z.object({
+    schema: z.strictObject({
       // Note: can't use references for children while relying on default ids,
       // since auto-generated ids include every * segment rather than only the last.
       // Moreover, we can't override generateId for requirements to only use slug,
@@ -57,22 +63,15 @@ export const collections = {
       title: z.string().optional(),
     }),
   }),
-  requirements: defineCollection({
+  provisions: defineCollection({
     loader: glob({ pattern: "*/*/*.md", base: "./guidelines/groups" }),
-    schema: z.object({
+    schema: z.strictObject({
       tags: z.array(reference("tags")).optional(),
       issueLabel: z.string().optional(),
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       title: z.string().optional(),
-      type: z
-        .enum([
-          "foundational",
-          "supplemental",
-          "assertion",
-          "best practice",
-        ])
-        .optional(),
+      type: z.enum(["foundational", "supplemental", "assertion", "best practice"]).optional(),
     }),
   }),
   tags: defineCollection({
@@ -82,7 +81,7 @@ export const collections = {
   }),
   terms: defineCollection({
     loader: glob({ pattern: "*.md", base: "./guidelines/terms" }),
-    schema: z.object({
+    schema: z.strictObject({
       status: statusSchema.optional(),
       synonyms: z.array(z.string()).min(1).optional(),
       title: z.string().optional(),
@@ -93,11 +92,32 @@ export const collections = {
   // Content for informative WCAG 3 docs
 
   informativeGuidelines: defineCollection({
-    loader: glob({ pattern: "*/*.md", base: "./informative" }),
+    loader: glob({
+      pattern: "*/*.md",
+      base: "./informative/guidelines",
+    }),
     schema: z.strictObject({}),
   }),
-  informativeRequirements: defineCollection({
-    loader: glob({ pattern: "*/*/*.md", base: "./informative" }),
+  informativeProvisions: defineCollection({
+    loader: glob({
+      pattern: "*/*/*.md",
+      base: "./informative/guidelines",
+    }),
     schema: z.strictObject({}),
+  }),
+
+  actRules: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/act-rules" }),
+    schema: relatedSchema,
+  }),
+
+  bestPractices: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/best-practices" }),
+    schema: relatedSchema,
+  }),
+
+  methods: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/methods" }),
+    schema: relatedSchema,
   }),
 };

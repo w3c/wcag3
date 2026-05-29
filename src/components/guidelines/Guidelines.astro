@@ -1,28 +1,30 @@
 ---
-import { buildGuidelinesHierarchy, computeGuidelineTitle } from "@/lib/guidelines";
+import {
+  computeGuidelineTitle,
+  computeProvisionTypeLabel,
+  groupsTree,
+} from "@/lib/guidelines";
 
 import EntryText from "./EntryText.astro";
-
-const groups = await buildGuidelinesHierarchy();
 ---
 
 {
-  groups.map((group) => (
+  groupsTree.map((group) => (
     <section data-status={group.data.status || undefined}>
       <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
           <h4>{computeGuidelineTitle(guideline)}</h4>
           <EntryText entry={guideline} />
-          {guideline.data.requirements.map((requirement) => (
+          {guideline.data.provisions.map((provision) => (
             <section
               class="requirement"
-              data-status={requirement.data.status}
-              data-requirement-type={requirement.data.type}
-              data-skip={requirement.skippable}
+              data-status={provision.data.status}
+              data-requirement-type-label={computeProvisionTypeLabel(provision)}
+              data-skip={provision.skippable}
             >
-              <h5>{computeGuidelineTitle(requirement)}</h5>
-              <EntryText entry={requirement} />
+              <h5>{computeGuidelineTitle(provision)}</h5>
+              <EntryText entry={provision} />
             </section>
           ))}
         </section>

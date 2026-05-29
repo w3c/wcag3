@@ -1,0 +1,82 @@
+---
+import type { GetStaticPaths, GetStaticPathsResult } from "astro";
+import capitalize from "lodash/capitalize";
+
+import KeyTerms from "@/components/informative/KeyTerms.astro";
+import InformativeLayout from "@/layouts/InformativeLayout.astro";
+import { informativeSlug } from "@/lib/constants";
+import { computeProvisionTypeLabel } from "@/lib/guidelines";
+import {
+  detectTechnology,
+  formatNormativeContent,
+  informativeProvisionSlugRelationMap,
+  informativeRelatedTypes,
+  processKeyTerms,
+  resolveInformativeGroups,
+  resolveInformativeGuideline,
+  resolveInformativeGuidelines,
+  resolveInformativeProvision,
+  resolveInformativeProvisions,
+  type InformativeRelatedCollection,
+} from "@/lib/informative";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: GetStaticPathsResult = [];
+  for (const group of await resolveInformativeGroups()) {
+    for (const guideline of await resolveInformativeGuidelines(group.id)) {
+      for (const provision of await resolveInformativeProvisions(guideline.id)) {
+        paths.push({
+          params: {
+            groupId: group.id,
+            guidelineSlug: guideline.id.slice(guideline.id.lastIndexOf("/") + 1),
+            provisionSlug: provision.id.slice(provision.id.lastIndexOf("/") + 1),
+          },
+        });
+      }
+    }
+  }
+  return paths;
+};
+
+const { groupId, guidelineSlug, provisionSlug } = Astro.params;
+const guidelineId = `${groupId}/${guidelineSlug}`;
+const provisionId = `${groupId}/${guidelineSlug}/${provisionSlug}`;
+
+const guideline = await resolveInformativeGuideline(guidelineId);
+if (!guideline) throw new Error(`Unresolvable informative guideline ID: ${guidelineId}`);
+const provision = await resolveInformativeProvision(provisionId);
+if (!provision) throw new Error(`Unresolvable informative provision ID: ${provisionId}`);
+if (!provision.rendered || !provision.normativeEntry.rendered) {
+  throw new Error(
+    `how-to/[group]/[guideline]: Rendered HTML missing for ${provision.id}; check for Markdown parse failures earlier in log`
+  );
+}
+
+const { html, terms } = processKeyTerms(
+  formatNormativeContent(provision.normativeEntry.rendered) + provision.rendered.html
+);
+
+const relatedEntries = informativeProvisionSlugRelationMap[provisionSlug!];
+---
+
+<InformativeLayout title={provision.title} breadcrumbSegments={[guideline, provision]}>
+  <h2>{computeProvisionTypeLabel(provision.normativeEntry)}</h2>
+  <Fragment set:html={html} />
+  {
+    relatedEntries && Object.entries(relatedEntries).map(([type, entries]) => (
+      <h2>{informativeRelatedTypes[type as InformativeRelatedCollection].title}</h2>
+      <ul>
+        {entries.map((entry) => (
+          <li>
+            <a
+              href={`${import.meta.env.BASE_URL}${informativeSlug}/${
+                informativeRelatedTypes[type as InformativeRelatedCollection].slug}/${entry.id}/`}
+              set:text={`${capitalize(detectTechnology(entry))}: ${entry.data.title}`}
+            />
+          </li>
+        ))}
+      </ul>
+    ))
+  }
+  <KeyTerms terms={terms} />
+</InformativeLayout>

@@ -3,18 +3,20 @@ import type { ContainerDirective } from "mdast-util-directive";
 import { visit } from "unist-util-visit";
 import type { VFile } from "vfile";
 
-const groupsPath = `guidelines/groups`;
-const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/${groupsPath}`);
+import { join, sep } from "path";
 
-type GuidelineFileType = "group" | "guideline" | "requirement";
+const groupsPath = `guidelines/groups`;
+const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, groupsPath));
+
+type GuidelineFileType = "group" | "guideline" | "provision";
 
 function getGuidelineFileType(file: VFile): GuidelineFileType | null {
   if (!isGuidelineFile(file)) return null;
-  const remainingPath = file.dirname!.replace(`${file.cwd}/${groupsPath}/`, "");
-  const segments = remainingPath?.split("/");
+  const remainingPath = file.dirname!.replace(join(file.cwd, groupsPath) + sep, "");
+  const segments = remainingPath?.split(sep);
   if (segments.length === 0) return "group";
   if (segments.length === 1) return "guideline";
-  if (segments.length === 2) return "requirement";
+  if (segments.length === 2) return "provision";
   return null;
 }
 
@@ -26,10 +28,10 @@ function expectGuidelineFileType(
 ) {
   const type = getGuidelineFileType(file);
   if (type !== expectedType)
-    file.fail(`:::${directiveName} expected at ${expectedType} level but found at ${type} level`);
+    file.fail(`${directiveName} expected at ${expectedType} level but found at ${type} level`);
 }
 
-const isTermFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/guidelines/terms`);
+const isTermFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, "guidelines", "terms"));
 
 /** Adds standard editor's note to terms with empty content. */
 const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
@@ -89,7 +91,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Which core requirements apply?</summary>",
         });
       } else if (isGuideline && node.name === "user-needs") {
-        expectGuidelineFileType(file, "guideline", "user-needs");
+        expectGuidelineFileType(file, "guideline", ":::user-needs");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
@@ -99,7 +101,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "requirement", "tests");
+        expectGuidelineFileType(file, "provision", ":::tests");
 
         const data = node.data || (node.data = {});
         data.hName = "details";
@@ -109,14 +111,24 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
       } else if (isGuideline && node.name === "applies-when") {
-        expectGuidelineFileType(file, "requirement", "applies-when");
+        expectGuidelineFileType(file, "provision", ":::applies-when");
 
         prependBoldText(node, "Applies when");
         if (parent && typeof index !== "undefined") {
           parent.children.splice(index!, 1, ...node.children);
         }
       } else if (isGuideline && node.name === "except-when") {
-        expectGuidelineFileType(file, "requirement", "except-when");
+        expectGuidelineFileType(file, "provision", ":::except-when");
+
+        if (
+          parent &&
+          typeof index !== "undefined" &&
+          parent.children
+            .slice(index + 1)
+            .some((node) => node.type === "containerDirective" && node.name === "applies-when")
+        ) {
+          file.fail(`:::applies-when must appear before :::except-when, not after`);
+        }
 
         prependBoldText(node, "Except when");
         if (parent && typeof index !== "undefined")
@@ -124,7 +136,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
       }
     } else if (node.type === "leafDirective") {
       if (isGuideline && node.name === "assertion-required") {
-        expectGuidelineFileType(file, "requirement", "assertion-required");
+        expectGuidelineFileType(file, "provision", "::assertion-required");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -134,7 +146,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           },
         ];
       } else if (isGuideline && node.name === "assertion-recommended") {
-        expectGuidelineFileType(file, "requirement", "assertion-recommended");
+        expectGuidelineFileType(file, "provision", "::assertion-recommended");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -143,7 +155,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
             value: "Recommended internal documentation (Informative):",
           },
         ];
-      } else file.fail(`Unrecognized leaf directive ::${node.name}`);
+      }
     }
   });
 };
