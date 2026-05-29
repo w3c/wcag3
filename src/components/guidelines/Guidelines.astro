@@ -16,15 +16,15 @@ import EntryText from "./EntryText.astro";
         <section class="guideline" data-status={guideline.data.status || undefined}>
           <h4>{computeGuidelineTitle(guideline)}</h4>
           <EntryText entry={guideline} />
-          {guideline.data.requirements.map((requirement) => (
+          {guideline.data.provisions.map((provision) => (
             <section
               class="requirement"
-              data-status={requirement.data.status}
-              data-requirement-type-label={computeProvisionTypeLabel(requirement)}
-              data-skip={requirement.skippable}
+              data-status={provision.data.status}
+              data-requirement-type-label={computeProvisionTypeLabel(provision)}
+              data-skip={provision.skippable}
             >
-              <h5>{computeGuidelineTitle(requirement)}</h5>
-              <EntryText entry={requirement} />
+              <h5>{computeGuidelineTitle(provision)}</h5>
+              <EntryText entry={provision} />
             </section>
           ))}
         </section>

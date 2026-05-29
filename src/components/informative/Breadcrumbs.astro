@@ -1,13 +1,13 @@
 ---
 import { informativeSlug } from "@/lib/constants";
-import type { InformativeGuideline, InformativeRequirement } from "@/lib/informative";
+import type { InformativeGuideline, InformativeProvision } from "@/lib/informative";
 
 interface ResolvedSegment {
   slug: string;
   title: string;
 }
 
-type Segment = InformativeGuideline | InformativeRequirement | ResolvedSegment;
+type Segment = InformativeGuideline | InformativeProvision | ResolvedSegment;
 
 interface Props {
   segments: Segment[];
@@ -21,7 +21,7 @@ function resolveSlug(segment: Segment) {
   return segment.id.slice(segment.id.lastIndexOf("/") + 1);
 }
 
-const resolvedSegments: ResolvedSegment[] = segments.map((segment, i) => ({
+const resolvedSegments: ResolvedSegment[] = segments.map((segment) => ({
   slug: resolveSlug(segment),
   title: segment.title,
 }));
