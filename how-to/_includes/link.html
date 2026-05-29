@@ -1,6 +1,0 @@
-{%- assign url = href | prepend: base %}
-{%- if url == page.url %}
-  <a aria-current="page" href="{{ url }}">{{ text }}</a>
-{%- else %}
-  <a href="{{ url }}">{{ text }}</a>
-{%- endif %}

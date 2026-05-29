@@ -1,5 +1,0 @@
----
-subtitle: Design
----
-
-Coming soon

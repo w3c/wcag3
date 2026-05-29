@@ -14,8 +14,6 @@ dictionaryDefinitions:
     addWords: true
 ignorePaths:
   - "guidelines/acknowledgements/**"
-  - "how-to/**"
-  - "patches/**"
   - "src/components/**"
   - "*.css"
   - "*.json"
@@ -46,7 +44,13 @@ languageSettings:
       - foreign-language
       - html-tags
       # pre/code tags
-      - /<(pre|code)\b[^>]*>[\s\S]*?</\1>/g
+      - /<(pre|code)\b[^>]*>[\s\S]*?<\/\1>/g
+      # style tags
+      - /<style\b[^>]*>[\s\S]*?<\/style>/g
+      # template literal expressions
+      - /\$\{[\s\S]*?\}/g
+      # import.meta.*
+      - /import\.meta\.\S+/g
   - languageId: markdown
     ignoreRegExpList:
       - encoded-citations

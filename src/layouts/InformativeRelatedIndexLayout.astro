@@ -1,0 +1,43 @@
+---
+/**
+ * @file Layout used for index pages for informative materials related to provisions,
+ * e.g. ACT Rules, Best Practices, Methods
+ */
+
+import { getCollection } from "astro:content";
+import capitalize from "lodash/capitalize";
+
+import { detectTechnology, informativeRelatedTypes, technologies } from "@/lib/informative";
+
+import InformativeLayout from "./InformativeLayout.astro";
+
+interface Props {
+  collectionName: "actRules" | "bestPractices" | "methods";
+}
+
+const { collectionName } = Astro.props;
+
+const collection = await getCollection(collectionName);
+const relatedInformativeType = informativeRelatedTypes[collectionName];
+---
+
+<InformativeLayout breadcrumbSegments={[relatedInformativeType]} title={`All WCAG 3 ${relatedInformativeType.title}`} withNav={false}>
+  {
+    technologies.map((technology) => (
+      <>
+        <h2>{capitalize(technology)}</h2>
+        <ul>
+          {collection
+            .filter((entry) => detectTechnology(entry) === technology)
+            .map((entry) => (
+              <li>
+                <a href={`${technology}/${entry.id.slice(entry.id.lastIndexOf("/") + 1)}/`}>
+                  {entry.data.title}
+                </a>
+              </li>
+            ))}
+        </ul>
+      </>
+    ))
+  }
+</InformativeLayout>
