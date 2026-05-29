@@ -30,6 +30,9 @@ export default defineConfig({
       // https://github.com/wataru-chocola/remark-definition-list/issues/50#issuecomment-1445130314
       handlers: { ...defListHastHandlers },
     },
+    shikiConfig: {
+      theme: 'night-owl-light',
+    },
   },
   experimental: {
     contentIntellisense: true,

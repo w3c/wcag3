@@ -8,8 +8,6 @@ children:
   - sounds-identified
   - visual-information-identified
   - non-verbal-cues-identified
-  - sign-language-available-prerecorded
-  - sign-language-available-live
   - media-alternatives-style-guide
   - accessible-video-player-selected
   - media-alternatives-usability-testing
