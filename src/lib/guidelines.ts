@@ -2,6 +2,7 @@ import { getCollection, getEntry, type CollectionEntry, type CollectionKey } fro
 import capitalize from "lodash/capitalize";
 import difference from "lodash/difference";
 
+import { convertIdToTitle, type IdToTitleOptions } from "./common";
 import { isDevOrPreview } from "./constants";
 
 /**
@@ -124,16 +125,8 @@ export interface EntryWithTitle {
   data: { title?: string };
 }
 
-interface ComputeTitleOptions {
-  capitalize: boolean;
-}
-
-function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
-  if (entry.data.title) return entry.data.title;
-  const slug = entry.id.replace(/^.*\//, "");
-  const title = slug.replace(/-/g, " ");
-  return options.capitalize ? capitalize(title) : title;
-}
+const computeTitle = (entry: EntryWithTitle, options: IdToTitleOptions) =>
+  entry.data.title || convertIdToTitle(entry.id, options);
 
 /**
  * Returns group/guideline/requirement/assertion title if specified,
@@ -141,6 +134,10 @@ function computeTitle(entry: EntryWithTitle, options: ComputeTitleOptions) {
  */
 export const computeGuidelineTitle = (entry: EntryWithTitle) =>
   computeTitle(entry, { capitalize: true });
+
+/** Returns a provision's issue label as it should be formatted in the GitHub repository. */
+export const computeProvisionIssueLabel = (entry: CollectionEntry<"requirements">) =>
+  `P - ${capitalize(entry.data.issueLabel) || computeGuidelineTitle(entry).replace(/,/g, "")}`;
 
 /**
  * Returns text representation of each provision type,
