@@ -27,21 +27,6 @@ function processHtml() {
 
   const doclinks: string[] = [];
 
-  if (informativeEntry) {
-    doclinks.push(`
-      <p>
-        <a href="${import.meta.env.BASE_URL}${informativeSlug}/${informativeEntry.id}/">
-          <svg aria-hidden="true" class="i-info">
-            <use xlink:href="img/icons.svg#i-info" />
-          </svg>
-          ${
-            entry.collection === "guidelines"
-              ? `How to meet ${entryTitle}`
-              : `${entryTitle} methods`
-          }
-        </a>
-      </p>`);
-  }
   if (entry.collection === "provisions") {
     doclinks.push(`
       <p>

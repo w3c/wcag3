@@ -247,6 +247,12 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function removeTOCInfoLink() {
+    document.querySelectorAll('.toc .infolink').forEach(function (node) {
+      node.remove();
+    });
+  }
+
   function outputJson() {
     const params = new URLSearchParams(window.location.search);
     if (params.get("json") != null) {
@@ -504,6 +510,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       adjustNormativity,
       removeDraftMethodLinks,
       removeRequirementNum,
+      removeTOCInfoLink,
       addGuidelineText,
       addRequirementType,
       addStatusMarkers,

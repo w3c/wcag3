@@ -4,8 +4,10 @@ import {
   computeProvisionTypeLabel,
   groupsTree,
 } from "@/lib/guidelines";
+import { informativeSlug } from "@/lib/constants";
 
 import EntryText from "./EntryText.astro";
+
 ---
 
 {
@@ -14,7 +16,13 @@ import EntryText from "./EntryText.astro";
       <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
-          <h4>{computeGuidelineTitle(guideline)}</h4>
+          <h4>{computeGuidelineTitle(guideline)}
+            <span class="infolink"><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${guideline.id}/`}><svg aria-hidden="true" class="i-info">
+              <use xlink:href="img/icons.svg#i-info" />
+              </svg>
+              <span>About {computeGuidelineTitle(guideline)}</span>
+            </a></span>
+          </h4>
           <EntryText entry={guideline} />
           {guideline.data.provisions.map((provision) => (
             <section
@@ -23,7 +31,13 @@ import EntryText from "./EntryText.astro";
               data-requirement-type-label={computeProvisionTypeLabel(provision)}
               data-skip={provision.skippable}
             >
-              <h5>{computeGuidelineTitle(provision)}</h5>
+              <h5>{computeGuidelineTitle(provision)}
+                <span class="infolink"><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}><svg aria-hidden="true" class="i-info">
+                  <use xlink:href="img/icons.svg#i-info" />
+                  </svg>
+                  <span>Understanding {computeGuidelineTitle(guideline)}</span>
+                </a></span>
+              </h5>
               <EntryText entry={provision} />
             </section>
           ))}

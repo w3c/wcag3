@@ -160,6 +160,19 @@ section {
 	}
 }
 
+.infolink svg {
+	vertical-align: middle;
+}
+
+.infolink span {
+	display: none;
+	font-size: 80%
+}
+
+.infolink a:hover span, .infolink a:focus span {
+	display: inline;
+}
+
 .doclinks {
 	margin-left: 0.2em;
 }
