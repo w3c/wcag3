@@ -1,4 +1,4 @@
-import type { RemarkPlugin } from "@astrojs/markdown-remark";
+import type { RehypePlugin, RemarkPlugin } from "@astrojs/markdown-remark";
 import { visit } from "unist-util-visit";
 
 const customDirectives: RemarkPlugin = () => (tree) => {
@@ -52,5 +52,23 @@ const checkDirectives: RemarkPlugin = () => (tree, file) => {
   });
 };
 
+/**
+ * Removes tabindex added by Shiki by default.
+ * Shiki's API exposes a way to avoid adding it,
+ * but Astro does not expose the way it calls the API.
+ */
+const removeShikiTabindex: RehypePlugin = () => (tree) => {
+  visit(tree, (node) => {
+    if (node.type !== "element" || node.tagName !== "pre") return;
+    const className = node.properties.class;
+    if (
+      typeof className === "string" &&
+      className.startsWith("astro-code") &&
+      "tabindex" in node.properties
+    )
+      delete node.properties.tabindex;
+  });
+};
+
 export const remarkPlugins = [customDirectives, checkDirectives];
-export const rehypePlugins = [];
+export const rehypePlugins = [removeShikiTabindex];
