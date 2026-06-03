@@ -22,7 +22,7 @@ Providing sign language interpretation for audio only content with associated vi
 
 ```html
   <figure>
-  <caption>Latest podcast</caption>
+  <figcaption>Latest podcast</figcaption>
   <audio controls src=”latest-podcast.mp3”></audio>
     <details>
       <summary>Signed version</summary>
