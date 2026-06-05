@@ -6,6 +6,7 @@ caption {
 	color: #404040;
 	border: medium solid #d9d9d9;
 	background-color: #F3F3F3;
+	margin-block:1em;
 }
 summary::after {
 	display: inline-block;
