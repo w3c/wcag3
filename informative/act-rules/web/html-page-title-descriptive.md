@@ -249,7 +249,7 @@ The title does not sufficiently describe the specific purpose of the current ste
 </html>
 ```
 
-### Inappplicable example 1
+### Inapplicable example 1
 
 This title element is a child of an svg element.
 
