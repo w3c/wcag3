@@ -138,7 +138,7 @@ This page has a title element that only contains a separator character.
 </html>
 ```
 
-### Inappplicable example 1
+### Inapplicable example 1
 
 This title element is a child of an svg element.
 
