@@ -91,7 +91,6 @@ This page does not have a title element.
 <html>
 	<h1>this page has no title</h1>
 </html>
-
 ```
 
 ### Failed example 2
