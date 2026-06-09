@@ -29,10 +29,10 @@ On a retail website, the current step in the checkout flow is identified with a 
 ```
 <ol>
 	<li>
-		<a href=”step1.html”>Shipping Address - Current Step</a>
+		<a href="step1.html">Shipping Address - Current Step</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
@@ -50,10 +50,10 @@ On a retail website, the checkout flow highlights the current step using a bold 
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”font-weight:bold”>Shipping Address</a>
+		<a href="step1.html" style="font-weight:bold">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
@@ -71,10 +71,10 @@ On a retail website, the checkout flow highlights the current step using a diffe
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”color:#006400”>Shipping Address</a>
+		<a href="step1.html" style="color:#006400">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
@@ -92,10 +92,10 @@ On a retail website, the checkout flow highlights the current step using an unde
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”text-decoration: underline”>Shipping Address</a>
+		<a href="step1.html" style="text-decoration: underline">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
