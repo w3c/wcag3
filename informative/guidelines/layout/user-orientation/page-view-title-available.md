@@ -21,4 +21,3 @@ For each page/view where no title element is present:
 
 <b>Expected results</b>
 * #1 and #2 are true.
-:::
