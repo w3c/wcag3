@@ -33,10 +33,10 @@ On a retail website, the current step in the checkout flow is indicated using a 
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”font-wieght:bold”>Shipping Address</a>
+		<a href="step1.html" style="font-wieght:bold">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
@@ -51,15 +51,15 @@ On a retail website, the current step in the checkout flow is indicated using a 
 
 ### Passed example 2
 
-On a retail website, the current step in the checkout flow is indicated using a bold CSS style. Although the page's h1 is “Checkout”, it does not correspond to any specific step and instead describes the overall multi-step process. The subsequent h2 serves as the unique page heading for the step and clearly represents the current step. There are no other headings corresponding to the remaining steps.
+On a retail website, the current step in the checkout flow is indicated using a bold CSS style. Although the page's h1 is "Checkout", it does not correspond to any specific step and instead describes the overall multi-step process. The subsequent h2 serves as the unique page heading for the step and clearly represents the current step. There are no other headings corresponding to the remaining steps.
 
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”font-wieght:bold”>Shipping Address</a>
+		<a href="step1.html" style="font-wieght:bold">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
@@ -75,15 +75,15 @@ On a retail website, the current step in the checkout flow is indicated using a 
 
 ### Failed example 1
 
-On a retail website, the current step in the checkout flow is indicated using a bold CSS style. Although the page’s h1 is “Checkout”, it does not correspond to any specific step and instead describes the overall multi-step process. The subsequent h2 serves as a page heading for the step and represents the current step. However, since other headings also correspond to the remaining steps, it is not immediately clear which one represents the current step, so the rule is not satisfied.
+On a retail website, the current step in the checkout flow is indicated using a bold CSS style. Although the page's h1 is "Checkout", it does not correspond to any specific step and instead describes the overall multi-step process. The subsequent h2 serves as a page heading for the step and represents the current step. However, since other headings also correspond to the remaining steps, it is not immediately clear which one represents the current step, so the rule is not satisfied.
 
 ```
 <ol>
   <li>
-    <a href=”step1.html” style=”font-wieght:bold”>Shipping Address</a>
+    <a href="step1.html" style="font-wieght:bold">Shipping Address</a>
   </li>
   <li>
-    <a href=”step2.html”>Billing Address</a>
+    <a href="step2.html">Billing Address</a>
   </li>
   <li>
     <span>Payment Info</span>
@@ -93,40 +93,40 @@ On a retail website, the current step in the checkout flow is indicated using a 
   </li>
 </ol>
 <h1>Checkout</h1>
-<section aria-labelledby=”ship”>
+<section aria-labelledby="ship">
   <h2>
-    <button aria-expanded=”true” id=”ship”>Shipping Address</button>
+    <button aria-expanded="true" id="ship">Shipping Address</button>
   </h2>
   <div>Shipping step content</div>
 </section>
-<section aria-labelledby=”bill”>
+<section aria-labelledby="bill">
   <h2>
-    <button disabled aria-expanded=”false” id=”bill”>Billing Address</button>
+    <button disabled aria-expanded="false" id="bill">Billing Address</button>
   </h2>
 </section>
-<section aria-labelledby=”paym”>
+<section aria-labelledby="paym">
   <h2>
-    <button disabled aria-expanded=”false” id=”paym”>Payment Info</button>
+    <button disabled aria-expanded="false" id="paym">Payment Info</button>
   </h2>
 </section>
-<section aria-labelledby=”review”>
+<section aria-labelledby="review">
   <h2>
-    <button disabled aria-expanded=”false” id=”review”>Review</button>
+    <button disabled aria-expanded="false" id="review">Review</button>
   </h2>
 </section>
 ```
 
 ### Failed example 2
 
-On a retail website, the current step in the checkout flow is indicated using a bold CSS style. The page contains a single heading, “Checkout,” which does not correspond to the active step; therefore, the rule is not satisfied.
+On a retail website, the current step in the checkout flow is indicated using a bold CSS style. The page contains a single heading, "Checkout," which does not correspond to the active step; therefore, the rule is not satisfied.
 
 ```
 <ol>
 	<li>
-		<a href=”step1.html” style=”font-wieght:bold”>Shipping Address</a>
+		<a href="step1.html" style="font-wieght:bold">Shipping Address</a>
 	</li>
 	<li>
-		<a href=”step2.html”>Billing Address</a>
+		<a href="step2.html">Billing Address</a>
 	</li>
 	<li>
 		<span>Payment Info</span>
