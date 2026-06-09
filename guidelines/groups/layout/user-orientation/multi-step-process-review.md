@@ -1,7 +1,7 @@
 ---
 type: assertion
 status: developing
-title	Multi-step process review
+title: Multi-step process review
 ---
 
 [Title, role, or organization] asserts that:
