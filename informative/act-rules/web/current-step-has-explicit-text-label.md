@@ -1,7 +1,7 @@
 ---
 title: Current step has explicit text label
 provisions:
-  - current-step-has-explicit-text-label
+  - current-step-indicated
 ---
 
 This rule checks that in a multi-step process, the current step has an explicit text label or accessible text alternative indicating its status.
@@ -16,7 +16,7 @@ This rule applies to any multi-step process where:
 
 The current step includes text content that explicitly contains a string indicating current status (e.g., "current", "active", "current step", or equivalent explicit wording) as part of its accessible name or visible text.
 
-### Assumptions
+## Assumptions
 * A "current step" is any step that is marked as active in the UI state.
 * Text content includes visible text or accessible name content exposed in the accessibility tree.
 
