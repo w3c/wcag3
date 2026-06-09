@@ -2,8 +2,10 @@
 children:
   - page-view-title-available
   - location-within-product-review
-  - all-steps-listed
+  - steps-indicated
   - current-step-indicated
+  - current-step-position-indicated
+  - multi-step-process-review
   - page-view-change-notified
   - return-to-start-supported
   - return-to-start-prominent
