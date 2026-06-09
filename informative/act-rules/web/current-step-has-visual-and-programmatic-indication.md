@@ -50,6 +50,7 @@ On a retail website, the current step in the checkout flow is identified both us
 ### Passed example 2
 
 On a retail website, the current step in the checkout flow is identified both using an icon, and providing the information programmatically by using the `aria-current="step"` ARIA attribute.
+
 ```
 <ol>
 	<li>
