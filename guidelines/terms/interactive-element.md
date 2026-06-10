@@ -13,5 +13,5 @@ In contrast to :term[non-interactive elements]. For example, headings, paragraph
 :::
 
 :::comment
-We used to also talk about "interactive components", but have decided to disambiguate between components and interactive _elements_ , where components can contain both interactive and non-interactive elements.
+We used to also talk about “interactive components”, but have decided to disambiguate between components and interactive _elements_, where components can contain both interactive and non-interactive elements.
 :::
