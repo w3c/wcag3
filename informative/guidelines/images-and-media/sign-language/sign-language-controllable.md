@@ -1,6 +1,6 @@
 ## Tests
 
-<i>Sign language control mechanism</i>
+### Sign language control mechanism
 
 <b>Procedure</b>
 
