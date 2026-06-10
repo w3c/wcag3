@@ -1,6 +1,6 @@
 ## Tests
 
-<i>Sign language for audio only</i>
+### Sign language for audio only
 
 <b>Procedure</b>
 
