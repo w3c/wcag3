@@ -16,10 +16,6 @@ This rule applies to any multi-step process where:
 
 The current step includes content that explicitly indicates its progress within the process both visually and programmatically.
 
-## Assumptions
-
-* A "current step" is any step that is marked as active in the UI state.
-
 ## Examples
 
 ### Passed example 1
