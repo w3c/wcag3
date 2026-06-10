@@ -1,6 +1,7 @@
 ---
 type: supplemental
 status: developing
+title: Sign language (prerecorded)
 ---
 
 :term[Sign language interpretation] is provided for all prerecorded :term[audio] content in the primary sign language that is most appropriate of the intended audience or region
