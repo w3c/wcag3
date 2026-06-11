@@ -6,7 +6,7 @@ title: Sign language (live) policy
 
 [Title, role or organization] asserts that: 
 
-* Our organization has a policy on providing sign language interpretation for live in-person, hybrid and fully online events/meetings. 
+* Our organization has a policy on providing sign language interpretation for live in-person, hybrid, and fully online events/meetings. 
 
 ::assertion-required
 
