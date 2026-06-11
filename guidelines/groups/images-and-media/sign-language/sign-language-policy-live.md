@@ -1,7 +1,8 @@
 ---
 status: developing
 type: assertion
-title: Sign language (live) policy
+title: Sign language policy (live)
+issueLabel: Sign language available (live)
 ---
 
 [Title, role, or organization] asserts that: 
