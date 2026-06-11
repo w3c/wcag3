@@ -1,7 +1,7 @@
 ---
 title: Sign language is available for prerecorded audio
 provisions:
-  - sign-language-prerecorded
+  - sign-language-available-prerecorded
 ---
 
 The rule checks that sign language interpretation using the most appropriate regional sign language is available for prerecorded audio content. 
