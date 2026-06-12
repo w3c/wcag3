@@ -2,7 +2,7 @@
 status: developing
 ---
 
-interactive elements are elements that are specifically intended for user interaction
+element that is specifically intended for user interaction
 
 :::example
 Buttons, controls, input fields.
