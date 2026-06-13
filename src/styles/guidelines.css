@@ -159,19 +159,44 @@ section {
 		grid-template-columns: 2fr 1fr;
 	}
 }
-
-.infolink svg {
-	vertical-align: middle;
+.infobutton {
+	color: #034575;
+	color: var(--a-normal-text);
+	border: 0;
+	background: transparent;
+	font-size: 1em;
+	cursor: pointer;
 }
 
-.infolink span {
-	display: none;
-	font-size: 80%
+[popover] {
+	margin: 0;
+	inset: auto;
+	bottom: calc(anchor(top) + 20px);
+	justify-self: anchor-center;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	border: 0;
+	padding: 1em;
+	position: relative;
+	overflow: visible;
 }
-
-.infolink a:hover span, .infolink a:focus span {
-	display: inline;
-}
+	[popover] > :first-child,
+	#guidelines [popover] .header-wrapper :first-child {
+		margin-top: 0;
+	}
+	[popover] a[href] {
+		color: white;
+	}
+	[popover]::after {
+		content: '';
+		border-left: 1em solid transparent;
+		border-right: 1em solid transparent;
+		border-top: 1em solid rgba(0, 0, 0, 0.75);
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%);
+	}
 
 .doclinks {
 	margin-left: 0.2em;
