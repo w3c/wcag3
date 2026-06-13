@@ -167,6 +167,9 @@ section {
 	font-size: 1em;
 	cursor: pointer;
 }
+	.infobutton:hover {
+		color: inherit;
+	}
 
 [popover] {
 	margin: 0;
@@ -179,7 +182,23 @@ section {
 	padding: 1em;
 	position: relative;
 	overflow: visible;
-}
+    transition: opacity 0.2s, transform 0.2s, display 0s allow-discrete;
+	
+	opacity: 0;
+	/* transform: translateY(-1rem); */
+	
+	  &:popover-open {
+		opacity: 1;
+		transform: none;
+	
+		@starting-style {
+		  & {
+			opacity: 0;
+			transform: translateY(-1rem);
+		  }
+		}
+	  }
+ 	}
 	[popover] > :first-child,
 	#guidelines [popover] .header-wrapper :first-child {
 		margin-top: 0;
