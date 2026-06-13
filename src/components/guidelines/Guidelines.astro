@@ -50,7 +50,9 @@ import EntryText from "./EntryText.astro";
                 <h3>{computeGuidelineTitle(provision)}</h3>
                 <p>More information about this provision is available:</p>
                 <ul>
-                  <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>{computeGuidelineTitle(provision)}</a></li>
+                  <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>Documentation for “{computeGuidelineTitle(provision)}”</a></li>
+                  <li><a href="#">Tests</a></li>
+                  <li><a href="#">Open issues</a></li>
                 </ul>
                 <button autofocus type="button" popovertarget={`popover-${provision.id}`} popovertargetaction="hide">Close</button>
               
