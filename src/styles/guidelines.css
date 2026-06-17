@@ -182,40 +182,39 @@ section {
 	padding: 1em;
 	position: relative;
 	overflow: visible;
-    transition: opacity 0.2s, transform 0.2s, display 0s allow-discrete;
-	
+	transition: opacity 0.2s, transform 0.2s, display 0s allow-discrete;
+
 	opacity: 0;
-	/* transform: translateY(-1rem); */
-	
-	  &:popover-open {
+
+	&:popover-open {
 		opacity: 1;
 		transform: none;
 	
 		@starting-style {
-		  & {
-			opacity: 0;
-			transform: translateY(-1rem);
-		  }
+			& {
+				opacity: 0;
+				transform: translateY(-1rem);
+			}
 		}
-	  }
- 	}
-	[popover] > :first-child,
-	#guidelines [popover] .header-wrapper :first-child {
-		margin-top: 0;
 	}
-	[popover] a[href] {
-		color: white;
-	}
-	[popover]::after {
-		content: '';
-		border-left: 1em solid transparent;
-		border-right: 1em solid transparent;
-		border-top: 1em solid rgba(0, 0, 0, 0.75);
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translate(-50%);
-	}
+}
+[popover] > :first-child,
+#guidelines [popover] .header-wrapper :first-child {
+	margin-top: 0;
+}
+[popover] a[href] {
+	color: white;
+}
+[popover]::after {
+	content: '';
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-top: 1em solid rgba(0, 0, 0, 0.75);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+}
 
 .doclinks {
 	margin-left: 0.2em;
