@@ -247,8 +247,8 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
-  function removeTOCInfoLink() {
-    document.querySelectorAll('.toc .infolink').forEach(function (node) {
+  function removeTOCInfoButton() {
+    document.querySelectorAll('.toc .infobutton').forEach(function (node) {
       node.remove();
     });
   }
@@ -510,7 +510,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       adjustNormativity,
       removeDraftMethodLinks,
       removeRequirementNum,
-      removeTOCInfoLink,
+      removeTOCInfoButton,
       addGuidelineText,
       addRequirementType,
       addStatusMarkers,
