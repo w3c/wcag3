@@ -24,13 +24,13 @@ import EntryText from "./EntryText.astro";
             </button>
           </h4>
           <dialog popover id={`popover-${guideline.id}`}>
-          <h3>{computeGuidelineTitle(guideline)}</h3>
-          <p>More information about this guideline is available:</p>
-          <ul>
-            <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${guideline.id}/`}>{computeGuidelineTitle(guideline)}</a></li>
-          </ul>
-          <button autofocus type="button" popovertarget={`popover-${guideline.id}`} popovertargetaction="hide">Close</button>
-        </dialog>
+            <h3>{computeGuidelineTitle(guideline)}</h3>
+            <p>More information about this guideline is available:</p>
+            <ul>
+              <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${guideline.id}/`}>{computeGuidelineTitle(guideline)}</a></li>
+            </ul>
+            <button autofocus type="button" popovertarget={`popover-${guideline.id}`} popovertargetaction="hide">Close</button>
+          </dialog>
           <EntryText entry={guideline} />
           {guideline.data.provisions.map((provision) => (
             <section
@@ -55,7 +55,6 @@ import EntryText from "./EntryText.astro";
                   <li><a href="#">Open issues</a></li>
                 </ul>
                 <button autofocus type="button" popovertarget={`popover-${provision.id}`} popovertargetaction="hide">Close</button>
-              
               </dialog>
               <EntryText entry={provision} />
             </section>
