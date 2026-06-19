@@ -4,8 +4,10 @@ import {
   computeProvisionTypeLabel,
   groupsTree,
 } from "@/lib/guidelines";
+import { informativeSlug } from "@/lib/constants";
 
 import EntryText from "./EntryText.astro";
+
 ---
 
 {
@@ -14,7 +16,21 @@ import EntryText from "./EntryText.astro";
       <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
-          <h4>{computeGuidelineTitle(guideline)}</h4>
+          <h4>{computeGuidelineTitle(guideline)}
+            <button  popovertarget={`popover-${guideline.id}`} class="infobutton" aria-label={`More about ${computeGuidelineTitle(guideline)}`}>
+              <svg aria-hidden="true" class="i-info">
+                <use xlink:href="img/icons.svg#i-info" />
+              </svg>
+            </button>
+          </h4>
+          <dialog popover id={`popover-${guideline.id}`}>
+            <h3>{computeGuidelineTitle(guideline)}</h3>
+            <p>More information about this guideline is available:</p>
+            <ul>
+              <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${guideline.id}/`}>{computeGuidelineTitle(guideline)}</a></li>
+            </ul>
+            <button autofocus type="button" popovertarget={`popover-${guideline.id}`} popovertargetaction="hide">Close</button>
+          </dialog>
           <EntryText entry={guideline} />
           {guideline.data.provisions.map((provision) => (
             <section
@@ -23,7 +39,23 @@ import EntryText from "./EntryText.astro";
               data-requirement-type-label={computeProvisionTypeLabel(provision)}
               data-skip={provision.skippable}
             >
-              <h5>{computeGuidelineTitle(provision)}</h5>
+              <h5>{computeGuidelineTitle(provision)}
+                <button popovertarget={`popover-${provision.id}`} class="infobutton" aria-label={`More about ${computeGuidelineTitle(provision)}`}>
+                  <svg aria-hidden="true" class="i-info">
+                    <use xlink:href="img/icons.svg#i-info" />
+                  </svg>
+                </button>
+              </h5>
+              <dialog popover id={`popover-${provision.id}`}>
+                <h3>{computeGuidelineTitle(provision)}</h3>
+                <p>More information about this provision is available:</p>
+                <ul>
+                  <li><a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>Documentation for “{computeGuidelineTitle(provision)}”</a></li>
+                  <li><a href="#">Tests</a></li>
+                  <li><a href="#">Open issues</a></li>
+                </ul>
+                <button autofocus type="button" popovertarget={`popover-${provision.id}`} popovertargetaction="hide">Close</button>
+              </dialog>
               <EntryText entry={provision} />
             </section>
           ))}
