@@ -31,7 +31,7 @@ export default defineConfig({
       handlers: { ...defListHastHandlers },
     },
     shikiConfig: {
-      theme: 'github-light-high-contrast',
+      theme: "github-light-high-contrast",
     },
   },
   experimental: {
