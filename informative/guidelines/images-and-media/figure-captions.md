@@ -1,3 +1,3 @@
 ## User needs
 
-* [TODO] I need persistent captions (figure captions) on images and other figures (whether the image contains text, graphic information, or both) Information that describes its reason/purpose for being in the content or provenance.
+* As a person with a cognitive disability or memory impairment, I need images and other figures to have persistent captions that explain why the image or figure is included in the content.
