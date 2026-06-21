@@ -5,6 +5,7 @@ ATAG
 CIE
 COGA
 CVD
+DTMF
 FTE
 ICT
 NOAA
@@ -15,6 +16,7 @@ WAI
 WCAG
 
 # Proper names
+Alexa
 Brajnik
 Connor
 Lauriat
@@ -23,6 +25,8 @@ Spellman
 Yesilada
 
 # Words
+autoplay
+chatbot
 dyscalculia
 earcon
 earcons
@@ -36,7 +40,10 @@ numeronyms
 oxymorons
 personalizable
 scriptable
+signifier
+strikethrough
 strobing
+zoomable
 
 # Intentional compound words
 # (since useCompoundWords is too permissive)
