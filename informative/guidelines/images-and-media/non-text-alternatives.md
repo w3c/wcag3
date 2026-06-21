@@ -1,7 +1,9 @@
 ## User needs
 
-* As a user, I need text alternatives defined and where they are not defined, I need them to be automatically added by the user agent or by automatic author (AI as an example).
-* [TODO] I need help understanding non-operable symbols (not AAC) in content (ex: keys, legends, required fields indicated by, ! to call out important information, etc.)
-* [TODO] I need help understanding non-operable symbols (not AAC) in content (ex: keys, legends, required fields indicated by, ! to call out important information, etc.)
-* [TODO] I need to understand the message being conveyed in a data visualization.
-* [TODO] I need to find information in a data visualization to complete a task or answer a question.
+* As a person who is blind or deafblind, I need text alternatives for non-text content and, if author-provided alternatives are unavailable, for them to be generated automatically (for example, by artificial intelligence).
+* As a person with a cognitive or learning disability, I need help understanding the meaning of non-interactive symbols, such as legends, required field indicators and visual cues used to convey important information and status.
+*  As a person who is deaf or hard of hearing, I need access to auditory content through transcripts in a different language than that of the media.
+* As a person who is deaf or hard of hearing, I need to know when there is a change in language in transcripts of audio or video content.
+* As a person with low vision I need to have access to text descriptions of video content.
+* As a person who relies on media alternatives, I need a way to find audio or video content that includes the alternatives I need, such as captions and transcripts.
+* As a person who is blind or has low vision, I need access to a transcript of synchronized media when audio description is unavailable or when a text-based format works better for me.
