@@ -13,7 +13,8 @@ For each :term[custom keyboard command] that works on a page/view:
 2. Check that the documentation is available from the page/view.
 
 **Expected results**
-- #1 and #2 are true.
+- #1 is true.
+- #2 or #3 is true.
 :::
 
 :::actrules
