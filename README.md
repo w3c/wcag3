@@ -13,7 +13,7 @@ Editor's drafts of TR space documents are available at:
 
 ## Local Setup
 
-Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v20.
+Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v24.
 
 If you use [`fnm`](https://github.com/Schniz/fnm) or [`nvm`](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions,
 you can switch to the recommended version by typing `fnm use` or `nvm use`
