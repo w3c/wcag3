@@ -110,16 +110,6 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
         });
-      } else if (isGuideline && node.name === "actrules") {
-        expectGuidelineFileType(file, "provision", "actrules");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "actrules" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>ACT Rules</summary><p><em>This section is non-normative.</em></p>",
-        });
       } else if (isGuideline && node.name === "applies-when") {
         expectGuidelineFileType(file, "provision", ":::applies-when");
 
