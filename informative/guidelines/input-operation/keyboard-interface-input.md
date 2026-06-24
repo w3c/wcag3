@@ -13,9 +13,10 @@
 * As a person who is blind or has low vision, or a motor disability, I need my choice of keyboard to be fully supported. 
 * As a person who is blind or has low vision, or a motor disability, I need to be able to skip repetitive navigation when using a keyboard.
 * As a person who is blind or has low vision, or a motor disability, I need to be able to quickly navigate an interface using keyboard shortcuts. 
-* As a person who has low vision, I need keyboard functionality to work regardless of the viewport I'm using. 
+* [TODO]If I implement a keyboard device within my site/app, that control must respond correctly to standard keyboard commands.
 * As a person who is blind or has low vision, or a cognitive or learning disability, I need to be informed before my keyboard actions trigger a change in context.
 * As a person who is blind or has low vision, or a cognitive or learning disability, I need to be informed before my actions trigger an unexpected change in keyboard focus.
+* As a person who has low vision, I need keyboard functionality to work regardless of the viewport I'm using. 
 * As a person who is blind or has low vision, or a motor disability, I need applications to support the keyboard commands I’ve personalized to suit my needs.
 * As a person who is blind or has low vision, or a motor disability, I need the keyboard commands I expect to use to remain available.
 * As a person who is blind or has low vision, or a motor disability, I need keyboard access to every scrollable region so that I can read all of the text within it.
