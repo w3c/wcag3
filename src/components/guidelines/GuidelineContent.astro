@@ -1,0 +1,35 @@
+---
+import { getEntry, type CollectionEntry } from "astro:content";
+
+import { computeGuidelineTitle } from "@/lib/guidelines";
+
+import { silenceWarnings } from "@/lib/informative";
+import { informativeSlug } from "@/lib/constants";
+import { render } from "astro:content";
+
+interface Props {
+  guideline: CollectionEntry<"guidelines">;
+}
+
+const { guideline } = Astro.props;
+
+const informativeGuideline = await silenceWarnings(() =>
+  getEntry("informativeGuidelines", guideline.id)
+);
+const computedTitle = computeGuidelineTitle(guideline);
+const { Content } = await render(guideline);
+---
+
+<h4>
+  {
+    informativeGuideline ? (
+      <a
+        href={`${import.meta.env.BASE_URL}${informativeSlug}/${informativeGuideline.id}/`}
+        set:text={computedTitle}
+      />
+    ) : (
+      computedTitle
+    )
+  }
+</h4>
+<Content />
