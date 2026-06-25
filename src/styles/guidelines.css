@@ -2,6 +2,7 @@ caption {
 	visibility: hidden;
 }
 :not(.head) > details:not(.issue) {
+	clear: both;
 	padding: 1em;
 	color: #404040;
 	border: medium solid #d9d9d9;
@@ -55,11 +56,6 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #404040;
 }
 
-:is(.guideline, .requirement, .body-wrapper) > :is(p, ul, ol) {
-	font-size: 110%;
-	margin-top: 0;
-}
-
 .guideline,
 .guideline .requirement {
 	position: relative;
@@ -74,7 +70,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 
 .guideline h3, .requirement h4, .requirement h5 {
 	width: 100%;
-	margin-bottom: 0;
+	margin-bottom: .5em;
 	margin-top: .4em;
 }
 .guideline h3, .guideline h4 {
@@ -134,7 +130,9 @@ caption {
 .screenshot {
 	width: 400px;
 }
+
 .note {
+	clear: both;
 	overflow: visible !important;
 }
 .marker {
@@ -153,39 +151,34 @@ section {
 }
 
 
-@media (min-width: 768px) { 
-	.guideline .body-wrapper {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-	}
-}
-
 .doclinks {
-	margin-left: 0.2em;
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+	float: right;
+	margin: 0 0 .5em .2em;
+	padding: 5px 10px;
+	max-width: 15em;
+	font-size: 90%;
+	border-radius: 2px;
+	border: 1px solid #ccc;
 }
 
 .doclinks a {
-	display: inline-block;
-	outline: 0;
-	padding: 5px 10px;
-	font-size: 90%;
-	line-height: 1.5;
-	border-radius: 2px;
-	border: 1px solid #ccc;
-	text-decoration: none;
 	color: #333 !important;
 }
 
 .doclinks a:focus, .doclinks a:hover {
 	color: #141414;
-	background-color: #f2f2f2;
-	border-color: #adadad;
 }
 
 .doclinks a:active {
-	outline: 0;
 	background-image: none;
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.doclinks a svg {
+	padding-right: .5em;
 }
 
 svg:not(:root) {
