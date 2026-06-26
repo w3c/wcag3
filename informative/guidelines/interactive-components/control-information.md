@@ -1,7 +1,7 @@
 ## User needs
 
 * As a person with low vision, or a cognitive or learning disability, I need to be able to distinguish interactive text from non-interactive text.
-* As a person with a cognitive or learning disability, I need to be able to identify different tabs and understand which content each one contains.
+* As a person using a screen reader, I need to be able to identify tabs, tab content and how they are related.
 * As a person with a cognitive or learning disability, I need to be able to easily locate controls for sorting and filtering results.
 * As a person who is blind, or has a cognitive or learning disability, I need to understand the purpose of each control from its name and contextual help alone.
 * As a person with a cognitive or learning disability, I need to be able to recognize the same control across devices and technologies, including assistive technologies.
