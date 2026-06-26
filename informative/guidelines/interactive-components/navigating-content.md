@@ -1,13 +1,12 @@
 ## User needs
 
-* [TODO] As a low-vision user, I need to be able to click (drag-off) and release a control in order to set the (visible) focus on an element, so that I can navigate with the keyboard from that point.
-* [TODO] As a person who uses screen magnification software and only can view a portion of the viewport at once, I need focus (point of regard) not to move or I need help getting back to where I was after focus is shifted. (Restoration of focus).  When focus is moved, the viewport moves to show the focus location.
-* [TODO] I need to know where I am (tracking)[Example: in a multi-step process, page, page section]
-* [TODO] I need Consistent reading order.
-* [TODO] I need Consistent focus order.
-* As a user of an assistive technology who uses alternative ways to present points of regard (i.e. virtual cursor), the content and interactions are presented to me in a logical order.
-* As a user of an assistive technology, content that is hidden is presented to me in a logical order.
-* [TODO] I need to return to my point of regard or focus when I undo a temporary change of view to the content.
-* [TODO] I need to navigate content efficiently.
-* * As a person who uses screen magnification software and only can view a portion of the viewport at once, I need focus (point of regard) not to move or need help getting back to where I was after focus is shifted.
-* [TODO] I need help finding a control.
+* As a person with low vision, I need to be able to set visible focus on an element using a pointing device so that I can continue navigating from that point using the keyboard.
+* [TODO] As a person who uses screen magnification software, I need focus to remain where I expect it or to be able to easily return to my previous location after focus moves so that I do not lose my place when the viewport follows focus.
+* As a person with low vision, or a cognitive or learning disability, I need to know where I am within a section of content, page, or multi-step process.
+* As a person who is blind or has low vision, or a cognitive or learning disability, I need content to have a consistent reading order.
+* As a person who is blind or has low vision, or a cognitive or learning disability, I need the focus order to consistently match the visual layout and reading order.
+* As a person with a motor disability who uses who uses alternative ways to present points of regard, I need content and interactions to be presented in a logical order.
+* As a person who is blind or has low vision, I need content that becomes available after being hidden to follow a logical order.
+* As a person who is blind, has low vision, or a cognitive or learning disability, I need to be able to return to where I was working after I undo a temporary change to the content view.
+* As a person who is blind, has low vision, or has a motor, cognitive or learning disability, I need to be able to navigate content efficiently.
+* As a person who is blind, has low vision, or has a cognitive or learning disability, I need help finding a control.

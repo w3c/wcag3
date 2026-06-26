@@ -1,21 +1,23 @@
 ## User needs
 
-* [TODO] Users need to identify and distinguish interactive text. Several use cases: link text in a paragraph of text; buttons that look like non-interactive text (except by positioning)
-* [TODO] User can differentiate the tab content and arrangement to understand their relationship.
-* [TODO] User can find options easily to sort or filter through the results.
-* [TODO] I need to understand the purpose of each control from the control name and its contextual help alone.
-* As a user, I need to be able to identify the same control across devices or with different technologies (e.g. with or without AT, different browsers, etc.)
-* As someone with dementia or age-related forgetfulness or processing speed issues, I need to read text and identify/perceive all interactive elements, which requires good contrast and plain backgrounds to support understanding and avoid distraction
-* As someone with low-vision, I need to be able to identify/perceive all interactive elements (e.g., links, buttons, cards, etc)
-* [TODO] I need to understand my options and the tasks I can perform and I can identify the controls I can interact with in order to complete actions.
-* [TODO] I need to understand controls that will alter the order of content (i.e. hamburger menus, drop downs, grid views vs table views, hide content controls, etc).
-* As a user, I need accurate programmatic labels.
-* As a user, I need the states of elements to be communicated accurately.
-* As a user, I need to be able to distinguish controls from other content visually and non-visually.
-* As a user, I need to know when the states of any content have changed.
-* As a person with low vision with visual field loss who looks closely at the screen I need labels and controls to be near each other so I can understand they relate to each other or even exist.
-* [TODO] I need help understanding a control’s purpose.
-* [TODO] I need help understanding which are the controls or actions/that something is a control
+* As a person with low vision, or a cognitive or learning disability, I need to be able to distinguish interactive text from non-interactive text.
+* As a person using a screen reader, I need to be able to identify tabs, tab content and how they are related.
+* As a person with a cognitive or learning disability, I need to be able to easily locate controls for sorting and filtering results.
+* As a person who is blind, or has a cognitive or learning disability, I need to understand the purpose of each control from its name and contextual help alone.
+* As a person with a cognitive or learning disability, I need to be able to recognize the same control across devices and technologies, including assistive technologies.
+* As a person with dementia, age-related forgetfulness, or reduced processing speed, I need interactive elements to have sufficient contrast and plain backgrounds so that I can perceive them and not get distracted.
+* As a person with low vision, I need to be able to identify and perceive all interactive elements.
+* As a person with a cognitive or learning disability, I need to understand what I can do and which controls I can use to complete my tasks.
+* As a person with a cognitive or learning disability, I need to understand controls that change the order, layout, or visibility of content.
+* As a person who uses a screen reader or voice control software, I need programmatic labels to accurately describe interface elements.
+* As a person who is blind, I need the states of interface elements to be communicated accurately.
+* As a person with a cognitive or a learning disability, I need to be able to distinguish controls from other content both visually and non-visually.
+* As a person who is blind, has low vision, or a cognitive or learning disability, I need to know when the state of content changes.
+* As a person with low vision that includes visual field loss, I need labels and controls to be positioned close together so that I can understand their relationship and notice the controls.
+* As a person with a cognitive or learning disability, I need to understand what a control does.
+* As a person with a cognitive or learning disability, I need help understanding which elements I can interact with.
+* As a person with a cognitive or learning disability, I need to understand what each control does.
+* As a person with a cognitive or learning disability, I need to know which elements are controls and which are not.
 
 
 
