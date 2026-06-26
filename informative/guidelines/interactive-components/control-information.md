@@ -16,7 +16,7 @@
 * As a person with low vision that includes visual field loss, I need labels and controls to be positioned close together so that I can understand their relationship and notice the controls.
 * As a person with a cognitive or learning disability, I need to understand what a control does.
 * As a person with a cognitive or learning disability, I need help understanding which elements I can interact with.
-* As a person with a cognitive or learning disability, I need to know how to use all controls and understand what each action does.
+* As a person with a cognitive or learning disability, I need to understand what each control does.
 * As a person with a cognitive or learning disability, I need to know which elements are controls and which are not.
 
 
