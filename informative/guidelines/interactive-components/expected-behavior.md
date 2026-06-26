@@ -2,7 +2,7 @@
 
 * As a person with low vision, or a cognitive or learning disability, I need controls and content to remain where I expect them while I'm using them.
 * As a person who is blind, has low vision, or a motor, cognitive or learning disability, I need to know what pressing keys such as Return, Tab, and Delete will do.
-* As a person with anxiety, I need to know when a pop-up window is going to open so that I do not think I have lost my work.
+* As a person with anxiety, I need to know when a pop-up window is going to open.
 * As a person with a cognitive or learning disability, I need content and interfaces that are familiar to me.
 * As a person with a cognitive or learning disability, I need to recognize which elements I can interact with and understand how to use them.
 * As a person with a cognitive or learning disability, I need what I learn on one screen about the purpose of controls and navigation in a website or application to apply to other screens in the same section of the website or application.
