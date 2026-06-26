@@ -9,7 +9,7 @@
 * As a person with low vision, I need to be able to identify and perceive all interactive elements.
 * As a person with a cognitive or learning disability, I need to understand what I can do and which controls I can use to complete my tasks.
 * As a person with a cognitive or learning disability, I need to understand controls that change the order, layout, or visibility of content.
-* As a person who is blind, I need programmatic labels to accurately describe controls and other interface elements.
+* As a person who uses a screen reader or voice control software, I need programmatic labels to accurately describe interface elements.
 * As a person who is blind, I need the states of interface elements to be communicated accurately.
 * As a person with a cognitive or a learning disability, I need to be able to distinguish controls from other content both visually and non-visually.
 * As a person who is blind, has low vision, or a cognitive or learning disability, I need to know when the state of content changes.
