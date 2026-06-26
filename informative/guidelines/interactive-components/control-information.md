@@ -17,7 +17,7 @@
 * As a person with a cognitive or learning disability, I need to understand what a control does.
 * As a person with a cognitive or learning disability, I need help understanding which elements I can interact with.
 * As a person with a cognitive or learning disability, I need to know how to use all controls and understand what each action does.
-* As a person with a cognitive or learning disability, I need to know which elements are controls and which are not so that I do not try to activate non-interactive elements and think the site is broken.
+* As a person with a cognitive or learning disability, I need to know which elements are controls and which are not.
 
 
 
