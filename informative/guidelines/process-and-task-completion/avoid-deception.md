@@ -1,11 +1,11 @@
 ## User needs
 
-* As a person with low vision or a cognitive disability, I need it to be visually clear which actions are disguised advertisements trying to get me to follow a different path rather than the action that I need to use in order to complete a task.
-* As a user with a cognitive and learning disability, I do not want to be manipulated into doing something I wouldn’t have done because I feel uncomfortable if I don’t do it.
-* As a user with a cognitive and learning disability, I do not want to be lied to about scarcity.
-* As a user with a cognitive and learning disability, I do not want to be lied to or given misinformation.
-* As a person with a cognitive disability, I need to know the true cost of something instead of showing a lower price and only later at the end of the checkout process shows the true cost.
-* As a person with a cognitive disability, if an article or website is partially obscured with a call to action button to view more, it is clearly presented so users don’t click on the fake ad links instead.
-* As a person with a cognitive and learning disability, I need protection from redirection to a site that looks like an expected site.
-* As a person with a cognitive and learning disability, I need sites to not pre-select options when the pre-selected option is meant to influence decision-making.
-* As a person with a disability I need sites to not without or hide information on particular transactions from me.
+* As a person with low vision, or a cognitive or learning disability, I need to be able to distinguish the actions needed to complete my task from actions in misleading advertisements that divert me to a different path.
+* As a person with a cognitive or learning disability, I need to be able to make decisions without being manipulated into doing something I would not otherwise choose.
+* As a person with a cognitive or learning disability, I need information about the scarcity of products to be accurate and not misleading.
+* As a person with a cognitive or learning disability, I need information presented to me to be truthful and accurate.
+* As a person with a cognitive disability, I need to understand the true cost of a purchase up front so that I'm not surprised by additional charges later.
+* As a person with a cognitive or learning disability, I need to be able to distinguish the correct control to continue reading an article or visit a website from controls in misleading advertisements that divert me to a different path.
+* As a person with a cognitive or learning disability, I need to be able to distinguish the website I intend to visit from deceptive websites that imitate it.
+* As a person with a cognitive or learning disability, I need options not to be pre-selected when the purpose of the pre-selection is to influence my decisions.
+* As a person with a cognitive or learning disability, I need websites not to withhold or hide information about transactions from me.
