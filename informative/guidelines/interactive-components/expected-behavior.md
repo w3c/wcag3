@@ -10,5 +10,5 @@
 * As a person with a cognitive or learning disability, I need controls to do what they say they will do.
 * As a person with a cognitive or learning disability, I need controls and interfaces that do not overwhelm or confuse me.
 * As a person with working memory difficulties, visual memory difficulties, or a limited field of vision, I need controls to remain in predictable and familiar locations throughout a critical flow.
-
+* As a person with a cognitive or learning disability, I need the operations of different user interface components to be consistent within a website or application.
 
