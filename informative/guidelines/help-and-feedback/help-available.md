@@ -25,4 +25,5 @@
 * As a person with a cognitive or learning disability, I need to know whether I'm interacting with a human or a computer.
 * As a person with a cognitive or learning disability, I need to be able to consistently identify help mechanisms.
 * As a person who is blind or has a motor, cognitive or learning disability, I need help mechanisms to be presented consistently both visually and programmatically.
+* As a person with a cognitive or learning disability, I need to be able to easily find help at every stage of a multi-step process.
 
