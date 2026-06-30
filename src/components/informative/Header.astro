@@ -1,12 +1,12 @@
 ---
-import { informativeSlug } from "@/lib/constants";
+import { informativeSlug, informativeTitle } from "@/lib/constants";
 ---
 
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-info">
       <div class="minimal-header-title">
-        <a href={`${import.meta.env.BASE_URL}${informativeSlug}/`}>How to meet WCAG 3</a>
+        <a href={`${import.meta.env.BASE_URL}${informativeSlug}/`}>{informativeTitle}</a>
       </div>
     </div>
     <div class="minimal-header-logo">

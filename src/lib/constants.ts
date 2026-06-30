@@ -5,3 +5,4 @@ export const isDevOrPreview = !!import.meta.env.DEV || !!import.meta.env.NETLIFY
 export const isDraft = isDevOrPreview || !!import.meta.env.GITHUB_ACTION;
 
 export const informativeSlug = "informative";
+export const informativeTitle = "WCAG 3 Support Material";
