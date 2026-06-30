@@ -19,11 +19,8 @@
 * As a person with low vision, I need to be able to adjust the presentation of content, including headings and paragraphs.
 * As a person with low vision or a learning disability, I need to be able to control the appearance of text both on screen and in print.
 * As a person with low vision, I need text to have sufficient contrast and size.
-* As a person with low vision, I need to be able to customize the text and background colors across the full range of colors supported by my technology.
-* As a person with low vision, I need to be able to customize the colors of adjacent content and interface elements using the full range of colors supported by my technology.
 * As a person with autism or who experiences eye strain, I need large amounts of text to be presented with more subdued contrast.
 * As a person with dementia, age-related forgetfulness, or reduced processing speed, I need text to have sufficient contrast and a plain background.
-* As a person who is emotionally or cognitively affected by color, I need to be able to reduce my exposure to strong colors while using content.
 * As a person with low vision, I need to be able to complete a process without experiencing excessive visual fatigue.
 * As a person who is color blind or has contrast limitations, I need the ability to control the visual aspects of text, including contrast, colors, fonts, and background.
 * As a person with a cognitive or learning disability, I need the meaning conveyed by unconventional text styling to be clear and easy to understand.
