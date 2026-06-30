@@ -30,4 +30,5 @@
 * As a person with low vision, I need to be able to enhance the appearance of focus indicators.
 * As a person with low vision, I need to be able to enhance the appearance of the cursor.
 * As a person with a vestibular disorder, migraines, or motion sensitivity, I need digital content to respect the reduced motion preference I have enabled on my device or user agent.
+* As a person with a cognitive or learning disability, I need to be able to reduce distractions that are not important or urgent while completing a task.
 
