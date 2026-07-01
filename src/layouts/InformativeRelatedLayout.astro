@@ -9,12 +9,12 @@ import { render } from "astro:content";
 import pluralize from "pluralize";
 
 import ProvisionLink from "@/components/informative/ProvisionLink.astro";
-import { informativeRelatedTypes } from "@/lib/informative";
+import { informativeRelatedTypes, type InformativeRelatedCollection } from "@/lib/informative";
 
 import InformativeLayout from "./InformativeLayout.astro";
 
 interface Props {
-  entry: CollectionEntry<"actRules" | "bestPractices" | "methods">;
+  entry: CollectionEntry<InformativeRelatedCollection>;
 }
 
 const { entry } = Astro.props;
@@ -30,6 +30,7 @@ const singularTitle = pluralize.singular(informativeRelatedType.title);
     informativeRelatedType,
     { slug: entry.id.slice(entry.id.lastIndexOf("/")), title: entry.data.title },
   ]}
+  entry={entry}
   title={entry.data.title}
 >
   <aside class="box">

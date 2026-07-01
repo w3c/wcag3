@@ -1,18 +1,22 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import type { ComponentProps } from "astro/types";
 
 import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
 import DraftBanner from "@/components/informative/DraftBanner.astro";
 import Header from "@/components/informative/Header.astro";
-import WaiFooter from "@/components/informative/WaiFooter.astro";
+import GlobalFooter from "@/components/informative/GlobalFooter.astro";
+import SiteFooter from "@/components/informative/SiteFooter.astro";
+import type { InformativeCollection } from "@/lib/informative";
 
 interface Props {
   breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
+  entry?: CollectionEntry<InformativeCollection>;
   title: string;
   withNav?: boolean;
 }
 
-const { breadcrumbSegments, title, withNav = true } = Astro.props;
+const { breadcrumbSegments, entry, title, withNav = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -47,7 +51,8 @@ const { breadcrumbSegments, title, withNav = true } = Astro.props;
         <slot />
       </main>
     </div>
-    <WaiFooter />
+    <SiteFooter entry={entry} />
+    <GlobalFooter />
   </body>
 </html>
 
