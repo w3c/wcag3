@@ -7,12 +7,17 @@
 import { getCollection } from "astro:content";
 import capitalize from "lodash/capitalize";
 
-import { detectTechnology, informativeRelatedTypes, technologies } from "@/lib/informative";
+import {
+  detectTechnology,
+  informativeRelatedTypes,
+  technologies,
+  type InformativeRelatedCollection,
+} from "@/lib/informative";
 
 import InformativeLayout from "./InformativeLayout.astro";
 
 interface Props {
-  collectionName: "actRules" | "bestPractices" | "methods";
+  collectionName: InformativeRelatedCollection;
 }
 
 const { collectionName } = Astro.props;
@@ -21,7 +26,11 @@ const collection = await getCollection(collectionName);
 const relatedInformativeType = informativeRelatedTypes[collectionName];
 ---
 
-<InformativeLayout breadcrumbSegments={[relatedInformativeType]} title={`All WCAG 3 ${relatedInformativeType.title}`} withNav={false}>
+<InformativeLayout
+  breadcrumbSegments={[relatedInformativeType]}
+  title={`All WCAG 3 ${relatedInformativeType.title}`}
+  withNav={false}
+>
   {
     technologies.map((technology) => (
       <>
