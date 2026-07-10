@@ -4,8 +4,6 @@ provisions:
   - pointer-pressure-not-relied-upon
 ---
 
-TBD
-
 ## Applicability
 
 This rule applies to any interactive content that uses variable pointer pressure to achieve functionality.
