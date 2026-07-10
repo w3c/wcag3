@@ -1,7 +1,7 @@
 ---
-title: Pointer pressure not relied upon
+title: Pointer pressure not relied on
 provisions:
-  - pointer-pressure-not-relied-upon
+  - pointer-pressure-not-relied-on
 ---
 
 ## Applicability
