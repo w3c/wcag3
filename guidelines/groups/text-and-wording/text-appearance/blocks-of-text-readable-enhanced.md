@@ -7,7 +7,7 @@ title: Blocks of text readable (enhanced)
 The default/authored presentation of :term[blocks of text] meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::ednote
-The metrics in the following table are still needs additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
+The metrics in the following table still need additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 <table class="data">
@@ -66,7 +66,7 @@ The metrics in the following table are still needs additional research; the curr
 </table>
 
 :::note
-[Blocks of text readable (minimum)](#blocks-of-text-readable-minimum) and [Text style readable (minimum)](#text-style-readable-minimum) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages. 
+[Blocks of text readable (minimum)](#blocks-of-text-readable-minimum) and [Text style readable (minimum)](#text-style-readable-minimum) are based on common usage, and their adjustable and enhanced counterparts are based on readability research. We need more readability research in these languages.
 :::
 
 :::tests

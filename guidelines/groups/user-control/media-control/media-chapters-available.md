@@ -10,7 +10,7 @@ Audio or video that lasts five minutes or longer can be navigated by chapters.
 :::
 
 :::ednote
-Research is needed to determine the lenght of time that triggers the chapter requirement and whether this threshold varies for different languages. If you are aware of research in this area, please email public-agwg-comments@w3.org.
+Research is needed to determine the length of time that triggers the chapter requirement and whether this threshold varies for different languages. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 :::example

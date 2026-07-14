@@ -11,7 +11,7 @@ The default/authored presentation of :term[blocks of text] meets the correspondi
 :::
 
 :::ednote
-The metrics in the following table needs additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
+The metrics in the following table need additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 <table class="data">

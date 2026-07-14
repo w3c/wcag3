@@ -7,7 +7,7 @@ title: Text style readable (minimum)
 The default/authored presentation of :term[text] style property meets the corresponding values for the :term[content]'s language, or, if the language is not listed in the table, of the language listed with the most similar orthography.
 
 :::ednote
-The metrics in the following table needs additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
+The metrics in the following table need additional research; the current content is an example. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 <table class="data">
