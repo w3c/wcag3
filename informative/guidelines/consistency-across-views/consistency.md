@@ -1,3 +1,11 @@
+## Intent
+
+The intent of this guideline is to help users locate, recognize, and navigate content by providing consistent navigation and, where appropriate, alternative ways to navigate. Consistent structure, navigation order, and navigation labels allow users to apply what they have learned from one page or view to another, reducing the effort required to find information and complete tasks.
+
+People who use screen magnifiers or have a limited field of view benefit from repeated components appearing in the same relative order because they can quickly locate navigation and other frequently used content. 
+
+People with cognitive or learning disabilities benefit from consistent organization and terminology because they do not need to repeatedly learn or interpret different layouts or labels for the same functionality.
+
 ## User needs
 
 * As a person with a cognitive or learning disability, I want to be able to easily cancel a subscription from a predictable location.
