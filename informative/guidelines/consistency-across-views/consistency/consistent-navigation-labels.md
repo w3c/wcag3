@@ -1,1 +1,50 @@
-## Tests
+## In brief
+
+<dl>
+	<dt>Goal</dt>
+	<dd>Actions are more predictable across pages.</dd>
+	<dt>What to do</dt>
+	<dd>Identify repeating functions consistently.</dd>
+	<dt>Why it's important</dt>
+	<dd>Consistently identified actions are especially important to people with disabilities.</dd>
+</dl>
+
+## Intent
+
+The intent of this success criterion is to ensure consistent identification of functional components that appear repeatedly within a set of web pages. A strategy that people who use screen readers use when operating a website is to rely heavily on their familiarity with functions that may appear on different web pages. If identical functions have different labels (or, more generally, a different [accessible name](https://www.w3.org/TR/accname/#dfn-accessible-name)) on different web pages, the site will be considerably more difficult to use. It may also be confusing and increase the cognitive load for people with cognitive limitations. Therefore, consistent labeling will help.
+
+This consistency extends to the text alternatives. If icons or other non-text items have the same functionality, then their text alternatives should be consistent as well.
+
+If there are two components on a web page that both have the same functionality as a component on another page in a set of web pages, then all 3 must be consistent. Hence the two on the same page will be consistent.
+
+While it is desirable and best practice always to be consistent within a single web page, 3.2.4 Consistent Identification only addresses consistency within a set of web pages where something is repeated on more than one page in the set.
+
+## Benefits
+
+- People who learn functionality on one page on a site can find the desired functions on other pages if they are present.
+- When non-text content is used in a consistent way to identify components with the same functionality, people with difficulty reading text or detecting text alternatives can interact with the web without depending on text alternatives.
+- People who depend on text alternatives can have a more predictable experience. They can also search for the component if it has a consistent label on different pages.
+
+## Examples
+
+<dl>
+	<dt>Example 1: Document Icon</dt>
+	<dd>A document icon is used to indicate document download throughout a site. The text alternative for the icon always begins with the word “Download," followed by a shortened form of the document title. Using different text alternatives to identify document names for different documents is a consistent use of text alternatives.</dd>
+	<dt>Example 2: Check Mark</dt>
+	<dd>A check mark icon functions as "approved", on one page but as "included" on another. Since they serve different functions, they have different text alternatives.</dd>
+	<dt>Example 3: Consistent references to other pages</dt>
+	<dd>A website publishes articles on-line. Each article spans multiple web pages and each page contains a link to the first page, the next page and the previous page of the article. If the references to the next page read "page 2", "page 3", "page 4" etcetera, the labels are not the same but they are consistent. Therefore, these references are not failures of this success criterion.</dd>
+	<dt>Example 4: Icons with similar functions</dt>
+	<dd>An e-commerce application uses a printer icon that allows the user to print receipts and invoices. In one part of the application, the printer icon is labeled "Print receipt" and is used to print receipts, while in another part it is labeled "Print invoice" and is used to print invoices. The labeling is consistent ("Print x"), but the labels are different to reflect the different functions of the icons. Therefore, this example does not fail the success criterion.</dd>
+	<dt>Example 5: Save icon</dt>
+	<dd>A common "save" icon is used through out the site where page save function is provided on multiple web pages.</dd>
+	<dt>Example 6: Icon and adjacent link to same destination</dt>
+	<dd>An icon with alt text and a link are next to each other and go to the same location. The best practice would be to group them into one link as per [H2: Combining adjacent image and text links for the same resource](https://www.w3.org/WAI/WCAG22/Techniques/html/H2). However if they are visually positioned one above the other but separated in the source, this may not be possible. To meet the Success Criterion, the link text for these two links need only be consistent, not identical. But best practice is to have identical text so that when users encounter the second one, it is clear that it goes to the same place as the first.</dd>
+	<dt>Example 7: Example of a Failure</dt>
+	<dd>A submit "search" button on one web page and a "find" button on another web page both have a field to enter a term and list topics in the website related to the term submitted. In this case, the buttons have the same functionality but are not labeled consistently.</dd>
+	<dt>Example 8: Failure primarily impacting assistive technology users</dt>
+	<dd>Two buttons with the same functionality visually have the same text, but have been given different <code>aria-label="..."</code> accessible names. For users of assistive technologies, these two buttons will be announced differently and inconsistently.</dd>
+</dl>
+
+## Related resources
+[None]
