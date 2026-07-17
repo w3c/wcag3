@@ -25,7 +25,7 @@ For each target element, the first HTML title element that is a descendant of th
 This page has a title element with content.
 
 ```
-<html>
+<html lang="en">
 	<title>This page has a title</title>
 </html>
 ```
@@ -35,7 +35,7 @@ This page has a title element with content.
 This page has a title element that serves as the title for the page and the iframe since the iframe does not have its own.
 
 ```
-<html>
+<html lang="en">
 	<title>This page gives a title to an iframe</title>
 	<iframe src="/test-assets/sc2-4-2-title-page-without-title.html"></iframe>
 </html>
@@ -46,7 +46,7 @@ This page has a title element that serves as the title for the page and the ifra
 This page has two title elements with content.
 
 ```
-<html>
+<html lang="en">
 	<head>
 		<title>Title of the page.</title>
 	</head>
@@ -61,7 +61,7 @@ This page has two title elements with content.
 This page has one title element with content, which is within the body element.
 
 ```
-<html>
+<html lang="en">
 	<body>
 		<title>Title of the page.</title>
 	</body>
@@ -73,7 +73,7 @@ This page has one title element with content, which is within the body element.
 This page has two title elements and only the first has content.
 
 ```
-<html>
+<html lang="en">
 	<head>
 		<title>Title of the page.</title>
 	</head>
@@ -88,7 +88,7 @@ This page has two title elements and only the first has content.
 This page does not have a title element.
 
 ```
-<html>
+<html lang="en">
 	<h1>this page has no title</h1>
 </html>
 ```
@@ -98,7 +98,7 @@ This page does not have a title element.
 This page has a title element that is empty.
 
 ```
-<html>
+<html lang="en">
 	<title></title>
 </html>
 ```
@@ -108,7 +108,7 @@ This page has a title element that is empty.
 This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page.
 
 ```
-<html>
+<html lang="en">
 	<iframe src="/test-assets/sc2-4-2-title-page-with-title.html"></iframe>
 </html>
 ```
@@ -118,7 +118,7 @@ This page does not have a title element. The title element in the content of the
 This page has two title elements and the first is empty.
 
 ```
-<html>
+<html lang="en">
 	<head>
 		<title></title>
 	</head>
@@ -133,7 +133,7 @@ This page has two title elements and the first is empty.
 This page has a title element that only contains a separator character.
 
 ```
-<html>
+<html lang="en">
 	<title> </title>
 </html>
 ```
