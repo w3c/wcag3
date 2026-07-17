@@ -7,7 +7,7 @@
     "check": "astro check",
     "cspell": "cspell .",
     "preview": "astro preview",
-    "start": "astro dev",
+    "start": "astro dev --force",
     "sync": "astro sync --force",
     "astro": "astro"
   },

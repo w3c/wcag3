@@ -15,6 +15,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
     !tree.children.length ||
     (tree.children.length === 1 && tree.children[0].type === "heading")
   ) {
+    file.data.astro!.frontmatter!.isEmpty = true;
     tree.children.push({
       type: "containerDirective",
       name: "ednote",

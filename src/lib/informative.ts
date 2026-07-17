@@ -2,11 +2,13 @@ import type { GetStaticPaths } from "astro";
 import {
   getCollection,
   getEntry,
+  render,
   type CollectionEntry,
   type CollectionKey,
   type RenderedContent,
 } from "astro:content";
 import { load } from "cheerio";
+import memoize from "lodash/memoize";
 import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
 import pluralize from "pluralize";
@@ -55,9 +57,7 @@ export async function resolveInformativeProvision(id: string) {
   const normativeProvision = await getEntry("provisions", id);
   if (!normativeProvision) throw new Error(`Normative data not found for provision: ${id}`);
 
-  const informativeProvision = await silenceWarnings(() =>
-    getEntry("informativeProvisions", id)
-  );
+  const informativeProvision = await silenceWarnings(() => getEntry("informativeProvisions", id));
   if (!informativeProvision) return null;
   return {
     ...informativeProvision,
@@ -73,7 +73,7 @@ export type InformativeProvision = NonNullable<
  * Returns a list of IDs of groups containing informative content,
  * in the same order presented in the normative guidelines document.
  */
-export async function resolveInformativeGroups() {
+export const resolveInformativeGroups = memoize(async () => {
   const groups: (CollectionEntry<"groups"> & { title: string })[] = [];
   const populatedGroupIds = (await getCollection("informativeGuidelines")).reduce((set, entry) => {
     set.add(entry.id.slice(0, entry.id.indexOf("/")));
@@ -84,48 +84,60 @@ export async function resolveInformativeGroups() {
     if (!populatedGroupIds.has(id)) continue;
     const group = await getEntry("groups", id);
     if (!group) throw new Error(`Unresolvable group ID: ${id}`);
-    groups.push({
-      ...group,
-      title: computeGuidelineTitle(group),
-    });
+
+    // Only include groups that have children with content
+    if ((await resolveInformativeGuidelines(id)).length)
+      groups.push({
+        ...group,
+        title: computeGuidelineTitle(group),
+      });
   }
   return groups;
-}
+});
 
 /**
  * Assembles data for informative documentation of guidelines under the specified group,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeGuidelines(groupId: string) {
+export const resolveInformativeGuidelines = memoize(async (groupId: string) => {
   const group = await getEntry("groups", groupId);
   if (!group) throw new Error(`Normative data not found for group: ${groupId}`);
 
   const guidelines: InformativeGuideline[] = [];
   for (const guidelineSlug of group.data.children) {
     const informativeGuideline = await resolveInformativeGuideline(`${groupId}/${guidelineSlug}`);
-    if (informativeGuideline) guidelines.push(informativeGuideline);
+    if (informativeGuideline) {
+      // Only include guidelines with content, or that have child provisions with content
+      const { remarkPluginFrontmatter } = await render(informativeGuideline);
+      if (
+        !remarkPluginFrontmatter.isEmpty ||
+        (await resolveInformativeProvisions(informativeGuideline.id)).length
+      )
+        guidelines.push(informativeGuideline);
+    }
   }
   return guidelines;
-}
+});
 
 /**
  * Assembles data for informative documentation of provisions under the specified guideline,
  * including relevant details from normative data e.g. child order and title overrides.
  */
-export async function resolveInformativeProvisions(guidelineId: string) {
+export const resolveInformativeProvisions = memoize(async (guidelineId: string) => {
   const normativeGuideline = await getEntry("guidelines", guidelineId);
   if (!normativeGuideline)
     throw new Error(`Normative data not found for guideline: ${guidelineId}`);
 
   const provisions: InformativeProvision[] = [];
   for (const provisionSlug of normativeGuideline.data.children) {
-    const informativeEntry = await resolveInformativeProvision(
-      `${guidelineId}/${provisionSlug}`
-    );
-    if (informativeEntry) provisions.push(informativeEntry);
+    const informativeEntry = await resolveInformativeProvision(`${guidelineId}/${provisionSlug}`);
+    if (informativeEntry) {
+      const { remarkPluginFrontmatter } = await render(informativeEntry);
+      if (!remarkPluginFrontmatter.isEmpty) provisions.push(informativeEntry);
+    }
   }
   return provisions;
-}
+});
 
 /** Formats normative content for inclusion within an informative page. */
 export function formatNormativeContent(rendered: RenderedContent) {
