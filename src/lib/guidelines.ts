@@ -136,7 +136,7 @@ export const computeGuidelineTitle = (entry: EntryWithTitle) =>
   computeTitle(entry, { capitalize: true });
 
 /** Returns a provision's issue label as it should be formatted in the GitHub repository. */
-export const computeProvisionIssueLabel = (entry: CollectionEntry<"requirements">) =>
+export const computeProvisionIssueLabel = (entry: CollectionEntry<"provisions">) =>
   `P - ${capitalize(entry.data.issueLabel) || computeGuidelineTitle(entry).replace(/,/g, "")}`;
 
 /**
