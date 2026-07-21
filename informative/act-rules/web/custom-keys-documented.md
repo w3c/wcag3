@@ -76,7 +76,13 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is visually documented but not programmatically determinable.
 
-[Failed example 2](https://cdpn.io/pen/debug/emdNWRZ/6ceb5de85415f41a857f448761e17625)
+<a href="examples/failed/not-programmatically-determinable/" target="_blank">Open <b>failed example 2</b> in new tab</a>
+
+::act-example-code[failed/not-programmatically-determinable/index.html#markup]
+
+The visible documentation is achieved using CSS techniques in which the conveyed meaning is not programmatically determinable:
+
+::act-example-code[failed/not-programmatically-determinable/index.html#styles]{lang=css}
 
 #### Failed example 3
 
