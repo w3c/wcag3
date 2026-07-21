@@ -50,7 +50,17 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented in a "Help" dialog on the same page.
 
-[Passed example 3](https://cdpn.io/pen/debug/jEMPmbo/aa609131893aeb780d6ae8dec937ad5a)
+<a href="examples/passed/help-dialog/" target="_blank">Open <b>passed example 3</b> in new tab</a>
+
+::act-example-code[passed/help-dialog/index.html]
+
+#### Passed example 4
+
+A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented in a “Help” dialog on the same page, which can be opened using a documented custom keyboard command of ? (question mark).
+
+<a href="examples/passed/help-dialog-shortcut/" target="_blank">Open <b>passed example 4</b> in new tab</a>
+
+::act-example-code[passed/help-dialog-shortcut/index.html]
 
 ### Failed
 
