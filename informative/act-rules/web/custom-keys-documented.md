@@ -68,7 +68,9 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is not documented.
 
-[Failed example 1](https://cdpn.io/pen/debug/NPRWwQz/5c356df52c39edfb01b9ed818a4978be)
+<a href="examples/failed/no-documentation/" target="_blank">Open <b>failed example 1</b> in new tab</a>
+
+::act-example-code[failed/no-documentation/index.html]
 
 #### Failed example 2
 
