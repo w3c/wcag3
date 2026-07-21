@@ -16,43 +16,59 @@ The custom keyboard command is documented, and programmatically and visually ava
 
 ## Examples
 
-### Passed example 1
+### Shared assets
+
+Several examples use the following Javascript.
+
+#### `keyboard-shortcuts.js`
+
+::act-example-code[assets/keyboard-shortcuts.js]
+
+### Passed
+
+#### Passed example 1
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented as programmatically related description text for the input.
 
-[Passed example 1](https://cdpn.io/pen/debug/dPpyVZQ/508d2feff6fba738c4a825c54d8cb94c)
+<a href="examples/passed/related-hint-text/" target="_blank">Open <b>passed example 1</b> in new tab</a>
 
-### Passed example 2
+::act-example-code[passed/related-hint-text/index.html]
+
+#### Passed example 2
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented on a linked "Help" page.
 
 [Passed example 2](https://cdpn.io/pen/debug/NPRqpVE/8f986544250fe7aeb8a735b9f360aa55)
 
-### Passed example 3
+#### Passed example 3
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented in a "Help" dialog on the same page.
 
 [Passed example 3](https://cdpn.io/pen/debug/jEMPmbo/aa609131893aeb780d6ae8dec937ad5a)
 
-### Failed example 1
+### Failed
+
+#### Failed example 1
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is not documented.
 
 [Failed example 1](https://cdpn.io/pen/debug/NPRWwQz/5c356df52c39edfb01b9ed818a4978be)
 
-### Failed example 2
+#### Failed example 2
 
 A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is visually documented but not programmatically determinable.
 
 [Failed example 2](https://cdpn.io/pen/debug/emdNWRZ/6ceb5de85415f41a857f448761e17625)
 
-### Failed example 3
+#### Failed example 3
 
 A search input can be focused using a custom keyboard command of s. This custom keyboard command is not documented. As a red herring, a custom keyboard command of / (forward slash) is documented, but does nothing.
 
 [Failed example 3](https://cdpn.io/pen/debug/jEMPwvL/06f138a6e48b1f8bd3fc93b6fc341160)
 
-### Inapplicable example 1
+### Inapplicable
+
+#### Inapplicable example 1
 
 A button reveals a tooltip of "Press Space to activate" on focus and hover. The documentation is not necessary since it is describing a standard platform keyboard command.
 
