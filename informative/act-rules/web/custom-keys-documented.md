@@ -88,7 +88,17 @@ The visible documentation is achieved using CSS techniques in which the conveyed
 
 A search input can be focused using a custom keyboard command of s. This custom keyboard command is not documented. As a red herring, a custom keyboard command of / (forward slash) is documented, but does nothing.
 
-[Failed example 3](https://cdpn.io/pen/debug/jEMPwvL/06f138a6e48b1f8bd3fc93b6fc341160)
+<a href="examples/failed/wrong-hint-text/" target="_blank">Open <b>failed example 3</b> in new tab</a>
+
+::act-example-code[failed/wrong-hint-text/index.html]
+
+#### Failed example 4
+
+A search input can be focused using a custom keyboard command of / (forward slash). This custom keyboard command is documented with the input’s `placeholder` attribute, which is not reliably programmatically determinable.
+
+<a href="examples/failed/placeholder-hint-text/" target="_blank">Open <b>failed example 4</b> in new tab</a>
+
+::act-example-code[failed/placeholder-hint-text/index.html]
 
 ### Inapplicable
 
@@ -96,4 +106,6 @@ A search input can be focused using a custom keyboard command of s. This custom 
 
 A button reveals a tooltip of "Press Space to activate" on focus and hover. The documentation is not necessary since it is describing a standard platform keyboard command.
 
-[Inapplicable example 1](https://cdpn.io/pen/debug/MYjwmrK/48bed407ee26b415885c0b7cd1a35d66)
+<a href="examples/inapplicable/unnecessary-documentation/" target="_blank">Open <b>inapplicable example 1</b> in new tab</a>
+
+::act-example-code[inapplicable/unnecessary-documentation/index.html]
