@@ -92,12 +92,6 @@ function extractCodeRef(raw: string, filePath: string, file: VFile, ref?: string
   file.fail(`No matching </${tagName}> found in: ${filePath}`);
 }
 
-const extLangs: Record<string, string> = {
-  ".html": "html",
-  ".js": "javascript",
-  ".css": "css",
-};
-
 const actExampleCode: RemarkPlugin = () => (tree, file) => {
   if (!isInformativeFile(file)) return;
 
@@ -120,8 +114,7 @@ const actExampleCode: RemarkPlugin = () => (tree, file) => {
     }
 
     const ext = extname(label);
-    const defaultLang = extLangs[ext] || ext.slice(1);
-    const lang = node.attributes?.lang || defaultLang;
+    const lang = node.attributes?.lang || ext.slice(1);
 
     const raw = readFileSync(filePath, "utf-8");
     const content = ext === ".html" ? extractCodeRef(raw, filePath, file, ref) : raw;
