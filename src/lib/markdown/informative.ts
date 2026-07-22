@@ -29,6 +29,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
   }
 };
 
+/** Attempts to resolve an example file from the equivalent public/ subdirectory. */
 function resolveExamplePath(file: VFile, label: string): string | undefined {
   const rule = basename(file.basename || "", ".md");
   const relativeDir = (file.dirname || file.cwd).slice(file.cwd.length + 1);
@@ -37,11 +38,12 @@ function resolveExamplePath(file: VFile, label: string): string | undefined {
   return existsSync(filePath) ? filePath : undefined;
 }
 
+/** Removes excess indentation common across all non-empty lines. */
 function dedent(text: string): string {
   const lines = text.split("\n");
-  const indents = lines.filter(l => l.trim()).map(l => l.match(/^( *)/)![1].length);
+  const indents = lines.filter((l) => l.trim()).map((l) => l.match(/^( *)/)![1].length);
   const min = Math.min(...indents);
-  return min > 0 ? lines.map(l => l.slice(min)).join("\n") : text;
+  return min > 0 ? lines.map((l) => l.slice(min)).join("\n") : text;
 }
 
 function extractCodeRef(raw: string, filePath: string, file: VFile, ref?: string): string | undefined {
