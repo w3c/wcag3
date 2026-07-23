@@ -27,5 +27,5 @@ ways to:
 
 **We need help from people with expertise in non-Latin scripts and languages.** For example, the Text Appearance guideline includes provisions on line height and spacing, and these provisions need to work for Latin-based and non-Latin-based scripts and languages. 
 
-We are updating the [WCAG 3 wiki on evidence and research needed](https://github.com/w3c/wcag3/wiki/Evidence-and-Research-Needed#) to include specific areas we need to work through to ensure that the Text Appearance provisions meet the needs of users with disabilities. If you are aware of research in this area and/or would like to partner with us on this work, please contact kevin@w3.org.
+We are updating the [WCAG 3 wiki on evidence and research needed](https://github.com/w3c/wcag3/wiki/Evidence-and-Research-Needed#) to include specific areas we need to work through to ensure that the Text Appearance provisions meet the needs of users with disabilities. If you are aware of research in this area and/or would like to partner with us on this work, please email public-agwg-comments@w3.org.
 :::
