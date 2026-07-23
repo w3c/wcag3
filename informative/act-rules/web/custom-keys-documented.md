@@ -20,7 +20,7 @@ The custom keyboard command is documented, and programmatically and visually ava
 
 Several examples use the following Javascript.
 
-#### `keyboard-shortcuts.js`
+#### [`keyboard-shortcuts.js`](examples/assets/keyboard-shortcuts.js)
 
 ::act-example-code[assets/keyboard-shortcuts.js]
 
