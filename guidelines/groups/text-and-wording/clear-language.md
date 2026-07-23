@@ -26,5 +26,5 @@ See also: [Structure](#structure) as these guidelines are closely related.
 :::
 
 :::ednote
-To ensure this guideline works well across different languages, we are working with W3C's Global Inclusion community group, the Internationalization (i18n) task force, and others to review and refine the testing and techniques for these provisions. If you are aware of any readability guidance for your language or region, particularly for languages other than English, please contact kevin@w3.org.
+To ensure this guideline works well across different languages, we are working with W3C's Global Inclusion community group, the Internationalization (i18n) task force, and others to review and refine the testing and techniques for these provisions. If you are aware of any readability guidance for your language or region, particularly for languages other than English, please email public-agwg-comments@w3.org.
 :::
