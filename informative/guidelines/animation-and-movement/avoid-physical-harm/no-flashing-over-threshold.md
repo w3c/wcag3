@@ -2,7 +2,7 @@
 
 Some people with seizure disorders can have a seizure triggered by flashing visual content. Most people are unaware that they have this disorder until it strikes. In 1997, a cartoon on television in Japan sent over 700 children to the hospital, including about 500 who had seizures. Warnings do not work well because they are often missed, especially by children who may in fact not be able to read them.
 
-The objective of this requirement is to ensure that content avoids the types of flash that are most likely to cause seizure when viewed even for a second or two.
+The objective of this requirement is to ensure that content avoids the types of flash that are most likely to cause seizures when viewed even for a second or two.
 
 ### Method(s)
 * Consider if :term[flashing] is :term[essential] and, if it is not, refrain from including it.
