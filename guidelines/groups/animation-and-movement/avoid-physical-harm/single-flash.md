@@ -15,6 +15,10 @@ Content does not include a change of contrast (over 4.5:1) going from light to d
 This is a new provision for a big, intense, single on/off flash. This is reported as a trigger by group members, but we need data on this, and a definition that includes size/intensity to avoid including non-triggers such as menus.
 :::
 
+:::ednote 
+This provision relies on the color contrast algorithm in WCAG 2. When the algorithm is updated for WCAG 3, the contrast metric will also be updated.
+:::
+
 :::ednote
 <b>Method(s)</b>
 * Design content without large changes of contrast. For example, when a menu with a light background is opened, it opens over a light background. Videos do not go from a dark to light background in less than a second.
