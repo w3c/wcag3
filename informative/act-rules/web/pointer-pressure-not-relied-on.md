@@ -24,7 +24,7 @@ A paint app uses stylus pointer pressure to reflect ink flow to canvas. Because 
 A piano app uses pointer pressure to emulate how hard keys are pressed. Because the app is simulating a physical musical instrument, variable pressure is essential to the functionality.
 
 ### Failed example 1
-A click and point app uses hard pointer pressure as an undo or cancel action, and provides no alternate way to achieve the same outcome.
+A point and click app uses hard pointer pressure as an undo or cancel action, and provides no alternate way to achieve the same outcome.
 
 ### Inapplicable example 1
 An interface uses “point and click” where the pressure applied to the mouse button does not affect the outcome.
