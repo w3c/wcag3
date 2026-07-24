@@ -30,8 +30,8 @@ While it is desirable and best practice always to be consistent within a single 
 <dl>
 	<dt>Example 1: Document Icon</dt>
 	<dd>A document icon is used to indicate document download throughout a site. The text alternative for the icon always begins with the word “Download," followed by a shortened form of the document title. Using different text alternatives to identify document names for different documents is a consistent use of text alternatives.</dd>
-	<dt>Example 2: Check Mark</dt>
-	<dd>A check mark icon functions as "approved", on one page but as "included" on another. Since they serve different functions, they have different text alternatives.</dd>
+	<dt>Example 2: Check mark toggle</dt>
+	<dd>A toggle control uses a check mark icon. The toggle is used in different contexts, and has different accessible names: on one page, it has a text alternative of "approved", while on another page it has a text alternative of "included". Since the toggles serve different functions, they can have different text alternatives.</dd>
 	<dt>Example 3: Consistent references to other pages</dt>
 	<dd>A website publishes articles on-line. Each article spans multiple web pages and each page contains a link to the first page, the next page and the previous page of the article. If the references to the next page read "page 2", "page 3", "page 4" etcetera, the labels are not the same but they are consistent. Therefore, these references are not failures of this success criterion.</dd>
 	<dt>Example 4: Icons with similar functions</dt>
