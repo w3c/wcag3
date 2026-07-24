@@ -5,7 +5,7 @@ type: supplemental
 title: Text style readable (enhanced)
 ---
 
-The default/authored presentation of :term[text] style properties meets the enhanced @@[X values, to be determined] for:
+The default/authored presentation of :term[text] style properties meets the enhanced @@ [values to be determined] for:
 * Typeface
 * Font size
 * Font width
