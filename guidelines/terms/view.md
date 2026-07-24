@@ -6,8 +6,8 @@ synonyms:
 
 :term[content] that is :term[actively available] in a :term[viewport] including that which can be scrolled, zoomed or panned to, and any additional content that is conditionally shown while leaving the rest of the content in the viewport actively available 
 
-:::note
-"Conditionally shown content" is content that appears based on conditions including, but not limited to, user interaction, changes in application state, changes in viewport size, or changes in screen orientation.
+:::example
+"Conditionally shown content" could include content that is shown after user interaction, changes in application state, changes in viewport size, or changes in screen orientation.
 :::
 
 :::example
