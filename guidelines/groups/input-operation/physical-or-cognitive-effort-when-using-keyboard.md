@@ -1,7 +1,7 @@
 ---
 children:
   - navigation-keys-described
-  - no-repetitive-adjacent-interactive-elements
+  - no-repetitive-links
   - keyboard-effort-comparable
 ---
 
