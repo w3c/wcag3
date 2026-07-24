@@ -11,7 +11,7 @@ synonyms:
 :::
 
 :::example
-Content that would be part of the same view could include non-modal dialogs, expanding paragraphs or sections, tooltips, "toast" notifications, fold out menus, frames in a video, and inline error messages, as they leave other content actively available, as well as nested content, including nested `iframe`s. 
+Content that would be part of the same view could include non-modal dialogs, expanding paragraphs or sections, tooltips, "toast" notifications, fold out menus, frames in a video, and inline error messages, as they leave other content actively available, as well as nested content, including nested iframes. 
 
 Content that constitutes a new view includes modal dialogs, because the other content in the viewport is no longer actively available. On the web, navigating to a different page rather than within one, also constitutes a new view. 
 ::: 
