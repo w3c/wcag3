@@ -164,7 +164,7 @@ export const server = {
           })
         );
         // Update title and issueLabel in groups/{group}/{guideline}/{provision}.md if applicable
-        await updateYamlFrontmatter<"requirements">(join(normativeBase, `${id}.md`), (data) => {
+        await updateYamlFrontmatter<"provisions">(join(normativeBase, `${id}.md`), (data) => {
           const updatedData = setOrUnsetTitle(data);
           if (!updatedData.issueLabel) updatedData.issueLabel = computeGuidelineTitle(entry);
           return updatedData;
