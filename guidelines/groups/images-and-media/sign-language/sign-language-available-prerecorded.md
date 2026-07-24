@@ -10,3 +10,7 @@ title: Sign language available (prerecorded)
 - The audio content is an alternative for visual content and clearly labelled as such.
 - The audio content is decorative background sound.
 :::
+
+:::example
+Audio description is an example of audio content that is an alternative for visial content.
+:::
