@@ -91,16 +91,6 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
         });
-      } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "provision", ":::tests");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "tests" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
-        });
       } else if (isGuideline && node.name === "applies-when") {
         expectGuidelineFileType(file, "provision", ":::applies-when");
         expectDirectiveWithUnorderedList(file, node);

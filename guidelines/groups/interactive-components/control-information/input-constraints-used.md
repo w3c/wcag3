@@ -12,14 +12,3 @@ Methods &amp; best practices
 
 Best practice: the constraints remain persistent
 :::
-
-:::tests
-**Procedure**
-
-For each input:
-1. Confirm it has a visual information that describes the constraint.
-2. Inspect the code and accessibility tree (when applicable) and confirm that the constraint is programmatically listed in the code and associated with the input.
-
-**Expected results**
-- #1 and #2 are true.
-:::

@@ -9,13 +9,3 @@ title: Path-based gesture not relied on
 :::except-when
 - A path-based gesture is :term[essential] to the functionality.
 :::
-
-:::tests
-**Procedure**
-
-For each path-based gesture:
-1. Check that the functionality is available without a path-based gesture.
-
-**Expected results**
-- #1 is true.
-:::

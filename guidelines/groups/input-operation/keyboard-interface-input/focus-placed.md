@@ -18,13 +18,3 @@ Method: When removing interactive elements such as filters, dialogs, or popups t
 
 Best Practice: Conduct usability testing with screen reader users to evaluate the focus movement. 
 :::
-
-:::tests
-**Procedure**
-
-For each situation where elements that have or contain keyboard focus are removed:
-1. Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location.
-
-**Expected results**
-- #1 is true for each situation.
-:::
