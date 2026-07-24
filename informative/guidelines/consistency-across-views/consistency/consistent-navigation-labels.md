@@ -34,8 +34,8 @@ While it is desirable and best practice always to be consistent within a single 
 	<dd>A toggle control uses a check mark icon. The toggle is used in different contexts, and has different accessible names: on one page, it has a text alternative of "approved", while on another page it has a text alternative of "included". Since the toggles serve different functions, they can have different text alternatives.</dd>
 	<dt>Example 3: Consistent references to other pages</dt>
 	<dd>A website publishes articles on-line. Each article spans multiple web pages and each page contains a link to the first page, the next page and the previous page of the article. If the references to the next page read "page 2", "page 3", "page 4" etcetera, the labels are not the same but they are consistent. Therefore, these references are not failures of this success criterion.</dd>
-	<dt>Example 4: Icons with similar functions</dt>
-	<dd>An e-commerce application uses a printer icon that allows the user to print receipts and invoices. In one part of the application, the printer icon is labeled "Print receipt" and is used to print receipts, while in another part it is labeled "Print invoice" and is used to print invoices. The labeling is consistent ("Print x"), but the labels are different to reflect the different functions of the icons. Therefore, this example does not fail the success criterion.</dd>
+	<dt>Example 4: Icon buttons with similar functions</dt>
+	<dd>An e-commerce application uses a printer icon button that allows the user to print receipts and invoices. In one part of the application, the printer icon button is labeled "Print receipt" and is used to print receipts, while in another part it is labeled "Print invoice" and is used to print invoices. The labeling is consistent ("Print x"), but the labels are different to reflect the different functions of the icons. Therefore, this example does not fail the success criterion.</dd>
 	<dt>Example 5: Save icon</dt>
 	<dd>A common "save" icon is used through out the site where page save function is provided on multiple web pages.</dd>
 	<dt>Example 6: Icon and adjacent link to same destination</dt>
