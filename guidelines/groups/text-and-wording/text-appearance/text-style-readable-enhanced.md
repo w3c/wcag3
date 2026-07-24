@@ -6,7 +6,7 @@ title: Text style readable (enhanced)
 ---
 
 The default/authored presentation of :term[text] style properties meets the enhanced @@[X values, to be determined] for:
-* Font face
+* Typeface
 * Font size
 * Font width
 * Text decoration
