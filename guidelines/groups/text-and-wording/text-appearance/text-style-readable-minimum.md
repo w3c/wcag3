@@ -5,7 +5,7 @@ type: foundational
 title: Text style readable (minimum)
 ---
 
-The default/authored presentation of :term[text] style property meets the minimum @@[X values, to be determined] for:
+The default/authored presentation of :term[text] style property meets the minimum @@ [values to be determined] for:
 * Typeface
 * Font size
 * Font width
