@@ -4,7 +4,7 @@ type: supplemental
 issueLabel: No repetitive links
 ---
 
-The :term[page]/:term[view] does not have adjacent :term[interactive elements] that achieve the same outcome
+Adjacent :term[interactive elements] that achieve the same outcome are not included in the :term[page]/:term[view].
 
 :::except-when
 - That outcome is a form of dismissal.
