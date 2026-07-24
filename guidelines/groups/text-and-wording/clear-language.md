@@ -26,26 +26,5 @@ See also: [Structure](#structure) as these guidelines are closely related.
 :::
 
 :::ednote
-To ensure this guideline works well across different languages,
-members of AGWG, Cognitive and Learning Disabilities Accessibility Task Force (COGA), and internationalization (i18n) agreed on an initial set of languages to pressure-test the guidance.
-
-The five "guardrail" languages are:
-
-- Arabic
-- English
-- Hindi
-- Mandarin 
-- Russian
-
-We started with the six official languages of the United Nations (UN). Then we removed French and Spanish because they are similar to English. We added Hindi because it is the most commonly spoken language that is not on the UN list.
-
-The group of five languages includes a wide variety of language features, such as:
-
-- Right-to-left :term[text] layout
-- Vertical text layout
-- Tonal sounds that affect meaning
-
-This list doesn't include every language, but it helps keep the work manageable while making the guidance more useful for a wide audience.
-
-We will work with W3C's Global Inclusion community group, the Internationalization (i18n) task force, and others to review and refine the testing and techniques for these :term[requirements]. We also plan to create guidance for translating the guidelines into more languages in the future.
+To ensure this guideline works well across different languages, we are working with W3C's Accessibility Internationalization Community Group, the Internationalization (i18n) Working Group, and others to review and refine the testing and techniques for these provisions. If you are aware of any readability guidance for your language or region, particularly for languages other than English, please email public-agwg-comments@w3.org.
 :::
