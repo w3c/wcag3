@@ -1,9 +1,15 @@
 ---
 status: developing
 type: foundational
+title: No visual motion
+github issue: No visual motion
 ---
 
-:term[Content] does not include :term[pseudo-motion] or visual motion lasting longer than 5 seconds.
+:::applies when
+:term[Content] does includes visual motion or :term[pseudo-motion].
+:::
+
+Visual motion lasting longer than 5 seconds.
 
 :::except-when
 - The motion or pseudo-motion is :term[essential].
