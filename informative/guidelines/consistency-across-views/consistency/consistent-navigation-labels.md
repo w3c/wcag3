@@ -28,8 +28,8 @@ While it is desirable and best practice always to be consistent within a single 
 ## Examples
 
 <dl>
-	<dt>Example 1: Document Icon</dt>
-	<dd>A document icon is used to indicate document download throughout a site. The text alternative for the icon always begins with the word “Download," followed by a shortened form of the document title. Using different text alternatives to identify document names for different documents is a consistent use of text alternatives.</dd>
+	<dt>Example 1: Document icon button</dt>
+	<dd>A document icon button is used to indicate document download throughout a site. The text alternative for the icon always begins with the word “Download," followed by a shortened form of the document title. Using different text alternatives to identify document names for different documents is a consistent use of text alternatives.</dd>
 	<dt>Example 2: Check mark toggle</dt>
 	<dd>A toggle control uses a check mark icon. The toggle is used in different contexts, and has different accessible names: on one page, it has a text alternative of "approved", while on another page it has a text alternative of "included". Since the toggles serve different functions, they can have different text alternatives.</dd>
 	<dt>Example 3: Consistent references to other pages</dt>
