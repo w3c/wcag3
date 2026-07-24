@@ -160,13 +160,19 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
-	float: right;
-	margin: 0 0 .5em .2em;
+	margin: 1em;
 	padding: 5px 10px;
-	max-width: 15em;
 	font-size: 90%;
 	border-radius: 2px;
 	border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+	.doclinks {
+		float: right;
+		max-width: 15em;
+		margin: 0 0 .5em .2em;
+	}
 }
 
 .doclinks a {
