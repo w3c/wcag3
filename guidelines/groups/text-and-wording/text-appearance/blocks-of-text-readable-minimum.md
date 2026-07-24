@@ -5,7 +5,7 @@ type: foundational
 title: Blocks of text readable (minimum)
 ---
 
-The default/authored presentation of :term[blocks of text] meets the minimum @@[X values, to be determined] for:
+The default/authored presentation of :term[blocks of text] meets the minimum @@ [values to be determined] for:
 * Inline margin
 * Block margin
 * Line length
