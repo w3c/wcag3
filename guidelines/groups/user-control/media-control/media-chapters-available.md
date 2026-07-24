@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: developing
 type: supplemental
 ---
@@ -8,6 +7,10 @@ Audio or video that lasts five minutes or longer can be navigated by chapters.
 
 :::except-when
 - The media is a piece of music that the composer has not divided into movements.
+:::
+
+:::ednote
+Research is needed to determine the length of time that triggers the chapter requirement and whether this threshold varies for different languages. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 :::example

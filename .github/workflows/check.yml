@@ -1,0 +1,20 @@
+name: Run typecheck and build
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version-file: .nvmrc
+      - name: Install and check
+        run: |
+          npm ci
+          npm run check
+          npm run build

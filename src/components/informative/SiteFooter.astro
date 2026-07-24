@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { exec } from "child_process";
+import { stat } from "fs/promises";
+import { promisify } from "util";
+
+import type { InformativeCollection } from "@/lib/informative";
+
+interface Props {
+  entry?: CollectionEntry<InformativeCollection>;
+}
+
+const { entry } = Astro.props;
+
+const execAsync = promisify(exec);
+
+const getMtime = async (entry: NonNullable<Props["entry"]>) =>
+  import.meta.env.DEV
+    ? (await stat(entry.filePath!)).mtime
+    : new Date(
+        +(await execAsync(`git log -1 --format=%at ${entry.filePath}`)).stdout.trim() * 1000
+      );
+
+const date = entry
+  ? new Intl.DateTimeFormat("en-GB", { dateStyle: "long" }).format(await getMtime(entry))
+  : null;
+---
+
+<footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+  <div class="inner" style="grid-column: 2 / 8">
+    {
+      entry && date && (
+        <p>
+          <strong>Date:</strong> Updated {date}.
+          <a href={`https://github.com/w3c/wcag3/commits/main/${entry.filePath}`}>
+            View this page's revision history.
+          </a>
+        </p>
+      )
+    }
+    <p>
+      <strong>Developed by</strong>
+      <a href="https://www.w3.org/groups/wg/ag/participants"
+        >Accessibility Guidelines Working Group (AG WG) Participants</a
+      >
+      (Co-Chairs: Adam Page, Alastair Campbell, Rachael Bradley Montgomery; W3C Staff Contact: Kevin White).
+    </p>
+  </div>
+</footer>
