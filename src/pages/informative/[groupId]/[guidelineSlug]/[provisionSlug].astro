@@ -59,7 +59,7 @@ const { html, terms } = processKeyTerms(
 const relatedEntries = informativeProvisionSlugRelationMap[provisionSlug!];
 ---
 
-<InformativeLayout title={provision.title} breadcrumbSegments={[guideline, provision]}>
+<InformativeLayout title={provision.title} entry={provision} breadcrumbSegments={[guideline, provision]}>
   <h2>{computeProvisionTypeLabel(provision.normativeEntry)}</h2>
   <Fragment set:html={html} />
   {
