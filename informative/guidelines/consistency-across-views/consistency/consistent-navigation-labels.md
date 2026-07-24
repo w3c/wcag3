@@ -43,7 +43,7 @@ While it is desirable and best practice always to be consistent within a single 
 	<dt>Example 7: Example of a Failure</dt>
 	<dd>A submit "search" button on one web page and a "find" button on another web page both have a field to enter a term and list topics in the website related to the term submitted. In this case, the buttons have the same functionality but are not labeled consistently.</dd>
 	<dt>Example 8: Failure primarily impacting assistive technology users</dt>
-	<dd>Two buttons with the same functionality visually have the same text, but have been given different <code>aria-label="..."</code> accessible names. For users of assistive technologies, these two buttons will be announced differently and inconsistently.</dd>
+	<dd>Two buttons with the same functionality visually have the same text, but have been given different <code>aria-label="..."</code> accessible names that don't match/include the visible text. For users of assistive technologies, these two buttons will be announced differently and inconsistently. Note that this would likely also fail <a href="label-in-name">2.5.3 Label in Name</a>.</dd>
 </dl>
 
 ## Related resources
