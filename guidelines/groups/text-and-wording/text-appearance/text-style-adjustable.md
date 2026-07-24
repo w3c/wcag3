@@ -5,7 +5,7 @@ type: foundational
 ---
 
 The presentation of :term[text] style properties can be adjusted, without loss of content or functionality, to meet the @@[X values, to be determined] for:
-* Font face
+* Typeface
 * Font width
 * Text decoration
 * Capitalization
