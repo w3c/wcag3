@@ -4,7 +4,7 @@ status: developing
 type: foundational
 ---
 
-The presentation of :term[text] style properties can be adjusted, without loss of content or functionality, to meet the @@[X values, to be determined] for:
+The presentation of :term[text] style properties can be adjusted, without loss of content or functionality, to meet the @@ [values to be determined] for:
 * Typeface
 * Font width
 * Text decoration
