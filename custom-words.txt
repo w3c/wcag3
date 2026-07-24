@@ -21,6 +21,9 @@ Lauriat
 ReSpec
 Spellman
 Yesilada
+Detweiler
+Omanson
+Ameritech
 
 # Words
 dyscalculia
