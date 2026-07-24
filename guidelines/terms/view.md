@@ -15,5 +15,5 @@ A modal dialog constitutes a new view, because the other content in the viewport
 
 Non-modal dialogs, expanding paragraphs or sections, tooltips, "toast" notifications, fold out menus, frames in a video, and inline error messages are all part of the same view, as they leave other content actively available. 
 
-Nested views are also part of the same view. For example, on the web, a nested `iframe` does not constitute a new view.
+Nested content is part of the same view. For example, on the web, a nested `iframe` does not constitute a new view.
 :::
