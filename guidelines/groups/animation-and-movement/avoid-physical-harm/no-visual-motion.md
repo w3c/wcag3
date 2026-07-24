@@ -1,34 +1,27 @@
 ---
 status: developing
 type: foundational
-title: No visual motion
-github issue: No visual motion
+title: Limit animation
+issueLabel: No visual motion
 ---
 
 :::applies when
-:term[Content] does includes visual motion or :term[pseudo-motion].
+:term[Content] includes visual motion or :term[blinking] that is presented in parallel with other content.
 :::
 
-Visual motion lasting longer than 5 seconds.
+Animation or blinking does not:
+- last longer than 5 seconds, or
+- start automatically.
 
 :::except-when
-- The motion or pseudo-motion is :term[essential].
+- the visual motion or blinking is :term[essential].
+- a play/pause mechanism is provided.
 :::
 
-:::ednote
-<b>Method(s)</b>
-* Consider if motion or pseudo-motion is essential, and if it is not, refrain from including it.
+:::note
+An animation which stops for a time and then restarts is considered one animation. 
 :::
-
-:::tests
-<b>Procedure</b>
-
-For each page/view:
-1. Check if content includes visual motion or pseudo-motion.
-2. For each instance, check that the visual motion or pseudo-motion is essential.
-
-<b>Expected results</b>
-* #1 is false, or
-* #2 is true.
+:::note
+Several animations activated one after the other are considered as a single animation. 
 :::
 
