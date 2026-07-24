@@ -15,7 +15,7 @@ Variable pointer pressure isn't the only way to achieve functionality unless it 
 ## Examples
 
 ### Passed example 1
-A drawing app uses a hard press for an undo function. The app also provides for an undo function as a menu item and also by keystroke (<kbd><kbd>CTRL</kbd> + <kbd>z</kbd></kbd>).
+A photo editing app uses a hard press on the displayed image/canvas to open a shortcut menu of commonly used filters and actions. These filters and actions are also available in the app in dedicated editing panels that can be accessed without needing to use variable pointer pressure.
 
 ### Passed example 2
 A paint app uses stylus pointer pressure to reflect ink flow to canvas. Because the app is simulating a physical brush, variable pressure is essential to the functionality.
