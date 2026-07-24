@@ -6,7 +6,7 @@ title: Text style readable (minimum)
 ---
 
 The default/authored presentation of :term[text] style property meets the minimum @@[X values, to be determined] for:
-* Font face
+* Typeface
 * Font size
 * Font width
 * Text decoration
