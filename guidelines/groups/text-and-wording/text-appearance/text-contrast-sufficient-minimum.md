@@ -1,11 +1,10 @@
 ---
-needsAdditionalResearch: true 
 status: developing
 type: foundational
 title: Text contrast sufficient (minimum)
 ---
 
-The :term[default visual presentation] of text meets @@[X contrast measure, to be determined].
+The :term[default visual presentation] of text meets @@[contrast measure to be determined].
 
 :::applies-when
 * text is presented, including text embedded in an image format.

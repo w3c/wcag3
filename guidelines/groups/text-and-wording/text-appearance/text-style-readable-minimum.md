@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true 
 status: developing
 type: foundational
 title: Text style readable (minimum)

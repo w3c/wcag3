@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: developing
 type: supplemental
 title: Blocks of text readable (enhanced)

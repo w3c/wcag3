@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true 
 status: developing
 type: foundational
 title: Blocks of text readable (minimum)

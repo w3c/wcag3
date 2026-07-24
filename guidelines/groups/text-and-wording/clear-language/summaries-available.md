@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: developing
 type: foundational
 ---
@@ -11,7 +10,7 @@ A summary is available for :term[long-form text content] and:
 
 :::ednote
 
-Research is needed to determine the number of words that trigger the summary requirement and whether this threshold varies for different languages.
+Research is needed to determine the number of words that trigger the summary requirement and whether this threshold varies for different languages. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 :::applies-when
