@@ -8,4 +8,4 @@ For each custom pointer indicator:
 3. For each possible state, repeat step 1 and 2.
 
 <b>Expected results</b>
-* #3 is true for each state.
+* #2 is true for each state.

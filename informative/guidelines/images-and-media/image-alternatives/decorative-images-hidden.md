@@ -19,5 +19,4 @@ For any image that adds no information to the content:
 2. Check that an `alt` attribute is present and empty.
 
 <b>Expected results</b>
-* #1 is true.
-* #2 is true.
+* #1 and #2 are true.

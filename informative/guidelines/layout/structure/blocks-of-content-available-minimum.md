@@ -6,7 +6,7 @@
 
 1. Identify meaningful blocks of content in the page/view that are not bounded by a visual border.
 2. Examine the computed style to determine the total of margin, padding and border spacing.
-3. The spacing between all adjacent meaningful blocks of content is sufficient.
+3. Check that the spacing between all adjacent meaningful blocks of content is sufficient.
 
 <b>Expected results</b>
 * #3 is true.

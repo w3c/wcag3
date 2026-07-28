@@ -6,4 +6,4 @@
 3. Check that validation is provided immediately after data entry or occurs before submission.
 
 <b>Expected results</b>
-* #1 and #2 are true.
+* #1 and #3 are true.

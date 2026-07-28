@@ -10,7 +10,7 @@
 4. If the image includes words that are important to understanding the content, the words are included in the text alternative.
 
 <b>Expected results</b>
-* #2, #3 and #4 are true.
+* #2, #3, and #4 are true.
 
 ### (Mobile) Videos include accessible name
 

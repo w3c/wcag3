@@ -14,7 +14,7 @@
 
 <b>Procedure</b>
 For each input field within the unit of conformance:
-1. Check that each `<input>`, `<select>` and `<textarea>` in the source code has a programmatically associated `<label>` using `for` and `id` attributes. 
+1. Check that each `<input>`, `<select>`, and `<textarea>` in the source code has a programmatically-associated `<label>` using `for` and `id` attributes. 
 
 <b>Expected results</b>
 * #1 is true.
@@ -24,12 +24,12 @@ For each input field within the unit of conformance:
 <b>Procedure</b>
 
 For each list within the unit of conformance:
-1. Check that each list consists of a `<ul>`, `<ol>` or `<dl>`.
+1. Check that each list consists of a `<ul>`, `<ol>`, or `<dl>`.
 2. Check that each list item within the list is contained within an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 3. Check that the immediate child element of the list is an `<li>` element (for `<ul>` and `<ol>`) or `<dt>`/`<dd>` pair (for `<dl>`).
 
 <b>Expected results</b>
-* #1, #2 and #3 are true.
+* #1, #2, and #3 are true.
 
 ### HTML nested list relationship
 

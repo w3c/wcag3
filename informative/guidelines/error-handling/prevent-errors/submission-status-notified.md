@@ -6,4 +6,4 @@ For each data submission:
 1. Check that the user is notified about the submission immediately afterwards.
 
 <b>Expected results</b>
-* #2 is true.
+* #1 is true.

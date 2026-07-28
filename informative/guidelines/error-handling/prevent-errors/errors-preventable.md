@@ -7,5 +7,4 @@ For each data entry point:
 2. If it’s not possible to go back and correct the data during the process, check that the information being submitted can be reviewed and corrected before submission, or that it’s validated and can be fixed before submission. 
 
 <b>Expected results</b>
-* #1 is true, or
-* #2 is true.
+* #1 or #2 is true.

@@ -7,4 +7,4 @@ For each date, temperature, time, or Roman numeral presented visually:
 2. Check that it provides an alternative in an unambiguous format within the same page/view.
 
 <b>Expected results</b>
-* #1 or #2 are true.
+* #1 or #2 is true.
