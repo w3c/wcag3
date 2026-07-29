@@ -2,8 +2,8 @@
 import type { GetStaticPaths, GetStaticPathsResult } from "astro";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
+import ProvisionLink from "@/components/informative/ProvisionLink.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
-import { informativeSlug } from "@/lib/constants";
 import {
   formatNormativeContent,
   processKeyTerms,
@@ -54,9 +54,7 @@ const { html, terms } = processKeyTerms(
     {
       provisions.map((provision) => (
         <li>
-          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>
-            {provision.title}
-          </a>
+          <ProvisionLink entry={provision} />
         </li>
       ))
     }
