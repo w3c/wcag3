@@ -46,7 +46,7 @@ Content with audio includes a method to switch sign language interpretation on a
 
 ### Failed example 1
 
-No way to switch sign language interpretation onor off.
+No way to switch sign language interpretation on or off.
 
 Content with audio has no method to switch sign language interpretation on and off. 
 
