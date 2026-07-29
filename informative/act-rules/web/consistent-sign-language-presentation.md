@@ -8,7 +8,7 @@ The rule tests the presentation of sign language interpretation to ensure it rem
 
 ## Applicability
 
-This rule applies to any audio or audiovisual content that includes sign language interpretation, including content that is part of a related set, including but not limited to a series, course, or playlist.
+This rule applies to any audio only or video with audio content that includes sign language interpretation, including content that is part of a related set, including but not limited to a series, course, or playlist.
 
 ## Expectation
 
