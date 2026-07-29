@@ -18,8 +18,44 @@ The test target has a control for the user to turn the sign language on or off. 
 
 ### Passed example 1
 
-A video that contains sign language is able to be turned on or off.
+Switch on and off sign language interpretation.
+
+Content with audio includes a method to switch sign language interpretation on and off. 
+
+```html
+  <figure>
+    <figcaption>Latest podcast</figcaption>
+    <audio controls src=”latest-podcast.mp3”></audio>
+    <video id="sign-video" controls width="250" style="display:none">
+      <source src="latest-podcast-signed.webm" type="video/webm" />
+    </video>
+    <button onclick="showSign()">Toggle sign language</button>
+  </figure>
+
+  <script>
+    function toggleSign() {
+      var sign-video = document.getElementById("sign-video");
+      if(sign-video.style.display === "none") {
+        sign-video.style.display = "block";
+      } else {
+        sign-video.style.display = "none";
+      }
+    }
+  </script>
+```
 
 ### Failed example 1
 
-A video that contains sign language is not able to be turned on or off.
+No way to switch sign language interpretation onor off.
+
+Content with audio has no method to switch sign language interpretation on and off. 
+
+```html
+  <figure>
+    <figcaption>Latest podcast</figcaption>
+    <audio controls src=”latest-podcast.mp3”></audio>
+    <video controls width="250" style="display:none">
+      <source src="latest-podcast-signed.webm" type="video/webm" />
+    </video>
+  </figure>
+```
