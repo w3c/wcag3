@@ -11,7 +11,7 @@ import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
 import pluralize from "pluralize";
 
-import { computeGuidelineTitle, computeTermTitle } from "./guidelines";
+import { computeGuidelineTitle, computeTermTitle, provisionSlugMap } from "./guidelines";
 
 /**
  * Wraps a function call to silence its console.warn calls,
@@ -117,6 +117,7 @@ export async function resolveInformativeProvisions(guidelineId: string) {
 
   const provisions: InformativeProvision[] = [];
   for (const provisionSlug of normativeGuideline.data.children) {
+    if (!provisionSlugMap[provisionSlug]) continue; // Inherit WCAG_SKIP_WIP behavior
     const informativeEntry = await resolveInformativeProvision(`${guidelineId}/${provisionSlug}`);
     if (informativeEntry) provisions.push(informativeEntry);
   }
