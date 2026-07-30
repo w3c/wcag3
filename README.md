@@ -400,7 +400,8 @@ built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
 
-### `WCAG_SKIP_WIP`
+### `WCAG_PUBLISH`
 
-When set, excludes provisions that have `needsAdditionalResearch` set to `true`,
+When set, updates base paths for informative pages to target the WAI site,
+and excludes provisions that have `needsAdditionalResearch` set to `true`,
 or that have `status` set to `placeholder` or `exploratory`.
