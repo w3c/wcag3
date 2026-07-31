@@ -10,7 +10,7 @@ Animation or blinking does not:
 - start automatically.
 
 :::applies-when
-:term[Content] includes visual motion or :term[blinking] that is presented in parallel with other content.
+- :term[Content] includes visual motion or :term[blinking] that is presented in parallel with other content.
 :::
 
 :::except-when
