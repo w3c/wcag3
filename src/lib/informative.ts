@@ -117,7 +117,7 @@ export async function resolveInformativeProvisions(guidelineId: string) {
 
   const provisions: InformativeProvision[] = [];
   for (const provisionSlug of normativeGuideline.data.children) {
-    if (!provisionSlugMap[provisionSlug]) continue; // Inherit WCAG_SKIP_WIP behavior
+    if (!provisionSlugMap[provisionSlug]) continue; // Inherit WCAG_PUBLISH behavior
     const informativeEntry = await resolveInformativeProvision(`${guidelineId}/${provisionSlug}`);
     if (informativeEntry) provisions.push(informativeEntry);
   }
