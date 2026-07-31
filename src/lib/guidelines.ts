@@ -13,17 +13,14 @@ import { isDevOrPreview } from "./constants";
  */
 async function determineSkippableProvisions(groupId: string, guidelineSlug: string) {
   // Only populate when running a build that needs to skip at build time or client-side
-  if (!import.meta.env.WCAG_SKIP_WIP && !isDevOrPreview) return [];
+  if (!import.meta.env.WCAG_PUBLISH && !isDevOrPreview) return [];
 
   const guideline = await getEntry("guidelines", `${groupId}/${guidelineSlug}`);
   if (!guideline) throw new Error(`Unresolvable guideline ID: ${guidelineSlug}`);
 
   const skippableProvisions: string[] = [];
   for (const provisionSlug of guideline.data.children) {
-    const provision = await getEntry(
-      "provisions",
-      `${groupId}/${guidelineSlug}/${provisionSlug}`
-    );
+    const provision = await getEntry("provisions", `${groupId}/${guidelineSlug}/${provisionSlug}`);
     if (!provision) throw new Error(`Unresolvable provision ID: ${provisionSlug}`);
     if (
       provision.data.needsAdditionalResearch ||
@@ -73,7 +70,7 @@ export const groupsTree = await (async () => {
         guidelines[guideline.id] = guideline;
 
         const skippableChildren = await determineSkippableProvisions(groupId, guidelineSlug);
-        if (import.meta.env.WCAG_SKIP_WIP)
+        if (import.meta.env.WCAG_PUBLISH)
           // Filter children directly in case of build-time skip
           guideline.data.children = difference(guideline.data.children, skippableChildren);
 

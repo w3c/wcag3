@@ -25,3 +25,7 @@ An animation which stops for a time and then restarts is considered one animatio
 Several animations activated one after the other are considered as a single animation. 
 :::
 
+:::ednote
+<b>Method(s)</b>
+* Consider if motion or pseudo-motion is essential, and if it is not, refrain from including it.
+:::
