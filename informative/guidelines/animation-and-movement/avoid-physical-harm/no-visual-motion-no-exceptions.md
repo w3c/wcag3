@@ -4,7 +4,7 @@
 To be added.
 :::
 
-### Method(s)
+## Method(s)
 * Design content without using visual motion or pseudo-motion.
 
 ## Tests
