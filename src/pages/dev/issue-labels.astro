@@ -4,7 +4,7 @@ import { computeProvisionIssueLabel } from "@/lib/guidelines";
 import { getCollection } from "astro:content";
 
 const provisionsWithIssueLabel = await getCollection(
-  "requirements",
+  "provisions",
   ({ data }) => !!data.issueLabel
 );
 ---

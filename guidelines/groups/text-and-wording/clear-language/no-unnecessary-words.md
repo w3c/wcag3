@@ -23,17 +23,3 @@ Sentences do not include :term[unnecessary words].
 :::note 
 Automated tools can help :term[content authors] identify unnecessary words in many languages, including Arabic, English, Hindi, Mandarin, and Russian.
 :::
-
-:::tests
-
-<b>Procedure</b>
-
-For each sentence:
-1. Identify any words that may be unnecessary.
-2. Remove or replace the phrase with a simpler alternative.
-3. Check that no meaning is lost.
-4. Check that a technology in the :term[accessibility support set] meets ‘No unnecessary words.’
-
-<b>Expected results</b>
-* #3 or #4 is true.
-:::

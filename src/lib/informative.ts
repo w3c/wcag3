@@ -55,9 +55,7 @@ export async function resolveInformativeProvision(id: string) {
   const normativeProvision = await getEntry("provisions", id);
   if (!normativeProvision) throw new Error(`Normative data not found for provision: ${id}`);
 
-  const informativeProvision = await silenceWarnings(() =>
-    getEntry("informativeProvisions", id)
-  );
+  const informativeProvision = await silenceWarnings(() => getEntry("informativeProvisions", id));
   if (!informativeProvision) return null;
   return {
     ...informativeProvision,
@@ -119,9 +117,7 @@ export async function resolveInformativeProvisions(guidelineId: string) {
 
   const provisions: InformativeProvision[] = [];
   for (const provisionSlug of normativeGuideline.data.children) {
-    const informativeEntry = await resolveInformativeProvision(
-      `${guidelineId}/${provisionSlug}`
-    );
+    const informativeEntry = await resolveInformativeProvision(`${guidelineId}/${provisionSlug}`);
     if (informativeEntry) provisions.push(informativeEntry);
   }
   return provisions;
@@ -211,6 +207,10 @@ export const informativeRelatedTypes = {
   },
 } satisfies Partial<Record<CollectionKey, { slug: string; title: string }>>;
 export type InformativeRelatedCollection = keyof typeof informativeRelatedTypes;
+export type InformativeCollection =
+  | InformativeRelatedCollection
+  | "informativeGuidelines"
+  | "informativeProvisions";
 
 export const technologies = ["documents", "mobile", "web"] as const;
 export type Technology = (typeof technologies)[number];

@@ -1,5 +1,4 @@
 ---
-needsAdditionalResearch: true
 status: developing
 type: foundational
 ---
@@ -11,7 +10,7 @@ A summary is available for :term[long-form text content] and:
 
 :::ednote
 
-Research is needed to determine the number of words that trigger the summary requirement and whether this threshold varies for different languages.
+Research is needed to determine the number of words that trigger the summary requirement and whether this threshold varies for different languages. If you are aware of research in this area, please email public-agwg-comments@w3.org.
 :::
 
 :::applies-when
@@ -20,19 +19,4 @@ Research is needed to determine the number of words that trigger the summary req
 
 :::except-when
 * long-form text content continues on multiple pages/views, only the first page/view requires a summary.
-:::
-
-:::tests
-
-<b>Procedure</b>
-
-For :term[long-form text content] that has 300 or more words:
-1. Check that a summary is present.
-2. Check that the summary can be identified visually and programmatically.
-3. Check that the summary explains uncommon words and uses concise sentences.
-
-<b>Expected results</b>
-* #1 is true.
-* #2 is true.
-* #3 is true.
 :::

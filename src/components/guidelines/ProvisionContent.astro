@@ -1,0 +1,46 @@
+---
+import { getEntry, type CollectionEntry } from "astro:content";
+
+import { computeGuidelineTitle, computeProvisionIssueLabel } from "@/lib/guidelines";
+
+import { silenceWarnings } from "@/lib/informative";
+import { informativeSlug } from "@/lib/constants";
+import { render } from "astro:content";
+
+interface Props {
+  provision: CollectionEntry<"provisions">;
+}
+
+const { provision } = Astro.props;
+
+const informativeProvision = await silenceWarnings(() =>
+  getEntry("informativeProvisions", provision.id)
+);
+const computedTitle = computeGuidelineTitle(provision);
+const { Content } = await render(provision);
+---
+
+<h5>
+  {
+    informativeProvision ? (
+      <a
+        href={`${import.meta.env.BASE_URL}${informativeSlug}/${informativeProvision.id}/`}
+        set:text={computedTitle}
+      />
+    ) : (
+      computedTitle
+    )
+  }
+</h5>
+<aside class="doclinks">
+  <a
+    href={`https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22${encodeURIComponent(
+      computeProvisionIssueLabel(provision)
+    )}%22`}
+  >
+    <svg aria-hidden="true" class="i-list">
+      <use xlink:href="img/icons.svg#i-list"></use>
+    </svg>{computedTitle} issues
+  </a>
+</aside>
+<Content />

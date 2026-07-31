@@ -13,7 +13,7 @@ Editor's drafts of TR space documents are available at:
 
 ## Local Setup
 
-Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v20.
+Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v24.
 
 If you use [`fnm`](https://github.com/Schniz/fnm) or [`nvm`](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions,
 you can switch to the recommended version by typing `fnm use` or `nvm use`
@@ -225,18 +225,6 @@ Your content here
 :::
 ```
 
-#### Tests
-
-The following block will be transformed into a Tests `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within requirements.
-
-```
-:::tests
-Your content here
-:::
-```
-
 #### Applies when
 
 The following block will be preceded by "Applies when".
@@ -400,7 +388,8 @@ built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
 
-### `WCAG_SKIP_WIP`
+### `WCAG_PUBLISH`
 
-When set, excludes provisions that have `needsAdditionalResearch` set to `true`,
+When set, updates base paths for informative pages to target the WAI site,
+and excludes provisions that have `needsAdditionalResearch` set to `true`,
 or that have `status` set to `placeholder` or `exploratory`.
