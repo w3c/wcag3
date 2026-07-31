@@ -225,18 +225,6 @@ Your content here
 :::
 ```
 
-#### Tests
-
-The following block will be transformed into a Tests `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within requirements.
-
-```
-:::tests
-Your content here
-:::
-```
-
 #### Applies when
 
 The following block will be preceded by "Applies when".

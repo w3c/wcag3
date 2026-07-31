@@ -12,13 +12,3 @@ Error messages are visually indicated using at least two of the following:
 :::example
 An example of a “textual indication” would be to add  "Error: " before the error description.
 :::
-
-:::tests
-<b>Procedure</b>
-
-For each validation error:
-1. Check that it meets at least two of the listed indicators (symbol, color or text).
-
-<b>Expected results</b>
-* #1 is true.
-:::
