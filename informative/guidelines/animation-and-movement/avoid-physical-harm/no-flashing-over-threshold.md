@@ -4,18 +4,19 @@ Some people with seizure disorders can have a seizure triggered by flashing visu
 
 The objective of this requirement is to ensure that content avoids the types of flash that are most likely to cause seizures when viewed even for a second or two.
 
-### Method(s)
+## Method(s)
 * Consider if :term[flashing] is :term[essential] and, if it is not, refrain from including it.
 * Ensure that (an accessibility supported) user-setting to avoid animation and flashing is respected.
 * Ensure that any flashing is below [X] size in the users’ view.
 
+## Tests
 
-### Procedure
+<b>Procedure</b>
 
 For each instance of flashing:
 1. Is the flashing :term[essential]?
 2. Does the flashing exceed the thresholds defined by the :term[general flash and red flash thresholds]?
 
-#### Expected results
+<b>Expected results</b>
 * #1 is true, or
 * #2 is false.
