@@ -1,6 +1,8 @@
 ## Intent
 
+:::ednote
 To be added.
+:::
 
 ### Method(s)
 * Design content without using visual motion or pseudo-motion.
