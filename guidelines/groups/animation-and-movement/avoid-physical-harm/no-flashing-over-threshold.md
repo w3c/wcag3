@@ -4,11 +4,11 @@ type: foundational
 issueLabel: No flashing
 ---
 
-:::applies when
-Content includes :term[flashes].
-:::
-
 :term[Flashes] are below the :term[general flash and red flash thresholds].
+
+:::applies-when
+- Content includes :term[flashes].
+:::
 
 :::except-when
 - The flashing is :term[essential].
