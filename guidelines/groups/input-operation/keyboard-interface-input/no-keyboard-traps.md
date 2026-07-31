@@ -15,13 +15,3 @@ Examples include:
 1. Ensuring that users can exit a modal dialog, menu, or calendar picker after entering it
 2. Ensuring that users can deactivate an animation, video, drop down menu, or carousel after activating it.
 :::
-
-:::tests
-**Procedure**
-
-For each interface element:
-1. Check that you can exit from it in a forward or backward direction.
-
-**Expected results**
-- #1 is true.
-:::

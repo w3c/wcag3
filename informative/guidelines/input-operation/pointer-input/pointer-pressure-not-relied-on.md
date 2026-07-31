@@ -2,11 +2,12 @@
 
 ### Pointer pressure not relied on
 
-**Procedure**
+<b>Procedure</b>
 
 For each function achieved using variable pointer pressure:
-Check that there is an alternate way to achieve that function.
 
-**Expected results**
+1. Check that there is an alternate way to achieve that function.
 
-- #1 is true
+<b>Expected results</b>
+
+- #1 is true.
