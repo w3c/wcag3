@@ -2,6 +2,9 @@
 children:
   - sign-language-available-prerecorded
   - sign-language-controllable
+  - consistent-sign-language-presentation
+  - content-not-obscured-sign-language
+  - control-sign-language-presentation
   - sign-language-policy-live
 ---
 
