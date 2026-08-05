@@ -4,7 +4,7 @@
 To be written.
 :::
 
-## Method(s)
+## Methods
 * Design content without using :term[flashing].
 
 ## Tests

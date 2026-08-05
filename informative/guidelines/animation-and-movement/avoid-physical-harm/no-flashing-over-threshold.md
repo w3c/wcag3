@@ -4,7 +4,7 @@ Some people with seizure disorders can have a seizure triggered by flashing visu
 
 The objective of this requirement is to ensure that content avoids the types of flash that are most likely to cause seizures when viewed even for a second or two.
 
-## Method(s)
+## Methods
 * Consider if :term[flashing] is :term[essential] and, if it is not, refrain from including it.
 * Ensure that (an accessibility supported) user-setting to avoid animation and flashing is respected.
 * Ensure that any flashing is below [X] size in the users’ view.

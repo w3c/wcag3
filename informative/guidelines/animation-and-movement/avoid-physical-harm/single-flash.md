@@ -3,7 +3,7 @@
 To be added
 
 
-## Method(s)
+## Methods
 * Design content without large changes of contrast. For example, when a menu with a light background is opened, it opens over a light background. Videos do not go from a dark to light background in less than a second.
 
 ## Procedure
