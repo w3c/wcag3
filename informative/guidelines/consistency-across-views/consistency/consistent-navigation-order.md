@@ -44,3 +44,15 @@ Resources are for information purposes only, no endorsement implied.
 
 - Detweiler, M.C. and Omanson, R.C. (1996), Ameritech Web Page User Interface Standards and Design Guidelines.
 - IBM: [User experience design - Navigation](https://www.ibm.com/able/toolkit/design/ux/navigation/).
+
+## Tests
+
+### Consistent main navigation relative order
+
+<b>Procedure</b>
+
+For each repeated blocks of navigation across multiple pages/views of the conformance scope or process:
+1. Check that the navigation items within each block of navigation have the same relative order across all pages/views of the conformance scope or process.
+
+<b>Expected results</b>
+* #1 is true.

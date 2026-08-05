@@ -1,5 +1,4 @@
-# wcag3
-WCAG 3
+# WCAG 3
 
 There is a [presentation of the process the group](https://docs.google.com/presentation/d/14qG2f-ZkhFDqox_qmzqC5tCUt1xJaumkJS2l5GaD-3o/edit#slide=id.p) uses for addressing issues and updates.
 
@@ -31,6 +30,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build to `./dist/`                                  |
 | `npm run check`           | Check for TypeScript errors                         |
 | `npm run preview`         | Preview build locally at `localhost:4321`           |
+| `npm run publish-w3c`     | Like `build`, but with adjustments for WD and WAI   |
 | `npm run cspell`          | Check spelling (see words list in custom-words.txt) |
 
 ## Project Structure
@@ -52,6 +52,7 @@ Additional directories with special meaning:
       - `{guideline-name}/` - Subdirectory containing provisions (e.g. requirements/assertions) under each guideline
         - `{provision-name}.md` - Defines content of an individual provision
   - `terms/` - Contents of terms defined in the Glossary
+- `informative/` - contains content files for informative pages; see [Informative README](informative/README.md)
 
 ### Notable Subdirectories under `src`
 
@@ -152,7 +153,7 @@ Another shared term
 :   Another shared definition
 ```
 
-### Custom Directives for Guidelines Markdown
+### Custom Directives available to both Guidelines and Informative Docs
 
 For more concrete examples, search for these directives in the repository.
 
@@ -213,29 +214,16 @@ Your content here
 :::
 ```
 
-#### User Needs
+#### Glossary Term References
 
-The following block will be transformed into a User Needs `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within guidelines.
-
-```
-:::user-needs
-Your content here
-:::
-```
-
-#### Tests
-
-The following block will be transformed into a Tests `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within requirements.
+The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
+and can be used inline within blocks of text:
 
 ```
-:::tests
-Your content here
-:::
+... is :term[programmatically determinable].
 ```
+
+### Custom Directives only available to Guidelines
 
 #### Applies when
 
@@ -262,6 +250,7 @@ a condition is true.
 ```
 
 This follows the same behavior as `:::applies-when` regarding single paragraphs vs. other cases.
+If both `:::applies-when` and `:::except-when` exist for a requirement, they must appear in that order.
 
 #### Assertions replacements
 
@@ -280,15 +269,6 @@ The following leaf directives are to be used before required and recommended doc
 ```
 
 Note that these are leaf directives, not container directives, so there is no end marker.
-
-#### Glossary Term References
-
-The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
-and can be used inline within blocks of text:
-
-```
-... is :term[programmatically determinable].
-```
 
 ## Creating New Entries
 
@@ -400,7 +380,8 @@ built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
 
-### `WCAG_SKIP_WIP`
+### `WCAG_PUBLISH`
 
-When set, excludes provisions that have `needsAdditionalResearch` set to `true`,
+When set, updates base paths for informative pages to target the WAI site,
+and excludes provisions that have `needsAdditionalResearch` set to `true`,
 or that have `status` set to `placeholder` or `exploratory`.

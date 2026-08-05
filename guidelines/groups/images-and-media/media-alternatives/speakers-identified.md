@@ -17,15 +17,3 @@ Speakers are identified understandably within all :term[media alternatives].
 :::example
 Initially using "Maya Angelou" within the context of a story regarding poetry and then using "Angelou".
 :::
-
-:::tests
-<i>Consistent speaker name in transcript</i>
-
-<b>Procedure</b>
-
-For each media alternative: 
-1. Check that each speaker in the audio or video is consistently identified.
-
-<b>Expected results</b>
-* #1 is true.
-:::

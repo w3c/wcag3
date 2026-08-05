@@ -7,6 +7,7 @@
     "check": "astro check",
     "cspell": "cspell .",
     "preview": "astro preview",
+    "publish-w3c": "WCAG_PUBLISH=1 astro build --force",
     "start": "astro dev",
     "sync": "astro sync --force",
     "astro": "astro"
@@ -40,6 +41,7 @@
     "typescript": "^5.8.2"
   },
   "overrides": {
+    "sharp": "^0.35.3",
     "yaml": "^2.8.3"
   }
 }

@@ -2,8 +2,8 @@
 import type { GetStaticPaths, GetStaticPathsResult } from "astro";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
+import ProvisionLink from "@/components/informative/ProvisionLink.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
-import { informativeSlug } from "@/lib/constants";
 import {
   formatNormativeContent,
   processKeyTerms,
@@ -46,20 +46,33 @@ const { html, terms } = processKeyTerms(
 );
 ---
 
-<InformativeLayout title={guideline.title} breadcrumbSegments={[guideline]}>
+<InformativeLayout title={guideline.title} entry={guideline} breadcrumbSegments={[guideline]}>
   <h2>Guideline</h2>
   <Fragment set:html={html} />
   <h2>Provisions under this guideline</h2>
-  <ul>
-    {
-      provisions.map((provision) => (
-        <li>
-          <a href={`${import.meta.env.BASE_URL}${informativeSlug}/${provision.id}/`}>
-            {provision.title}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    provisions.length ? (
+      <ul>
+        {provisions.map((provision) => (
+          <li>
+            <ProvisionLink entry={provision} />
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <div class="ednote">
+        <p>
+          Requirements and assertions for this guideline do not appear here because they have not
+          yet progressed beyond exploratory. See the{" "}
+          <a
+            href={`https://w3c.github.io/wcag3/informative/${groupId}/${guidelineSlug}/#provisions-under-this-guideline`}
+          >
+            Editor's Draft
+          </a>{" "}
+          for the complete list of potential requirements and assertions.
+        </p>
+      </div>
+    )
+  }
   <KeyTerms terms={terms} />
 </InformativeLayout>
