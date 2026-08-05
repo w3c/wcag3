@@ -12,8 +12,3 @@ A warning is provided before users encounter triggers and a mechanism is availab
 :::note
 Note: Triggers are flashing, motion lasting more than 5 seconds, and pseudo-motion.
 :::
-
-:::ednote
-<b>Method(s)</b>
-* Provide a warning for triggers and provide an option without the triggers.
-:::

@@ -1,3 +1,7 @@
+## Methods
+
+* Add a setting to pause audio shifting or turn it off.
+
 ## Tests
 
 <b>Procedure</b>
