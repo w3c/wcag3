@@ -8,7 +8,7 @@ title: Sign language available (prerecorded)
 
 :::except-when
 - The audio content is an alternative for visual content and clearly labelled as such.
-- The audio content is decorative background sound.
+- The audio content is :term[decorative] background sound.
 - The audio is an :term[interface sound effect].
 :::
 

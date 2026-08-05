@@ -7,5 +7,5 @@ Visual information required to identify :term[interactive elements] and states m
 
 :::except-when
 * the interactive element is inactive, or 
-* when the appearance of the component is determined by the :term[user agent] and not modified by the content author.
+* the appearance of the component is determined by the :term[user agent] and not modified by the content author.
 :::
