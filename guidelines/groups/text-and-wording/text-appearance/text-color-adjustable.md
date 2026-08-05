@@ -15,10 +15,10 @@ The requirement is that the text is manipulable and the colors can be overridden
 
 :::except-when
 - the text is:
-    * also present elsewhere in the :term[page]/:term[view] which meets the requirement,
-    * part of an inactive Interactive element, 
-    * pure decoration, 
-    * not visible to anyone,
-    * part of a picture that includes significant other visual content,
-    * part of a logo.
+    * also present elsewhere in the :term[page]/:term[view] which meets the requirement
+    * part of an inactive Interactive element
+    * pure decoration
+    * not visible to anyone
+    * part of a picture that includes significant other visual content
+    * part of a logo
 :::
