@@ -35,7 +35,7 @@ A piece of audio-only content is accompanied by a nearby video that provides sig
 
 ### Passed example 2
 
-Providing an adjacent link to a video with sign language interpretation for audio only content.
+Providing an adjacent link to a video with sign language interpretation for audio-only content.
 
 ```html
   <h3>Latest podcast</h3>
