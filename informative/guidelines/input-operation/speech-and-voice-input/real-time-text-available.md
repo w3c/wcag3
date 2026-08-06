@@ -1,3 +1,7 @@
+## Methods
+
+- Provide a chat option for any voice communication.
+
 ## Tests
 
 <b>Procedure</b>

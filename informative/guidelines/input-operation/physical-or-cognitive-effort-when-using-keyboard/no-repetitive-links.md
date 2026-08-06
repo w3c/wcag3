@@ -1,3 +1,12 @@
+## Methods
+
+- When repetitive links are used, remove them from the focus and reading order.
+- Use a single link instead of multiple links to the same destination.
+
+## Best Practices
+
+- Combine repetitive links into a single interactive element.
+
 ## Tests
 
 <b>Procedure</b>
