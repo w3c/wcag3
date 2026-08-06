@@ -8,7 +8,7 @@ The rule checks that sign language interpretation using the most appropriate reg
 
 ## Applicability
 
-This rule applies to any audio only or video with audio content.It does not apply to audio content that is an alternative for visual content and clearly labelled as such. It does not apply to decorative background sound. It does not apply to interface sound effects.
+This rule applies to audio-only content or video content containing audio. It does not apply to audio content that is an alternative for visual content and clearly labelled as such. It does not apply to decorative background sound. It does not apply to interface sound effects.
 
 ## Expectation
 
