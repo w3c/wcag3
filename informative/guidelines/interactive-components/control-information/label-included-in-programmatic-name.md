@@ -1,3 +1,11 @@
+## Methods
+
+- Code the same name as you display.
+
+## Best Practices
+
+- Use unique names and keep the programmatic and visual names the same.
+
 ## Tests
 
 <b>Procedure</b>
