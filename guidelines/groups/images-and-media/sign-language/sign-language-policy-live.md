@@ -7,7 +7,7 @@ issueLabel: Sign language available (live)
 
 [Title, role, or organization] asserts that: 
 
-* Our organization has a policy to provide sign language interpretation for live in-person, hybrid, and fully online events/meetings. 
+* Our organization has a policy to provide :term[sign language interpretation] for live in-person, hybrid, and fully online events/meetings. 
 
 ::assertion-required
 
