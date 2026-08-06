@@ -8,7 +8,7 @@ The rule checks that sign language can be turned on and off.
 
 ## Applicability
 
-This rule applies to any audio only or video with audio content that includes sign language interpretation.
+This rule applies to any audio-only content or video with audio content that includes sign language interpretation.
 
 ## Expectation
 
