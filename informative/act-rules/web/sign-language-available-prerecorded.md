@@ -18,7 +18,7 @@ Each test target includes sign language interpretation.
 
 ### Passed example 1
 
-Providing sign language interpretation for audio only content with associated video. The signed video is included within an HTML container that also includes the associated audio.
+A piece of audio-only content is accompanied by a nearby video that provides sign language interpretation.
 
 ```html
   <figure>
