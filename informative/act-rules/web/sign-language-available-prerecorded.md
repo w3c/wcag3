@@ -47,7 +47,7 @@ Providing an adjacent link to a video with sign language interpretation for audi
 
 ### Passed example 3
 
-Sign language interpretation is part of the source video either because the interpreter is in the picture with the speaker or the interpreter is provided as hard-coded picture-in-picture.
+Sign language interpretation is part of the source video either because an interpreter is present in the recording or because the interpretation is provided as a hard-coded picture-in-picture.
 
 ### Failed example 1
 
