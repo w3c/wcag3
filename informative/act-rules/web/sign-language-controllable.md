@@ -18,7 +18,7 @@ The test target has a control for the user to turn the sign language on or off. 
 
 ### Passed example 1
 
-Switch on and off sign language interpretation.
+Show and hide sign language interpretation.
 
 Content with audio includes a method to switch sign language interpretation on and off. 
 
