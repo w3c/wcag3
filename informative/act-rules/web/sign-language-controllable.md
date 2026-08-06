@@ -20,7 +20,7 @@ The test target has a control for the user to turn the sign language on or off. 
 
 Show and hide sign language interpretation.
 
-Content with audio includes a method to switch sign language interpretation on and off. 
+Content with audio includes a method to show and hide sign language interpretation. 
 
 ```html
   <figure>
