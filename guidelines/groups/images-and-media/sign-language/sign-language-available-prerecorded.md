@@ -13,5 +13,5 @@ title: Sign language available (prerecorded)
 :::
 
 :::example
-Audio description is an example of audio content that is an alternative for visual content.
+:term[Audio description] is an example of audio content that is an alternative for visual content.
 :::
