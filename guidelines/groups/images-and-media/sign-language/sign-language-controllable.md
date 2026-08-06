@@ -3,7 +3,7 @@ type: supplemental
 status: developing
 ---
 
-A :term[mechanism] is available to turn :term[sign language interpretation] on and off. 
+A :term[mechanism] is available to show and hide :term[sign language interpretation]. 
 
 :::except-when
 - Sign language interpretation is hard-coded into the video content.
