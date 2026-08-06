@@ -25,7 +25,7 @@ Content with audio includes a method to switch sign language interpretation on a
 ```html
   <figure>
     <figcaption>Latest podcast</figcaption>
-    <audio controls src=”latest-podcast.mp3”></audio>
+    <audio controls src="latest-podcast.mp3"></audio>
     <video id="sign-video" controls width="250" style="display:none">
       <source src="latest-podcast-signed.webm" type="video/webm" />
     </video>
