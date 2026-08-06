@@ -29,7 +29,7 @@ Content with audio includes a method to switch sign language interpretation on a
     <video id="sign-video" controls width="250" style="display:none">
       <source src="latest-podcast-signed.webm" type="video/webm" />
     </video>
-    <button onclick="showSign()">Toggle sign language</button>
+    <button onclick="toggleSign()">Toggle sign language</button>
   </figure>
 
   <script>
