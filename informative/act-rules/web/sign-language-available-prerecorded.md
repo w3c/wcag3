@@ -51,7 +51,7 @@ Sign language interpretation is part of the source video either because an inter
 
 ### Failed example 1
 
-The audio only content has no link to a video with sign language interpretation within the page/view.
+The audio-only content has no sign language interpretation available within the page/view.
 
 ```html
   <h3>Latest podcast</h3>
