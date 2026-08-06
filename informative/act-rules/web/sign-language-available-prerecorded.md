@@ -62,7 +62,7 @@ The audio-only content has no sign language interpretation available within the 
 
 ### Failed example 2
 
-The audio only content has a link to a video with sign language interpretation within the page/view. The sign language used for the interpretation is not the most appropriate for the region of the website.
+The audio-only content has a link to a video with sign language interpretation within the page/view. The sign language used for the interpretation is not the most appropriate for the intended audience or region.
 
 ```html
   <html lang="en-GB">
