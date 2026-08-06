@@ -53,7 +53,7 @@ Content with audio has no method to switch sign language interpretation on and o
 ```html
   <figure>
     <figcaption>Latest podcast</figcaption>
-    <audio controls src=”latest-podcast.mp3”></audio>
+    <audio controls src="latest-podcast.mp3"></audio>
     <video controls width="250" style="display:none">
       <source src="latest-podcast-signed.webm" type="video/webm" />
     </video>
