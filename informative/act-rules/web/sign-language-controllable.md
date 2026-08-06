@@ -34,11 +34,11 @@ Content with audio includes a method to show and hide sign language interpretati
 
   <script>
     function toggleSign() {
-      var sign-video = document.getElementById("sign-video");
-      if(sign-video.style.display === "none") {
-        sign-video.style.display = "block";
+      var signVideo = document.getElementById("sign-video");
+      if(signVideo.style.display === "none") {
+        signVideo.style.display = "block";
       } else {
-        sign-video.style.display = "none";
+        signVideo.style.display = "none";
       }
     }
   </script>
