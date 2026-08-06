@@ -65,7 +65,7 @@ The audio only content has no link to a video with sign language interpretation 
 The audio only content has a link to a video with sign language interpretation within the page/view. The sign language used for the interpretation is not the most appropriate for the region of the website.
 
 ```html
-  <html lang=”en-GB”>
+  <html lang="en-GB">
   …
   <h3>Latest podcast</h3>
   <p>
