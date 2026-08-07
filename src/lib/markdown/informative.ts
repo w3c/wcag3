@@ -55,7 +55,6 @@ function extractCodeRef(raw: string, filePath: string, file: VFile, ref?: string
     const found = allMatches.find(m => new RegExp(`\\bid="${ref}"`).test(m[0]));
     if (!found) {
       file.fail(`No [data-code-ref] element with id="${ref}" found in: ${filePath}`);
-      return;
     }
     openMatch = found;
   } else if (allMatches.length === 1) {
@@ -65,13 +64,11 @@ function extractCodeRef(raw: string, filePath: string, file: VFile, ref?: string
       `Multiple [data-code-ref] elements found in: ${filePath}. ` +
       `Use #id to specify which one.`
     );
-    return;
   } else {
     // No data-code-ref found; fall back to <body>
     const bodyMatch = raw.match(/<(body)\b[^>]*>/);
     if (!bodyMatch) {
       file.fail(`No [data-code-ref] or <body> element found in: ${filePath}`);
-      return;
     }
     openMatch = bodyMatch;
   }
