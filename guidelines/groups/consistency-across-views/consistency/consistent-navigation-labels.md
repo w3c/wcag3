@@ -12,15 +12,3 @@ The labelling of navigation items within blocks of navigation that are repeated 
 :::ednote
 This relates to consistency and terminology within blocks of navigation. The consistent ordering of blocks of navigation within a page/view is covered by 'Consistent relative order'.
 :::
-
-:::tests
-<i>Consistent main navigation labels</i>
-
-<b>Procedure</b>
-
-For each repeated block of navigation across multiple pages/views of the :term[conformance scope] or process:
-1. Check that the navigation items within each block of navigation have the same names across all pages/views of the conformance scope or process. 
-
-<b>Expected results</b>
-* #1 is true.
-:::
