@@ -92,17 +92,17 @@ function extractCodeRef(raw: string, filePath: string, file: VFile, ref?: string
   file.fail(`No matching </${tagName}> found in: ${filePath}`);
 }
 
-const actExampleCode: RemarkPlugin = () => (tree, file) => {
+const exampleCode: RemarkPlugin = () => (tree, file) => {
   if (!isInformativeFile(file)) return;
 
   visit(tree, (node, index, parent) => {
-    if (node.type !== "leafDirective" || node.name !== "act-example-code") return;
+    if (node.type !== "leafDirective" || node.name !== "example-code") return;
     if (!parent || typeof index === "undefined") return;
 
     const firstChild = node.children?.[0];
     const rawLabel = firstChild?.type === "text" ? firstChild.value : undefined;
     if (!rawLabel) {
-      file.fail(`::act-example-code requires a path like ::act-example-code[passed/example/index.html]`);
+      file.fail(`::example-code requires a path like ::example-code[{example-name}/index.html]`);
       return;
     }
 
@@ -131,5 +131,5 @@ const headingIds: RehypePlugin = () => (tree, file) => {
   rehypeHeadingIds({ experimentalHeadingIdCompat: true })!(tree, file);
 };
 
-export const remarkPlugins = [customDirectives, actExampleCode];
+export const remarkPlugins = [customDirectives, exampleCode];
 export const rehypePlugins = [headingIds];

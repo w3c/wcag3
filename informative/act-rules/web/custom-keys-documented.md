@@ -22,7 +22,7 @@ Several examples use the following Javascript.
 
 #### [`keyboard-shortcuts.js`](examples/assets/keyboard-shortcuts.js)
 
-::act-example-code[assets/keyboard-shortcuts.js]
+::example-code[assets/keyboard-shortcuts.js]
 
 ### Passed
 
@@ -32,7 +32,7 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/passed/related-hint-text/" target="_blank">Open <b>passed example 1</b> in new tab</a>
 
-::act-example-code[passed/related-hint-text/index.html]
+::example-code[passed/related-hint-text/index.html]
 
 #### Passed example 2
 
@@ -40,11 +40,11 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/passed/linked-help-page/" target="_blank">Open <b>passed example 2</b> in new tab</a>
 
-::act-example-code[passed/linked-help-page/index.html]
+::example-code[passed/linked-help-page/index.html]
 
 ##### Linked help page
 
-::act-example-code[passed/linked-help-page/help/index.html]
+::example-code[passed/linked-help-page/help/index.html]
 
 #### Passed example 3
 
@@ -52,7 +52,7 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/passed/help-dialog/" target="_blank">Open <b>passed example 3</b> in new tab</a>
 
-::act-example-code[passed/help-dialog/index.html]
+::example-code[passed/help-dialog/index.html]
 
 #### Passed example 4
 
@@ -60,7 +60,7 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/passed/help-dialog-shortcut/" target="_blank">Open <b>passed example 4</b> in new tab</a>
 
-::act-example-code[passed/help-dialog-shortcut/index.html]
+::example-code[passed/help-dialog-shortcut/index.html]
 
 ### Failed
 
@@ -70,7 +70,7 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/failed/no-documentation/" target="_blank">Open <b>failed example 1</b> in new tab</a>
 
-::act-example-code[failed/no-documentation/index.html]
+::example-code[failed/no-documentation/index.html]
 
 #### Failed example 2
 
@@ -78,11 +78,11 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/failed/not-programmatically-determinable/" target="_blank">Open <b>failed example 2</b> in new tab</a>
 
-::act-example-code[failed/not-programmatically-determinable/index.html#markup]
+::example-code[failed/not-programmatically-determinable/index.html#markup]
 
 The visible documentation is achieved using CSS techniques in which the conveyed meaning is not programmatically determinable:
 
-::act-example-code[failed/not-programmatically-determinable/index.html#styles]{lang=css}
+::example-code[failed/not-programmatically-determinable/index.html#styles]{lang=css}
 
 #### Failed example 3
 
@@ -90,7 +90,7 @@ A search input can be focused using a custom keyboard command of s. This custom 
 
 <a href="examples/failed/wrong-hint-text/" target="_blank">Open <b>failed example 3</b> in new tab</a>
 
-::act-example-code[failed/wrong-hint-text/index.html]
+::example-code[failed/wrong-hint-text/index.html]
 
 #### Failed example 4
 
@@ -98,7 +98,7 @@ A search input can be focused using a custom keyboard command of / (forward slas
 
 <a href="examples/failed/placeholder-hint-text/" target="_blank">Open <b>failed example 4</b> in new tab</a>
 
-::act-example-code[failed/placeholder-hint-text/index.html]
+::example-code[failed/placeholder-hint-text/index.html]
 
 ### Inapplicable
 
@@ -108,4 +108,4 @@ A button reveals a tooltip of "Press Space to activate" on focus and hover. The 
 
 <a href="examples/inapplicable/unnecessary-documentation/" target="_blank">Open <b>inapplicable example 1</b> in new tab</a>
 
-::act-example-code[inapplicable/unnecessary-documentation/index.html]
+::example-code[inapplicable/unnecessary-documentation/index.html]

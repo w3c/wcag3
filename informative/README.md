@@ -39,3 +39,23 @@ The following fields are required:
 - `provisions` - List of slugs corresponding to applicable provisions for this entry;
   this should _only_ specify the provision slug (not group or guideline),
   e.g. `sections-labeled` rather than `layout/structure/sections-labeled`
+
+#### Working examples
+
+Static working example files live in `public/` under the equivalent path plus
+the entry name, e.g. `public/informative/act-rules/web/{filename}/examples/` for
+`informative/act-rules/web/{filename}.md`.
+
+Code blocks can be extracted from the working examples and inserted into
+`{filename}.md` content using the `::example-code` leaf directive, e.g.,
+`::example-code[{example-name}/index.html]`:
+
+- The path is relative to the entry's `examples` directory in `public/`
+- `.html` files extract only part of the file:
+  - The contents of the element with a `data-code-ref` attribute,
+    or `<body>` otherwise
+  - If multiple `data-code-ref` elements exist, select one by `id` via `#{id}`,
+    e.g. `::example-code[{example-name}/index.html#markup]`
+- Other file types are extracted in full
+- Syntax highlighting follows the file extension; override via `{lang=...}`,
+  e.g. `::example-code[{example-name}/index.html#styles]{lang=css}`
