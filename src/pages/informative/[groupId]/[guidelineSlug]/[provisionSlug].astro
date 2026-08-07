@@ -5,10 +5,9 @@ import capitalize from "lodash/capitalize";
 import KeyTerms from "@/components/informative/KeyTerms.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import { informativeSlug } from "@/lib/constants";
-import { computeProvisionTypeLabel } from "@/lib/guidelines";
 import {
   detectTechnology,
-  formatNormativeContent,
+  incorporateNormativeContent,
   informativeProvisionSlugRelationMap,
   informativeRelatedTypes,
   processKeyTerms,
@@ -46,21 +45,15 @@ const guideline = await resolveInformativeGuideline(guidelineId);
 if (!guideline) throw new Error(`Unresolvable informative guideline ID: ${guidelineId}`);
 const provision = await resolveInformativeProvision(provisionId);
 if (!provision) throw new Error(`Unresolvable informative provision ID: ${provisionId}`);
-if (!provision.rendered || !provision.normativeEntry.rendered) {
-  throw new Error(
-    `how-to/[group]/[guideline]: Rendered HTML missing for ${provision.id}; check for Markdown parse failures earlier in log`
-  );
-}
 
 const { html, terms } = processKeyTerms(
-  formatNormativeContent(provision.normativeEntry.rendered) + provision.rendered.html
+  incorporateNormativeContent(provision)
 );
 
 const relatedEntries = informativeProvisionSlugRelationMap[provisionSlug!];
 ---
 
 <InformativeLayout title={provision.title} entry={provision} breadcrumbSegments={[guideline, provision]}>
-  <h2>{computeProvisionTypeLabel(provision.normativeEntry)}</h2>
   <Fragment set:html={html} />
   {
     relatedEntries && Object.entries(relatedEntries).map(([type, entries]) => (
