@@ -9,9 +9,9 @@ To be added
 ## Procedure
 
 For each change of contrast:
-1. Is the change of contrast triggered by a loading a new :term[page]/:term[view]?
-2. Is the change of contrast less than 4.5:1?
-3. Is the area of the change of contrast less than 30% of the viewport?
+1. Check if the change of contrast is triggered by a loading a new :term[page]/:term[view].
+2. Check that the change of contrast is less than 4.5:1.
+3. Check that the area of the change of contrast is less than 30% of the viewport.
 
 ### Expected results
 #1, #2, or #3 is true.

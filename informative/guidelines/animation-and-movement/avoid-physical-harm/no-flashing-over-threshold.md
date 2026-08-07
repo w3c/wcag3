@@ -14,9 +14,8 @@ The objective of this requirement is to ensure that content avoids the types of 
 <b>Procedure</b>
 
 For each instance of flashing:
-1. Is the flashing :term[essential]?
-2. Does the flashing exceed the thresholds defined by the :term[general flash and red flash thresholds]?
+1. Check if the flashing is :term[essential].
+2. Check that the flashing is below the thresholds defined by the :term[general flash and red flash thresholds].
 
 <b>Expected results</b>
-* #1 is true, or
-* #2 is false.
+* #1 or #2 is true.
