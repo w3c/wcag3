@@ -15,13 +15,3 @@ Methods &amp; best practices
 
 - Method: No styling or scripting hides the pointer indicator.
 :::
-
-:::tests
-**Procedure**
-
-If the pointer is ever not visible:
-1. Check that it meets one of the exceptions.
-
-**Expected results**
-* #1 is true.
-:::

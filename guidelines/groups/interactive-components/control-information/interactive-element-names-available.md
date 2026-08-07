@@ -16,14 +16,3 @@ Methods &amp; best practices
 - Best Practice: Ensure clarity by pairing an icon with a persistent visible text label or only use a persistent visible text label. 
 - Best Practice: When an icon is the only visual label, provide a tooltip (hover label) with the text description.
 :::
-
-:::tests
-**Procedure**
-
-For each interactive element:
-1. Confirm it has a visual label that describes the element.
-2. Confirm the visual label persists during use.
-
-**Expected results**
-- #1 and #2 are true.
-:::

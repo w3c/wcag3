@@ -20,17 +20,3 @@ This applies to content that appears in addition to the triggering of the :term[
 :::example
 Custom tooltips, sub-menus, and other non-modal popups that display on hover and keyboard focus.
 :::
-
-:::tests
-
-**Procedure**
-
-For additional content that appears on hover:
-
-1. Check that the pointer can be moved over the additional content without the additional content disappearing.
-
-
-**Expected results**
-
-- #1 is true.
-:::
