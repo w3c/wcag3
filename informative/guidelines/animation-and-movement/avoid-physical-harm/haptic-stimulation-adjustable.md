@@ -1,3 +1,7 @@
+## Methods
+
+* Add a setting to reduce haptic feedback or turn it off.
+
 ## Tests
 
 <b>Procedure</b>

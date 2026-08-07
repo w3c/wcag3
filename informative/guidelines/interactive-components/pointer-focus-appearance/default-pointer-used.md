@@ -1,3 +1,8 @@
+## Methods
+
+- No scripting or styling overrides the pointer indicator appearance.
+- Provide a setting that removes any overrides to the pointer indicator appearance.
+
 ## Tests
 
 <b>Procedure</b>
