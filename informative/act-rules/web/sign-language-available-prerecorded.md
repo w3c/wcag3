@@ -1,0 +1,75 @@
+---
+title: Sign language is available for prerecorded audio
+provisions:
+  - sign-language-available-prerecorded
+---
+
+The rule checks that sign language interpretation using the most appropriate regional sign language is available for prerecorded audio content. 
+
+## Applicability
+
+This rule applies to audio-only content or video content containing audio. It does not apply to audio content that is an alternative for visual content and clearly labelled as such. It does not apply to decorative background sound. It does not apply to interface sound effects.
+
+## Expectation
+
+Each test target includes sign language interpretation.
+
+## Examples
+
+### Passed example 1
+
+A piece of audio-only content is accompanied by a nearby video that provides sign language interpretation.
+
+```html
+  <figure>
+  <figcaption>Latest podcast</figcaption>
+  <audio controls src="latest-podcast.mp3"></audio>
+    <details>
+      <summary>Signed version</summary>
+      <video controls width="250">
+        <source src="latest-podcast-signed.webm" type="video/webm" />
+      </video>
+    </details>
+  </figure>
+```
+
+### Passed example 2
+
+Providing an adjacent link to a video with sign language interpretation for audio-only content.
+
+```html
+  <h3>Latest podcast</h3>
+  <p>
+    <audio controls src="latest-podcast.mp3"></audio><br/>
+    <a href="latest-podcast-signed.html">Signed version of latest podcast</a>
+  </p>
+```
+
+### Passed example 3
+
+Sign language interpretation is part of the source video either because an interpreter is present in the recording or because the interpretation is provided as a hard-coded picture-in-picture.
+
+### Failed example 1
+
+The audio-only content has no sign language interpretation available within the page/view.
+
+```html
+  <h3>Latest podcast</h3>
+  <p>
+    <audio controls src="latest-podcast.mp3"></audio>
+  </p>
+```
+
+### Failed example 2
+
+The audio-only content has a link to a video with sign language interpretation within the page/view. The sign language used for the interpretation is not the most appropriate for the intended audience or region.
+
+```html
+  <html lang="en-GB">
+  …
+  <h3>Latest podcast</h3>
+  <p>
+    <audio controls src="latest-podcast.mp3"></audio>
+    <a href="latest-podcast-ASL-signed.html">American Sign Language (ASL) signed version of latest podcast</a>
+  </p>
+```
