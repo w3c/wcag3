@@ -1,7 +1,6 @@
 version: "0.2"
 minWordLength: 3
-language:
-  - en-us
+language: "en-US"
 dictionaries:
   - companies
   - softwareTerms
