@@ -34,14 +34,13 @@ patterns:
     pattern: /\[\[[^\]]+\]\]/g
   - name: foreign-language
     pattern: /<(\w+)[^>]+lang="(?!en)\w+"[^>]*>.*?<\/\1>/gi
-  - name: html-tags
-    pattern: /<[^>]*>/g
 languageSettings:
   - languageId: astro
     ignoreRegExpList:
       - encoded-citations
       - foreign-language
-      - html-tags
+      - HTML-id
+      - HTML-class
       # pre/code tags
       - /<(pre|code)\b[^>]*>[\s\S]*?<\/\1>/g
       # style tags
@@ -54,7 +53,8 @@ languageSettings:
     ignoreRegExpList:
       - encoded-citations
       - foreign-language
-      - html-tags
+      - HTML-id
+      - HTML-class
       # Block directive
       - /^\s*:::.*/gm
       # Fenced code block
