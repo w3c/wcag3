@@ -54,6 +54,7 @@ mouseup
 multipoint
 preselection
 preselections
+sotd
 spacebar
 touchstart
 touchend
