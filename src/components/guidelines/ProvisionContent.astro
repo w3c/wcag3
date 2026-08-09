@@ -32,15 +32,17 @@ const { Content } = await render(provision);
     )
   }
 </h5>
-<aside class="doclinks">
-  <a
-    href={`https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22${encodeURIComponent(
-      computeProvisionIssueLabel(provision)
-    )}%22`}
-  >
-    <svg aria-hidden="true" class="i-list">
-      <use xlink:href="img/icons.svg#i-list"></use>
-    </svg>{computedTitle} issues
-  </a>
-</aside>
-<Content />
+<div class="provision-body">
+  <Content />
+  <aside class="doclinks">
+    <a
+      href={`https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22${encodeURIComponent(
+        computeProvisionIssueLabel(provision)
+      )}%22`}
+    >
+      <svg aria-hidden="true" class="i-issue">
+        <use xlink:href="img/icons.svg#i-issue"></use>
+      </svg><span>{computedTitle} issues</span>
+    </a>
+  </aside>
+</div>
