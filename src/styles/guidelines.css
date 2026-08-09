@@ -205,12 +205,14 @@ section {
 
 .doclinks {
 	display: inline-flex;
-	flex-direction: column;
-	gap: .5em;
+	flex-wrap: wrap;
+	gap: 0.5rem 2rem;
 	padding: 5px 10px;
 	border-radius: 2px;
 	border: 1px solid #ccc;
 	color: var(--diminished-text);
+	column-rule: 1px solid #ccc;
+	column-rule-inset-cap: 0.2em;
 
 	a[href] {
 		color: inherit;

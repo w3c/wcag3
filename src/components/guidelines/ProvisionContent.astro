@@ -20,21 +20,21 @@ const computedTitle = computeGuidelineTitle(provision);
 const { Content } = await render(provision);
 ---
 
-<h5>
-  {
-    informativeProvision ? (
-      <a
-        href={`${import.meta.env.BASE_URL}${informativeSlug}/${informativeProvision.id}/`}
-        set:text={computedTitle}
-      />
-    ) : (
-      computedTitle
-    )
-  }
-</h5>
+<h5>{computedTitle}</h5>
 <div class="provision-body">
   <Content />
   <aside class="doclinks">
+    {
+      informativeProvision && (
+        <a
+          href={`${import.meta.env.BASE_URL}${informativeSlug}/${informativeProvision.id}/`}
+        >
+          <svg aria-hidden="true" class="i-question">
+            <use xlink:href="img/icons.svg#i-question"></use>
+          </svg><span>{computedTitle} details</span>
+        </a>
+      )
+    }
     <a
       href={`https://github.com/w3c/wcag3/issues?q=state%3Aopen%20label%3A%22${encodeURIComponent(
         computeProvisionIssueLabel(provision)
