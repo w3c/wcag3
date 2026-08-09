@@ -98,6 +98,14 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function moveGuidelineSelfLink() {
+    document.querySelectorAll(".guideline > .header-wrapper").forEach(function (wrapper) {
+      const heading = wrapper.querySelector("h4");
+      const selfLink = wrapper.querySelector(":scope > a.self-link");
+      if (heading && selfLink) heading.insertAdjacentElement("beforebegin", selfLink);
+    });
+  }
+
   function addEmptyGuidelineEdNote() {
     const sectionSelector =
       "section" + (new URLSearchParams(location.search).get("skip") ? ":not([data-skip])" : "");
@@ -154,7 +162,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
       // hgroup only permits heading ~ p, so relocate ReSpec's self-link
       const selfLink = hgroup.querySelector(":scope > a.self-link");
-      if (selfLink) hgroup.insertAdjacentElement("afterend", selfLink);
+      if (selfLink) hgroup.insertAdjacentElement("beforebegin", selfLink);
 
       requirementEl.removeAttribute(attributeName);
     });
@@ -530,6 +538,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       removeDraftMethodLinks,
       removeRequirementNum,
       addGuidelineText,
+      moveGuidelineSelfLink,
       addRequirementType,
       addStatusMarkers,
       numberNotes,
