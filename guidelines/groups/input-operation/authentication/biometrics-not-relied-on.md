@@ -8,9 +8,3 @@ type: foundational
 :::note
 Biometrics includes facial recognition software, fingerprinting, vocal patterns and other voice characteristics.
 :::
-
-:::note
-Methods &amp; best practices
-
-- Method: When requiring biometric information for authentication, provide an additional way to authenticate that is not biometric. For example, if a finger print is required for authentication, then a password must also be supported.
-:::

@@ -1,3 +1,11 @@
+## Methods
+
+- Use standard HTML to create interactive elements.
+
+## Best Practices
+
+- Avoid modifying the tab order to be in only one direction.
+
 ## Tests
 
 <b>Procedure</b>

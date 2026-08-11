@@ -1,3 +1,7 @@
+## Methods
+
+- No styling or scripting hides the pointer indicator.
+
 ## Tests
 
 <b>Procedure</b>
