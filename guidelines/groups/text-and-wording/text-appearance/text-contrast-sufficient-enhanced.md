@@ -17,7 +17,7 @@ The contrast algorithm used in WCAG 3 is yet to be determined. For this draft, t
 :::except-when
 - the text is:
     * also present elsewhere in the :term[page]/:term[view] which meets the requirement
-    * part of an inactive Interactive element
+    * part of an inactive :term[interactive element]
     * pure decoration
     * not visible to anyone
     * part of a picture that includes significant other visual content
