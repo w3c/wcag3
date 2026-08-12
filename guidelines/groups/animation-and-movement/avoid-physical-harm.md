@@ -4,6 +4,7 @@ children:
   - no-flashing-no-exceptions
   - no-visual-motion
   - no-visual-motion-no-exceptions
+  - avoid-animation-from-interaction
   - trigger-warning-available
   - haptic-stimulation-adjustable
   - audio-shifting-adjustable

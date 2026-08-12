@@ -3,7 +3,9 @@
 To be added.
 
 ### Method(s)
-* Design content without using visual motion or pseudo-motion.
+* Consider if animation is essential, and if it is not, refrain from including it;
+* Limit every animation to 5 seconds.
+
 
 ## Procedure
 

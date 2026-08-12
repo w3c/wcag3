@@ -5,9 +5,9 @@ title: No animation (no exceptions)
 issueLabel: No visual motion (no exceptions)
 ---
 
-:term[Content] does not include :term[pseudo-motion] or visual motion lasting longer than 5 seconds.
+:term[Content] does not include any :term[animation] or :term[blinking].
 
-:::ednote
-<b>Method(s)</b>
-* Design content without using visual motion or pseudo-motion.
+:::except-when
+- the animation is essential
+- a play/pause mechanism is provided
 :::
