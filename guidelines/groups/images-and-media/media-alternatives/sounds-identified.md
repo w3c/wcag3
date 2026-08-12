@@ -14,5 +14,5 @@ This includes sound effects and other non-spoken :term[audio] :term[content].
 :::
 
 :::except-when
-- it is a decorative video.
+- the video is :term[decorative].
 :::

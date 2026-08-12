@@ -7,5 +7,5 @@ status: developing
 
 :::except-when
 * The audio or video content is an alternative for text and clearly labelled as such.
-* It is a background video with no spoken content.
+* The video has no spoken content and serves only as background.
 :::
