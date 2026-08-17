@@ -1,0 +1,91 @@
+---
+import DevLayout from "@/layouts/DevLayout.astro";
+import { computeProvisionIssueLabel } from "@/lib/guidelines";
+import { getCollection } from "astro:content";
+import { exec } from "child_process";
+import { promisify } from "util";
+
+const execAsync = promisify(exec);
+
+const provisionIssueLabels = (await getCollection("provisions")).map(computeProvisionIssueLabel);
+const existingLabels: string[] = [];
+
+try {
+  existingLabels.push(
+    ...JSON.parse(
+      (await execAsync("gh label -R w3c/wcag3 list -L 500 --json name -S 'P - '")).stdout
+    ).map(({ name }: { name: string }) => name)
+  );
+} catch (error) {
+  console.error("Failed to retrieve labels from github:", error);
+}
+
+const missingLabels = provisionIssueLabels.filter((label) => !existingLabels.includes(label));
+const extraneousLabels = existingLabels.filter((label) => !provisionIssueLabels.includes(label));
+---
+
+<DevLayout title="Issue labels audit">
+  {
+    existingLabels.length ? (
+      <>
+        <h2>Missing GitHub Labels</h2>
+        {missingLabels.length ? (
+          <>
+            <p>
+              The following provision issue labels are referenced in the ED on this branch, but do
+              not exist in the GitHub repo:
+            </p>
+            <ul>
+              {missingLabels.map((label) => (
+                <li>
+                  <code>{label}</code>
+                </li>
+              ))}
+            </ul>
+          </>
+          <p>
+            These may correspond to provisions that have been added since the last WD,
+            or to provisions which have been renamed without <code>issueLabel</code> defined.
+            The latter case will be evidenced by a corresponding entry appearing in the
+            Extraneous GitHub Labels list below.
+          </p>
+        ) : (
+          <p>
+            Good news! All provision issue labels found in the ED on this branch exist in the GitHub
+            repo.
+          </p>
+        )}
+        <h2>Extraneous GitHub Labels</h2>
+        {extraneousLabels.length ? (
+          <>
+            <p>
+              The following provision labels exist in the GitHub repo, but are not referenced by the
+              ED on this branch:
+            </p>
+            <ul>
+              {extraneousLabels.map((label) => (
+                <li>
+                  <code>{label}</code>
+                </li>
+              ))}
+            </ul>
+            <p>
+              These may correspond to provisions which have been deleted since the last WD, in which
+              case they should be retained until next republication.
+            </p>
+          </>
+        ) : (
+          <p>
+            Good news! All provision issue labels found in the GitHub repo are referenced by the ED
+            on this branch.
+          </p>
+        )}
+      </>
+    ) : (
+      <p>
+        Failed to retrieve issue labels from GitHub; make sure you have <code>gh</code> installed
+        and authenticated.
+      </p>
+    )
+  }
+</DevLayout>
