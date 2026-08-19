@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Meaningful changes in visual :term[content] are conveyed programmatically. 
+Meaningful changes in visual :term[content] are conveyed :term[programmatically]. 
 
 :::applies-when
 - The changes appear before the user’s current position in reader order.
