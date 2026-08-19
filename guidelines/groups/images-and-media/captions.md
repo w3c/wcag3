@@ -2,6 +2,7 @@
 children:
   - captions-adjustable
   - captions-available-prerecorded
+  - captions-equivalent-prerecorded
   - captions-available-live
   - captions-unobstructed
   - captions-synchronized

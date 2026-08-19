@@ -1,7 +1,5 @@
 ---
 children:
-  - transcripts-available
-  - media-alternatives-equivalent
   - media-alternatives-findable
   - speakers-identified
   - speaker-language-identified
@@ -9,7 +7,6 @@ children:
   - visual-information-identified
   - non-verbal-cues-identified
   - media-alternatives-style-guide
-  - accessible-video-player-selected
   - media-alternatives-usability-testing
   - reviewed-by-content-authors
 ---

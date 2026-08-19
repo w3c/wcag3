@@ -1,13 +1,15 @@
 {
   "children": [
     "image-alternatives",
-    "media-alternatives",
+    "figure-captions",
     "non-text-alternatives",
+    "media-alternatives",
+    "transcripts",
     "captions",
     "audio-descriptions",
     "sign-language",
-    "figure-captions",
-    "single-sense"
+    "single-sense",
+    "accessible-media-player"
   ],
   "status": "developing"
 }
