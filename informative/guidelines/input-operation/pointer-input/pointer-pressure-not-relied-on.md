@@ -4,7 +4,6 @@
 
 ## Tests
 
-### Pointer pressure not relied on
 
 <b>Procedure</b>
 
