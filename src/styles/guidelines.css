@@ -1,10 +1,14 @@
+:root {
+	--diminished-text: #404040;
+}
+
 caption {
 	visibility: hidden;
 }
 :not(.head) > details:not(.issue) {
 	clear: both;
 	padding: 1em;
-	color: #404040;
+	color: var(--diminished-text);
 	border: medium solid #d9d9d9;
 	background-color: #F3F3F3;
 	margin-block:1em;
@@ -37,7 +41,7 @@ summary::after {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-	word-wrap: normal !important;  
+	word-wrap: normal !important;
 }
 
 .howto-link {
@@ -47,6 +51,12 @@ summary::after {
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
 }
+
+.requirement {
+	margin-block: 2rem;
+	padding-block-start: 1.5rem;
+}
+
 .requirement h4, .requirement h5 {
 	font-style: normal;
 	font-weight: bold;
@@ -54,11 +64,40 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 .requirement .requirement-type {
 	font-size: 90%;
-	color: #404040;
+	color: var(--diminished-text);
+	font-weight: 700;
+}
+
+.requirement hgroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-block-end: 1rem;
+
+  > * {
+    margin: 0;
+  }
+
+  .requirement-type {
+		order: -1;
+  }
+
+  h5 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 1ch;
+    margin-block: 0;
+    font-size: 1.2em;
+  }
+
+  .status-marker {
+    margin-inline-start: 0;
+  }
 }
 
 :is(.guideline, .requirement) > :is(p, ul, ol) {
-	font-size: 110%;
 	margin-top: 0;
 }
 
@@ -68,9 +107,13 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 @media (min-width: 768px) {
-	.guideline,
 	.guideline .requirement {
-		margin-left: 4em;
+		margin-left: 2rem;
+	}
+
+	.provision-body {
+		font-size: 1.1rem;
+		margin-left: 2rem;
 	}
 }
 
@@ -79,9 +122,14 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	margin-bottom: .5em;
 	margin-top: .4em;
 }
-.guideline h3, .guideline h4 {
-font-size: 110%;
-color: black;
+.guideline h3 {
+	font-size: 110%;
+	color: var(--text);
+}
+
+.guideline h4 {
+	font-size: 1.4em;
+	color: var(--text);
 }
 
 .guideline p {
@@ -101,12 +149,11 @@ h5, h6 {
 	font-style: normal !important;
 	margin-top: 1em;
 	margin-bottom: 0;
-
 }
 
 .methods h5, .errors h5, .rating h5 {
 	font-size: 100%;
-	color: #005A9C;
+	color: var(--heading-text);
 }
 caption {
 	font-style: normal !important;
@@ -152,45 +199,44 @@ section {
 	margin-bottom: 4em;
 }
 
-#guidelines :is(h2, h3, h4, h5, h6) {
+#guidelines :is(h2, h3, h4) {
 	margin-top: 1em;
 }
 
-
 .doclinks {
-	display: flex;
-	flex-direction: column;
-	gap: .5em;
-	margin: 1em;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 2rem;
 	padding: 5px 10px;
-	font-size: 90%;
 	border-radius: 2px;
 	border: 1px solid #ccc;
-}
+	color: var(--diminished-text);
+	column-rule: 1px solid #ccc;
+	column-rule-inset-cap: 0.2em;
 
-@media (min-width: 768px) {
-	.doclinks {
-		float: right;
-		max-width: 15em;
-		margin: 0 0 .5em .2em;
+	a[href] {
+		color: inherit;
+		text-underline-offset: 0.125em;
+
+		&, &:hover {
+			text-decoration-skip-ink: auto;
+			text-decoration-thickness: 1px;
+			text-decoration-color: currentColor;
+		}
+
+		&:hover, &:focus {
+			color: var(--text);
+		}
 	}
-}
 
-.doclinks a {
-	color: #333 !important;
-}
+	svg {
+		padding-inline-end: .5em;
+		margin-block-start: 0;
+	}
 
-.doclinks a:focus, .doclinks a:hover {
-	color: #141414;
-}
-
-.doclinks a:active {
-	background-image: none;
-	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-
-.doclinks a svg {
-	padding-right: .5em;
+	span {
+		font-size: 1rem;
+	}
 }
 
 svg:not(:root) {
@@ -203,4 +249,26 @@ svg:not(:root) {
 	fill: currentColor;
 	vertical-align: middle;
 	margin-top: -.25em;
+}
+
+/* Extend ReSpec’s .self-link styles to customized structure */
+
+:is(.requirement)>a.self-link {
+	position: absolute;
+	inset: 3rem calc(100% + 0.75ch) auto auto;
+  color: inherit;
+  font-size: 1rem;
+  opacity: .5;
+
+	&::before {
+		content: "§";
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+/* Tweak ReSpec’s .self-link positioning for increased heading font size */
+
+:is(.guideline h4) + a.self-link {
+	inset-block-start: -0.25em;
 }

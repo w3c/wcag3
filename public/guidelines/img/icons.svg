@@ -65,5 +65,15 @@
 	<title>minus</title>
 	<path class="path1" d="M0 6.5v3c0 0.276 0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5z"></path>
 </symbol>
+<symbol id="i-issue" viewBox="0 0 16 16">
+	<title>issue</title>
+	<path d="M15 2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2v4l-4-4H6.41l1-1h2L12 13.59V11h3zM4 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+	<path d="M13 0a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H7l-4 4v-4H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM1 9h3v2.59L6.59 9H13V1H1z"></path>
+</symbol>
+<symbol id="i-document" viewBox="0 0 16 16">
+	<title>document</title>
+	<path d="M8.5 6a.5.5 0 0 1 .5.5v5a.5.5 0 0 0 .4.49l.2.02a.5.5 0 0 1-.1.99h-3a.5.5 0 0 1-.1-.99l.2-.02a.5.5 0 0 0 .4-.49v-4a.5.5 0 0 0-.4-.49l-.2-.02A.5.5 0 0 1 6.5 6zM8 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0a1 1 0 0 1 .7.3l2.42 2.4a1 1 0 0 1 .29.71V15a1 1 0 0 1-1 1H2.9a1 1 0 0 1-.9-1V1a1 1 0 0 1 1-1zM3 15h10V3.41L10.59 1H3z"></path>
+</symbol>
 </defs>
 </svg>
