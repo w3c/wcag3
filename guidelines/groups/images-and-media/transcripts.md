@@ -3,6 +3,7 @@ children:
   - transcripts-findable
   - transcripts-available-prerecorded
   - transcripts-equivalent-prerecorded
+  - descriptive-transcripts
   - speakers-identified-in-transcripts
   - speaker-language-identified-in-transcripts
   - sounds-identified-in-transcripts
