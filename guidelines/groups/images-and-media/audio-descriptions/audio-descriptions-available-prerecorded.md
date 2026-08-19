@@ -11,5 +11,5 @@ WCAG 3 needs to specify how to handle video content with :term[audio] that does 
 :::
 
 :::except-when
-the video content is an alternative for text and clearly labelled as such.
+the video content is an alternative for text and is clearly labeled as such.
 :::
