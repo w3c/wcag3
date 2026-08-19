@@ -4,7 +4,6 @@
 
 ## Tests
 
-
 <b>Procedure</b>
 
 For each function achieved using variable pointer pressure:
