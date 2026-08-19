@@ -1,3 +1,7 @@
+## Methods
+
+* Design content without using :term[flashing].
+
 ## Tests
 
 <b>Procedure</b>
