@@ -10,7 +10,7 @@ status: developing
 :::
 
 :::example
-Two dimensional structure might be relied upon in preformated text such as code, poems, maps, or comics.
+Two dimensional structure might be relied upon in preformatted text such as code, poems, maps, or comics.
 :::
 
 :::ednote
