@@ -14,7 +14,7 @@ This applies to content that appears in addition to the triggering of the :term[
 :::
 
 :::example
-Additional content controlled by the user agent includes browser tooltips created through use of the HTML <code class="language-html">title</code> attribute.
+Additional content controlled by the user agent includes browser tooltips created through use of the HTML `title` attribute.
 :::
 
 :::example
