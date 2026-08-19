@@ -1,3 +1,9 @@
+## Methods
+
+* Keep track of the state of the error and make visibility of the error message depending on this state.
+* In a form, revalidate all fields when the form is submitted and remove all error messages that are no longer relevant.
+* Add a "Dismiss" button to the error that makes the error message disappear.
+
 ## Tests
 
 <b>Procedure</b>

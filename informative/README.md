@@ -39,3 +39,29 @@ The following fields are required:
 - `provisions` - List of slugs corresponding to applicable provisions for this entry;
   this should _only_ specify the provision slug (not group or guideline),
   e.g. `sections-labeled` rather than `layout/structure/sections-labeled`
+
+#### Working examples
+
+Static working example files live in `public/` under the equivalent path plus
+the entry name, e.g. `public/informative/act-rules/web/{basename}/examples/` for
+`informative/act-rules/web/{basename}.md`.
+
+Code blocks can be extracted from the working examples and inserted into
+`{basename}.md` content using the `::example-code` leaf directive, e.g.
+`::example-code[{example-name}/index.html]`:
+
+- The path is relative to the entry's `examples` directory in `public/`
+- `.html` files extract only part of the file:
+  - The contents of the element with a `data-code-ref` attribute,
+    or `<body>` otherwise
+  - If multiple `data-code-ref` elements exist, select one by `id` via `#{id}`,
+    e.g. `::example-code[{example-name}/index.html#markup]`
+- Other file types are extracted in full
+- Syntax highlighting follows the file extension; override via `{lang=...}`,
+  e.g. `::example-code[{example-name}/index.html#styles]{lang=css}`
+
+Usage of this directive is encouraged where feasible in order to
+reuse code rather than repeat it, but it is not required in all cases.
+Fenced code blocks are appropriate for cases that do not warrant a full
+working example, or where manually picking out a small subset of its code
+would be more expedient.

@@ -1,3 +1,12 @@
+## Methods
+
+- Establish a design system with documented rules for consistent placement of common interactive components (for example, navigation menus, search bars, and action buttons).
+- Reuse the same components across pages/views instead of recreating them.
+
+## Best Practices
+
+- If a visual position must change, document why and consider providing cues (for example, animations and labels) to reduce confusion.
+
 ## Tests
 
 <b>Procedure</b>

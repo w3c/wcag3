@@ -1,3 +1,8 @@
+## Methods
+
+- The 'Escape' (<kbd>Esc</kbd>) key closes new content.
+- An accessible 'close' button is provided to close the new content. 
+
 ## Tests
 
 ### Modal dialogs on interaction

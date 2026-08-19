@@ -1,3 +1,8 @@
+## Methods
+
+- Interactive elements are highlighted when the pointer is on the element. 
+  For example, a set of image links are shown, and the one under the pointer is highlighted with an outline or change in size.
+
 ## Tests
 
 <b>Procedure</b>
