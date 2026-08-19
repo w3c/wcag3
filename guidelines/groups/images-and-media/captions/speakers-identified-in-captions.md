@@ -1,9 +1,10 @@
 ---
 type: supplemental
 status: developing
+issueLabel: Speakers identified
 ---
 
-Speakers are identified understandably within all :term[media alternatives].
+Speakers are identified understandably within all :term[captions].
 
 :::applies-when
 - There are multiple speakers in the video.

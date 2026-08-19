@@ -1,11 +1,12 @@
 ---
 type: assertion
 status: developing
+issueLabel: Media alternatives usability testing
 ---
 
 [Title, role, or organization] asserts that:
 
-* We have conducted usability testing with users who need :term[media alternatives], and changes were made to fix or mitigate the issues found.
+* We have conducted usability testing with users who need :term[captions], and changes were made to fix or mitigate the issues found.
 
 ::assertion-required
 

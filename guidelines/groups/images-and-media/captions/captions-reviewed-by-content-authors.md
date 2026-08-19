@@ -1,11 +1,12 @@
 ---
 type: assertion
 status: developing
+issueLabel: Reviewed by content authors
 ---
 
 [Title, role, or organization] asserts that:
 
-* We have reviewed the :term[media alternatives].
+* We have reviewed the :term[captions].
 
 ::assertion-required
 

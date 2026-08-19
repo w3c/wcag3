@@ -1,6 +1,7 @@
 ---
 type: assertion
 status: developing
+issueLabel: Media alternatives style guide
 ---
 
 [Title, role, or organization] asserts that:
@@ -37,5 +38,3 @@ status: developing
   * Identify no sound or long pause
   * &hellip;
 :::
-
-
