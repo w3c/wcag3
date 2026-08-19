@@ -1,3 +1,7 @@
+## Methods
+
+- When building in functionality that relies on pointer pressure, add a slider or other control that can complete the same functionality.
+
 ## Tests
 
 ### Pointer pressure not relied on

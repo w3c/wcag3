@@ -13,8 +13,3 @@ Haptic feedback can be reduced or turned off.
 :::except-when
 - the operating system or user agent converts non-haptic feedback to haptics at user request.
 :::
-
-:::ednote
-<b>Method(s)</b>
-* Add a setting to reduce haptic feedback or turn it off.
-:::

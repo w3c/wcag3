@@ -22,7 +22,11 @@ interface Props {
 
 const { collectionName } = Astro.props;
 
-const collection = await getCollection(collectionName);
+const collection = (await getCollection(collectionName)).sort((a, b) => {
+  if (a.data.title < b.data.title) return -1;
+  if (a.data.title > b.data.title) return 1;
+  return 0;
+});
 const relatedInformativeType = informativeRelatedTypes[collectionName];
 ---
 
