@@ -4,12 +4,13 @@ children:
   - captions-available-prerecorded
   - captions-equivalent-prerecorded
   - captions-available-live
+  - caption-language-adjustable
+  - captions-controllable
   - captions-unobstructed
   - captions-synchronized
   - caption-features-available
   - captions-consistent
   - captions-centered-immersive
-  - captions-controllable
   - direction-indicated-immersive
   - speakers-identified-in-captions
   - speaker-language-identified-in-captions

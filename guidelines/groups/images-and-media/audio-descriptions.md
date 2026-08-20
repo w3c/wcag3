@@ -8,6 +8,7 @@ children:
   - extended-audio-descriptions-equivalent
   - audio-description-volume-adjustable
   - audio-description-language-adjustable
+  - audio-descriptions-controllable
   - speakers-identified-in-audio-descriptions
   - speaker-language-identified-in-audio-descriptions
   - sounds-identified-in-audio-descriptions
