@@ -10,7 +10,7 @@ The completion of a :term[process] does not include time limits.
 :::
 
 :::example
-An auction or timed exam are examples where time limits may be essential.
+Essential time limits would include but are not limited to auctions, ticket sales, or timed exams.
 :::
 
 :::note
