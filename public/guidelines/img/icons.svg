@@ -65,5 +65,10 @@
 	<title>minus</title>
 	<path class="path1" d="M0 6.5v3c0 0.276 0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5z"></path>
 </symbol>
+<symbol id="i-issue" viewBox="0 0 16 16">
+	<title>issue</title>
+	<path d="M15 2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2v4l-4-4H6.41l1-1h2L12 13.59V11h3zM4 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+	<path d="M13 0a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H7l-4 4v-4H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM1 9h3v2.59L6.59 9H13V1H1z"></path>
+</symbol>
 </defs>
 </svg>
