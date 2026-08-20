@@ -168,6 +168,25 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  /**
+   * Expands permalink labels to include the entire content of each section's heading,
+   * rather than only "Permalink for Section <number/letter>".
+   * In cases where the heading still begins with a section number/letter this will
+   * still include the word "Section", but in other cases it will not,
+   * i.e. when the section number is preceded by another word (e.g. "Guideline")
+   * or is omitted entirely (e.g. for provisions).
+   */
+  function overridePermalinkLabels() {
+    document.querySelectorAll(".self-link").forEach((el) => {
+      const sectionEl = el.closest("section");
+      const headingContent = sectionEl.querySelector("h2, h3, h4, h5, h6").textContent.trim();
+      el.setAttribute(
+        "aria-label",
+        `Permalink for ${/^[A-Z0-9]\./.test(headingContent) ? "Section " : ""}${headingContent}`
+      );
+    });
+  }
+
   function removeDraftMethodLinks() {
     document.querySelectorAll(".method-link").forEach(function (node) {
       uri = node.href;
@@ -545,6 +564,9 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       addGuidelineText,
       moveGuidelineSelfLink,
       addRequirementType,
+      overridePermalinkLabels,
+      // Status markers are added after overriding permalink labels,
+      // as they affect heading text
       addStatusMarkers,
       numberNotes,
       renumberExamples,
