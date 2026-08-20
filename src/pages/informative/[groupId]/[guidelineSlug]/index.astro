@@ -2,7 +2,7 @@
 import type { GetStaticPaths, GetStaticPathsResult } from "astro";
 
 import KeyTerms from "@/components/informative/KeyTerms.astro";
-import ProvisionLink from "@/components/informative/ProvisionLink.astro";
+import ProvisionsList from "@/components/informative/ProvisionsList.astro";
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
 import {
   formatNormativeContent,
@@ -52,13 +52,7 @@ const { html, terms } = processKeyTerms(
   <h2>Provisions under this guideline</h2>
   {
     provisions.length ? (
-      <ul>
-        {provisions.map((provision) => (
-          <li>
-            <ProvisionLink entry={provision} />
-          </li>
-        ))}
-      </ul>
+      <ProvisionsList guideline={guideline} />
     ) : (
       <div class="ednote">
         <p>
