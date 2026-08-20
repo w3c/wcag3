@@ -52,3 +52,7 @@ spacebar
 touchstart
 touchend
 ultrahaptics
+
+# dialog element attributes to be submitted to cSpell
+commandfor
+closedby
