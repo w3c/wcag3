@@ -20,11 +20,11 @@ for long numbers, divide input fields into chunks (supporting autocomplete acros
 
 ::assertion-required
 
-* Title, role or organization making the assertion
-* Date of assertion (if different from the date of the conformance claim)
+* Title, role or organization making the assertion.
+* Date of assertion (if different from the date of the conformance claim).
 
 ::assertion-recommended
 
-* Documentation of which forms were reviewed
-* Documentation of any changes made as a result of the review
-* Date of usability testing, if applicable
+* Documentation of which forms were reviewed.
+* Documentation of any changes made as a result of the review.
+* Date of usability testing, if applicable.

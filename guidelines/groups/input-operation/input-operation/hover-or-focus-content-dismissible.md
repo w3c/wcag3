@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-A :term[mechanism] is available to dismiss :term[content] that appears on :term[pointer] hover or :term[keyboard focus] without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content
+A :term[mechanism] is available to dismiss :term[content] that appears on :term[pointer] hover or :term[keyboard focus] without moving pointer hover or keyboard focus, unless the additional content does not obscure or replace other content.
 
 :::applies-when
 - Receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, and the visual presentation of the additional content is controlled by the author and not by the :term[user agent].

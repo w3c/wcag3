@@ -7,9 +7,9 @@ title: Supported decision-making review
 [Title, role, or organization] asserts that:
 
 * We have conducted a review to identify when users need to make substantial decisions about money, privacy, or well-being. In these situations, additional support was provided such as:
-  * a clear layout of options advantages and disadvantages
-  * aids for comprehension such as icons and graphics 
-  * reduced distractions
+  * a clear layout of options advantages and disadvantages,
+  * aids for comprehension such as icons and graphics, or
+  * reduced distractions.
 
 ::assertion-required
 
@@ -19,5 +19,5 @@ title: Supported decision-making review
 
 ::assertion-recommended
 
-* Results of review
+* Results of review.
 * Documentation of decisions and changes made as a result. 

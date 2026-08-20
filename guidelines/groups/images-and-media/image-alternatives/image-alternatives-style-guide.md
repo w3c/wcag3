@@ -15,7 +15,7 @@ type: assertion
 ::assertion-recommended
 
 * Section labels relevant to image alternatives, or
-* Copy or snapshot of the style guide
+* Copy or snapshot of the style guide.
 
 :::example
 * Name: ABC Inc. Style Guide for text alternatives
