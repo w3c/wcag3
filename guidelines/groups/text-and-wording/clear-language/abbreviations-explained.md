@@ -17,7 +17,7 @@ Abbreviation is introduced after first expanded use of the term.
 
 > "He has Avoidant/Restrictive Food Intake Disorder (ARFID)."
 
-Abbreviation is linked to a glossary entry or tooltipe.
+Abbreviation is linked to a glossary entry or tooltip.
 
 > "He has [ARFID]."
 :::
