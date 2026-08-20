@@ -3,7 +3,7 @@ status: exploratory
 type: supplemental
 ---
 
-The :term[image types] (photo, illustration, chart, etc.) are indicated.
+The :term[image types] are indicated.
 
 :::except-when
 * An image is a link or a part of a link.
@@ -12,7 +12,7 @@ The :term[image types] (photo, illustration, chart, etc.) are indicated.
 :::
 
 :::example
-Examples of the types include, but are not limited to:
+Types include, but are not limited to:
 
 * Photograph
 * Illustration
