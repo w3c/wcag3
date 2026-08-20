@@ -6,7 +6,7 @@ type: foundational
 All functionality and content available using :term[complex pointer inputs] is also available using a :term[simple pointer input] or a sequence of simple pointer inputs that do not require timing.
 
 :::example
-Examples of complex pointer inputs:
+Complex pointer inputs include but are not limited to:
 
 - Double clicks
 - Dragging movements
