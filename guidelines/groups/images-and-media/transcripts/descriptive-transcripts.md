@@ -1,7 +1,6 @@
 ---
 type: foundational
 status: developing
-issueLabel: Descriptive transcripts
 ---
 
 :term[Descriptive transcripts] are provided for prerecorded :term[audio] and :term[video] :term[content].
