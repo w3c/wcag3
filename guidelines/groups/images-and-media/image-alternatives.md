@@ -2,8 +2,7 @@
 children:
   - images-detectable
   - decorative-images-hidden
-  - image-alternatives-available
-  - image-alternatives-equivalent
+  - equivalent-text-alternatives-available
   - image-types-identified
   - alternative-text-editable
   - image-alternatives-style-guide
