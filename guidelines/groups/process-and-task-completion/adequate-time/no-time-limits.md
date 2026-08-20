@@ -6,7 +6,11 @@ type: supplemental
 The completion of a :term[process] does not include time limits. 
 
 :::except-when 
-- the time limit is :term[essential], such as in an auction or timed exam. 
+- the time limit is :term[essential]. 
+:::
+
+:::example
+An auction or timed exam are examples where time limits may be essential.
 :::
 
 :::note
