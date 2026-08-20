@@ -179,6 +179,8 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
   function overridePermalinkLabels() {
     document.querySelectorAll(".self-link").forEach((el) => {
       const sectionEl = el.closest("section");
+      if (!sectionEl) return; // Occurs for e.g. permalinks inside dfn-panel
+
       const headingContent = sectionEl.querySelector("h2, h3, h4, h5, h6").textContent.trim();
       el.setAttribute(
         "aria-label",
