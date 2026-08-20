@@ -10,5 +10,5 @@ The default pointer meets the @@[non-text-contrast] requirement, and is at least
 :::
 
 :::note
-There can be multiple types of pointer indicator (e.g. arrow, hand, caret). The size requirement applies to whichever type of indicator would be the default for that scenario.
+There can be multiple types of pointer indicator. For example, arrow, hand, caret. The size requirement applies to whichever type of indicator would be the default for that scenario.
 :::
