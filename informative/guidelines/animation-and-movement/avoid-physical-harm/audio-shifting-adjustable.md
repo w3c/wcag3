@@ -6,7 +6,7 @@
 
 <b>Procedure</b>
 
-For audio shifting caused by the digital content (vs. the operating system or user agent):
+For audio shifting caused by the digital content (in contrast to the operating system or user agent):
 1. Check that there is a setting to pause or turn off the audio shifting.
 
 <b>Expected results</b>

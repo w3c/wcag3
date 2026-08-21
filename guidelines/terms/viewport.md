@@ -5,7 +5,7 @@ status: developing
 object in which the :term[platform] presents content
 
 :::note
-The author has no control of the viewport and almost always has no idea what is presented in a viewport (e.g. what is on screen) because it is provided by the platform. On browsers the hardware platform is isolated from the content.
+The author has no control of the viewport and almost always has no idea what is presented in a viewport (for example, what is on screen) because it is provided by the platform. On browsers the hardware platform is isolated from the content.
 :::
 
 :::note
