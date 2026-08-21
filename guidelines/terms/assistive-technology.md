@@ -25,9 +25,9 @@ The distinction between mainstream user agents and assistive technologies is not
 :::example
 Assistive technologies that are important in the context of this document include the following:
 
-* screen magnifiers and other visual reading assistants, which are used by people with visual, perceptual and physical print disabilities to change features including but not limited to text font, size, spacing, color, synchronization with speech in order to improve the visual readability of rendered text and images
+* screen magnifiers and other visual reading assistants, which are used by people with visual, perceptual, and physical print disabilities to change features including but not limited to text font, size, spacing, color, and synchronization with speech in order to improve the visual readability of rendered text and images
 * screen readers, which are used by people who are blind to read textual information through synthesized speech or braille
-* text-to-speech software, which is used by some people with cognitive, language, and learning disabilities to convert text into synthetic speech.
+* text-to-speech software, which is used by some people with cognitive, language, and learning disabilities to convert text into synthetic speech
 * speech recognition software, which may be used by people who have some physical disabilities
 * alternative keyboards, which are used by people with certain physical disabilities to simulate the keyboard (including alternate keyboards that use head pointers, single switches, sip/puff, and other special input devices)
 * alternative pointing devices, which are used by people with certain physical disabilities to simulate mouse pointing and button activations
