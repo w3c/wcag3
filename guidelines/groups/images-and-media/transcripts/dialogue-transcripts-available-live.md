@@ -1,10 +1,10 @@
 ---
 type: foundational
 status: developing
-title: Dialog transcripts available (prerecorded)
+title: Dialogue transcripts available (live)
 ---
 
-:term[Dialog Transcripts] are :term[available] for all prerecorded :term[audio] and :term[video] :term[content].
+:term[Dialogue transcripts] are available for all live :term[audio] and :term[video] :term[content].
 
 :::except-when
 * The audio or video content is an alternative for text and is clearly labeled as such.
