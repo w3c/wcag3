@@ -4,7 +4,7 @@ status: developing
 issueLabel: Media alternatives findable
 ---
 
-A text :term[transcript] is :term[adjacent] to :term[audio] and :term[video] :term[content].
+A text :term[transcript] is adjacent to :term[audio] and :term[video] :term[content].
 
 :::except-when
 * The audio or video content has no spoken dialogue.

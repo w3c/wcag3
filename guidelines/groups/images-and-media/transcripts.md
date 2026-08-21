@@ -1,8 +1,8 @@
 ---
 children:
   - transcripts-findable
-  - dialog-transcripts-available-prerecorded
-  - dialog-transcripts-available-live
+  - dialogue-transcripts-available-prerecorded
+  - dialogue-transcripts-available-live
   - transcripts-equivalent-prerecorded
   - descriptive-transcripts-available
   - speakers-identified-in-transcripts
