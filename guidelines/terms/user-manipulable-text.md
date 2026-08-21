@@ -9,7 +9,7 @@ text which the user can adjust
 :::note
 This could include, but is not limited to, changing:
 
-* line, word or letter spacing
+* line, word, or letter spacing
 * color
 * line length — being able to control width of block of text
 * typographic alignment — justified, flushed right/left, centered
