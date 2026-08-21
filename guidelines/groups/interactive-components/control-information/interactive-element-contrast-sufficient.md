@@ -3,7 +3,7 @@ status: developing
 type: foundational
 ---
 
-Visual information required to identify :term[interactive elements] and states meet a minimum :term[contrast ratio test].
+Visual information required to identify :term[interactive elements] and :term[states] meet a minimum :term[contrast ratio test].
 
 :::except-when
 * The interactive element is inactive, or
