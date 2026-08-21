@@ -14,13 +14,13 @@ The :term[image types] are indicated.
 :::example
 Types include, but are not limited to:
 
-* Photograph
-* Illustration
-* Chart
-* Infographic
-* Map
-* Graph
-* Screenshot
-* Headshot
-* Diagram
+* photograph
+* illustration
+* chart
+* infographic
+* map
+* graph
+* screenshot
+* headshot
+* diagram
 :::

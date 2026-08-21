@@ -8,14 +8,14 @@ Meaningful changes in visual :term[content] are conveyed :term[programmatically]
 :::applies-when
 - The changes appear before the user’s current position in reader order.
 - The changes appear earlier in the process.
-- Notifications, status or error messages appear.
+- Notifications, status messages, or error messages appear.
 - The amount of content changes.
 - The change affects the content’s meaning. 
 - The audience changes.
 :::
 
 :::except-when
- - changes are continuous, without pause.
+- changes are continuous, without pause.
 :::
 
 :::example

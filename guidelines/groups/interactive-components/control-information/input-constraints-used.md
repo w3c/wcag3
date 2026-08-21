@@ -6,7 +6,7 @@ type: foundational
 Field constraints and conditions are available.
 
 :::example
-* Required line length
-* Date format
-* Password format
+* required line length
+* date format
+* password format
 :::

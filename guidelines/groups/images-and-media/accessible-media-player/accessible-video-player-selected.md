@@ -19,7 +19,7 @@ status: developing
 
 ::assertion-required
 
-* title, role or organization making the assertion (if different from the conformance claim)
+* title, role, or organization making the assertion (if different from the conformance claim)
 * date of assertion (if different from the date of the conformance claim)
 * feature included from the list
 
