@@ -1,3 +1,12 @@
+## Intent
+
+:::ednote
+To be added.
+:::
+
+## Methods
+* Design content without using visual motion or pseudo-motion.
+
 ## Tests
 
 <b>Procedure</b>
