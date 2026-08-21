@@ -98,6 +98,14 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function moveGuidelineSelfLink() {
+    document.querySelectorAll(".guideline > .header-wrapper").forEach(function (wrapper) {
+      const heading = wrapper.querySelector("h4");
+      const selfLink = wrapper.querySelector(":scope > a.self-link");
+      if (heading && selfLink) heading.insertAdjacentElement("beforebegin", selfLink);
+    });
+  }
+
   function addEmptyGuidelineEdNote() {
     const sectionSelector =
       "section" + (new URLSearchParams(location.search).get("skip") ? ":not([data-skip])" : "");
@@ -118,14 +126,66 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
   function addRequirementType() {
     const attributeName = "data-requirement-type-label";
     document.querySelectorAll(`[${attributeName}]`).forEach(function (requirementEl) {
-      const preText = document.createElement("span");
-      preText.classList.add("requirement-type");
-      preText.textContent = requirementEl.getAttribute(attributeName) + ": ";
-
       const heading = requirementEl.querySelector("h5");
-      heading.insertAdjacentElement("afterbegin", preText);
+      const wrapper = heading.closest(".header-wrapper");
+
+      // Build an hgroup to take the place of ReSpec's div.header-wrapper
+      const hgroup = document.createElement("hgroup");
+      hgroup.className = wrapper.className;
+      while (wrapper.firstChild) hgroup.appendChild(wrapper.firstChild);
+
+      // Add the requirement type after the heading
+      const typeEl = document.createElement("p");
+      typeEl.id = heading.id + "-type";
+      typeEl.classList.add("requirement-type");
+      typeEl.textContent = requirementEl.getAttribute(attributeName);
+      hgroup.appendChild(typeEl);
+
+      // Complete the .header-wrapper replacement
+      wrapper.replaceWith(hgroup);
+
+      // Incorporate the provision type into the heading accName
+      heading.setAttribute("aria-labelledby", heading.id + " " + typeEl.id);
+
+      // Set the provision status as the link’s accDesc
+      const link = heading.querySelector("a");
+      if (link) {
+        const describedby = [];
+        const statusMarker = heading.querySelector(".status-marker");
+        if (statusMarker) {
+          statusMarker.id = heading.id + "-status";
+          describedby.push(statusMarker.id);
+        }
+        describedby.push(typeEl.id);
+        link.setAttribute("aria-describedby", describedby.join(" "));
+      }
+
+      // hgroup only permits heading ~ p, so relocate ReSpec's self-link
+      const selfLink = hgroup.querySelector(":scope > a.self-link");
+      if (selfLink) hgroup.insertAdjacentElement("beforebegin", selfLink);
 
       requirementEl.removeAttribute(attributeName);
+    });
+  }
+
+  /**
+   * Expands permalink labels to include the entire content of each section's heading,
+   * rather than only "Permalink for Section <number/letter>".
+   * In cases where the heading still begins with a section number/letter this will
+   * still include the word "Section", but in other cases it will not,
+   * i.e. when the section number is preceded by another word (e.g. "Guideline")
+   * or is omitted entirely (e.g. for provisions).
+   */
+  function overridePermalinkLabels() {
+    document.querySelectorAll(".self-link").forEach((el) => {
+      const sectionEl = el.closest("section");
+      if (!sectionEl) return; // Occurs for e.g. permalinks inside dfn-panel
+
+      const headingContent = sectionEl.querySelector("h2, h3, h4, h5, h6").textContent.trim();
+      el.setAttribute(
+        "aria-label",
+        `Permalink for ${/^[A-Z0-9]\./.test(headingContent) ? "Section " : ""}${headingContent}`
+      );
     });
   }
 
@@ -389,11 +449,10 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
         w3cid: 44689,
       },
       {
-        name: "Chuck Adams",
-        mailto: "charles.adams@oracle.com",
-        company: "Oracle",
-        companyURI: "https://www.oracle.com/",
-        w3cid: 104852,
+        name: "Adam Page",
+        mailto: "adam.page@hilton.com",
+        company: "Invited Expert",
+        w3cid: 120738,
       },
       {
         name: "Kevin White",
@@ -439,6 +498,12 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     ],
 
     formerEditors: [
+      {
+        name: "Chuck Adams",
+        company: "Oracle",
+        companyURI: "https://www.oracle.com/",
+        w3cid: 104852,
+      },
       {
         name: "Jeanne Spellman",
         mailto: "jspellman@spellmanconsulting.com",
@@ -499,7 +564,11 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       removeDraftMethodLinks,
       removeRequirementNum,
       addGuidelineText,
+      moveGuidelineSelfLink,
       addRequirementType,
+      overridePermalinkLabels,
+      // Status markers are added after overriding permalink labels,
+      // as they affect heading text
       addStatusMarkers,
       numberNotes,
       renumberExamples,
