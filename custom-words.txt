@@ -44,6 +44,7 @@ strobing
 # Intentional compound words
 # (since useCompoundWords is too permissive)
 colorspace
+deafblind
 frontmatter
 headshot
 mousedown
