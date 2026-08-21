@@ -15,10 +15,10 @@ issueLabel: Media alternatives usability testing
 * Date of assertion (if different from the date of the conformance claim).
 
 ::assertion-recommended
-* Scope
-* Types of disabilities each user had
-* Number of users (for each type of disability)
-* Date of testing
+* Scope.
+* Types of disabilities each user had.
+* Number of users (for each type of disability).
+* Date of testing.
 * Identified issues and details of solutions applied.
 
 :::example
@@ -31,7 +31,5 @@ issueLabel: Media alternatives usability testing
   * 3 users who are hard of hearing
 * **Dates:** 10-11 October 2024
 * **Examples of fixed issues:**
-  * Identified where the speaker changed
-  * Described background music
-  * Indicated that a dog was barking
+  * Added description of action scene
 :::

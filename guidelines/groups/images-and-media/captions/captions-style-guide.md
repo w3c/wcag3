@@ -6,7 +6,7 @@ issueLabel: Media alternatives style guide
 
 [Title, role, or organization] asserts that:
 
-* Our organization has a style guide that includes guidance on :term[media alternatives] and a policy and/or processes that the style guide must be followed
+* Our organization has a style guide that includes guidance on :term[captions] and a policy and/or processes that the style guide must be followed
 
 ::assertion-required
 
@@ -18,15 +18,14 @@ issueLabel: Media alternatives style guide
 
 * Summary of the needs of users involved.
 * Identified issues and details of solutions applied.
-* Section labels relevant to image alternatives, or
-* Copy or snapshot of the style guide
+* Copy or snapshot of the style guide.
 
 
 :::example
 * **Name:** ABC Inc. Style Guide for Captions
 * **Version:** 1.2
 * **Date:** October 2024
-* **Description:** The style guide include :term[sections] such as:
+* **Description:** The style guide include sections such as:
   * What are captions?
   * Who needs captions?
   * :term[Guideline] provided by WCAG 3

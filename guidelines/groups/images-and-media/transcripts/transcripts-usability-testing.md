@@ -15,10 +15,10 @@ issueLabel: Media alternatives usability testing
 * Date of assertion (if different from the date of the conformance claim).
 
 ::assertion-recommended
-* Scope
-* Types of disabilities each user had
-* Number of users (for each type of disability)
-* Date of testing
+* Scope.
+* Types of disabilities each user had.
+* Number of users (for each type of disability).
+* Date of testing.
 * Identified issues and details of solutions applied.
 
 :::example

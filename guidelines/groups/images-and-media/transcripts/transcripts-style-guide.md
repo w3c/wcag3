@@ -18,8 +18,7 @@ issueLabel: Media alternatives style guide
 
 * Summary of the needs of users involved.
 * Identified issues and details of solutions applied.
-* Section labels relevant to image alternatives, or
-* Copy or snapshot of the style guide
+* Copy or snapshot of the style guide.
 
 
 :::example
