@@ -8,7 +8,7 @@ status: developing
 :::except-when
 * The media is :term[purely decorative].
 * The media is already a media alternative for text and is clearly labeled as such.
-* The visual track includes no information that is not already conveyed in the audio track (e.g., a "talking head" video where only the speaker is visible against a static background).
+* The visual track includes no information that is not already conveyed in the audio track (for example, a "talking head" video where only the speaker is visible against a static background).
 :::
 
 :::example
