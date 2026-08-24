@@ -2,4 +2,4 @@
 status: developing
 ---
 
-a transition between visual states is displayed over time rather than occurring instantly.
+a transition between visual states that is displayed over time rather than occurring instantly.
