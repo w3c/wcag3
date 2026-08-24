@@ -21,6 +21,9 @@ Lauriat
 ReSpec
 Spellman
 Yesilada
+Detweiler
+Omanson
+Ameritech
 
 # Words
 dyscalculia
@@ -41,6 +44,7 @@ strobing
 # Intentional compound words
 # (since useCompoundWords is too permissive)
 colorspace
+deafblind
 frontmatter
 headshot
 mousedown

@@ -1,3 +1,7 @@
+## Methods
+
+- When requiring biometric information for authentication, provide an additional way to authenticate that is not biometric. For example, if a fingerprint is required for authentication, then a password must also be supported.
+
 ## Tests
 
 <b>Procedure</b>

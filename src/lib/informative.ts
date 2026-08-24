@@ -4,14 +4,18 @@ import {
   getEntry,
   type CollectionEntry,
   type CollectionKey,
-  type RenderedContent,
 } from "astro:content";
 import { load } from "cheerio";
 import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
 import pluralize from "pluralize";
 
-import { computeGuidelineTitle, computeTermTitle } from "./guidelines";
+import {
+  computeGuidelineTitle,
+  computeProvisionTypeLabel,
+  computeTermTitle,
+  provisionSlugMap,
+} from "./guidelines";
 
 /**
  * Wraps a function call to silence its console.warn calls,
@@ -117,22 +121,38 @@ export async function resolveInformativeProvisions(guidelineId: string) {
 
   const provisions: InformativeProvision[] = [];
   for (const provisionSlug of normativeGuideline.data.children) {
+    if (!provisionSlugMap[provisionSlug]) continue; // Inherit WCAG_PUBLISH behavior
     const informativeEntry = await resolveInformativeProvision(`${guidelineId}/${provisionSlug}`);
     if (informativeEntry) provisions.push(informativeEntry);
   }
   return provisions;
 }
 
-/** Formats normative content for inclusion within an informative page. */
-export function formatNormativeContent(rendered: RenderedContent) {
-  const $ = load(rendered.html, null, false);
-  $("summary").each((_, el) => {
-    const $el = $(el);
+/** Formats informative and normative content together for pages in informative docs. */
+export function incorporateNormativeContent(entry: InformativeGuideline | InformativeProvision) {
+  if (!entry.rendered || !entry.normativeEntry.rendered)
+    throw new Error(
+      `Rendered HTML missing for ${entry.id}; check for Markdown parse failures earlier in log`
+    );
+
+  const $normative = load(entry.normativeEntry.rendered.html, null, false);
+  $normative("summary").each((_, el) => {
+    const $el = $normative(el);
     // Add child element to summaries to work with WAI excol styles
     if ($el.text() === $el.html()) $el.html(`<strong>${$el.text()}</strong>`);
   });
+  if (entry.collection === "informativeGuidelines")
+    return `<h2>Guideline</h2><div class="normative">${$normative.html()}</div>${entry.rendered.html}`;
 
-  return `<div class="normative">${$.html()}</div>`;
+  const $ = load(
+    `<h2>${computeProvisionTypeLabel(entry.normativeEntry)}</h2>` +
+      `<div class="normative">${$normative.html()}</div>${entry.rendered.html}`,
+    null,
+    false
+  );
+  const $inBrief = $("h2#in-brief").first().nextUntil("h2").addBack();
+  if ($inBrief.length) $("h2").first().before($inBrief);
+  return $.html();
 }
 
 /** Inverted map from every possible permutation of each term to its content entry. */

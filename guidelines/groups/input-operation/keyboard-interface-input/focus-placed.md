@@ -12,9 +12,3 @@ When a user closes a modal dialog or other popup, keyboard focus is returned to 
 :::example
 When there are tags, with a delete button on each tag, the keyboard focus needs to be moved to a meaningful location after a tag is deleted.
 :::
-
-:::ednote
-Method: When removing interactive elements such as filters, dialogs, or popups that currently contain focus, actively place the focus back on the element that led to that element, the previous element within the focus order, or another meaningful location.
-
-Best Practice: Conduct usability testing with screen reader users to evaluate the focus movement. 
-:::
