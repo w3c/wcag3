@@ -3,9 +3,9 @@ caption {
 }
 :not(.head) > details {
 	padding: 1em;
-	color: #404040;
+	color: color-mix(in srgb, var(--text) 75%, transparent 25%);
+	background-color: var(--toc-sidebar-bg);
 	border: medium solid #d9d9d9;
-	background-color: #F3F3F3;
 }
 summary::after {
 	display: inline-block;
