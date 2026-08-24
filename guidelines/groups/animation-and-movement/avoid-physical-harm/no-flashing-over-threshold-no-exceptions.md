@@ -12,5 +12,5 @@ issueLabel: No flashing (no exceptions)
 :::
 
 :::note
-There are people who may not know they are susceptible to photosensitive seizures, and people who may have a much larger view of content than the default (zoomed in or with the display close to the eye).
+Avoiding flashing entirely is the safest option because some people who may not know they are susceptible to photosensitive seizures, and some people may have a much larger view of content than the default (zoomed in or with the display close to the eye).
 :::
