@@ -6,7 +6,7 @@ The objective of this requirement is to ensure that content avoids the types of 
 
 ## Methods
 * Consider if :term[flashing] is :term[essential] and, if it is not, remove it.
-* Ensure that (an accessibility supported) user-setting to avoid animation and flashing is respected.
+* Ensure that an accessibility supported user-setting to avoid animation and flashing is respected.
 * Ensure that any flashing is below [X] size in the users’ view.
 
 ## Tests
