@@ -5,13 +5,13 @@ title: Limit animation
 issueLabel: No visual motion
 ---
 
-:::applies when
-:term[Content] includes visual motion or :term[blinking] that is presented in parallel with other content.
-:::
-
 Animation or blinking does not:
 - last longer than 5 seconds, or
 - start automatically.
+
+:::applies-when
+- :term[Content] includes visual motion or :term[blinking] that is presented in parallel with other content.
+:::
 
 :::except-when
 - the visual motion or blinking is :term[essential].
@@ -25,3 +25,7 @@ An animation which stops for a time and then restarts is considered one animatio
 Several animations activated one after the other are considered as a single animation. 
 :::
 
+:::ednote
+<b>Method(s)</b>
+* Consider if motion or pseudo-motion is essential, and if it is not, refrain from including it.
+:::

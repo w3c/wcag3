@@ -11,14 +11,3 @@ Any :term[platform]-related functions are not the responsibility of the author a
 - <kbd>Tab</kbd> and <kbd><kbd>Shift</kbd> + <kbd>Tab</kbd></kbd> to move through elements
 - Sticky Keys functionality that allows single key activation of multi-key commands
 :::
-
-:::tests
-**Procedure**
-
-For each keyboard command needed to operate functionality:
-1. Check that it is in the list of common keyboard navigation techniques.
-2. Check that it is described on the page / view where it is required or on a page / view earlier in the process where it is used.
-
-**Expected results**
-- #1 or #2 are true.
-:::
