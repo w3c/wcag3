@@ -13,3 +13,7 @@ See :term[general flash and red flash thresholds] for information about types of
 :::note
 See also :term[blinking].
 :::
+
+:::comment
+Do we still need this one? We've got the flash threshold and blinking, do we reference flash without the threshold?
+:::
