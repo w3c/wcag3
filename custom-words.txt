@@ -8,6 +8,7 @@ CVD
 FTE
 ICT
 NOAA
+SSTM
 TOTP
 UAAG
 UCS
@@ -40,6 +41,7 @@ oxymorons
 personalizable
 scriptable
 strobing
+subsite
 
 # Intentional compound words
 # (since useCompoundWords is too permissive)
