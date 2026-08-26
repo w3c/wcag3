@@ -11,6 +11,10 @@ caption {
 	border: medium solid #d9d9d9;
 	background-color: var(--tocsidebar-bg);
 	margin-block:1em;
+
+	.darkmode & {
+		border-color: #444;
+	}
 }
 summary::after {
 	display: inline-block;
@@ -210,6 +214,10 @@ section {
 	border-radius: 2px;
 	border: 1px solid #ccc;
 	color: var(--diminished-text);
+
+	.darkmode & {
+		border-color: #555;
+	}
 
 	a[href] {
 		color: var(--diminished-text);
