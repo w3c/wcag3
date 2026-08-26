@@ -560,8 +560,9 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
     maxTocLevel: 4,
 
-    preProcess: [addSummaryMarkers, addEmptyGuidelineEdNote, adjustDfnData],
+    preProcess: [addEmptyGuidelineEdNote, adjustDfnData],
     postProcess: [
+      addSummaryMarkers,
       adjustNormativity,
       removeDraftMethodLinks,
       removeRequirementNum,
