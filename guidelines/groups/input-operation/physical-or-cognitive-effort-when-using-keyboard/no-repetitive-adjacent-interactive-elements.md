@@ -1,12 +1,13 @@
 ---
 status: developing
 type: supplemental
+issueLabel: No repetitive links
 ---
 
-Repetitive adjacent links that have the same destination are avoided.
+Adjacent :term[interactive elements] that achieve the same outcome are not included in the :term[page]/:term[view].
 
-:::ednote
-Supplemental if applicable to all :term[content], else best practice.
+:::except-when
+- That outcome is a form of dismissal.
 :::
 
 :::note
