@@ -155,13 +155,14 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<div class="ednote">
 				<p>Conformance defines how to meet the standard. Conformance with a standard is not the same as compliance with legal requirements. Historically, conformance, reporting, and compliance have often been confused. In WCAG 3, we are setting out to provide clear guidance in each of these areas in a manner that is appropriate for W3C.</p>
 
-				<p>To this end, WCAG 3 will consist of the following:</p>
+				<p>To this end, AGWG will produce the following as part of the WCAG 3 effort:</p>
 				<ul>
 					<li>A normative, narrowly defined conformance model on how to conform with WCAG 3;</li>
 					<li>Informative guidance for reporting and testing progress towards and beyond conformance;</li>
-					<li>Informative guidance for policy makers on how they might write policy to go beyond strict conformance and require greater accessibility through WCAG 3's leveling system.</li>
-					<li>This approach allows the Accessibility Guidelines Working Group (AG) to recommend and support a more flexible model for compliance than is appropriate to define in this conformance section.</li>
+					<li>Informative guidance for policy makers on how they might write policy to go beyond strict conformance and require greater accessibility through WCAG 3's tiering system.</li>
 				</ul>
+
+				<p>This approach provides flexibility so the Accessibility Guidelines Working Group (AGWG) can suggest ways for regulators and policymakers to use WCAG to better track progress towards and beyond conformance; compare products, and encourage adoption.</p>
 			</div>
 
 			<section id="interpreting-normative-provisions">
@@ -173,7 +174,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>WCAG 3 consists of three types of provisions.</p>
 
-				<p><b>Core requirements</b> &mdash; Set of requirements that must be met to conform. These include requirements that ensure:</p>
+				<p><b>Core requirements</b> &mdash; Set of requirements that <em class="rfc2119">MUST</em> be met to conform. These include requirements that ensure:</p>
 				<ul>
 					<li>content is detectable by user agents and AT,</li>
 					<li>content can be conveyed to multiple senses and can be used by multiple inputs,</li>
@@ -183,7 +184,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p><b>Supplemental requirements</b> &mdash; Requirements that build on the core set. These include:</p>
 				<ul>
-					<li>additional quality requirements,</li>
+					<li>Requirements that improve the quality of a solution specified in a core requirement,</li>
 					<li>a stricter form of a comparable core requirement, and</li>
 					<li>requirements that are disproportionately burdensome to implement.</li>
 				</ul>
@@ -192,24 +193,24 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<h4>Best practices</h4>
 
-				<p>In addition to requirements and assertions, WCAG 3.0 includes best practices. These are listed at the provision and method level. They provide guidance for improving accessibility or making implementation more effective but may not always apply in every situation. These are integrated with requirements, assertions and methods and are clearly marked as best practice.</p>
+				<p>In addition to requirements and assertions, WCAG 3.0 includes best practices. These are listed at the provision and method tier. They provide guidance for improving accessibility or making implementation more effective but might not always apply in every situation. These are integrated with requirements, assertions and methods and are clearly marked as best practice.</p>
 
 				<p>Best practices are informative and do not need to be satisfied to conform.</p>
 			</section>
 
 			<section id="conformance-requirements">
 				<h3>Conformance requirements</h3>
-				<p>For a specified <a>conformance scope</a> to conform to WCAG 3.0, all core requirements must be satisfied.</p>
-
 				<div class="ednote">
-					<p>In parallel with WCAG 3, the working group will be writing informative guidance on testing and reporting. Part of this documentation is "Progress towards and beyond conformance." This section uses tags for requirements and assertions to break the provisions into reporting levels which can be used as steps towards conformance and then beyond conformance. We will recommend ways for policy makers to use these reporting levels in regulation to encourage conformance and accessibility beyond conformance. We will also recommend ways for organizations to use the levels when comparing and purchasing products. For example, assertions will be included in levels beyond conformance and would need to be completed in order to claim a Silver achievement in WCAG. The working group may recommend regulators require organizations of a certain size complete the silver level in order to comply with accessibility regulation.</p>
+					<p>This update to WCAG 3 moves the concept of tiers from conformance to reporting. To keep this clear, we refer to reporting tiers. Conforming to WCAG 3 involves a single tier where all requirements within that tier must be met. Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
 				</div>
+
+				<p>For a specified <a>conformance scope</a> to conform to WCAG 3.0, all core requirements <em class="rfc2119">MUST</em> be satisfied.</p>
 
 				<h4>Accessibility supported</h4>
 
-				<p>Many methods, such as those using ARIA or CSS, are only effective when they are supported by the <a>user agents</a> (UA) and <a>assistive technologies</a> (AT) of real users.</p>
+				<p>Many methods, such as those using ARIA or CSS, are only effective when they are supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.</p>
 
-				<p>The UA and AT used vary by language and region, and may be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machine (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state what UA and AT are assumed on conformance statements. The concept that methods must be supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
+				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machine (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state what UA and AT are assumed on conformance statements. The concept that methods <em class="rfc2119">MUST</em> be supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
 
 				<h5>Accessibility support set</h5>
 
@@ -223,17 +224,17 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				</ol>
 
 				<div class="ednote">
-					<p>While the AGWG will strive to ensure that requirements have as broad support as possible, it may not be possible for every requirement to be met on every combination of UA and AT. AGWG will only include core requirements if they include at least one Web method that works with the default accessibility-support set at the time of publication.</p>
+					<p>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. AGWG will only include core requirements in WCAG 3.0 if they include at least one method that works with the default Web accessibility-support set at the time of publication.</p>
 				</div>
 
-				<p>The accessibility support set must be included in conformance claims. If working in a closed environment, with non-Web technologies, or are in a region that relies on UA and AT outside the AGWG default accessibility-support set defined in WCAG 3, we also recommend including the accessibility support-set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility-support set used should be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
+				<p>The accessibility support set <em class="rfc2119">MUST</em> be included in conformance claims. If working in a closed environment, with non-Web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility-support set defined in WCAG 3, we also <em class="rfc2119">RECOMMEND</em> including the accessibility support-set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility-support set used <em class="rfc2119">SHOULD</em> be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
 
 				<div class="ednote">
 					<ul>
 						<li>The default accessibility support set has not yet been defined.</li>
 						<li>Informative documentation will be needed to specify how people can create their own alternative accessibility support set.</li>
 						<li>Maintenance of the accessibility support set over time needs additional discussion.</li>
-						<li>An exception for long-present bugs in assistive technology is still under discussion.</li>
+						<li>An exception for long-present bugs in assistive technology and user agents is still under discussion.</li>
 					</ul>
 				</div>
 
@@ -241,13 +242,13 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>A conformance claim is not required in order to conform to this standard. If making a conformance claim, WCAG 3 requires the guidelines be applied to a specified scope. Evaluation is completed and conformance is determined based on one or more of the following scopes.</p>
 
-				<p>Conformance may be scoped to a product, site, subsite, application, or other defined set of content or functionality. The conformance scope must clearly identify the product, page, content, functionality, or components that are included in the scope. Where the scope represents only part of a larger product, site, or other entity, the scope should also identify the boundaries of the evaluation.</p>
+				<p>Conformance <em class="rfc2119">MAY</em> be scoped to a product, site, subsite, application, or other defined set of content or functionality. The conformance scope <em class="rfc2119">MUST</em> clearly identify the product, page/view, content, functionality, or components that are included in the scope. Where the scope represents only part of a product, site, or page/view the scope <em class="rfc2119">SHOULD</em> also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested <em class="rfc2119">MUST</em> be included. When possible, also describe what is outside of the scope.</p>
 
-				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope must describe its boundaries with a level of specificity appropriate to the scope being defined.</p>
+				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope <em class="rfc2119">MUST</em> describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
 
-				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation.</p>
+				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
 
-				<p>When claiming conformance for a process all unique steps in the process <em class="rfc2119">MUST</em> be represented in the set of views. Views outside of the process <em class="rfc2119">MAY</em> also be included in the scope.</p>
+				<p>When claiming conformance for a process, all unique steps in the process <em class="rfc2119">MUST</em> be represented in the set of <a>pages</a>/<a>views</a>. <a>Pages</a>/<a>views</a> outside of the process <em class="rfc2119">MAY</em> also be included in the scope.</p>
 			</section>
 		</section>
 
