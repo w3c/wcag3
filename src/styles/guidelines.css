@@ -1,5 +1,5 @@
 :root {
-	--diminished-text: #404040;
+	--diminished-text: color-mix(in srgb, var(--text) 75%, transparent 25%);
 }
 
 caption {
@@ -8,10 +8,13 @@ caption {
 :not(.head) > details:not(.issue) {
 	clear: both;
 	padding: 1em;
-	color: var(--diminished-text);
 	border: medium solid #d9d9d9;
-	background-color: #F3F3F3;
+	background-color: var(--tocsidebar-bg);
 	margin-block:1em;
+
+	.darkmode & {
+		border-color: #444;
+	}
 }
 summary::after {
 	display: inline-block;
@@ -212,8 +215,12 @@ section {
 	border: 1px solid #ccc;
 	color: var(--diminished-text);
 
+	.darkmode & {
+		border-color: #555;
+	}
+
 	a[href] {
-		color: inherit;
+		color: var(--diminished-text);
 		text-underline-offset: 0.125em;
 
 		&, &:hover {
