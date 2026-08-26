@@ -1,7 +1,8 @@
 ---
 children:
-  - no-flashing
-  - no-flashing-no-exceptions
+  - no-flashing-over-threshold
+  - no-flashing-over-threshold-no-exceptions
+  - single-flash
   - no-visual-motion
   - no-visual-motion-no-exceptions
   - trigger-warning-available
