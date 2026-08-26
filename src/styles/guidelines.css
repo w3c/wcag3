@@ -1,5 +1,5 @@
 :root {
-	--diminished-text: #404040;
+	--diminished-text: color-mix(in srgb, var(--text) 75%, transparent);
 }
 
 caption {
@@ -8,9 +8,8 @@ caption {
 :not(.head) > details:not(.issue) {
 	clear: both;
 	padding: 1em;
-	color: var(--diminished-text);
-	border: medium solid #d9d9d9;
-	background-color: #F3F3F3;
+	border: medium solid color-mix(in srgb, var(--text) 12%, transparent);
+	background-color: color-mix(in srgb, var(--text) 5%, transparent);
 	margin-block:1em;
 }
 summary::after {
@@ -24,10 +23,15 @@ summary::after {
 	top: .25em;
 	float: right;
 }
+
+/*
+TODO: These cosmetic hover styles have been sabotaged by dark mode. Revisit.
 :not(.head) > details:focus summary::after, :not(.head) > details:hover summary::after {
-	background-color: #ffff99 ;
-	box-shadow: 0 0 1em .25em #ffff99;
+	background-color: color-mix(in srgb, yellow 40%, transparent);
+	box-shadow: 0 0 1em .25em color-mix(in srgb, yellow 40%, transparent);
 }
+*/
+
 .summary summary::after {
 	content: url(img/summary.svg);
 }
@@ -209,7 +213,7 @@ section {
 	gap: .5em;
 	padding: 5px 10px;
 	border-radius: 2px;
-	border: 1px solid #ccc;
+	border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
 	color: var(--diminished-text);
 
 	a[href] {
