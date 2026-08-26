@@ -21,7 +21,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 		<section id="abstract">
 			<p>W3C Accessibility Guidelines (WCAG) 3.0 will provide a wide range of recommendations for making web content more accessible to users with disabilities. Following these guidelines will address many of the needs of users with blindness, low vision and other vision impairments; deafness and hearing loss; limited movement and dexterity; speech disabilities; sensory disorders; cognitive and learning disabilities; and combinations of any of these disabilities. These guidelines address the accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other Web of Things devices. The guidelines apply to various types of web content, including static, dynamic, interactive, and streaming content; audiovisual media; virtual and augmented reality; and alternative access presentation and control. These guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 			<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> and <a>assertions</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement or assertion. </p>
-			<p>To keep pace with changing technology, this specification is expected to be updated regularly with updates to and new methods, requirements, and guidelines that address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
+			<p>To keep pace with changing technology, this specification is expected to be updated regularly and might introduce new methods, requirements, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several tiers of reporting are available to address the diverse nature of digital content and the type of testing that is performed.</p>
 			<p>For an overview of WCAG 3 and links to WCAG technical and educational material, see <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a>.</p>
 		</section>
 		<section id="sotd">
@@ -45,7 +45,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			</details>
 			<h3>About this draft</h3>
 
-			<p>This draft includes an updated list of the potential guidelines, requirements, and assertions that have progressed to <a href="#section-status-levels">Developing status</a>. While this draft has moved closer towards completion, it still has several years of work. Details will change and we encourage comments based on the questions below. </p>
+			<p>This draft includes an updated list of the potential guidelines, requirements, and assertions. It also includes updates to conformance. While this draft has moved closer towards completion, it still has several years of work. Details will change and we encourage comments based on the questions below. </p>
 
 			<p>Requirements and assertions at the Exploratory status are not included in this Working Draft. If you would like to see the complete list, please review the <a href="https://w3c.github.io/wcag3/guidelines/">Editor's Draft</a>. </p>
 
@@ -55,6 +55,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<li>The conformance model has been updated, there are several questions in the <a href="#conformance">conformance section</a></li>
 				<li>Is the "applies when" and "except when" format for requirements understandable and useful?</li>
 				<li>Does the increased granularity of the requirements help understanding and application or would consolidating requirements be a better approach?</li>
+				<li>Do the changes to conformance and reporting better support adoption and use?</li>
 			</ul>
 
 			<p>To provide feedback, please open a new issue in the <a href="https://github.com/w3c/wcag3/issues">WCAG 3 GitHub repository</a>. Create a separate GitHub issue for each topic, rather than commenting on multiple topics in a single issue.</p>
@@ -141,9 +142,9 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible</li>
 				<li><b>Assertions:</b> Things that you can say you did or do to improve the accessibility of your content or product</li>
 			</ul>
-			<p>In addition, WCAG 3 provides Best Practices. These provide important guidance that often save time and improve accessibility but might not always apply in every situation. Best Practices are not necessary to conform.</p>
+			<p>In addition, WCAG 3 provides Best Practices. Best Practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Best Practices are not necessary to conform.</p>
 
-			<p>The methods you use to satisfy WCAG 3 MUST be <a>accessibility supported</a>. This means a method only counts towards conformance if browsers and assistive technologies in general use support it. WCAG 3 uses accessibility-support sets to identify which technologies are tested against to check whether the methods used meet a requirement. The default accessibility-support set in WCAG 3 is for Web methods. The accessibility support set MUST be included in conformance claims.</p>
+			<p>The methods you use to satisfy WCAG 3 MUST be <a>accessibility supported</a>. This means a method only counts towards conformance if browsers and assistive technologies (AT) in general use support it. WCAG 3 uses accessibility-support sets to identify which browsers and AT are used to evaluate methods. The default accessibility-support set in WCAG 3 is for Web methods. The accessibility support set MUST be included in conformance claims.</p>
 
 			<p>When evaluating accessibility, WCAG 3 applies to a clearly defined part of your content — such as specific <a>pages</a>/<a>views</a>, or <a>processes</a> — so you can scope your claim to exactly what was tested.</p>
 
@@ -201,7 +202,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<section id="conformance-requirements">
 				<h3>Conformance requirements</h3>
 				<div class="ednote">
-					<p>This update to WCAG 3 moves the concept of tiers from conformance to reporting. To keep this clear, we refer to reporting tiers. Conforming to WCAG 3 involves a single tier where all requirements within that tier need to be met. Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
+					<p>This update to WCAG 3 moves the concept of leveling from conformance to reporting. To keep this clear, we refer to "reporting tiers" to distinguish them from previous "conformance levels" . Conforming to WCAG 3 requires meeting all requirements within a single set.</p>
 				</div>
 
 				<p>For a specified <a>conformance scope</a> to conform to WCAG 3.0, all core requirements MUST be satisfied.</p>
@@ -242,7 +243,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>A conformance claim is not required in order to conform to this standard. If making a conformance claim, WCAG 3 requires the guidelines be applied to a specified scope. Evaluation is completed and conformance is determined based on one or more of the following scopes.</p>
 
-				<p>Conformance MAY be scoped to a product, site, subsite, application, or other defined set of content or functionality. The conformance scope MUST clearly identify the product, page/view, content, functionality, or components that are included in the scope. Where the scope represents only part of a product, site, or page/view the scope SHOULD also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested MUST be included. When possible, also describe what is outside of the scope.</p>
+				<p>Conformance MAY be scoped to a product, site, subsite, application, or other defined set of <a>content</a> or functionality. The conformance scope MUST clearly identify the product, <a>page</a>/<a>view</a>, <a>content</a>, functionality, or <a>components</a> that are included in the scope. Where the scope represents only part of a product, site, or <a>page</a>/<a>view</a>, the scope SHOULD also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested MUST be included. When possible, also describe what is outside of the scope.</p>
 
 				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope MUST describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
 

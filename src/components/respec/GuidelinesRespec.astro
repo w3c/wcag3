@@ -19,10 +19,6 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     return el.querySelector("h1, h2, h3, h4, h5, h6");
   }
 
-  function findParentSectionHeading(el) {
-    return el.querySelector(":scope > .header-wrapper > :is(h1, h2, h3, h4, h5, h6)");
-  }
-
   function findFirstTextChild(el) {
     var children = el.childNodes;
     for (i = 0; i < children.length; i++) {
@@ -50,7 +46,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
   function addSummaryMarkers() {
     document.querySelectorAll(".summary").forEach(function (node) {
-      var parentHeader = findParentSectionHeading(node.parentElement);
+      var parentHeader = findHeading(node.parentElement);
       var summaryHeader = node.querySelector("summary");
       var extraTitle = "";
       if (summaryHeader.textContent.toLowerCase() != "summary")
