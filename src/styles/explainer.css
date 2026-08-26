@@ -4,7 +4,7 @@ caption {
 :not(.head) > details {
 	padding: 1em;
 	color: color-mix(in srgb, var(--text) 75%, transparent 25%);
-	background-color: var(--toc-sidebar-bg);
+	background-color: var(--tocsidebar-bg);
 	border: medium solid #d9d9d9;
 }
 summary::after {
