@@ -174,7 +174,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>WCAG 3 consists of three types of provisions.</p>
 
-				<p><b>Core requirements</b> &mdash; Set of requirements that <em class="rfc2119">MUST</em> be met to conform. These include requirements that ensure:</p>
+				<p><b>Core requirements</b> &mdash; Set of requirements that MUST be met to conform. These include requirements that ensure:</p>
 				<ul>
 					<li>content is detectable by user agents and AT,</li>
 					<li>content can be conveyed to multiple senses and can be used by multiple inputs,</li>
@@ -204,13 +204,13 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<p>This update to WCAG 3 moves the concept of tiers from conformance to reporting. To keep this clear, we refer to reporting tiers. Conforming to WCAG 3 involves a single tier where all requirements within that tier must be met. Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
 				</div>
 
-				<p>For a specified <a>conformance scope</a> to conform to WCAG 3.0, all core requirements <em class="rfc2119">MUST</em> be satisfied.</p>
+				<p>For a specified <a>conformance scope</a> to conform to WCAG 3.0, all core requirements MUST be satisfied.</p>
 
 				<h4>Accessibility supported</h4>
 
 				<p>Many methods, such as those using ARIA or CSS, are only effective when they are supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.</p>
 
-				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machine (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state what UA and AT are assumed on conformance statements. The concept that methods <em class="rfc2119">MUST</em> be supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
+				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machine (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state what UA and AT are assumed on conformance statements. The concept that methods MUST be supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
 
 				<h5>Accessibility support set</h5>
 
@@ -227,7 +227,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<p>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. AGWG will only include core requirements in WCAG 3.0 if they include at least one method that works with the default Web accessibility-support set at the time of publication.</p>
 				</div>
 
-				<p>The accessibility support set <em class="rfc2119">MUST</em> be included in conformance claims. If working in a closed environment, with non-Web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility-support set defined in WCAG 3, we also <em class="rfc2119">RECOMMEND</em> including the accessibility support-set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility-support set used <em class="rfc2119">SHOULD</em> be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
+				<p>The accessibility support set MUST be included in conformance claims. If working in a closed environment, with non-Web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility-support set defined in WCAG 3, we also RECOMMEND including the accessibility support-set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility-support set used SHOULD be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
 
 				<div class="ednote">
 					<ul>
@@ -242,13 +242,13 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>A conformance claim is not required in order to conform to this standard. If making a conformance claim, WCAG 3 requires the guidelines be applied to a specified scope. Evaluation is completed and conformance is determined based on one or more of the following scopes.</p>
 
-				<p>Conformance <em class="rfc2119">MAY</em> be scoped to a product, site, subsite, application, or other defined set of content or functionality. The conformance scope <em class="rfc2119">MUST</em> clearly identify the product, page/view, content, functionality, or components that are included in the scope. Where the scope represents only part of a product, site, or page/view the scope <em class="rfc2119">SHOULD</em> also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested <em class="rfc2119">MUST</em> be included. When possible, also describe what is outside of the scope.</p>
+				<p>Conformance MAY be scoped to a product, site, subsite, application, or other defined set of content or functionality. The conformance scope MUST clearly identify the product, page/view, content, functionality, or components that are included in the scope. Where the scope represents only part of a product, site, or page/view the scope SHOULD also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested MUST be included. When possible, also describe what is outside of the scope.</p>
 
-				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope <em class="rfc2119">MUST</em> describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
+				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope MUST describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
 
 				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
 
-				<p>When claiming conformance for a process, all unique steps in the process <em class="rfc2119">MUST</em> be represented in the set of <a>pages</a>/<a>views</a>. <a>Pages</a>/<a>views</a> outside of the process <em class="rfc2119">MAY</em> also be included in the scope.</p>
+				<p>When claiming conformance for a process, all unique steps in the process MUST be represented in the set of <a>pages</a>/<a>views</a>. <a>Pages</a>/<a>views</a> outside of the process MAY also be included in the scope.</p>
 			</section>
 		</section>
 
