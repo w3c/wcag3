@@ -73,12 +73,14 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     var statusKeys = Object.keys(statusLabels);
     statusKeys.forEach(function (status) {
       var headingSelector = '[data-status="' + status + '"] > .header-wrapper';
-      var headings = document.querySelectorAll(headingSelector);
-      headings.forEach(function (heading) {
+      var wrappers = document.querySelectorAll(headingSelector);
+      wrappers.forEach(function (wrapper) {
         var statusMarker = document.createElement("span");
         statusMarker.classList.add("status-marker");
         statusMarker.innerHTML = sentenceCase(status);
-        heading.firstElementChild.insertAdjacentElement("beforeend", statusMarker);
+        // Target the heading itself, not firstElementChild, since moveGuidelineSelfLink
+        // may have already relocated the self-link before the heading
+        findHeading(wrapper).insertAdjacentElement("beforeend", statusMarker);
       });
 
       var dfnSelector = '[data-status="' + status + '"] > dfn';
