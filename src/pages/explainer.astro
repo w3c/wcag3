@@ -409,57 +409,79 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
     <section id="conformance-models" data-status="exploratory">
         <h2>Conformance Approach</h2>
-        <p>WCAG 3 will use a different conformance model than WCAG 2.2 in order to meet its requirements. Developing
-            and vetting the conformance model is a large portion of the work AGWG needs to complete over the next few
-            years. Drafts will include maturity labelling for public review and comment. </p>
+        <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a> are about improving on how people and organsations have used conformance in WCAG 2. Conformance itself is a simple concept: Does the content in scope meet the requirements of the specification? It is binary, and that simplicity can make it difficult to work with as human-digital interfaces can be complex and varied. </p>
 
-        <p>AG is exploring a model that keeps the conformance approach simple, but provides a lot more informative advice about testing, reporting, and using WCAG 3 in policy or regluations.</p>
+        <p>AG is exploring a model that keeps the conformance approach simple, but provides much more informative advice about testing, reporting, and using WCAG 3 in policy or regluations.</p>
 
-        <p>Conformance will require meeting all of the Core Requirements, but that is just the start. There will also be WCAG 3 "Bronze", "Silver" and "Gold" tiers which demonstrate improved accessibility. These tiers build on conformance to include accessibility recommendations and assertions.</p>
+        <p>Conformance will mean meeting all of the Core Requirements, but that is just the start. There will also be tiers above and below the conformannce level. On the way to conformance there are sets of requirements you can meet to show progress which are "Avoid harm" and "Foundational Access". Above the conformance level there will be WCAG 3 "Bronze", "Silver" and "Gold" tiers which demonstrate improved accessibility. These tiers build on conformance to include accessibility recommendations and assertions.</p>
 
-        <p><b>Core Requirements</b> &mdash; Requirements that must be met in order to conform. These include requirements that ensure:</p>
-            <ul>
-                <li>content is detectable by user agents and AT,</li>
-                <li>content is conveyed to multiple senses and can be used by multiple inputs,</li>
-                <li>content does not cause immediate, physical harm, and</li>
-                <li>necessary support is available such as captions, text alternatives, and expanded forms of abbreviations.</li>
-            </ul>
-            
-       <p>Building on conformance, the tiers will be defined and met using Supplemental Requirements and Assertions. Meeting a certain percentage of the .</p>
+        <p>Using tiers instead of conformance levels allows for two improvements:</p>
+        <ol>
+            <li>When a product is not conformant, there are sets of requirements you can show have been met to show progress.</li>
+            <li>As conformance is a baseline not a ceiling, the tiers above conformance show incorporation of good practices and accessibility maturity. It is possible that regulators might encourage or enforce the use of these tiers for some types of organistion.</li>
+        </ol>
 
-            <p><b>Supplemental Requirements</b> &mdash; Requirements that build on the core set. These include:</p>
-            <ul>
-                <li>quality checks,</li>
-                <li>stricter or higher levels than those in a comparable core requirement,</li>
-                <li>requirements that are currently more difficult or expensive to implement, and</li>
-                <li>requirements that may apply in certain situations.</li>
-            </ul>
-
-        <h4>Conformance level</h4>
-        <p>AGWG continues to explore possible conformance approaches. For the approach outlined in the draft, one of the following three levels of conformance must be met in full.</p>
+        <p>Each core requirement will have a tag that create levels you can progress through to meet conformance. Those tags are:</p>
         <ul>
-            <li>For Bronze conformance (the minimum level of conformance), all of the pages/views and <a>processes</a> within the conformance scope MUST satisfy all the core requirements and some portion (to be determined) of the supplemental requirements and assertions within each <a href="https://www.w3.org/TR/wcag-3.0/#function-performance-statements">functional performance statement</a>.</li>
-            <li>For Silver conformance, all of the pages/views and processes within the conformance scope MUST satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Bronze within each functional performance statement.</li>
-            <li>For Gold conformance, all of the pages/views and processes within the conformance scope satisfy all the core requirements and a larger portion of the supplemental requirements and assertions than in Silver within each functional performance statement.</li>
+            <li><strong>Harm</strong> - Not meeting the requirement can cause someone with a disability physical harm.</li>
+            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Prevention</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
+            <li><strong>Additive</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
-        <p>A draft list of functional performance statements are included in the WCAG 3 draft. The purpose of using this list when measuring higher levels of conformance is to ensure
-            better equity across user needs.</p>
 
+        <p>To get to the "Avoid Harm" tier you would need to meet all the core requirements tagged with "Avoid Harm", and the same for the "Foundational Access" tier.</p>
+            
+       <p>The tiers above conformance will be defined and met using Supplemental Requirements and Assertions. Meeting a certain percentage of the supplimental requirements and assertions enables you to claim that tier.</p>
+
+
+        <h3>Alternative approach - Scoring</h3>
+        <p class="ednote">AG are considering an alternative approach to tagging core requirements, which is a percentage score. This section is an alternative to the section above and is not included in the WCAG 3 draft.</p>
+
+        <p>Products or other defined conformance scopes may not fully conform to all requirements, or they may exceed conformance requirements. This section on “Progress toward and beyond conformance” provides measures to allow comparison of products and to assist in tracking progress towards and beyond conformance. This section presents a method to report on progress, not whether something conforms.</p>
+
+        <h4>Progress towards conformance</h4>
+        <p>The “progress towards conformance score” (score) shows how close the content within scope is to meeting conformance. When evaluating a specified conformance scope (e.g. number of pages and/or paths) each requirement that is met counts towards the score.</p>
+
+        <p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for weighting some provisions as they contribute to the score.</p>
+
+        <h5>Core Requirement Tags</h5>
+        <ul>
+            <li><strong>Harm</strong> - Not meeting the requirement can cause someone with a disability physical harm.</li>
+            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Prevention</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
+            <li><strong>Additive</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+        </ul>
+        <h5>Scoring</h5>
+        <p>Within the specific conformance scope, the score is calculated as follows:</p>
+        <ul>
+            <li>Assign a weighting to each provision met based on its requirement tag:
+                <ul>
+                    <li>3 for "Harm" and "Risk" provisions</li>
+                    <li>2 for "Prevention" provisions</li>
+                    <li>1 for other provisions</li>
+                </ul>
+            </li>
+            <li>Calculate the score as the percentage of the weighted provisions that are met out of the total possible weighted score.</li>
+        </ul>
+        <h5>Scoring beyond conformance</h5>
+        <p>When conformance is achieved, counting the supplemental requirements and assertions met then provides a progress beyond conformance score, leading to WCAG 3 awards:</p>
+        <ul>
+            <li>WCAG 3 Bronze: Conformance plus [TBD count] of supplemental requirements and assertions.</li>
+            <li>WCAG 3 Silver: Conformance plus [TBD greater count] of supplemental requirements and assertions.</li>
+            <li>WCAG 3 Gold: Conformance plus [TBD much greater count] of supplemental requirements and assertions.</li>
+        </ul>
+        <p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policy makers have more flexibility in requiring additional levels in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress towards conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
 
         <h3>Additional Concepts</h3>    
-        <p>Key concepts AGWG has and previously considered and continues to explore the following:</p>
+        <p>Key concepts AGWG considered and continues to explore are the following:</p>
         <ul>
             <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
-            <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or
-                exceeding a goal. Example of possible adjectival ratings are:
+            <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or exceeding a goal. Example of possible adjectival ratings are:
                 <ul>
                     <li>Fail, Pass, Exceptional; or</li>
                     <li>Fail, Progress, Pass, Better, Exceptional.</li>
                 </ul>
             </li>
-            <li>Pre-assessment checks: Pre-Assessment checks are tests or criteria that implementers can use to determine if they are ready to
-                assess conformance. The intent of specifying these would be to help implementers prepare for conformance
-                testing, not to create a new level of conformance. </li>
         </ul>  
 
         <section id="accessibility-supported">
