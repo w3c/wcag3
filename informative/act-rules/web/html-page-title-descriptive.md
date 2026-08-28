@@ -98,7 +98,7 @@ The title describes the consistent purpose of the page, even though the actual c
 
 ### Passed example 5
 
-The title describes the specific purpose of each step within the multi-step process. Although all steps belong to the same overall workflow (e.g., checkout), each page represents a distinct stage with its own function (such as shipping, billing, or payment), and the title reflects this specific purpose.
+The title describes the specific purpose of each step within the multi-step process. Although all steps belong to the same overall workflow (for example, checkout), each page represents a distinct stage with its own function (such as shipping, billing, or payment), and the title reflects this specific purpose.
 
 ```
 <html lang="en">
@@ -234,7 +234,7 @@ The same title “Shoes - Acme Shop” is used for different pages covering all 
 
 ### Failed example 5
 
-The title does not sufficiently describe the specific purpose of the current step. Although the page is part of a multi-step process, each step represents a distinct view with its own function. Using a generic title such as "Checkout" fails to identify the specific purpose of the page (e.g., shipping, billing, or payment).
+The title does not sufficiently describe the specific purpose of the current step. Although the page is part of a multi-step process, each step represents a distinct view with its own function. Using a generic title such as "Checkout" fails to identify the specific purpose of the page (for example, shipping, billing, or payment).
 
 ```
 <html lang="en">

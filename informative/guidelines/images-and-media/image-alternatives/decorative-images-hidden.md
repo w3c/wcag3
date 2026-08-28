@@ -15,7 +15,7 @@
 <b>Procedure</b>
 
 For any image that adds no information to the content:
-1. Check that `title`, `aria-label`, `aria-labelledby` etc. is either absent or empty.
+1. Check that `title`, `aria-label`, `aria-labelledby` is either absent or empty.
 2. Check that an `alt` attribute is present and empty.
 
 <b>Expected results</b>

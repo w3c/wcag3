@@ -14,6 +14,6 @@ Meaning conveyed by :term[text] style properties is also :term[programmatically 
 :::
 
 :::example
-* (Pass) When bold or italics is used to indicate an error, an additional indicator such as an exclamation mark (!) is also provided.
-* (Pass) When larger text is used as a hint in a puzzle, an additional indicator such as an asterisk (*) is also provided.
+* When bold or italics is used to indicate an error, an additional indicator such as an exclamation mark (!) is also provided.
+* When larger text is used as a hint in a puzzle, an additional indicator such as an asterisk (*) is also provided.
 :::

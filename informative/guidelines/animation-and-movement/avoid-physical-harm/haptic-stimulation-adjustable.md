@@ -6,7 +6,7 @@
 
 <b>Procedure</b>
 
-For haptic feedback caused by the digital content (vs. the operating system or user agent).
+For haptic feedback caused by the digital content (in contrast to the operating system or user agent).
 1. Check if there is a setting that allows for reducing or turning off the haptic feedback.
 
 

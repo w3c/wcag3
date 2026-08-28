@@ -7,15 +7,17 @@ Explanations of :term[abbreviations] are available when first used.
 
 :::except-when
 - the abbreviation is:
-    * used so often it has become a word with its own dictionary entry, such as "scuba," "info," and "HTML"
-    * used in a logo
-    * included in a longer phrase, such as "brand DNA," whose meaning needs to be defined to meet the [non-literal language requirement](#non-literal-language-explained)
+    * used so often it has become a word with its own dictionary entry, such as "scuba," "info," and "HTML",
+    * used in a logo, or
+    * included in a longer phrase, such as "brand DNA," whose meaning needs to be defined to meet the [non-literal language requirement](#non-literal-language-explained).
 :::
 
 :::example
-(Pass) ‘He has Avoidant/Restrictive Food Intake Disorder (ARFID).’
+Abbreviation is introduced after first expanded use of the term.
 
-(Pass) ‘He has [ARFID].’ — (link to a glossary or tooltip.)
+> "He has Avoidant/Restrictive Food Intake Disorder (ARFID)."
 
-(Fail) ‘He has ARFID.’ — (first reference, no explanation is available.)
+Abbreviation is linked to a glossary entry or tooltip.
+
+> "He has [ARFID]."
 :::

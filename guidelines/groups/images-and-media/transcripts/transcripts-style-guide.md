@@ -6,20 +6,19 @@ issueLabel: Media alternatives style guide
 
 [Title, role, or organization] asserts that:
 
-* Our organization has a style guide that includes guidance on :term[transcripts] and a policy and/or processes that the style guide must be followed
+* Our organization has a style guide that includes guidance on :term[transcripts] and a policy and/or processes that the style guide must be followed.
 
 ::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of when the style guide was published.
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of when the style guide was published
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Summary of the needs of users involved.
-* Identified issues and details of solutions applied.
-* Copy or snapshot of the style guide.
-
+* summary of the needs of users involved
+* identified issues and details of solutions applied
+* copy or snapshot of the style guide
 
 :::example
 * **Name:** ABC Inc. Style Guide for Transcripts
@@ -32,8 +31,8 @@ issueLabel: Media alternatives style guide
   * Recommended style of transcripts
   * Resources
 * **Example:** The style guide has requirements such as:
-  * Never use more than two lines
-  * Use parentheses for sound representation
-  * Identify no sound or long pause
+  * Never use more than two lines.
+  * Use parentheses for sound representation.
+  * Identify no sound or long pause.
   * &hellip;
 :::

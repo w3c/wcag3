@@ -7,12 +7,12 @@ synonyms:
 any pointer input other than a :term[simple pointer input]
 
 :::example
-- Press and hold
-- Double clicking
-- Multipoint clicking
-- Dragging (single or multipoint)
-- Gestures (single or multipoint)
-- Pinching
-- :term[Path-based gestures]
-- Timing-based gestures
+- press and hold
+- double clicking
+- multipoint clicking
+- dragging (single or multipoint)
+- gestures (single or multipoint)
+- pinching
+- :term[path-based gestures]
+- timing-based gestures
 :::
