@@ -14,3 +14,4 @@ WCAG supports the following units of analysis:
 
 :::ednote
 The full list of ways to define conformance testing and reporting scopes, such as task flows (paths) and components, is exploratory and still very much a work in progress.
+:::

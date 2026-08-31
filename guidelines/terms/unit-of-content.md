@@ -11,3 +11,4 @@ For example, if the unit is a page, the name should include language that matche
 
 :::ednote
 The full list of ways to define conformance scopes, such as task flows (paths) and components, is exploratory and still very much a work in progress.
+:::
