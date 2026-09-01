@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-The timing or positioning of notifications can be changed, suppressed or saved.
+The timing or positioning of notifications can be changed, suppressed, or saved.
 
 :::applies-when
 - Notifications or other interruptions are present.

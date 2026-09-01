@@ -9,16 +9,16 @@ text which the user can adjust
 :::note
 This could include, but is not limited to, changing:
 
-* Line, word or letter spacing
-* Color
-* Line length — being able to control width of block of text
-* Typographic alignment — justified, flushed right/left, centered
-* Wrapping
-* Columns — number of columns in one-dimensional content
-* Margins
-* Underlining, italics, bold
-* Font face, size, width
-* Capitalization — all caps, small caps, alternating case
-* End of line hyphenation
-* Links
+* line, word, or letter spacing
+* color
+* line length — being able to control width of block of text
+* typographic alignment — justified, flushed right/left, centered
+* wrapping
+* columns — number of columns in one-dimensional content
+* margins
+* underlining, italics, bold
+* font face, size, width
+* capitalization — all caps, small caps, alternating case
+* end of line hyphenation
+* links
 :::

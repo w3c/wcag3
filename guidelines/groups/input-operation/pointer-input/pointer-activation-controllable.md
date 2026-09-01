@@ -5,13 +5,13 @@ type: foundational
 
 At least one of the following is true for functionality that can be activated using a :term[simple pointer input]:
 
-No Down Event
+No down event
 : The :term[down event] of the :term[pointer] is not used to execute any part of the function.
 
-Cancel or Undo
+Cancel or undo
 : Completion of the function is on the :term[up event] and a :term[mechanism] is available to cancel the function before completion, or there is a mechanism to undo the function after completion.
 
-Up Reversal
+Up reversal
 : The :term[up event] reverses any outcome of the preceding down event.
 
 :::except-when
