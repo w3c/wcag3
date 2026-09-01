@@ -46,18 +46,22 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
   function addSummaryMarkers() {
     document.querySelectorAll(".summary").forEach(function (node) {
-      var parentHeader = findHeading(node.parentElement);
-      var summaryHeader = node.querySelector("summary");
-      var extraTitle = "";
-      if (summaryHeader.textContent.toLowerCase() != "summary")
-        extraTitle = " - " + summaryHeader.textContent;
-      summaryHeader.innerHTML =
+      const parentHeader = findHeading(node.parentElement);
+      const summaryEl = node.querySelector("summary");
+      let extraTitle = "";
+      if (summaryEl.textContent.toLowerCase() != "summary")
+        extraTitle = " - " + summaryEl.textContent;
+      summaryEl.innerHTML =
         "Plain language summary of <q>" + textNoDescendant(parentHeader) + "</q>" + extraTitle;
 
-      var el = document.createElement("p");
-      el.className = "summaryEnd";
-      el.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
-      node.appendChild(el);
+      const nonNormativeEl = document.createElement("p");
+      nonNormativeEl.innerHTML = "<em>This summary is non-normative.</em>";
+      summaryEl.after(nonNormativeEl);
+
+      const endEl = document.createElement("p");
+      endEl.className = "summaryEnd";
+      endEl.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
+      node.appendChild(endEl);
     });
   }
 
