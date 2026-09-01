@@ -1,3 +1,7 @@
+## Methods
+
+* Design content without using visual motion or pseudo-motion.
+
 ## Tests
 
 <b>Procedure</b>
