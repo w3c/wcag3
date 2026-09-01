@@ -1,17 +1,13 @@
 ---
-import { isDraft } from "@/lib/constants";
+import { isUnpublished } from "@/lib/constants";
 ---
 
-<section aria-label="draft preview" role="note" class="default-grid info" tabindex="0">
-  <p class="inner">
-    {
-      isDraft ? (
-        <>
-          This is an unpublished, in-progress draft. The content is incomplete and could change substantially.
-        </>
-      ) : (
-        <>This is an in-progress draft. The content is incomplete and could change substantially.</>
-      )
-    }
-  </p>
-</section>
+{
+  isUnpublished && (
+    <section aria-label="draft preview" role="note" class="default-grid info" tabindex="0">
+      <p class="inner">
+        This is an unpublished draft that might include content that is not yet approved.
+      </p>
+    </section>
+  )
+}
