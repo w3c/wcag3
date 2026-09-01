@@ -273,7 +273,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<h4>Core requirement tags</h4>
 				<p>Core requirements are required in order to conform.</p>
 				<ul>
-					<li><b>Harm</b> &mdash; Not meeting the requirement can cause someone with a disability physical harm.</li>
+					<li><b>Physical Harm</b> &mdash; Not meeting the requirement can cause someone with a disability physical harm.</li>
 					<li><b>Risk</b> &mdash; Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
 					<li><b>Prevention</b> &mdash; Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
 					<li><b>Additive</b> &mdash; Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
@@ -285,6 +285,9 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				</ul>
 				<h4>Assertion tags</h4>
 				<p>Assertions are not required to conform but are used to show additional achievements in accessibility and allow comparison between products.</p>
+				<div class="ednote">
+					<p>The AGWG has not yet decided whether assertions can be required for conformance.</p>
+				</div>
 				<ul>
 					<li><b>Content</b> &mdash; These assertions focus on the content and include processes that determine whether the content is accessible. For example, plain language reviews, usability testing, AT testing, or style guides.</li>
 					<li><b>Organization</b> &mdash; These assertions focus on the organization and include processes that help organizations create accessible content such as training staff in accessibility or providing public accessibility statements.</li>
@@ -301,7 +304,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<tbody>
 						<tr>
 							<td>1 - Avoid harm</td>
-							<td>Harm and risk requirements are met</td>
+							<td>Physical Harm and Risk requirements are met</td>
 						</tr>
 						<tr>
 							<td>2 - Foundational access</td>
@@ -333,6 +336,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<p>This is not a list of disabilities. Different disabilities might correspond with one or more of the limitations listed below. For example, a visual impairment or an inability to process visual information may require use with limited vision.</p>
 				<div class="ednote">
 					<p>Tagging requirements and assertions with functional performance statements allows organizations to prioritize remediation efforts and report status based on functional performance statements. Additional information on how these can be used will be included in informative testing and reporting documentation.</p>
+					<p>This section is exploratory, the following categories may change.</p>
 				</div>
 				<ul>
 					<li><b>Use with very limited or no hearing</b> &mdash; Relating to hearing and cognitive processing of auditory information.</li>
