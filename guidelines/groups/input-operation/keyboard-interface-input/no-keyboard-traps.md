@@ -7,7 +7,7 @@ Components that can be activated or entered using the keyboard interface, can be
 
 :::except-when
 - The non-standard keyboard navigation technique is described in the :term[page]/:term[view] or earlier in the :term[process].
-::: 
+:::
 
 :::example
 * Ensuring that users can exit a modal dialog, menu, or calendar picker after entering it.
