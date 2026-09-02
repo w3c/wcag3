@@ -46,18 +46,22 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
   function addSummaryMarkers() {
     document.querySelectorAll(".summary").forEach(function (node) {
-      var parentHeader = findHeading(node.parentElement);
-      var summaryHeader = node.querySelector("summary");
-      var extraTitle = "";
-      if (summaryHeader.textContent.toLowerCase() != "summary")
-        extraTitle = " - " + summaryHeader.textContent;
-      summaryHeader.innerHTML =
+      const parentHeader = findHeading(node.parentElement);
+      const summaryEl = node.querySelector("summary");
+      let extraTitle = "";
+      if (summaryEl.textContent.toLowerCase() != "summary")
+        extraTitle = " - " + summaryEl.textContent;
+      summaryEl.innerHTML =
         "Plain language summary of <q>" + textNoDescendant(parentHeader) + "</q>" + extraTitle;
 
-      var el = document.createElement("p");
-      el.className = "summaryEnd";
-      el.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
-      node.appendChild(el);
+      const nonNormativeEl = document.createElement("p");
+      nonNormativeEl.innerHTML = "<em>This summary is non-normative.</em>";
+      summaryEl.after(nonNormativeEl);
+
+      const endEl = document.createElement("p");
+      endEl.className = "summaryEnd";
+      endEl.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
+      node.appendChild(endEl);
     });
   }
 
@@ -445,9 +449,9 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       },
       {
         name: "Alastair Campbell",
-        mailto: "acampbell@nomensa.com",
-        company: "Nomensa",
-        companyURI: "https://www.nomensa.com/",
+        mailto: "alastair.campbell@thisisgain.com",
+        company: "Gain",
+        companyURI: "https://www.thisisgain.com/",
         w3cid: 44689,
       },
       {
@@ -623,6 +627,17 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
         title:
           "Ergonomics of human-system interaction—Part 391: Requirements, analysis and compliance test methods for the reduction of photosensitive seizures",
         publisher: "International Standards Organization",
+      },
+      "iso-639-2023": {
+        "authors": [
+            "ISO/TC 37/SC 2"
+        ],
+        "href": "https://www.iso.org/standard/74575.html",
+        "title": "Code for individual languages and language groups",
+        "publisher": "ISO",
+        "status": "International Standard",
+        "date": "2023",
+        "isoNumber": "ISO 639:2023"
       },
     },
   };

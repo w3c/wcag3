@@ -4,11 +4,11 @@ type: foundational
 ---
 
 The presentation of :term[blocks of text] can be adjusted, without loss of content or functionality, to meet the @@ [values to be determined] for:
-* Inline margin
-* Block margin
-* Line length
-* Line height
-* Justification
+* inline margin
+* block margin
+* line length
+* line height
+* justification
 
 :::note
 The requirement is that the text is manipulable and the style attributes can be overridden.

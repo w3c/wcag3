@@ -7,10 +7,10 @@ Sentences do not include :term[unnecessary words].
 
 :::except-when
 - :term[text content] is:
-    * poetic,
-    * scriptural,
-    * artistic, or
-    * expressive rather than informational. 
+  * poetic,
+  * scriptural,
+  * artistic, or
+  * expressive rather than informational.
 :::
 
 :::example

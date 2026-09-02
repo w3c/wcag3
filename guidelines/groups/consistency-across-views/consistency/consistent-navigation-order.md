@@ -3,10 +3,10 @@ type: supplemental
 status: developing
 ---
 
-The relative order of navigation items is consistent within blocks of navigation that are repeated on multiple pages/views of the :term[conformance scope] or process.
+The relative order of navigation items is consistent within blocks of navigation that are repeated on multiple :term[pages]/:term[views] of the :term[conformance scope] or process.
 
 :::applies-when
-- In a set of :term[pages]/:term[views].
+- In a set of pages/views.
 :::
 
 :::ednote

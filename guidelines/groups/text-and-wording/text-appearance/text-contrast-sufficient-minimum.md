@@ -12,12 +12,12 @@ The :term[default visual presentation] of text meets @@[contrast measure to be d
 
 :::except-when
 - the text is:
-    * also present elsewhere in the :term[page]/:term[view] which meets the requirement
-    * part of an inactive :term[interactive element]
-    * pure decoration
-    * not visible to anyone
-    * part of a picture that includes significant other visual content
-    * part of a logo or brand name
+  * also present elsewhere in the :term[page]/:term[view] which meets the requirement
+  * part of an inactive :term[interactive element]
+  * pure decoration
+  * not visible to anyone
+  * part of a picture that includes significant other visual content
+  * part of a logo or brand name
 :::
 
 :::note

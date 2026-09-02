@@ -1,3 +1,7 @@
+## Methods
+
+* Consider if motion or pseudo-motion is essential, and if it is not, refrain from including it.
+
 ## Tests
 
 <b>Procedure</b>
