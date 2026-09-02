@@ -10,11 +10,11 @@ type: assertion
 
 ::assertion-required
 
-* Title, role or organization making the assertion.
-* Date of assertion.
+* title, role, or organization making the assertion
+* date of assertion
 
 ::assertion-recommended
 
-* Maintain records of usability testing protocol, scope of the testing, and results.
-* Number of participants and disabilities represented within the group of participants.
-* Record of actions taken to address identified issues.
+* maintained records of usability testing protocol, scope of the testing, and results
+* number of participants and disabilities represented within the group of participants
+* record of actions taken to address identified issues

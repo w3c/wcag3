@@ -14,10 +14,10 @@ It is often helpful for users to understand where within a digital product they 
 
 ::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Design log capturing decision to use specific approaches to current location patterns used within the conformance scope.
-* If a non-convention design pattern is used, usability testing results that demonstrate the utility of the design approach taken.
+* design log capturing decision to use specific approaches to current location patterns used within the conformance scope
+* if a non-conventional design pattern is used, usability testing results that demonstrate the utility of the design approach taken

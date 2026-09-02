@@ -75,7 +75,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 			<section>
 				<h4>Section status levels</h4>
-				<p>As part of the WCAG 3 drafting process, each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines Working Group is looking for.</p>
+				<p>As part of the WCAG 3 drafting process, each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines Working Group (AGWG) is looking for.</p>
 				<ul>
 					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
 					<li><strong id="status-exploratory">Exploratory</strong>: This content is not refined; details and definitions may be missing. The working group is exploring what direction to take with this section. Feedback should be about the proposed direction.</li>
@@ -91,7 +91,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<p>WCAG 3 is a successor to <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> [[WCAG22]] and previous versions, but does not <a>deprecate</a> WCAG 2. It will also incorporate some content from and partially extend <a href="https://www.w3.org/TR/UAAG20/"> User Agent Accessibility Guidelines 2.0</a> [[UAAG20]] and <a href="https://www.w3.org/TR/ATAG20/"> Authoring Tool Accessibility Guidelines 2.0</a> [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 15 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly.</p>
 				<p>There are many differences between WCAG 2 and WCAG 3. The WCAG 3 guidelines address the accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other Web of Things devices. The guidelines apply to various types of web content, including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control methods. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement. </p>
-				<p>Content that conforms to WCAG 2.2 Level A and Level AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to WCAG 3, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
+				<p>Content that conforms to WCAG 2.2 Level A and Level AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group (AGWG) expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to WCAG 3, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
 			</section>
 
 		</section>
@@ -108,7 +108,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 
 			<div class="ednote">
-			<p>The individuals and organizations that use WCAG vary widely and include web designers and developers, policy makers, purchasing agents, teachers, and students. To meet the varying needs of this audience, several layers of guidance will be provided including guidelines written as outcome statements, requirements that can be tested, assertions, a rich collection of methods, resource links, and code samples.</p>
+			<p>The individuals and organizations that use WCAG vary widely and include web designers and developers, policymakers, purchasing agents, teachers, and students. To meet the varying needs of this audience, several layers of guidance will be provided including guidelines written as outcome statements, requirements that can be tested, assertions, a rich collection of methods, resource links, and code samples.</p>
 
 				<p><strong> The following list is an initial set of potential guidelines and requirements that the Working Group will be exploring. The goal is to guide the next phase of work. They should be considered drafts and should not be considered as final content of WCAG 3.0</strong>.</p>
 
@@ -216,8 +216,10 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible</li>
 					<li><b>Assertions:</b> Statements saying that you have done something to improve the accessibility of your content or product</li>
 				</ul>
-				<p>In addition, WCAG 3 provides Recommendations. Recommendations provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommendations are not necessary to conform.</p>
+				<p>In addition, WCAG 3 provides Recommended Practices. Recommended Practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommended Practices are not necessary to conform.</p>
+
 				<p>When evaluating conformance, you need to test clearly defined parts of your content — such as specific <a>pages</a>/<a>views</a>, or <a>processes</a>. This enables you to describe the parts that were tested and the result of the test for each part. This is the primary information you would need if you were going to make a valid conformance claim, which is a statement that meets a specific set of documentation requirements. Those requirements are defined in the next section , which is about reporting	.</p>
+				
 				<p>When evaluating conformance, the evaluation MUST ensure the content works with a specific set of end user technologies, such as browsers or assistive technologies. WCAG 3 refers to the end user technology test sets used to evaluate conformance as <a>accessibility support sets</a>.</p>
 			</details>
 
@@ -237,16 +239,16 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<section id="interpreting-normative-provisions">
 				<h3>Interpreting normative provisions</h3>
 
-				<p>The main content of WCAG 3 is <a>normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
+				<p>The provisions of WCAG 3 are <a>normative</a> and define requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
 
-				<h4>Types of provision</h4>
+				<h4>Types of provisions</h4>
 
 				<p>WCAG 3 consists of three types of provisions.</p>
 
 				<p><b>Core requirements</b> &mdash; Set of requirements that MUST be met to conform. These include requirements that ensure:</p>
 				<ul>
 					<li>content is detectable by user agents and AT,</li>
-					<li>content can be conveyed to multiple senses and can be used by multiple inputs,</li>
+					<li>content can be conveyed to multiple senses and can be operated by multiple input methods,</li>
 					<li>content does not cause direct and immediate physical harm, and</li>
 					<li>necessary support is available such as captions, text alternatives, and expanded forms of abbreviations.</li>
 				</ul>
@@ -260,11 +262,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p><b>Assertions</b> &mdash; Documented statements that can be made about specific accessibility practices an organization follows to improve the accessibility of the content or product.</p>
 
-				<h4>Recommendations</h4>
+				<h4>Recommended Practices</h4>
 
-				<p>In addition to requirements and assertions, WCAG 3 includes recommendations. A recommendation can take the form of a provision or a method. They provide guidance for improving accessibility or making implementation more effective, but might not always apply in every situation. These are integrated with requirements, assertions and methods and are clearly marked as best practice.</p>
+				<p>In addition to requirements and assertions, WCAG 3 includes Recommended Practices. A Recommended Practice can take the form of a provision or a method. They provide guidance for improving accessibility or making implementation more effective, but might not always apply in every situation. These are integrated with requirements, assertions and methods and are clearly marked as Recommended Practices.</p>
 
-				<p>Recommendations are informative and do not need to be satisfied to conform.</p>
+				<p>Recommended Practices are informative and do not need to be satisfied to conform.</p>
 			</section>
 
 			<section id="conformance-requirements">
@@ -362,6 +364,9 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<li><b>Barrier</b> &mdash; Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
 					<li><b>Friction</b> &mdash; Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
 				</ul>
+				<div class="ednote">
+					<p>The AGWG will consider one or more definitions for harm, and types of harm.</p>
+				</div>
 				<h4>Supplemental requirements</h4>
 				<p>Supplemental requirements are not required to conform but are used to show additional achievements in accessibility and allow comparison between products.</p>
 				<ul>
@@ -485,8 +490,8 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			</ul>
 		</section>
 		<section class="appendix">
-			<h2>Acknowledgements</h2>
-			<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
+			<h2>Acknowledgements</h2>				
+			<p>Additional information about participation in the Accessibility Guidelines Working Group (AGWG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
 			<Acknowledgements />
 		</section>
 	</body>

@@ -10,16 +10,16 @@ issueLabel: Reviewed by content authors
 
 ::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of the review
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of the review
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Role of the creator
-* Number of creators (for each Role)
-* Date (Period) of review
-* Examples of fixed issues based on the review
+* role of the creator
+* number of creators (for each Role)
+* date (Period) of review
+* examples of fixed issues based on the review
 
 :::example
 * **Roles and numbers:** 3 creators
@@ -28,7 +28,7 @@ issueLabel: Reviewed by content authors
   * 1 screenwriter/playwright
 * **Period:** 10-21 October 2024
 * **Examples of fixed issues:**
-  * Provided more details based on feedback
+  * Provided more details based on feedback.
   * Rewrote some scripts to reflect the director's intent.
-  * Added the description of the background shown in the video
+  * Added the description of the background shown in the video.
 :::
