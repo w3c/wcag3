@@ -1,7 +1,6 @@
 ---
 type: assertion
 status: developing
-issueLabel: Media alternatives usability testing
 ---
 
 [Title, role, or organization] asserts that:

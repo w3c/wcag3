@@ -2,7 +2,6 @@
 type: foundational
 status: developing
 title: Captions equivalent (prerecorded)
-issueLabel: Media alternatives equivalent
 ---
 
 Equivalent :term[captions] are available for :term[audio] and :term[video] content.

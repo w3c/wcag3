@@ -1,7 +1,6 @@
 ---
 status: developing
 type: foundational
-issueLabel: No flashing
 ---
 
 :term[Flashes] are below the :term[general flash and red flash thresholds].

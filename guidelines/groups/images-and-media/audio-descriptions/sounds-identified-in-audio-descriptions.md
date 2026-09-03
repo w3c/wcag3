@@ -1,7 +1,6 @@
 ---
 type: foundational
 status: developing
-issueLabel: Sounds identified
 ---
 
 Sounds needed to understand the media are identified or described in :term[captions] and :term[transcripts].
