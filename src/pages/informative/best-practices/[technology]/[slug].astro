@@ -3,11 +3,11 @@ import InformativeRelatedLayout from "@/layouts/InformativeRelatedLayout.astro";
 import { generateInformativeRelatedGetStaticPaths } from "@/lib/informative";
 import { getEntry } from "astro:content";
 
-export const getStaticPaths = generateInformativeRelatedGetStaticPaths("bestPractices");
+export const getStaticPaths = generateInformativeRelatedGetStaticPaths("recommendedPractices");
 
 const id = `${Astro.params.technology}/${Astro.params.slug}`;
-const entry = await getEntry("bestPractices", id);
-if (!entry) throw new Error(`Unresolvable Best Practice ID: ${id}`);
+const entry = await getEntry("recommendedPractices", id);
+if (!entry) throw new Error(`Unresolvable Recommended Practice ID: ${id}`);
 ---
 
 <InformativeRelatedLayout entry={entry} />

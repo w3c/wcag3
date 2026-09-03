@@ -17,7 +17,7 @@ This consistency extends to the text alternatives. If icons or other non-text it
 
 If there are two components on a web page that both have the same functionality as a component on another page in a set of web pages, then all 3 must be consistent. Hence the two on the same page will be consistent.
 
-While it is desirable and best practice always to be consistent within a single web page, 3.2.4 Consistent Identification only addresses consistency within a set of web pages where something is repeated on more than one page in the set.
+While it is desirable and recommended practice always to be consistent within a single web page, 3.2.4 Consistent Identification only addresses consistency within a set of web pages where something is repeated on more than one page in the set.
 
 ## Benefits
 
@@ -39,7 +39,7 @@ While it is desirable and best practice always to be consistent within a single 
 	<dt>Example 5: Save icon button</dt>
 	<dd>A common "save" icon is used for buttons throughout a site where page save function is provided. These icons all have a consistent text alternative / accessible name</dd>
 	<dt>Example 6: Icon link and adjacent link to same destination</dt>
-	<dd>A graphical link containing an icon and a text link are next to each other, and go to the same location. The best practice would be to group them into one link as per [H2: Combining adjacent image and text links for the same resource](https://www.w3.org/WAI/WCAG22/Techniques/html/H2). However if they are visually positioned one above the other but separated in the source, this may not be possible. To meet the Success Criterion, the link text for these two links need only be consistent, not identical. But best practice is to have identical text so that when users encounter the second one, it is clear that it goes to the same place as the first.</dd>
+	<dd>A graphical link containing an icon and a text link are next to each other, and go to the same location. The recommended practice would be to group them into one link as per [H2: Combining adjacent image and text links for the same resource](https://www.w3.org/WAI/WCAG22/Techniques/html/H2). However if they are visually positioned one above the other but separated in the source, this may not be possible. To meet the Success Criterion, the link text for these two links need only be consistent, not identical. But recommended practice is to have identical text so that when users encounter the second one, it is clear that it goes to the same place as the first.</dd>
 	<dt>Example 7: Example of a Failure</dt>
 	<dd>A submit "search" button on one web page and a "find" button on another web page both have a field to enter a term and list topics in the website related to the term submitted. In this case, the buttons have the same functionality but are not labeled consistently.</dd>
 	<dt>Example 8: Failure primarily impacting assistive technology users</dt>
