@@ -20,14 +20,16 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
 <body>
     <section id='abstract'>
-        <p>The Explainer for WCAG 3 accompanies the draft of [[[?WCAG3]]]. It provides an overview of the history and goals of WCAG 3. This document also describes the current thinking on the structure of the guidelines and the conformance model. The guidelines, conformance model, and related work are still evolving.</p> 
+        <p>The Explainer for WCAG 3 accompanies the draft of [[[?WCAG3]]]. This document provides an overview of the history and goals of WCAG 3. It also describes the current thinking on the structure of the guidelines and the conformance model. The guidelines, conformance model, and related work are still evolving.</p> 
         <p>Information on the current schedule is included below with a link to a more detailed timeline.</p>
-        <p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a> for more details about this work and links to WCAG technical and educational material.</p>
+        <p>For more details about this work and links to WCAG technical and educational material, see <a href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/">WCAG 3 Introduction</a>.</p>
     </section>
     <section id='sotd'>
         <p>This is an updated draft of the WCAG 3 Explainer. It is informative, not normative, and is not expected to become a W3C Recommendation. It provides background on [[[?WCAG3]]].</p>
 
-        <p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). In-progress updates to the guidelines can be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">public editors’ draft</a>.</p>
+        <p>To comment, <a href="https://github.com/w3c/wcag3/issues/new">file an issue in the W3C wcag3 GitHub repository</a>. Create separate GitHub issues for each topic, rather than commenting on multiple topics in a single issue. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, email <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%203.0%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>).</p>
+
+        <p>In-progress updates to the guidelines may be viewed in the <a href="https://w3c.github.io/wcag3/guidelines/">publicly visible Editor's Draft</a>.</p>
 
     </section>
     <section id="intro">
@@ -35,20 +37,20 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p>W3C Accessibility Guidelines (WCAG) 3.0 is a successor to Web Content Accessibility Guidelines 2.2 [[WCAG22]]
             and previous versions. It does not <a>deprecate</a> WCAG 2. It may incorporate some content from User Agent
-            Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]] where it assists authors in meeting guidelines. These versions provided a model that kept them relevant for over 10 years. Changing technology and changing needs of people with disabilities require a new model to address content accessibility more comprehensively.
+            Accessibility Guidelines 2.0 [[UAAG20]] and Authoring Tool Accessibility Guidelines 2.0 [[ATAG20]] where it assists authors in meeting guidelines. The model used by these guidelines has kept them relevant for over 10 years. Changes in technology and the needs of people with disabilities require a new model to address content accessibility more comprehensively.
         </p>
         <p>This Explainer includes: </p>
         <ul>
             <li><a href="#goals">Goals for WCAG 3</a></li>
-            <li><a href="#background">WCAG 3 Background and Development History</a></li>
-            <li><a href="#current-process">Current Process for Creating WCAG 3</a></li>
-            <li><a href="#structure">WCAG 3 Structure</a></li>
-            <li><a href="#conformance-models">Conformance Approach</a></li>
-            <li><a href="#user-generated-content">Information on User-generated content</a></li>
-            <li><a href="#schedule">Schedule</a>.</li>
+            <li><a href="#background">WCAG 3 background and development history</a></li>
+            <li><a href="#current-process">Current process for creating WCAG 3</a></li>
+            <li><a href="#structure">WCAG 3 structure</a></li>
+            <li><a href="#conformance-models">Conformance approach</a></li>
+            <li><a href="#user-generated-content">Information on user-generated content</a></li>
+            <li><a href="#schedule">Schedule</a></li>
         </ul>
 
-     <p class="ednote">The structure, guidelines, and conformance model are still in draft. The Accessibility Guidelines Working Group welcomes public comments on the proposed approach.</p> 
+     <p class="ednote">The structure, guidelines, and conformance model are still in draft. The Accessibility Guidelines (AG) Working Group welcomes public comments on the proposed approach.</p> 
     </section>
     <section>
         <h2>Goals</h2>
@@ -62,178 +64,175 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </ul>
         <p>Additional goals for WCAG 3 are written in <a
                 href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a>. These are based on the
-            <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver research</a>, the
+            <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver research</a>,
             results from the <a href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Silver Design
                 Sprint</a>, and input from the Accessibility Guidelines Working Group, the Silver Task Force, and the
             Silver Community Group.</p>
 
-        <h3>Goals for Inclusion</h3>
+        <h3>Goals for inclusion</h3>
         <p>The creation process for the WCAG 3 guidelines should:</p>
         <ul>
-            <li>Actively recruit a diverse range of people with disabilities.</li>
-            <li>Periodically evaluate inclusive features of available tooling and procedures.</li>
-            <li>Facilitate global participation and feedback.</li>
-            <li>Review and monitor participation and representation.</li>
+            <li>actively recruit a diverse range of people with disabilities,</li>
+            <li>periodically evaluate inclusive features of available tooling and procedures,</li>
+            <li>facilitate global participation and feedback, and</li>
+            <li>review and monitor participation and representation.</li>
         </ul>
         <div class="ednote">
             <p>W3C strives to be as inclusive as possible, and has actively sought participation and input from a broad
-                range of stakeholder groups. Part of our upcoming focus is exploring using registries to broaden support 
+                range of stakeholder groups. Part of our upcoming work will explore the use of registries to broaden support 
                 for scripts other than Latin.
              </p>
                 
              <p>We recognize that there is always room for improvement in
                 practices to support inclusion and representation. As you evaluate this document, please consider
-                whether there are ways the Working Group can better support your review, feedback, or inclusion within
+                whether there are ways the AG Working Group can better support your review, feedback, or inclusion within
                 the process of creating this standard. We welcome feedback on this question as part of your comments.
             </p>
         </div>
 
-        <h2>Out of Scope</h2>
-        <p>Items that are out of scope for WCAG 3:</p>
+        <h2>Out of scope</h2>
+        <p>The following are out of scope for WCAG 3:</p>
         <ul>
-            <li>Non-web technologies.</li>
-            <li>Normative requirements for platforms, operating systems, software in the web technology stack, and components that do not themselves have a user interface.</li>
+            <li>non-web technologies</li>
+            <li>normative requirements for platforms, operating systems, software in the web technology stack, and components that do not themselves have a user interface</li>
         </ul>
     </section>
     <section id="background">
-        <h2>WCAG 3 Background and Development History</h2>
+        <h2>WCAG 3 background and development history</h2>
         <p>WCAG 3 originally had a project name of "Silver", so the original groups working on it and much of the
-            early design work carries that project name. The Silver Task Force of the Accessibility Guidelines Working
-            Group (AG) and the W3C Silver Community group partnered to produce the needs, requirements, and structure
-            for the new accessibility guidance. They worked on Silver from 2017-2023. During that time they:</p>
+            early design work carry that project name. The Silver Task Force of the AG Working
+            Group and the W3C Silver Community Group partnered to produce the needs, requirements, and structure
+            for the new accessibility guidance. They worked on Silver from 2017 to 2023. During that time they:</p>
         <ol>
-            <li>Developed a list of Web Content Accessibility Guidelines <a
+            <li>developed a list of Web Content Accessibility Guidelines <a
                     href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Job_Stories_for_Stakeholders">stakeholders
-                    and their job stories</a></li>
-            <li>Researched needs for a new major version of the Web Content Accessibility Guidelines; (<a
+                    and their job stories</a>,</li>
+            <li>researched needs for a new major version of the Web Content Accessibility Guidelines (<a
                     href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Silver_Research_Archive">Silver Research
-                    Project</a>)</li>
-            <li>Developed <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Problem_Statements">problem
-                    statements and opportunities</a> to improve accessibility guidance;</li>
-            <li>Received <a
+                    Project</a>),</li>
+            <li>developed <a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Problem_Statements">problem
+                    statements and opportunities</a> to improve accessibility guidance,</li>
+            <li>received <a
                     href="https://www.w3.org/community/silver/2018/04/23/suggestions-of-silver-design-sprint/">input
-                    from industry leaders</a> for directions to proceed to address the problem statements; The full <a
-                    href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Final Report of the Silver
-                    Design Sprint</a> is incorrectly labeled as a draft. It contains all the information on the Design
-                Sprint.</li>
-            <li>Drafted <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG3</a>;</li>
-            <li>Created and tested prototypes for aspects of the project; and </li>
-            <li>Created a <a href="https://www.w3.org/TR/2021/WD-wcag-3.0-20210121/">First Public Working Draft of
-                    WCAG3</a> and seven updated <a href="https://www.w3.org/TR/wcag-3.0/">Working Drafts</a>. </li>
+                    from industry leaders</a> on how to address the problem statements,</li>
+            <li>drafted <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3</a>,</li>
+            <li>created and tested prototypes for aspects of the project, and </li>
+            <li>created a <a href="https://www.w3.org/TR/2021/WD-wcag-3.0-20210121/">First Public Working Draft of
+                    WCAG 3</a> and seven updated <a href="https://www.w3.org/TR/wcag-3.0/">working drafts</a>. </li>
         </ol>
+
+        <p>The <a
+                    href="https://www.w3.org/community/silver/draft-final-report-of-silver/">Final Report of the Silver
+                    Design Sprint</a> provides more information. Although the report is labeled as a draft, it is the final report.</p>
     </section>
 
     <section id="current-process">
-        <h2>Current Process for Creating WCAG 3</h2>
-        <p>The Accessibility Guidelines Working Group (AGWG) uses an iterative approach to creating WCAG 3. Each piece of content will evolve over time,
-            increasing in maturity. As a result, the document is a work-in-progress.</p>
+        <h2>Current process for creating WCAG 3</h2>
+        <p>The Accessibility Guidelines (AG) Working Group uses an iterative approach to creating WCAG 3. Each piece of content will evolve over time,
+            increasing in maturity. As a result, the document is a work in progress.</p>
         <p>Because different parts of the document have different maturity levels, each normative section includes a
             status that indicates:</p>
         <ul>
             <li>how far along in the development process this section is,</li>
             <li>how ready it is for experimental adoption, and</li>
-            <li>what kind of feedback AGWG is looking for.</li>
+            <li>what kind of feedback the AG Working Group is looking for.</li>
         </ul>
 
-        <p>The status indicators, from least to most mature, are:</p>
+        <p>The status indicators, from least to most mature, are as follows:</p>
         <ul>
             <li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
             <li><strong id="status-exploratory">Exploratory</strong>: This content is not refined; details and definitions may be missing. The working group is exploring what direction to take with this section. Feedback should be about the proposed direction.</li>
-            <li><strong id="status-developing">Developing</strong>: This content has been roughly agreed on in terms of what is needed for this section, although not all high-level concerns have been settled. Details have been added, but are yet to be worked out. Feedback should be focused on ensuring the section is usable and reasonable, in a broad sense.</li>
+            <li><strong id="status-developing">Developing</strong>: This content has been roughly agreed on in terms of what is needed for this section, although not all high-level concerns have been settled. Details have been added, but are yet to be worked out. Feedback should be focused on ensuring the section is broadly usable and reasonable.</li>
             <li><strong id="status-refining">Refining</strong>: This content is ready for wide public review and experimental adoption. The working group has reached consensus on this section. Feedback should be focused on the feasibility of implementation.</li>
             <li><strong id="status-mature">Mature</strong>: This content is believed by the working group to be ready for recommendation. Feedback on this section should be focused on edge-case scenarios that the working group may not have anticipated.</li>
         </ul>
 
-        <p>The working group aims to publish two new drafts each year. Each draft will include targeted questions for the 
-            public to consider. Responses will help advance the work. Content will evolve and there may be 
-            changes to layout and style that are not yet reflected in all parts of the present release and will be reflected 
-            in future releases.</p>
+        <p>The AG Working Group aims to publish two new drafts each year. Each draft will include targeted questions for the 
+            public to consider. Responses will help advance the work. Content will continue to evolve. Changes to layout and style may not yet be reflected consistently throughout this release but will be incorporated 
+            into future releases.</p>
     </section>
 
     <section id="structure" data-status="exploratory">
-        <h2>WCAG 3 Structure</h2>
-        <p>WCAG 3 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized into:</p>
+        <h2>WCAG 3 structure</h2>
+        <p>WCAG 3 includes both <a>normative</a> and <a>informative</a> guidance. This guidance is organized as follows:</p>
         <ul>
-            <li>Guidelines (Outcome Statements) - normative
+            <li>Guidelines (outcome statements) &mdash; normative
                 <ul>
-                    <li>Core Requirements - normative
+                    <li>Core requirements &mdash; normative
                         <ul>
-                            <li>How to Documents - informative
+                            <li>"How to" documents &mdash; informative
                                 <ul>
-                                    <li>Methods - informative</li>
+                                    <li>Methods &mdash; informative</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li>Supplemental Requirements - normative
+                    <li>Supplemental requirements &mdash; normative
                         <ul>
-                            <li>How to Documents - informative
+                            <li>"How to" documents &mdash; informative
                                 <ul>
-                                    <li>Methods - informative</li>
+                                    <li>Methods &mdash; informative</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li>Assertions - normative
+                    <li>Assertions &mdash; normative
                         <ul>
-                            <li>How to Documents - informative
+                            <li>"How to" documents &mdash; informative
                             </li>
                         </ul>
                     </li>
-                    <li>Best practices - informative
+                    <li>Recommended practices &mdash; informative
                         <ul>
-                            <li>How to Documents - informative
+                            <li>"How to" documents &mdash; informative
                             </li>
                         </ul>
                     </li>                    
                 </ul>
             </li>
         </ul>
-        <p>Details on each are below.</p>
-        <p>By default, guidelines are organized by what is tested. WCAG 3 will provide a version, similar to the
+        <p>Details on each of these types of guidance are below.</p>
+        <p>By default, guidelines are organized by the type of content or product that is being tested. WCAG 3 will provide a version, similar to the
             existing <a href="https://www.w3.org/WAI/WCAG22/quickref/">QuickRef</a>, that incorporates tags to allow
             readers to reorganize and filter the content. For example, content will be tagged Perceivable, Operable,
             Understandable, and Robust so that readers can view WCAG 3 criteria in the same structure as WCAG 2.</p>
 
         <h3>Guidelines</h3>
-        <p>Guidelines are written as plain language, user-centered outcomes statements.</p>
-        <p>Guidelines include high-level, plain-language information for managers, policymakers, individuals who are
-            new to accessibility, and other individuals who need to understand the concepts but not the technical
-            details. They provide an easy-to-understand way of organizing and presenting the outcomes so that anyone can
-            learn about and understand the concepts. </p>
+        <p>Guidelines are written as plain-language, user-centered outcome statements.</p>
+        <p>The outcome statements consist of high-level, easy-to-understand information for managers, policymakers, individuals who are
+            new to accessibility, and other individuals who need to understand accessibility concepts but not the technical
+            details.</p>
         <p>Guidelines are normative.</p>
         <p>Guidelines are <a>technology-agnostic</a> and address functional needs on specific topics, such as contrast, forms, readability, and more.
           Core requirements, supplemental requirements, and assertions that relate 
-            to a Guideline are listed together to encourage adoption of higher levels of accessibility.</p>
+            to a guideline are listed together to encourage adoption of higher levels of accessibility.</p>
 
-        <h3>Requirements and Methods</h3>
-        <p>Each Guideline contains multiple Requirements:</p>
-        <ul><li>Core Requirements will be required to meet base level conformance. They will be part, but not all, of base level
-         conformance. This set of requirements will cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
-            <li>Supplemental Requirements will be used at all levels of conformance, but testers or policymakers will be able to select 
-                which supplemental requirements to meet.</li>
-        </li></ul>
+        <h3>Requirements and methods</h3>
+        <p>Each guideline contains multiple requirements composed of core requirements and supplemental requirements:</p>
+        <ul>
+           <li>Core requirements: These must be met to achieve base-level conformance. They will be part but not all of base-level conformance. This set of requirements will cover a similar, but not identical, set of requirements to WCAG 2.2 Level AA.</li>
+           <li>Supplemental requirements: These will be used at all levels of conformance, but testers or policymakers will be able to select which supplemental requirements need to be met.</li>
+        </ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
 
-        <p>Each Requirement is associated with at least one <a>Method</a>.
+        <p>Each requirement is associated with at least one <a>method</a>.
             Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and sets of tests. Methods can apply to a
-            specific technology, such as HTML, or can be more generic where the advice applies no matter what
-            technology. For example, the methods supporting the Clear Language guideline.</p>
+            specific technology, such as HTML, or can be technology agnostic when the advice applies regardless of
+            technology. For example, methods supporting the Clear Language Guideline can apply regardless of technology.</p>
 
         <h3>Assertions</h3>
-            <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3, an
-                Assertion is an attributable and documented statement of fact regarding procedures practiced in the
-                development and maintenance of the content or product to improve accessibility.</p>
+            <p>An assertion is a formal, documented claim of fact attributed to a person or organization. In WCAG 3, an
+                assertion describes procedures an organization uses when developing and maintaining its content or product to improve accessibility.</p>
 
     
-            <h4>Using Assertions</h4>
-            <p>Assertions may be used, in addition to Requirements, to support a Guideline. Only assertions included in this document can be used for conformance. Not all Guidelines include Assertions. Guidelines that include Assertions list them with the Requirements. 
-                Organizations can make an Assertion that they followed a procedure as part of a conformance claim.  Assertions build on Core Requirements. Assertions cannot be used as alternatives to Core Requirements.</p>
+            <h4>Using assertions</h4>
+            <p>Assertions may be used, in addition to requirements, to support a guideline. Only assertions included in this document can be used for conformance. Not all guidelines include assertions. Guidelines that include assertions list them with the requirements. 
+                Organizations can make an assertion that they followed a procedure as part of a conformance claim.  Assertions build on core requirements. Assertions cannot be used as alternatives to core requirements.</p>
 
             <div class="ednote">
-                <p>The working group will consider whether assertions may be used to support guidelines when requirements are not available.</p>
+                <p>The AG Working Group will consider whether assertions may be used to support guidelines when requirements are not available.</p>
                 <p>An alternative to specifying assertions at the requirement or guideline level might be to require that the assertion apply to the scope of the conformance claim.</p>
             </div>
 
@@ -245,35 +244,35 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                 during testing.</p>
             <p>Examples of procedures that may be used during implementation might include:</p>
             <ul>
-                <li>Accessibility training,</li>
-                <li>FTE (Full Time Equivalent) assignments,</li>
-                <li>Skills testing,</li>
-                <li>Coordination and documentation of accessibility processes, or</li>
-                <li>Setting the priority for remediation.</li>
+                <li>accessibility training,</li>
+                <li>full-time equivalent (FTE) assignments,</li>
+                <li>skills testing,</li>
+                <li>coordination and documentation of accessibility processes, or</li>
+                <li>setting the priority for remediation.</li>
             </ul>
             <p>Examples of procedures that may be used to evaluate accessibility might include:</p>
             <ul>
-                <li>Usability testing,</li>
-                <li>Heuristic evaluation, or</li>
-                <li>Testing with assistive technology.</li>
+                <li>usability testing,</li>
+                <li>heuristic evaluation, or</li>
+                <li>testing with assistive technology.</li>
             </ul>
 
-                <h4>Documenting Assertions</h4>
+                <h4>Documenting assertions</h4>
                 <p>Assertions may be used as part of a conformance claim or to support an independent claim of accessibility conformance. 
                     When used for conformance, assertions must be documented within the accessibility conformance claim. 
                     When used outside a conformance claim, the assertion may be
                     made available through an organization's website or other materials.</p>
                 <p>Assertions include the following information:</p>
                 <ul>
-                    <li>The statement about the process being asserted,</li>
-                    <li>The date of the assertion,</li>
-                    <li>The date or date range the procedure was completed,</li>
-                    <li>The scope of the assertion,</li>
-                    <li>Contact information for the person or group making the assertion, and</li>
-                    <li>The requirement(s) or guideline(s) supported by the assertion.</li>
+                    <li>the statement about the process being asserted</li>
+                    <li>the date of the assertion</li>
+                    <li>the date or date range the procedure was completed</li>
+                    <li>the scope of the assertion</li>
+                    <li>contact information for the person or group making the assertion</li>
+                    <li>the requirement(s) or guideline(s) supported by the assertion</li>
                 </ul>
 
-                <p>Maintaining additional information to improve or validate
+                <p>Organizations may maintain additional information to improve or validate
                 procedures and assertions. WCAG will not require organizations to provide supporting documentation in order to
                 conform.</p>
 
@@ -282,14 +281,14 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                </div>
 
                 <div class="ednote">
-                    <p>AG will continue developing requirements and methods. Each publication will include additional examples, and/or more mature examples for public comment.</p>
-                    <p>AG's next steps include:</p>
+                    <p> The AG Working Group will continue developing requirements and methods. Each publication will include additional or more mature examples for public comment.</p>
+                    <p>The working group's next steps are:</p>
                     <ul>
-                        <li>Develop mature examples of 2 guidelines with associated requirements, methods, tests, and How to documentation.</li>
-                        <li>Further explore how conditional requirements and alternate ways to measure might be used to support Guidelines.</li>
+                        <li>Develop mature examples of two guidelines with associated requirements, methods, tests, and "How to" documentation</li>
+                        <li>Further explore how conditional requirements and alternate ways to measure might be used to support guidelines</li>
                     </ul>
 
-                    <p>AG will also continue to explore the use of assertions and welcomes feedback on the following questions:</p>
+                    <p>The AG Working Group will also continue to explore the use of assertions. We welcome feedback on the following questions:</p>
                     <ul>
                         <li>Can assertions be used to record accessibility work that is not required in the guidelines? This
                             could include advance work on guidance not yet added to the guidelines.</li>
@@ -298,37 +297,39 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                             be handled?</li>
                         <li>Can assertions exist outside of conformance? For example, can they be used as an internal benchmark
                             rather than for a claim of conformance?</li>
-                        <li>Can assertions be used at the most basic level of conformance? If so, how?</li>
+                        <li>Can assertions be used at base-level conformance? If so, how?</li>
                         <li>How can small organizations use assertions without unrealistic burden?</li>
                         <li>As written, assertions are collocated with requirements. Would moving assertions to a different location be more effective?</li>
-                        <li>AG is considering what will qualify as a procedure in WCAG 3. A procedure may be limited to
-                            guidance:
+                        <li>What qualifies as a procedure in WCAG 3? The AG Working Group is considering the following options:</li>
                             <ul>
-                                <li>approved by AGWG and listed in WCAG,</li>
-                                <li>that references publicly published guidance, or</li>
-                                <li>that meets criteria specified in WCAG</li>
+                                <li>limiting a procedure to guidance that:</li>
+                                   <ul>
+                                      <li>is approved by the working group and listed in WCAG,</li>
+                                      <li>references publicly published guidance, or</li>
+                                      <li>meets criteria specified in WCAG;</li>
+                                   </ul>
+                                <li>any process that an organization uses to improve accessibility.</li>
                             </ul>
-                        or it may be any process that an organization uses to improve accessibility.</li>
                     </ul>
                 </div>
  
-        <h3>Best practices</h3>
-        <p>Best practices reduce or eliminate barriers that people with disabilities experience. They provide important guidance that often saves time and improve accessibility, but they cannot be requirements because:
+        <h3>Recommended practices</h3>
+        <p>Recommended practices reduce or eliminate barriers that people with disabilities experience. They provide important guidance that often saves time and improves accessibility, but recommended practices cannot be requirements because:</p>
             <ul><li>they may not be objectively testable, or</li> 
-                <li>the situations to which they apply may not be clearly defined and may require a judgement call.</li>
-            </ul></p>
-                <p>Best practices are informative and do not affect conformance.</p>
+                <li>the situations to which they apply may not be clearly defined and may require a judgment call.</li>
+            </ul>
+        <p>Recommended practices are informative and do not affect conformance.</p>
         </section>
 
         <section id="testing" data-status="exploratory">
         <h4>Testing</h4>
         <h5>Types of tests</h5>
-        <p>WCAG 3 includes two types of tests which are evaluated:</p>
+        <p>WCAG 3 includes two types of tests:</p>
         <ul>
-            <li>Quantifiable tests: Tests where there is a high degree of <a>reliability</a> between test results from different
+            <li><b>Quantifiable tests:</b> Tests that produce results with a high degree of <a>reliability</a> across different
                 testers. Examples include testing whether certain properties exist in the content or if they match a
                 value specified by the requirement.</li>
-            <li>Qualitative tests: Tests that rely on a qualitative evaluation based on existing criteria. Test results
+            <li><b>Qualitative tests:</b> Tests that rely on a qualitative evaluation based on existing criteria. Test results
                 may vary between testers who understand the criteria. Variation can be reduced with clear guidance. 
                 One example is evaluating the quality of alternative text used to meet a requirement for alternative text.</li>
         </ul>
@@ -336,10 +337,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             on a specific condition being met. For example, different human languages have different readability
             metrics.</p>
         
-        <h5>Example Tests</h5>
+        <h5>Example tests</h5>
 
         <div class="ednote">
-                <p>Tests in the current draft of WCAG 3 will evolve into ACT style rules similar to the ones listed in the section over the next few publications.</p>
+                <p>Tests in the current draft of WCAG 3 will evolve into ACT-style rules similar to the ones listed in this section over the next few publications.</p>
         </div>
 
         <p>Tests may be objective or subjective. For example, from WCAG 2:</p>
@@ -349,10 +350,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <li>Example for 1.4.3: <a href="https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/">Text
                     has minimum contrast</a></li>
         </ul>
-        <p>Both these tests are objectively verifiable. They are not subject to variation of results between different
-            testers.
+        <p>Both these tests are objectively verifiable. Different testers should reach the same results.
         </p>
-        <p></p>
         <p>Alternatively, again from WCAG 2:</p>
         <ul>
             <li>Example for 1.1.1: <a
@@ -365,123 +364,135 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <p>These tests include a subjective determination of whether they are adequately met.</p>
 
         <h4>Scope</h4>
-        <p>Testing uses items, views, task flow, and the product to define the scope of what is
+        <p>Testing uses items, views, task flows, and the product to define the scope of what is
             being tested.</p>
-        <p>Items are the smallest testable unit. They could be components such as a drop down menu, a link,
-            or a media player. They could also be units of content such as a phrase, a paragraph, a label or error
-            message, an icon, or an image.</p>
+        <p>Items are the smallest testable unit. They could be components such as a dropdown menu, a link,
+            or a media player. They could also be units of content such as a phrase, paragraph, label, error
+            message, icon, or image.</p>
         <p>Views include all content visually and <a>programmatically</a> available without a <a>significant change</a>. Conceptually,
             views correspond to the definition of a web page as used in WCAG 2, but are not restricted to content
             meeting that definition. For example, a view could be considered a “screen” in a mobile app or a layer of
             web content, such as a modal dialog.</p>
-        <p>Task flows are a series views that support a specified <a>user activity</a>. A task flow may include a subset of
-            items in a view or a group of views. Only the part of the views that support the user activity are included
+        <p>Task flows are a series of views that support a specified <a>user activity</a>. A task flow may include a subset of
+            items in a view or a group of views. Only the parts of the views that support the user activity are included
             in a test of the task flow.</p>
 
         <p>Examples of a task flow include:</p>
         <ul>
-            <li>Logging into a website and being verified as a user;</li>
-            <li>Ordering an item, including the entire set of tasks from searching for the item, adding it to the
-                shopping cart, paying for it, and receiving confirmation;</li>
-            <li>Submitting tax information; and</li>
-            <li>Chatting with other users in a virtual reality environment.</li>
+            <li>logging into a website and being verified as a user,</li>
+            <li>ordering an item, including the entire set of tasks from searching for the item, adding it to the
+                shopping cart, paying for it, and receiving confirmation,</li>
+            <li>submitting tax information, and</li>
+            <li>chatting with other users in a virtual reality environment.</li>
         </ul>
         <p>The product is the combination of all items, views, and task flows that comprise the website, set of web
             pages, or web app.</p>
 
         <h4>Conditions</h4>
-        <p>Some tests only apply in certain situations. Testing may occasionally require determining and referencing
-            which specifications are being tested. Methods will note whether a test always applies or under what
+        <p>Some tests only apply in certain situations. Testing may occasionally require testers to identify which specifications apply to the test. Methods will note whether a test always applies or under what
             conditions a test applies. Both quantifiable and qualitative tests can be conditional.</p>
         <p>Example conditions include:</p>
         <ul>
-            <li>The language used may have different grammatical rules.</li>
-            <li>An interface with multiple contrast modes may have different contrast requirements than an interface
+            <li>the language used may have different grammatical rules, and</li>
+            <li>an interface with multiple contrast modes, which may have different contrast requirements than an interface
                 with only a default contrast mode.</li>
         </ul>
 
-    <h4>Testing Assertions</h4>
+    <h4>Testing assertions</h4>
     <p>The results of the process stated in an assertion cannot be tested. Instead, the quality of an assertion statement can be tested 
         based on how well the assertion meets the documentation
-        requirements for assertions (See <a href="#documenting-assertions">Documenting Assertions</a>). Conforming to WCAG does not require testing
+        requirements for assertions (see <a href="#documenting-assertions">Documenting Assertions</a>). Conforming to WCAG does not require testing
         supporting documentation; however, organizations may decide to adopt additional documentation requirements
         based on the procedure being asserted.</p>
     </section>
 
     <section id="conformance-models" data-status="exploratory">
-        <h2>Conformance Approach</h2>
-        <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a> are about improving on how people and organizations have used conformance in WCAG 2. Conformance itself is a simple concept: Does the content in scope meet the requirements of the specification? It is binary, and that simplicity can make it difficult to work with as human-digital interfaces can be complex and varied. </p>
+        <h2>Conformance approach</h2>
+        <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a> aim to improve how people and organizations have used conformance in WCAG 2. Conformance itself is a simple concept: does the content in scope meet the requirements of the specification? Conformance is binary, but human-digital interfaces can be complex and varied, and this can make a simple pass-or-fail model difficult to apply. </p>
 
-        <p>AGWG is exploring a model that keeps the conformance approach simple, but provides much more informative advice about testing, reporting, and using WCAG 3 in policy or regulations.</p>
+        <p>The AG Working Group is exploring a model that keeps the conformance approach simple, but provides additional informative advice about testing, reporting, and using WCAG 3 in policy or regulations.</p>
 
-        <p>Conformance will mean meeting all of the Core Requirements, but that is just the start. There will also be tiers above and below the conformance level. On the way to conformance there are sets of requirements you can meet to show progress which are "Avoid harm" and "Foundational access". Above the conformance level there will be WCAG 3 "Bronze", "Silver" and "Gold" tiers which demonstrate improved accessibility. These tiers build on conformance to include accessibility recommendations and assertions.</p>
+        <h3>Conformance model</h3>
+
+        <p>The WCAG 3 conformance model uses six tiers to demonstrate accessibility: before reaching conformance (tiers 1 and 2), at conformance (tier 3), and beyond conformance (tiers 4, 5, and 6).</p>
+
+        <p>When working toward WCAG 3 conformance, you can show progress through Tier 1 "Avoid Physical Harm" and Tier 2 "Foundational Access".</p>
+
+        <p>At Tier 3 "Conformance", you must meet all core requirements.</p>
+
+        <p>Beyond conformance, you can demonstrate higher levels of accessibility through Tier 4 "Bronze", Tier 5 "Silver", and Tier 6 "Gold". These tiers build on conformance by including supplementary requirements and assertions.</p>
 
         <p>Using tiers instead of conformance levels allows for two improvements:</p>
         <ol>
             <li>When a product is not conformant, there are sets of requirements you can use to measure and show progress.</li>
-            <li>As conformance is a base not a ceiling, the tiers above conformance show incorporation of good practices and accessibility maturity. It is possible that regulators might encourage or enforce the use of these tiers for some types of organization.</li>
+            <li>As conformance is a base not a ceiling, the tiers above conformance show incorporation of recommended practices and accessibility maturity. It is possible that regulators might encourage or enforce the use of these tiers for some types of organizations.</li>
         </ol>
 
-        <p>Each core requirement will have a tag that create levels you can progress through to meet conformance. Those tags are:</p>
+        <h4>Core requirements for conformance</h4>
+        <p>Core requirements are tagged to indicate which must be met at each tier leading to conformance. The tags are:</p>
         <ul>
-            <li><strong>Harm</strong> - Not meeting the requirement can cause someone with a disability physical harm.</li>
-            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-            <li><strong>Prevention</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Additive</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+            <li><strong>Physical Harm</strong> &mdash; not meeting the requirement can cause someone with a disability physical harm.</li>
+            <li><strong>Risk</strong> &mdash; not meeting the requirement can unreasonably increase financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Barrier</strong> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. Some of this might be due to necessary assistive technology support and some might be inherent flaws in the design of the system or product.</li>
+            <li><strong>Friction</strong> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
 
-        <p>To get to the "Avoid Harm" tier you would need to meet all the core requirements tagged with "Harm" and "Risk".  To get to the Foundational Access tier, you would need to meet the core requirements for the Avoid Harm tier and those marked "Prevention."</p>
+        <h4>Requirements for each tier</h4>
 
-            
-       <p>The tiers above conformance will be defined and met using Supplemental Requirements and Assertions. Meeting a certain number or percentage of the supplemental requirements and assertions enables you to claim that tier.</p>
+        <p>Each tier is cumulative, building on and including the requirements from the tiers before it.</p>
 
+        <h5>Below conformance</h5>
 
-        <h3>Alternative approach - Scoring</h3>
-        <p class="ednote">AGWG is considering an alternative approach to tagging core requirements, which is a percentage score. This section is an alternative to the section above and is not included in the WCAG 3 draft. We invite comments on whether you think this would be a better approach to conformance.</p>
+        <p>To reach Tier 1 "Avoid Physical Harm", you must meet all core requirements tagged with "Physical Harm" and "Risk".</p>
 
-        <p>Products or other defined conformance scopes may not fully conform to all requirements, or they may exceed conformance requirements. This section on “Progress toward and beyond conformance” provides measures to allow comparison of products and to assist in tracking progress towards and beyond conformance. This section presents a method to report on progress, not whether something conforms.</p>
+        <p>To reach Tier 2 "Foundational Access", you must also meet all core requirements tagged with "Barrier".</p>
 
-        <h4>Progress towards conformance</h4>
-        <p>The “progress towards conformance score” (score) shows how close the content within scope is to meeting conformance. When evaluating a specified conformance scope (e.g. number of pages and/or paths) each requirement that is met counts towards the score.</p>
+        <h5>At conformance</h5>
 
-        <p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for weighting some provisions as they contribute to the score.</p>
+        <p>To reach Tier 3 “Conformance”, you must also meet all core requirements tagged with “Friction”. At this tier, all core requirements are met.</p>
 
-        <h5>Core Requirement Tags</h5>
+        <h5>Beyond conformance</h5>
+   
+       <p>The tiers above conformance build on Tier 3. Bronze and Silver include specified numbers of supplemental requirements and assertions about contents Gold also includes assertions about the organization.</p>
+
+        <h3>Alternative approach &mdash; scoring</h3>
+        <p class="ednote">The AG Working Group is considering scoring as an alternative to just using core requirement tags to define the tiers leading to conformance. This approach is not included in the WCAG 3 draft. We invite comments on whether scoring would be a better approach to showing progress toward and beyond conformance.</p>
+
+        <p>Scoring would provide a way to measure and report how close a product or other defined conformance scope is to conformance, or how far it progresses beyond conformance. It would not change whether something conforms: conformance would remain binary.</p>
+
+        <h4>Scoring for progress toward conformance</h4>
+        <p>A “progress toward conformance" score would show how close the content within a specified conformance scope is to meeting conformance.</p>
+
+        <p>This alternative approach uses the core requirement tags described above to weight requirements when calculating the score. Within the specified conformance scope, the score would be calculated as follows:</p>
+
         <ul>
-            <li><strong>Harm</strong> - Not meeting the requirement can cause someone with a disability physical harm.</li>
-            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-            <li><strong>Prevention</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Additive</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
-        </ul>
-        <h5>Scoring</h5>
-        <p>Within the specific conformance scope, the score is calculated as follows:</p>
-        <ul>
-            <li>Assign a weighting to each provision met based on its requirement tag:
+            <li>Assign a weighting to each provision met based on its tag:
                 <ul>
-                    <li>3 for "Harm" and "Risk" provisions</li>
-                    <li>2 for "Prevention" provisions</li>
-                    <li>1 for other provisions</li>
+                    <li>3 for "Physical Harm" and "Risk"</li>
+                    <li>2 for "Barrier"</li>
+                    <li>1 for "Friction" and other provisions</li>
                 </ul>
             </li>
-            <li>Calculate the score as the percentage of the weighted provisions that are met out of the total possible weighted score.</li>
+            <li>Calculate the score as the percentage of the weighted core requirements and other provisions met out of the total possible weighted score.</li>
         </ul>
-        <p>The resulting score could then be used to measure and report progress towards conformance.</p>
-        <h5>Scoring beyond conformance</h5>
-        <p>When conformance is achieved, counting the supplemental requirements and assertions met then provides a progress beyond conformance score, leading to WCAG 3 awards:</p>
-        <ul>
-            <li>WCAG 3 Bronze: Conformance plus [TBD count] of supplemental requirements and assertions.</li>
-            <li>WCAG 3 Silver: Conformance plus [TBD greater count] of supplemental requirements and assertions.</li>
-            <li>WCAG 3 Gold: Conformance plus [TBD much greater count] of supplemental requirements and assertions.</li>
-        </ul>
-        <p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policy makers have more flexibility in requiring additional levels in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress towards conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
+        <p>The resulting score could be used to measure and report progress toward conformance.</p>
 
-        <h3>Additional Concepts</h3>    
-        <p>Key concepts AGWG considered and continues to explore are the following:</p>
+  When evaluating a specified conformance scope (for example, number of pages and/or paths), each requirement that is met counts toward the score.</p>
+
+        <h4>Scoring for progress beyond conformance</h4>
+        <p>After conformance is achieved, supplemental requirements and assertions could be used to calculate a score showing progress beyond conformance.</p>
+
+        <p>This score could be used to determine achievement of the Bronze, Silver, and Gold tiers described above.</p>
+
+        <p class="ednote">As a standard, WCAG declares conformance when all core requirements are met. Policymakers have more flexibility to require additional tiers in certain situations to comply with regulations. Additional information and suggestions on reporting progress toward conformance will be available in informative documents on testing and reporting, as well as in recommendations to regulators.</p>
+
+        <h3>Additional concepts</h3>    
+        <p>Key concepts the AG Working Group has considered and continues to explore are the following:</p>
         <ul>
-            <li>Issue severity: Severity ratings could contribute towards scoring and prioritization.</li>
-            <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or exceeding a goal. Example of possible adjectival ratings are:
+            <li>Issue severity ratings: Rating accessibility issues according to the severity of their impact could contribute toward scoring and prioritization.</li>
+            <li>Achievement ratings: Rating test results to show incremental progress toward a goal or recognize when a goal is exceeded allows results to show more than a binary Pass or Fail. Examples of possible achievement ratings are:
                 <ul>
-                    <li>Fail, Pass, Exceptional; or</li>
+                    <li>Fail, Pass, Exceptional, or</li>
                     <li>Fail, Progress, Pass, Better, Exceptional.</li>
                 </ul>
             </li>
@@ -490,15 +501,15 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <section id="accessibility-supported">
             <h3>Only accessibility-supported ways of using technologies</h3>
 
-            <p>The concept of "accessibility-supported" is to account for the variety of user-agents and scenarios. How does an author know that a particular technique for meeting a guideline will work in practice with user-agents that are used by real people?</p>
+            <p>The concept of "accessibility-supported" is to account for the variety of user agents and scenarios. How does an author know that a particular technique for meeting a guideline will work in practice with user agents that are used by real people?</p>
 
-            <p>The intent is for the responsibility of testing with user-agents to vary depending on the level of conformance.</p> 
+            <p>The intent is for the responsibility of testing with user agents to vary depending on the level of conformance.</p> 
 
-            <p>At the core level of conformance assumptions can be made by authors that methods and techniques provided by WCAG 3 work. At higher levels of conformance the author may need to test that a technique works, or check that available user-agents meet the requirement, or a combination of both.</p>
+            <p>At base-level conformance, authors can assume that methods and techniques provided by WCAG 3 work. At higher levels of conformance the author may need to test that a technique works, or check that available user agents meet the requirement, or a combination of both.</p>
 
-            <p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user-agents, and there are sufficient techniques to meet each guideline.</p>
+            <p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user agents, and there are sufficient techniques to meet each guideline.</p>
 
-            <p>The intent is that WCAG 3 will use a content-management-system to support tagging of methods/techniques with support information. There should also be a process where interested parties can provide information.</p>
+            <p>The intent is that WCAG 3 will use a content management system to support tagging of methods/techniques with support information. There should also be a process for interested parties to provide information.</p>
 
             <p>An "accessibility support set" is used at higher levels of conformance to define which user-agents and assistive technologies you test with. It would be included in a conformance claim, and enables authors to use techniques that are not provided with WCAG 3.</p>
 
@@ -511,11 +522,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>User-generated content</h3>
         <details class="summary">
             <summary>Summary</summary>
-            <p>User-generated content is content written by the public and customers. WCAG 3 may use different advice or steps for user-generated content to improve accessibility than for content created by the publisher. WCAG 3 proposes that organizations identify user-generated content and identify the steps taken to encourage accessibility. </p>
+            <p>User-generated content is content provided by members of the public and customers. WCAG 3 may use different advice or steps for user-generated content to improve accessibility than for content created by the publisher. WCAG 3 proposes that organizations identify user-generated content and identify the steps taken to encourage accessibility. </p>
         </details>
             <div class="ednote">
-                <p>It remains to be determined how to address user-generated content that has accessibility issues; and to define what minimum thresholds might be acceptable. We expect WCAG 3 to provide this guidance within individual guidelines and to support testing for conformance. The working group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements on how to best support accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
-                <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance for providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a> - “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user generated alternative text. </p>
+                <p>It remains to be determined how to address user-generated content that has accessibility issues and what minimum thresholds might be acceptable. We expect WCAG 3 to provide this guidance within individual guidelines and to support testing for conformance. The AG Working Group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements for supporting accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
+                <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance on providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a>: “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user-generated alternative text. </p>
                 <p>The working group intends to more thoroughly address the contents and the location of an accessibility statement in a future draft.</p>
             </div>
         <p>Web content publishers may include content provided by the users of their digital products. We refer to such content as “<a href="#user-generated-content">user-generated content</a>”.</p>
@@ -525,27 +536,41 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <li>uploaded photographs, or</li>
             <li>uploaded videos or other multimedia.</li>
         </ul>
-        <p>User-generated content is provided for publication by visitors where the content platform specifically welcomes and encourages it. User-generated content is content that is submitted through a user interface designed specifically for members of the public and customers. Use of the same user interface as an authoring tool for publication of content by agents of the publisher (such as employees, contractors, or authorized volunteers) acting on behalf of the publisher does not make that content user-generated content. The purpose of the user-generated content conformance section is to allow WCAG 3 guidelines and methods to require additional or different steps to improve the accessibility of user-generated content.</p>
+        <p>User-generated content is content that members of the public or customers submit for publication through a user interface designed for that purpose. For example, a platform may invite users to submit comments, reviews, images, or videos.</p>
+        
+        <p>Content submitted through the same interface by people acting on behalf of the publisher, such as employees, contractors or authorized volunteers, is not considered user-generated content.</p>
+
+        <p>WCAG 3 may specify additional or different steps for improving the accessibility of user-generated content within individual guidelines and methods.</p>
+
         <p>An important part of WCAG conformance is the specific guidance that is associated with individual WCAG 3 guidelines. Not all WCAG 3 guidelines will have unique outcomes and testing for user-generated content. Unless user-generated content requirements are specified in a particular guideline, that guideline applies as written whether or not the content is user generated. </p>
     
-        
-        <p>The web content publisher should identify all locations of user-generated content (such as commentary on hosted content, product descriptions for consumer to consumer for sale listings, and restaurant reviews) and perform standard accessibility evaluation analysis for each. If there are no accessibility issues, the user-generated content is fully conforming.</p>
+        <p>The web content publisher should identify all locations of user-generated content (such as commentary on hosted content, product descriptions for consumer-to-consumer sales listings, and restaurant reviews) and perform a standard accessibility evaluation for each. If there are no accessibility issues, the user-generated content is fully conforming.</p>
         <section>
             <h4>Steps to conform</h4>
-            <p>If accessibility issues are identified, or if the website author wants to proactively address potential accessibility issues that might arise from user-generated content, then all of the following must be indicated alongside the user-generated content or in an accessibility statement published on the website or product that is linked from the view or page in a consistent location:</p>
+            <p>If accessibility issues are identified, or if the website author wants to proactively address potential accessibility issues that might arise from user-generated content, then all of the following must be indicated:</p>
             <ol>
-                <li>Clearly identify where user-generated content can be found on the publisher’s digital product (perhaps by id href);</li>
-                <li>Clearly identify the steps taken to encourage accessibility in user-generated content such as prompting the user for alternative text for their uploaded images before they are accepted and prohibiting text attributes except as they are part of semantic markup such as strong or headings;</li>
+                <li>Clearly identify where user-generated content can be found on the publisher’s digital product (perhaps by an ID reference).</li>
+                <li>Clearly identify the steps taken to encourage accessibility in user-generated content such as:</li>
+                   <ul>
+                      <li>prompting the user for alternative text for their uploaded images before they are accepted, and</li>
+                      <li>prohibiting text attributes except when they are part of semantic markup, such as <code>strong</code> or heading levels.</li>
+                   </ul>   
             </ol>
+
+         <p>Place the above information:</p>
+             <ul>
+                <li>alongside the user-generated content, or</li>
+                <li>in an accessibility statement that is linked from the view or page in a consistent location and published on the website or product.</li>
+
         </section>
     </section>
 
     <section id="schedule">
         <h2>Schedule</h2>
-        <p>AGWG is currently <a href="https://www.w3.org/2023/11/ag-charter">chartered</a> through April 2026. The
-            schedule through that time period is maintained at <a
-                href="https://www.w3.org/WAI/GL/wiki/WCAG_3_Timeline#Publication_Plan">WCAG 3 Timeline</a>.</p>
-        <p>AGWG will continue to iterate within a single normative document with informative supporting documentation.
+        <p>The AG Working Group is currently <a href="https://www.w3.org/2023/11/ag-charter">chartered</a> through August 2026. For the
+            programme of work through that time period, see <a
+                href="https://github.com/w3c/wcag3/wiki/Schedule">Schedule &mdash; WCAG 3 Timeline</a>.</p>
+        <p>The working group will continue to iterate within a single normative document that includes informative supporting documentation.
             After exploring other options such as breaking the content into modules, the group determined that the
             fastest way forward at this time is to continue creating a single document with varying levels of maturity.
             We will revisit whether mature content can be published as informative modules as part of the next charter
@@ -559,81 +584,81 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h2>Glossary</h2>
         <p class="note">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p>
         <dl>
-            <dt><dfn>Assistive technology</dfn></dt>
+            <dt><dfn>assistive technology</dfn></dt>
             <dd><p>Software (or hardware), separate from the authoring tool, that provides functionality to meet the requirements of people with disabilities.</p></dd>
-            <dt><dfn data-lt="Authoring Tool">Authoring Tool</dfn></dt>
+            <dt><dfn data-lt="Authoring Tool">authoring tool</dfn></dt>
             <dd><p>Any web-based or non-web-based application(s) that can be used by authors (alone or collaboratively) to create or modify web content for use by other people (other authors or end users).</p></dd>
-            <dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">Automated
+            <dt><dfn data-lt="Automated|Automatically evaluated|Automated testing|Automatically tested">automated
                     evaluation</dfn></dt>
             <dd><p>Evaluation conducted using software tools, typically evaluating code-level features and applying
                     heuristics for other tests.</p>
-                <p>Automated testing is contrasted with other types of testing that involve human judgement or
+                <p>Automated testing is contrasted with other types of testing that involve human judgment or
                     experience. [=Semi-automated evaluation=] allows machines to guide humans
                     to areas that need inspection. The emerging field of testing conducted via
                     machine learning is not included in this definition.</p></dd>
-            <dt><dfn data-lt="Conform">Conformance</dfn></dt>
+            <dt><dfn data-lt="Conform">conformance</dfn></dt>
             <dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
-                    the guidelines even when not making a formal Conformance Claim.</p>
+                    the guidelines even when not making a formal conformance claim.</p>
                 <p>See <a href="#conformance-models">Conformance Approach</a>.</p></dd>
-            <dt><dfn data-lt="deprecated|deprecate">Deprecate</dfn></dt>
+            <dt><dfn data-lt="deprecated|Deprecate">deprecate</dfn></dt>
             <dd>
                 <p>To declare something outdated and in the process of being phased out, usually in favor of a specified replacement.</p>
                 <p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
             </dd>
 
-            <dt><dfn data-lt="equity" class="lint-ignore">Equity</dfn></dt>
+            <dt><dfn data-lt="Equity" class="lint-ignore">equity</dfn></dt>
             <dd>
-                <p>the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
+                <p>The outcome of processes and actions that give people what they need to participate fully &mdash; not solely access. It recognizes that people have different needs and circumstances.</p>
+
+                <p>In relation to WCAG, equity is about considering the impact that standards and guidelines have on people with disabilities, and including people with disabilities in developing them. </p> 
             </dd>
-            <dt><dfn>Evaluation</dfn></dt>
+            <dt><dfn>evaluation</dfn></dt>
             <dd>The process of examining content for <a>conformance</a> to these
                 guidelines.</dd>
             <dd>Different approaches to evaluation include automated <a>evaluation</a>,
                     <a>semi-automated evaluation</a>, <a>human evaluation</a>, and <a>user
                     testing</a>.</dd>
-            <dt><dfn data-lt="Functional needs">Functional need</dfn></dt>
+            <dt><dfn data-lt="Functional needs">functional need</dfn></dt>
             <dd>
                 <p>A statement that describes a specific gap in one’s ability, or a specific mismatch between ability and the designed environment or context.</p>
             </dd>
-            <dt><dfn data-lt="Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested">Human evaluation</dfn></dt>
+            <dt><dfn data-lt="Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested">human evaluation</dfn></dt>
             <dd>
-                <p>Evaluation conducted by a human, typically to apply human judgement to tests
-                    that cannot be fully <a>automatically evaluated</a>.</p>
-                <p>Human evaluation is contrasted with <a>automated evaluation</a> which is done entirely by
-                    machine, though it includes <a>semi-automated evaluation</a> which allows
-                    machines to guide humans to areas that need inspection. Human evaluation
-                    involves inspection of content features, by contrast with <a>user
-                        testing</a> which directly tests the experience of users with
-                    content.</p></dd>
-            <dt><dfn data-lt="Non-normative|Informative">Informative</dfn></dt>
+                <p>Evaluation conducted by a human, typically to apply human judgment when a test cannot be fully assessed through <a>automated evaluation</a>.</p>
+                <p>Human evaluation may include <a>semi-automated evaluation</a>, where software guides a person to areas that need inspection. Unlike <a>automated evaluation</a>, which is conducted entirely by software, and <a>user testing</a>, which evaluates the experience of users interacting with the content, human evaluation relies on a human being to manually assess content features.</p></dd>
+                    
+            <dt><dfn data-lt="Non-normative|Informative">informative</dfn></dt>
             <dd>
                 <p>Content provided for information purposes and not required for <a>conformance</a>.</p>
             </dd>
-            <dt><dfn data-lt="Methods">Method</dfn></dt>
+            <dt><dfn data-lt="Methods">method</dfn></dt>
             <dd>
                 <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the requirement as well as <a>tests</a> and scoring information.</p>
             </dd>
-            <dt><dfn>Normative</dfn></dt>
+            <dt><dfn>normative</dfn></dt>
             <dd>
                 <p>Content whose instructions are required for <a>conformance</a>.</p>
             </dd>
 
-            <dt><dfn>Programmatically</dfn></dt>
+            <dt><dfn>programmatically</dfn></dt>
             <dd>
                 <div class="ednote">
                     <p>To be defined.</p>
                 </div>
             </dd>
 
-            <dt><dfn data-lt="Processes">Process</dfn></dt>
-            <dd><p>A sequence of steps that need to be completed to accomplish an activity / task from
-                    end-to-end.</p></dd>
-            <dt><dfn data-lt="Reliable">Reliability</dfn></dt>
+            <dt><dfn data-lt="Processes">process</dfn></dt>
+            <dd><p>A sequence of steps that need to be completed to accomplish an activity or task from
+                    beginning to end.</p></dd>
+            <dt><dfn data-lt="Reliable">reliability</dfn></dt>
             <dd>
-                <p>The reproducibility and consistency of scores, that is, the extent to which they are the same when evaluations of the same resources are carried out in different contexts (different tools, different people, different goals, different time). This would be particularly useful to ensure that similar results are achieved by different testers. It would also be useful to see if different testers would select the same path or off-path decisions. Representative sampling tests also fit in this category.
-                <a href="https://www.w3.org/WAI/RD/wiki/Benchmarking_Web_Accessibility_Metrics.html">Benchmarking Web Accessibility Metrics</a>, Vigo, Lopes, O Connor, Brajnik, Yesilada 2011. </p>
+                <p>The extent to which evaluations of the same resources produce consistent results when carried out in different contexts, such as by different people, using different tools, for different purposes, or at different times.</p>
+
+                <p>Reliability can include whether different testers produce similar scores or make the same decisions when following a test procedure. It can also apply to representative sampling tests.</p>
+
+                <p>Based on <a href="https://www.w3.org/WAI/RD/wiki/Benchmarking_Web_Accessibility_Metrics.html">Benchmarking Web Accessibility Metrics</a>, Vigo, Lopes, O'Connor, Brajnik, and Yesilada, 2011.</p>
             </dd>
-            <dt><dfn>Semi-automated evaluation</dfn></dt>
+            <dt><dfn>semi-automated evaluation</dfn></dt>
             <dd>
                 <p>Evaluation conducted using machines to guide humans to areas that need
                     inspection.</p>
@@ -641,37 +666,37 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                     and <a>human evaluation</a>.</p>
             </dd>
 
-            <dt><dfn>Significant change</dfn></dt>
+            <dt><dfn>significant change</dfn></dt>
             <dd>
                 <div class="ednote">
                     <p>To be defined.</p>
                 </div>
             </dd>
 
-            <dt><dfn data-lt="technology-agnostic">Technology agnostic</dfn></dt>
+            <dt><dfn data-lt="technology-agnostic">technology agnostic</dfn></dt>
             <dd>
                 <div class="ednote">
                     <p>To be defined.</p>
                 </div>
             </dd>
 
-            <dt><dfn data-lt="Tests">Test</dfn></dt>
+            <dt><dfn data-lt="Tests">test</dfn></dt>
             <dd>
                 <p>Mechanism to evaluate implementation of a <a>method</a>.</p>
             </dd>
 
-            <dt><dfn>User activity</dfn></dt>
+            <dt><dfn>user activity</dfn></dt>
             <dd>
                 <div class="ednote">
                     <p>To be defined.</p>
                 </div>
             </dd>
 
-            <dt><dfn>User agent</dfn></dt>
+            <dt><dfn>user agent</dfn></dt>
             <dd>
-                <p>Any software that retrieves, renders and facilitates end user interaction with web content (for example, web browsers, browser plug-ins, media players).</p>
+                <p>Any software that retrieves, renders, and facilitates end user interaction with web content (for example, web browsers, browser plug-ins, media players).</p>
             </dd>
-            <dt><dfn>User testing</dfn></dt>
+            <dt><dfn>user testing</dfn></dt>
             <dd>
                 <p>Evaluation of content by observation of how users with specific <a>functional needs</a> are able to complete a <a>process</a> and how the content supports the relevant guidelines.</p>
             </dd>
@@ -680,7 +705,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
     <section class="appendix">
         <h2>Acknowledgements</h2>
-        <p>Additional information about participation in the Accessibility Guidelines Working Group (AGWG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
+        <p>Additional information about participation in the Accessibility Guidelines (AG) Working Group can be found on the <a href="https://www.w3.org/groups/wg/ag/">AG Working Group home page</a>.</p>
         <Acknowledgements />
     </section>
 </body>
