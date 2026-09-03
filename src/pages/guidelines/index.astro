@@ -126,45 +126,112 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<Guidelines />
 		</section>
 
+		<section id="technology-support" data-status="exploratory">
+			<h2>Technology Support</h2>
+			<p>
+				A <a>method</a> used to implement a guideline is only effective when it is supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.
+				This section describes the technology support requirements that ensure conformant implementations of guidelines are effective. 
+			</p>
+
+			<section class="informative" id="technology-background-goals">
+
+				<h3>Technology support goals</h3>
+				<p>
+					People with disabilities necessarily use a wide variety of UA and AT.
+					The specific technology configuration they use can be effected by many factors, such as language, region, access, workplace, and more.
+					In closed environments, such as behind firewalls or on Self-Service Transaction Machines (SSTM, the accessibility technology configurations that are available might be severely restricted.
+				</p>
+				<p>
+					The array of accessibility technology configurations that end users may need is so vast that content authors cannot test each guideline implementation with the entire array or even with a representative sample of it.
+					The technology requirements defined in this section are critical to enabling WCAG 3 to achieve the dual goals of:
+				</p>
+				<ul>
+					<li>Making guideline implementation and conformance evaluation practical for content authors.</li>
+					<li>reasonably ensuring that people with disabilities who consume conforming content experience the intended accessibility.</li>
+				</ul>
+				<p>
+					These goals are achieved by enabling content authors to identify specific methods of implementing guidelines that have sufficient accessibility technology support.
+					For the web platform, WCAG 3 identifies at least one sufficiently supported method for every core requirement.
+					When a guideline is implemented with those methods, conformance is testable by ensuring faithful implementation of the method, which can be done with a single, well-define testing technique that relies on a limited technology configuration.
+				</p>
+			</section>
+
+			<section>
+				<h3>Accessibility supported methods</h3>
+				<p>For a method of implementing a content guideline to be accessibility supported, the method MUST meet the following requirements:</p>
+				<ol>
+					<li>The technical requirements that content authors MUST follow to correctly implement the method are clearly defined.</li>
+					<li>The method has a test suite of implementations of the method that covers allowed variations and boundary conditions.</li>
+					<li>The method has a test procedure that specifies an end user technology test set that sufficiently represents the UAs, ATs, and accessibility settings or other UI rendering and access technologies that are likely to be in general use across the target audience of the content.</li>
+					<li>The test procedure replicates expected normal behavior of actual users of the end user technology test set.</li>
+					<li>Executing the test procedure for the test suite demonstrates that implementations of the method meet applicable requirements of the content guideline.</li>
+				</ol>
+			</section>
+
+			<section>
+				<h3>Accessibility support sets</h3>
+				<p>
+					WCAG 3 refers to the end user technology test set that is used to validate a guideline implementation method as an "accessibility support set".
+					It allows two types of accessibility support sets:
+				</p>
+				<ol>
+					<li>
+						<b>Default accessibility support set</b> &mdash; An end user technology test set specified and used by AG WG to validate accessibility support for specific methods.
+						Default accessibility support sets may be used by anyone to validate accessibility support for methods that WCAG has not identified as accessibility supported or to evaluate conformance of content that does not  implement methods that have been validated as accessibility supported.
+					</li>
+					<li>
+						<b>Alternative accessibility support set</b> &mdash; An end user technology test set specified by content authors, organizations, or regulators designed to support languages, regions, or technologies that are not covered by a default accessibility support set.
+						Alternative accessibility support sets may be used to validate accessibility support for methods or conformance of content that does not  implement methods that have been validated as accessibility supported.
+					</li>
+				</ol>
+
+				<div class="ednote">
+					<ul>
+						<li>The default accessibility support set has not yet been defined.</li>
+						<li>For web methods, the default accessibility support set will include common browsers, assistive technology, and accessibility settings that support English content.</li>
+						<li>The maintenance model and process for the default accessibility support set needs additional discussion.</li>
+						<li>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT.</li>
+						<li>AGWG will only include core requirements in WCAG 3 if they include at least one method that works with the default web accessibility support set at the time of publication.</li>
+						 <li>Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
+						<li>Informative documentation will be needed to specify how people can create their own alternative accessibility support set.</li>
+						<li>An exception for long-present bugs in assistive technology and user agents is still under discussion.</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		
 		<section id="conformance" data-status="developing">
 
 			<details class="summary">
 				<summary>Summary</summary>
-				<p>You might want to make a claim that your <a>content</a> or digital product meets the WCAG 3 guidelines. When it meets the guidelines, you can make a "conformance claim".</p>
-				<p>To make a formal conformance claim, you MUST apply the guidelines to a clearly defined part of your content. Conformance claims are not required. Your content can conform to WCAG 3, even if you don't want to make a claim.</p>
+				<p>To determine whether your <a>content</a> or digital product meets the WCAG 3 guidelines, you need to know the requirements for conformance. Knowing which content conforms and which content does not conform is necessary if you want to make a "conformance claim".</p>
 				<p>WCAG 3 has two types of content:</p>
 				<ul>
 					<li><b>Normative:</b> Rules you MUST follow to meet the guidelines.</li>
 					<li><b>Informative:</b> Information that helps you understand or apply those rules &mdash; This is also called <a>non-normative</a>.</li>
 				</ul>
-			<p>WCAG 3 uses three kinds of provisions:</p>
-			<ul>
-				<li><b>Core requirements:</b> The main things you MUST do</li>
-				<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible</li>
-				<li><b>Assertions:</b> Statements saying that you have done something to improve the accessibility of your content or product</li>
-			</ul>
-			<p>In addition, WCAG 3 provides Recommended Practices. Recommended Practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommended Practices are not necessary to conform.</p>
-
-			<p>The methods you use to satisfy WCAG 3 MUST be <a>accessibility supported</a>. This means a method only counts towards conformance if browsers and assistive technologies (AT) in general use support it. WCAG 3 uses accessibility support sets to identify which browsers and AT are used to evaluate methods. The default accessibility support set in WCAG 3 is for web methods. The accessibility support set MUST be included in conformance claims.</p>
-
-			<p>When evaluating accessibility, WCAG 3 applies to a clearly defined part of your content — such as specific <a>pages</a>/<a>views</a>, or <a>processes</a> — so you can scope your claim to exactly what was tested.</p>
-
-			<p>Each core requirement, supplemental requirement, and assertion is linked to different functional limitations. These cover a broad range of disabilities and help explain who benefits from the work to meet them.</p>
+				<p>WCAG 3 guidelines include three kinds of rules, which are referred to as provisions:</p>
+				<ul>
+					<li><b>Core requirements:</b> The main things you MUST do</li>
+					<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible</li>
+					<li><b>Assertions:</b> Statements saying that you have done something to improve the accessibility of your content or product</li>
+				</ul>
+				<p>In addition, WCAG 3 provides Recommended Practices. Recommended Practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommended Practices are not necessary to conform.</p>
+				<p>When evaluating conformance, you need to test clearly defined parts of your content — such as specific <a>pages</a>/<a>views</a>, or <a>processes</a>. This enables you to describe the parts that were tested and the result of the test for each part. This is the primary information you would need if you were going to make a valid conformance claim, which is a statement that meets a specific set of documentation requirements. Those requirements are defined in the next section , which is about reporting	.</p>
+				<p>When evaluating conformance, the evaluation MUST ensure the content works with a specific set of end user technologies, such as browsers or assistive technologies. WCAG 3 refers to the end user technology test sets used to evaluate conformance as <a>accessibility support sets</a>.</p>
 			</details>
 
-			<p>This section lists requirements for conformance to WCAG 3. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility supported ways of using technologies can be relied upon for conformance.</p>
+			<p>This section explains the types of provisions included in WCAG 3 content guidelines,  how provisions required for conformance are identified, and specifies the requirements that content must satisfy to conform to WCAG 3.</p>
 
 			<div class="ednote">
 				<p>Conformance defines how to meet the standard. Conformance with a standard is not the same as compliance with legal requirements. Historically, conformance, reporting, and compliance have often been confused. In WCAG 3, we are setting out to provide clear guidance in each of these areas in a manner that is appropriate for W3C.</p>
-
 				<p>To this end, AGWG will produce the following as part of the WCAG 3 effort:</p>
 				<ul>
 					<li>a normative, narrowly defined conformance model on how to conform with WCAG 3</li>
 					<li>informative guidance for reporting and testing progress towards and beyond conformance</li>
 					<li>informative advice for policymakers on how they could use WCAG 3 when writing policy</li>
 				</ul>
-
-				<p>This approach provides flexibility so the Accessibility Guidelines Working Group (AGWG) can suggest ways to use WCAG to better track progress towards and beyond conformance, and encourage adoption.</p>
+				<p>This approach provides flexibility so the Accessibility Guidelines Working Group (AGWG) can suggest ways to use WCAG to better track progress towards and beyond conformance and encourage adoption.</p>
 			</div>
 
 			<section id="interpreting-normative-provisions">
@@ -202,69 +269,86 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 			<section id="conformance-requirements">
 				<h3>Conformance requirements</h3>
+				<p>For a specified <a>unit of content</a> to conform to WCAG 3, it MUST satisfy all core requirements using the same <a>accessibility support set</a> in one of the following ways:</p>
+				<ul>
+					<li>If the requirement was implemented using an accessibility supported method, an evaluation of the implementation with a sufficient testing technique MUST show the implementation is complete and successful.</li>
+					<li>If the requirement was not implemented using an accessibility supported method, an evaluation of the implementation with all relevant technologies in the accessibility support set MUST show the implementation is complete and successful.</li>
+				</ul>
 				<div class="ednote">
-					<p>This update to WCAG 3 moves the concept of leveling from conformance to reporting. To keep this clear, we refer to "reporting tiers" to distinguish them from previous "conformance levels". Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
-				</div>
-
-				<p>For a specified <a>conformance scope</a> to conform to WCAG 3, all core requirements MUST be satisfied.</p>
-
-				<h4>Accessibility supported</h4>
-
-				<p>Many methods, such as those using ARIA to convey semantics or CSS to style content, are only effective when they are supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.</p>
-
-				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machines (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state which UA and AT are assumed on conformance statements. The concept that methods are supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
-
-				<h5>Accessibility support set</h5>
-
-				<p>WCAG 3 includes the concept of "accessibility support sets". This is the set of UAs, ATs, and accessibility settings that AGWG tests when determining methods that support a requirement.</p>
-
-				<p>WCAG 3 uses two accessibility support sets:</p>
-
-				<ol>
-					<li><b>Default accessibility support set</b> &mdash; A set of common browsers and assistive technology and accessibility supported settings support English content. The default accessibility support set supports web methods. Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
-					<li><b>Alternative accessibility support set</b> &mdash; People, organizations or regional regulators can also specify an alternative accessibility support set. This is a different set of browsers, assistive technology, and accessibility settings that support the intended languages, regions and technologies when the default accessibility-set does not provide that support.</li>
-				</ol>
-
-				<div class="ednote">
-					<p>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. AGWG will only include core requirements in WCAG 3 if they include at least one method that works with the default web accessibility support set at the time of publication.</p>
-				</div>
-
-				<p>The accessibility support set MUST be included in conformance claims. If working in a closed environment, with non-web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility support set defined in WCAG 3, we also RECOMMEND including the accessibility support set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility support set used SHOULD be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
-
-				<div class="ednote">
+					<p>This update to WCAG 3 explores several significant changes to simplify and clarify the conformance model: </p>
 					<ul>
-						<li>The default accessibility support set has not yet been defined.</li>
-						<li>Informative documentation will be needed to specify how people can create their own alternative accessibility support set.</li>
-						<li>Maintenance of the accessibility support set over time needs additional discussion.</li>
-						<li>An exception for long-present bugs in assistive technology and user agents is still under discussion.</li>
+						<li>It treats a conformance claim as an completely optional  document or report by moving the requirements for a valid conformance claim into a subsequent section on reporting. At the same time, it expands and clarifies the requirements for a valid conformance claim.</li>
+						<li>It gives content authors more ways of scoping conformance evaluations and reports, which may include an optional conformance claim.</li>
+						<li>It moves the concept of leveling from conformance to reporting. To keep this clear, it uses the term "reporting tiers" to distinguish them from the previous "conformance levels".</li>
+						<li>Approaches to reporting progress towards conformance and achievements beyond conformance are explored in the subsequent section on reporting.</li>
+						<li>It moves the definition and requirements for accessibility supported methods to a new technology support section. This enables the requirements for technology support to be explained in greater detail and simplifies how they are wrapped into the requirements for conformance .</li>
 					</ul>
 				</div>
-
-				<h4>Defined conformance scope</h4>
-
-				<p>A conformance claim is not required in order to conform to this standard. If making a conformance claim, WCAG 3 requires the guidelines be applied to a specified scope. Evaluation is completed and conformance is determined based on one or more of the following scopes.</p>
-
-				<p>Conformance claims MAY be scoped to a product, site, subsite, application, or other defined set of <a>content</a> or functionality. The conformance scope MUST clearly identify the product, <a>page</a>/<a>view</a>, <a>content</a>, functionality, or <a>components</a> that are included in the scope. Where the scope represents only part of a product, site, or <a>page</a>/<a>view</a>, the scope SHOULD also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested MUST be included. When possible, also describe what is outside of the scope.</p>
-
-				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope MUST describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
-
-				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
-
-				<p>When claiming conformance for a process, all unique steps in the process MUST be represented in the set of <a>pages</a>/<a>views</a>. Pages/views outside of the process MAY also be included in the scope.</p>
 			</section>
 		</section>
 
-		<section id="progress-towards-and-beyond-conformance" class="informative" data-status="exploratory">
+		<section id="progress-towards-and-beyond-conformance" data-status="exploratory">
 			<h2>Reporting</h2>
-			<div class="ednote">
-				<p>In parallel with WCAG 3, the working group will be writing informative guidance on testing and reporting. Part of this documentation is “Progress towards and beyond conformance.” This section uses tags for requirements and assertions to break the provisions into reporting tiers which can be used as steps towards conformance and then beyond conformance. Progress could also be reported as counts or percentages between each tier based on the tags. In separate documents, AG will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance. We will also recommend ways organizations could use the tiers when comparing and purchasing products. For example, assertions included in tiers beyond conformance could be completed in order to claim a Silver achievement in WCAG. The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.</p>
-			</div>
-			<p>Products or other defined conformance scopes may not fully conform to all requirements for conformance or may exceed conformance requirements. This section presents reporting tiers, not conformance tiers. The third reporting tier equates with conformance to WCAG 3.</p>
-			<section id="reporting-tiers">
+			<section id="conformance-reports">
+				<h3>Conformance Reports</h3>
+				<p>
+					WCAG 3 does not require content authors to produce or use conformance reports in order to conform with WCAG 3.
+					However, if anyone generates a conformance report for any content to be used for any purpose, including to be used as a conformance claim, the report MUST meet the following requirements to be considered valid documentation of WCAG 3 conformance.
+				</p>
+				<p>A valid WCAG 3 conformance report MUST:
+				<ol>
+					<li>Utilize a single type of <a>unit of analysis</a> for the <a>units of content</a> that are covered by the report.</li>
+					<li>Include a clear definition of the scope of the report that:
+						<ul>
+							<li>Uses plain language.</li>
+							<li>Includes the product name if covered content is part of a named product.</li>
+							<li>Includes the product version and release date if covered content is part of a versioned product.</li>
+							<li>If content is part of a product, lists any <a>units of content</a> that are excluded.</li>
+							<li>Includes a rationale for any exclusions.</li>
+						</ul>
+					</li>
+					<li>Document the <a>accessibility support set</a> for which conformance was evaluated.</li>
+					<li>Document the start and end dates of the evaluation process.</li>
+					<li>Document conforming content by either:
+						<ol>
+							<li>Listing all conforming <a>units of content</a>.</li>
+							<li>Listing all <a>units of content</a> that were evaluated and a conformance status for each.</li>
+						</ol>
+					</li>
+				</ol>
+
+				<div class="ednote">
+					<p>
+						The above is a very early draft of an exploratory list of requirements for a valid conformance report.
+						There are several relevant conditions and factors that it does not yet address, such as evaluations that span multiple versions due to the size of the product and the frequency of releases.
+						Note also that these requirements will be complemented by extensive informative guidance.
+					</p>
+				</div>
+			</section>
+
+			<section id="reporting-tiers" class="informative" >
 				<h3>Reporting tiers</h3>
 				<div class="ednote">
-					<p>AGWG continues to discuss ways to show progress and is exploring tiers. An <a href="https://www.w3.org/TR/wcag-3.0-explainer/#alternative-approach-scoring">alternative proposal</a> explores using scoring to show progress towards conformance and then awards of Bronze, Silver and Gold after conformance. We invite public comment on which of these approaches shows the most promise or if a different approach is needed.</p>
+					<p>
+						The working group is developing informative guidance on testing and reporting.
+						Part of this guidance is “Progress towards and beyond conformance.”
+						This section uses tags for requirements and assertions to break the provisions into reporting tiers which can be used as steps towards conformance and then beyond conformance.
+						Progress could also be reported as counts or percentages between each tier based on the tags.
+					</p>
+					<p>
+						In separate documents, AG will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance.
+						We will also recommend ways organizations could use the tiers when comparing and purchasing products.
+						For example, assertions will be included in tiers beyond conformance and would need to be completed in order to claim a Silver achievement in WCAG.
+						The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.
+					</p>
+					<p>
+						An <a href="https://www.w3.org/TR/wcag-3.0-explainer/#alternative-approach-scoring">alternative proposal</a> explores using scoring to show progress towards conformance and then awards of Bronze, Silver and Gold after conformance.
+						We invite public comment on which of these approaches shows the most promise or if a different approach is needed.
+					</p>
 				</div>
+
+				<p>Products or other defined conformance scopes may not fully conform to all requirements for conformance or may exceed conformance requirements. This section presents reporting tiers, not conformance tiers. The third reporting tier equates with conformance to WCAG 3.</p>
+
 				<p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for reporting on tiers that lead up to and then beyond conformance.</p>
 				<div class="ednote">
 					<p>The severity of a failure is determined based on the specific circumstances of the failure along with the nature of the requirement itself. The same requirement might therefore result in failures with different severity. Factors that may affect severity include, but are not limited to, the role of the affected element within a page or process, the number of instances, the context, and the nature and importance of the content. Tags are assigned based on the maximum potential severity of the failure.</p>
@@ -333,7 +417,8 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				</table>
 				<p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility in requiring additional tiers in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress towards conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
 			</section>
-			<section id="function-performance-statements">
+
+			<section id="function-performance-statements" class="informative">
 				<h3>Functional performance statements (expanded)</h3>
 				<p>Each requirement and assertion will be tagged with one or more of the functional performance statements below. The statements describe the functional performance of Information and Communications Technology (ICT) enabling people to locate, identify, and operate ICT functions, and to access the information provided, regardless of physical, cognitive, or sensory abilities.</p>
 				<p>This is not a list of disabilities. Different disabilities might correspond with one or more of the limitations listed below. For example, a visual impairment or an inability to process visual information may require use with limited vision.</p>
