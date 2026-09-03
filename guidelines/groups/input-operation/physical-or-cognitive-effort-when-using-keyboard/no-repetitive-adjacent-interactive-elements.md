@@ -1,7 +1,6 @@
 ---
 status: developing
 type: supplemental
-issueLabel: No repetitive links
 ---
 
 Adjacent :term[interactive elements] that achieve the same outcome are not included in the :term[page]/:term[view].

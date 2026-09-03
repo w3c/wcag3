@@ -2,7 +2,6 @@
 status: developing
 type: supplemental
 title: No flashing over threshold (no exceptions)
-issueLabel: No flashing (no exceptions)
 ---
 
 :term[Flashes] are below the :term[general flash and red flash thresholds] without a minimum size.

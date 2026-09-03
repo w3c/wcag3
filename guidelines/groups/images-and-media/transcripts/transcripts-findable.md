@@ -1,7 +1,6 @@
 ---
 type: foundational
 status: developing
-issueLabel: Media alternatives findable
 ---
 
 A text :term[transcript] is adjacent to :term[audio] and :term[video] :term[content].

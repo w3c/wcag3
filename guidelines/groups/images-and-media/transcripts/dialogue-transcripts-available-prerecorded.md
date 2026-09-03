@@ -2,7 +2,6 @@
 type: foundational
 status: developing
 title: Dialogue transcripts available (prerecorded)
-issueLabel: Transcripts available
 ---
 
 :term[Dialogue transcripts] are available for all prerecorded :term[audio] and :term[video] :term[content].

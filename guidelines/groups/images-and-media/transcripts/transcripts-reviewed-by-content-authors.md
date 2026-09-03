@@ -1,7 +1,6 @@
 ---
 type: assertion
 status: developing
-issueLabel: Reviewed by content authors
 ---
 
 [Title, role, or organization] asserts that:
