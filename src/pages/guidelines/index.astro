@@ -46,7 +46,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			</details>
 			<h3>About this draft</h3>
 
-			<p>This draft includes an updated list of the potential guidelines, requirements, and assertions. It also includes updates to conformance. While this draft has moved closer towards completion, it still has several years of work. Details will change and we encourage comments based on the questions below. </p>
+			<p>This draft includes an updated list of the potential guidelines, requirements, and assertions. It also includes updates to conformance. While this draft has moved closer toward completion, it still has several years of work. Details will change and we encourage comments based on the questions below. </p>
 
 			<p>Requirements and assertions at the Exploratory status are not included in this Working Draft. If you would like to see the complete list, please review the <a href="https://w3c.github.io/wcag3/guidelines/">Editor's Draft</a>. </p>
 
@@ -75,7 +75,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 			<section>
 				<h4>Section status levels</h4>
-				<p>As part of the WCAG 3 drafting process, each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines Working Group (AGWG) is looking for.</p>
+				<p>As part of the WCAG 3 drafting process, each <a>normative</a> section of this document is given a status. This status is used to indicate how far along in the development this section is, how ready it is for experimental adoption, and what kind of feedback the Accessibility Guidelines (AG) Working Group is looking for.</p>
 				<ul>
 					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary. It showcases the type of content to expect here. All of this is expected to be replaced. No feedback is needed on placeholder content.</li>
 					<li><strong id="status-exploratory">Exploratory</strong>: This content is not refined; details and definitions may be missing. The working group is exploring what direction to take with this section. Feedback should be about the proposed direction.</li>
@@ -91,7 +91,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<p>WCAG 3 is a successor to <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> [[WCAG22]] and previous versions, but does not <a>deprecate</a> WCAG 2. It will also incorporate some content from and partially extend <a href="https://www.w3.org/TR/UAAG20/"> User Agent Accessibility Guidelines 2.0</a> [[UAAG20]] and <a href="https://www.w3.org/TR/ATAG20/"> Authoring Tool Accessibility Guidelines 2.0</a> [[ATAG20]]. These earlier versions provided a flexible model that kept them relevant for over 15 years. However, changing technology and changing needs of people with disabilities have led to the need for a new model to address content accessibility more comprehensively and flexibly.</p>
 				<p>There are many differences between WCAG 2 and WCAG 3. The WCAG 3 guidelines address the accessibility of web content on desktops, laptops, tablets, mobile devices, wearable devices, and other Web of Things devices. The guidelines apply to various types of web content, including static, dynamic, interactive, and streaming content; visual and auditory media; virtual and augmented reality; and alternative access presentation and control methods. These  guidelines also address related web tools such as user agents (browsers and assistive technologies), content management systems, authoring tools, and testing tools.</p>
 				<p>Each <a>guideline</a> in this standard provides information on accessibility practices that address documented <a>user needs</a> of people with disabilities. Guidelines are supported by multiple <a>requirements</a> to determine whether the need has been met. Guidelines are also supported by technology-specific <a>methods</a> to meet each requirement. </p>
-				<p>Content that conforms to WCAG 2.2 Level A and Level AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines Working Group (AGWG) expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to WCAG 3, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
+				<p>Content that conforms to WCAG 2.2 Level A and Level AA is expected to meet most of the minimum conformance level of this new standard but, since WCAG 3 includes additional tests and different scoring mechanics, additional work will be needed to reach full conformance. Since the new standard will use a different conformance model, the Accessibility Guidelines (AG) Working Group expects that some organizations may wish to continue using WCAG 2, while others may wish to migrate to the new standard. For those that wish to migrate to WCAG 3, the Working Group will provide transition support materials, which may use mapping and other approaches to facilitate migration.</p>
 			</section>
 
 		</section>
@@ -131,79 +131,85 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<details class="summary">
 				<summary>Summary</summary>
 				<p>You might want to make a claim that your <a>content</a> or digital product meets the WCAG 3 guidelines. When it meets the guidelines, you can make a "conformance claim".</p>
-				<p>To make a formal conformance claim, you MUST apply the guidelines to a clearly defined part of your content. Conformance claims are not required. Your content can conform to WCAG 3, even if you don't want to make a claim.</p>
+				<p>To make a formal conformance claim, you MUST apply the guidelines to a clearly defined part of your content. Conformance claims are not required. Your content can conform to WCAG 3, even if you do not want to make a claim.</p>
 				<p>WCAG 3 has two types of content:</p>
 				<ul>
 					<li><b>Normative:</b> Rules you MUST follow to meet the guidelines.</li>
-					<li><b>Informative:</b> Information that helps you understand or apply those rules &mdash; This is also called <a>non-normative</a>.</li>
+					<li><b>Informative:</b> Information that helps you understand or apply those rules &mdash; this is also called <a>non-normative</a>.</li>
 				</ul>
 			<p>WCAG 3 uses three kinds of provisions:</p>
 			<ul>
-				<li><b>Core requirements:</b> The main things you MUST do</li>
-				<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible</li>
-				<li><b>Assertions:</b> Statements saying that you have done something to improve the accessibility of your content or product</li>
+				<li><b>Core requirements:</b> The main things you MUST do.</li>
+				<li><b>Supplemental requirements:</b> Additional things that you can do to make things more accessible.</li>
+				<li><b>Assertions:</b> Statements saying that you have done something to improve the accessibility of your content or product.</li>
 			</ul>
-			<p>In addition, WCAG 3 provides Recommended Practices. Recommended Practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommended Practices are not necessary to conform.</p>
+			<p>In addition, WCAG 3 provides recommended practices. Recommended practices provide important guidance that often save time and improve accessibility. They might not always apply in every situation. Recommended practices are not necessary to conform to WCAG 3.</p>
 
-			<p>The methods you use to satisfy WCAG 3 MUST be <a>accessibility supported</a>. This means a method only counts towards conformance if browsers and assistive technologies (AT) in general use support it. WCAG 3 uses accessibility support sets to identify which browsers and AT are used to evaluate methods. The default accessibility support set in WCAG 3 is for web methods. The accessibility support set MUST be included in conformance claims.</p>
+			<p>The methods you use to satisfy WCAG 3 MUST be <a>accessibility supported</a>. This means a method only counts toward conformance if browsers and assistive technologies (AT) in general use support it. WCAG 3 uses accessibility support sets to identify which browsers and AT are used to evaluate methods. The default accessibility support set in WCAG 3 is for web methods. The accessibility support set MUST be included in conformance claims.</p>
 
 			<p>When evaluating accessibility, WCAG 3 applies to a clearly defined part of your content — such as specific <a>pages</a>/<a>views</a>, or <a>processes</a> — so you can scope your claim to exactly what was tested.</p>
 
 			<p>Each core requirement, supplemental requirement, and assertion is linked to different functional limitations. These cover a broad range of disabilities and help explain who benefits from the work to meet them.</p>
 			</details>
 
-			<p>This section lists requirements for conformance to WCAG 3. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility supported ways of using technologies can be relied upon for conformance.</p>
+			<p>This section defines the requirements for conformance to WCAG 3 and explains how to make an optional conformance claim. It also explains what it means to be <a>accessibility supported</a>, since only accessibility supported ways of using technologies can be relied on for conformance.</p>
 
 			<div class="ednote">
-				<p>Conformance defines how to meet the standard. Conformance with a standard is not the same as compliance with legal requirements. Historically, conformance, reporting, and compliance have often been confused. In WCAG 3, we are setting out to provide clear guidance in each of these areas in a manner that is appropriate for W3C.</p>
+				<p>Conformance defines how to meet the standard. Conformance with a standard is not the same as compliance with legal requirements. Historically, conformance, reporting, and compliance have often been confused. WCAG 3 provides clear guidance on each of these areas.</p>
 
-				<p>To this end, AGWG will produce the following as part of the WCAG 3 effort:</p>
+				<p>To this end, the AG Working Group will produce the following as part of the WCAG 3 effort:</p>
 				<ul>
-					<li>a normative, narrowly defined conformance model on how to conform with WCAG 3</li>
-					<li>informative guidance for reporting and testing progress towards and beyond conformance</li>
+					<li>a normative, narrowly defined model for conformance to WCAG 3</li>
+					<li>informative guidance for reporting and testing progress toward and beyond conformance</li>
 					<li>informative advice for policymakers on how they could use WCAG 3 when writing policy</li>
 				</ul>
 
-				<p>This approach provides flexibility so the Accessibility Guidelines Working Group (AGWG) can suggest ways to use WCAG to better track progress towards and beyond conformance, and encourage adoption.</p>
+				<p>This approach provides flexibility so the AG Working Group can suggest ways to use WCAG to better track progress toward and beyond conformance, and encourage adoption of accessibility practices.</p>
 			</div>
 
 			<section id="interpreting-normative-provisions">
 				<h3>Interpreting normative provisions</h3>
 
-				<p>The provisions of WCAG 3 are <a>normative</a> and define requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
+				<p>The provisions of WCAG 3 are <a>normative</a> and define requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material helps readers understand and apply the guidelines but does not establish requirements for conformance claims.</p>
 
 				<h4>Types of provisions</h4>
 
+				<p>In WCAG, a provision is a testable rule or statement that content must satisfy to be accessible.</p>
+
 				<p>WCAG 3 consists of three types of provisions.</p>
 
-				<p><b>Core requirements</b> &mdash; Set of requirements that MUST be met to conform. These include requirements that ensure:</p>
+				<p><b>Core requirements</b> &mdash; requirements that MUST be met to conform to WCAG 3. These include requirements that ensure:</p>
 				<ul>
-					<li>content is detectable by user agents and AT,</li>
-					<li>content can be conveyed to multiple senses and can be operated by multiple input methods,</li>
+					<li>content is detectable by user agents and assistive technologies (AT),</li>
+					<li>content can be conveyed to multiple senses and can be accessed and operated using different input methods,</li>
 					<li>content does not cause direct and immediate physical harm, and</li>
-					<li>necessary support is available such as captions, text alternatives, and expanded forms of abbreviations.</li>
+					<li>necessary support is available, such as captions, text alternatives, and expanded forms of abbreviations.</li>
 				</ul>
 
-				<p><b>Supplemental requirements</b> &mdash; Requirements that build on the core set, not required for conformance. These include:</p>
+				<p><b>Supplemental requirements</b> &mdash; requirements that build on the core set, not required for conformance. These include requirements that:</p>
 				<ul>
-					<li>Requirements that improve the accessibility of content beyond core requirements,</li>
-					<li>a stricter form of a comparable core requirement, and</li>
-					<li>requirements that are disproportionately burdensome to implement.</li>
+					<li>improve the accessibility of content beyond core requirements,</li>
+					<li>are stricter than comparable core requirements, and</li>
+					<li>are more resource-intensive or impractical to implement.</li>
 				</ul>
 
-				<p><b>Assertions</b> &mdash; Documented statements that can be made about specific accessibility practices an organization follows to improve the accessibility of the content or product.</p>
+				<p><b>Assertions</b> &mdash; documented statements about specific practices an organization follows to improve the accessibility of its content or product.</p>
 
 				<h4>Recommended Practices</h4>
 
-				<p>In addition to requirements and assertions, WCAG 3 includes Recommended Practices. A Recommended Practice can take the form of a provision or a method. They provide guidance for improving accessibility or making implementation more effective, but might not always apply in every situation. These are integrated with requirements, assertions and methods and are clearly marked as Recommended Practices.</p>
+				<p>In addition to requirements and assertions, WCAG 3 includes Recommended practices. A recommended practice can take the form of a provision or a method. It provides guidance for improving accessibility or making implementation more effective, but it might not always apply in every situation.</p>
+				
+				<p>Recommended practices are integrated with requirements, assertions, and methods, and are clearly marked as a recommended practice.</p>
 
-				<p>Recommended Practices are informative and do not need to be satisfied to conform.</p>
+				<p>Recommended practices are informative and do not need to be satisfied to conform.</p>
 			</section>
 
 			<section id="conformance-requirements">
 				<h3>Conformance requirements</h3>
 				<div class="ednote">
-					<p>This update to WCAG 3 moves the concept of leveling from conformance to reporting. To keep this clear, we refer to "reporting tiers" to distinguish them from previous "conformance levels". Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
+					<p>This update to WCAG 3 replaces WCAG 2.x’s strict pass/fail labels with tier reporting — a new conformance model highlighting an organization's accessibility achievements before, at, and beyond baseline conformance, alongside areas for improvement.</p>
+
+					<p>To keep this clear, we refer to "reporting tiers" to distinguish them from previous "conformance levels". Approaches to reporting progress toward conformance and achievements beyond conformance are explored in Section 4.</p>
 				</div>
 
 				<p>For a specified <a>conformance scope</a> to conform to WCAG 3, all core requirements MUST be satisfied.</p>
@@ -212,24 +218,28 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<p>Many methods, such as those using ARIA to convey semantics or CSS to style content, are only effective when they are supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.</p>
 
-				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machines (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state which UA and AT are assumed on conformance statements. The concept that methods are supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
+				<p>The UAs and ATs used by people with disabilities vary by language, region, and environment. For example, available technologies may be restricted in closed environments, such as behind firewalls or on self-service transaction machines (SSTMs).</p>
+
+				<p>As a result, it is important to understand which user agents (UAs) and assistive technologies (ATs) support each method, and to clearly state which UAs and ATs are assumed in a conformance statement.</p>
 
 				<h5>Accessibility support set</h5>
 
-				<p>WCAG 3 includes the concept of "accessibility support sets". This is the set of UAs, ATs, and accessibility settings that AGWG tests when determining methods that support a requirement.</p>
+				<p>WCAG 3 includes the concept of "accessibility support sets". This is the set of UAs, ATs, and accessibility settings that the AG Working Group tests when determining methods that support a requirement.</p>
 
 				<p>WCAG 3 uses two accessibility support sets:</p>
 
 				<ol>
-					<li><b>Default accessibility support set</b> &mdash; A set of common browsers and assistive technology and accessibility supported settings support English content. The default accessibility support set supports web methods. Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
-					<li><b>Alternative accessibility support set</b> &mdash; People, organizations or regional regulators can also specify an alternative accessibility support set. This is a different set of browsers, assistive technology, and accessibility settings that support the intended languages, regions and technologies when the default accessibility-set does not provide that support.</li>
+					<li><b>Default accessibility support set</b> &mdash; a set of common browsers, assistive technologies, and accessibility settings that support English content. The default accessibility support set supports web methods. Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
+					<li><b>Alternative accessibility support set</b> &mdash; people, organizations, or regional regulators can also specify an alternative accessibility support set. This is a different set of browsers, assistive technologies, and accessibility settings that support the intended languages, regions, and technologies when the default accessibility support set does not provide that support.</li>
 				</ol>
 
 				<div class="ednote">
-					<p>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. AGWG will only include core requirements in WCAG 3 if they include at least one method that works with the default web accessibility support set at the time of publication.</p>
+					<p>While the AG Working Group will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. The working group will only include core requirements in WCAG 3 if they include at least one method that works with the default web accessibility support set at the time of publication.</p>
 				</div>
 
-				<p>The accessibility support set MUST be included in conformance claims. If working in a closed environment, with non-web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility support set defined in WCAG 3, we also RECOMMEND including the accessibility support set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility support set used SHOULD be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
+				<p>The accessibility support set MUST be included in conformance claims.</p> 
+
+				<p>If working in a closed environment with non-web technologies, or in a region that relies on UAs and ATs outside the default accessibility support set defined in WCAG 3, we also RECOMMEND including the accessibility support set in public accessibility statements. For example, when claiming conformance for a self-service transaction machine (SSTM) that uses a non-standard way to provide text-to-speech, the accessibility support set used SHOULD be included in the conformance claim. We also recommend including it in public statements about the accessibility of the SSTM.</p>
 
 				<div class="ednote">
 					<ul>
@@ -242,11 +252,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 
 				<h4>Defined conformance scope</h4>
 
-				<p>A conformance claim is not required in order to conform to this standard. If making a conformance claim, WCAG 3 requires the guidelines be applied to a specified scope. Evaluation is completed and conformance is determined based on one or more of the following scopes.</p>
+				<p>A conformance claim is not required in order to conform to WCAG 3. When making a conformance claim, you MUST clearly define its scope. The conformance scope identifies the content or functionality being evaluated and is determined based on one or more of the following scopes.</p>
 
 				<p>Conformance claims MAY be scoped to a product, site, subsite, application, or other defined set of <a>content</a> or functionality. The conformance scope MUST clearly identify the product, <a>page</a>/<a>view</a>, <a>content</a>, functionality, or <a>components</a> that are included in the scope. Where the scope represents only part of a product, site, or <a>page</a>/<a>view</a>, the scope SHOULD also identify the boundaries of the evaluation. Within the stated scope, everything that can be tested MUST be included. When possible, also describe what is outside of the scope.</p>
 
-				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope MUST describe its boundaries with a tier of specificity appropriate to the scope being defined.</p>
+				<p>WCAG 3 defines several ways to declare a limited scope: <a>pages</a>/<a>views</a>, <a>processes</a>, paths, and <a>components</a>. When using one of these more limited scopes, the scope MUST describe its boundaries with a level of specificity appropriate to the scope being defined.</p>
 
 				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
 
@@ -254,29 +264,32 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			</section>
 		</section>
 
-		<section id="progress-towards-and-beyond-conformance" class="informative" data-status="exploratory">
+		<section id="reporting" class="informative" data-status="exploratory">
 			<h2>Reporting</h2>
 			<div class="ednote">
-				<p>In parallel with WCAG 3, the working group will be writing informative guidance on testing and reporting. Part of this documentation is “Progress towards and beyond conformance.” This section uses tags for requirements and assertions to break the provisions into reporting tiers which can be used as steps towards conformance and then beyond conformance. Progress could also be reported as counts or percentages between each tier based on the tags. In separate documents, AG will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance. We will also recommend ways organizations could use the tiers when comparing and purchasing products. For example, assertions included in tiers beyond conformance could be completed in order to claim a Silver achievement in WCAG. The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.</p>
+				<p>In parallel with WCAG 3, the AG Working Group will be writing informative guidance on testing and reporting. Part of this documentation is “Progress toward and beyond conformance.”</p>
+				<p>Core requirements, supplemental requirements, and assertions will be tagged by type to break the provisions into reporting tiers, which can be used as steps toward conformance and beyond conformance. Progress could also be reported as counts or percentages between each tier based on the tags.</p>
+				<p>In separate documents, the AG Working Group will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance.</p>
+				<p>We will also recommend ways organizations could use the tiers when comparing and purchasing products. For example, assertions included in tiers beyond conformance could be completed in order to claim a Silver achievement in WCAG. The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.</p>
 			</div>
 			<p>Products or other defined conformance scopes may not fully conform to all requirements for conformance or may exceed conformance requirements. This section presents reporting tiers, not conformance tiers. The third reporting tier equates with conformance to WCAG 3.</p>
 			<section id="reporting-tiers">
 				<h3>Reporting tiers</h3>
 				<div class="ednote">
-					<p>AGWG continues to discuss ways to show progress and is exploring tiers. An <a href="https://www.w3.org/TR/wcag-3.0-explainer/#alternative-approach-scoring">alternative proposal</a> explores using scoring to show progress towards conformance and then awards of Bronze, Silver and Gold after conformance. We invite public comment on which of these approaches shows the most promise or if a different approach is needed.</p>
+					<p>The AG Working Group continues to discuss ways to show progress and is exploring tiers. An <a href="https://www.w3.org/TR/wcag-3.0-explainer/#alternative-approach-scoring">alternative proposal</a> explores using scoring to show progress toward conformance and then awards of Bronze, Silver and Gold after conformance. We invite public comment on which of these approaches shows the most promise or if a different approach is needed.</p>
 				</div>
 				<p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for reporting on tiers that lead up to and then beyond conformance.</p>
 				<div class="ednote">
-					<p>The severity of a failure is determined based on the specific circumstances of the failure along with the nature of the requirement itself. The same requirement might therefore result in failures with different severity. Factors that may affect severity include, but are not limited to, the role of the affected element within a page or process, the number of instances, the context, and the nature and importance of the content. Tags are assigned based on the maximum potential severity of the failure.</p>
-					<p>AGWG is exploring including additional details on reporting using modified severity based on how and where a failure occurs. For example, the impact of missing alternative text is more severe when the image is acting as an interactive element than it is when it is on a static image that is outside the purpose of the page.</p>
+					<p>The severity of a failure depends on both the nature of the requirement and the specific circumstances in which the failure occurs. The same requirement might therefore result in failures with different severity. Factors that may affect severity include, but are not limited to, the role of the affected element within a page or process, the number of instances, the context, and the nature and importance of the content. Tags are assigned based on the maximum potential severity of the failure.</p>
+					<p>The AG Working Group is exploring including additional details on reporting using modified severity based on how and where a failure occurs. For example, missing alternative text may have a greater impact when an image functions as an interactive control than when it is a static image that is not central to the purpose of the page.</p>
 				</div>
 				<h4>Core requirement tags</h4>
-				<p>Core requirements are required in order to conform.</p>
+				<p>All core requirements MUST be met to conform to WCAG 3.</p>
 				<ul>
-					<li><b>Physical Harm</b> &mdash; Not meeting the requirement can cause someone with a disability immediate physical harm.</li>
-					<li><b>Risk</b> &mdash; Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-					<li><b>Barrier</b> &mdash; Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-					<li><b>Friction</b> &mdash; Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+					<li><b>Physical Harm</b> &mdash; not meeting the requirement can cause someone with a disability immediate physical harm.</li>
+					<li><b>Risk</b> &mdash; not meeting the requirement can unreasonably increase financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+					<li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. Some failures might be due to necessary AT support and some might be inherent flaws in the design of the system or product.</li>
+					<li><b>Friction</b> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
 				</ul>
 				<div class="ednote">
 					<p>The AGWG will consider one or more definitions for harm, and types of harm.</p>
@@ -284,7 +297,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<h4>Supplemental requirements</h4>
 				<p>Supplemental requirements are not required to conform but are used to show additional achievements in accessibility and allow comparison between products.</p>
 				<ul>
-					<li><b>Supplemental requirements</b> &mdash; Meeting the requirements improves the user experience for someone with a disability. Not meeting the requirement may make the user experience more tedious, potentially leading to more significant difficulties due to the cumulative nature of many smaller issues.</li>
+					<li><b>Supplemental requirements</b> &mdash; meeting the requirement improves the user experience for someone with a disability. Individually, not meeting the requirement may make the user experience tedious, but multiple small issues can combine to create more significant difficulties.</li>
 				</ul>
 				<h4>Assertion tags</h4>
 				<p>Assertions are not required to conform but are used to show procedural commitments to accessibility and improve comparison between products.</p>
@@ -292,11 +305,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<p>The AGWG has not yet decided whether assertions can be required for conformance.</p>
 				</div>
 				<ul>
-					<li><b>Content</b> &mdash; These assertions focus on the content and include processes that determine whether the content is accessible. For example, plain language reviews, usability testing, AT testing, or style guides.</li>
-					<li><b>Organization</b> &mdash; These assertions focus on the organization and include processes that help organizations create accessible content such as training staff in accessibility or providing public accessibility statements.</li>
+					<li><b>Content</b> &mdash; these assertions focus on practices for creating, evaluating, or maintaining accessible content. For example, plain language reviews, usability testing, assistive technology (AT) testing, or style guides.</li>
+					<li><b>Organization</b> &mdash; these assertions focus on organizational practices that support the creation of accessible content, such as training staff in accessibility or providing public accessibility statements.</li>
 				</ul>
 				<h4>Tiers of reporting</h4>
-				<p>The following table identifies the tiers of WCAG 3. Each tier is cumulative, building on and including all requirements from the tiers before it.</p>
+				<p>The following table identifies WCAG 3 reporting tiers. Each tier is cumulative, building on and including all requirements from the tiers before it.</p>
 				<table>
 					<thead>
 						<tr>
@@ -306,65 +319,67 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					</thead>
 					<tbody>
 						<tr>
-							<td>1 - Avoid physical harm</td>
-							<td>Physical Harm and Risk requirements are met</td>
+							<td>1 &mdash; Avoid physical harm</td>
+							<td>Physical harm and risk requirements are met</td>
 						</tr>
 						<tr>
-							<td>2 - Foundational access</td>
+							<td>2 &mdash; Foundational access</td>
 							<td>&hellip;plus barrier requirements</td>
 						</tr>
 						<tr>
-							<td>3 - Conformance</td>
+							<td>3 &mdash; Conformance</td>
 							<td>&hellip;plus friction requirements (all core requirements are met)</td>
 						</tr>
 						<tr>
-							<td>4 - Bronze</td>
+							<td>4 &mdash; Bronze</td>
 							<td>&hellip;plus [TBD number of] supplemental requirements and assertions about content</td>
 						</tr>
 						<tr>
-							<td>5 - Silver</td>
+							<td>5 &mdash; Silver</td>
 							<td>&hellip;plus [TBD greater number of] supplemental requirements and assertions about content</td>
 						</tr>
 						<tr>
-							<td>6 - Gold</td>
+							<td>6 &mdash; Gold</td>
 							<td>&hellip;plus [TBD number of] the assertions about the organization</td>
 						</tr>
 					</tbody>
 				</table>
-				<p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility in requiring additional tiers in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress towards conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
+				<p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility in requiring additional tiers in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress toward conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
 			</section>
 			<section id="function-performance-statements">
 				<h3>Functional performance statements (expanded)</h3>
-				<p>Each requirement and assertion will be tagged with one or more of the functional performance statements below. The statements describe the functional performance of Information and Communications Technology (ICT) enabling people to locate, identify, and operate ICT functions, and to access the information provided, regardless of physical, cognitive, or sensory abilities.</p>
-				<p>This is not a list of disabilities. Different disabilities might correspond with one or more of the limitations listed below. For example, a visual impairment or an inability to process visual information may require use with limited vision.</p>
+				<p>Each requirement and assertion will be tagged with one or more of the functional performance statements below.</p>
+
+				<p>Functional performance statements describe how Information and Communications Technology (ICT) needs to function to enable people to locate, identify, and operate ICT functions and access the information provided, regardless of their physical, cognitive, or sensory abilities.</p>
+				<p>The functional performance statements are not a list of disabilities. Different disabilities might correspond with one or more of the statements listed below. For example, both someone with a visual impairment and someone with an inability to process visual information may require ICT that enables "use with limited vision".</p>
 				<div class="ednote">
 					<p>Tagging requirements and assertions with functional performance statements allows organizations to prioritize remediation efforts and report status based on functional performance statements. Additional information on how these can be used will be included in informative testing and reporting documentation.</p>
 					<p>This section is exploratory, the following categories will change.</p>
 				</div>
 				<ul>
-					<li><b>Use with very limited or no hearing</b> &mdash; Relating to hearing and cognitive processing of auditory information.</li>
-					<li><b>Use with limited hearing</b> &mdash; Relating to hearing and cognitive processing of auditory information.</li>
-					<li><b>Use with very limited or no vision</b> &mdash; Relating to sight and cognitive processing of visual information.</li>
-					<li><b>Use with limited vision</b> &mdash; Relating to sight and cognitive processing of visual information.</li>
-					<li><b>Use without perception of color</b> &mdash; Relating to color perception, including perception of certain colors or all colors.</li>
-					<li><b>Use with very limited or no vocal capability/speech</b> &mdash; Relating to voice, including stuttering, volume, or articulation.</li>
-					<li><b>Use with limited vocal capability/speech</b> &mdash; Relating to voice, including stuttering, volume or articulation.</li>
-					<li><b>Use with very limited or no manipulation or strength</b> &mdash; Relating to grip, fine motor control, multidimensional body movement, range of motion, or involuntary movements.</li>
-					<li><b>Use with limited manipulation or strength</b> &mdash; Relating to grip, fine motor control, multidimensional body movement, range of motion, or involuntary movements.</li>
-					<li><b>Use with limited focus</b> &mdash; Relating to concentration, multitasking, task switching, distractibility, and focus over time.</li>
-					<li><b>Use with limited memory</b> &mdash; Relating to short-term, long-term, and working memory.</li>
-					<li><b>Use with limited language</b> &mdash; Relating to the ability to process spoken, written, signed, and image-based language.</li>
-					<li><b>Use with limited executive function</b> &mdash; Relating to self-regulation, task management, planning, organizing, and social skills.</li>
-					<li><b>Use with limited reasoning</b> &mdash; Relating to problem solving, abstraction, mathematical intelligence, and recognition.</li>
-					<li><b>Use with very limited or no identifying characteristics</b> &mdash; Relating to physical characteristics and behavioral characteristics such as fingerprints or movement patterns.</li>
-					<li><b>Use with hyposensitivity</b> &mdash; Relating to sensitivity to sensory inputs.</li>
-					<li><b>Use with hypersensitivity</b> &mdash; Relating to sensitivity to sensory inputs.</li>
-					<li><b>Use with intersectional disabilities</b> &mdash; Relating to interactions between needs that create new needs. This includes intersectional sensory disabilities such as deaf blind individuals.</li>
-					<li><b>Other</b> &mdash; This list is not comprehensive. Use this for needs that do not fall elsewhere in the list.</li>
+					<li><b>Use with very limited or no hearing</b> &mdash; relating to hearing and cognitive processing of auditory information.</li>
+					<li><b>Use with limited hearing</b> &mdash; relating to hearing and cognitive processing of auditory information.</li>
+					<li><b>Use with very limited or no vision</b> &mdash; relating to sight and cognitive processing of visual information.</li>
+					<li><b>Use with limited vision</b> &mdash; relating to sight and cognitive processing of visual information.</li>
+					<li><b>Use without perception of color</b> &mdash; relating to color perception, including perception of certain colors or all colors.</li>
+					<li><b>Use with very limited or no vocal capability/speech</b> &mdash; relating to voice, including stuttering, volume, or articulation.</li>
+					<li><b>Use with limited vocal capability/speech</b> &mdash; relating to voice, including stuttering, volume or articulation.</li>
+					<li><b>Use with very limited or no manipulation or strength</b> &mdash; relating to grip, fine motor control, multidimensional body movement, range of motion, or involuntary movements.</li>
+					<li><b>Use with limited manipulation or strength</b> &mdash; relating to grip, fine motor control, multidimensional body movement, range of motion, or involuntary movements.</li>
+					<li><b>Use with limited focus</b> &mdash; relating to concentration, multitasking, task switching, distractibility, and focus over time.</li>
+					<li><b>Use with limited memory</b> &mdash; relating to short-term, long-term, and working memory.</li>
+					<li><b>Use with limited language</b> &mdash; relating to the ability to process spoken, written, signed, and image-based language.</li>
+					<li><b>Use with limited executive function</b> &mdash; relating to self-regulation, task management, planning, organizing, and social skills.</li>
+					<li><b>Use with limited reasoning</b> &mdash; relating to problem solving, abstraction, mathematical intelligence, and recognition.</li>
+					<li><b>Use with very limited or no identifying characteristics</b> &mdash; relating to physical and behavioral characteristics used in biometrics, such as fingerprints or movement patterns.</li>
+					<li><b>Use with hyposensitivity</b> &mdash; relating to low sensitivity to sensory inputs.</li>
+					<li><b>Use with hypersensitivity</b> &mdash; relating to high sensitivity to sensory inputs.</li>
+					<li><b>Use with intersectional disabilities</b> &mdash; relating to combinations of functional needs that create barriers not adequately addressed by considering each need separately. This includes intersectional sensory disabilities such as deafblind individuals.</li>
+					<li><b>Other</b> &mdash; this list is not comprehensive. Use "Other" for needs that do not fall elsewhere in the list.</li>
 				</ul>
 				<div class="ednote">
 					<ul>
-						<li>This list expands on the one currently used in legislation by breaking apart cognitive disability and adding others such as identifying characteristics and intersectional needs. This work is informed by work by the Digital Accessibility Framework.</li>
+						<li>This list expands on the one currently used in legislation by breaking apart cognitive disability and adding others such as identifying characteristics and intersectional needs. This work is informed by work conducted by the Digital Accessibility Framework.</li>
 						<li>An alternative breakdown could be used based on <a href="https://w3c.github.io/fast/">FAST</a>.</li>
 					</ul>
 				</div>
@@ -374,16 +389,16 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 		<section data-status="developing">
 			<h2>Glossary</h2>
 			<p class="note">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p>
-			<p class="ednote">This glossary includes terms used by content that has reached a maturity level of Developing or higher. The definitions themselves include a maturity level and may mature at a different pace than the content that refers to them. The AGWG will work with other task forces and groups to harmonize terminology across documents as much as is possible. </p>
+			<p class="ednote">This glossary includes terms used by content that has reached a maturity level of Developing or higher. The definitions themselves include a maturity level and may mature at a different pace than the content that refers to them. The AG Working Group will work with other task forces and groups to harmonize terminology across documents as much as is possible. </p>
 
 			<GlossaryDefinitionList />
 		</section>
 		<section class="appendix">
-			<h2>Privacy Considerations</h2>
+			<h2>Privacy considerations</h2>
 			<p class="ednote">The content of this document has not matured enough to identify privacy considerations. Reviewers of this draft should consider whether requirements of the conformance model could impact privacy.</p>
 		</section>
 		<section class="appendix">
-			<h2>Security Considerations</h2>
+			<h2>Security considerations</h2>
 			<p class="ednote">The content of this document has not matured enough to identify security considerations. Reviewers of this draft should consider whether requirements of the conformance model could impact security.</p>
 		</section>
 		<section class="appendix">
@@ -404,7 +419,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 		</section>
 		<section class="appendix">
 			<h2>Acknowledgements</h2>				
-			<p>Additional information about participation in the Accessibility Guidelines Working Group (AGWG) can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
+			<p>Additional information about participation in the Accessibility Guidelines (AG) Working Group can be found on the <a href="https://www.w3.org/groups/wg/ag/">Working Group home page</a>.</p>
 			<Acknowledgements />
 		</section>
 	</body>
