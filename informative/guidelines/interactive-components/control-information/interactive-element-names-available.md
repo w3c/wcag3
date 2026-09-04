@@ -2,7 +2,7 @@
 
 - Provide unique, descriptive text or image (icon) for each interactive element.
 
-## Best Practices
+## Recommended Practices
 
 - To ensure clarity, pair an icon with a persistent visible text label, or only use a persistent visible text label.
 - When an icon is the only visual label, provide a tooltip (hover label) with the text description.

@@ -2,7 +2,7 @@
 
 - When removing interactive elements such as filters, dialogs, or popups that currently contain focus, actively place the focus back on the element that led to that element, the previous element within the focus order, or another meaningful location.
 
-## Best Practices
+## Recommended Practices
 
 - Conduct usability testing with screen reader users to evaluate the focus movement.
 
