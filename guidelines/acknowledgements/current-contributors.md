@@ -27,7 +27,7 @@
 - Graham Ritchie (Invited Expert)
 - Gregg Vanderheiden (Invited Expert)
 - Gundula Niemann (SAP SE)
-- Heather Bellis (Oracle Corporation)
+- Heather Bellis (Invited Expert)
 - Helen Burge (Invited Expert)
 - Hidde de Vries (Logius)
 - Jan Jaap de Groot (Abra)
