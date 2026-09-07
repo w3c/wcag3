@@ -72,32 +72,32 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 .requirement hgroup {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-block-end: 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin-block-end: 1rem;
 
-  > * {
-    margin: 0;
-  }
+	> * {
+		margin: 0;
+	}
 
-  .requirement-type {
+	.requirement-type {
 		order: -1;
-  }
+	}
 
-  h5 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 1ch;
-    margin-block: 0;
-    font-size: 1.2em;
-  }
+	h5 {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: start;
+		gap: 1ch;
+		margin-block: 0;
+		font-size: 1.2em;
+	}
 
-  .status-marker {
-    margin-inline-start: 0;
-  }
+	.status-marker {
+		margin-inline-start: 0;
+	}
 }
 
 :is(.guideline, .requirement) > :is(p, ul, ol) {
@@ -207,35 +207,35 @@ section {
 }
 
 .doclinks {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.5em;
-  padding: 5px 10px;
-  border-radius: 2px;
-  border: 1px solid #ccc;
-  color: var(--diminished-text);
+	display: inline-flex;
+	flex-direction: column;
+	gap: 0.5em;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	color: var(--diminished-text);
 }
 .darkmode .doclinks {
-  border-color: #555;
+	border-color: #555;
 }
 .doclinks a[href] {
-  color: var(--diminished-text);
-  text-underline-offset: 0.125em;
+	color: var(--diminished-text);
+	text-underline-offset: 0.125em;
 }
 .doclinks a[href], .doclinks a[href]:hover {
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 1px;
-  text-decoration-color: currentColor;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-decoration-color: currentColor;
 }
 .doclinks a[href]:hover, .doclinks a[href]:focus {
-  color: var(--text);
+	color: var(--text);
 }
 .doclinks svg {
-  padding-inline-end: 0.5em;
-  margin-block-start: 0;
+	padding-inline-end: 0.5em;
+	margin-block-start: 0;
 }
 .doclinks span {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 svg:not(:root) {
