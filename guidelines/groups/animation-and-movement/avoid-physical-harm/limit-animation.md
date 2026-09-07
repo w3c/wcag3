@@ -18,9 +18,5 @@ Animation or blinking does not:
 :::
 
 :::note
-An animation that is programmed to stop for any amount of time and then restart is considered one animation. 
-:::
-
-:::note
-Several animations activated one after the other are considered as a single animation. 
+Automatic pauses, automatic restarts, and consecutive animations do not reset the 5-second limit.
 :::
