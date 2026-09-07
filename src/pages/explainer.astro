@@ -134,7 +134,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <ul>
             <li>how far along in the development process this section is,</li>
             <li>how ready it is for experimental adoption, and</li>
-            <li>what kind of feedback AG Working Group is looking for.</li>
+            <li>what kind of feedback the AG Working Group is looking for.</li>
         </ul>
 
         <p>The status indicators, from least to most mature, are as follows:</p>
@@ -211,7 +211,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>Requirements and Methods</h3>
         <p>Each Guideline contains multiple Requirements:</p>
         <ul><li>Core Requirements will be required to meet conformance.  This set of requirements will cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
-            <li>Supplemental Requirements will be not be required to meet conformance, but testers or policymakers will be able to select 
+            <li>Supplemental Requirements will not be required to meet conformance, but testers or policymakers will be able to select 
                 which supplemental requirements to meet.</li>
         </li></ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
@@ -230,7 +230,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
     
             <h4>Using assertions</h4>
-            <p>Assertions may be used, in addition to requirements, to support a guideline. Only assertions included in this document can be used for conformance. Not all guidelines include assertions. Guidelines that include assertions list them with the requirements. 
+            <p>Assertions may be used, in addition to requirements, to support a guideline. Only assertions included in WCAG 3 can be used for conformance. Not all guidelines include assertions. Guidelines that include assertions list them with the requirements. 
                 Organizations can make an assertion that they followed a procedure as part of a conformance claim.  Assertions build on core requirements. Assertions cannot be used as alternatives to core requirements.</p>
 
             <div class="ednote">
@@ -267,7 +267,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                 <p>Assertions include the following information:</p>
                 <ul>
                     <li>the statement about the process being asserted,</li>
-                    <li>yhe date of the assertion,</li>
+                    <li>the date of the assertion,</li>
                     <li>the date or date range the procedure was completed,</li>
                     <li>the scope of the assertion,</li>
                     <li>contact information for the person or group making the assertion, and</li>
@@ -409,7 +409,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         based on the procedure being asserted.</p>
     </section>
 
-    <section id="conformance-models" data-status="exploratory">
+    <section id="conformance-models" data-status="developing">
         <h2>Conformance approach</h2>
         <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a> are about improving how people and organizations have used conformance in WCAG 2. Conformance itself is a simple concept: Does the content in scope meet the requirements of the specification? It is binary, and that simplicity can make it difficult to work with as human-digital interfaces can be complex and varied. </p>
 
@@ -417,18 +417,18 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p>Conformance will mean meeting all of the Core Requirements, but that is just the start. There will also be reporting tiers above and below the conformance level. On the way to conformance there are sets of requirements you can meet to show progress. These are "Avoid physical harm" and "Foundational access". Above the conformance level there will be WCAG 3 "Bronze", "Silver" and "Gold" reporting tiers which demonstrate improved accessibility. These tiers build on conformance to include accessibility assertions and recommended practices.</p>
 
-        <p>Using tiers instead of conformance levels allows for two improvements:</p>
+        <p>Using reporting tiers instead of conformance levels allows for two improvements:</p>
         <ol>
             <li>When a product is not conformant, there are sets of requirements you can use to measure and show progress.</li>
             <li>As conformance is a base not a ceiling, the tiers above conformance show incorporation of recommended practices and accessibility maturity. It is possible that regulators might encourage or enforce the use of these tiers for some types of organizations.</li>
         </ol>
 
-        <p>Each core requirement will have a tag that create levels you can progress through to meet conformance. Those tags are:</p>
+        <p>Each core requirement will have a tag that relates to levels you can progress through to meet conformance. Those tags are:</p>
         <ul>
-            <li><strong>Physical harm</strong> - Not meeting the requirement can cause someone with a disability immediate physical harm.</li>
-            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-            <li><strong>Barrier</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some of this might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Friction</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+            <li><strong>Physical harm</strong> - not meeting the requirement can cause someone with a disability immediate physical harm.</li>
+            <li><strong>Risk</strong> - not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Barrier</strong> - not meeting the requirement can prevent someone with a disability from proceeding. Some of this might be due to necessary AT support and some might be native to the design.</li>
+            <li><strong>Friction</strong> - not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
 
         <p>To get to the "Avoid physical harm" tier you would need to meet all the core requirements tagged with "Physical harm" and "Risk".  To get to the "Foundational Access" tier, you would need to meet the core requirements for the Avoid physical harm tier and those marked "Barrier."</p>
@@ -449,10 +449,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <h5>Core Requirement Tags</h5>
         <ul>
-            <li><strong>Harm</strong> - Not meeting the requirement can cause someone with a disability physical harm.</li>
-            <li><strong>Risk</strong> - Not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-            <li><strong>Prevention</strong> - Not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Additive</strong> - Not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+            <li><strong>Physical Harm</strong> - not meeting the requirement can cause someone with a disability immediate physical harm.</li>
+            <li><strong>Risk</strong> - not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Barrier</strong> - not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
+            <li><strong>Friction</strong> not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
         <h5>Scoring</h5>
         <p>Within the specific conformance scope, the score is calculated as follows:</p>
@@ -495,7 +495,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
             <p>The intent is for the responsibility of testing with user agents to vary depending on the level of conformance.</p> 
 
-            <p>At the conformance level, athors can assume that methods and techniques provided by WCAG 3 work. At higher reporting levels, the author may need to test that a technique works, or check that available user agents meet the requirement, or a combination of both.</p>
+            <p>At the conformance level, authors can assume that methods and techniques provided by WCAG 3 work. At higher reporting levels, the author may need to test that a technique works, or check that available user agents meet the requirement, or a combination of both.</p>
 
             <p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user agents, and there are sufficient techniques to meet each guideline.</p>
 
