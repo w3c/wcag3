@@ -1,7 +1,6 @@
 ---
 type: assertion
 status: developing
-issueLabel: Media alternatives style guide
 ---
 
 [Title, role, or organization] asserts that:

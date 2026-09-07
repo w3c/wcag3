@@ -1,7 +1,6 @@
 ---
 type: foundational
 status: developing
-issueLabel: Visual information identified
 ---
 
 Visual information needed to understand the media is described in :term[transcripts].
