@@ -6,7 +6,7 @@ type: foundational
 The keyboard interface can always move forward to the next interactive element and back to the previous interactive element.
 
 :::note
-Although keyboard navigation is required to be bidirectional, it is not required that it be symmetrical, even though this is usually best practice.
+Although keyboard navigation is required to be bidirectional, it is not required that it be symmetrical, even though this is usually recommended practice.
 :::
 
 :::example

@@ -2,7 +2,7 @@
 
 - HTML: To programmatically indicate, use the `pattern` attribute or write the information in a label; to visually indicate, add the requirements to the page near the input.
 
-## Best Practices
+## Recommended Practices
 
 - The constraints remain persistent.
 

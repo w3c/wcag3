@@ -213,9 +213,9 @@ export const informativeRelatedTypes = {
     slug: "act-rules",
     title: "ACT Rules",
   },
-  bestPractices: {
-    slug: "best-practices",
-    title: "Best Practices",
+  recommendedPractices: {
+    slug: "recommended-practices",
+    title: "Recommended Practices",
   },
   methods: {
     slug: "methods",
@@ -257,7 +257,7 @@ export const generateInformativeRelatedGetStaticPaths =
 
 /**
  * Object hash mapping provision slugs to arrays of IDs for each informative relation type
- * (e.g. actRules, bestPractices, methods).
+ * (e.g. actRules, recommendedPractices, methods).
  * Used to reverse-map each provision to the other types of related informative entries,
  * whereas those related entries are where the mappings are defined in frontmatter.
  */

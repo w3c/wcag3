@@ -21,13 +21,13 @@ As such, these files should not need to include any frontmatter.
 
 Content files under this subdirectory can also make use of the [Custom Directives available to both Guidelines and Informative Docs](../README.md#custom-directives-available-to-both-guidelines-and-informative-docs).
 
-### `act-rules/`, `best-practices/`, and `methods/` subdirectories
+### `act-rules/`, `recommended-practices/`, and `methods/` subdirectories
 
 Each of these folders defines a specific type of supplementary content,
 and follows the following structure:
 
 - `{technology}/` - Where `{technology}` is one of `documents`, `mobile`, or `web`; in practice, only `web` has been used so far
-  - `{technology}/{filename}.md` - Contains a single ACT rule / best practice / method:
+  - `{technology}/{filename}.md` - Contains a single ACT rule / recommended practice / method:
     - `{filename}` should match what you would like the URL slug for this entry to look like
     - The actual title and related provisions will be defined in frontmatter (see below)
 
@@ -35,7 +35,7 @@ and follows the following structure:
 
 The following fields are required:
 
-- `title` - Title of the ACT rule, best practice, or method
+- `title` - Title of the ACT rule, recommended practice, or method
 - `provisions` - List of slugs corresponding to applicable provisions for this entry;
   this should _only_ specify the provision slug (not group or guideline),
   e.g. `sections-labeled` rather than `layout/structure/sections-labeled`
