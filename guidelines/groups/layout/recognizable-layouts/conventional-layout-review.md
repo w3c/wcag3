@@ -10,11 +10,11 @@ status: developing
 
 ::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Report covering review of layouts for similar products or processes. 
-* Design log capturing decision to use specific layouts.
-* If a non-convention layout is used, usability testing results that demonstrate the utility of the approach taken.
+* report covering review of layouts for similar products or processes
+* design log capturing decision to use specific layouts
+* if a non-conventional layout is used, usability testing results that demonstrate the utility of the approach taken

@@ -1,3 +1,7 @@
+## Methods
+
+- Provide a setting to adjust the pointer indicator.
+
 ## Tests
 
 <b>Procedure</b>

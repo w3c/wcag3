@@ -1,3 +1,7 @@
+## Methods
+
+- When speech input is supported, an additional way of providing input is also supported.
+
 ## Tests
 
 <b>Procedure</b>

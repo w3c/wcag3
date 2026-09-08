@@ -1,3 +1,8 @@
+## Methods
+
+- HTML: Use HTML elements according to specification.
+- ARIA: Add roles, values, states, and properties according to specification.
+
 ## Tests
 
 <b>Procedure</b>

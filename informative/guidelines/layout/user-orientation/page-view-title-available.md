@@ -17,7 +17,7 @@ For each page/view:
 
 For each page/view where no title element is present:
 1. Determine whether the current page/view allows setting the HTML document `title` element.
-2. If the page/view is rendered within the current document context (e.g. modal dialog, popup, etc.) and does not provide a mechanism to set a document-level `title`, the exception applies.
+2. If the page/view is rendered within the current document context (for example, modal dialog or popup) and does not provide a mechanism to set a document-level `title`, the exception applies.
 
 <b>Expected results</b>
 * #1 and #2 are true.

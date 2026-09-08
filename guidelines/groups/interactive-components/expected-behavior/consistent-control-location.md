@@ -6,13 +6,9 @@ Where an :term[interactive element] with the same purpose is used across :term[p
 
 :::except-when
 - The location changes due to a page variation or viewport change, or
-- The layout changes due to being part of a process (such as e-commerce checkout).
+- The layout changes due to being part of a process.
 :::
 
-:::ednote
-Methods &amp; best practices
-
-- Method: Establish a design system with documented rules for consistent placement of common interactive components (for example, navigation menus, search bars, and action buttons).
-- Method: Reuse the same components across pages/views instead of recreating them.
-- Best practice: If a visual position must change, document why and consider providing cues (for example, animations and labels) to reduce confusion.
+:::example
+An e-commerce checkout is an example of where the layout might change within a longer process.
 :::

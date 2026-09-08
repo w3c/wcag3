@@ -1,6 +1,7 @@
 ---
 status: developing
 synonyms:
+  - programmatic
   - programmatically
   - programmatically indicated
   - programmatically detectable

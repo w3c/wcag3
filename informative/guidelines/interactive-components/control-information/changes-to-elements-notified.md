@@ -1,3 +1,9 @@
+## Methods
+
+- Add code that clearly defines the name, role, value and state.
+- Visually indicate the names, roles, and values of the interactive element.
+- HTML: HTML tags or ARIA
+
 ## Tests
 
 <b>Procedure</b>

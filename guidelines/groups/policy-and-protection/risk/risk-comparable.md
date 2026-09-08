@@ -3,7 +3,7 @@ status: exploratory
 type: foundational
 ---
 
-Use of assistive technology, accessible alternative versions, accessibility-related modifications of digital content, and accessibility-related settings do not expose people with disabilities to additional risk. 
+Use of :term[assistive technology], accessible alternative versions, accessibility-related modifications of :term[content], and accessibility-related settings do not expose people with disabilities to additional risk. 
 
 :::applies-when
 - The :term[content] displays or requires entry of personal or sensitive information.

@@ -6,7 +6,7 @@ type: foundational
 All :term[content] that can be accessed by other input modalities can be accessed using :term[keyboard interface] only.
 
 :::note
-All content includes content made available via hovers, right clicks, etc.
+All content includes content made available via mechanisms including but not limited to hovers, right clicks.
 :::
 
 :::note

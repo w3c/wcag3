@@ -46,18 +46,22 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
   function addSummaryMarkers() {
     document.querySelectorAll(".summary").forEach(function (node) {
-      var parentHeader = findHeading(node.parentElement);
-      var summaryHeader = node.querySelector("summary");
-      var extraTitle = "";
-      if (summaryHeader.textContent.toLowerCase() != "summary")
-        extraTitle = " - " + summaryHeader.textContent;
-      summaryHeader.innerHTML =
+      const parentHeader = findHeading(node.parentElement);
+      const summaryEl = node.querySelector("summary");
+      let extraTitle = "";
+      if (summaryEl.textContent.toLowerCase() != "summary")
+        extraTitle = " - " + summaryEl.textContent;
+      summaryEl.innerHTML =
         "Plain language summary of <q>" + textNoDescendant(parentHeader) + "</q>" + extraTitle;
 
-      var el = document.createElement("p");
-      el.className = "summaryEnd";
-      el.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
-      node.appendChild(el);
+      const nonNormativeEl = document.createElement("p");
+      nonNormativeEl.innerHTML = "<em>This summary is non-normative.</em>";
+      summaryEl.after(nonNormativeEl);
+
+      const endEl = document.createElement("p");
+      endEl.className = "summaryEnd";
+      endEl.innerHTML = "End of summary for <q>" + textNoDescendant(parentHeader) + "</q>";
+      node.appendChild(endEl);
     });
   }
 
@@ -73,12 +77,14 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     var statusKeys = Object.keys(statusLabels);
     statusKeys.forEach(function (status) {
       var headingSelector = '[data-status="' + status + '"] > .header-wrapper';
-      var headings = document.querySelectorAll(headingSelector);
-      headings.forEach(function (heading) {
+      var wrappers = document.querySelectorAll(headingSelector);
+      wrappers.forEach(function (wrapper) {
         var statusMarker = document.createElement("span");
         statusMarker.classList.add("status-marker");
         statusMarker.innerHTML = sentenceCase(status);
-        heading.firstElementChild.insertAdjacentElement("beforeend", statusMarker);
+        // Target the heading itself, not firstElementChild, since moveGuidelineSelfLink
+        // may have already relocated the self-link before the heading
+        findHeading(wrapper).insertAdjacentElement("beforeend", statusMarker);
       });
 
       var dfnSelector = '[data-status="' + status + '"] > dfn';
@@ -95,6 +101,14 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
   function addGuidelineText() {
     document.querySelectorAll(".guideline h4 bdi.secno").forEach((el) => {
       el.textContent = "Guideline " + el.textContent;
+    });
+  }
+
+  function moveGuidelineSelfLink() {
+    document.querySelectorAll(".guideline > .header-wrapper").forEach(function (wrapper) {
+      const heading = wrapper.querySelector("h4");
+      const selfLink = wrapper.querySelector(":scope > a.self-link");
+      if (heading && selfLink) heading.insertAdjacentElement("beforebegin", selfLink);
     });
   }
 
@@ -118,14 +132,66 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
   function addRequirementType() {
     const attributeName = "data-requirement-type-label";
     document.querySelectorAll(`[${attributeName}]`).forEach(function (requirementEl) {
-      const preText = document.createElement("span");
-      preText.classList.add("requirement-type");
-      preText.textContent = requirementEl.getAttribute(attributeName) + ": ";
-
       const heading = requirementEl.querySelector("h5");
-      heading.insertAdjacentElement("afterbegin", preText);
+      const wrapper = heading.closest(".header-wrapper");
+
+      // Build an hgroup to take the place of ReSpec's div.header-wrapper
+      const hgroup = document.createElement("hgroup");
+      hgroup.className = wrapper.className;
+      while (wrapper.firstChild) hgroup.appendChild(wrapper.firstChild);
+
+      // Add the requirement type after the heading
+      const typeEl = document.createElement("p");
+      typeEl.id = heading.id + "-type";
+      typeEl.classList.add("requirement-type");
+      typeEl.textContent = requirementEl.getAttribute(attributeName);
+      hgroup.appendChild(typeEl);
+
+      // Complete the .header-wrapper replacement
+      wrapper.replaceWith(hgroup);
+
+      // Incorporate the provision type into the heading accName
+      heading.setAttribute("aria-labelledby", heading.id + " " + typeEl.id);
+
+      // Set the provision status as the link’s accDesc
+      const link = heading.querySelector("a");
+      if (link) {
+        const describedby = [];
+        const statusMarker = heading.querySelector(".status-marker");
+        if (statusMarker) {
+          statusMarker.id = heading.id + "-status";
+          describedby.push(statusMarker.id);
+        }
+        describedby.push(typeEl.id);
+        link.setAttribute("aria-describedby", describedby.join(" "));
+      }
+
+      // hgroup only permits heading ~ p, so relocate ReSpec's self-link
+      const selfLink = hgroup.querySelector(":scope > a.self-link");
+      if (selfLink) hgroup.insertAdjacentElement("beforebegin", selfLink);
 
       requirementEl.removeAttribute(attributeName);
+    });
+  }
+
+  /**
+   * Expands permalink labels to include the entire content of each section's heading,
+   * rather than only "Permalink for Section <number/letter>".
+   * In cases where the heading still begins with a section number/letter this will
+   * still include the word "Section", but in other cases it will not,
+   * i.e. when the section number is preceded by another word (e.g. "Guideline")
+   * or is omitted entirely (e.g. for provisions).
+   */
+  function overridePermalinkLabels() {
+    document.querySelectorAll(".self-link").forEach((el) => {
+      const sectionEl = el.closest("section");
+      if (!sectionEl) return; // Occurs for e.g. permalinks inside dfn-panel
+
+      const headingContent = sectionEl.querySelector("h2, h3, h4, h5, h6").textContent.trim();
+      el.setAttribute(
+        "aria-label",
+        `Permalink for ${/^[A-Z0-9]\./.test(headingContent) ? "Section " : ""}${headingContent}`
+      );
     });
   }
 
@@ -352,10 +418,10 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
   respecConfig = {
     // specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-    specStatus: "ED",
+    specStatus: "WD",
     //crEnd:                "2012-04-30",
     //perEnd:               "2013-07-23",
-    //publishDate: "2026-03-03",
+    publishDate: "2026-09-10",
 
     // the specifications short name, as in https://www.w3.org/TR/short-name/
     shortName: "wcag-3.0",
@@ -383,17 +449,16 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       },
       {
         name: "Alastair Campbell",
-        mailto: "acampbell@nomensa.com",
-        company: "Nomensa",
-        companyURI: "https://www.nomensa.com/",
+        mailto: "alastair.campbell@thisisgain.com",
+        company: "Gain",
+        companyURI: "https://www.thisisgain.com/",
         w3cid: 44689,
       },
       {
-        name: "Chuck Adams",
-        mailto: "charles.adams@oracle.com",
-        company: "Oracle",
-        companyURI: "https://www.oracle.com/",
-        w3cid: 104852,
+        name: "Adam Page",
+        mailto: "adam.page@hilton.com",
+        company: "Invited Expert",
+        w3cid: 120738,
       },
       {
         name: "Kevin White",
@@ -439,6 +504,12 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     ],
 
     formerEditors: [
+      {
+        name: "Chuck Adams",
+        company: "Oracle",
+        companyURI: "https://www.oracle.com/",
+        w3cid: 104852,
+      },
       {
         name: "Jeanne Spellman",
         mailto: "jspellman@spellmanconsulting.com",
@@ -493,13 +564,18 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
     maxTocLevel: 4,
 
-    preProcess: [addSummaryMarkers, addEmptyGuidelineEdNote, adjustDfnData],
+    preProcess: [addEmptyGuidelineEdNote, adjustDfnData],
     postProcess: [
+      addSummaryMarkers,
       adjustNormativity,
       removeDraftMethodLinks,
       removeRequirementNum,
       addGuidelineText,
+      moveGuidelineSelfLink,
       addRequirementType,
+      overridePermalinkLabels,
+      // Status markers are added after overriding permalink labels,
+      // as they affect heading text
       addStatusMarkers,
       numberNotes,
       renumberExamples,
@@ -551,6 +627,17 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
         title:
           "Ergonomics of human-system interaction—Part 391: Requirements, analysis and compliance test methods for the reduction of photosensitive seizures",
         publisher: "International Standards Organization",
+      },
+      "iso-639-2023": {
+        "authors": [
+            "ISO/TC 37/SC 2"
+        ],
+        "href": "https://www.iso.org/standard/74575.html",
+        "title": "Code for individual languages and language groups",
+        "publisher": "ISO",
+        "status": "International Standard",
+        "date": "2023",
+        "isoNumber": "ISO 639:2023"
       },
     },
   };

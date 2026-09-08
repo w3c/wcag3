@@ -3,4 +3,4 @@ status: exploratory
 type: supplemental
 ---
 
-Copying of content is not prevented.
+Copying of :term[content] is not prevented.

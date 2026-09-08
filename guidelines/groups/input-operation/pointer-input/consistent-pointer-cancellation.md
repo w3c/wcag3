@@ -3,7 +3,7 @@ status: developing
 type: supplemental
 ---
 
-The :term[method] of :term[pointer] cancellation is consistent for each type of interaction within a set of :term[pages]/:term[views].
+The method of :term[pointer] cancellation is consistent for each type of interaction within a set of :term[pages]/:term[views].
 
 :::except-when
 - It is :term[essential] to be different.

@@ -3,4 +3,8 @@ status: developing
 type: foundational
 ---
 
-:term[Processes], including authentication, can be completed without a :term[cognitive function test].
+:term[Processes] can be completed without a :term[cognitive function test].
+
+:::example
+User authentication or login.
+:::

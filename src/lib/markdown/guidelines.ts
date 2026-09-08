@@ -31,12 +31,6 @@ function expectGuidelineFileType(
     file.fail(`${directiveName} expected at ${expectedType} level but found at ${type} level`);
 }
 
-/** Fails validation if the given node does not exclusively contain an unordered list. */
-function expectDirectiveWithUnorderedList(file: VFile, node: ContainerDirective) {
-  if (node.children.length !== 1 || node.children[0].type !== "list" || node.children[0].ordered)
-    file.fail(`${node.name} is expected to contain only an unordered list`);
-}
-
 const isTermFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, "guidelines", "terms"));
 
 /** Adds standard editor's note to terms with empty content. */
@@ -56,13 +50,41 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
 };
 
 /**
- * Prepends a paragraph before the given node, containing the given text in bold (`<b>`).
+ * Checks whether the given node is a list with a single item.
+ * Returns the list item if these conditions are satisfied.
+ */
+function findSingleListItem(child: ContainerDirective["children"][number]) {
+  if (child.type === "list" && child.children.length === 1) return child.children[0];
+}
+
+/**
+ * Prepends a <b> element containing the given label.
+ * If the given node contains a single paragraph or list item,
+ * it prepends inline (removing the outer list if one existed);
+ * otherwise, it prepends a preceding paragraph before the node.
  **/
 function prependBoldText(node: ContainerDirective, label: string) {
-  node.children.unshift({
-    type: "html",
-    value: `<p><b>${label}</b></p>`,
-  });
+  const singleListItem = findSingleListItem(node.children[0]);
+  if (singleListItem) node.children.splice(0, 1, ...singleListItem.children);
+
+  const firstChild = node.children[0];
+  if (firstChild.type === "paragraph") {
+    if ("value" in firstChild.children[0]) {
+      // When prepending text, ensure the first letter in existing text is lowercase
+      firstChild.children[0].value = firstChild.children[0].value.replace(/[a-z]/i, (str) =>
+        str.toLowerCase()
+      );
+    }
+    firstChild.children.unshift({
+      type: "html",
+      value: `<b>${label}</b> `,
+    });
+  } else {
+    node.children.unshift({
+      type: "html",
+      value: `<p><b>${label}</b></p>`,
+    });
+  }
 }
 
 const customDirectives: RemarkPlugin = () => (tree, file) => {
@@ -81,32 +103,14 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which core requirements apply?</summary>",
         });
-      } else if (isGuideline && node.name === "user-needs") {
-        expectGuidelineFileType(file, "guideline", ":::user-needs");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "user-needs" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
-        });
       } else if (isGuideline && node.name === "applies-when") {
         expectGuidelineFileType(file, "provision", ":::applies-when");
-        expectDirectiveWithUnorderedList(file, node);
 
         prependBoldText(node, "Applies when");
-        if (parent && typeof index !== "undefined") {
-          parent.children = [
-            // Place applies-when content first, then discard container node
-            ...node.children,
-            ...parent.children.slice(0, index),
-            ...parent.children.slice(index + 1),
-          ];
-        }
+        if (parent && typeof index !== "undefined")
+          parent.children.splice(index, 1, ...node.children);
       } else if (isGuideline && node.name === "except-when") {
         expectGuidelineFileType(file, "provision", ":::except-when");
-        expectDirectiveWithUnorderedList(file, node);
 
         if (
           parent &&

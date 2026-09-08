@@ -4,11 +4,11 @@ type: foundational
 ---
 
 The presentation of :term[text] style properties can be adjusted, without loss of content or functionality, to meet the @@ [values to be determined] for:
-* Typeface
-* Font width
-* Text decoration
-* Capitalization
-* Automatic end-of-line hyphenation
+* typeface
+* font width
+* text decoration
+* capitalization
+* automatic end-of-line hyphenation
 
 :::note
 The requirement is that the text is manipulable and the style attributes can be overridden.

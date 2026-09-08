@@ -1,3 +1,7 @@
+## Methods
+
+* Provide a warning for triggers and provide an option without the triggers.
+
 ## Tests
 
 <b>Procedure</b>

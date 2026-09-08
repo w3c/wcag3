@@ -17,10 +17,3 @@ Examples of pointers which do not always show the pointer indicator:
 - An eye-tracking interface highlights the element under the gaze of the user, but otherwise does not have a pointer indicator. 
 - A game where you use the pointer to move the entire view around a virtual environment.
 :::
-
-:::note
-Methods &amp; best practices:
-
-- Method: Interactive elements are highlighted when the pointer is on the element. 
-For example, a set of image-links are shown, and the one under the pointer is highlighted with an outline or size-change.
-:::

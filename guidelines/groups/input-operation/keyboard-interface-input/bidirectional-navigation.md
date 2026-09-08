@@ -6,14 +6,7 @@ type: foundational
 The keyboard interface can always move forward to the next interactive element and back to the previous interactive element.
 
 :::note
-Although keyboard navigation is required to be bidirectional, it is not required that it be symmetrical, even though this is usually best practice.
-:::
-
-:::note
-Methods &amp; best practices:
-
-- Method: Use standard HTML to create interactive elements.
-- Avoid modifying the tab order to be in only one direction.
+Although keyboard navigation is required to be bidirectional, it is not required that it be symmetrical, even though this is usually recommended practice.
 :::
 
 :::example

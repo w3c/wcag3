@@ -12,7 +12,13 @@ Sentences do not include :term[nested clauses].
 :::
 
 :::example
-(Fail) 'The teacher was surprised that the student who did well on yesterday's test was absent today.'
+The sentence:
 
-(Pass) 'The teacher was surprised that the student was absent today. This was unexpected because he did well on yesterday's test.'
+> "The teacher was surprised that the student who did well on yesterday's test was absent today."
+
+Includes the nested clause "who did well on yesterday's test" of the clause "was surprised that the student ... was absent today".
+
+This could be written without the nested clause as:
+
+> "The teacher was surprised that the student was absent today. This was unexpected because he did well on yesterday's test."
 :::
