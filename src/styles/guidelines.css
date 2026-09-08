@@ -77,27 +77,27 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	flex-direction: column;
 	gap: 0.25rem;
 	margin-block-end: 1rem;
+}
 
-	> * {
-		margin: 0;
-	}
+.requirement hgroup > * {
+	margin: 0;
+}
 
-	.requirement-type {
-		order: -1;
-	}
+.requirement hgroup .requirement-type {
+	order: -1;
+}
 
-	h5 {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: start;
-		gap: 1ch;
-		margin-block: 0;
-		font-size: 1.2em;
-	}
+.requirement hgroup h5 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 1ch;
+	margin-block: 0;
+	font-size: 1.2em;
+}
 
-	.status-marker {
-		margin-inline-start: 0;
-	}
+.requirement hgroup .status-marker {
+	margin-inline-start: 0;
 }
 
 :is(.guideline, .requirement) > :is(p, ul, ol) {
@@ -252,22 +252,20 @@ svg:not(:root) {
 
 /* Extend ReSpec’s .self-link styles to customized structure */
 
-:is(.guideline) {
-	a.self-link {
-		position: absolute;
-		inset: 1.35rem calc(100% + 0.5rem) auto auto;
-		color: inherit;
-		font-size: 1rem;
-		opacity: .5;
+:is(.guideline) a.self-link {
+	position: absolute;
+	inset: 1.35rem calc(100% + 0.5rem) auto auto;
+	color: inherit;
+	font-size: 1rem;
+	opacity: .8;
+}
 
-		&::before {
-			content: "§";
-			text-decoration: none;
-			color: inherit;
-		}
-	}
+:is(.guideline) a.self-link::before {
+	content: "§";
+	text-decoration: none;
+	color: inherit;
+}
 
-	:is(.requirement) a.self-link {
-		inset-block-start: 3rem;
-	}
+:is(.guideline) :is(.requirement) a.self-link {
+	inset-block-start: 3rem;
 }
