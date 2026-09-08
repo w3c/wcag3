@@ -1,5 +1,7 @@
 ---
 children:
+  - text-orientation-controllable
+  - text-annotations-controllable
   - blocks-of-text-readable-minimum
   - text-style-readable-minimum
   - text-contrast-sufficient-minimum
