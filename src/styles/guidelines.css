@@ -257,7 +257,7 @@ svg:not(:root) {
 	inset: 1.35rem calc(100% + 0.5rem) auto auto;
 	color: inherit;
 	font-size: 1rem;
-	opacity: .5;
+	opacity: .8;
 }
 
 :is(.guideline) a.self-link::before {
