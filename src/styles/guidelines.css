@@ -1,11 +1,20 @@
+:root {
+	--diminished-text: color-mix(in srgb, var(--text) 75%, transparent 25%);
+}
+
 caption {
 	visibility: hidden;
 }
 :not(.head) > details:not(.issue) {
+	clear: both;
 	padding: 1em;
-	color: #404040;
 	border: medium solid #d9d9d9;
-	background-color: #F3F3F3;
+	background-color: var(--tocsidebar-bg);
+	margin-block:1em;
+}
+
+.darkmode :not(.head) > details:not(.issue) {
+	border-color: #444;
 }
 summary::after {
 	display: inline-block;
@@ -35,7 +44,7 @@ summary::after {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-	word-wrap: normal !important;  
+	word-wrap: normal !important;
 }
 
 .howto-link {
@@ -45,6 +54,12 @@ summary::after {
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
 }
+
+.requirement {
+	margin-block: 2rem;
+	padding-block-start: 1.5rem;
+}
+
 .requirement h4, .requirement h5 {
 	font-style: normal;
 	font-weight: bold;
@@ -52,11 +67,40 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 .requirement .requirement-type {
 	font-size: 90%;
-	color: #404040;
+	color: var(--diminished-text);
+	font-weight: 700;
 }
 
-:is(.guideline, .requirement, .body-wrapper) > :is(p, ul, ol) {
-	font-size: 110%;
+.requirement hgroup {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin-block-end: 1rem;
+}
+
+.requirement hgroup > * {
+	margin: 0;
+}
+
+.requirement hgroup .requirement-type {
+	order: -1;
+}
+
+.requirement hgroup h5 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 1ch;
+	margin-block: 0;
+	font-size: 1.2em;
+}
+
+.requirement hgroup .status-marker {
+	margin-inline-start: 0;
+}
+
+:is(.guideline, .requirement) > :is(p, ul, ol) {
 	margin-top: 0;
 }
 
@@ -66,20 +110,29 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 @media (min-width: 768px) {
-	.guideline,
 	.guideline .requirement {
-		margin-left: 4em;
+		margin-left: 2rem;
+	}
+
+	.provision-body {
+		font-size: 1.1rem;
+		margin-left: 2rem;
 	}
 }
 
 .guideline h3, .requirement h4, .requirement h5 {
 	width: 100%;
-	margin-bottom: 0;
+	margin-bottom: .5em;
 	margin-top: .4em;
 }
-.guideline h3, .guideline h4 {
-font-size: 110%;
-color: black;
+.guideline h3 {
+	font-size: 110%;
+	color: var(--text);
+}
+
+.guideline h4 {
+	font-size: 1.4em;
+	color: var(--text);
 }
 
 .guideline p {
@@ -99,12 +152,11 @@ h5, h6 {
 	font-style: normal !important;
 	margin-top: 1em;
 	margin-bottom: 0;
-
 }
 
 .methods h5, .errors h5, .rating h5 {
 	font-size: 100%;
-	color: #005A9C;
+	color: var(--heading-text);
 }
 caption {
 	font-style: normal !important;
@@ -134,7 +186,9 @@ caption {
 .screenshot {
 	width: 400px;
 }
+
 .note {
+	clear: both;
 	overflow: visible !important;
 }
 .marker {
@@ -148,44 +202,40 @@ section {
 	margin-bottom: 4em;
 }
 
-#guidelines :is(h2, h3, h4, h5, h6) {
+#guidelines :is(h2, h3, h4) {
 	margin-top: 1em;
 }
 
-
-@media (min-width: 768px) { 
-	.guideline .body-wrapper {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-	}
-}
-
 .doclinks {
-	margin-left: 0.2em;
-}
-
-.doclinks a {
-	display: inline-block;
-	outline: 0;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 0.5em;
 	padding: 5px 10px;
-	font-size: 90%;
-	line-height: 1.5;
 	border-radius: 2px;
 	border: 1px solid #ccc;
-	text-decoration: none;
-	color: #333 !important;
+	color: var(--diminished-text);
 }
-
-.doclinks a:focus, .doclinks a:hover {
-	color: #141414;
-	background-color: #f2f2f2;
-	border-color: #adadad;
+.darkmode .doclinks {
+	border-color: #555;
 }
-
-.doclinks a:active {
-	outline: 0;
-	background-image: none;
-	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+.doclinks a[href] {
+	color: var(--diminished-text);
+	text-underline-offset: 0.125em;
+}
+.doclinks a[href], .doclinks a[href]:hover {
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-decoration-color: currentColor;
+}
+.doclinks a[href]:hover, .doclinks a[href]:focus {
+	color: var(--text);
+}
+.doclinks svg {
+	padding-inline-end: 0.5em;
+	margin-block-start: 0;
+}
+.doclinks span {
+	font-size: 1rem;
 }
 
 svg:not(:root) {
@@ -198,4 +248,24 @@ svg:not(:root) {
 	fill: currentColor;
 	vertical-align: middle;
 	margin-top: -.25em;
+}
+
+/* Extend ReSpec’s .self-link styles to customized structure */
+
+:is(.guideline) a.self-link {
+	position: absolute;
+	inset: 1.35rem calc(100% + 0.5rem) auto auto;
+	color: inherit;
+	font-size: 1rem;
+	opacity: .8;
+}
+
+:is(.guideline) a.self-link::before {
+	content: "§";
+	text-decoration: none;
+	color: inherit;
+}
+
+:is(.guideline) :is(.requirement) a.self-link {
+	inset-block-start: 3rem;
 }

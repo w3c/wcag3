@@ -11,16 +11,5 @@ The user can choose to always have a visible :term[pointer] indicator.
 :::
 
 :::note
-This is primarily aimed at eye-tracking and touch-screens, where it is useful for the user to be able to have a visible indicator, but it wouldn't be universal (i.e., it might get in the way for some users).
-:::
-
-:::tests
-**Procedure**
-
-For each pointer indicator:
-1. Check the settings of the :term[platform] or :term[conformance scope] for the ability to have an always-visible pointer indicator.
-
-**Expected results**
-
-- #1 is true.
+This is primarily aimed at eye-tracking and touch-screens, where it is useful for the user to be able to have a visible indicator, but it wouldn't be universal. This aims to avoid it being in the way for some users.
 :::

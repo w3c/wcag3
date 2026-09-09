@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: npm
           node-version-file: .nvmrc
@@ -41,7 +41,7 @@ jobs:
           curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@explainer.tar -o dist/client/explainer/index.html -f --retry 3
           curl https://www.w3.org/publications/spec-generator/?type=respec -F file=@requirements.tar -o dist/client/requirements/index.html -f --retry 3
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist/client
 
@@ -54,4 +54,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

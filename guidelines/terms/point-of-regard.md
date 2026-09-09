@@ -7,7 +7,7 @@ synonyms:
 position in rendered :term[content] that the user is presumed to be viewing, of which the dimensions can vary
 
 :::example
-It can be a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport), or a point (e.g. a moment during an audio rendering or a cursor position in a graphical rendering), or a range of text (e.g. focused text).
+It can be a two-dimensional area (for example, content rendered through a two-dimensional graphical viewport), or a point (for example, a moment during an audio rendering or a cursor position in a graphical rendering), or a range of text (for example, focused text).
 :::
 
 :::note

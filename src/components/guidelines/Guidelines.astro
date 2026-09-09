@@ -1,11 +1,8 @@
 ---
-import {
-  computeGuidelineTitle,
-  computeProvisionTypeLabel,
-  groupsTree,
-} from "@/lib/guidelines";
+import { computeGuidelineTitle, computeProvisionTypeLabel, groupsTree } from "@/lib/guidelines";
 
-import EntryText from "./EntryText.astro";
+import GuidelineContent from "./GuidelineContent.astro";
+import ProvisionContent from "./ProvisionContent.astro";
 ---
 
 {
@@ -14,8 +11,7 @@ import EntryText from "./EntryText.astro";
       <h3>{computeGuidelineTitle(group)}</h3>
       {group.data.guidelines.map((guideline) => (
         <section class="guideline" data-status={guideline.data.status || undefined}>
-          <h4>{computeGuidelineTitle(guideline)}</h4>
-          <EntryText entry={guideline} />
+          <GuidelineContent guideline={guideline} />
           {guideline.data.provisions.map((provision) => (
             <section
               class="requirement"
@@ -23,8 +19,7 @@ import EntryText from "./EntryText.astro";
               data-requirement-type-label={computeProvisionTypeLabel(provision)}
               data-skip={provision.skippable}
             >
-              <h5>{computeGuidelineTitle(provision)}</h5>
-              <EntryText entry={provision} />
+              <ProvisionContent provision={provision} />
             </section>
           ))}
         </section>
