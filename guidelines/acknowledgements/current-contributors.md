@@ -57,6 +57,7 @@
 - Poornima Badhan Subramanian (Invited Expert)
 - Rachael Bradley Montgomery (Library of Congress)
 - Rashmi Katakwar (Invited Expert)
+- Sam Hobson (Intopia)
 - Scott O'Hara (Microsoft Corporation)
 - Shadi Abou-Zahra (Amazon)
 - Shawn Thompson (Shared Services Canada)
