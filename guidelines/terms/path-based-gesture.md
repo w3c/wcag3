@@ -1,6 +1,5 @@
 ---
 status: developing
-title: Path-based gesture
 ---
 
 gesture that depends on the path of the pointer input and not just its endpoints
