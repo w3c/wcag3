@@ -5,7 +5,7 @@ title: Multi-step process review
 ---
 
 [Title, role, or organization] asserts that:
-* A complete list of steps in a multi-step process, or another representation that provides equivalent understanding of the process structure, is provided when appropriate to support user understanding and orientation within the process.
+* A complete list of :term[steps] in a :term[multi-step process], or another representation that provides equivalent understanding of the process structure, is provided when appropriate to support user understanding and orientation within the process.
 
 ::assertion-required
 * Title, role, or organization making the assertion
