@@ -3,7 +3,7 @@ status: developing
 title: multi-step process
 ---
 
-A pre-defined set of two or more steps designed to achieve an outcome.
+A pre-defined set of two or more :term[steps] designed to achieve an outcome.
 
 :::note
 The process may be presented within a single page, across multiple pages, screens, views, dialogs, or any combination thereof.
