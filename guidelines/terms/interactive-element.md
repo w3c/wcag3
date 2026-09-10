@@ -2,7 +2,7 @@
 status: developing
 ---
 
-element whose purpose is to that can accept input from a user
+element whose purpose is to accept input from a user
 
 :::example
 - Buttons,
