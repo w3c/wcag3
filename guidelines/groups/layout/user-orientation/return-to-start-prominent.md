@@ -1,5 +1,5 @@
 ---
-type: best practice
+type: recommended practice
 status: developing
 ---
 

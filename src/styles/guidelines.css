@@ -11,10 +11,10 @@ caption {
 	border: medium solid #d9d9d9;
 	background-color: var(--tocsidebar-bg);
 	margin-block:1em;
+}
 
-	.darkmode & {
-		border-color: #444;
-	}
+.darkmode :not(.head) > details:not(.issue) {
+	border-color: #444;
 }
 summary::after {
 	display: inline-block;
@@ -72,32 +72,32 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 .requirement hgroup {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-block-end: 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin-block-end: 1rem;
+}
 
-  > * {
-    margin: 0;
-  }
+.requirement hgroup > * {
+	margin: 0;
+}
 
-  .requirement-type {
-		order: -1;
-  }
+.requirement hgroup .requirement-type {
+	order: -1;
+}
 
-  h5 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 1ch;
-    margin-block: 0;
-    font-size: 1.2em;
-  }
+.requirement hgroup h5 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 1ch;
+	margin-block: 0;
+	font-size: 1.2em;
+}
 
-  .status-marker {
-    margin-inline-start: 0;
-  }
+.requirement hgroup .status-marker {
+	margin-inline-start: 0;
 }
 
 :is(.guideline, .requirement) > :is(p, ul, ol) {
@@ -209,39 +209,33 @@ section {
 .doclinks {
 	display: inline-flex;
 	flex-direction: column;
-	gap: .5em;
+	gap: 0.5em;
 	padding: 5px 10px;
 	border-radius: 2px;
 	border: 1px solid #ccc;
 	color: var(--diminished-text);
-
-	.darkmode & {
-		border-color: #555;
-	}
-
-	a[href] {
-		color: var(--diminished-text);
-		text-underline-offset: 0.125em;
-
-		&, &:hover {
-			text-decoration-skip-ink: auto;
-			text-decoration-thickness: 1px;
-			text-decoration-color: currentColor;
-		}
-
-		&:hover, &:focus {
-			color: var(--text);
-		}
-	}
-
-	svg {
-		padding-inline-end: .5em;
-		margin-block-start: 0;
-	}
-
-	span {
-		font-size: 1rem;
-	}
+}
+.darkmode .doclinks {
+	border-color: #555;
+}
+.doclinks a[href] {
+	color: var(--diminished-text);
+	text-underline-offset: 0.125em;
+}
+.doclinks a[href], .doclinks a[href]:hover {
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-decoration-color: currentColor;
+}
+.doclinks a[href]:hover, .doclinks a[href]:focus {
+	color: var(--text);
+}
+.doclinks svg {
+	padding-inline-end: 0.5em;
+	margin-block-start: 0;
+}
+.doclinks span {
+	font-size: 1rem;
 }
 
 svg:not(:root) {
@@ -258,22 +252,20 @@ svg:not(:root) {
 
 /* Extend ReSpec’s .self-link styles to customized structure */
 
-:is(.guideline) {
-	a.self-link {
-		position: absolute;
-		inset: 1.35rem calc(100% + 0.5rem) auto auto;
-		color: inherit;
-		font-size: 1rem;
-		opacity: .5;
+:is(.guideline) a.self-link {
+	position: absolute;
+	inset: 1.35rem calc(100% + 0.5rem) auto auto;
+	color: inherit;
+	font-size: 1rem;
+	opacity: .8;
+}
 
-		&::before {
-			content: "§";
-			text-decoration: none;
-			color: inherit;
-		}
-	}
+:is(.guideline) a.self-link::before {
+	content: "§";
+	text-decoration: none;
+	color: inherit;
+}
 
-	:is(.requirement) a.self-link {
-		inset-block-start: 3rem;
-	}
+:is(.guideline) :is(.requirement) a.self-link {
+	inset-block-start: 3rem;
 }

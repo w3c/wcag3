@@ -2,7 +2,7 @@
 
 - Use standard HTML to create interactive elements.
 
-## Best Practices
+## Recommended Practices
 
 - Avoid modifying the tab order to be in only one direction.
 

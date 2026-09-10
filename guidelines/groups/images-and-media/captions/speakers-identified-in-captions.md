@@ -1,7 +1,6 @@
 ---
 type: supplemental
 status: developing
-issueLabel: Speakers identified
 ---
 
 Speakers are identified understandably within all :term[captions].

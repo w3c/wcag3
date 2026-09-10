@@ -2,7 +2,6 @@
 type: foundational
 status: developing
 title: Transcripts equivalent (prerecorded)
-issueLabel: Media alternatives equivalent
 ---
 
 Equivalent :term[transcripts] are available for :term[audio] and :term[video] content.

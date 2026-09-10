@@ -1,10 +1,5 @@
 import type { GetStaticPaths } from "astro";
-import {
-  getCollection,
-  getEntry,
-  type CollectionEntry,
-  type CollectionKey,
-} from "astro:content";
+import { getCollection, getEntry, type CollectionEntry, type CollectionKey } from "astro:content";
 import { load } from "cheerio";
 import noop from "lodash/noop";
 import sortBy from "lodash/sortBy";
@@ -145,8 +140,9 @@ export function incorporateNormativeContent(entry: InformativeGuideline | Inform
     return `<h2>Guideline</h2><div class="normative">${$normative.html()}</div>${entry.rendered.html}`;
 
   const $ = load(
-    `<h2>${computeProvisionTypeLabel(entry.normativeEntry)}</h2>` +
-      `<div class="normative">${$normative.html()}</div>${entry.rendered.html}`,
+    `<h2>${computeProvisionTypeLabel(entry.normativeEntry)} <span class="status-marker">${
+      entry.normativeEntry.data.status
+    }</span></h2><div class="normative">${$normative.html()}</div>${entry.rendered.html}`,
     null,
     false
   );
@@ -217,9 +213,9 @@ export const informativeRelatedTypes = {
     slug: "act-rules",
     title: "ACT Rules",
   },
-  bestPractices: {
-    slug: "best-practices",
-    title: "Best Practices",
+  recommendedPractices: {
+    slug: "recommended-practices",
+    title: "Recommended Practices",
   },
   methods: {
     slug: "methods",
@@ -261,7 +257,7 @@ export const generateInformativeRelatedGetStaticPaths =
 
 /**
  * Object hash mapping provision slugs to arrays of IDs for each informative relation type
- * (e.g. actRules, bestPractices, methods).
+ * (e.g. actRules, recommendedPractices, methods).
  * Used to reverse-map each provision to the other types of related informative entries,
  * whereas those related entries are where the mappings are defined in frontmatter.
  */

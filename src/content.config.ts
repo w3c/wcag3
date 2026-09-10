@@ -71,7 +71,9 @@ export const collections = {
       needsAdditionalResearch: z.boolean().optional(),
       status: statusSchema.default("exploratory"),
       title: z.string().optional(),
-      type: z.enum(["foundational", "supplemental", "assertion", "best practice"]).optional(),
+      type: z
+        .enum(["foundational", "supplemental", "assertion", "recommended practice"])
+        .optional(),
     }),
   }),
   tags: defineCollection({
@@ -111,8 +113,8 @@ export const collections = {
     schema: relatedSchema,
   }),
 
-  bestPractices: defineCollection({
-    loader: glob({ pattern: "*/*.md", base: "./informative/best-practices" }),
+  recommendedPractices: defineCollection({
+    loader: glob({ pattern: "*/*.md", base: "./informative/recommended-practices" }),
     schema: relatedSchema,
   }),
 
