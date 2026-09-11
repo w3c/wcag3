@@ -8,6 +8,7 @@ CVD
 FTE
 ICT
 NOAA
+SSTM
 TOTP
 UAAG
 UCS
@@ -21,6 +22,9 @@ Lauriat
 ReSpec
 Spellman
 Yesilada
+Detweiler
+Omanson
+Ameritech
 
 # Words
 dyscalculia
@@ -37,10 +41,12 @@ oxymorons
 personalizable
 scriptable
 strobing
+subsite
 
 # Intentional compound words
 # (since useCompoundWords is too permissive)
 colorspace
+deafblind
 frontmatter
 headshot
 mousedown

@@ -1,27 +1,40 @@
 ---
 /**
  * @file Layout used for index pages for informative materials related to provisions,
- * e.g. ACT Rules, Best Practices, Methods
+ * e.g. ACT Rules, Recommended Practices, Methods
  */
 
 import { getCollection } from "astro:content";
 import capitalize from "lodash/capitalize";
 
-import { detectTechnology, informativeRelatedTypes, technologies } from "@/lib/informative";
+import {
+  detectTechnology,
+  informativeRelatedTypes,
+  technologies,
+  type InformativeRelatedCollection,
+} from "@/lib/informative";
 
 import InformativeLayout from "./InformativeLayout.astro";
 
 interface Props {
-  collectionName: "actRules" | "bestPractices" | "methods";
+  collectionName: InformativeRelatedCollection;
 }
 
 const { collectionName } = Astro.props;
 
-const collection = await getCollection(collectionName);
+const collection = (await getCollection(collectionName)).sort((a, b) => {
+  if (a.data.title < b.data.title) return -1;
+  if (a.data.title > b.data.title) return 1;
+  return 0;
+});
 const relatedInformativeType = informativeRelatedTypes[collectionName];
 ---
 
-<InformativeLayout breadcrumbSegments={[relatedInformativeType]} title={`All WCAG 3 ${relatedInformativeType.title}`} withNav={false}>
+<InformativeLayout
+  breadcrumbSegments={[relatedInformativeType]}
+  title={`All WCAG 3 ${relatedInformativeType.title}`}
+  withNav={false}
+>
   {
     technologies.map((technology) => (
       <>

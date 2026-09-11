@@ -13,14 +13,22 @@ import { fileURLToPath } from "url";
 
 import { remarkPlugins, rehypePlugins } from "./src/lib/markdown";
 
-const GH_REPO = process.env.GITHUB_REPOSITORY; // Only set during GitHub action
+/** Generates base path for informative URLs for PR previews vs. WAI publication vs. local dev. */
+function generateBase() {
+  if (process.env.GITHUB_REPOSITORY) {
+    const [, repo] = process.env.GITHUB_REPOSITORY.split("/");
+    return `/${repo}/`;
+  }
+  if (process.env.WCAG_PUBLISH) return "/WAI/WCAG3/";
+  return "/";
+}
 
 // https://astro.build/config
 export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
-  base: `${GH_REPO ? GH_REPO.slice(GH_REPO.indexOf("/")) : ""}/`,
+  base: generateBase(),
   devToolbar: { enabled: false },
   trailingSlash: "always",
   markdown: {

@@ -50,14 +50,27 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
 };
 
 /**
+ * Checks whether the given node is a list with a single item.
+ * Returns the list item if these conditions are satisfied.
+ */
+function findSingleListItem(child: ContainerDirective["children"][number]) {
+  if (child.type === "list" && child.children.length === 1) return child.children[0];
+}
+
+/**
  * Prepends a <b> element containing the given label.
- * If the given node contains a single paragraph, it prepends inline;
+ * If the given node contains a single paragraph or list item,
+ * it prepends inline (removing the outer list if one existed);
  * otherwise, it prepends a preceding paragraph before the node.
  **/
 function prependBoldText(node: ContainerDirective, label: string) {
+  const singleListItem = findSingleListItem(node.children[0]);
+  if (singleListItem) node.children.splice(0, 1, ...singleListItem.children);
+
   const firstChild = node.children[0];
   if (firstChild.type === "paragraph") {
     if ("value" in firstChild.children[0]) {
+      // When prepending text, ensure the first letter in existing text is lowercase
       firstChild.children[0].value = firstChild.children[0].value.replace(/[a-z]/i, (str) =>
         str.toLowerCase()
       );
@@ -90,33 +103,12 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which core requirements apply?</summary>",
         });
-      } else if (isGuideline && node.name === "user-needs") {
-        expectGuidelineFileType(file, "guideline", ":::user-needs");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "user-needs" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
-        });
-      } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "provision", ":::tests");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "tests" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
-        });
       } else if (isGuideline && node.name === "applies-when") {
         expectGuidelineFileType(file, "provision", ":::applies-when");
 
         prependBoldText(node, "Applies when");
-        if (parent && typeof index !== "undefined") {
-          parent.children.splice(index!, 1, ...node.children);
-        }
+        if (parent && typeof index !== "undefined")
+          parent.children.splice(index, 1, ...node.children);
       } else if (isGuideline && node.name === "except-when") {
         expectGuidelineFileType(file, "provision", ":::except-when");
 
@@ -132,7 +124,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
 
         prependBoldText(node, "Except when");
         if (parent && typeof index !== "undefined")
-          parent.children.splice(index!, 1, ...node.children);
+          parent.children.splice(index, 1, ...node.children);
       }
     } else if (node.type === "leafDirective") {
       if (isGuideline && node.name === "assertion-required") {
