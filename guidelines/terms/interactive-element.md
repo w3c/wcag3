@@ -1,5 +1,7 @@
 ---
 status: developing
+synonyms:
+  - interactive elements
 ---
 
 element whose purpose is to accept input from a user
