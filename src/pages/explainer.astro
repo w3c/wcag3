@@ -488,11 +488,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility to require additional tiers in certain situations to comply with regulations. Additional information and suggestions on reporting progress toward conformance will be available in informative documents on testing and reporting, as well as in recommendations to regulators.</p>
 
-        <h3>Additional Concepts</h3>    
-        <p>Key concepts AGWG considered and continues to explore are the following:</p>
+        <h3>Additional concepts</h3>    
+        <p>The AG Working Group has considered and continues to explore other concepts for evaluating and reporting accessibility:</p>
         <ul>
-            <li>Issue severity ratings: Severity ratings could contribute towards scoring and prioritization.</li>
-            <li>Adjectival ratings: Adjectival Ratings allow test results to go beyond Pass or Fail to show progress towards a goal or exceeding a goal. Example of possible adjectival ratings are:
+            <li><b>Issue severity ratings:</b> Rating accessibility issues according to the severity of their impact could contribute toward scoring and prioritization.</li>
+            <li><b>Achievement ratings:</b> Rating test results to show incremental progress toward a goal or recognize when a goal is exceeded allows restults to show more than a binary Pass or Fail. Examples of possible achievement ratings include:
                 <ul>
                     <li>Fail, Pass, Exceptional; or</li>
                     <li>Fail, Progress, Pass, Better, Exceptional.</li>
@@ -503,20 +503,19 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <section id="accessibility-supported">
             <h3>Only accessibility-supported ways of using technologies</h3>
 
-            <p>The concept of "accessibility-supported" is to account for the variety of user agents and scenarios. How does an author know that a particular technique for meeting a guideline will work in practice with user agents that are used by real people?</p>
+            <p>"Accessibility-supported" accounts for the variety of user agents and assistive technologies that people use. A method or technique might meet a requirement in principle but still not work for people with disabilities if the user agents or assistive technologies they use do not support it.</p>
 
-            <p>The intent is for the responsibility of testing with user agents to vary depending on the level of conformance.</p> 
+            <p>A method or technique is considered accessibility supported when it is supported by users' assistive technologies and by accessibility features in browsers and other user agents.</p>
 
-            <p>At the conformance level, authors can assume that methods and techniques provided by WCAG 3 work. At higher reporting levels, the author may need to test that a technique works, or check that available user agents meet the requirement, or a combination of both.</p>
+            <p>At Tier 3, the conformance tier, authors can assume that methods and techniques provided by WCAG 3 work. This approach means the working group will ensure that methods and techniques included in WCAG 3 have reasonably wide and international support from user agents. The working group will also provide sufficient supported methods and techniques for authors to meet each guideline.</p> 
 
-            <p>This approach means the working group will ensure that methods and techniques included do have reasonably wide and international support from user agents, and there are sufficient techniques to meet each guideline.</p>
+            <p>At higher reporting tiers, authors may need to test that a method or techniqe works, check that available user agents meet the requirement, or use a combination of both approaches.</p>
 
-            <p>The intent is that WCAG 3 will use a content management system to support tagging of methods/techniques with support information. There should also be a process for interested parties to provide information.</p>
+            <p>At higher reporting tiers, an "accessibility support set" is used to define which user agents and assistive technologies an author tests with. It can be included in a conformance claim and enables authors to use methods or techniques that are not provided by WCAG 3.</p>
 
-            <p>An "accessibility support set" is used at higher levels of conformance to define which user agents and assistive technologies you test with. It would be included in a conformance claim, and enables authors to use techniques that are not provided with WCAG 3.</p>
+            <p>The intent is that WCAG 3 will use a content management system to tag methods and techniques with support information. There should also be a process for interested parties to provide support information.</p>
 
-            <p>An exception for long-present bugs in assistive technology is still under discussion.</p>
-
+            <p>An exception for long-standing bugs in assistive technologies is still under discussion.</p>
         </section>
     </section>
 
