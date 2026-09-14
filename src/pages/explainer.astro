@@ -411,31 +411,51 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
     <section id="conformance-models" data-status="developing">
         <h2>Conformance approach</h2>
-        <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a> are about improving how people and organizations have used conformance in WCAG 2. Conformance itself is a simple concept: Does the content in scope meet the requirements of the specification? It is binary, and that simplicity can make it difficult to work with as human-digital interfaces can be complex and varied. </p>
+        <p>Several of the <a href="https://www.w3.org/TR/wcag-3.0-requirements/">requirements for WCAG 3.0</a> aim to improve upon the WCAG 2 conformance model to make it easier for people and organizations to use. Conformance itself is a simple concept: does the content in scope meet the requirements of the specification? Conformance is binary, but human-digital interfaces can be complex and varied, which can make a simple pass-or-fail model difficult to apply. </p>
 
-        <p>The AG Working Group is exploring a model that keeps the conformance approach simple, but provides much more informative advice about testing, reporting, and using WCAG 3 in policy or regulations.</p>
+        <p>The AG Working Group is exploring a model that keeps conformance simple while providing additional informative advice about testing, reporting, and using WCAG 3 in policy or regulations.</p>
 
-        <p>Conformance will mean meeting all of the Core Requirements, but that is just the start. There will also be reporting tiers above and below the conformance level. On the way to conformance there are sets of requirements you can meet to show progress. These are "Avoid physical harm" and "Foundational access". Above the conformance level there will be WCAG 3 "Bronze", "Silver" and "Gold" reporting tiers which demonstrate improved accessibility. These tiers build on conformance to include accessibility assertions and recommended practices.</p>
+        <h3> Conformance model</h3>
 
-        <p>Using reporting tiers instead of conformance levels allows for two improvements:</p>
-        <ol>
-            <li>When a product is not conformant, there are sets of requirements you can use to measure and show progress.</li>
-            <li>As conformance is a base not a ceiling, the tiers above conformance show incorporation of recommended practices and accessibility maturity. It is possible that regulators might encourage or enforce the use of these tiers for some types of organizations.</li>
-        </ol>
+        <p>The WCAG 3 conformance model uses six tiers to demonstrate progressive accessibility before reaching conformance, at conformance, and beyond conformance.</p>
 
-        <p>Each core requirement will have a tag that relates to levels you can progress through to meet conformance. Those tags are:</p>
         <ul>
-            <li><strong>Physical harm</strong> - not meeting the requirement can cause someone with a disability immediate physical harm.</li>
-            <li><strong>Risk</strong> - not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-            <li><strong>Barrier</strong> - not meeting the requirement can prevent someone with a disability from proceeding. Some of this might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Friction</strong> - not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+            <li>Tiers 1 and 2 show progress toward conformance.</li>
+            <li>Tier 3 is conformance, where all core requirements are met.</li>
+            <li>Tiers 4, 5, and 6 show progress beyond conformance using supplemental requirements and assertions.</li>
         </ul>
+        
+        <p>Using tiers before a product reaches conformance allows progress to be demonstrated. The tiers above conformance recognize recommended practices and accessibility maturity beyond the minimum required for conformance. Regulators and other policymakers could choose to require these particular tiers for some types of organizations.</p>
 
-        <p>To get to the "Avoid physical harm" tier you would need to meet all the core requirements tagged with "Physical harm" and "Risk".  To get to the "Foundational Access" tier, you would need to meet the core requirements for the Avoid physical harm tier and those marked "Barrier."</p>
+        <h4>Core requirements for conformance</h4>
 
-            
-       <p>The tiers above conformance will be defined and met using supplemental requirements and assertions. Meeting a certain number or percentage of the supplemental requirements and assertions enables you to claim that tier.</p>
+        <p>Core requirements are tagged to indicate which must be met at each tier leading to conformance. The tags are:</p>
 
+        <ul>
+            <li><b>Physical harm</b> &mdash; not meeting the requirement can cause someone with a disability immediate physical harm.</li>
+            <li><b>Risk</b> &mdash; not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. This might be due to necessary assistive technology support or inherent aspects of the design.</li>
+            <li><b>Friction</b> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+        </ul>
+        <h4>Requirements for each tier</h4>
+
+        <p>Each tier is cumulative, building on and including the requirements from the tiers before it.</p>
+
+        <h5>Below conformance</h5>
+
+        <p>To reach Tier 1, Avoid Physical Harm, you must meet all core requirements tagged "Physical Harm" and "Risk".</p>
+
+        <p>To reach Tier 2, Foundational Access, you must also meet all core requirements tagged "Barrier".</p>
+
+        <h5>At conformance</h5>
+
+        <p>To reach Tier 3, Conformance, you must also meet all core requirements tagged "Friction". At this tier, all core requirements are met.</p>
+
+        <h5>Above conformance</h5>
+
+        <p>The tiers above conformance build on Tier 3.</p>
+
+        <p>Tier 4, Bronze, and Tier 5, Silver, include specified numbers of supplemental requirements and assertions about content. Tier 6, Gold, also includes assertions about the organization.</p>
 
         <h3>Alternative approach - Scoring</h3>
         <p class="ednote">AGWG is considering an alternative approach to tagging core requirements, which is a percentage score. This section is an alternative to the section above and is not included in the WCAG 3 draft. We invite comments on whether you think this would be a better approach to conformance.</p>
