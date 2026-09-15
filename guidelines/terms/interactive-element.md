@@ -17,6 +17,14 @@ element whose purpose is to accept input from a user
 An interactive element remains an interactive element even when it is inoperable. For example, a disabled button is an inoperable interactive element.
 :::
 
+:::example
+Examples of interactive elements that are not operable include but are not limited to:
+
+- A disabled button
+- A read-only text input
+- A link that is hidden within a collapsed accordion.
+:::
+
 :::note
 Performing an action on a non-interactive element does not make that element interactive. For example, copying, cutting and pasting, dragging or selecting text or other elements does not make them interactive.
 :::
