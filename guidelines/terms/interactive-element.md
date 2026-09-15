@@ -10,7 +10,7 @@ element whose purpose is to accept input from a user
 - Buttons,
 - Controls,
 - Input fields,
-- Elements that support dragging within them (for example, a slider or a field that supports dragging, but not the text that is dragged)
+- Elements that can be dragged, like the handle of a slider or items in a sortable list.
 :::
 
 :::note
