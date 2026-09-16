@@ -64,7 +64,7 @@ On a retail website, the current step in the checkout flow is identified through
 
 ### Passed example 3
 
-On a retail website, the current step in the checkout flow is identified through a heading that is equivalent to the active state in the stepper component, even if the labeling is slightly different.
+On a retail website, the current step in the checkout flow is identified through a heading that is equivalent to the active state in the ordered list of steps, even if the labeling is slightly different.
 
 ```
 <ol>
