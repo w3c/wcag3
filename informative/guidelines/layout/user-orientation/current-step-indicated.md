@@ -1,6 +1,6 @@
 ## Tests
 
-<i>Ensure the current step is explicitly labeled as the current step</i>
+### Ensure the current step is explicitly labeled as the current step
 
 <b>Procedure</b>
 
@@ -13,7 +13,7 @@ For each multi-step process:
 
 #2 and #3 are true
 
-<i>Ensure the current step is visually and programmatically indicated</i>
+### Ensure the current step is visually and programmatically indicated
 
 <b>Procedure</b>
 
@@ -25,7 +25,7 @@ For each multi-step process:
 <b>Expected results</b>
 #2 and #3 are true
 
-<i>Ensure the current step is identified through a page heading</i>
+### Ensure the current step is identified through a page heading
 
 <b>Procedure</b>
 
