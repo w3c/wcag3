@@ -9,7 +9,7 @@ This rule checks that in a multi-step process, the current step has an explicit 
 ## Applicability
 
 This rule applies to any multi-step process where:
-* one or more steps are identified as part of a sequence, and
+* one or more steps are identified as part of a set, and
 * a step is designated as the current step
 
 ## Expectation
