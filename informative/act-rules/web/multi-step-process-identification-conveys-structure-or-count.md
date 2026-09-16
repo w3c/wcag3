@@ -14,7 +14,7 @@ This rule applies to pages/views that are part of a multi-step process where ste
 
 The identification of steps conveys at least one of the following:
 * the total number of steps in the process (e.g., "Step 1 of 4", "2 / 4"), or
-* the structure of the process (e.g., ordered sequence of steps or stepper navigation representing progression through a process)
+* the structure of the process (e.g., ordered sequence of steps or navigation component representing progression through a process)
 
 ## Expectation 2
 
