@@ -113,7 +113,7 @@ On a retail website, the checkout flow highlights the current step using a diffe
 ```
 <ol>
 	<li>
-		<a href="step1.html" style="color:#006400">Shipping Address</a>
+		<a href="step1.html" style="color:darkgreen">Shipping Address</a>
 	</li>
 	<li>
 		<a href="step2.html">Billing Address</a>
