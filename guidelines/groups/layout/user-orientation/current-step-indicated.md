@@ -3,4 +3,4 @@ type: foundational
 status: developing
 ---
 
-The current :term[step] within a :term[multi-step process] is indicated by a text or by a mechanism that conveys its current status both visually and programmatically.
+Within a :term[multi-step process], there is a visual and :term[programmatic] indication of which :term[step] is current.
