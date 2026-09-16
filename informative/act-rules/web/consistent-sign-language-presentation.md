@@ -28,7 +28,7 @@ Consistency includes aspects such as placement, size, styling, and how contextua
 * Sign language interpretation is provided and intended for user consumption
 * Content items identified as related are intended to be experienced as a group
 
-## Accessibility Support
+## Accessibility support
 
 There are no known accessibility support issues.
 
@@ -84,7 +84,7 @@ Interpreter visibility remains the same throughout.
   </div>
 ```
 
-### Passed example 5
+#### Passed example 5
 
 Consistent handling of sound cues across media.
 
