@@ -5,7 +5,8 @@
 <b>Procedure</b>
 
 For each multi-step process:
-1. Identify the current step. Verify that the step includes an explicit textual label or accessible text alternative indicating its status (e.g., "current", "active", "Step X of Y")
+1. Identify the current step.
+2. Verify that the step includes an explicit textual label or accessible text alternative indicating its status (e.g., "current", "active", "Step X of Y")
 3. Verify that this label is part of the visible content of the step and included in the accessibility tree
 
 <b>Expected results</b>
