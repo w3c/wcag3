@@ -133,7 +133,7 @@ On a retail website, the checkout flow highlights the current step using a diffe
 On a retail website, users are made aware of the multi-step checkout process through a stepper component. However, there is no programmatic indication of the user’s position within the overall process. Only the total number of steps and the label of the current step are provided, without any explicit indication of progress within the sequence.
 
 ```
-<ol class="stepper">
+<ol>
 	<li class="completed">1</li>
 	<li class="active">2</li>
 	<li>3</li>
