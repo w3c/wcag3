@@ -1,6 +1,6 @@
 ## Tests
 
-<i>Ensure that steps are identified and convey number or structure</i>
+### Ensure that steps are identified and convey number or structure
 
 <b>Procedure</b>
 
