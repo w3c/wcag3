@@ -108,7 +108,7 @@ On a retail website, the checkout flow highlights the current step using an unde
 
 ### Inapplicable example 1
 
-The homepage of a website is not a multi-step process; therefore, it contains no steps and, consequently, no active step.
+The homepage of a website is not a multi-step process; therefore, it contains no steps and, consequently, no current step.
 
 ### Inapplicable example 2
 
