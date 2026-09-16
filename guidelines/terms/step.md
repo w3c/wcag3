@@ -4,7 +4,7 @@ synonyms:
   - steps
 ---
 
-A distinct part of a :term[process].
+distinct part of a :term[process]
 
 :::note
 A step contributes directly to achieving the intended outcome of the process.
