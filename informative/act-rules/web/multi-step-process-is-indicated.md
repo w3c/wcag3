@@ -14,7 +14,7 @@ This rule applies to pages/views that are part of a multi-step process, except w
 
 The page/view indicates that it is part of a multi-step process through at least one of the following mechanisms:
 * an explicit step indicator (e.g., "Billing Address - Step 2 of 4", "Billing Address - Step 2", "Billing Address - Step 2/4"), or
-* a multi-step interface component (e.g., stepper, progress indicator, ordered step list)
+* a multi-step interface component (e.g., progress indicator, ordered step list)
 
 ## Expectation 2
 
