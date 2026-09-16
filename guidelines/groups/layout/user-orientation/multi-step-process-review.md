@@ -14,7 +14,7 @@ title: Multi-step process review
 
 ::assertion-recommended
 * Criteria used to determine when a full step list is appropriate or not
-* Description of how the full list of steps is represented (e.g., list, stepper, …)
+* Description of how the full set of steps is represented (e.g., list, progress bar)
 * Mapping of UI representation to actual process steps
 * Rationale for cases where a full list is not provided
 * Usability considerations related to cognitive load and process complexity
