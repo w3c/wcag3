@@ -130,7 +130,7 @@ On a retail website, the checkout flow highlights the current step using a diffe
 
 ### Failed example 3
 
-On a retail website, users are made aware of the multi-step checkout process through a stepper component. However, there is no programmatic indication of the user’s position within the overall process. Only the total number of steps and the label of the current step are provided, without any explicit indication of progress within the sequence.
+On a retail website, users are made aware of the multi-step checkout process through an ordered list of steps. However, there is no programmatic indication of the user’s position within the overall process. Only the total number of steps and the label of the current step are provided, without any explicit indication of progress within the sequence.
 
 ```
 <ol>
