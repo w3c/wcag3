@@ -1,7 +1,5 @@
 ---
 status: developing
-synonyms:
-  - steps
 ---
 
 distinct part of a :term[process]
