@@ -1,6 +1,6 @@
 ## Tests
 
-<i>Ensure that the position of the current step within the process is perceivable to users</i>
+### Ensure that the position of the current step within the process is perceivable to users
 
 <b>Procedure</b>
 
