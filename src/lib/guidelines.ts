@@ -122,6 +122,9 @@ export interface EntryWithTitle {
   data: { title?: string };
 }
 
+/** Prefix added to provision issue labels */
+export const provisionIssueLabelPrefix = "P - ";
+
 const computeTitle = (entry: EntryWithTitle, options: IdToTitleOptions) =>
   entry.data.title || convertIdToTitle(entry.id, options);
 
@@ -132,9 +135,17 @@ const computeTitle = (entry: EntryWithTitle, options: IdToTitleOptions) =>
 export const computeGuidelineTitle = (entry: EntryWithTitle) =>
   computeTitle(entry, { capitalize: true });
 
+/**
+ * Returns an auto-generated issue label, excluding prefix, based on a provision's title.
+ */
+export const convertProvisionTitleToIssueLabel = (entry: CollectionEntry<"provisions">) =>
+  computeGuidelineTitle(entry).replace(/,/g, "");
+
 /** Returns a provision's issue label as it should be formatted in the GitHub repository. */
 export const computeProvisionIssueLabel = (entry: CollectionEntry<"provisions">) =>
-  `P - ${capitalize(entry.data.issueLabel) || computeGuidelineTitle(entry).replace(/,/g, "")}`;
+  `${provisionIssueLabelPrefix}${
+    capitalize(entry.data.issueLabel) || convertProvisionTitleToIssueLabel(entry)
+  }`;
 
 /**
  * Returns text representation of each provision type,

@@ -1,6 +1,6 @@
 ---
 import DevLayout from "@/layouts/DevLayout.astro";
-import { computeProvisionIssueLabel } from "@/lib/guidelines";
+import { computeProvisionIssueLabel, provisionIssueLabelPrefix } from "@/lib/guidelines";
 import { getCollection } from "astro:content";
 import { exec } from "child_process";
 import { promisify } from "util";
@@ -13,7 +13,11 @@ const existingLabels: string[] = [];
 try {
   existingLabels.push(
     ...JSON.parse(
-      (await execAsync("gh label -R w3c/wcag3 list -L 500 --json name -S 'P - '")).stdout
+      (
+        await execAsync(
+          `gh label -R w3c/wcag3 list -L 500 --json name -S '${provisionIssueLabelPrefix}'`
+        )
+      ).stdout
     ).map(({ name }: { name: string }) => name)
   );
 } catch (error) {
@@ -42,13 +46,13 @@ const extraneousLabels = existingLabels.filter((label) => !provisionIssueLabels.
                 </li>
               ))}
             </ul>
+            <p>
+              These may correspond to provisions that have been added since the last WD, or to
+              provisions which have been renamed without <code>issueLabel</code> defined. The latter
+              case will be evidenced by a corresponding entry appearing in the Extraneous GitHub
+              Labels list below.
+            </p>
           </>
-          <p>
-            These may correspond to provisions that have been added since the last WD,
-            or to provisions which have been renamed without <code>issueLabel</code> defined.
-            The latter case will be evidenced by a corresponding entry appearing in the
-            Extraneous GitHub Labels list below.
-          </p>
         ) : (
           <p>
             Good news! All provision issue labels found in the ED on this branch exist in the GitHub
