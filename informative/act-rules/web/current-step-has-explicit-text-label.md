@@ -4,7 +4,7 @@ provisions:
   - current-step-indicated
 ---
 
-This rule checks that in a multi-step process, the current step has an explicit text label or accessible text alternative indicating its status.
+This rule checks that in a multi-step process, the current step has an explicit text label or accessible text alternative indicating its active status.
 
 ## Applicability
 
