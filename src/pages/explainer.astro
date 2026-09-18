@@ -72,10 +72,10 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>Goals for inclusion</h3>
         <p>The creation process for the WCAG 3 guidelines should:</p>
         <ul>
-            <li>actively recruit a diverse range of people with disabilities.</li>
-            <li>periodically evaluate inclusive features of available tooling and procedures.</li>
-            <li>facilitate global participation and feedback.</li>
-            <li>review and monitor participation and representation.</li>
+            <li>actively recruit a diverse range of people with disabilities</li>
+            <li>periodically evaluate inclusive features of available tooling and procedures</li>
+            <li>facilitate global participation and feedback</li>
+            <li>review and monitor participation and representation</li>
         </ul>
         <div class="ednote">
             <p>W3C strives to be as inclusive as possible, and has actively sought participation and input from a broad
@@ -93,8 +93,8 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h2>Out of scope</h2>
         <p>The following are out of scope for WCAG 3:</p>
         <ul>
-            <li>non-web technologies.</li>
-            <li>normative requirements for platforms, operating systems, software in the web technology stack, and components that do not themselves have a user interface.</li>
+            <li>non-web technologies</li>
+            <li>normative requirements for platforms, operating systems, software in the web technology stack, and components that do not themselves have a user interface</li>
         </ul>
     </section>
     <section id="background">
@@ -213,7 +213,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <ul><li>Core Requirements will be required to meet conformance.  This set of requirements will cover a similar, but not identical, set of needs as WCAG 2.2 Level AA. </li>
             <li>Supplemental Requirements will not be required to meet conformance, but testers or policymakers will be able to select 
                 which supplemental requirements to meet.</li>
-        </li></ul>
+        </ul>
          <p>Requirements reduce or eliminate barriers that people with disabilities experience. Requirements are designed for use 
             by developers, testers, and other technical specialists.</p>
         <p>Requirements are normative.</p>
@@ -221,7 +221,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <p>Each Requirement is associated with at least one <a>Method</a>.
             Methods are informative. Each method contains techniques for meeting the requirements, examples, resources, and sets of tests. Methods can apply to a
             specific technology, such as HTML, or can be technology-agnostic when the advice applies regardless of
-            technology. For example, the methods supporting the Clear Language guideline.</p>
+            technology. An example of this is the methods supporting the Clear Language guideline.</p>
 
         <h3>Assertions</h3>
             <p>An Assertion is a formal claim of fact, attributed to a person or organization. In WCAG 3, an
@@ -247,7 +247,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <p>Examples of procedures that may be used during implementation might include:</p>
             <ul>
                 <li>accessibility training,</li>
-                <li>full time equivalent (FTE) assignments,</li>
+                <li>full-time equivalent (FTE) assignments,</li>
                 <li>skills testing,</li>
                 <li>coordination and documentation of accessibility processes, or</li>
                 <li>setting the priority for remediation.</li>
@@ -316,7 +316,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         <h3>Recommended practices</h3>
         <p>Recommended practices reduce or eliminate barriers that people with disabilities experience. They provide important guidance that often saves time and improves accessibility, but they cannot be requirements because:
             <ul><li>they may not be objectively testable, or</li> 
-                <li>the situations to which they apply may not be clearly defined and may require a judgement call.</li>
+                <li>the situations to which they apply may not be clearly defined and may require a judgment call.</li>
             </ul></p>
                 <p>Recommended practices are informative and do not affect conformance.</p>
         </section>
@@ -376,7 +376,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             meeting that definition. For example, a view could be considered a “screen” in a mobile app or a layer of
             web content, such as a modal dialog.</p>
         <p>Task flows are a series of views that support a specified <a>user activity</a>. A task flow may include a subset of
-            items in a view or a group of views. Only the part of the views that support the user activity are included
+            items in a view or a group of views. Only the part of the views that support the user activity is included
             in a test of the task flow.</p>
 
         <p>Examples of a task flow include:</p>
@@ -417,9 +417,9 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <h3>Conformance model and reporting</h3>
 
-        <p>For content to conform to WCAG 3 it must meet all of the Core Requirements. Content may fall short of full conformance or may go beyond the Core Requirements. Reporting tiers are a way to communicate this.</p>
+        <p>For content to conform to WCAG 3 it must meet all of the core requirements. Content may fall short of full conformance or may go beyond the core requirements. Reporting tiers are a way to communicate this.</p>
 
-        <p>The WCAG 3 reporting uses six tiers to demonstrate progressive accessibility before reaching conformance, at conformance, and beyond conformance.</p>
+        <p>WCAG 3 reporting uses six tiers to demonstrate progressive accessibility before reaching conformance, at conformance, and beyond conformance.</p>
 
         <ul>
             <li>Tiers 1 and 2 show progress toward conformance.</li>
@@ -427,11 +427,11 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <li>Tiers 4, 5, and 6 show progress beyond conformance using supplemental requirements and assertions.</li>
         </ul>
         
-        <p>Reporting tiers instead of conformance levels allow for two improvements:</p>
+        <p>Using reporting tiers instead of conformance levels allows for two improvements:</p>
         
         <ol>
-            <li>For products that do not conform there are sets of requirements that can be used to demonstrate progress.</li>
-            <li>For products that do conform the tiers above conformance recognize recommended practices and accessibility maturity beyond the minimum required for conformance.</li>
+            <li>For products that do not conform, there are sets of requirements that can be used to demonstrate progress.</li>
+            <li>For products that do conform, there are recommended practices that can be used to recognize accessibility maturity beyond the minimum requirements for conformance.</li>
         </ol>
         
         <p>Regulators and other policymakers could choose to require particular tiers beyond conformance for some types of organizations.</p>
@@ -467,37 +467,56 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p>Tier 4, Bronze, and Tier 5, Silver, include specified numbers of supplemental requirements and assertions about content. Tier 6, Gold, also includes assertions about the organization.</p>
 
-        <h3>Alternative approach &mdash; scoring</h3>
+        <h3>Alternative approach</h3>
         
-        <p class="ednote">The AG Working Group is considering scoring as an alternative approach for showing progress toward conformance. This approach is not included in the WCAG 3 draft. We invite comments on whether scoring would be a better way to show progress toward and beyond conformance.</p>
+        <p class="ednote">The AG Working Group is considering an alternative approach to tagging core requirements, which is a percentage score. This section is an alternative to the section above and is not included in the WCAG 3 draft. We invite comments on whether you think this would be a better approach to conformance.</p>
 
-        <p>Scoring would provide a way to measure and report how close a product or other defined conformance scope is to conformance, or how far it progresses beyond conformance. It would not change whether something conforms: conformance would remain binary.</p>
+        <p>Products or other defined conformance scopes may not fully conform to all requirements, or they may exceed conformance requirements. The following sections on “Progress toward conformance" and "Progress beyond conformance” provide measures to allow comparison of products and to assist in tracking progress toward and beyond conformance. These sections present a method to report on progress, not on whether something conforms.</p>
 
-        <h4>Scoring for progress toward conformance</h4>
+        <h4>Progress toward conformance</h4>
 
-        <p>A score demonstrating progress toward conformance would show how close the content within a specified conformance scope is to meeting conformance.</p>
+        <p>The “progress toward conformance score” (score) shows how close the content within scope is to meeting conformance. When evaluating a specified conformance scope (for example, number of pages and/or paths), each requirement that is met counts toward the score.</p>
 
-        <p>The alternative scoring approach uses the core requirement tags described above to weight requirements when calculating the score. Within the specified conformance scope, the score would be calculated as follows:</p>
+        <p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for weighting some provisions as they contribute to the score.</p>
+
+        <h5>Core requirement tags</h5>
 
         <ul>
-            <li>Assign a weighting to each core requirement met based on its tag:</li>
-            <ul>
-               <li>3 for "Physical Harm" and "Risk"</li>
-               <li>2 for "Barrier"</li>
-               <li>1 for "Friction" and other provisions</li>
-            </ul>
-            <li>Calculate the score as the percentage of weighted core requirements and other provisions met out of the total possible weighted score.</li>
+            <li><b>Physical harm</b> &mdash; not meeting the requirement can cause someone with a disability immediate physical harm.</li>
+            <li><b>Risk</b> &mdash; not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. This might be due to necessary assistive technology support or inherent aspects of the design.</li>
+            <li><b>Friction</b> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
 
-        <p>The resulting score could be used to measure and report progress toward conformance.</p>
+        <h5>Scoring toward conformance</h5>
 
-        <h4>Scoring for progress beyond conformance</h4>
+        <p>Within the specific conformance scope, the score is calculated as follows:</p>
 
-        <p>After conformance is achieved, supplemental requirements and assertions could be used to calculate a score that exceeds conformance requirements.</p>
+        <ul>
+            <li>Assign a weighting to each provision met based on its requirement tag:</li>
+            <ul>
+               <li>3 for "Physical Harm" and "Risk" provisions</li>
+               <li>2 for "Barrier" provisions</li>
+               <li>1 for "Friction" and other provisions</li>
+            </ul>
+            <li>Calculate the score as the percentage of the weighted provisions that are met out of the total possible weighted score.</li>
+        </ul>
 
-        <p>This score could be used to determine achievement of the Bronze, Silver, and Gold tiers described above.</p>  
+        <p>The resulting score could then be used to measure and report progress toward conformance.</p>
 
-        <p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility to require additional tiers in certain situations to comply with regulations. Additional information and suggestions on reporting progress toward conformance will be available in informative documents on testing and reporting, as well as in recommendations to regulators.</p>
+        <h4>Progress beyond conformance</h4>
+
+        <p>When conformance is achieved, counting the supplemental requirements and assertions met then provides a progress beyond conformance score, leading to WCAG 3 awards.</p>
+
+        <h5>Scoring beyond conformance</h5>
+
+        <ul>
+            <li>WCAG 3 Bronze: Conformance plus [TBD count] of supplemental requirements and assertions</li>
+            <li>WCAG 3 Silver: Conformance plus [TBD greater count] of supplemental requirements and assertions</li>
+            <li>WCAG 3 Gold: Conformance plus [TBD much greater count] of supplemental requirements and assertions</li>
+        </ul>
+
+        <p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility to require additional levels in certain situations to comply with regulations. Additional information and suggestions on reporting progress toward conformance will be available in informative documents on testing and reporting, as well as in recommendations to regulators.</p>
 
         <h3>Additional concepts</h3>    
         <p>The AG Working Group has considered and continues to explore other concepts for evaluating and reporting accessibility:</p>
@@ -538,7 +557,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
         </details>
             <div class="ednote">
                 <p>It remains to be determined how to address user-generated content that has accessibility issues; and to define what minimum thresholds might be acceptable. We expect WCAG 3 to provide this guidance within individual guidelines and to support testing for conformance. The AG Working Group is looking at alternative requirements to apply to user-generated content guideline by guideline, and is seeking feedback on what would serve as reasonable requirements on how to best support accessibility in user-generated content with known (or anticipated) accessibility issues. </p>
-                <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance for providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a> - “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user generated alternative text. </p>
+                <p>One example would be “alternative text”. The Authoring Tool Accessibility Guidelines (ATAG) has specific guidance for providing a mechanism for alternative text. The <a href="https://www.w3.org/TR/ATAG20/#gl_b23">ATAG 2.0 Guideline B.2.3</a> - “Assist authors with managing alternative content for non-text content” could be adapted to provide specific, guideline-related guidance for user-generated alternative text. </p>
                 <p>The working group intends to more thoroughly address the contents and the location of an accessibility statement in a future draft.</p>
             </div>
         <p>Web content publishers may include content provided by the users of their digital products. We refer to such content as “<a href="#user-generated-content">user-generated content</a>”.</p>
@@ -590,7 +609,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
                     evaluation</dfn></dt>
             <dd><p>Evaluation conducted using software tools, typically evaluating code-level features and applying
                     heuristics for other tests.</p>
-                <p>Automated testing is contrasted with other types of testing that involve human judgement or
+                <p>Automated testing is contrasted with other types of testing that involve human judgment or
                     experience. [=Semi-automated evaluation=] allows machines to guide humans
                     to areas that need inspection. The emerging field of testing conducted via
                     machine learning is not included in this definition.</p></dd>
@@ -606,7 +625,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
             <dt><dfn data-lt="equity" class="lint-ignore">Equity</dfn></dt>
             <dd>
-                <p>the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
+                <p>the outcome of processes and actions that ensure the spectrum of human reality obtains what is needed to participate, not solely access. As equity relates to WCAG, it is about the impact the standards/guidelines have on people with disabilities, along with actually including people with disabilities in the work. </p> 
             </dd>
             <dt><dfn>Evaluation</dfn></dt>
             <dd>The process of examining content for <a>conformance</a> to these
@@ -620,7 +639,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             </dd>
             <dt><dfn data-lt="Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested">Human evaluation</dfn></dt>
             <dd>
-                <p>Evaluation conducted by a human, typically to apply human judgement to tests
+                <p>Evaluation conducted by a human, typically to apply human judgment to tests
                     that cannot be fully <a>automatically evaluated</a>.</p>
                 <p>Human evaluation is contrasted with <a>automated evaluation</a> which is done entirely by
                     machine, though it includes <a>semi-automated evaluation</a> which allows
@@ -654,7 +673,7 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
             <dt><dfn data-lt="Reliable">Reliability</dfn></dt>
             <dd>
                 <p>The reproducibility and consistency of scores, that is, the extent to which they are the same when evaluations of the same resources are carried out in different contexts (different tools, different people, different goals, different time). This would be particularly useful to ensure that similar results are achieved by different testers. It would also be useful to see if different testers would select the same path or off-path decisions. Representative sampling tests also fit in this category.
-                <a href="https://www.w3.org/WAI/RD/wiki/Benchmarking_Web_Accessibility_Metrics.html">Benchmarking Web Accessibility Metrics</a>, Vigo, Lopes, O Connor, Brajnik, Yesilada 2011. </p>
+                <a href="https://www.w3.org/WAI/RD/wiki/Benchmarking_Web_Accessibility_Metrics.html">Benchmarking Web Accessibility Metrics</a>, Vigo, Lopes, O'Connor, Brajnik, Yesilada 2011. </p>
             </dd>
             <dt><dfn>Semi-automated evaluation</dfn></dt>
             <dd>
