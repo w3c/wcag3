@@ -1,9 +1,10 @@
 ## Tests
 
-<b>Procedure</b>
+### Procedure
 
-For each instance of functionality that uses a pointer:
-1. Check that pointer speed is not the only way to achieve any functionality.
+For each instance where varying pointer speed is used to achieve some functionality:
+1. Check that varying pointer speed is not relied on to achieve any functionality.
 
-<b>Expected results</b>
+### Expected results
+
 - #1 is true.
