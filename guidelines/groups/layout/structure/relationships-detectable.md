@@ -3,4 +3,4 @@ type: supplemental
 status: developing
 ---
 
-:term[Relationships of meaning] between elements are :term[programmatically determinable].
+:term[Relationships of meaning] between elements are :term[programmatically detectable].
