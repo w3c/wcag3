@@ -34,15 +34,29 @@ There are no known accessibility support issues.
 
 #### Passed example 1
 
-Video with sign language interpretation in a overlay box in the bottom right.
+Video size is reduced slightly with a border added to the right and bottom of the frame. Sign language interpretation in a overlay box in the bottom right with minimal overlap on the main video frame.
+
+```html
+  <video controls src="lesson1.mp4"></video>
+  <div class="video-border-right-bottom sign-interpreter bottom-right"></div>
+```
 
 #### Passed example 2
 
 Sign language interpretation is provided in a completely separate window.
 
+```html
+  <video controls src="lesson2.mp4"></video>
+  <a href="lesson2-sign.mp4" target="_blank">Sign interpretation (opens in a new window)</a>
+```
+
 #### Passed example 3
 
-Sign language interpreter is position to the right of the speaker. Both are positioned to the right of the presentation. All can be seen in the video frame.
+Sign language interpreter stands to the right of the speaker. Both are positioned to the right of the presentation. All can be seen in the video frame.
+
+```html
+  <video controls src="lesson3.mp4"></video>
+```
 
 ### Failed
 
@@ -50,10 +64,30 @@ Sign language interpreter is position to the right of the speaker. Both are posi
 
 Video with sign language interpretation opens sign language layer over the right hand side of the video
 
+```html
+  <video controls src="lesson4.mp4"></video>
+  <div class="sign-interpreter right large"></div>
+```
+
 #### Failed example 2
 
 Sign language interpretation is provided in a fixed position within the page/view
 
+```html
+  <style>
+    video {
+      position: fixed;
+      right: 3em;
+      top: 3em;
+    }
+  </style>
+  <video controls src="lesson5.mp4"></video>
+```
+
 ### Failed example 3
 
 Sign language interpreter is standing in front of the presentation.
+
+```html
+  <video controls src="lesson6.mp4"></video>
+```
