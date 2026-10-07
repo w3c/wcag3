@@ -1,5 +1,5 @@
 ---
-type: core
+type: foundational
 status: exploratory
 ---
 
