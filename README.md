@@ -1,5 +1,4 @@
-# wcag3
-WCAG 3
+# WCAG 3
 
 There is a [presentation of the process the group](https://docs.google.com/presentation/d/14qG2f-ZkhFDqox_qmzqC5tCUt1xJaumkJS2l5GaD-3o/edit#slide=id.p) uses for addressing issues and updates.
 
@@ -13,7 +12,7 @@ Editor's drafts of TR space documents are available at:
 
 ## Local Setup
 
-Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v20.
+Make sure you have [Node.js](https://nodejs.org/) installed. This has primarily been tested with v24.
 
 If you use [`fnm`](https://github.com/Schniz/fnm) or [`nvm`](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions,
 you can switch to the recommended version by typing `fnm use` or `nvm use`
@@ -31,6 +30,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build to `./dist/`                                  |
 | `npm run check`           | Check for TypeScript errors                         |
 | `npm run preview`         | Preview build locally at `localhost:4321`           |
+| `npm run publish-w3c`     | Like `build`, but with adjustments for WD and WAI   |
 | `npm run cspell`          | Check spelling (see words list in custom-words.txt) |
 
 ## Project Structure
@@ -50,8 +50,9 @@ Additional directories with special meaning:
     - `{group-name}/` - Contents of Guideline sections
       - `{guideline-name}.md` - Defines content of guideline and order of its child provisions
       - `{guideline-name}/` - Subdirectory containing provisions (e.g. requirements/assertions) under each guideline
-        - `{provision-name}.md` - Defines content of an individual requirement or assertion
+        - `{provision-name}.md` - Defines content of an individual provision
   - `terms/` - Contents of terms defined in the Glossary
+- `informative/` - contains content files for informative pages; see [Informative README](informative/README.md)
 
 ### Notable Subdirectories under `src`
 
@@ -77,17 +78,12 @@ These are available to multiple data types, as specified in each respective sect
 
 - `children` - A list containing every slug found under a parent entry's corresponding subdirectory,
   in the order they are intended to be listed in the document
-- `howto` - *Deprecated* Optional boolean or string indicating the presence of a howto page
-  for the given guideline or requirement
-  - `true` indicates the slug to reach the howto is consistent with the folder and filename of the current file
-  - A string value indicates an exact slug
-  - *This should currently be avoided until the informative documentation is revisited*
 - `issueLabel` - Optional string; specifies the issue label corresponding to a provision
   - This is only necessary when the label does not match the provision's title, e.g. if a provision is renamed after it was first published
   - Excludes the "P - " prefix
   - It may help to think of this as a "legacy title" field
 - `status` - Optional string: one of the status indicators outlined in the Explainer (in lowercase)
-- `title` - Optional title of the guideline, requirement, or term
+- `title` - Optional title of the guideline, provision, or term
   - If unspecified, this will be derived from the slug,
     capitalizing the first letter of the first word and replacing hyphens with spaces
 
@@ -116,12 +112,12 @@ provisions located in a subdirectory with the same name.
 Represents each fifth-level heading specifying an individual requirement or assertion.
 
 - Supports [common fields](#common-fields): `howto`, `issueLabel`, `status`, `title`
-  - `status` for requirements and assertions defaults to `exploratory` if not specified
+  - `status` for provisions defaults to `exploratory` if not specified
 - `needsAdditionalResearch` - Optional boolean, indicating whether to
   display a "needs additional research" editor's note
 - `tags` - Optional list of strings, referencing values in `guidelines/tags.json`
   - Make sure to surround these values in double-quotes to avoid YAML parsing errors
-- `type` - Optional string: `foundational`, `supplemental`, `assertion`, or `best practice`
+- `type` - Optional string: `foundational`, `supplemental`, `assertion`, or `recommended practice`
   - If not specified, the entry will be rendered as "Requirement"
     (with neither "Foundational" nor "Supplemental" qualification)
 
@@ -157,7 +153,7 @@ Another shared term
 :   Another shared definition
 ```
 
-### Custom Directives for Guidelines Markdown
+### Custom Directives available to both Guidelines and Informative Docs
 
 For more concrete examples, search for these directives in the repository.
 
@@ -218,29 +214,16 @@ Your content here
 :::
 ```
 
-#### User Needs
+#### Glossary Term References
 
-The following block will be transformed into a User Needs `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within guidelines.
-
-```
-:::user-needs
-Your content here
-:::
-```
-
-#### Tests
-
-The following block will be transformed into a Tests `details` element,
-with an indication that its content is non-normative.
-This is _only_ valid within requirements.
+The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
+and can be used inline within blocks of text:
 
 ```
-:::tests
-Your content here
-:::
+... is :term[programmatically determinable].
 ```
+
+### Custom Directives only available to Guidelines
 
 #### Applies when
 
@@ -267,6 +250,7 @@ a condition is true.
 ```
 
 This follows the same behavior as `:::applies-when` regarding single paragraphs vs. other cases.
+If both `:::applies-when` and `:::except-when` exist for a requirement, they must appear in that order.
 
 #### Assertions replacements
 
@@ -285,15 +269,6 @@ The following leaf directives are to be used before required and recommended doc
 ```
 
 Note that these are leaf directives, not container directives, so there is no end marker.
-
-#### Glossary Term References
-
-The text inside `:term[...]` will be transformed into a link referencing a term in the glossary,
-and can be used inline within blocks of text:
-
-```
-... is :term[programmatically determinable].
-```
 
 ## Creating New Entries
 
@@ -331,7 +306,7 @@ To create a new top-level group:
    - This is what makes the group appear in the document structure,
      and determines its order among the other top-level groups
 1. Follow the instructions below to create at least one guideline
-   within the group, and at least one requirement or assertion within
+   within the group, and at least one provision within
    each guideline
 
 ### New Guideline
@@ -351,7 +326,7 @@ To create a new guideline:
 1. Also under the group's folder (not the new subfolder),
    create a Markdown file with the same basename as the new subfolder
    (e.g. `groups/group-name/guideline-name.md`)
-   - To prevent the build from failing before any requirements or assertions are added,
+   - To prevent the build from failing before any provisions are added,
      include the following initial content:
      ```
      ---
@@ -363,29 +338,29 @@ To create a new guideline:
      ```
      We will expand `children` to a multi-line list when adding provisions.
      Note that including some content after the frontmatter is also necessary for the build to function.
-1. Follow the instructions below to create at least one requirement
+1. Follow the instructions below to create at least one provision
    or assertion within the guideline
 
-### New Requirement or Assertion
+### New Provision
 
 For illustrative purposes, this refers to the existing parent guideline as `guideline-name`,
-its parent group as `group-name`, and the new child requirement as `requirement-name`.
+its parent group as `group-name`, and the new child provision as `provision-name`.
 
 Note that the process is the same for requirements or assertions; the only difference is
 the value of `type` in the entry's frontmatter
 (see [Fields for Provisions](#provisions)).
 
 1. Under the desired guideline's folder, create a Markdown file
-   (e.g. `groups/group-name/guideline-name/requirement-name.md`)
+   (e.g. `groups/group-name/guideline-name/provision-name.md`)
 1. Edit the Markdown file for the guideline (e.g. `groups/group-name/guideline-name.md`)
    to add an entry in its `children` array for the new guideline
-   - This is what makes the requirement/assertion appear in the document structure,
+   - This is what makes the provision appear in the document structure,
      and determines its order among the other entries under the same guideline
    - Arrays in frontmatter can be expressed similarly to Markdown lists, e.g.:
    ```
    ---
    children:
-     - requirement-name
+     - provision-name
    ---
    ```
 
@@ -405,7 +380,8 @@ built code is not expected to run properly when this is active!
 
 **Default:** Unset (set to any non-empty value to enable)
 
-### `WCAG_SKIP_WIP`
+### `WCAG_PUBLISH`
 
-When set, excludes provisions that have `needsAdditionalResearch` set to `true`,
+When set, updates base paths for informative pages to target the WAI site,
+and excludes provisions that have `needsAdditionalResearch` set to `true`,
 or that have `status` set to `placeholder` or `exploratory`.

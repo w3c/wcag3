@@ -1,3 +1,7 @@
+## Intent
+
+Some things in the environment, including digital content, can cause some people harm.
+
 ## User needs
 
 * [TODO] I need to control audio shifting designed to create a perception of motion.
@@ -11,5 +15,3 @@
 * As a user who might experience harm from motion, I need to be able to complete a task when motion exists in the content, even if it’s not the specific content that I’m currently engaged with.
 * As an individual who experiences accessibility barriers due to motion, such as sensory overload and/or visual processing difficulties, I need to be able to reduce the effects of motion when needed (but have the option to use them when helpful or enjoyable) so that I can complete a flow, and help returning to a flow so that I can complete it when the effects of motion interrupt me.
 * As an individual who experiences accessibility barriers due to motion, such as sensory overload and/or visual processing difficulties, I need to be able to reduce the visual perception of objects moving when browsing content, such as scrolling the page.
-
-

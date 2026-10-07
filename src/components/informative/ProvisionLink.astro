@@ -3,9 +3,9 @@
 
 import { informativeSlug } from "@/lib/constants";
 import { provisionSlugMap } from "@/lib/guidelines";
-import { resolveInformativeRequirement, type InformativeRequirement } from "@/lib/informative";
+import { resolveInformativeProvision, type InformativeProvision } from "@/lib/informative";
 
-type Props = { entry: InformativeRequirement } | { id: string } | { slug: string };
+type Props = { entry: InformativeProvision } | { id: string } | { slug: string };
 
 if ("slug" in Astro.props && !provisionSlugMap[Astro.props.slug])
   throw new Error(`ProvisionLink: Unresolvable provision slug ${Astro.props.slug}`);
@@ -13,7 +13,7 @@ if ("slug" in Astro.props && !provisionSlugMap[Astro.props.slug])
 const provision =
   "entry" in Astro.props
     ? Astro.props.entry
-    : await resolveInformativeRequirement(
+    : await resolveInformativeProvision(
         "id" in Astro.props ? Astro.props.id : provisionSlugMap[Astro.props.slug]
       );
 if (!provision)
