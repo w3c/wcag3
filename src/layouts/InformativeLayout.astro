@@ -1,29 +1,34 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import type { ComponentProps } from "astro/types";
 
 import Breadcrumbs from "@/components/informative/Breadcrumbs.astro";
 import DraftBanner from "@/components/informative/DraftBanner.astro";
 import Header from "@/components/informative/Header.astro";
-import WaiFooter from "@/components/informative/WaiFooter.astro";
+import GlobalFooter from "@/components/informative/GlobalFooter.astro";
+import SiteFooter from "@/components/informative/SiteFooter.astro";
+import { informativeTitle } from "@/lib/constants";
+import type { InformativeCollection } from "@/lib/informative";
 
 interface Props {
   breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
+  entry?: CollectionEntry<InformativeCollection>;
   title: string;
   withNav?: boolean;
 }
 
-const { breadcrumbSegments, title, withNav = true } = Astro.props;
+const { breadcrumbSegments, entry, title, withNav = true } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>{`${title ? `${title} - ` : ""}How to Meet WCAG 3 | WAI | W3C`}</title>
+    <title>[Draft] {`${title ? `${title} - ` : ""}${informativeTitle} | WAI | W3C`}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
   </head>
-  <body dir="ltr">
+  <body dir="ltr" class="doc-note doc-draft">
     <a href="#main" class="button button--skip-link">Skip to content</a>
     <DraftBanner />
     <Header />
@@ -43,16 +48,29 @@ const { breadcrumbSegments, title, withNav = true } = Astro.props;
         )
       }
       <main id="main" class="standalone-resource__main" tabindex="-1">
-        <h1>{title || "How to Meet WCAG 3"}</h1>
+        <h1>{title || informativeTitle}</h1>
+        <section class="doc-note-box">
+          This is an in-progress draft. The content is incomplete and could change substantially.
+        </section>
         <slot />
       </main>
     </div>
-    <WaiFooter />
+    <SiteFooter entry={entry} />
+    <GlobalFooter />
   </body>
 </html>
 
 <style is:global>
   @import "@/styles/common.css";
+
+  .doc-note h1::before {
+    /* Port WAI style in dir-agnostic form */
+    margin-inline-end: 8px;
+  }
+
+  .doc-note.doc-draft {
+    border-left: solid 5px var(--gold);
+  }
 
   main {
     display: block;
@@ -81,6 +99,20 @@ const { breadcrumbSegments, title, withNav = true } = Astro.props;
 
   .box h2 {
     margin: 0;
+  }
+
+  pre {
+    padding: 1em;
+    border: 1px solid var(--line-grey);
+    background-color: var(--pure-white);
+  }
+
+  /* inline code not in a preformatted block or link */
+  :not(:is(pre, a)) > code {
+    font-size: 0.85em;
+    background: #ebebeb;
+    padding: 0 0.25em;
+    display: inline-block;
   }
 
   .button--skip-link {

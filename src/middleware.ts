@@ -2,8 +2,20 @@ import type { MiddlewareHandler } from "astro";
 import { sequence } from "astro:middleware";
 import { load } from "cheerio";
 import GithubSlugger from "github-slugger";
+import { existsSync, readFileSync } from "fs";
+import { join } from "path";
 
 import { informativeSlug } from "./lib/constants";
+
+const restrictDevAndSSR: MiddlewareHandler = async ({ isPrerendered, url }, next) => {
+  // /dev/... and non-prerendered pages should only be available when running the dev server
+  if (
+    !import.meta.env.DEV &&
+    (!isPrerendered || url.pathname.startsWith(import.meta.env.BASE_URL + "dev/"))
+  )
+    return new Response(null, { status: 404 });
+  return next();
+};
 
 const processInformative: MiddlewareHandler = async ({ url }, next) => {
   if (!url.pathname.startsWith(import.meta.env.BASE_URL + informativeSlug)) return next();
@@ -32,4 +44,16 @@ const processInformative: MiddlewareHandler = async ({ url }, next) => {
   return new Response($.html(), response);
 };
 
-export const onRequest = sequence(processInformative);
+const servePublicIndex: MiddlewareHandler = async ({ url }, next) => {
+  if (import.meta.env.DEV && url.pathname.endsWith("/")) {
+    const filePath = join(process.cwd(), "public", url.pathname, "index.html");
+    if (existsSync(filePath)) {
+      return new Response(readFileSync(filePath, "utf-8"), {
+        headers: { "Content-Type": "text/html" },
+      });
+    }
+  }
+  return next();
+};
+
+export const onRequest = sequence(servePublicIndex, restrictDevAndSSR, processInformative);
