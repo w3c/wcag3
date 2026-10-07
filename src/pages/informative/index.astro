@@ -1,6 +1,6 @@
 ---
 import InformativeLayout from "@/layouts/InformativeLayout.astro";
-import RequirementsList from "@/components/informative/RequirementsList.astro";
+import ProvisionsList from "@/components/informative/ProvisionsList.astro";
 import { informativeSlug } from "@/lib/constants";
 import {
   informativeRelatedTypes,
@@ -25,7 +25,7 @@ for (const { id } of informativeGroups) {
           {guidelinesMap[group.id].map((guideline) => (
             <li>
               <a href={guideline.id + "/"}>{guideline.title}</a>
-              <RequirementsList guideline={guideline} />
+              <ProvisionsList guideline={guideline} />
             </li>
           ))}
         </ul>
