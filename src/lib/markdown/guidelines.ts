@@ -3,18 +3,20 @@ import type { ContainerDirective } from "mdast-util-directive";
 import { visit } from "unist-util-visit";
 import type { VFile } from "vfile";
 
-const groupsPath = `guidelines/groups`;
-const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/${groupsPath}`);
+import { join, sep } from "path";
 
-type GuidelineFileType = "group" | "guideline" | "requirement";
+const groupsPath = `guidelines/groups`;
+const isGuidelineFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, groupsPath));
+
+type GuidelineFileType = "group" | "guideline" | "provision";
 
 function getGuidelineFileType(file: VFile): GuidelineFileType | null {
   if (!isGuidelineFile(file)) return null;
-  const remainingPath = file.dirname!.replace(`${file.cwd}/${groupsPath}/`, "");
-  const segments = remainingPath?.split("/");
+  const remainingPath = file.dirname!.replace(join(file.cwd, groupsPath) + sep, "");
+  const segments = remainingPath?.split(sep);
   if (segments.length === 0) return "group";
   if (segments.length === 1) return "guideline";
-  if (segments.length === 2) return "requirement";
+  if (segments.length === 2) return "provision";
   return null;
 }
 
@@ -29,7 +31,7 @@ function expectGuidelineFileType(
     file.fail(`${directiveName} expected at ${expectedType} level but found at ${type} level`);
 }
 
-const isTermFile = (file: VFile) => file.dirname?.startsWith(`${file.cwd}/guidelines/terms`);
+const isTermFile = (file: VFile) => file.dirname?.startsWith(join(file.cwd, "guidelines", "terms"));
 
 /** Adds standard editor's note to terms with empty content. */
 const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
@@ -48,14 +50,27 @@ const addEmptyTermNote: RemarkPlugin = () => (tree, file) => {
 };
 
 /**
+ * Checks whether the given node is a list with a single item.
+ * Returns the list item if these conditions are satisfied.
+ */
+function findSingleListItem(child: ContainerDirective["children"][number]) {
+  if (child.type === "list" && child.children.length === 1) return child.children[0];
+}
+
+/**
  * Prepends a <b> element containing the given label.
- * If the given node contains a single paragraph, it prepends inline;
+ * If the given node contains a single paragraph or list item,
+ * it prepends inline (removing the outer list if one existed);
  * otherwise, it prepends a preceding paragraph before the node.
  **/
 function prependBoldText(node: ContainerDirective, label: string) {
+  const singleListItem = findSingleListItem(node.children[0]);
+  if (singleListItem) node.children.splice(0, 1, ...singleListItem.children);
+
   const firstChild = node.children[0];
   if (firstChild.type === "paragraph") {
     if ("value" in firstChild.children[0]) {
+      // When prepending text, ensure the first letter in existing text is lowercase
       firstChild.children[0].value = firstChild.children[0].value.replace(/[a-z]/i, (str) =>
         str.toLowerCase()
       );
@@ -88,35 +103,14 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           type: "html",
           value: "<summary>Which core requirements apply?</summary>",
         });
-      } else if (isGuideline && node.name === "user-needs") {
-        expectGuidelineFileType(file, "guideline", ":::user-needs");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "user-needs" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>User Needs</summary><p><em>This section is non-normative.</em></p>",
-        });
-      } else if (isGuideline && node.name === "tests") {
-        expectGuidelineFileType(file, "requirement", ":::tests");
-
-        const data = node.data || (node.data = {});
-        data.hName = "details";
-        data.hProperties = { class: "tests" };
-        node.children.unshift({
-          type: "html",
-          value: "<summary>Tests</summary><p><em>This section is non-normative.</em></p>",
-        });
       } else if (isGuideline && node.name === "applies-when") {
-        expectGuidelineFileType(file, "requirement", ":::applies-when");
+        expectGuidelineFileType(file, "provision", ":::applies-when");
 
         prependBoldText(node, "Applies when");
-        if (parent && typeof index !== "undefined") {
-          parent.children.splice(index!, 1, ...node.children);
-        }
+        if (parent && typeof index !== "undefined")
+          parent.children.splice(index, 1, ...node.children);
       } else if (isGuideline && node.name === "except-when") {
-        expectGuidelineFileType(file, "requirement", ":::except-when");
+        expectGuidelineFileType(file, "provision", ":::except-when");
 
         if (
           parent &&
@@ -130,11 +124,11 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
 
         prependBoldText(node, "Except when");
         if (parent && typeof index !== "undefined")
-          parent.children.splice(index!, 1, ...node.children);
+          parent.children.splice(index, 1, ...node.children);
       }
     } else if (node.type === "leafDirective") {
       if (isGuideline && node.name === "assertion-required") {
-        expectGuidelineFileType(file, "requirement", "::assertion-required");
+        expectGuidelineFileType(file, "provision", "::assertion-required");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -144,7 +138,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
           },
         ];
       } else if (isGuideline && node.name === "assertion-recommended") {
-        expectGuidelineFileType(file, "requirement", "::assertion-recommended");
+        expectGuidelineFileType(file, "provision", "::assertion-recommended");
         const data = node.data || (node.data = {});
         data.hName = "p";
         data.hChildren = [
@@ -153,7 +147,7 @@ const customDirectives: RemarkPlugin = () => (tree, file) => {
             value: "Recommended internal documentation (Informative):",
           },
         ];
-      } else file.fail(`Unrecognized leaf directive ::${node.name}`);
+      }
     }
   });
 };

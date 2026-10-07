@@ -7,8 +7,8 @@ status: developing
 :::example
 Examples of things that would _not_ be considered simple pointer inputs:
 
-- Double clicks
-- Dragging movements or :term[gestures]
-- Any use of multipoint input or gestures
-- The simultaneous use of a mouse and keyboard
+- double clicks
+- dragging movements or :term[gestures]
+- any use of multipoint input or gestures
+- the simultaneous use of a mouse and keyboard
 :::

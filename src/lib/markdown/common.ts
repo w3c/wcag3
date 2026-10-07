@@ -1,4 +1,4 @@
-import type { RemarkPlugin } from "@astrojs/markdown-remark";
+import type { RehypePlugin, RemarkPlugin } from "@astrojs/markdown-remark";
 import { visit } from "unist-util-visit";
 
 const customDirectives: RemarkPlugin = () => (tree) => {
@@ -38,6 +38,25 @@ const directivePrefixMap = {
 } as const;
 
 const checkDirectives: RemarkPlugin = () => (tree, file) => {
+  const content = "" + file.value;
+  const lines = content.split(/\r?\n/);
+  const blockDirectiveStartCount = lines.reduce(
+    (total, line) => (/^:{3,}\S+/.test(line) ? total + 1 : total),
+    0
+  );
+  const blockDirectiveEndCount = lines.reduce(
+    (total, line) => (/^:{3,}$/.test(line) ? total + 1 : total),
+    0
+  );
+  if (blockDirectiveStartCount !== blockDirectiveEndCount) file.fail(`Make sure each block directive has a matching end marker (:::)`);
+
+  const textDirectivePattern = /(\w+):(\[[^\]]+\])/.exec(content);
+  if (textDirectivePattern) {
+    file.fail(
+      `This looks like a mistyped text directive: ${textDirectivePattern[0]} → :${textDirectivePattern[1]}${textDirectivePattern[2]}`
+    );
+  }
+
   visit(tree, (node) => {
     if (
       (node.type === "containerDirective" ||
@@ -49,8 +68,34 @@ const checkDirectives: RemarkPlugin = () => (tree, file) => {
         `Unrecognized ${node.type.replace(/D/, " d")} ${directivePrefixMap[node.type]}${node.name}`
       );
     }
+
+    if (node.type === "paragraph") {
+      const firstChild = node.children[0];
+      if (firstChild.type === "text" && firstChild.value.startsWith(":::"))
+        file.fail(
+          `Invalid block directive marker (content should start on a new line): ${firstChild.value}`
+        );
+    }
+  });
+};
+
+/**
+ * Removes tabindex added by Shiki by default.
+ * Shiki's API exposes a way to avoid adding it,
+ * but Astro does not expose the way it calls the API.
+ */
+const removeShikiTabindex: RehypePlugin = () => (tree) => {
+  visit(tree, (node) => {
+    if (node.type !== "element" || node.tagName !== "pre") return;
+    const className = node.properties.class;
+    if (
+      typeof className === "string" &&
+      className.startsWith("astro-code") &&
+      "tabindex" in node.properties
+    )
+      delete node.properties.tabindex;
   });
 };
 
 export const remarkPlugins = [customDirectives, checkDirectives];
-export const rehypePlugins = [];
+export const rehypePlugins = [removeShikiTabindex];

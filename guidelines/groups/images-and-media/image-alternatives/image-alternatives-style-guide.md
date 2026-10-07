@@ -9,13 +9,13 @@ type: assertion
 
 ::assertion-required
 
-* Title, role or organization making the assertion (if different from the conformance claim).
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Section labels relevant to image alternatives, or
-* Copy or snapshot of the style guide
+* section labels relevant to image alternatives
+* copy or snapshot of the style guide
 
 :::example
 * Name: ABC Inc. Style Guide for text alternatives
@@ -24,7 +24,7 @@ type: assertion
 * Description: The style guide includes sections such as:
   * What are text alternatives?
   * Who needs text alternatives?
-  * Guideline provided by WCAG 3
+  * :term[Guideline] provided by WCAG 3
   * Recommended style of text alternatives
   * Resources
   * The style guide has requirements such as:

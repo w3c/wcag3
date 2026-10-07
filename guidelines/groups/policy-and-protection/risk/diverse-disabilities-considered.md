@@ -10,10 +10,10 @@ status: developing
 
 ::assertion-required
 
-* Title, role or organization making the assertion
-* Date of assertion
+* title, role, or organization making the assertion
+* date of assertion
 
 ::assertion-recommended
 
-* List of steps that have been taken
-* List of use cases used
+* list of steps that have been taken
+* list of use cases used

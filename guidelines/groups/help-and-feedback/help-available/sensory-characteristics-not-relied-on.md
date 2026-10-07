@@ -3,18 +3,8 @@ type: foundational
 status: developing
 ---
 
-Instructions and help do not rely on sensory characteristics such as shape, color, size, visual location, orientation, or sound.
+Instructions and help do not rely on sensory characteristics.
 
 :::example
-Sensory characteristics include shape, color, size, visual location, orientation, or sound.
-:::
-
-:::tests
-<b>Procedure</b>
-
-For each reference to shape, size, or position of an object:
-1. Check that the reference includes additional information that allows the item to be located and identified without any knowledge of its shape, size, or relative position.
-
-<b>Expected results</b>
-* #1 is true.
+Sensory characteristics include but are not limited to shape, color, size, visual location, orientation, or sound.
 :::
