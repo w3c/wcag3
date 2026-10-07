@@ -1,0 +1,26 @@
+---
+import {
+  resolveInformativeProvisions,
+  type InformativeGuideline,
+} from "@/lib/informative";
+import ProvisionLink from "./ProvisionLink.astro";
+
+
+interface Props {
+  guideline: InformativeGuideline;
+}
+
+const { guideline } = Astro.props;
+
+const provisions = await resolveInformativeProvisions(guideline.id);
+---
+
+<ul>
+    {provisions.map((provision) => (
+        <li>
+          <ProvisionLink entry={provision} />
+          ({provision.normativeEntry.data.type})
+          <span class="status-marker">{provision.normativeEntry.data.status}</span>
+        </li>
+    ))}
+</ul>
