@@ -9,6 +9,7 @@ DTMF
 FTE
 ICT
 NOAA
+SSTM
 TOTP
 UAAG
 UCS
@@ -23,6 +24,9 @@ Lauriat
 ReSpec
 Spellman
 Yesilada
+Detweiler
+Omanson
+Ameritech
 
 # Words
 autoplay
@@ -43,11 +47,13 @@ scriptable
 signifier
 strikethrough
 strobing
+subsite
 zoomable
 
 # Intentional compound words
 # (since useCompoundWords is too permissive)
 colorspace
+deafblind
 frontmatter
 headshot
 mousedown

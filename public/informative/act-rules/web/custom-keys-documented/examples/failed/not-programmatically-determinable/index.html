@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Failed example 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="markup" data-code-ref>
+    <label for="search">Site search</label>
+    <div class="field">
+      <input
+        id="search"
+        type="search"
+        data-shortcut-key="/"
+        data-shortcut-behavior="focus"
+      />
+    </div>
+    <script src="../../assets/keyboard-shortcuts.js"></script>
+  </div>
+  <style id="styles" data-code-ref>
+    .field {
+      display: inline-flex;
+      position: relative;
+
+      input {
+        padding-inline-start: 3.5ch;
+      }
+
+      &::after {
+        content: '/';
+        position: absolute;
+        inset-inline-start: 0.5ch;
+        inset-block-start: 50%;
+        translate: 0 -50%;
+        font-size: 0.75em;
+        padding: 0 0.4em;
+        color: #666;
+        border: 1px solid currentColor;
+        border-radius: 0.125em;
+      }
+    }
+  </style>
+</body>
+</html>

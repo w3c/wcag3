@@ -10,19 +10,15 @@ Complex numerical information can increase cognitive load, especially for users 
 :::
 
 :::example
-(Fail) 'The stadium holds 60,000 people.’
+Instead of:
 
-(Pass) 'The stadium holds 60,000 people, which is about the size of a small city.'
+> "The stadium holds 60,000 people."
 
-(Pass) 'The stadium holds many people.'
-:::
+Use:
 
-:::tests
-**Procedure**
+> "The stadium holds 60,000 people, which is about the size of a small city."
 
-For any complex numerical information in the content:
-1. Check that an alternative is available that is not presented as complex numerical information.
+Or:
 
-**Expected results**
-* #1 is true.
+> "The stadium holds many people."
 :::
