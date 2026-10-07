@@ -30,6 +30,7 @@ Ameritech
 
 # Words
 autoplay
+autoplays
 chatbot
 dyscalculia
 earcon
@@ -45,6 +46,7 @@ oxymorons
 personalizable
 scriptable
 signifier
+signifiers
 strikethrough
 strobing
 subsite
