@@ -1,7 +1,7 @@
 ## User needs
 
-* [TODO] I need to be able to complete processes without a cognitive test.
-* [TODO] I need a login process that does not have puzzles or calculations..
-* [TODO] I need easy-to-understand process that don’t rely on memory.
-* [TODO] I need a mechanism that will allow me to retrieve information to complete processes to access online services or the services do not require me to recall information.
-* [TODO] When text labels disappear, I have trouble remembering what input was requested or if I input the right information when reviewing a form.
+* As a person with a cognitive or learning disability, I need to be able to complete processes without having my memory, reasoning, or problem-solving abilities unnecessarily tested.
+* As a person with a cognitive or learning disability, I need to be able to log in without completing puzzles or calculations.
+* As a person with a cognitive or learning disability, I need easy-to-understand processes that do not rely on memory.
+* As a person with a cognitive or learning disability, I need either to be able to retrieve information that's required to complete a process or for the process not to require me to recall that information.
+* As a person with a cognitive or learning disability, I need form field labels to remain available so that I can identify what information each form field is requesting when I'm reviewing or editing a form.
