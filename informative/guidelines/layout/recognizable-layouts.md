@@ -1,4 +1,4 @@
 ## User needs
 
-* [TODO] I need content and interfaces to be familiar to me.
-* [TODO] I need to be free from distractions and not challenged by chaotic designs or excessively vibrant colors.
+* As a person with a cognitive or learning disability, I need content and interfaces to be familiar and presented consistently.
+* As a person with a cognitive or learning disability, I need simple designs that are free from distractions and excessively vibrant colors so that I’m not overwhelmed and can focus on the content.
