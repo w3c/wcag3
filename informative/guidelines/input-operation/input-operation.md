@@ -1,14 +1,10 @@
 ## User needs
 
-* As a person who gets confused by different interactions, I want the operations of user interface components to be the same within a website or application.
-* [TODO] I need to know how to use all the controls and the effects of each action.
-* [TODO] Users can achieve all functionality available using all non-pointer based input modalities supported by the application.
-* [TODO] User can achieve all functionality without the need to perform dragging movements.
-* [TODO] As a low-vision user, I need to be able to click (drag-off) and release a control in order to set the (visible) focus on an element, so that I can navigate with the keyboard from that point.
-* [TODO] User must be able to perceive/know that their pointer is currently “down” (e.g. somebody who doesn’t have sufficient pressure sensitivity in their fingers may not know if they’re pressing on the touchscreen), so provide some form of feedback (visual, haptic, aural?).
-* [TODO] For hover-based interactions (e.g. hovering stylus), user must be able to … without needing to do that.
-* [TODO] Users are able to “move”/navigate/operate without the need to physically move.
-* [TODO] I need multiple ways/formats to access content.
-* As a user, I need to* As an individual who experiences difficulty with motor control, I need controls to remain accessible without having to reposition my hand or re-program assistive technology devices that aid with touch inputs to help me through the task.
-* As an individual who experiences difficulty with motor control, I need to not have to “chase” a control when trying to activate it
-*
+* As a person with a cognitive or learning disability, I need similar user interface components to behave the same way throughout a website or application.
+* As a person who is blind or has low vision, or a motor disability, I need to be able to use all functionality with any non-pointer input method supported by the application.
+* As a person with a motor disability, I need to be able to use all functionality without performing dragging movements.
+* As a person with a motor disability, I need to be able to tell when my pointer is in the pressed state.
+* As a person with a motor disability, I need to be able to use all functionality without performing hover interactions.
+* As a person with a motor disability, I need to be able to navigate and operate the interface without having to physically move.
+* As a person with a motor disability, I need controls to remain accessible throughout a task without having to reposition my hand or reconfigure my assistive technology.
+* As a person with a motor disability, I need controls to remain in place while I'm trying to activate them.
