@@ -1,31 +1,29 @@
 ## User needs
 
-* As a person with a mental health, cognitive, or learning disability I need support and explanations for any choices I must make. I need clear explanations of the advantages or disadvantages so I understand the effects of the choice I might make.
-* As a person with a mental health disability, I need a graded range of solutions to manage my time on social media.
-* [TODO] I need help avoiding mistakes.
-* [TODO] I need to be able to easily access to human help.
-* [TODO] I need a way to bypass chat bots and voice menus to communicate with a human.
-* [TODO] Error recovery should be simple, and take you to a human operator.
-* As a user who is receiving help from another person, we need to know that we are aligned using the same application and same interface.
-* [TODO] I need the individual providing the help to understand my needs and circumstances.
-* [TODO] I need help to be provided consistently.
-* [TODO] I need on-demand, inline help completing forms and steps in a process / I need help with a particular step or section in the content.
-* [TODO] I need on-demand help using interfaces that have changed.
-* As an individual with memory-related or learning disabilities, I need on-demand help using and remembering how to use new interfaces.
-* [TODO] I want guidance walking through or completing a task (wizard).
-* [TODO] I need to know how to directly reach a human being.
-* As an individual with a memory impairment, I need to receive human help immediately.
-* As an individual with a speech or hearing related disability, I need a way to reach human help in multiple ways or using assistive technology.
-* [TODO] I need a mechanism for initiating in-page interactive help (chat, etc).
-* [TODO] I need to reach help documentation that is not isolated in topic to the current page. [ this is for help not provided in context of the page and can included site maps].
-*  [TODO] I need all help content to not rely on a single sense.
-* [TODO] I need a way to personalize my digital helpers (assistants, wizards, etc) to reduce distractions and be most effective
-* [TODO] Help needs to adaptable/personalizable,
-* [TODO] I need to understand the message being conveyed in a data visualization.
-* [TODO] I need to find information in a data visualization to complete a task or answer a question.
-* [TODO] I need to simplify the information presented in an interactive data visualization.
-* [TODO] I need assistance inputting correct, appropriate, and accurate data.
-* [TODO] I need to know whether I am interacting with a human or computer.
-* [TODO] I need help mechanisms to be consistently identified.
-* [TODO] I need help mechanisms to have consistent visual and programmatic locations.
+* As a person with a mental health, cognitive, or learning disability, I need support in making choices, including clear, simple explanations of the available options and their likely consequences, so that I can make informed decisions.
+* As a person with a mental health disability, I need a range of increasingly supportive options to help me manage the time I spend on social media.
+* As a person with a cognitive or learning disability, I need support to avoid making mistakes.
+* As a person with a cognitive or learning disability, I need to be able to easily access human assistance.
+* As a person with a cognitive or learning disability, I need to be able to bypass automated interactions, such as chat bots and voice menus, and to communicate directly with a human.
+* As a person with a cognitive or learning disability, I need a simple way to recover from errors and reach a human operator.
+* As a person with a disability who is receiving help from another person, I need to know that we are using the same application and interface.
+* As a person with a disability, I need the person supporting me to understand my accessibility needs and personal circumstances.
+* As a person who is blind or has low vision, or a motor, cognitive or learning disability, I need help to be provided in a consistent manner.
+* As a person with a cognitive or learning disability, I need on-demand, context-specific help for the particular form, process step, or section of content I'm working on.
+* As a person with a cognitive or learning disability, I need on-demand help using interfaces that have changed.
+* As a person with a memory-related, cognitive, or learning disability, I need on-demand help using and remembering how to use new interfaces.
+* As a person with a cognitive or learning disability, I need clear guidance with complex tasks that breaks them down into manageable steps.
+* As a person with a cognitive or learning disability, I need clear information about how to directly reach a human when I need help.
+* As a person with a memory impairment, I need immediate access to human assistance.
+* As a person with a speech or hearing disability, I need multiple ways to contact a human for help, including through assistive technology.
+* As a person with a cognitive or learning disability, I need to be able to start an interactive help session, such as chat, while using the current page.
+* As a person with a cognitive or learning disability, I need access to help documentation, such as site maps or user guides, that covers more than just the current page or topic.
+* As a person who is deaf, hard of hearing, blind, or has low vision, I need help content that does not rely on a single sense.
+* As a person with a cognitive or learning disability, I need to be able to personalize digital helpers, such as assistants and wizards, to reduce distractions and better meet my needs.
+* As a person with a cognitive or learning disability, I need help that can be adapted or personalized to suit my needs.
+* As a person with a cognitive or learning disability, I need help entering correct, appropriate, and accurate information.
+* As a person with a cognitive or learning disability, I need to know whether I'm interacting with a human or a computer.
+* As a person with a cognitive or learning disability, I need to be able to consistently identify help mechanisms.
+* As a person who is blind or has a motor, cognitive or learning disability, I need help mechanisms to be presented consistently both visually and programmatically.
+* As a person with a cognitive or learning disability, I need to be able to easily find help at every stage of a multi-step process.
 
