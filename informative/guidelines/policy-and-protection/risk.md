@@ -1,13 +1,12 @@
 ## User needs
 
-* [TODO] I need to avoid content that might be triggering for me.
-* As a person with a mental health disability, I need a way to reduce social media envy.
-* As a person with a learning disability I need clear wording to ensure I understand the content I am agreeing to is safe.
-* As a person with a mental health, cognitive, or learning disability I need support and explanations for any choices I must make. I need clear explanations of the advantages or disadvantages so I understand the effects of the choice I might make.
-* As a person with a mental health, cognitive, or learning disability, I need to understand any relevant known risks. Explain known risks in easy to understand and friendly language.
-* As a person with a cognitive disability, I need to know the true cost of something instead of showing a lower price and only later at the end of the checkout process shows the true cost.
-* As a person with a mental health disability (maybe all disabilities), I need information about my disability to be protected.
-* As a person with a mental health, cognitive, or learning disability (maybe any disability), I need the ability to remove some information about me from algorithms.
-* As a person with a mental health, cognitive or learning disability I need privacy and data sharing clearly communicated.
-* [TODO] I need financial institutions to help protect my finances from exploitation.
-* As a person with a shopping compulsion disorder, I need protection from digital sites and apps that exploit my impulsivity and higher anxiety sensitivity.
+* As a person with a mental health, cognitive or learning disability, I need to avoid content that might be triggering for me.
+* As a person with a mental health disability, I need to be able to reduce exposure to social media content that negatively affects my emotional well-being.
+* As a person with a learning disability, I need clear, simple language to help  me understand that the content I’m agreeing to is safe.
+* As a person with a mental health, cognitive, or learning disability, I need support in making choices, including clear, simple explanations of the available options and their likely consequences, so that I can make informed decisions. 
+* AAs a person with a mental health, cognitive, or learning disability, I need clear, simple, reassuring language to help me understand any relevant known risks and their consequences.
+* As a person with a cognitive disability, I need to understand the true cost of a purchase up front so that I'm not surprised by additional charges later.
+* As a person with a disability, I need information about my disability to remain private and protected.
+* As a person with a mental health, cognitive, or learning disability, I need clear, simple explanations of how my information will be used and shared so that I can make informed decisions about my privacy.
+* As a person with a cognitive or learning disability, I need financial services to support me to avoid financial exploitation.
+* As a person with a shopping compulsion disorder, I need protection from designs that exploit my impulsivity or anxiety.
