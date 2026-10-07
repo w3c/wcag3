@@ -1,0 +1,95 @@
+---
+import DevLayout from "@/layouts/DevLayout.astro";
+import {
+  computeGuidelineTitle,
+  computeProvisionIssueLabel,
+  convertProvisionTitleToIssueLabel,
+  provisionIssueLabelPrefix,
+} from "@/lib/guidelines";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+
+const provisions = await getCollection("provisions");
+
+/** Provisions with title that would generate an issue label whose length exceeds GitHub's limit */
+const provisionsWithLongTitle: CollectionEntry<"provisions">[] = [];
+/** Provisions with a long title that has already been overridden by issueLabel */
+const provisionsWithShortenedLabel: CollectionEntry<"provisions">[] = [];
+/** Any other provisions with issueLabel, likely due to renames since last WD */
+const provisionsWithIssueLabel: CollectionEntry<"provisions">[] = [];
+
+for (const provision of provisions) {
+  const defaultIssueLabel =
+    provisionIssueLabelPrefix + convertProvisionTitleToIssueLabel(provision);
+  if (defaultIssueLabel.length > 50) {
+    if (provision.data.issueLabel) provisionsWithShortenedLabel.push(provision);
+    else provisionsWithLongTitle.push(provision);
+  } else if (provision.data.issueLabel) provisionsWithIssueLabel.push(provision);
+}
+---
+
+<DevLayout title="Pending issue label updates">
+  {
+    provisionsWithIssueLabel.length > 0 && (
+      <>
+        <h2>Renamed provisions</h2>
+        <p>
+          The following provisions have been renamed and should be migrated in GitHub prior to
+          republication:
+        </p>
+        <ul>
+          {provisionsWithIssueLabel.map((entry) => (
+            <li>
+              <code>
+                gh label -R w3c/wcag3 edit '{computeProvisionIssueLabel(entry)}' -n
+                {`'${computeProvisionIssueLabel({ ...entry, data: { ...entry.data, issueLabel: "" } })}'`}
+              </code>
+            </li>
+          ))}
+        </ul>
+        <p>
+          Once the labels are renamed, <code>issueLabel</code> values should be cleared from this
+          repo, which will also reset the list on this page.
+        </p>
+      </>
+    )
+  }
+  {
+    provisionsWithLongTitle.length > 0 && (
+      <>
+        <h2>Long auto-generated issue labels</h2>
+        <p>
+          The following provisions need shortened issue labels to avoid exceeding GitHub's character
+          limit:
+        </p>
+        <ul>
+          {provisionsWithLongTitle.map((entry) => (
+            <li>{computeGuidelineTitle(entry)}</li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+  {
+    provisionsWithShortenedLabel.length > 0 && (
+      <>
+        <h2>Intentionally overridden issue labels</h2>
+        <p>
+          The following provisions appear to have intentional <code>issueLabel</code> values to fit
+          within GitHub's character limit:
+        </p>
+        <ul>
+          {provisionsWithShortenedLabel.map((entry) => (
+            <li>
+              "{computeProvisionIssueLabel(entry)}" (for title "{computeGuidelineTitle(entry)}")
+            </li>
+          ))}
+        </ul>
+        <p>
+          These should be checked manually to ensure they still match the provision's title and
+          their issue label in GitHub. (The "audit issue labels" dev tool may also be helpful.)
+        </p>
+      </>
+    )
+  }
+</DevLayout>

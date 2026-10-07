@@ -1,9 +1,9 @@
 ---
-type: best practice
+type: recommended practice
 status: developing
 ---
 
-Mechanisms that return the user to the :term[starting point] of the :term[conformance scope] are available in prominent positions both programmatically and visually.
+Mechanisms that return the user to the :term[starting point] of the :term[conformance scope] are available in prominent positions both :term[programmatically] and visually.
 
 :::note
 For HTML, a good programmatic positioning of such a mechanism would be early in the DOM.
