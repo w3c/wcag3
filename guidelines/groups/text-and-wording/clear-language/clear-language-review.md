@@ -6,22 +6,22 @@ type: assertion
 [Title, role, or organization] asserts that:
 
 * Our organization has a process and policy to review :term[text content] for :term[clear language] before publication. The process includes confirming:
-    * All of the core requirements in the ‘Clear Language’ guideline are met.
-    * Verb tense is chosen for ease of understanding.
-    * Content uses short paragraphs.
-    * Paragraphs that convey information begin with a sentence stating the main point or purpose (often called a topic sentence).
-    * If a style guide is used by :term[content authors], it must provide guidance on these aspects of clear language. 
-    * If author training is provided, it must provide guidance on these aspects of clear language.
+  * All of the core requirements in the ‘Clear Language’ guideline are met.
+  * Verb tense is chosen for ease of understanding.
+  * Content uses short paragraphs.
+  * Paragraphs that convey information begin with a sentence stating the main point or purpose (often called a topic sentence).
+  * If a style guide is used by :term[content authors], it must provide guidance on these aspects of clear language. 
+  * If author training is provided, it must provide guidance on these aspects of clear language.
 
 ::assertion-required
 
-* Title, role, or organization making the assertion (if different from the conformance claim).
-* Date of when the policy was implemented.
-* Date of assertion (if different from the date of the conformance claim).
+* title, role, or organization making the assertion (if different from the conformance claim)
+* date of when the policy was implemented
+* date of assertion (if different from the date of the conformance claim)
 
 ::assertion-recommended
 
-* Copy of the policy implementing the clear language review.
-* Date author training was provided (if any).
-* Number or proportion of authors who completed the training.
-* Copy of the style guide (if any) where clear language review has been defined.
+* copy of the policy implementing the clear language review
+* date author training was provided (if any)
+* number or proportion of authors who completed the training
+* copy of the style guide (if any) where clear language review has been defined

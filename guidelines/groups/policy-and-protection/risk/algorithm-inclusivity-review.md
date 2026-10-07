@@ -9,15 +9,15 @@ status: developing
 
 ::assertion-required
 
-* Title, role or organization making the assertion
-* Date of assertion
-* Disabilities considered
-* What was reviewed (data set, results, or algorithm itself)
-* Review scope
+* title, role, or organization making the assertion
+* date of assertion
+* disabilities considered
+* what was reviewed (data set, results, or algorithm itself)
+* review scope
 
 ::assertion-recommended
 
-* Results
-* Copy of any process and policy
-* Copy of usability testing, if conducted
-* Steps taken to resolve the issues found
+* results
+* copy of any process and policy
+* copy of usability testing, if conducted
+* steps taken to resolve the issues found
