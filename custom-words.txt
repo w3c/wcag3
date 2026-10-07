@@ -5,6 +5,7 @@ ATAG
 CIE
 COGA
 CVD
+DTMF
 FTE
 ICT
 NOAA
@@ -16,6 +17,7 @@ WAI
 WCAG
 
 # Proper names
+Alexa
 Brajnik
 Connor
 Lauriat
@@ -27,6 +29,9 @@ Omanson
 Ameritech
 
 # Words
+autoplay
+autoplays
+chatbot
 dyscalculia
 earcon
 earcons
@@ -40,8 +45,12 @@ numeronyms
 oxymorons
 personalizable
 scriptable
+signifier
+signifiers
+strikethrough
 strobing
 subsite
+zoomable
 
 # Intentional compound words
 # (since useCompoundWords is too permissive)
