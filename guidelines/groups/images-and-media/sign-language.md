@@ -1,6 +1,7 @@
 ---
 children:
   - sign-language-available-prerecorded
+  - sign-language-equivalent
   - sign-language-controllable
   - sign-language-policy-live
 ---
