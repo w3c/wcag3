@@ -126,6 +126,108 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 			<Guidelines />
 		</section>
 
+		<section id="testing-guidelines" data-status="exploratory">
+			<h2>Testing</h2>
+			<p>
+				A <a>method</a> used to implement a content guideline is only effective when it is supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.
+				This section describes the testing requirements that ensure conformant implementations of guidelines are effective. 
+			</p>
+
+			<section class="informative" id="test-goals">
+				<h3>Testing requirement goals and strategy</h3>
+				<p>
+					People with disabilities necessarily use a wide variety of UA and AT.
+					The specific technology configuration they use can be effected by many factors, such as language, region, access, workplace, and more.
+					In closed environments, such as behind firewalls or on Self-Service Transaction Machines (SSTM, the accessibility technology configurations that are available might be severely restricted.
+				</p>
+				<p>
+					The array of accessibility technology configurations that end users may need is so vast that it is often not feasible for content authors to test each guideline implementation with the entire array or even with a representative sample of it.
+					The testing requirements defined in this section are critical to enabling WCAG 3 to achieve the dual goals of:
+				</p>
+				<ul>
+					<li>Making guideline implementation and conformance evaluation practical for content authors.</li>
+					<li>reasonably ensuring that people with disabilities who consume conforming content experience the intended accessibility.</li>
+				</ul>
+				<p>The WCAG 3 strategy for helping achieve these goals is:</p>
+				<ol>
+					<li>Define requirements for identifying a minimum set of end user testing tools and configurations, which is referred to as a <a>user agent test set</a>.</li>
+					<li>
+						Define requirements for assessing a <a>method</a> with a user agent test set to determine whether the method has sufficient user agent support.
+						If sufficiently supported, the method can be classified as a <a>user agent supported method</a>.
+					</li>
+					<li>
+						Allow conformance of content to be determined by testing whether it faithfully implements a user agent supported method rather than requiring comprehensive testing of the implementation with the entire user agent test set.
+						Testing faithful implementation of a method may be done with a single, well-define testing technique that relies on a limited technology configuration and in some cases may be largely or completely automatable.
+					</li>
+					<li>Define a default user agent test set that the Accessibility Guidelines Working Group uses to evaluate methods to determine if they have sufficient user agent support.</li>
+					<li>Ensure every core requirement has at least one user agent supported method.</li>
+				</ol>
+			</section>
+
+			<section class="informative">
+				<h3>Types of user agent test sets</h3>
+				<p>
+					WCAG 3 refers to a set of end user technologies and configurations that can be used to validate the level of user agent support provided for an implementation method as a "user agent test set".
+					It allows two types of user agent test sets:
+				</p>
+				<ol>
+					<li>
+						<b>Default user agent test set</b> &mdash; An end user technology test set specified and used by AG WG to validate user agent support for specific methods.
+						The default user agent test set evolves as technology changes.
+						The current definition is available in (link to informative doc here).
+					</li>
+					<li>
+						<b>Alternative user agent test set</b> &mdash; An end user technology test set specified by content authors, organizations, or regulators designed to support languages, regions, or technologies that are not covered by a default user agent test set.
+						The requirements for defining a  user agent test set are specified in <a href="#defining-user-agent-support-set">Defining user agent test sets</a>.
+					</li>
+				</ol>
+
+				<div class="ednote">
+					<ul>
+						<li>The default user agent test set has not yet been defined.</li>
+						<li>For web methods, the default user agent test set will include common browsers, assistive technology, and accessibility settings that support English content.</li>
+						<li>The maintenance model and process for the default user agent test set needs additional discussion.</li>
+						<li>While the AGWG will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT.</li>
+						<li>AGWG will only include core requirements in WCAG 3 if they include at least one method that works with the default web user agent test set at the time of publication.</li>
+						 <li>Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
+						<li>An exception for long-present bugs in assistive technology and user agents is still under discussion.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="defining-user-agent-support-set">
+				<h3>Defining a user agent support set</h3>
+				<p>The definition of a user agent test set MUST:</p>
+				<ul>
+					<li>Specify the name and minimum version of each technology included.</li>
+					<li>Identify any necessary deviations from default configuration.</li>
+					<li>Document the languages and locales of target audiences.</li>
+					<li>Document the functional needs coverage of the test set</li>
+					<li>... more to be added ...</li>
+				</ul>
+
+				<div class="ednote">
+					<p>A separate understanding doc would need to cover things like:</p>
+					<ul>
+						<li>Types of AT and mappings to functional needs.</li>
+						<li>Suggestions for minimum AT coverage based on how different AT utilize AX APIs.</li>
+						<li>Authors are not responsible for regressions in AT</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="user-agent-supported-methods">
+				<h3>User agent supported methods</h3>
+				<p>For a method of implementing a content provision to be user agent supported, the method MUST meet the following requirements:</p>
+				<ol>
+					<li>The technical requirements that content authors MUST follow to correctly implement the method are clearly defined.</li>
+					<li>The method has a suite of test case implementations that covers allowed variations and boundary conditions.</li>
+					<li>The method has a test procedure that replicates expected normal behavior of actual users of a specified <a>user agent test set</a>.</li>
+					<li>Executing the test procedure for the test suite demonstrates that implementations of the method meet applicable requirements of the content provision.</li>
+				</ol>
+			</section>
+		</section>
+		
 		<section id="conformance" data-status="developing">
 
 			<details class="summary">
@@ -208,39 +310,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<p>This update to WCAG 3 moves the concept of leveling from conformance to reporting. To keep this clear, we refer to "reporting tiers" to distinguish them from previous "conformance levels". Approaches to reporting progress towards conformance and achievements beyond conformance are explored in Section 4.</p>
 				</div>
 
-				<p>For a specified <a>conformance scope</a> to conform to WCAG 3, all core requirements MUST be satisfied.</p>
-
-				<h4>Accessibility supported</h4>
-
-				<p>Many methods, such as those using ARIA to convey semantics or CSS to style content, are only effective when they are supported by the <a>user agents</a> (UAs) and <a>assistive technologies</a> (ATs) of real users.</p>
-
-				<p>The UA and AT used by people with disabilities vary by language and region, and might be restricted in closed environments such as behind firewalls or on Self-Service Transaction Machines (SSTM). As a result, it is important to understand which UA and AT support which methods and clearly state which UA and AT are assumed on conformance statements. The concept that methods are supported by users' assistive technologies as well as the accessibility features in browsers and other user agents is referred to as "accessibility supported".</p>
-
-				<h5>Accessibility support set</h5>
-
-				<p>WCAG 3 includes the concept of "accessibility support sets". This is the set of UAs, ATs, and accessibility settings that the AG Working Group tests when determining methods that support a requirement.</p>
-
-				<p>WCAG 3 uses two accessibility support sets:</p>
-
-				<ol>
-					<li><b>Default accessibility support set</b> &mdash; a set of common browsers, assistive technologies, and accessibility supported settings that support English content. The default accessibility support set supports web methods. Additional sets might be created for technologies such as mobile or extended reality (XR).</li>
-					<li><b>Alternative accessibility support set</b> &mdash; people, organizations, or regional regulators can also specify an alternative accessibility support set. This is a different set of browsers, assistive technologies, and accessibility settings that support the intended languages, regions and technologies when the default accessibility support set does not provide that support.</li>
-				</ol>
-
-				<div class="ednote">
-					<p>While the AG Working Group will strive to ensure that requirements have as broad support as possible, it might not be possible for every requirement to be met on every combination of UA and AT. The working group will only include core requirements in WCAG 3 if they include at least one method that works with the default web accessibility support set at the time of publication.</p>
-				</div>
-
-				<p>The accessibility support set MUST be included in conformance claims. If working in a closed environment, with non-web technologies, or in a region that relies on UA and AT outside the AGWG default accessibility support set defined in WCAG 3, we also RECOMMEND including the accessibility support set in public accessibility statements. For example, if when claiming conformance for a SSTM that uses a non-standard way to provide text to speech, then the accessibility support set used SHOULD be included in the conformance claim and we recommend including it in public statements about the SSTM accessibility.</p>
-
-				<div class="ednote">
-					<ul>
-						<li>The default accessibility support set has not yet been defined.</li>
-						<li>Informative documentation will be needed to specify how people can create their own alternative accessibility support set.</li>
-						<li>Maintenance of the accessibility support set over time needs additional discussion.</li>
-						<li>An exception for long-present bugs in assistive technology and user agents is still under discussion.</li>
-					</ul>
-				</div>
+				<p>For a specified <a>conformance scope</a> to conform to WCAG 3, the content MUST implement <a>user agent supported methods</a> that satisfy all core requirements.</p>
 
 				<h4>Defined conformance scope</h4>
 
