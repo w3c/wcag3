@@ -12,7 +12,7 @@ const { status, synonyms, unusedDefinition } = termEntry.data;
 const { Content } = await render(termEntry);
 ---
 
-<dt data-status={status}>
-  <dfn data-lt={synonyms ? synonyms.join("|") : undefined}  class={unusedDefinition ? "lint-ignore" : undefined}>{computeTermTitle(termEntry)}</dfn>
-</dt>
-<dd><Content /></dd>
+<li class="glossary-term"data-status={status}>
+  <h3 data-respec-ignore><dfn data-lt={synonyms ? synonyms.join("|") : undefined}  class={unusedDefinition ? "lint-ignore" : undefined}>{computeTermTitle(termEntry)}</dfn></h3>
+  <div class="glossary-term--content"><Content /></div>
+</li>
