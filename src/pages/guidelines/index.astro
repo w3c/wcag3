@@ -259,7 +259,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 		<section id="progress-towards-and-beyond-conformance" class="informative" data-status="exploratory">
 			<h2>Reporting</h2>
 			<div class="ednote">
-				<p>In parallel with WCAG 3, the working group will be writing informative guidance on testing and reporting. Part of this documentation is “Progress towards and beyond conformance.” This section uses tags for requirements and assertions to break the provisions into reporting tiers which can be used as steps towards conformance and then beyond conformance. Progress could also be reported as counts or percentages between each tier based on the tags. In separate documents, AG will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance. We will also recommend ways organizations could use the tiers when comparing and purchasing products. For example, assertions included in tiers beyond conformance could be completed in order to claim a Silver achievement in WCAG. The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.</p>
+				<p>In parallel with WCAG 3, the working group will be writing informative guidance on testing and reporting. Part of this documentation is “Progress towards and beyond conformance.” This section uses categories for requirements and assertions to break the provisions into reporting tiers which can be used as steps towards conformance and then beyond conformance. Progress could also be reported as counts or percentages between each tier based on the categories. In separate documents, AG will suggest ways in which policymakers could use these tiers in regulation to encourage conformance and accessibility beyond conformance. We will also recommend ways organizations could use the tiers when comparing and purchasing products. For example, assertions included in tiers beyond conformance could be completed in order to claim a Silver achievement in WCAG. The working group might recommend regulators require organizations of a certain size complete the Silver tier in order to comply with accessibility regulation.</p>
 			</div>
 			<p>Products or other defined conformance scopes may not fully conform to all requirements for conformance or may exceed conformance requirements. This section presents reporting tiers, not conformance tiers. The third reporting tier equates with conformance to WCAG 3.</p>
 			<section id="reporting-tiers">
@@ -267,34 +267,33 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<div class="ednote">
 					<p>The AG Working Group continues to discuss ways to show progress and is exploring tiers. An <a href="https://www.w3.org/TR/wcag-3.0-explainer/#alternative-approach-scoring">alternative proposal</a> explores using scoring to show progress toward conformance and then awards of Bronze, Silver and Gold after conformance. We invite public comment on which of these approaches shows the most promise or if a different approach is needed.</p>
 				</div>
-				<p>Core requirements and assertions will be tagged by type. These types do not affect conformance but rather allow for reporting on tiers that lead up to and then beyond conformance.</p>
+				<p>Core requirements and assertions will be categorized by type. These types do not affect conformance but rather allow for reporting on tiers that lead up to and then beyond conformance.</p>
 				<div class="ednote">
-					<p>The severity of a failure is determined based on the specific circumstances of the failure along with the nature of the requirement itself. The same requirement might therefore result in failures with different severity. Factors that may affect severity include, but are not limited to, the role of the affected element within a page or process, the number of instances, the context, and the nature and importance of the content. Tags are assigned based on the maximum potential severity of the failure.</p>
+					<p>The severity of a failure is determined based on the specific circumstances of the failure along with the nature of the requirement itself. The same requirement might therefore result in failures with different severity. Factors that may affect severity include, but are not limited to, the role of the affected element within a page or process, the number of instances, the context, and the nature and importance of the content. Categories are assigned based on the maximum potential severity of the failure.</p>
 					<p>The AG Working Group is exploring including additional details on reporting using modified severity based on how and where a failure occurs. For example, the impact of missing alternative text is more severe when the image is acting as an interactive element than it is when it is on a static image that is outside the purpose of the page.</p>
 				</div>
-				<h4>Core requirement tags</h4>
+				<h4>Core requirement categories</h4>
 				<p>All core requirements MUST be met to conform to WCAG 3.</p>
 				<ul>
-					<li><b>Physical Harm</b> &mdash; not meeting the requirement can cause someone with a disability immediate physical harm.</li>
-					<li><b>Risk</b> &mdash; not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
-					<li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-					<li><b>Friction</b> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
+					<li><b>Physical Harm</b> &mdash; not meeting the requirement can result in users experiencing triggers of physical harm, such as seizures, nausea, headaches, or vertigo.</li>
+					<li><b>Risk</b> &mdash; not meeting the requirement disproportionately increases financial, medical, legal, privacy, or security risk for someone with a disability, or risks making a user's disability information public.</li>
+					<li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding.</li>
+					<li><b>Obstacle</b> &mdash; Not meeting the requirement can hinder someone with a disability. Multiple obstacles instances may become enough to prevent someone with a disability from proceeding, for some people one obstacles instance may become a barrier.</li>
 				</ul>
-				<div class="ednote">
-					<p>The AGWG will consider one or more definitions for harm, and types of harm.</p>
-				</div>
-				<h4>Supplemental requirements</h4>
-				<p>Supplemental requirements are not required to conform but are used to show additional achievements in accessibility and allow comparison between products.</p>
+
+				<h4>Supplemental requirements categories</h4>
+				<p>Supplemental requirements are not required to conform but are used to show additional achievements in accessibility and allow comparison between products. There are two categories of supplemental requirement:</p>
 				<ul>
-					<li><b>Supplemental requirements</b> &mdash; meeting the requirements improves the user experience for someone with a disability. Not meeting the requirements may make the user experience more tedious, potentially leading to more significant difficulties due to the cumulative nature of many smaller issues.</li>
+					<li><b>Friction</b> &mdash; meeting the requirements improves the user experience for someone with a disability. Not meeting the requirements may make the user experience more tedious, potentially leading to more significant difficulties due to the cumulative nature of many smaller issues.</li>
+					<li><b>Enhanced</b> &mdash; a version of a core requirement which is more robust, either due to selecting a higher point on a continuum, or having fewer exceptions.</li>
 				</ul>
-				<h4>Assertion tags</h4>
+				<h4>Assertion categories</h4>
 				<p>Assertions are not required to conform but are used to show procedural commitments to accessibility and improve comparison between products.</p>
 				<div class="ednote">
 					<p>The AGWG has not yet decided whether assertions can be required for conformance.</p>
 				</div>
 				<ul>
-					<li><b>Content</b> &mdash; these assertions focus on the content and include processes that determine whether the content is accessible. For example, plain language reviews, usability testing, AT testing, or style guides.</li>
+					<li><b>Content</b> &mdash; these assertions focus on the content and include processes that are known to improve the accessibility of the content. For example, plain language reviews, usability testing, AT testing, or style guides.</li>
 					<li><b>Organization</b> &mdash; these assertions focus on the organization and include processes that help organizations create accessible content such as training staff in accessibility or providing public accessibility statements.</li>
 				</ul>
 				<h4>Tiers of reporting</h4>
@@ -308,7 +307,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					</thead>
 					<tbody>
 						<tr>
-							<td>1 &mdash; Avoid physical harm</td>
+							<td>1 &mdash; Avoid harm</td>
 							<td>Physical harm and risk requirements are met</td>
 						</tr>
 						<tr>
@@ -317,7 +316,7 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 						</tr>
 						<tr>
 							<td>3 &mdash; Conformance</td>
-							<td>&hellip;plus friction requirements (all core requirements are met)</td>
+							<td>&hellip;plus obstacle requirements (all core requirements are met)</td>
 						</tr>
 						<tr>
 							<td>4 &mdash; Bronze</td>
