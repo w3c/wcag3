@@ -25,6 +25,7 @@ Yesilada
 Detweiler
 Omanson
 Ameritech
+Sumei
 
 # Words
 dyscalculia
