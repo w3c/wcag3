@@ -253,8 +253,29 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
 
 				<p>When claiming conformance for a process, all unique steps in the process MUST be represented in the set of <a>pages</a>/<a>views</a>. Pages/views outside of the process MAY also be included in the scope.</p>
+
+				<h4>Conforming Alternative Version</h4>
+
+				<p>Sometimes, content is included in a defined conformance scope that does not conform. When this happens, an option to still meet conformance is to provide a “conforming alternative version.” In other words, you may claim conformance for a conformance scope that includes non-conforming content if, and only if, a conforming alternative version is present. </p>
+
+				<p>Conforming alternative versions must meet <strong>all</strong> the following criteria:
+				<ul><li>Conform to all the provisions in core conformance</li>
+				<li>Conform to any additional tiers that are claimed as part of the reporting</li>
+				<li>Provide all of the same information and functionality in the same human language and the non-conforming version, and</li>
+				<li>Remain as up-to-date as the non-conforming version.</li></ul></p>
+
+				<p><strong>At least one</strong> of the following must also be true:
+				<li> The conforming alternative version is  located on the same page/view as he non-conforming version</li>
+				<li> The conforming alternative version can be reached from the non-conforming page in conforming way</li>
+				<li> The non-conforming alternative version can only be reached from the conforming version</li>
+				<li> The non-conforming version can only be reached from a conforming page that also provides a mechanism to reach the conforming version</li></ul></p>
+				
+				<p>If multiple language versions are available, then conforming alternate versions are required for each language offered.</p>
+				<p>In this definition, "can only be reached" means that there is some mechanism, such as a conditional redirect, that prevents a user from accessing the non-conforming version unless the user has just come from the conforming version.</p>
 			</section>
 		</section>
+
+
 
 		<section id="progress-towards-and-beyond-conformance" class="informative" data-status="exploratory">
 			<h2>Reporting</h2>
