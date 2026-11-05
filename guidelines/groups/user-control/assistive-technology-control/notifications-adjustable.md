@@ -1,14 +1,6 @@
 ---
-status: developing
-type: supplemental
+status: exploratory
+type: recommended practice
 ---
 
-The timing or positioning of notifications can be changed, suppressed, or saved.
-
-:::applies-when
-- Notifications or other interruptions are present.
-:::
-
-:::except-when
-- The notification involves an emergency or is essential.
-:::
+Ensure settings are available for notifications that enable users to adjust the timing, volume, types, and positioning of notifications.
