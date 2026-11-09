@@ -2,7 +2,6 @@
 children:
   - assistive-technology-supported
   - user-settings-supported
-  - virtual-cursor-supported
   - notifications-adjustable
 ---
 
