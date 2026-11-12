@@ -56,12 +56,11 @@ const slugify = (s) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-/** Naive singularization of the last word, enough for term references. */
+/** Naive singularization of the last word, enough for plural references like images. */
 function singularize(phrase) {
   const words = phrase.split(/\s+/);
   const last = words[words.length - 1];
-  if (last.endsWith("ies")) words[words.length - 1] = last.slice(0, -3) + "y";
-  else if (/s$/.test(last) && !/(ss|us|is)$/.test(last)) words[words.length - 1] = last.slice(0, -1);
+  if (/s$/.test(last) && !/(ss|us|is)$/.test(last)) words[words.length - 1] = last.slice(0, -1);
   return words.join(" ");
 }
 
