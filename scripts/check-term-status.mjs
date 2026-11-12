@@ -60,7 +60,7 @@ const slugify = (s) =>
 function singularize(phrase) {
   const words = phrase.split(/\s+/);
   const last = words[words.length - 1];
-  if (/ies$/.test(last)) words[words.length - 1] = last.replace(/ies$/, "y");
+  if (last.endsWith("ies")) words[words.length - 1] = last.slice(0, -3) + "y";
   else if (/s$/.test(last) && !/(ss|us|is)$/.test(last)) words[words.length - 1] = last.slice(0, -1);
   return words.join(" ");
 }
