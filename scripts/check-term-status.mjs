@@ -5,8 +5,6 @@
  *   - placeholder terms referenced from exploratory content (informational)
  *   - terms flagged unusedDefinition that are in fact referenced (informational)
  *   - placeholder terms nothing references (candidates for removal)
- *   - :term[...] references that resolve to no term at all (informational;
- *     the build already rejects unknown terms, this is a belt-and-braces list)
  *
  * Implements suggestion 1 of https://github.com/w3c/wcag3/issues/972
  * Zero dependencies. Usage: node scripts/check-term-status.mjs [repo-root]
