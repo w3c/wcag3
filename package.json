@@ -5,6 +5,7 @@
   "scripts": {
     "build": "astro build --force",
     "check": "astro check",
+    "check:terms": "node scripts/check-term-status.mjs",
     "cspell": "cspell .",
     "preview": "astro preview",
     "publish-w3c": "WCAG_PUBLISH=1 astro build --force",
