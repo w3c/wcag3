@@ -2,6 +2,7 @@
 type: assertion
 status: developing
 title: Multi-step process review
+issueLabel: All steps listed
 ---
 
 [Title, role, or organization] asserts that:
