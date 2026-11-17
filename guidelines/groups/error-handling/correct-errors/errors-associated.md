@@ -3,7 +3,8 @@ status: developing
 type: foundational
 ---
 
-When input validation fails, the errors are visually and programmatically associated with the element that caused the error or that can resolve it.
+When input validation fails, each error message has a relationship that is both visual and :term[programmatically determinable] with an element that is either the cause of the error or capable of resolving it.
+
 
 :::example
 Failing validation includes but is not limited to:
