@@ -8,7 +8,8 @@ Background sounds in prerecorded media content are lower than the foreground spe
 * Adjust background sounds to be lower than the foreground speech by at least 20 decibels
 
 :::applies-when
-Prerecorded media content contains foreground speech and background sounds.
+Prerecorded media content includes foreground speech and background sounds.
+:::
 
 :::except-when
 * The foreground speech does not convey meaning.
