@@ -13,11 +13,12 @@ import type { InformativeCollection } from "@/lib/informative";
 interface Props {
   breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
   entry?: CollectionEntry<InformativeCollection>;
+  status?: CollectionEntry<"provisions">["data"]["status"];
   title: string;
   withNav?: boolean;
 }
 
-const { breadcrumbSegments, entry, title, withNav = true } = Astro.props;
+const { breadcrumbSegments, entry, status, title, withNav = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -48,7 +49,10 @@ const { breadcrumbSegments, entry, title, withNav = true } = Astro.props;
         )
       }
       <main id="main" class="standalone-resource__main" tabindex="-1">
-        <h1>{title || informativeTitle}</h1>
+        <h1>
+          {title || informativeTitle}
+          {status && <span class="status-marker">{status}</span>}
+        </h1>
         <section class="doc-note-box">
           This is an in-progress draft. The content is incomplete and could change substantially.
         </section>

@@ -110,7 +110,9 @@ export const collections = {
 
   actRules: defineCollection({
     loader: glob({ pattern: "*/*.md", base: "./informative/act-rules" }),
-    schema: relatedSchema,
+    schema: relatedSchema.extend({
+      status: statusSchema.default("exploratory"),
+    }),
   }),
 
   recommendedPractices: defineCollection({
