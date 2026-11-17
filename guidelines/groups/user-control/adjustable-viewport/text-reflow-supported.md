@@ -3,14 +3,14 @@ type: supplemental
 status: developing
 ---
 
-:term[Blocks of text] are legible at 320 :term[CSS pixels] in the orientation of text, without the need to scroll in the orientation of text.
+:term[Blocks of text] are legible at 320 :term[CSS pixels] in the direction of text, without the need to scroll in the direction of text.
 
 :::except-when
-* The meaning of text relies on a two-dimensional structure. 
+* The text requires a two-dimensional layout for usage or meaning.
 :::
 
 :::example
-Two-dimensional structure might be relied upon in preformatted text such as code, poems, maps, or comics.
+Two-dimensional layout might be relied upon in preformatted text such as code, poems, maps, or comics.
 :::
 
 :::ednote
