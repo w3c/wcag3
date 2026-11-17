@@ -31,7 +31,6 @@ const singularTitle = pluralize.singular(informativeRelatedType.title);
     { slug: entry.id.slice(entry.id.lastIndexOf("/")), title: entry.data.title },
   ]}
   entry={entry}
-  status={entry.collection === "actRules" ? entry.data.status : undefined}
   title={entry.data.title}
 >
   <aside class="box">

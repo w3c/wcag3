@@ -13,12 +13,12 @@ import type { InformativeCollection } from "@/lib/informative";
 interface Props {
   breadcrumbSegments?: ComponentProps<typeof Breadcrumbs>["segments"];
   entry?: CollectionEntry<InformativeCollection>;
-  status?: CollectionEntry<"provisions">["data"]["status"];
   title: string;
   withNav?: boolean;
 }
 
-const { breadcrumbSegments, entry, status, title, withNav = true } = Astro.props;
+const { breadcrumbSegments, entry, title, withNav = true } = Astro.props;
+const status = entry?.collection === "actRules" ? entry.data.status : undefined;
 ---
 
 <!doctype html>
