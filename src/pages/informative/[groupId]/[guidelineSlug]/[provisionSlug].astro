@@ -66,6 +66,9 @@ const relatedEntries = informativeProvisionSlugRelationMap[provisionSlug!];
                 informativeRelatedTypes[type as InformativeRelatedCollection].slug}/${entry.id}/`}
               set:text={`${capitalize(detectTechnology(entry))}: ${entry.data.title}`}
             />
+            {entry.collection === "actRules" && (
+              <span class="status-marker">{entry.data.status}</span>
+            )}
           </li>
         ))}
       </ul>
