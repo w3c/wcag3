@@ -1,5 +1,6 @@
 ---
 children:
+  - bypass-repeated-interactive-elements
   - navigation-keys-described
   - no-repetitive-adjacent-interactive-elements
   - keyboard-effort-comparable
