@@ -10,7 +10,7 @@ A page/view includes two or more primary sections of content.
 :::
 
 :::except-when
-:term[Keyboard focus] is located inside of a modal element and the page/view content outside the modal is inert.
+Keyboard focus is located inside of a modal element and the page/view content outside the modal is inert.
 :::
 
 :::ednote
