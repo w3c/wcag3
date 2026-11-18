@@ -2,11 +2,12 @@
 
 ### Procedure
 
-For each page/view in a set of page/views:
+For each primary section of content on a:term[page]/:term[view]:
 
-* Identify blocks of interactive elements across set repeated in more than one page/view 
-* There is a way to skip each block of content
-* Skipping the content moves focus to the first element immediately following the repeated block
+* Position :term[keyboard focus] at a location that is not at the start of the section.
+* There is a mechanism for moving focus to the start of the section.
+* Invoking the mechanism moves focus to the first element in the section or to the section element itself.
+* Repeat to ensure the functionality works for initial locations before, after, and inside the section.
 
 ### Expected results
 
