@@ -47,6 +47,9 @@ const relatedInformativeType = informativeRelatedTypes[collectionName];
                 <a href={`${technology}/${entry.id.slice(entry.id.lastIndexOf("/") + 1)}/`}>
                   {entry.data.title}
                 </a>
+                {entry.collection === "actRules" && (
+                  <span class="status-marker">{entry.data.status}</span>
+                )}
               </li>
             ))}
         </ul>

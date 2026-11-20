@@ -2,6 +2,7 @@
 title: Custom keyboard commands are documented
 provisions:
   - custom-keys-documented
+status: developing
 ---
 
 This rule checks that custom keyboard commands are documented and that documentation is programmatically and visually available from any page/view to which they apply.
