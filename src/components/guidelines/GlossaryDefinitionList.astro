@@ -10,6 +10,6 @@ const entries = sortBy(await getCollection("terms"), (entry) =>
 );
 ---
 
-<dl>
+<ul class="glossary-terms">
   {entries.map((entry) => <GlossaryDefinition termEntry={entry} />)}
-</dl>
+</ul>
