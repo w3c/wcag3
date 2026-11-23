@@ -425,16 +425,59 @@ import ExplainerRespec from "@/components/respec/ExplainerRespec.astro";
 
         <p>Each core requirement will have a tag that relates to levels you can progress through to meet conformance. Those tags are:</p>
         <ul>
-            <li><strong>Physical harm</strong> - not meeting the requirement can cause someone with a disability immediate physical harm.</li>
-            <li><strong>Risk</strong> - not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
+            <li><strong>Risk or Physical harm</strong> - not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability. For physical harm, not meeting the requirement can cause someone with a disability immediate physical harm.</li>
             <li><strong>Barrier</strong> - not meeting the requirement can prevent someone with a disability from proceeding. Some of this might be due to necessary AT support and some might be native to the design.</li>
-            <li><strong>Friction</strong> - not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
         </ul>
 
         <p>To get to the "Avoid physical harm" tier you would need to meet all the core requirements tagged with "Physical harm" and "Risk".  To get to the "Foundational Access" tier, you would need to meet the core requirements for the Avoid physical harm tier and those marked "Barrier."</p>
 
-            
-       <p>The tiers above conformance will be defined and met using supplemental requirements and assertions. Meeting a certain number or percentage of the supplemental requirements and assertions enables you to claim that tier.</p>
+        <h3>Criteria for Core Requirements</h3>
+
+        <p>Core requirements aim to be useful for laws and regulations, therefore need to be widely applicable and scoped to issues that affect people with disabilities.</p>
+
+        <p>Each core requirement must:</p>
+
+        <ul>
+            <li>Address a situation where a user with a disability will be disproportionately disadvantaged (as compared to a user without a disability);</li>
+            <li>Be testable through an automated process or by a manual process conducted by an individual evaluator, and any tools required to test it must be available prior to Candidate Recommendation stage;</li>
+            <li>Provide consistent results from different testers (e.g. 8/10 testers agree). This can be assessed through inherent logic or proven through examples;</li>
+            <li>Describe the specific condition(s) to meet the requirement, but not be specific about the solution.</li>
+            <li>Be categorized as Physical Harm, Risk, or Barrier.</li>
+            <li>Be applicable to all content across all digital interfaces.
+                <ul>
+                    <li>Preconditions or exceptions can be used to make the requirement more applicable. Using the “applies when” and “except when” clauses can be used to narrow the scope (e.g. "Applies when the content uses a markup language").</li>
+                </ul>
+            </li>
+            <li>Be acheivable by all scales of organization that author digital interfaces, from individuals to global corporations. (Pre-conditions and exceptions cannot reference organization type, so do not directly help.)
+                <ul>
+                    <li>Applicability across such a wide scale means that implementations should be reasonable at every scale. That can include platforms providing functionality to individuals or small organizations, or open source software that is freely available.</li>
+                </ul>
+            </li>
+            <li>Have evidence of how the issue impacts people with disabilities. This can be from research or logic (e.g. People with X disability need to use assistive tech, and this content doesn't work with assistive tech unless…)</li>
+            <li>Avoid capturing instances of content that do not impact people with disabilities.</li>
+        </ul>
+
+        <p>Each core requirement should:</p>
+        
+        <ul>
+            <li>Avoid negatively impacting another disability group (directly or because content is withdrawn because of the difficulty of meeting the requirement). Ideally, conflicts can be resolved through customization or by relying on assistive technology.</li>
+            <li>Be consistent across requirements with similar aims (e.g. If information is required for captions that information should also be required for audio description, if applicable.)</li>
+            <li>Overlap as little as possible. </li>
+        </ul>
+
+        <p>Requirements which cannot achieve these criteria can be considered for a supplemental requirement or recommended practice.</p>
+
+        <h3>Tiers above conformance</h3>
+
+        <p>The tiers above conformance will be defined and met using supplemental requirements and assertions. Meeting a certain number or percentage of the supplemental requirements and assertions enables you to claim that tier.</p>
+
+        <p>Supplemental requirements are still requirements and inherit the “criteria for requirements” of core, except:</p>
+        <ul>
+            <li>Be categorized as “enhanced” (if it builds on a core requirement), or “friction”.</li>
+            <li>The applicability can be “most” interfaces and scales of organization.</li>
+            <li>Avoid capturing instances of content that do not impact people with disabilities. Some known instances could be allowed for if the overall effect were usually beneficial.</li>
+        </ul>
+        <p>As supplemental requirements are not within conformance, there can be more flexibility on the “should” items as it impacts tiers and scoring rather than conformance.</p>
 
 
         <h3>Alternative approach - Scoring</h3>
