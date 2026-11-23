@@ -180,9 +180,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<ul>
 					<li>content is detectable by user agents and assistive technologies (AT),</li>
 					<li>content can be conveyed to multiple senses and can be operated by multiple input methods,</li>
-					<li>content does not cause direct and immediate physical harm, and</li>
-					<li>necessary support is available, such as captions, text alternatives, and expanded forms of abbreviations.</li>
+					<li>content does not cause direct and immediate physical harm,</li>
+					<li>necessary support is available, such as captions, text alternatives, and expanded forms of abbreviations, and</li>
+					<li>tasks are not blocked.</li>
 				</ul>
+				<p>The “tasks are not blocked” item is a generalized assessment of the issue's impact. In practice, the impact can vary between instances, and the number of instances can also vary the impact on the user.</p>
 
 				<p><b>Supplemental requirements</b> &mdash; requirements that build on the core set, not required for conformance. These include:</p>
 				<ul>
@@ -278,7 +280,6 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<li><b>Physical Harm</b> &mdash; not meeting the requirement can cause someone with a disability immediate physical harm.</li>
 					<li><b>Risk</b> &mdash; not meeting the requirement unreasonably increases financial, medical, legal, privacy, or security risk for someone with a disability.</li>
 					<li><b>Barrier</b> &mdash; not meeting the requirement can prevent someone with a disability from proceeding. Some might be due to necessary AT support and some might be native to the design.</li>
-					<li><b>Friction</b> &mdash; not meeting the requirement can hinder someone with a disability. When multiple failures occur, they can prevent someone with a disability from proceeding.</li>
 				</ul>
 				<div class="ednote">
 					<p>The AGWG will consider one or more definitions for harm, and types of harm.</p>
@@ -288,6 +289,12 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<ul>
 					<li><b>Supplemental requirements</b> &mdash; meeting the requirements improves the user experience for someone with a disability. Not meeting the requirements may make the user experience more tedious, potentially leading to more significant difficulties due to the cumulative nature of many smaller issues.</li>
 				</ul>
+				<p>There are two categories of supplemental requirement:</p>
+				<ul>
+					<li><b>Friction</b> &mdash; Meeting these requirements improves the experience for people with disabilities. Not meeting them may make tasks more difficult or time-consuming, especially when multiple small barriers add up.</li>
+					<li><b>Enhanced</b> &mdash; These are stronger versions of core requirements. They provide greater accessibility by meeting a higher level of support or by having fewer exceptions.</li>
+				</ul>
+
 				<h4>Assertion tags</h4>
 				<p>Assertions are not required to conform but are used to show procedural commitments to accessibility and improve comparison between products.</p>
 				<div class="ednote">
@@ -309,26 +316,22 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 					<tbody>
 						<tr>
 							<td>1 &mdash; Avoid physical harm</td>
-							<td>Physical harm and risk requirements are met</td>
+							<td>Risk and physical harm requirements are met</td>
 						</tr>
 						<tr>
-							<td>2 &mdash; Foundational access</td>
-							<td>&hellip;plus barrier requirements</td>
+							<td>2 &mdash; Conformance</td>
+							<td>&hellip;plus barrier requirements (all core requirements are met)</td>
 						</tr>
 						<tr>
-							<td>3 &mdash; Conformance</td>
-							<td>&hellip;plus friction requirements (all core requirements are met)</td>
-						</tr>
-						<tr>
-							<td>4 &mdash; Bronze</td>
+							<td>3 &mdash; Bronze</td>
 							<td>&hellip;plus [TBD number of] supplemental requirements and assertions about content</td>
 						</tr>
 						<tr>
-							<td>5 &mdash; Silver</td>
+							<td>4 &mdash; Silver</td>
 							<td>&hellip;plus [TBD greater number of] supplemental requirements and assertions about content</td>
 						</tr>
 						<tr>
-							<td>6 &mdash; Gold</td>
+							<td>5 &mdash; Gold</td>
 							<td>&hellip;plus [TBD number of] the assertions about the organization</td>
 						</tr>
 					</tbody>
