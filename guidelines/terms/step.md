@@ -2,7 +2,7 @@
 status: developing
 ---
 
-distinct part of a :term[process]
+distinct part of a :term[process] that the user interface presents as a distinct stage in the user's progress toward completing the process, rather than as an individual interaction within a stage.
 
 :::note
 A step contributes directly to achieving the intended outcome of the process.
