@@ -112,6 +112,42 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
+  function preUndoRespecElement() {
+    document.querySelectorAll("[data-respec-ignore]").forEach(function (element) {
+      element.setAttribute("data-pre-respec-element-type", element.localName);
+    });
+  }
+
+  function undoRespecElement() {
+    document.querySelectorAll("[data-respec-ignore]").forEach(function (markedElement) {
+      const originalElementType = markedElement.getAttribute("data-pre-respec-element-type");
+      const restoredElement = document.createElement(originalElementType);
+      const isHeading = /^h[1-6]$/.test(originalElementType);
+      markedElement.removeAttribute("data-pre-respec-element-type");
+      Array.from(markedElement.attributes).forEach(function (attribute) {
+        restoredElement.setAttribute(attribute.name, attribute.value);
+      });
+      while (markedElement.firstChild) {
+        restoredElement.appendChild(markedElement.firstChild);
+      }
+
+      // With headings, ReSpec adds an id attribute, a .self-link, and wraps
+      // the heading in a .header-wrapper. Undo all that.
+      if (isHeading) {
+        restoredElement.removeAttribute("id");
+        const headingWrapper = markedElement.closest(".header-wrapper");
+        const selfLink = headingWrapper?.querySelector(":scope > a.self-link");
+        if (selfLink) selfLink.remove();
+        if (headingWrapper) {
+          headingWrapper.replaceWith(restoredElement);
+          return;
+        }
+      }
+
+      markedElement.replaceWith(restoredElement);
+    });
+  }
+
   function addEmptyGuidelineEdNote() {
     const sectionSelector =
       "section" + (new URLSearchParams(location.search).get("skip") ? ":not([data-skip])" : "");
@@ -237,7 +273,8 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
     });
   }
 
-  const findParentSectionOrDefinition = (el) => el.closest("dd") || el.closest("section");
+  const findParentSectionOrDefinition = (el) =>
+    el.closest(".glossary-term") || el.closest("dd") || el.closest("section");
 
   /** Numbers notes when there are multiple in one section. */
   function numberNotes() {
@@ -564,7 +601,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
 
     maxTocLevel: 4,
 
-    preProcess: [addEmptyGuidelineEdNote, adjustDfnData],
+    preProcess: [preUndoRespecElement, addEmptyGuidelineEdNote, adjustDfnData],
     postProcess: [
       addSummaryMarkers,
       adjustNormativity,
@@ -577,6 +614,7 @@ import GuidelinesRespecDev from "./GuidelinesRespecDev.astro";
       // Status markers are added after overriding permalink labels,
       // as they affect heading text
       addStatusMarkers,
+      undoRespecElement,
       numberNotes,
       renumberExamples,
       removeImgSize,
