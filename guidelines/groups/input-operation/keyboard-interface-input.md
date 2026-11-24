@@ -1,7 +1,7 @@
 ---
 children:
   - keyboard-operable
-  - keyboard-accessible
+  - keyboard-viewable
   - bidirectional-navigation
   - custom-keys-documented
   - no-keyboard-conflicts
@@ -11,4 +11,4 @@ children:
   - focus-movement-relevant
 ---
 
-Users can navigate and operate :term[content] using only the keyboard.
+Users can view, navigate, and operate :term[content] using only the keyboard.

@@ -3,4 +3,8 @@ status: developing
 type: foundational
 ---
 
-All :term[components] on the :term[page]/:term[view] that can be operated by :term[pointer], :term[audio] (voice or other), :term[gesture], camera, or other means can be operated using :term[keyboard interface] only.
+:term[Available functionality] can be operated using only the :term[keyboard interface].
+
+:::except-when
+a different input modality is :term[essential].
+:::
