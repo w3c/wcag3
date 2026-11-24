@@ -2,7 +2,7 @@
 
 ### Procedure
 
-For each primary section of content on a:term[page]/:term[view]:
+For each primary section of content on a :term[page]/:term[view]:
 
 * Position :term[keyboard focus] at a location that is not at the start of the section.
 * There is a mechanism for moving focus to the start of the section.
