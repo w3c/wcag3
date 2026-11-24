@@ -270,11 +270,7 @@ svg:not(:root) {
 	inset-block-start: 3rem;
 }
 
-.glossary-terms {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
+#glossary {
 	h3 {
 		font: inherit;
 		line-height: 1.2;
