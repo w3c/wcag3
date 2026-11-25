@@ -253,6 +253,11 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 				<p class="ednote">Limited conformance scopes, such as paths and components, are still being defined. These limited scopes will be defined in forthcoming informative documentation along with information about which requirements apply to each limited conformance scope and how to handle inapplicable or untestable requirements.</p>
 
 				<p>When claiming conformance for a process, all unique steps in the process MUST be represented in the set of <a>pages</a>/<a>views</a>. Pages/views outside of the process MAY also be included in the scope.</p>
+
+				<h4>User generated content</h4>
+
+				<p>Sometimes, users who are not affiliated with the author will add digital content to an assessed product often using tooling provided through the product. For example, an email program, a blog, social media platforms, or other applications supporting user-generated content. In these cases, it is not possible to know at the time of original conformance evaluation what the user-generated content of the pages will be. As such, the scope of the conformance claim cannot include the user-generated content.  In these situations, if a conformance claim is made, it should clearly state that the scope does not include the user-generated content.</p>
+
 			</section>
 		</section>
 
@@ -333,7 +338,22 @@ import GuidelinesRespec from "@/components/respec/GuidelinesRespec.astro";
 						</tr>
 					</tbody>
 				</table>
+
 				<p class="ednote">As a standard, WCAG declares conformance when the core requirements are met. Policymakers have more flexibility in requiring additional tiers in certain situations in order to comply with regulation. Additional information and suggestions on how best to use progress toward conformance will be available in informative documents on testing and reporting as well as recommendations to regulators.</p>
+
+			</section>
+			<section id="authoring-tool-badge">
+
+				<h4>Authoring tool badge</h4>
+
+				<p>WCAG 3 includes methods for authoring tools under the relevant provisions. These allow an authoring tool to be evaluated for an Authoring Tool Badge. This is an indication that users of the platform are able to create accessible content, but does not indicate the user-generated content itself conforms. </p>
+
+				<p>Meeting the requirements for an Authoring Tool Badge does not negate the need for the authoring tool itself to meet WCAG when claiming conformance. This badge can be reported on at the conformance reporting tier. </p>
+
+				<p>The Authoring Tool Accessibility Guidelines (ATAG) includes the authoring tool methods in WCAG but also provides additional requirements for authoring tools. To meet higher tiers of reporting (Bronze, Silver and Gold), the ATAG assertion should also be met. </p>
+
+				<p class="ednote">The Authoring Tool Accessibility Guidelines are being developed in parallel with WCAG 3. The assertion for meeting ATAG is not available yet.</p>
+
 			</section>
 			<section id="function-performance-statements">
 				<h3>Functional performance statements (expanded)</h3>
