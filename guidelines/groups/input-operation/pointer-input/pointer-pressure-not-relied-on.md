@@ -3,12 +3,8 @@ status: developing
 type: foundational
 ---
 
-Specific :term[pointer] pressure is not the only way of achieving any functionality.
+Variable :term[pointer] pressure is not the only way of achieving any functionality.
 
 :::except-when
-- Specific pressure is :term[essential] to the functionality.
-:::
-
-:::example
-Specific pressure would be essential to a paintbrush feature or advanced signature verification.
+- Variable pressure is :term[essential] to the functionality.
 :::
