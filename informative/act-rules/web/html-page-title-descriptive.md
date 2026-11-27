@@ -124,20 +124,20 @@ The title describes the overall purpose of the page. Although the page contains 
 	</head>
 	<body>
 		<h1>Checkout</h1>
-		<section aria-labelledby=”step1”>
+		<section aria-labelledby="step1">
 			<h2>
-				<button aria-expanded=”true” id=”step1”>Shipping Address</button>
+				<button aria-expanded="true" id="step1">Shipping Address</button>
 			</h2>
 			…
 		</section>
-		<section aria-labelledby=”step2”>
+		<section aria-labelledby="step2">
 			<h2>
-				<button aria-expanded=”false” aria-disabled=”true”  id=”step2”>Billing Address</button>
+				<button aria-expanded="false" aria-disabled="true"  id="step2">Billing Address</button>
 			</h2>
 		</section>
-		<section aria-labelledby=”step3”>
+		<section aria-labelledby="step3">
 			<h2>
-				<button aria-expanded=”false” aria-disabled=”true”  id=”step3”>Billing Address</button>
+				<button aria-expanded="false" aria-disabled="true"  id="step3">Payment</button>
 			</h2>
 		</section>
 	</body>

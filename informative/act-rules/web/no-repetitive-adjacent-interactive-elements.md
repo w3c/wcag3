@@ -8,11 +8,11 @@ This rule checks that a page/view includes no adjacent interactive elements that
 
 ## Applicability
 
-This rule applies to any page/view in which an author has provided a custom keyboard command.
+This rule applies to any page/view.
 
 ## Expectation
 
-The custom keyboard command is documented, and programmatically and visually available from any page/view to which it applies.
+Adjacent interactive elements that achieve the same outcome are not included in the page/view, unless that outcome is a form of dismissal.
 
 ## Examples
 
