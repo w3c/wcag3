@@ -3,7 +3,7 @@ type: supplemental
 status: developing
 ---
 
-:term[Sign language interpretation] is :term[equivalent] to spoken dialogue, lyrics, and significant sound effects in audio content. 
+:term[Sign language interpretation] is :term[equivalent] to speech, lyrics, and significant sound effects in audio content. 
 
 :::except-when
 - It is background audio.
