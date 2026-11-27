@@ -3,8 +3,9 @@ children:
   - no-flashing-over-threshold
   - no-flashing-over-threshold-no-exceptions
   - single-flash
-  - no-visual-motion
-  - no-visual-motion-no-exceptions
+  - limit-animation
+  - no-animation
+  - avoid-animation-from-interaction
   - trigger-warning-available
   - haptic-stimulation-adjustable
   - audio-shifting-adjustable

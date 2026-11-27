@@ -1,6 +1,11 @@
-## Methods
+## Intent
 
-* Consider if motion or pseudo-motion is essential, and if it is not, refrain from including it.
+:::ednote
+To be added.
+:::
+
+## Methods
+* Consider whether motion or pseudo-motion is essential. If it is not, refrain from including it.
 
 ## Tests
 
